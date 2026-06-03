@@ -1,0 +1,20 @@
+# TechPulse — Cloudflare Pages 配置
+# 部署方式: Cloudflare Pages (Advanced Mode: _worker.js)
+# 定时采集由 GitHub Actions 处理（.github/workflows/daily-scrape.yml）
+
+name = "tech-news-aggregator"
+compatibility_date = "2025-06-03"
+
+# ── Pages 构建配置（在 Cloudflare Dashboard 中同样设置） ──
+# Framework preset: None
+# Build command: （留空）
+# Output directory: .
+
+# ── 定时触发器（如未来迁移到 Workers，取消注释） ──
+# [triggers]
+# crons = ["0 0 * * *", "0 8 * * *", "0 16 * * *"]
+
+# ── 环境变量（在 Pages Dashboard → Settings → Environment variables 中配置） ──
+# [vars]
+# SUPABASE_URL = "https://spzerhlpmzsvzwbhrdmz.supabase.co"
+# SUPABASE_KEY = "sb_publishable_..."
