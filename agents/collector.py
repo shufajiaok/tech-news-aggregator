@@ -126,7 +126,7 @@ class WebCollector:
                 articles.append(RawTweet(
                     tweet_id=self._make_id(name, link),
                     author=name,
-                    author_username=name,
+                    author_username=source.get("username", name),
                     text=text[:500],
                     url=link,
                     published_at=published,

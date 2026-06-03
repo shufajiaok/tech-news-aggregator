@@ -30,7 +30,57 @@ USER_AGENT = os.getenv("USER_AGENT",
 
 # ── 科技新闻源（RSS + 网页）───────────────────────────
 NEWS_SOURCES: list[dict] = [
-    # ── RSS源（轻量、不易被封） ──
+    # ── X账号（通过Nitter RSS获取，重点关注） ──
+    {
+        "name": "Ryan Smith (AnandTech)",
+        "type": "nitter",
+        "username": "RyanSmithAT",
+        "url": "https://nitter.poast.org/RyanSmithAT/rss",
+        "category_hint": "CPU",
+    },
+    {
+        "name": "Andreas Schilling",
+        "type": "nitter",
+        "username": "aschilling",
+        "url": "https://nitter.poast.org/aschilling/rss",
+        "category_hint": "GPU",
+    },
+    {
+        "name": "Patrick Kennedy (STH)",
+        "type": "nitter",
+        "username": "Patrick1Kennedy",
+        "url": "https://nitter.poast.org/Patrick1Kennedy/rss",
+        "category_hint": "CPU",
+    },
+    {
+        "name": "Ian Cutress",
+        "type": "nitter",
+        "username": "IanCutress",
+        "url": "https://nitter.poast.org/IanCutress/rss",
+        "category_hint": "CPU",
+    },
+    {
+        "name": "Jukanlosreve (Tech Leaks)",
+        "type": "nitter",
+        "username": "Jukanlosreve",
+        "url": "https://nitter.poast.org/Jukanlosreve/rss",
+        "category_hint": "Semiconductor",
+    },
+    {
+        "name": "SemiAnalysis",
+        "type": "nitter",
+        "username": "SemiAnalysis_",
+        "url": "https://nitter.poast.org/SemiAnalysis_/rss",
+        "category_hint": "Semiconductor",
+    },
+    {
+        "name": "郭明錤 (Ming-Chi Kuo)",
+        "type": "nitter",
+        "username": "mingchikuo",
+        "url": "https://nitter.poast.org/mingchikuo/rss",
+        "category_hint": "Digital",
+    },
+    # ── RSS源（科技网站） ──
     {
         "name": "Tom's Hardware",
         "type": "rss",
@@ -44,7 +94,7 @@ NEWS_SOURCES: list[dict] = [
         "category_hint": "GPU",
     },
     {
-        "name": "SemiAnalysis",
+        "name": "SemiAnalysis (Blog)",
         "type": "rss",
         "url": "https://semianalysis.com/feed/",
         "category_hint": "Semiconductor",
