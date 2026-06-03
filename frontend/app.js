@@ -1,13 +1,12 @@
 /**
- * TechPulse — 科技新闻聚合前端应用
- * 纯原生JS，无框架依赖，适配Cloudflare Pages
+ * TechPulse — 科技新闻聚合前端
+ * 直接查询 Supabase REST API，无需自建后端
+ * 适配 Cloudflare Pages 部署
  */
 
-// ── 配置 ───────────────────────────────────────────
-const API_BASE = window.location.hostname === 'localhost'
-    ? 'http://localhost:8000/api'
-    : '/api';  // Cloudflare Pages Functions 代理
-
+// ── Supabase 配置 ──────────────────────────────────
+const SUPABASE_URL = 'https://spzerhlpmzsvzwbhrdmz.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_j9UNOuDWNeJrG9cCAZp2IQ_vryI02cy';
 const PAGE_SIZE = 20;
 
 // ── 状态 ───────────────────────────────────────────
@@ -64,20 +63,38 @@ function categoryIcon(cat) {
     return map[cat] || '📌';
 }
 
-// ── API调用 ────────────────────────────────────────
+function escapeHtml(str) {
+    if (!str) return '';
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+}
+
+// ── Supabase REST API 调用 ──────────────────────────
+const supabaseHeaders = {
+    'apikey': SUPABASE_KEY,
+    'Authorization': `Bearer ${SUPABASE_KEY}`,
+    'Content-Type': 'application/json',
+};
+
 async function fetchNews(category, page) {
     const offset = page * PAGE_SIZE;
-    let url = `${API_BASE}/news?limit=${PAGE_SIZE}&offset=${offset}`;
-    if (category) url += `&category=${encodeURIComponent(category)}`;
-    const resp = await fetch(url);
+    let url = `${SUPABASE_URL}/rest/v1/tech_news?select=*&order=published_at.desc&limit=${PAGE_SIZE}&offset=${offset}`;
+    if (category) {
+        url += `&category=eq.${encodeURIComponent(category)}`;
+    }
+    const resp = await fetch(url, { headers: supabaseHeaders });
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-    return resp.json();
+    const data = await resp.json();
+    return { data };
 }
 
 async function fetchNewsById(id) {
-    const resp = await fetch(`${API_BASE}/news/${id}`);
+    const url = `${SUPABASE_URL}/rest/v1/tech_news?id=eq.${encodeURIComponent(id)}&select=*`;
+    const resp = await fetch(url, { headers: supabaseHeaders });
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-    return resp.json();
+    const data = await resp.json();
+    return { data: data[0] || null };
 }
 
 // ── 渲染 ───────────────────────────────────────────
@@ -103,13 +120,6 @@ function renderCards(newsList) {
             </div>
         </article>
     `).join('');
-}
-
-function escapeHtml(str) {
-    if (!str) return '';
-    const div = document.createElement('div');
-    div.textContent = str;
-    return div.innerHTML;
 }
 
 function updatePagination() {
@@ -154,11 +164,11 @@ function switchCategory(category) {
     state.category = category;
     state.page = 0;
     state.news = [];
-    // 更新导航高亮
     $$('.nav-item').forEach(el => {
         el.classList.toggle('active', el.dataset.category === category);
     });
     loadNews();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // ── 详情弹窗 ───────────────────────────────────────
@@ -170,6 +180,10 @@ async function openDetail(id) {
     try {
         const result = await fetchNewsById(id);
         const n = result.data;
+        if (!n) {
+            modalContent.innerHTML = '<p class="error">新闻不存在</p>';
+            return;
+        }
         modalContent.innerHTML = `
             <span class="card-category modal-category ${categoryClass(n.category)}">${categoryIcon(n.category)} ${n.category}</span>
             <h2 class="modal-title">${escapeHtml(n.title)}</h2>
@@ -211,6 +225,7 @@ prevBtn.addEventListener('click', () => {
     if (state.page > 0) {
         state.page--;
         loadNews();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 });
 
@@ -218,6 +233,7 @@ nextBtn.addEventListener('click', () => {
     if (state.hasMore) {
         state.page++;
         loadNews();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 });
 
