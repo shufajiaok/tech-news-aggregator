@@ -1,9 +1,8 @@
 /**
  * TechPulse — Cloudflare Pages Advanced Mode Worker
  *
- * 职责:
- *   /api/*  → 代理到 Supabase REST API（解决国内直连不稳定的问题）
- *   其他路径  → 从 frontend/ 目录提供静态文件
+ * 静态文件由 Pages 自动从输出目录提供（无需手动处理）
+ * 仅处理 /api/* → Supabase 代理
  */
 
 const SUPABASE_URL = 'https://spzerhlpmzsvzwbhrdmz.supabase.co';
@@ -48,33 +47,13 @@ export default {
           JSON.stringify({ error: 'Proxy error', detail: err.message }),
           {
             status: 502,
-            headers: {
-              'Content-Type': 'application/json',
-              'Access-Control-Allow-Origin': '*',
-            },
+            headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
           }
         );
       }
     }
 
-    // ── 静态文件: 映射到 frontend/ 目录 ──────────
-    let filePath = path;
-    if (filePath === '/') filePath = '/index.html';
-
-    const assetRequest = new Request(
-      new URL(`/frontend${filePath}`, request.url),
-      request
-    );
-
-    try {
-      return await env.ASSETS.fetch(assetRequest);
-    } catch (e) {
-      // SPA fallback: 未匹配路由返回首页
-      const fallbackRequest = new Request(
-        new URL('/frontend/index.html', request.url),
-        request
-      );
-      return env.ASSETS.fetch(fallbackRequest);
-    }
+    // 非 API 请求 → Pages 自动提供静态文件
+    return env.ASSETS.fetch(request);
   },
 };
