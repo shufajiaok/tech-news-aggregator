@@ -1,6 +1,6 @@
 /**
  * TechPulse — Cloudflare Pages Advanced Mode Worker
- * 
+ *
  * 职责:
  *   /api/*  → 代理到 Supabase REST API（解决国内直连不稳定的问题）
  *   其他路径  → 从 frontend/ 目录提供静态文件
