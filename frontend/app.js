@@ -1,0 +1,235 @@
+/**
+ * TechPulse — 科技新闻聚合前端应用
+ * 纯原生JS，无框架依赖，适配Cloudflare Pages
+ */
+
+// ── 配置 ───────────────────────────────────────────
+const API_BASE = window.location.hostname === 'localhost'
+    ? 'http://localhost:8000/api'
+    : '/api';  // Cloudflare Pages Functions 代理
+
+const PAGE_SIZE = 20;
+
+// ── 状态 ───────────────────────────────────────────
+const state = {
+    category: '',
+    page: 0,
+    news: [],
+    hasMore: true,
+};
+
+// ── DOM引用 ────────────────────────────────────────
+const $ = (sel) => document.querySelector(sel);
+const $$ = (sel) => document.querySelectorAll(sel);
+
+const newsGrid = $('#newsGrid');
+const loading = $('#loading');
+const errorEl = $('#error');
+const emptyEl = $('#empty');
+const pagination = $('#pagination');
+const prevBtn = $('#prevBtn');
+const nextBtn = $('#nextBtn');
+const pageInfo = $('#pageInfo');
+const categoryNav = $('#categoryNav');
+const modalOverlay = $('#modalOverlay');
+const modalContent = $('#modalContent');
+const modalClose = $('#modalClose');
+
+// ── 工具函数 ──────────────────────────────────────
+function formatTime(isoStr) {
+    if (!isoStr) return '';
+    const d = new Date(isoStr);
+    const now = new Date();
+    const diff = now - d;
+    if (diff < 3600000) return `${Math.floor(diff / 60000)}分钟前`;
+    if (diff < 86400000) return `${Math.floor(diff / 3600000)}小时前`;
+    if (diff < 604800000) return `${Math.floor(diff / 86400000)}天前`;
+    return d.toLocaleDateString('zh-CN', { month: 'short', day: 'numeric' });
+}
+
+function categoryClass(cat) {
+    const map = {
+        AI: 'cat-AI', GPU: 'cat-GPU', CPU: 'cat-CPU',
+        Foundry: 'cat-Foundry', Semiconductor: 'cat-Semiconductor',
+        Digital: 'cat-Digital',
+    };
+    return map[cat] || 'cat-AI';
+}
+
+function categoryIcon(cat) {
+    const map = {
+        AI: '🤖', GPU: '🎮', CPU: '💻',
+        Foundry: '🏭', Semiconductor: '🔬', Digital: '📱',
+    };
+    return map[cat] || '📌';
+}
+
+// ── API调用 ────────────────────────────────────────
+async function fetchNews(category, page) {
+    const offset = page * PAGE_SIZE;
+    let url = `${API_BASE}/news?limit=${PAGE_SIZE}&offset=${offset}`;
+    if (category) url += `&category=${encodeURIComponent(category)}`;
+    const resp = await fetch(url);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    return resp.json();
+}
+
+async function fetchNewsById(id) {
+    const resp = await fetch(`${API_BASE}/news/${id}`);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    return resp.json();
+}
+
+// ── 渲染 ───────────────────────────────────────────
+function renderCards(newsList) {
+    if (newsList.length === 0) {
+        newsGrid.innerHTML = '';
+        return;
+    }
+    newsGrid.innerHTML = newsList.map(n => `
+        <article class="news-card" data-id="${n.id}" onclick="openDetail('${n.id}')">
+            <div class="card-header">
+                <span class="card-category ${categoryClass(n.category)}">${categoryIcon(n.category)} ${n.category}</span>
+                <span class="card-time">${formatTime(n.published_at)}</span>
+            </div>
+            <h3 class="card-title">${escapeHtml(n.title)}</h3>
+            <p class="card-summary">${escapeHtml(n.summary)}</p>
+            <div class="card-meta">
+                <span class="card-source">
+                    <span class="card-source-avatar">${n.original_author ? n.original_author.charAt(1).toUpperCase() : 'X'}</span>
+                    ${escapeHtml(n.source)}
+                </span>
+                <span>${escapeHtml(n.original_author || '')}</span>
+            </div>
+        </article>
+    `).join('');
+}
+
+function escapeHtml(str) {
+    if (!str) return '';
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+}
+
+function updatePagination() {
+    if (state.news.length === 0 && state.page === 0) {
+        pagination.style.display = 'none';
+        return;
+    }
+    pagination.style.display = 'flex';
+    prevBtn.disabled = state.page === 0;
+    nextBtn.disabled = state.news.length < PAGE_SIZE;
+    pageInfo.textContent = `第 ${state.page + 1} 页`;
+}
+
+// ── 加载流程 ───────────────────────────────────────
+async function loadNews() {
+    loading.style.display = 'flex';
+    errorEl.style.display = 'none';
+    emptyEl.style.display = 'none';
+    newsGrid.innerHTML = '';
+
+    try {
+        const result = await fetchNews(state.category, state.page);
+        state.news = result.data || [];
+        state.hasMore = state.news.length >= PAGE_SIZE;
+        loading.style.display = 'none';
+
+        if (state.news.length === 0) {
+            emptyEl.style.display = 'block';
+            pagination.style.display = 'none';
+        } else {
+            renderCards(state.news);
+            updatePagination();
+        }
+    } catch (err) {
+        loading.style.display = 'none';
+        errorEl.style.display = 'block';
+        console.error('Failed to load news:', err);
+    }
+}
+
+function switchCategory(category) {
+    state.category = category;
+    state.page = 0;
+    state.news = [];
+    // 更新导航高亮
+    $$('.nav-item').forEach(el => {
+        el.classList.toggle('active', el.dataset.category === category);
+    });
+    loadNews();
+}
+
+// ── 详情弹窗 ───────────────────────────────────────
+async function openDetail(id) {
+    modalOverlay.classList.add('active');
+    modalContent.innerHTML = '<div class="loading"><div class="spinner"></div></div>';
+    document.body.style.overflow = 'hidden';
+
+    try {
+        const result = await fetchNewsById(id);
+        const n = result.data;
+        modalContent.innerHTML = `
+            <span class="card-category modal-category ${categoryClass(n.category)}">${categoryIcon(n.category)} ${n.category}</span>
+            <h2 class="modal-title">${escapeHtml(n.title)}</h2>
+            <p class="modal-summary">${escapeHtml(n.summary)}</p>
+            ${n.key_points && n.key_points.length ? `
+            <div class="modal-keypoints">
+                <h3>📋 关键要点</h3>
+                <ul>
+                    ${n.key_points.map(kp => `<li>${escapeHtml(kp)}</li>`).join('')}
+                </ul>
+            </div>` : ''}
+            <div class="modal-footer">
+                <span>来源: ${escapeHtml(n.source)} ${escapeHtml(n.original_author || '')}</span>
+                <span>${formatTime(n.published_at)}</span>
+                <a href="${escapeHtml(n.source_url)}" target="_blank" rel="noopener" class="modal-source-link">
+                    🔗 查看原文
+                </a>
+            </div>
+        `;
+    } catch (err) {
+        modalContent.innerHTML = '<p class="error">加载失败</p>';
+        console.error('Failed to load detail:', err);
+    }
+}
+
+function closeModal() {
+    modalOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// ── 事件绑定 ───────────────────────────────────────
+categoryNav.addEventListener('click', (e) => {
+    const btn = e.target.closest('.nav-item');
+    if (!btn) return;
+    switchCategory(btn.dataset.category);
+});
+
+prevBtn.addEventListener('click', () => {
+    if (state.page > 0) {
+        state.page--;
+        loadNews();
+    }
+});
+
+nextBtn.addEventListener('click', () => {
+    if (state.hasMore) {
+        state.page++;
+        loadNews();
+    }
+});
+
+modalClose.addEventListener('click', closeModal);
+modalOverlay.addEventListener('click', (e) => {
+    if (e.target === modalOverlay) closeModal();
+});
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+});
+
+// ── 启动 ───────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+    loadNews();
+});
