@@ -5,7 +5,8 @@
  */
 
 // ── Supabase 配置 ──────────────────────────────────
-const API_BASE = '/api/rest/v1';  // Cloudflare Pages Function 代理
+const SUPABASE_URL = 'https://spzerhlpmzsvzwbhrdmz.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_j9UNOuDWNeJrG9cCAZp2IQ_vryI02cy';
 const PAGE_SIZE = 20;
 
 // ── 状态 ───────────────────────────────────────────
@@ -70,22 +71,26 @@ function escapeHtml(str) {
 }
 
 // ── Supabase REST API 调用 ──────────────────────────
+const supabaseHeaders = {
+    'apikey': SUPABASE_KEY,
+    'Authorization': `Bearer ${SUPABASE_KEY}`,
+};
 
 async function fetchNews(category, page) {
     const offset = page * PAGE_SIZE;
-    let url = `${API_BASE}/tech_news?select=*&order=published_at.desc&limit=${PAGE_SIZE}&offset=${offset}`;
+    let url = `${SUPABASE_URL}/rest/v1/tech_news?select=*&order=published_at.desc&limit=${PAGE_SIZE}&offset=${offset}`;
     if (category) {
         url += `&category=eq.${encodeURIComponent(category)}`;
     }
-    const resp = await fetch(url);
+    const resp = await fetch(url, { headers: supabaseHeaders });
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     const data = await resp.json();
     return { data };
 }
 
 async function fetchNewsById(id) {
-    const url = `${API_BASE}/tech_news?id=eq.${encodeURIComponent(id)}&select=*`;
-    const resp = await fetch(url);
+    const url = `${SUPABASE_URL}/rest/v1/tech_news?id=eq.${encodeURIComponent(id)}&select=*`;
+    const resp = await fetch(url, { headers: supabaseHeaders });
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     const data = await resp.json();
     return { data: data[0] || null };
