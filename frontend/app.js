@@ -34,6 +34,28 @@ const modalOverlay = $('#modalOverlay');
 const modalContent = $('#modalContent');
 const modalClose = $('#modalClose');
 
+// ── 主题切换 ───────────────────────────────────────
+const themeToggle = $('#themeToggle');
+const THEME_KEY = 'techpulse-theme';
+
+function getTheme() {
+    return localStorage.getItem(THEME_KEY) || 'dark';
+}
+
+function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    themeToggle.textContent = theme === 'light' ? '☀️' : '🌙';
+    localStorage.setItem(THEME_KEY, theme);
+}
+
+// 初始化主题
+setTheme(getTheme());
+
+themeToggle.addEventListener('click', () => {
+    const next = getTheme() === 'dark' ? 'light' : 'dark';
+    setTheme(next);
+});
+
 // ── 工具函数 ──────────────────────────────────────
 function formatTime(isoStr) {
     if (!isoStr) return '';
