@@ -213,8 +213,8 @@ class WebCollector:
     def _extract_with_bs4(self, html: str) -> str:
         """使用 BeautifulSoup 手动提取正文（降级方案）。
 
-        尝试常见正文容器（article、main、content等），
-        去除 nav、footer、aside、script、style 等无关元素。
+        按优先级寻找正文容器，去除 nav、footer、sidebar 等无关元素。
+        选取策略：优先匹配文本量最大的候选容器，避免匹配到 related-posts 等干扰区域。
         """
         try:
             soup = BeautifulSoup(html, "lxml")
@@ -227,31 +227,31 @@ class WebCollector:
                 for tag in soup.find_all(tag_name):
                     tag.decompose()
 
-            # 移除常见评论区/广告类名
+            # 移除常见评论区/广告/推荐列表类名
             for cls in (
                 "comment", "comments", "sidebar", "advertisement", "ad-",
-                "social-share", "related-posts", "recommended", "widget",
-                "nav-", "footer-", "header-", "menu", "share-",
+                "social-share", "related-posts", "related-post", "recommended",
+                "widget", "nav-", "footer-", "header-", "menu", "share-",
+                "author-box", "author-bio",
             ):
                 for tag in soup.find_all(class_=re.compile(cls, re.I)):
                     tag.decompose()
 
-            # 按优先级寻找正文容器
-            selectors = [
-                {"role": "main"},
+            candidates = []
+
+            # 策略1: 精确容器选择器（高优先级）
+            precise_selectors = [
                 {"itemprop": "articleBody"},
+                {"role": "main"},
                 "article",
-                '[class*="article-body"]',
-                '[class*="post-content"]',
-                '[class*="entry-content"]',
                 "main",
-                '[class*="content"]',
                 "#content",
                 "#article",
                 "#post",
+                ".post",
+                ".content",
             ]
-
-            for selector in selectors:
+            for selector in precise_selectors:
                 if isinstance(selector, dict):
                     found = soup.find(attrs=selector)
                 else:
@@ -259,13 +259,33 @@ class WebCollector:
                 if found:
                     text = found.get_text(separator="\n", strip=True)
                     if len(text) > 200:
-                        return text
+                        candidates.append((len(text), text))
+
+            # 策略2: 模糊 class 选择器（低优先级，需验证文本量）
+            fuzzy_selectors = [
+                '[class*="article-body"]',
+                '[class*="post-content"]',
+                '[class*="entry-content"]',
+                '[class*="content"]',
+            ]
+            for selector in fuzzy_selectors:
+                for found in soup.select(selector):
+                    text = found.get_text(separator="\n", strip=True)
+                    # 模糊匹配容易误匹配到 related-posts 等区域，
+                    # 要求文本量达到精确候选平均值的 60% 以上才接受
+                    if len(text) > 300:
+                        candidates.append((len(text), text))
+
+            if candidates:
+                # 取文本量最大的候选（避免误匹配到侧边栏/推荐区）
+                candidates.sort(key=lambda x: x[0], reverse=True)
+                best_text = candidates[0][1]
+                return best_text
 
             # 最后兜底: 取 body 文本
             body = soup.find("body")
             if body:
                 text = body.get_text(separator="\n", strip=True)
-                # 清理多余空白行
                 text = re.sub(r'\n{3,}', '\n\n', text)
                 return text
 
