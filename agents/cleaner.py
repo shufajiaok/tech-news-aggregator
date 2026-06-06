@@ -87,6 +87,7 @@ class NewsCleaner:
                 text=t.text,
                 url=t.url,
                 published_at=t.published_at,
+                full_content=t.full_content,
             )
             for t in deduped
         ]

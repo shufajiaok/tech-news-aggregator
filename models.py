@@ -24,6 +24,7 @@ class RawTweet:
     text: str
     url: str
     published_at: str         # ISO 8601
+    full_content: str = ""    # 正文全文（从RSS content:encoded或网页抓取）
     metrics: dict = field(default_factory=dict)
 
 
@@ -36,6 +37,7 @@ class CleanedNews:
     text: str
     url: str
     published_at: str
+    full_content: str = ""
 
 
 @dataclass
@@ -45,6 +47,8 @@ class StructuredNews:
     title: str = ""                    # AI生成的新闻标题
     summary: str = ""                  # 一句话摘要
     key_points: list[str] = field(default_factory=list)  # 关键要点，1-3条
+    full_content: str = ""             # 原始正文（供AI总结用）
+    ai_summary: str = ""               # AI生成的完整总结（300-500字）
     category: str = ""                 # GPU|CPU|AI|Foundry|Semiconductor|Digital
     source: str = ""                   # 原始账号名
     source_url: str = ""               # 原始推文链接
@@ -62,6 +66,8 @@ class StructuredNews:
             "title": self.title,
             "summary": self.summary,
             "key_points": self.key_points,
+            "full_content": self.full_content,
+            "ai_summary": self.ai_summary,
             "category": self.category,
             "source": self.source,
             "source_url": self.source_url,
@@ -91,6 +97,8 @@ class StructuredNews:
                     "maxItems": 3,
                     "description": "1-3条关键要点"
                 },
+                "full_content": {"type": "string", "description": "原始正文全文"},
+                "ai_summary": {"type": "string", "description": "AI生成的完整总结（300-500字）"},
                 "category": {
                     "type": "string",
                     "enum": [c.value for c in NewsCategory],

@@ -343,6 +343,26 @@ body {
     margin-bottom: 24px;
     line-height: 1.7;
 }
+.modal-ai-summary {
+    background: var(--accent-glow);
+    border: 1px solid rgba(57, 186, 230, 0.2);
+    border-radius: var(--radius-sm);
+    padding: 20px;
+    margin-bottom: 24px;
+}
+.modal-ai-summary h3 {
+    font-size: 0.9rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+.ai-summary-text {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    line-height: 1.8;
+    white-space: pre-line;
+}
 .modal-keypoints {
     background: var(--bg-card);
     border-radius: var(--radius-sm);

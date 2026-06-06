@@ -78,6 +78,8 @@ class NewsStorage:
             "title": news.title,
             "summary": news.summary,
             "key_points": news.key_points,
+            "full_content": news.full_content,
+            "ai_summary": news.ai_summary,
             "category": news.category,
             "source": news.source,
             "source_url": news.source_url,

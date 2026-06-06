@@ -208,7 +208,11 @@ async function openDetail(id) {
         modalContent.innerHTML = `
             <span class="card-category modal-category ${categoryClass(n.category)}">${categoryIcon(n.category)} ${n.category}</span>
             <h2 class="modal-title">${escapeHtml(n.title)}</h2>
-            <p class="modal-summary">${escapeHtml(n.summary)}</p>
+            ${n.ai_summary ? `
+            <div class="modal-ai-summary">
+                <h3>🤖 AI 深度总结</h3>
+                <div class="ai-summary-text">${escapeHtml(n.ai_summary).replace(/\n\n/g, '<br><br>').replace(/\n/g, '<br>')}</div>
+            </div>` : ''}
             ${n.key_points && n.key_points.length ? `
             <div class="modal-keypoints">
                 <h3>📋 关键要点</h3>

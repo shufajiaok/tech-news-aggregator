@@ -28,6 +28,11 @@ USER_AGENT = os.getenv("USER_AGENT",
     "(KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
 )
 
+# ── 正文提取配置 ─────────────────────────────────────
+FULL_CONTENT_TIMEOUT = int(os.getenv("FULL_CONTENT_TIMEOUT", "15"))  # 正文抓取超时(秒)
+FULL_CONTENT_MAX_LENGTH = int(os.getenv("FULL_CONTENT_MAX_LENGTH", "8000"))  # 正文最大保留字符数
+FULL_CONTENT_FETCH_ENABLED = os.getenv("FULL_CONTENT_FETCH_ENABLED", "true").lower() == "true"
+
 # ── 科技新闻源（RSS + 网页）───────────────────────────
 NEWS_SOURCES: list[dict] = [
     # ── X账号（通过Nitter RSS获取，重点关注） ──

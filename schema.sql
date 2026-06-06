@@ -12,6 +12,8 @@ CREATE TABLE IF NOT EXISTS tech_news (
     title           TEXT NOT NULL,
     summary         TEXT NOT NULL,
     key_points      JSONB NOT NULL DEFAULT '[]'::jsonb,
+    full_content    TEXT NOT NULL DEFAULT '',
+    ai_summary      TEXT NOT NULL DEFAULT '',
     category        TEXT NOT NULL CHECK (category IN (
                         'GPU', 'CPU', 'AI', 'Foundry',
                         'Semiconductor', 'Digital'
@@ -29,6 +31,23 @@ CREATE INDEX IF NOT EXISTS idx_news_category      ON tech_news (category);
 CREATE INDEX IF NOT EXISTS idx_news_published_at  ON tech_news (published_at DESC);
 CREATE INDEX IF NOT EXISTS idx_news_created_at    ON tech_news (created_at DESC);
 CREATE UNIQUE INDEX IF NOT EXISTS idx_news_source_url_unique ON tech_news (source_url);
+
+-- 迁移：为已有表添加新列（幂等）
+DO $$
+BEGIN
+    IF NOT EXISTS (
+        SELECT 1 FROM information_schema.columns
+        WHERE table_name = 'tech_news' AND column_name = 'full_content'
+    ) THEN
+        ALTER TABLE tech_news ADD COLUMN full_content TEXT NOT NULL DEFAULT '';
+    END IF;
+    IF NOT EXISTS (
+        SELECT 1 FROM information_schema.columns
+        WHERE table_name = 'tech_news' AND column_name = 'ai_summary'
+    ) THEN
+        ALTER TABLE tech_news ADD COLUMN ai_summary TEXT NOT NULL DEFAULT '';
+    END IF;
+END $$;
 
 -- ============================================================
 -- 2. 去重记录表
