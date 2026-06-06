@@ -92,6 +92,12 @@ function escapeHtml(str) {
     return div.innerHTML;
 }
 
+function getCardSummary(n) {
+    const text = n.ai_summary || n.summary || '';
+    if (text.length <= 150) return escapeHtml(text);
+    return escapeHtml(text.slice(0, 150)) + '…';
+}
+
 // ── Supabase REST API 调用 ──────────────────────────
 const supabaseHeaders = {
     'apikey': SUPABASE_KEY,
@@ -131,7 +137,7 @@ function renderCards(newsList) {
                 <span class="card-time">${formatTime(n.published_at)}</span>
             </div>
             <h3 class="card-title">${escapeHtml(n.title)}</h3>
-            <p class="card-summary">${escapeHtml(n.summary)}</p>
+            <p class="card-summary">${getCardSummary(n)}</p>
             <div class="card-meta">
                 <span class="card-source">
                     <span class="card-source-avatar">${n.original_author ? n.original_author.charAt(1).toUpperCase() : 'X'}</span>
