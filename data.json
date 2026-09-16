@@ -1,7 +1,167 @@
 {
-  "updated_at": "2026-09-16T10:26:35.742584+00:00",
+  "updated_at": "2026-09-16T17:37:49.548609+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "4404ac79-e92d-4b5f-8623-402d7ee703bc",
+      "title": "MLPerf v6",
+      "summary": "MLPerf v6.1 is now out, with AMD, NVIDIA and Intel submitting their latest results across a range of AI benchmarks. AMD ...",
+      "key_points": [
+        "MLPerf v6.1 is now out, with AMD, NVIDIA"
+      ],
+      "full_content": "MLPerf v6.1 is now out, with AMD, NVIDIA and Intel submitting their latest results across a range of AI benchmarks. AMD &amp; NVIDIA Show Strong AI Performance In MLPerf 6.1, Intel Also Submits Xeon &amp; Arc Pro To The Benching Showcase The latest release from MLCommons comes in the form of the MLPerf Inference v6.1 benchmark suite, which features a range of workflows that align with recent trends within the AI segment. As always, all three camps are submitting the results of their current and latest hardware, and we've compiled the tests in the following charts. Starting with DeepSeek R1, [&hellip;] Read full article at https://wccftech.com/mlperf-v-6-1-benchmarks-nvidia-amd-intel-blackwell-vera-rubin-mi355x-arc-b70/",
+      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nMLPerf v6.1 is now out, with AMD, NVIDIA and Intel submitting their latest results across a range of AI benchmarks. AMD &amp; NVIDIA Show Strong AI Performance In MLPerf 6.1, Intel Also Submits Xeon &amp; Arc Pro To The Benching Showcase The latest release from MLCommons comes in the form of the MLPerf Inference v6.1 benchmark suite, which features a range of workflows that align with recent trends within the AI segment. As always, all three camps are submitting the results of their current and ",
+      "category": "GPU",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/mlperf-v-6-1-benchmarks-nvidia-amd-intel-blackwell-vera-rubin-mi355x-arc-b70/",
+      "original_author": "WCCFTech",
+      "published_at": "2026-09-16T17:15:03+00:00",
+      "created_at": "2026-09-16T17:37:39.526071+00:00"
+    },
+    {
+      "id": "dba7cab4-ae99-4d62-bda6-466b7db9b909",
+      "title": "Valve highlights the importanc...",
+      "summary": "Valve highlights the importance of NVIDIA GPU support for SteamOS as certain GPU generations now become compatible, but ...",
+      "key_points": [
+        "Valve highlights the importance of NVIDI"
+      ],
+      "full_content": "Valve highlights the importance of NVIDIA GPU support for SteamOS as certain GPU generations now become compatible, but performance optimizations are still going on. Valve Enables NVIDIA's Driver in the Main SteamOS Tree, but Performance Remains Behind the Current Linux Driver Stack Valve is making some significant progress in bringing NVIDIA GPU support to SteamOS, which has been one of the biggest hardware compatibility barriers. Speaking to IGN ahead of the Steam Frame launch, Valve software developer Pierre-Loup Griffais said that the company is working heavily on NVIDIA support and described it as a top priority. Yeah, we're working on [&hellip;] Read full article at https://wccftech.com/steamos-is-getting-closer-to-nvidia-gpu-support/",
+      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nValve highlights the importance of NVIDIA GPU support for SteamOS as certain GPU generations now become compatible, but performance optimizations are still going on. Valve Enables NVIDIA's Driver in the Main SteamOS Tree, but Performance Remains Behind the Current Linux Driver Stack Valve is making some significant progress in bringing NVIDIA GPU support to SteamOS, which has been one of the biggest hardware compatibility barriers. Speaking to IGN ahead of the Steam Frame launch, Valve software ",
+      "category": "GPU",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/steamos-is-getting-closer-to-nvidia-gpu-support/",
+      "original_author": "WCCFTech",
+      "published_at": "2026-09-16T16:14:29+00:00",
+      "created_at": "2026-09-16T17:37:39.526085+00:00"
+    },
+    {
+      "id": "1c418630-9d49-46a1-83ec-f1671027d62d",
+      "title": "The report shows the negligenc...",
+      "summary": "The report shows the negligence on NVIDIA and FedEx' part, resulting in the theft of an RTX 5070 GPU. User Claims Both N...",
+      "key_points": [
+        "The report shows the negligence on NVIDI"
+      ],
+      "full_content": "The report shows the negligence on NVIDIA and FedEx' part, resulting in the theft of an RTX 5070 GPU. User Claims Both NVIDIA and FedEX Didn't Inform Him About the GPU Replacement Being Delivered Until the User Found Someone Stole His GPU Welcome to another RMA horror story, where the user neither got his GPU repaired or replaced, nor did he get his original GPU back. The Redditor u/Ill_Worker3155 says he was having an issue with his GeForce RTX 5070 and decided to send the card to NVIDIA for an RMA. NVIDIA accepted the RMA request and also agreed to [&hellip;] Read full article at https://wccftech.com/rtx-5070-replacment-gets-stolen-as-nvidia-fedex-didnt-inform-user/",
+      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nThe report shows the negligence on NVIDIA and FedEx' part, resulting in the theft of an RTX 5070 GPU. User Claims Both NVIDIA and FedEX Didn't Inform Him About the GPU Replacement Being Delivered Until the User Found Someone Stole His GPU Welcome to another RMA horror story, where the user neither got his GPU repaired or replaced, nor did he get his original GPU back. The Redditor u/Ill_Worker3155 says he was having an issue with his GeForce RTX 5070 and decided to send the card to NVIDIA for an",
+      "category": "GPU",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/rtx-5070-replacment-gets-stolen-as-nvidia-fedex-didnt-inform-user/",
+      "original_author": "WCCFTech",
+      "published_at": "2026-09-16T15:34:08+00:00",
+      "created_at": "2026-09-16T17:37:39.526097+00:00"
+    },
+    {
+      "id": "34052481-d7d3-4b0d-88b8-677a8cc90b62",
+      "title": "While the rumors of the dramat...",
+      "summary": "While the rumors of the dramatic nighttime escape of the Huawei CEO were as salacious as audacious, his youngest daughte...",
+      "key_points": [
+        "While the rumors of the dramatic nightti"
+      ],
+      "full_content": "While the rumors of the dramatic nighttime escape of the Huawei CEO were as salacious as audacious, his youngest daughter has now quashed at least some of the ensuing speculative reverie for good, ending the near-continuous rounds of chatter on social media regarding the whereabouts of Ren Zhengfei's family. Even so, the mystery around the Huawei CEO himself still persists. Annabel Yao, the youngest daughter of Huawei CEO and founder, has just made a public appearance in Beijing For the benefit of those who might not be aware, rumors first began circulating on September 12 when some internal Huawei chats [&hellip;] Read full article at https://wccftech.com/the-youngest-daughter-of-huawei-ceo-makes-an-appearance-in-beijing-squashing-some-rumors-about-the-familys-maritime-escape-ren-zhengfeis-whereabouts-still-unknown/",
+      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nWhile the rumors of the dramatic nighttime escape of the Huawei CEO were as salacious as audacious, his youngest daughter has now quashed at least some of the ensuing speculative reverie for good, ending the near-continuous rounds of chatter on social media regarding the whereabouts of Ren Zhengfei's family. Even so, the mystery around the Huawei CEO himself still persists. Annabel Yao, the youngest daughter of Huawei CEO and founder, has just made a public appearance in Beijing For the benefit ",
+      "category": "Semiconductor",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/the-youngest-daughter-of-huawei-ceo-makes-an-appearance-in-beijing-squashing-some-rumors-about-the-familys-maritime-escape-ren-zhengfeis-whereabouts-still-unknown/",
+      "original_author": "WCCFTech",
+      "published_at": "2026-09-16T15:24:26+00:00",
+      "created_at": "2026-09-16T17:37:39.526122+00:00"
+    },
+    {
+      "id": "757efa3c-719c-40d0-9784-0f68e73136f1",
+      "title": "While many are opposed to NVID...",
+      "summary": "While many are opposed to NVIDIA DLSS 5 neural rendering due to its uneven results in certain games (although some devs ...",
+      "key_points": [
+        "While many are opposed to NVIDIA DLSS 5 "
+      ],
+      "full_content": "While many are opposed to NVIDIA DLSS 5 neural rendering due to its uneven results in certain games (although some devs like Kingdom Come: Deliverance series director Daniel Vávra are consistently praising it), it's undeniable that it is set to bring significant changes to the gaming industry, as even AMD is reportedly working on its own neural rendering tech. Although it is still in its early days, NVIDIA DLSS 5 is already being put to some very interesting uses, as it powers, along with other tech, a new real-time neural remastering engine called UNCANNY, which could bring significant improvements not only [&hellip;] Read full article at https://wccftech.com/nvidia-dlss-5-neural-rendering-uncanny-remastering-engine/",
+      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nWhile many are opposed to NVIDIA DLSS 5 neural rendering due to its uneven results in certain games (although some devs like Kingdom Come: Deliverance series director Daniel Vávra are consistently praising it), it's undeniable that it is set to bring significant changes to the gaming industry, as even AMD is reportedly working on its own neural rendering tech. Although it is still in its early days, NVIDIA DLSS 5 is already being put to some very interesting uses, as it powers, along with other ",
+      "category": "GPU",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/nvidia-dlss-5-neural-rendering-uncanny-remastering-engine/",
+      "original_author": "WCCFTech",
+      "published_at": "2026-09-16T15:21:39+00:00",
+      "created_at": "2026-09-16T17:37:39.526138+00:00"
+    },
+    {
+      "id": "75627dd2-6f2c-46a1-8a63-0c0bda8a2980",
+      "title": "&lt;p&gt;Zak Killian is a free...",
+      "summary": "&lt;p&gt;Zak Killian is a freelance contributor to Tom&#039;s Hardware who has also written for HotHardware and Tech Rep...",
+      "key_points": [
+        "&lt;p&gt;Zak Killian is a freelance cont"
+      ],
+      "full_content": "&lt;p&gt;Zak Killian is a freelance contributor to Tom&#039;s Hardware who has also written for HotHardware and Tech Report. Ever since typing in games from magazines in ATARI BASIC on his family&#039;s Atari 800XL as a youth, Zak has been deeply fascinated with the capabilities of computers. His passion for gaming as a kid led to more technical engagement with PCs as a teenager, when he first built his own system: an AMD K6. Not long after, he founded his own PC repair shop in the year 2000. Now, decades later, he&#039;s still building and benchmarking new boxes, still gaming in every free hour, and still arguing on the internet with almost any opinion anyone has. Something of a modern-day Renaissance man, he may not be an expert on anything, but he knows just a little about nearly everything. &lt;/p&gt;",
+      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n&lt;p&gt;Zak Killian is a freelance contributor to Tom&#039;s Hardware who has also written for HotHardware and Tech Report. Ever since typing in games from magazines in ATARI BASIC on his family&#039;s Atari 800XL as a youth, Zak has been deeply fascinated with the capabilities of computers. His passion for gaming as a kid led to more technical engagement with PCs as a teenager, when he first built his own system: an AMD K6. Not long after, he founded his own PC repair shop in the year 2000. No",
+      "category": "CPU",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/pc-components/overclocking/developer-vibe-codes-a-tool-to-let-nvidia-rtx-50-series-laptop-owners-crank-up-their-power-limits-can-juice-rtx-5090-mobile-gpu-to-225w",
+      "original_author": "Tom's Hardware",
+      "published_at": "2026-09-16T15:19:42+00:00",
+      "created_at": "2026-09-16T17:37:39.525916+00:00"
+    },
+    {
+      "id": "ea05813a-a5d3-4e76-bc1f-6d550732cc0b",
+      "title": "&lt;p&gt;Shane has a backgroun...",
+      "summary": "&lt;p&gt;Shane has a background in computer engineering and has worked as a freelance consultant in multiple industries....",
+      "key_points": [
+        "&lt;p&gt;Shane has a background in compu"
+      ],
+      "full_content": "&lt;p&gt;Shane has a background in computer engineering and has worked as a freelance consultant in multiple industries. He has a strong affection for history and loves to game. He worked his way up from a Commodore 64 and has always been interested in technology and writing. He particularly enjoys breaking down complex concepts into understandable ideas. He’s a lifelong East-coaster and animal-lover.&lt;br&gt; &lt;/p&gt; &lt;p&gt;&lt;br&gt; &lt;/p&gt;",
+      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n&lt;p&gt;Shane has a background in computer engineering and has worked as a freelance consultant in multiple industries. He has a strong affection for history and loves to game. He worked his way up from a Commodore 64 and has always been interested in technology and writing. He particularly enjoys breaking down complex concepts into understandable ideas. He’s a lifelong East-coaster and animal-lover.&lt;br&gt; &lt;/p&gt; &lt;p&gt;&lt;br&gt; &lt;/p&gt;",
+      "category": "Digital",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/tech-industry/semiconductors/piecemakers-bets-edge-ai-devices-will-diverge-from-reliance-on-hbm-custom-designed-memory-fuses-dram-stack-directly-to-the-processor-using-hybrid-bonding",
+      "original_author": "Tom's Hardware",
+      "published_at": "2026-09-16T14:36:48+00:00",
+      "created_at": "2026-09-16T17:37:39.525966+00:00"
+    },
+    {
+      "id": "a043e43e-af78-4b61-8ffd-3d025154ec88",
+      "title": "&lt;p&gt;Kunal Khullar is a co...",
+      "summary": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-se...",
+      "key_points": [
+        "&lt;p&gt;Kunal Khullar is a contributor "
+      ],
+      "full_content": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked for various publications covering a range of topics including smartphones, laptops, audio devices, and PC hardware. Currently, he is engrossed with everything happening in the world of computing with a growing obsession for unique PC cases and RGB cooling fans. Through his articles Kunal strives to demystify complex concepts for a broad audience. Kunal is also a casual gamer as he loves to squad up with his friends in &lt;em&gt;Apex Legends&lt;/em&gt;, and claims to have a fairly good taste in music especially when it comes to heavy metal.&lt;/p&gt;",
+      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked fo",
+      "category": "AI",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/video-games/denuvo-sues-anonymous-game-cracker-voices38-over-alleged-drm-circumvention-seeks-damages-after-anti-tamper-protections-bypassed-in-26-games",
+      "original_author": "Tom's Hardware",
+      "published_at": "2026-09-16T14:22:54+00:00",
+      "created_at": "2026-09-16T17:37:39.526003+00:00"
+    },
+    {
+      "id": "40e2a079-7cd2-4a55-b68a-85585949b01d",
+      "title": "&lt;p&gt;Anton Shilov has been...",
+      "summary": "&lt;p&gt;Anton Shilov has been in the PC industry since 1990s playing games, building PCs, and writing stories about pre...",
+      "key_points": [
+        "&lt;p&gt;Anton Shilov has been in the PC"
+      ],
+      "full_content": "&lt;p&gt;Anton Shilov has been in the PC industry since 1990s playing games, building PCs, and writing stories about pretty much everything that relates to PCs, Macs, smartphones, tablets, and even fab equipment. Over his career, he has worked at a variety of high-ranking websites, including AnandTech, EE Times, TechRadar, X-bit Labs, and now Tom&#039;s Hardware. He is also a regular features contributor to Tom&#039;s Hardware Premium, writing about the latest developments in the semiconductor industry and related tech news and roadmaps. When Anton is not reading or writing about something high-tech, he is probably watching a good movie, playing a video game, or spending time with his family.&lt;/p&gt;",
+      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n&lt;p&gt;Anton Shilov has been in the PC industry since 1990s playing games, building PCs, and writing stories about pretty much everything that relates to PCs, Macs, smartphones, tablets, and even fab equipment. Over his career, he has worked at a variety of high-ranking websites, including AnandTech, EE Times, TechRadar, X-bit Labs, and now Tom&#039;s Hardware. He is also a regular features contributor to Tom&#039;s Hardware Premium, writing about the latest developments in the semiconductor i",
+      "category": "Semiconductor",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/pc-components/dram/micron-announces-512gb-ddr5-9200-memory-modules-with-16w-power-draw-up-to-12tb-per-server-claims-60-percent-less-energy-intensive-than-four-128gb-modules",
+      "original_author": "Tom's Hardware",
+      "published_at": "2026-09-16T14:07:31+00:00",
+      "created_at": "2026-09-16T17:37:39.526029+00:00"
+    },
+    {
+      "id": "3110872a-5230-4d13-b230-fb34a3dc18da",
+      "title": "&lt;p&gt;Kunal Khullar is a co...",
+      "summary": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-se...",
+      "key_points": [
+        "&lt;p&gt;Kunal Khullar is a contributor "
+      ],
+      "full_content": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked for various publications covering a range of topics including smartphones, laptops, audio devices, and PC hardware. Currently, he is engrossed with everything happening in the world of computing with a growing obsession for unique PC cases and RGB cooling fans. Through his articles Kunal strives to demystify complex concepts for a broad audience. Kunal is also a casual gamer as he loves to squad up with his friends in &lt;em&gt;Apex Legends&lt;/em&gt;, and claims to have a fairly good taste in music especially when it comes to heavy metal.&lt;/p&gt;",
+      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked fo",
+      "category": "AI",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/pc-components/ram/ai-induced-memory-shortage-is-changing-how-devices-are-built-fairphone-says-memory-now-60-percent-of-materials-cost-smaller-laptop-and-phone-makers-are-redesigning-products-and-have-to-test-for-fake-chips",
+      "original_author": "Tom's Hardware",
+      "published_at": "2026-09-16T12:15:42+00:00",
+      "created_at": "2026-09-16T17:37:39.526054+00:00"
+    },
     {
       "id": "edc34407-3780-48e9-9fd1-2dbd48773cc6",
       "title": "TeRAM获3700万美元融资，研发3D SRAM突破AI内存墙",
@@ -5175,186 +5335,6 @@
       "original_author": "@IT之家",
       "published_at": "2026-07-25T15:34:57+00:00",
       "created_at": "2026-07-25T20:33:13.639591+00:00"
-    },
-    {
-      "id": "dd835836-36b1-41d2-8014-6ea87bd3bf1b",
-      "title": "SpaceX星舰第13次试飞创历史：首次完整溅落+V3卫星部署+发动机二次点火成功",
-      "summary": "星舰V3完成近乎完美的第13次试飞，实现全球首次完整飞船海上漂浮、首次部署Starlink V3卫星、首次成功验证离轨发动机二次点火，为轨道级任务奠定关键基础。",
-      "key_points": [
-        "飞船溅落后完整漂浮，隔热瓦经受1430℃高温考验",
-        "首次发射并验证Starlink V3卫星亚轨道性能",
-        "成功完成猛禽发动机离轨点火测试"
-      ],
-      "full_content": "&lt;p&gt;Jowi Morales is a writer and journalist covering the tech beat since 2021. However, he’s been interested in technology far earlier than that. He started discovering desktop computers when his father brought home a Windows 95 PC, but his first real experience working under the hood of the PC was when the old computer’s hard drive was filled to the brim in the year 2000. He deleted the Windows folder to attempt to rectify the situation, which led to his dad buying a new desktop PC. Since then, he learned a lot more about computers, and he’s always been the go-to tech expert for his family and friends.&lt;/p&gt;&lt;p&gt;Jowi primarily uses a Windows workstation and an Android phone, but he also bought into the Apple ecosystem with the 6th-gen iPad, iPhone 14 Pro Max, and the M1 MacBook Air. Today, Jowi covers hardware and software from Redmond and Cupertino, while also looking at the tech industry in general.&lt;/p&gt;&lt;p&gt;Aside from covering technology, Jowi is an avid photographer and writes about automobiles, aviation, and tanks. You can find his bylines at &lt;a href=&quot;https://www.makeuseof.com/author/jowi-morales/&quot;&gt;MakeUseOf&lt;/a&gt;, &lt;a href=&quot;https://www.slashgear.com/author/jowimorales/&quot;&gt;SlashGear&lt;/a&gt;, and, of course, &lt;a href=&quot;https://www.tomshardware.com/author/jowi-morales&quot;&gt;Tom’s Hardware&lt;/a&gt;.&lt;/p&gt;",
-      "ai_summary": "发生了什么：2026年7月25日，SpaceX星舰V3完成第13次全尺寸试飞，取得多项历史性突破：飞船在印度洋预定海域实现完整溅落并长时间漂浮，1.8万块陶瓷隔热瓦完好无损；首次搭载并成功部署20颗新一代Starlink V3卫星，获取关键太空遥测数据；首次完成发动机离轨二次点火（持续14秒），验证轨道机动核心能力。尽管超重型助推器回收失败，但整体任务目标达成率创历史新高。\n\n为什么重要：此次试飞标志着星舰从“亚轨道验证平台”向“轨道级运载工具”迈出决定性一步。完整溅落不仅提供前所未有的隔热层在轨后状态数据，更证明飞船结构强度足以支撑快速复用愿景；V3卫星的成功测试，解决了其因体积重量过大而无法由猎鹰9号发射的瓶颈，为星链大规模升级扫清障碍；离轨点火的成功，则是未来执行月球着陆、轨道燃料加注等复杂任务的技术基石。NASA局长直言其将“确保人类永久守住月球”，凸显其对深空探索的战略价值。\n\n对行业有什么影响：对航天产业而言，星舰的可靠性提升将重塑商业发射市场格局，挤压ULA、Arianespace等传统火箭商生存空间，加速全球重型运载能力向低成本、高频次方向演进。对半导体与电子产业，星舰任务对高可靠性航天级芯片（如抗辐射FPGA、宽温域传感器）需求激增，带动相关供应链升级。对AI与自动化领域，星舰海量飞行数据（尤其是隔热层热力学模型、发动机燃烧稳定性参数）将成为训练航天AI系统的宝贵数据集。长远看，若星舰实现每日多次发射，其对全球物流、太空制造乃至地月经济体系的催化作用，将远超当前想象。",
-      "category": "Digital",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/0/981/610.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-07-25T15:34:57+00:00",
-      "created_at": "2026-07-25T23:37:04.064497+00:00"
-    },
-    {
-      "id": "5af30b44-7ccc-4e2e-97c6-a830504ff5c2",
-      "title": "NEC发布Windows商用平板LAVIE BT53C，搭载Ultra 7处理器",
-      "summary": "NEC在日本发布高端Windows商用平板LAVIE BT53C，配备13英寸3:2 IPS触控屏、酷睿Ultra 7处理器、32GB LPDDR5X内存及Wi-Fi 7/5G，起售价25312元人民币。",
-      "key_points": [
-        "13英寸2880×1920 3:2触控屏，亮度500nits",
-        "可选Ultra 7 365/355或Ultra 5 332处理器",
-        "集成Pogo-Pin数字笔仓，支持4096级压感"
-      ],
-      "full_content": "&lt;p&gt;Hassam is a lifelong PC gamer and tech enthusiast with over five years of experience in PC hardware journalism. His passion began in childhood when he rescued a discarded Pentium 4 processor, straightening its pins with a kitchen knife to revive a Dell Dimension 2400 at the age of seven. Since then, he has followed the advancements in technology, witnessing the evolution of hardware from the era of AMD&#039;s Opteron architecture to Intel&#039;s Smithfield (Pentium D), and the rise of Voodoo GPUs alongside Nvidia&#039;s FX GPUs taking the market by storm to the latest innovations today. As a seasoned writer, Hassam loves to get into the nitty-gritty details of hardware, providing insights on everything from CPUs, Motherboards and RAM to GPUs. When he’s not writing, you’ll find him building custom water-cooled PCs for himself and his friends, attending drag racing events, or collecting niche fragrances.&lt;/p&gt;",
-      "ai_summary": "发生了什么：日本老牌PC厂商NEC于2026年7月23日发布全新商用级Windows平板电脑LAVIE BT53C，定位于高端移动办公与专业创作场景。该设备采用13.0英寸3:2比例IPS电容触控屏（2880×1920分辨率，500nits峰值亮度），搭载英特尔最新酷睿Ultra 7 365/355或Ultra 5 332处理器，板载最高32GB LPDDR5X内存与512GB PCIe NVMe SSD；机身厚度仅9.3mm，重量约866g，支持Wi-Fi 7与可选5G蜂窝网络，配备双雷电4接口、5MP前置+8MP后置摄像头，并创新集成Pogo-Pin金属触点键盘，内置4096级压感数字笔收纳仓。\n\n为什么重要：LAVIE BT53C是全球首款将英特尔Ultra系列处理器、Wi-Fi 7、5G全连接与专业级手写生态深度整合的商用平板，其3:2屏幕比例与高分辨率专为文档阅读、表格处理与分屏协作优化，直击企业用户对‘移动生产力’的核心痛点。NEC此举并非简单跟进Surface Pro路线，而是依托日本政企市场对安全性、本地化服务与长生命周期支持的严苛要求，打造符合JIS标准与日本工业设计审美的本土化高端平板，填补了国际品牌在东亚商用细分市场的空白。\n\n对行业有什么影响：该产品强化了Windows平板在专业领域的不可替代性，尤其对建筑、医疗、教育等需要高精度手写批注的行业形成示范效应；其成功将推动更多OEM厂商加速导入Ultra处理器平台与Wi-Fi 7模组，加速相关芯片与天线方案的规模化落地。对英特尔而言，LAVIE BT53C是Ultra平台商用化的关键里程碑，验证了其AI PC战略在非消费级市场的可行性；对产业链而言，也带动了超薄精密结构件、低功耗触控IC、高集成度5G基带等配套技术的协同发展。",
-      "category": "Digital",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/0/981/600.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-07-25T15:18:22+00:00",
-      "created_at": "2026-07-25T20:33:13.639606+00:00"
-    },
-    {
-      "id": "e40f69f3-4a05-4043-a523-b3bd25330e32",
-      "title": "Debian社区就LLM使用展开激烈辩论，聚焦版权、质量与社区治理风险",
-      "summary": "Debian项目就是否允许使用大语言模型辅助开发展开政策辩论，核心争议在于版权合规性、代码质量保障及对自由软件社区的潜在伤害。",
-      "key_points": [
-        "提案一：禁止LLM用于Debian项目本身",
-        "提案二：允许但要求贡献者担责并披露",
-        "争议焦点：训练数据版权、审核负担、DoS攻击风险"
-      ],
-      "full_content": "South Korea's President led an AI summit in San Francisco on Friday, and the venue became an epicenter of deal-making, with at least $750 billion worth of long-term agreements (LTAs) and MOUs inked within the span of just a few hours, and was followed by a 'family dinner' attended by representatives from NVIDIA, Broadcom, Microsoft, Samsung, SK hynix, Hyundai Motor and Naver. Samsung, SK hynix, and NVIDIA secured $750 billion worth of agreements at San Francisco's AI summit Under the terms of this agreement, NVIDIA will get a \"co-develop opportunity\" on SK hynix's next-gen HBM, helping it secure a stable [&hellip;] Read full article at https://wccftech.com/nvidia-inked-a-500-billion-agreement-with-sk-hynix-and-then-jensen-huang-asked-for-one-more-beer/",
-      "ai_summary": "发生了什么：Debian社区正在就大语言模型（LLM）在开源开发中的应用制定正式政策。目前存在两大对立提案：其一主张全面禁止LLM生成代码用于Debian核心系统，理由是LLM训练数据涉嫌侵犯GPL等自由许可证；其二则允许AI辅助，但要求贡献者必须人工审核、承担全部责任，并强制披露AI使用情况。开发者指出，LLM不仅存在版权灰色地带，其输出代码常含隐蔽漏洞、许可冲突及低质量实现，将大幅增加维护者审核负担；更严重的是，AI公司抓取开源代码训练模型的行为，已被视为对自由软件生态的系统性侵蚀。\n\n为什么重要：Debian作为Linux发行版基石与自由软件精神标杆，其决策具有风向标意义。若采纳禁令，将倒逼GitHub Copilot等工具调整开源项目过滤策略；若允许但严管，则为Linux基金会、Apache等组织提供可复用的AI治理框架。此事本质是开源运动对AI时代生产关系的再定义——当‘人类协作’让位于‘人机协作’，如何守护‘自由、透明、可审计’的核心价值？\n\n对行业有什么影响：第一，开源许可证演进：GPLv3+或新增AI训练数据条款，要求模型提供商公开数据来源并获授权；第二，代码审计工具升级：SonarQube、Coverity等将集成AI生成代码检测模块，识别训练数据污染与许可冲突；第三，企业合规压力增大：使用LLM开发商业软件的企业，需建立‘AI使用日志’与‘人工复核记录’以满足Debian等上游依赖的合规要求；第四，社区治理模式创新：可能出现‘AI贡献者’新角色，需通过考试认证其对许可证、安全规范的理解，确保AI辅助不损害开源信任根基。",
-      "category": "AI",
-      "source": "Solidot (科技)",
-      "source_url": "https://www.solidot.org/story?sid=84922",
-      "original_author": "@Solidot (科技)",
-      "published_at": "2026-07-25T14:05:35+00:00",
-      "created_at": "2026-07-25T19:34:18.061905+00:00"
-    },
-    {
-      "id": "cf521819-fcf8-48dc-978f-94676ff5090b",
-      "title": "NVIDIA与SK集团达成5000亿美元AI合作，共建下一代AI基础设施",
-      "summary": "NVIDIA与SK集团（含SK海力士）宣布总额达5000亿美元的AI战略合作，涵盖下一代HBM内存联合研发、AI工厂建设及先进封装产能扩张，旨在构建全球最强AI算力基础设施。",
-      "key_points": [
-        "合作总额达5000亿美元，为迄今最大规模AI产业协议之一",
-        "NVIDIA将深度参与SK海力士下一代HBM联合开发，确保先进内存供应",
-        "双方将共建大规模AI工厂，整合GPU、HBM与先进封装技术"
-      ],
-      "full_content": "&lt;p&gt;Anton Shilov has been in the PC industry since 1990s playing games, building PCs, and writing stories about pretty much everything that relates to PCs, Macs, smartphones, tablets, and even fab equipment. Over his career, he has worked at a variety of high-ranking websites, including AnandTech, EE Times, TechRadar, X-bit Labs, and now Tom&#039;s Hardware. He is also a regular features contributor to Tom&#039;s Hardware Premium, writing about the latest developments in the semiconductor industry and related tech news and roadmaps. When Anton is not reading or writing about something high-tech, he is probably watching a good movie, playing a video game, or spending time with his family.&lt;/p&gt;",
-      "ai_summary": "发生了什么：NVIDIA与韩国SK集团（包括其核心半导体子公司SK海力士）在旧金山AI峰会上正式签署一项总值高达5000亿美元的长期战略协议。该协议不仅涵盖NVIDIA对SK海力士下一代高带宽内存（HBM）的“联合开发机会”，更延伸至共建超大规模AI数据中心——即所谓“AI工厂”，并涉及先进封装（如CoWoS-L）产能协同扩张。此举标志着AI硬件供应链正从单一芯片竞争，升级为覆盖内存、互连、封装、系统集成的全栈式生态联盟博弈。\n\n为什么重要：HBM是当前AI大模型训练的瓶颈性资源，其带宽与容量直接决定GPU性能上限。NVIDIA深度绑定SK海力士，实质上锁定了未来2–3代HBM（HBM4及后续）的核心产能与技术路线主导权，大幅削弱AMD、Intel等竞争对手获取先进内存的能力。同时，“AI工厂”模式将GPU、内存、网络与供电系统进行垂直整合，代表AI基础设施正从通用服务器向专用化、规模化、一体化方向演进，这比单纯发布新GPU更具战略纵深。\n\n对行业有什么影响：首先，该协议将进一步巩固NVIDIA在AI硬件生态中的“架构定义者”地位——它不再仅卖芯片，而是主导整个AI计算堆栈的设计标准与供应节奏。其次，SK海力士借此跃升为全球AI内存无可争议的领导者，其技术话语权将反向影响TSMC、三星等代工厂的先进封装布局。第三，此类超大规模政企协同项目可能加速全球AI基建“阵营化”，促使美、欧、中、韩等经济体加速构建各自闭环的AI供应链体系，加剧地缘技术竞争。最后，5000亿美元的资本投入规模，也预示着AI基础设施正进入“重资产、长周期、高集中”新阶段，中小玩家将更难独立构建有竞争力的AI算力平台。",
-      "category": "AI",
-      "source": "Tom's Hardware",
-      "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-and-sk-group-enter-usd500-billion-ai-partnership-plan-to-supercharge-ai-infrastructure-with-next-gen-memory-and-massive-ai-factories",
-      "original_author": "@Tom's Hardware",
-      "published_at": "2026-07-25T13:55:35+00:00",
-      "created_at": "2026-07-25T14:50:14.613242+00:00"
-    },
-    {
-      "id": "18254a93-5424-4dd8-b7a9-8c8cf06b648f",
-      "title": "宽禁带半导体加速渗透，SiC/GaN主导数据中心与电动车，UWBG材料尚处早期",
-      "summary": "碳化硅（SiC）与氮化镓（GaN）已成为数据中心电源与电动车电驱主流，超宽禁带（UWBG）材料如氧化镓、氮化铝、金刚石仍处于实验室阶段，商业化尚需五年以上。",
-      "key_points": [
-        "SiC在800V电动车电驱、GaN在数据中心低压转换领域已大规模商用",
-        "UWBG材料（Ga2O3/AlN/金刚石）各有优势但均面临量产瓶颈",
-        "IDTechEx预测SiC将在2036年成为主导功率半导体材料"
-      ],
-      "full_content": "TSMC is the undisputed king of the global semiconductor market, and to extend its lead, it has succeeded in developing cutting-edge lithography and advanced packaging. Samsung certainly has a lot of ground to cover in this aspect, but its strengths lie in being able to secure partnerships beyond its 2nm contracts, which have ultimately led to a mammoth $200 billion agreement with Broadcom to build next-generation AI infrastructure over the next five years. The major payoff will include Samsung’s 2nm process and HBM4 memory that Broadcom will use for its AI accelerators Given that memory and storage have already established [&hellip;] Read full article at https://wccftech.com/samsung-foundry-2nm-advantage-tsmc-chip-deals-worth-billions/",
-      "ai_summary": "发生了什么：功率半导体材料正经历从硅（Si）到宽禁带（SiC/GaN）再到超宽禁带（UWBG）的代际演进。当前，SiC凭借高耐压、低损耗特性，已成800V电动车电驱逆变器标配；GaN则因超高开关频率，在数据中心48V/12V电源转换中快速替代硅基方案。而UWBG材料（如氧化镓Ga2O3、氮化铝AlN、金刚石）虽在理论性能上更优（如金刚石兼具超高禁带、热导率与电子迁移率），但均面临严峻挑战：Ga2O3热导率极低、AlN掺杂困难、金刚石单晶生长成本高昂且尺寸受限。IDTechEx评估，Ga2O3或最早于2030年后实现小批量商用，但大规模应用仍需等待。\n\n为什么重要：功率半导体是能源转换的‘心脏’，其材料进步直接决定电动车续航、数据中心PUE、风电并网效率等关键指标。SiC/GaN的成熟，标志着功率电子已进入‘性能与成本平衡’的实用阶段；而UWBG的探索，则代表人类向能源转换极限发起的终极冲锋。这场材料革命不仅关乎芯片本身，更将重塑整个能源基础设施——从电网变压器到卫星电源，都将因新材料而变得更高效、更紧凑、更可靠。\n\n对行业有什么影响：首先，SiC/GaN产业链（衬底、外延、器件、模块）将持续受益于电动车与AI数据中心双重拉动，设备与材料厂商迎来黄金期；其次，UWBG研发将吸引大量政府与风投资金，形成新的技术竞赛场，但短期内难以撼动SiC/GaN主导地位；最后，材料选择将更加‘场景化’——SiC不会被完全取代，而是在高压、高温场景保持优势；GaN在高频、中低压场景继续拓展；UWBG则可能率先在航空航天、核能等极端环境特种应用中找到突破口，形成互补而非替代的生态。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/mind-the-bandgap-the-evolving-power-electronics-materials-landscape/",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-07-25T13:37:47+00:00",
-      "created_at": "2026-07-25T18:04:13.202456+00:00"
-    },
-    {
-      "id": "1fa56dc2-6b8b-41dd-8358-0013b98e51d0",
-      "title": "中国数字经济核心产业增加值占GDP超10.5%，AI终端加速普及",
-      "summary": "《国家信息化发展报告（2025年）》显示，2025年中国数字经济核心产业增加值占GDP比重超10.5%，AI手机、AI电脑、AI眼镜等终端快速推广。",
-      "key_points": [
-        "数字经济核心产业增加值占GDP超10.5%，规模达39.6万亿元",
-        "AI终端加速落地：AI手机/电脑/眼镜规模化应用",
-        "农用无人机保有量超30万架，年作业面积破4.6亿亩"
-      ],
-      "full_content": "The GPU prices have started climbing upwards as NVIDIA announces higher price for memory kits. GIGABYTE RTX 5060 Sees a Sudden $75 Price Hike in China, and More GPUs Will Likely Get Affected Similarly Very recently, it was reported that NVIDIA has notified its board partners about a price hike for its memory kits. It appears that the change has already started to affect GPU prices. The RTX 50 series currently sits at a 20-30% higher price than the pre-RAMpocalypse period, with higher-end GPUs selling for much higher than their usual prices. Prices for budget RTX 50 series cards still [&hellip;] Read full article at https://wccftech.com/nvidia-rtx-5060-spikes-75-overnight-in-china-as-memory-kit-hike-ripples-across-the-entire-gpu-market/",
-      "ai_summary": "发生了什么：国家网信办发布的《国家信息化发展报告（2025年）》显示，中国数字经济核心产业呈现强劲增长：2025年增加值占GDP比重达10.5%以上，产业收入39.6万亿元（同比增长8.8%）；软件业收入15.48万亿元（+13.2%）；电子信息制造业增加值+10.6%。尤为突出的是AI终端的规模化落地——AI手机、AI电脑、AI眼镜等产品已从概念走向大众消费，服务机器人产量达1858.1万套（+16.1%）；农业领域，农用无人机保有量超30万架，年作业面积突破4.6亿亩，成为智慧农业主力军。\n\n为什么重要：这标志着中国数字经济已从‘消费互联网’主导向‘产业互联网+智能硬件’双轮驱动转型。10.5%的GDP占比，意味着数字经济不再是‘增量补充’，而是国民经济的‘基本盘’和‘稳定器’。AI终端的爆发式增长，背后是国产AI芯片（昇腾、寒武纪）、大模型（通义、混元）、操作系统（鸿蒙、统信）等全栈技术的成熟，形成了‘硬件-模型-应用’的正向循环。农业无人机的普及，则体现了数字技术对传统产业的深度赋能，为全球农业现代化提供了‘中国方案’。\n\n对行业有什么影响：对科技企业，AI终端市场将催生千亿级新赛道，倒逼芯片、OS、应用生态加速协同；对制造业，‘智赋制造’成为标配，工业软件、机器视觉、边缘AI需求激增；对就业市场，数字技能成为基础能力，IT之家数据显示全国数字消费规模达25.3万亿元（+8.7%），线上消费持续活跃。长远看，这一数据印证了中国‘新型工业化’路径的成功——不是简单复制西方模式，而是以AI为杠杆，撬动实体经济全要素生产率提升，为全球数字经济发展提供新范式。",
-      "category": "Digital",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/0/981/599.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-07-25T12:45:51+00:00",
-      "created_at": "2026-07-25T15:53:53.629831+00:00"
-    },
-    {
-      "id": "fd97235e-3d07-439e-8507-c0551f47ed1c",
-      "title": "华为AI眼镜推送6.0.0.157 SP2更新，新增支付宝‘小蓝环’支付与AI识图功能",
-      "summary": "华为AI眼镜发布重大系统更新，新增支付宝‘看一下支付’、AI快捷键拍照识图、录像语音提醒等功能，强化第一人称AI交互体验。",
-      "key_points": [
-        "新增‘看一下支付宝小蓝环’支付，抬手即付无需解锁手机",
-        "AI快捷键支持一键拍照识图，小艺即时解答图像内容",
-        "优化续航与系统稳定性，延续12小时综合续航与轻量化设计"
-      ],
-      "full_content": "Apple and Micron are going head to head over the former's plans to procure memory chips from China's YMTC, reports The Wall Street Journal. The Cupertino, California-based consumer electronics giant made headlines this year after it announced a price hike across multiple gadget lineups due to the historic turmoil in the memory industry stemming from the booming demand for AI chips. The Journal's report suggests that Apple is arguing to the White House that by sourcing chips from the Chinese firm, it might be able to reduce prices for Americans. Micron CEO Sanjay Mehrotra Argues Allowing Chinese Memory Firms In [&hellip;] Read full article at https://wccftech.com/micron-ceo-sanjay-mehrotras-bad-blood-with-apple-traces-back-years-report-reveals-amid-chip-standoff-efforts-to-procure-from-chinas-cxmt/",
-      "ai_summary": "发生了什么：华为AI眼镜于2026年7月25日推送6.0.0.157 SP2系统更新，这是继今年4月发布以来的最重要功能升级。更新核心在于深化‘第一人称视角AI’理念：新增‘看一下支付’功能，用户只需注视支付宝App生成的小蓝环即可完成支付，彻底摆脱手机依赖；AI快捷键新增‘拍照识图’能力，按键瞬间拍摄并交由小艺进行图文理解与解答；同时加入录像起止语音提醒、视频导入体验优化等细节改进，进一步提升日常使用流畅度。\n\n为什么重要：AI眼镜正从概念产品迈向实用工具，而华为此次更新标志着其已突破‘硬件参数竞赛’，进入‘场景定义’新阶段。‘小蓝环支付’解决了智能眼镜最大的隐私与便捷性矛盾——无需语音唤醒、不暴露屏幕内容、操作自然隐蔽；‘AI识图’则将眼镜从‘记录设备’升级为‘认知延伸器’，赋予用户实时理解物理世界的AI能力。这些功能均基于华为自研AI眼镜芯片与端侧大模型优化，体现了软硬协同的深度整合能力。\n\n对行业有什么影响：短期将显著提升华为AI眼镜在办公、教育、零售等B端场景的渗透率，例如导购员识别商品信息、教师即时解析学生作业、工程师现场识别设备参数。中期看，它为AR眼镜树立了新的交互范式标杆，迫使Meta Ray-Ban、苹果Vision Pro等竞品加速布局类似‘无感支付’与‘视觉AI’功能。长期而言，此类轻量化、强交互、端云协同的AI可穿戴设备，可能成为继手机之后的下一代个人计算平台入口，而华为凭借在AI芯片、鸿蒙OS、云服务上的全栈能力，已在此赛道建立起先发优势。不过，隐私法规、电池技术与内容生态仍是其规模化普及必须跨越的三座大山。",
-      "category": "Digital",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/0/981/595.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-07-25T12:20:42+00:00",
-      "created_at": "2026-07-25T14:50:14.613424+00:00"
-    },
-    {
-      "id": "0ddfe49f-6fe3-4b6c-8a44-2479af4255ae",
-      "title": "五大设备商交货周期延长50%-100%，AI驱动晶圆厂扩产遇瓶颈",
-      "summary": "应用材料、ASML等五大半导体设备商交付周期普遍延长至12个月，台积电、美光等客户交货期亦翻倍，AI芯片产能扩张遭遇上游设备供应瓶颈。",
-      "key_points": [
-        "主流设备交付周期从6个月延长至1年，小型供应商交期同样翻倍",
-        "AI投资热潮推高设备需求，但供应链扩产滞后",
-        "三星、SK海力士等正提前下单锁定产能"
-      ],
-      "full_content": "The God of War Laufey SDCC (San Diego Comic-Con) panel has delivered two big announcements: the game's release date and that another game featuring Kratos as the protagonist is in development. God of War Laufey was previously rumored to launch in the first half of 2027, more specifically between February and March. Well, there won't be much to wait for fans, as the game is now officially slated to debut on February 16, 2027, exclusively on PlayStation 5. As for the next Kratos game, Santa Monica Studio had already suggested there would be more stories featuring the titular God of [&hellip;] Read full article at https://wccftech.com/god-of-war-laufey-february-2027-kratos-sequel-cory-barlog/",
-      "ai_summary": "发生了什么：全球半导体设备供应链正面临前所未有的交付压力。以应用材料、ASML、泛林、TEL、KLA为首的五大设备巨头，其主流产品交付周期已普遍延长50%-100%，原本6个月可交付的设备如今需等待12个月。这一现象并非孤立，韩媒报道显示，一家为台积电、美光供货的韩国设备商，交货期也从3-4个月延长至6-8个月。背后驱动力是AI芯片带来的爆发性扩产需求——台积电、三星、SK海力士等厂商正密集建设3nm/2nm产线，而每座先进晶圆厂需数百台高端设备，远超设备商当前产能。\n\n为什么重要：设备交期延长已成为制约全球AI算力增长的‘卡脖子’环节。晶圆厂建设周期通常为2-3年，其中设备安装调试占12-18个月；若设备延迟交付，将直接导致新产能上线推迟，进而影响NVIDIA、AMD等AI芯片的供应节奏。更严峻的是，设备商自身扩产也受制于上游——精密零部件（如ASML的光学系统、应用材料的腔体）供应紧张，形成‘设备商等零件，晶圆厂等设备’的连锁延迟。\n\n对行业有什么影响：首先，将加剧AI芯片供需失衡，推高GPU价格（如RTX 5060涨价75美元），延长企业AI基础设施部署周期；其次，倒逼晶圆厂优化设备利用率，推动二手设备市场活跃及设备共享平台兴起；第三，加速设备国产化进程，中国北方华创、中微公司等厂商将获得更多验证与导入机会；最后，可能改变产业投资逻辑——资本将更关注设备商产能弹性与供应链韧性，而非单纯技术指标，推动设备行业估值体系重构。",
-      "category": "Foundry",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/0/981/587.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-07-25T07:00:00+00:00",
-      "created_at": "2026-07-25T13:29:51.777541+00:00"
-    },
-    {
-      "id": "c1e94957-fef9-4825-8206-a84291f3dae5",
-      "title": "华硕灵耀14 Air 2026发布：Zen 5+XDNA 2 NPU的AI超轻薄本",
-      "summary": "华硕发布灵耀14 Air 2026笔记本，搭载AMD锐龙AI 7 H 445处理器（Zen 5/XDNA 2），提供50 TOPS AI算力、2.8K 120Hz OLED屏与77Wh电池，定位Windows 11 AI+生态下的高性能创作本。",
-      "key_points": [
-        "首发搭载AMD锐龙AI 7 H 445，NPU算力达50 TOPS",
-        "配备2.8K 120Hz ASUS Lumina OLED屏，峰值亮度1100nits",
-        "内置77Wh电池，支持USB-C宽幅充电，续航宣称全天"
-      ],
-      "full_content": "AMD has launched its first Zen 6 CPUs, the EPYC Venice, and we use them to analyze what we can expect from the Ryzen \"Olympic Ridge\" lineup. AMD Ryzen \"Olympic Ridge\" Desktop CPUs Analyzed Using EPYC \"Venice\" Specifications, Zen 6 Brings The Next Oomph To AM5 Desktops It is surprising how AMD has evolved its strategy over the years. When the first Zen architecture launched, it was released for desktop PCs. The 1st Gen EPYC family, codenamed Naples, wouldn't arrive till a few months later. This has been the case for all Zen launches so far: Ryzen launches first, followed [&hellip;] Read full article at https://wccftech.com/amd-epyc-venice-previews-zen-6-ryzen-olympic-ridge-cpus-more-cores-3d-v-cache-clocks/",
-      "ai_summary": "发生了什么：华硕于2026年7月25日发布灵耀14 Air 2026，这是首款将AMD最新Zen 5架构与XDNA 2 NPU深度融合的消费级AI笔记本。其核心配置包括：6核12线程锐龙AI 7 H 445处理器，提供高达50 TOPS的本地AI算力；14英寸2.8K 120Hz OLED屏幕，峰值亮度1100尼特，覆盖100% P3色域且ΔE<1；77Wh大容量电池配合USB-C宽幅充电，支持移动电源与手机充电器反向供电；整机厚度仅1.1cm，重量1.19kg，采用陶瓷铝CNC一体成型机身。\n\n为什么重要：该产品标志着AI PC从概念走向成熟商用。不同于早期AI PC仅依赖CPU/GPU的通用算力，灵耀14 Air 2026通过XDNA 2 NPU实现了真正的‘专用AI加速’——其预装的‘小硕知道’助手可离线运行AI绘图、文档总结、实时翻译等功能，响应速度与隐私性远超云端方案。同时，它完美契合Windows 11 AI+生态，将AI能力无缝融入相册管理、视频剪辑、会议记录等高频场景，证明AI不再是附加功能，而是操作系统级生产力引擎。\n\n对行业有什么影响：首先，将加速AI PC硬件标准统一：50 TOPS正成为高端AI笔记本的基准门槛，促使Intel Meteor Lake与高通骁龙X Elite竞相对标，推动NPU性能竞赛白热化。其次，重塑笔记本产品定义——轻薄本不再仅比拼续航与便携，更需在AI算力、屏幕素质、音频体验上全面突破，华硕四扬声器+杜比全景声的配置即为例证。最后，对内容创作者意义重大：LPDDR5X 8000MT/s内存与PCIe 4.0 SSD的组合，配合本地AI加速，使视频AI降噪、实时字幕生成、草图转高清图等任务可在移动场景高效完成，模糊了移动办公与专业工作站的界限。",
-      "category": "Digital",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/0/981/549.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-07-24T22:10:41+00:00",
-      "created_at": "2026-07-25T10:45:24.073743+00:00"
-    },
-    {
-      "id": "d6d4f97c-d46d-43aa-8337-427b7387224b",
-      "title": "苹果M5 Pro MacBook Pro 14英寸享500美元优惠，2TB SSD+24GB统一内存",
-      "summary": "亚马逊限时促销，苹果14英寸M5 Pro MacBook Pro（2TB SSD/24GB内存）直降500美元，售价1999美元，创该配置历史低价。",
-      "key_points": [
-        "M5 Pro MacBook Pro 14英寸2TB版本降至1999美元",
-        "搭载15核CPU+16核GPU，性能对标M4 Ultra",
-        "促销反映MacBook全系价格策略调整与库存优化"
-      ],
-      "full_content": "AMD has launched its first Zen 6 CPUs, the EPYC Venice, and we use them to analyze what we can expect from the Ryzen \"Olympic Ridge\" lineup. AMD Ryzen \"Olympic Ridge\" Desktop CPUs Analyzed Using EPYC \"Venice\" Specifications, Zen 6 Brings The Next Oomph To AM5 Desktops It is surprising how AMD has evolved its strategy over the years. When the first Zen architecture launched, it was released for desktop PCs. The 1st Gen EPYC family, codenamed Naples, wouldn't arrive till a few months later. This has been the case for all Zen launches so far: Ryzen launches first, followed [&hellip;] Read full article at https://wccftech.com/amd-epyc-venice-previews-zen-6-ryzen-olympic-ridge-cpus-more-cores-3d-v-cache-clocks/",
-      "ai_summary": "发生了什么：亚马逊平台上线限时优惠活动，将苹果最新款14英寸M5 Pro MacBook Pro（2TB SSD + 24GB统一内存）售价从官方标价2499美元大幅下调至1999美元，降幅达20%，为该配置自2026年3月发布以来最低成交价。该机型搭载第二代M5 Pro芯片，集成15核CPU与16核GPU，配备Liquid Retina XDR显示屏与主动散热系统，实测AI推理性能较M4 Pro提升约40%，接近M4 Ultra水平，是目前性能最强的便携式AI工作站之一。\n\n为什么重要：此次大幅降价并非孤立促销，而是苹果应对多重挑战的综合策略体现：一方面，MacBook全系在2026年上半年遭遇Windows阵营Copilot+ PC密集发布冲击，市占率承压；另一方面，M5 Pro产线良率爬坡与上游DRAM/HBM供应趋稳，使苹果获得更大成本优化空间。更重要的是，此举释放明确信号——苹果正加速将M系列芯片的AI能力从‘Pro’向‘Mainstream’下沉，为下半年发布的M5 Air及Mac mini铺路，推动AI PC普及化。\n\n对行业有什么影响：对PC市场，苹果降价将加剧高端轻薄本价格战，倒逼戴尔XPS、联想ThinkPad X1 Carbon等竞品加速推出搭载NPU的AI增强版；对开发者生态，M5 Pro的高性价比将进一步扩大macOS AI开发环境装机基数，利好Core ML、MLX等框架普及；对供应链，台积电N3E/N2P产能分配、南亚科LPDDR5x内存订单及富士康组装排程均将随之调整。长远看，此类‘性能旗舰平价化’趋势，或将重塑消费者对AI硬件的价值认知——即不再为‘参数峰值’付费，而为‘端侧AI工作流闭环’付费。",
-      "category": "Digital",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/14-inch-m5-pro-macbook-pro-2tb-amazon-deal-500-off/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-07-24T22:10:41+00:00",
-      "created_at": "2026-07-25T07:06:04.446818+00:00"
     }
   ]
 }
