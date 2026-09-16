@@ -1,0 +1,22 @@
+name: Keepalive
+
+# 防止 GitHub 因 "60 天无仓库活动" 自动停用定时任务。
+# data.json 每天提交通常已算活动；这个是兜底：每周一自动保活一次。
+
+on:
+  schedule:
+    - cron: '0 3 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 保活
+        uses: gautamkrishnar/keepalive-workflow@v2

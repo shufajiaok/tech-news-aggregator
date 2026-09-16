@@ -4,8 +4,12 @@ on:
   push:
     branches: [master]
   schedule:
-    - cron: '*/10 * * * *'
+    # UTC 01:00 / 13:00 = 北京时间 09:00 / 21:00，一天两更
+    - cron: '0 1,13 * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   scrape:
@@ -32,3 +36,23 @@ jobs:
           LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
           LLM_MODEL: ${{ secrets.LLM_MODEL }}
         run: python main.py
+
+      - name: 导出 data.json（供 App 静态拉取）
+        if: always()
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: python export_json.py
+
+      - name: 提交 data.json
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [[ -n $(git status --porcelain data.json) ]]; then
+            git add data.json
+            git commit -m "chore: 更新 data.json $(date -u +%FT%TZ)"
+            git push
+          else
+            echo "data.json 无变化，跳过提交"
+          fi
