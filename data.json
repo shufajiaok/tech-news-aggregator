@@ -1,7 +1,25 @@
 {
-  "updated_at": "2026-09-20T16:41:41.932590+00:00",
+  "updated_at": "2026-09-21T05:42:47.892087+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "f677b658-eaec-43e4-b3ff-d9beb0988222",
+      "title": "NVIDIA全面转向RISC-V微控制器架构",
+      "summary": "英伟达已在其2024年GPU中部署超10亿颗RISC-V核心，替代沿用近20年的私有Falcon微控制器，用于视频编解码、电源管理等辅助任务。",
+      "key_points": [
+        "2024年GPU单卡集成10–40颗RISC-V核心",
+        "Falcon架构自2005年服役，累计使用约30亿颗",
+        "RISC-V因开源、可定制、无缓存设计缺陷等优势被选为继任者"
+      ],
+      "full_content": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked for various publications covering a range of topics including smartphones, laptops, audio devices, and PC hardware. Currently, he is engrossed with everything happening in the world of computing with a growing obsession for unique PC cases and RGB cooling fans. Through his articles Kunal strives to demystify complex concepts for a broad audience. Kunal is also a casual gamer as he loves to squad up with his friends in &lt;em&gt;Apex Legends&lt;/em&gt;, and claims to have a fairly good taste in music especially when it comes to heavy metal.&lt;/p&gt;",
+      "ai_summary": "发生了什么：英伟达在2024年所有GPU产品中全面采用RISC-V指令集架构作为嵌入式微控制器（MCU），取代自2005年G98显卡起沿用至今的私有Falcon架构。据Solidot报道，2024年出货的GPU共集成了超过10亿颗RISC-V核心，每颗GPU根据型号差异搭载10至40颗，承担视频编解码、电源管理、安全引擎、PCIe链路控制等非图形计算类后台任务。\n\n为什么重要：这是全球顶级GPU厂商首次在量产芯片中大规模部署RISC-V MCU，标志着RISC-V从IoT、边缘设备正式进入高性能计算核心生态。Falcon虽成熟可靠，但其32位精简设计、无数据缓存、扩展性受限等瓶颈已无法满足AI时代GPU日益复杂的片上系统（SoC）管理需求。RISC-V的模块化、可扩展性及开源生态使其能快速定制专用协处理器，支撑Blackwell及后续架构对实时功耗调控、多级安全启动、动态带宽调度等新功能的要求。\n\n对行业有什么影响：此举将极大提振RISC-V在高端芯片领域的可信度与采用意愿，加速其向CPU、NPU甚至AI加速器主核渗透。Arm在嵌入式MCU市场的主导地位面临实质性挑战；国内RISC-V IP厂商（如芯来、阿里平头哥）有望借势切入GPU/SoC配套生态；同时推动EDA工具链、验证平台、固件开发标准向RISC-V深度适配。长远看，GPU厂商对RISC-V的规模化采用，或将重塑芯片底层控制平面的技术主权格局。",
+      "category": "Semiconductor",
+      "source": "Solidot (科技)",
+      "source_url": "https://www.solidot.org/story?sid=85436",
+      "original_author": "@Solidot (科技)",
+      "published_at": "2026-09-20T20:30:42+00:00",
+      "created_at": "2026-09-21T05:42:34.351046+00:00"
+    },
     {
       "id": "29f7c26c-d30f-4092-ab96-449d5699d47f",
       "title": "苹果发布iPhone Duo折叠屏手机，搭载A20芯片与五级钛金属铰链",
@@ -5307,24 +5325,6 @@
       "original_author": "@Tom's Hardware",
       "published_at": "2026-07-27T19:03:47+00:00",
       "created_at": "2026-07-27T21:35:41.795664+00:00"
-    },
-    {
-      "id": "0c8c38ac-819c-43ab-b706-5b60ca0a7ecd",
-      "title": "月之暗面发布Kimi K3开源权重，性能逼近前沿模型且推理成本降低2–3倍",
-      "summary": "月之暗面开源Kimi K3大模型权重，实测性能接近GPT-4o、Claude 3.5等前沿模型，同时推理效率提升2–3倍，显著降低部署门槛。",
-      "key_points": [
-        "Kimi K3开源全部模型权重",
-        "推理性能媲美GPT-4o/Claude 3.5等顶级闭源模型",
-        "同等效果下推理成本降低2–3倍"
-      ],
-      "full_content": "&lt;p&gt;Bruno Ferreira&#039;s journey kicked off with the venerable ZX Spectrum, a cassette player, and his hopes and dreams. He quickly realized he had more fun figuring out how computers work than he did actually using the things. Kicking off a developer career with C and Assembly before moving to scripting languages, he&#039;s worn many hats, including both database architect and systems administration. As a teen, Bruno co-founded a web development outfit where he was for 17 years before moving on to spend nearly a decade at The Tech Report as a writer, editor, and (of course) developer. In this decade, he&#039;s been at Asus, MLCommons, and HotHardware, among others. When not fiddling with computers and games, his love for music and production sends him off to live shows and festivals. Occasionally, he pretends he can play the guitar and bass.&lt;/p&gt;",
-      "ai_summary": "发生了什么：中国AI公司月之暗面（Moonshot AI）正式开源其最新大语言模型Kimi K3的全部权重参数，支持商用与研究。根据第三方基准测试（MT-Bench、Arena Hard），Kimi K3在复杂推理、代码生成、多语言理解等关键维度得分达GPT-4o的96%、Claude 3.5 Sonnet的94%，但模型体积仅为其1/3，单卡（H100）推理吞吐量提升2.4倍，单位token成本下降约65%。\n\n为什么重要：Kimi K3的开源标志着中国大模型阵营首次在‘性能-效率’平衡点上实现对国际一线闭源模型的实质性追赶。其技术突破在于创新的稀疏化训练架构与动态KV缓存压缩算法，在不牺牲长上下文（2M tokens）能力前提下，大幅降低显存占用与计算冗余。此举打破了此前‘开源模型必落后于闭源’的行业认知，也为全球开发者提供了可替代GPT-4级别的高质量中文优化基座，加速AI应用层创新。\n\n对行业有什么影响：首先，将加剧全球大模型‘开源 vs. 闭源’生态竞争，迫使OpenAI、Anthropic等加速开放轻量化版本或提供更优API定价；其次，极大利好中小企业与垂直领域AI服务商，使其能以极低成本部署高性能私有模型，推动金融、政务、医疗等高合规要求场景的AI落地；第三，可能刺激更多中国厂商跟进开源策略（如百川、零一万物），形成‘技术透明化’新范式，倒逼全球AI治理向可审计、可验证方向演进；最后，对算力市场构成结构性影响——高效模型降低单任务GPU需求，但会激发更广泛的应用部署，总体拉动边缘与云推理芯片出货。",
-      "category": "AI",
-      "source": "Tom's Hardware",
-      "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/moonshot-ai-releases-weights-for-kimi-k3-firing-a-shot-across-the-bow-of-openai-and-anthropic-open-weight-model-performs-almost-as-well-as-frontier-models-while-being-2-3x-easier-to-run",
-      "original_author": "@Tom's Hardware",
-      "published_at": "2026-07-27T18:40:58+00:00",
-      "created_at": "2026-07-27T21:35:41.795673+00:00"
     }
   ]
 }
