@@ -1,7 +1,25 @@
 {
-  "updated_at": "2026-09-25T05:38:07.089388+00:00",
+  "updated_at": "2026-09-25T17:41:29.035286+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "eb53293a-ad0e-466a-99e5-9b5e31d85b90",
+      "title": "Cadence与Synopsys深化TSMC合作，全面支持A14/N2P/3DFabric，加速AI芯片设计自动化",
+      "summary": "Cadence与Synopsys分别宣布完成TSMC A14、N2P工艺认证及3DFabric先进封装支持，并推出基于Agentic AI的芯片设计流程，覆盖数字、模拟、多芯粒全流程，显著提升AI芯片开发效率。",
+      "key_points": [
+        "Cadence/Synopsys均完成TSMC A14/N2P数字与模拟全流程认证",
+        "双方均推出Agentic AI驱动的多芯粒（3D-IC）自动布局布线与IP集成方案",
+        "UCIe-64G、HBM4、PCIe 7.0等AI关键IP已在TSMC先进节点完成流片"
+      ],
+      "full_content": "Noctua found another product where its fans can be utilized for superior cooling. The company hasn't provided many details about it, though. Noctua Posts Thermal Grizzly WireView Pro II \"Noctua\" Edition, Featuring a Different Cooling Fan Noctua's fans find their ways into various products. The company is well-known for producing high quality coolers and fans for PCs that deliver superb cooling performance while creating less noise. We have seen Noctua's fans being deployed on RTX 50 series GPUs such as the ASUS RTX 5080 Noctua Edition, as well as in accessories such as the Pulsar Feinmann F01 gaming mouse. The [&hellip;] Read full article at https://wccftech.com/noctua-teases-wireview-pro-ii-noctua-edition-for-modern-graphics-cards-with-12v-2x6-connectors/",
+      "ai_summary": "发生了什么：EDA双雄Cadence与Synopsys几乎同步宣布与台积电（TSMC）达成新一轮深度合作：双方均已获得TSMC A14与N2P工艺的数字、模拟及签核（Signoff）全流程认证，并全面支持TSMC 3DFabric（含CoWoS、SoIC、UCIe）等先进封装技术。更关键的是，两家公司均将‘Agentic AI’（智能体AI）深度融入设计流程——Synopsys推出基于LLM的模拟设计迁移与多芯粒协同布局优化，Cadence则发布AI驱动的UCIe自动布线与3D-IC系统级规划工具。此外，双方硅验证IP库已覆盖AI芯片全部关键接口：UCIe-64G、HBM4E、PCIe 7.0、224G SerDes等均已在TSMC N3P/N2P节点完成流片验证。\n\n为什么重要：AI芯片设计正面临‘三重复杂性爆炸’：晶体管数量突破百亿、芯粒数量达数十颗、接口协议迭代加速。传统EDA工具依赖工程师手动调试与经验判断，已无法应对。此次合作标志着EDA行业正式进入‘AI Agent协同时代’——AI不再仅是单点工具加速器，而是作为‘数字工程师’参与架构探索、RTL生成、物理实现、签核验证等全环节，并能自动协调不同工具链、不同IP模块间的语义一致性。这将AI芯片的平均设计周期从18–24个月压缩至12个月以内，同时显著降低首片成功率风险。\n\n对行业有什么影响：首先，将加速AI芯片创业潮。中小设计公司无需组建百人团队，即可借助AI Agent流程快速完成AI加速器原型设计，降低技术门槛与资金壁垒。其次，重塑EDA商业模式。传统License销售正转向‘AI Agent订阅+算力服务’模式，EDA厂商需提供云端AI算力与持续更新的Agent技能库。最后，对晶圆厂构成新挑战。TSMC需与EDA厂商共建更精细的工艺模型与PDK，确保AI Agent能准确预测先进封装下的电热力耦合效应，这将推动‘工艺—EDA—设计’三方协同从‘松散联盟’迈向‘深度绑定’，形成新的技术护城河。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/when-ai-agents-cross-chip-design-silos/",
+      "original_author": "@Semiconductor Engineering",
+      "published_at": "2026-09-25T14:49:18+00:00",
+      "created_at": "2026-09-25T17:41:22.029176+00:00"
+    },
     {
       "id": "1af031f3-b246-47f8-a8fd-9bf784c351af",
       "title": "Fraunhofer研发4–420GHz超宽带分布式放大器MMIC",
@@ -5309,24 +5327,6 @@
       "original_author": "@IT之家",
       "published_at": "2026-07-29T12:07:36+00:00",
       "created_at": "2026-07-29T12:26:29.691748+00:00"
-    },
-    {
-      "id": "b6111825-79bd-4739-ab56-a9578d0f2825",
-      "title": "华硕ZenScreen Duo双屏便携显示器开售，售价1999元",
-      "summary": "华硕发布ZenScreen Duo MB14FCD双屏便携显示器，配备两块14英寸FHD IPS屏，亮度350尼特，支持360°转轴与多模式使用，售价1999元。",
-      "key_points": [
-        "双14英寸16:10 FHD IPS屏幕",
-        "350尼特亮度，100% sRGB色域",
-        "支持横竖屏/帐篷模式及直通充电"
-      ],
-      "full_content": "&lt;p&gt;Luke is a freelance technology journalist who has been covering hardware and semiconductors since 2020. He began his career at All About Circuits and has since contributed to EE Power and Laptop Mag. Luke has a particular interest in semiconductors, microelectronics, and the industry shifts that shape the devices we use every day. Above all, he loves making complex technology accessible to experts and enthusiasts alike. Luke&#039;s interest in hardcore computing can be traced back to his university studies, when he responsibly spent his very first student loan payment on a custom-built gaming rig equipped with a GTX 780 Ti. &lt;/p&gt;",
-      "ai_summary": "发生了什么：华硕在台北电脑展（Computex）上发布的ZenScreen Duo MB14FCD双屏便携显示器正式开售，官方定价1999元人民币。该产品采用两块14英寸、1920×1200分辨率的IPS面板，亮度达350尼特，覆盖100% sRGB色域，官方宣称可构建约20英寸等效工作空间；结构上配备360°旋转转轴、标准三脚架接口及内置折叠支架，支持横屏、竖屏、帐篷等多种使用形态；接口配置为双USB-C加mini-HDMI，支持笔记本供电与反向直通充电，并可通过DisplayWidget Center软件自动识别屏幕朝向并切换显示模式。\n\n为什么重要：在移动办公与内容创作需求持续增长的背景下，双屏便携显示器正成为轻薄本用户的高效生产力外设。华硕此举填补了中高端双屏便携市场的空白——相比单屏竞品（如联想ThinkVision M14），其双屏协同设计显著提升多任务处理效率；相比高端专业双屏（如戴尔UltraSharp系列），1999元定价更具性价比。其模块化设计也延续了华硕在ZenBook生态中的扩展逻辑，强化了‘笔记本+显示器’一体化体验。\n\n对行业有什么影响：该产品进一步推动便携显示器从‘单一扩展屏’向‘移动工作站’演进，倒逼厂商在屏幕素质、结构创新与软件协同上加大投入。同时，双USB-C接口与直通充电功能成为新标配，将加速USB-C PD供电协议在显示设备中的普及。长期看，随着OLED微型屏成本下降与折叠屏技术成熟，未来双屏便携设备或向更高刷新率、更低功耗及柔性形态演进，而华硕此次定价策略也为后续同类产品设立了重要市场锚点。",
-      "category": "Digital",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/0/983/300.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-07-29T11:56:18+00:00",
-      "created_at": "2026-07-29T12:26:29.691776+00:00"
     }
   ]
 }
