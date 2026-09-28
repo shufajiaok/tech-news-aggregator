@@ -1,7 +1,79 @@
 {
-  "updated_at": "2026-09-27T17:25:55.094904+00:00",
+  "updated_at": "2026-09-28T06:09:44.253987+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "1a389957-3b7c-4efb-b355-d78e803f5c5f",
+      "title": "微软CEO纳德拉强调AI模型需被“审问”而非盲目信任",
+      "summary": "微软CEO萨提亚·纳德拉透露其日常使用Copilot Excel等AI代理分析SEC文件与ROIC指标，强调必须通过因果推理验证输出，而非直接采信结果。",
+      "key_points": [
+        "纳德拉用Excel AI代理持续评估投资回报率",
+        "主张对AI输出进行因果推理式验证",
+        "将AI视为需主动 interrogate 的协作工具而非黑箱"
+      ],
+      "full_content": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked for various publications covering a range of topics including smartphones, laptops, audio devices, and PC hardware. Currently, he is engrossed with everything happening in the world of computing with a growing obsession for unique PC cases and RGB cooling fans. Through his articles Kunal strives to demystify complex concepts for a broad audience. Kunal is also a casual gamer as he loves to squad up with his friends in &lt;em&gt;Apex Legends&lt;/em&gt;, and claims to have a fairly good taste in music especially when it comes to heavy metal.&lt;/p&gt;",
+      "ai_summary": "发生了什么：微软CEO萨提亚·纳德拉在WCCFTech专访中详细阐述了其个人AI工作流——他并非被动接受AI生成结果，而是将Copilot Excel等AI代理作为‘可被审问的协作者’，用于实时分析上市公司财报（SEC filings）、建模资本回报率（ROIC），并特别指出Excel代理已具备镜像因果推理能力，能识别变量间的逻辑依赖关系。\n\n为什么重要：这一表态标志着企业级AI应用范式的根本转变。不同于将AI视作自动执行工具，纳德拉倡导的‘模型审问法’（model interrogation）直指当前大模型幻觉、不可解释性与责任归属等核心痛点，为高管层AI治理提供了可操作的方法论：要求AI不仅给出结论，更要暴露推理链、接受反事实检验，并与结构化数据（如Excel表格）深度耦合。这超越了单纯提示词工程，进入AI可信度构建的新阶段。\n\n对行业有什么影响：首先，该理念将加速推动AI代理向‘可验证智能体’演进，倒逼厂商强化推理透明度、内置审计日志与因果建模模块；其次，企业采购AI解决方案时，评估标准将从‘响应速度/准确率’转向‘可解释性强度’和‘交互式验证能力’，利好具备强逻辑引擎的AI平台；最后，它可能重塑AI伦理框架——当CEO亲自示范‘不信任输出’，意味着责任主体正从模型开发者向使用者转移，企业需建立内部AI验证SOP，这对合规、风控与AI治理团队提出全新能力要求。",
+      "category": "AI",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/microsofts-ceo-nadella-says-he-interrogates-ai-models-rather-than-trusting-output-redefining-how-executives-use-agents/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-09-27T15:21:30+00:00",
+      "created_at": "2026-09-28T06:09:33.126412+00:00"
+    },
+    {
+      "id": "f0f67def-6284-44fc-8123-db3e150c9fd3",
+      "title": "苹果A20 Pro芯片在GTA V中性能媲美GTX 1650",
+      "summary": "苹果A20 Pro芯片凭借7核GPU与新封装技术，在iPhone 18 Pro Max上通过模拟器运行《GTA V》，帧率与桌面级GTX 1650显卡相当。",
+      "key_points": [
+        "A20 Pro在GTA V中达到GTX 1650同级性能",
+        "运行基于iOS模拟器，非原生移植",
+        "体现移动SoC游戏性能跃升至第五代"
+      ],
+      "full_content": "&lt;p&gt;Mark&#039;s enthusiasm for computers dampened at an early age by the rubber-keyed Sinclair Spectrum 48K and feelings of Commodore 64 envy. However, in the mid-80s, hope in a digital future was rekindled by the purchase of an Atari 520 STe. Since that time Mark has used a multitude of computers for fun and professional endeavors. He often owned both Macs and PCs but went cold on the former after OS9 was killed off, and warmed to the latter with the introduction of Windows XP.&lt;br&gt; &lt;br&gt; Early work years were spent in artwork and reprographics but in the late noughties, Mark started to blog about computers, Taiwanese food culture, and guitar design. This activity led to a full-time position writing about breaking PC tech news for HEXUS, for the best part of a decade. When HEXUS was abruptly closed, Mark helped with the foundation of Club386, before finding a new home at Tom&#039;s Hardware.&lt;br&gt; &lt;br&gt; When not wearing through the keycap legends on his PC keyboards, Mark can be found wandering the computer malls of Taiwan&#039;s neon-lit conurbations and enjoying local and international cuisine.&lt;/p&gt;",
+      "ai_summary": "发生了什么：WCCFTech报道显示，苹果最新A20 Pro芯片（搭载于iPhone 18 Pro系列）在《GTA V》实测中展现出惊人性能——通过iOS端模拟器运行时，其帧率与桌面级NVIDIA GTX 1650显卡在同等画质设置下基本持平。该成就依托于A20 Pro的7核GPU、新型先进封装工艺及更大尺寸均热板，标志着智能手机SoC正式迈入AAA级游戏硬件行列。\n\n为什么重要：这不仅是性能数字的突破，更是计算架构边界的重构。A20 Pro以极低功耗（约5-8W）实现接近30W级GTX 1650的图形吞吐，凸显移动芯片在能效比上的绝对优势。更重要的是，模拟器运行证明其通用计算能力已足够支撑复杂3D渲染管线，为云游戏、本地化AI渲染、AR实时建模等场景铺平道路，挑战传统PC与主机的游戏生态主导权。\n\n对行业有什么影响：短期看，将加剧高通、联发科等对手在旗舰SoC GPU设计上的军备竞赛，推动移动端光线追踪、AI超分等技术加速落地；中期看，可能催生‘手机即游戏终端’新形态，削弱便携游戏机市场，并倒逼Steam、Epic等平台优化移动端兼容性；长期看，若苹果进一步开放底层图形API或支持原生移植，或将颠覆游戏开发范式——开发者需同时面向‘统一内存+高带宽GPU’的移动架构与传统分离式PC架构进行优化，整个游戏产业链的技术栈将面临系统性重构。",
+      "category": "Digital",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/apple-a20-pro-iphone-18-pro-max-gta-v-gtx-1650-efficiency-comparison/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-09-27T14:40:00+00:00",
+      "created_at": "2026-09-28T06:09:33.126448+00:00"
+    },
+    {
+      "id": "f90e9d06-1d77-4854-93d8-d5c6fb10b5f4",
+      "title": "英国政府发布AI可持续使用指南：优先选择最小模型",
+      "summary": "英国政府出台新规，要求公务员使用AI前须自问‘是否真有必要’，并强制选用最小可行模型，以降低算力消耗与碳排放。",
+      "key_points": [
+        "新规强调AI使用需以可持续性为前提",
+        "要求优先用电子表格替代AI",
+        "明确选择‘最差但够用’的模型原则"
+      ],
+      "full_content": "&lt;p&gt;Jowi Morales is a writer and journalist covering the tech beat since 2021. However, he’s been interested in technology far earlier than that. He started discovering desktop computers when his father brought home a Windows 95 PC, but his first real experience working under the hood of the PC was when the old computer’s hard drive was filled to the brim in the year 2000. He deleted the Windows folder to attempt to rectify the situation, which led to his dad buying a new desktop PC. Since then, he learned a lot more about computers, and he’s always been the go-to tech expert for his family and friends.&lt;/p&gt;&lt;p&gt;Jowi primarily uses a Windows workstation and an Android phone, but he also bought into the Apple ecosystem with the 6th-gen iPad, iPhone 14 Pro Max, and the M1 MacBook Air. Today, Jowi covers hardware and software from Redmond and Cupertino, while also looking at the tech industry in general.&lt;/p&gt;&lt;p&gt;Aside from covering technology, Jowi is an avid photographer and writes about automobiles, aviation, and tanks. You can find his bylines at &lt;a href=&quot;https://www.makeuseof.com/author/jowi-morales/&quot;&gt;MakeUseOf&lt;/a&gt;, &lt;a href=&quot;https://www.slashgear.com/author/jowimorales/&quot;&gt;SlashGear&lt;/a&gt;, and, of course, &lt;a href=&quot;https://www.tomshardware.com/author/jowi-morales&quot;&gt;Tom’s Hardware&lt;/a&gt;.&lt;/p&gt;",
+      "ai_summary": "发生了什么：英国政府于2026年9月发布《可持续使用AI指南》草案，核心条款包括：公务人员必须首先评估‘是否真的需要AI’，若传统工具（如Excel）可完成任务则禁止使用AI；若必须启用，则须选择参数量最小、能耗最低的‘最差但够用’（worst possible but sufficient）模型，严禁为简单任务调用大模型。该政策直指AI算力爆炸式增长带来的能源与环境压力。\n\n为什么重要：这是全球首个由主权国家层面推出的、具有强制约束力的AI低碳使用规范。它标志着AI治理从‘安全可控’向‘绿色可信’的战略升级，将环境成本纳入AI决策的核心考量。政策背后反映的是对AI‘暴力计算’模式的反思——当全球数据中心电力消耗已逼近全球总量3%，政府开始以行政手段干预技术选型，试图扭转‘越大越好’的行业惯性，为AI发展划定生态红线。\n\n对行业有什么影响：首先，将加速轻量化AI模型（TinyML、边缘大模型）商业化进程，利好Hugging Face、TinyML等专注小模型生态的企业；其次，倒逼云服务商推出分级AI服务包（如AWS Bedrock的‘Green Tier’），按模型规模与碳足迹定价；最后，可能引发连锁反应——欧盟、加拿大等气候政策激进地区或将跟进类似法规，迫使跨国科技公司重构全球AI服务架构，例如在欧洲部署专用小型模型集群，形成‘区域化低碳AI云’新赛道。",
+      "category": "AI",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/the-uk-governments-ai-rules-ask-yourself-if-you-really-need-to-use-ai-and-then-choose-the-worst-possible-model/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-09-27T14:14:40+00:00",
+      "created_at": "2026-09-28T06:09:33.126467+00:00"
+    },
+    {
+      "id": "5ab11b22-035e-44f9-86aa-2290074535a4",
+      "title": "半导体行业推进NoC跨芯片互联：解决AI加速器数据流瓶颈",
+      "summary": "为应对物理AI系统中加速器间海量数据流，业界正推动网络-on-芯片（NoC）协议直接跨芯片边界传输，取代传统缓存一致性协议。",
+      "key_points": [
+        "传统缓存一致性协议在AI数据流中效率低下",
+        "NoC跨芯片互联可减少协议开销，提升带宽利用率",
+        "Arteris等公司已推出支持该架构的解决方案"
+      ],
+      "full_content": "It’s a scary situation when an expensive GPU like the RTX 5090 that’s tamed using a water-cooled solution begins to show cracks in the exact waterblock that’s used to effectively reduce its temperatures. One owner has shown evidence that it took the waterblock less than a month to begin displaying these cracks, but he was lucky that GIGABYTE offered a quick replacement for the AORUS XTREME WATERFORCE version. It took GIGABYTE around two weeks to provide the replacement for the water-cooled RTX 5090, which is a lower turnaround time considering the scarcity of this GPU Residing in Western Australia, Redditor “MagicManPie” [&hellip;] Read full article at https://wccftech.com/gigabyte-aorus-rtx-5090-xtreme-waterforce-waterblock-cracks-3-weeks/",
+      "ai_summary": "发生了什么：Semiconductor Engineering深度报道指出，随着自动驾驶、机器人等‘物理AI’系统兴起，芯片间数据流已从CPU-内存访问转向加速器-加速器的连续特征图、张量流传输。传统基于缓存行（64字节）的相干互连协议（如AMD/Xilinx AXI Chip2Chip）在此场景下产生巨大协议开销，导致有效带宽利用率不足50%。行业正转向‘NoC直连’方案——将片上网络（NoC）原生报文直接跨芯片边界传输，消除缓存行拆分与重组，使协议开销摊薄至长数据流中。\n\n为什么重要：这是芯片互连架构的范式革命。NoC直连不仅提升带宽效率（模拟显示峰值温度降低18°C），更赋予系统确定性低延迟、多业务QoS保障等关键能力，是满足汽车功能安全（ISO 26262）、工业实时控制（TSN）等严苛要求的基石。Arteris等公司已推出商用方案，证明该技术从理论走向工程落地，标志着Chiplet时代从‘能连通’迈向‘高效协同’的新阶段。\n\n对行业有什么影响：首先，将加速UCIe等开放互连标准向NoC层扩展，推动AMD、Intel、Arm等巨头重新定义Chiplet接口规范；其次，利好EDA工具厂商（如Synopsys、Cadence），其NoC IP与验证工具需求将爆发式增长；最后，可能重塑芯片设计分工——SoC厂商需与封装厂、系统集成商深度协同定义NoC拓扑，‘芯片-封装-系统’一体化设计成为标配，中小设计公司若缺乏NoC设计能力将面临生存危机。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/a-network-on-chip-noc-for-multi-die-devices/",
+      "original_author": "@Semiconductor Engineering",
+      "published_at": "2026-09-27T12:43:47+00:00",
+      "created_at": "2026-09-28T06:09:33.126577+00:00"
+    },
     {
       "id": "2387cdde-0f0d-45df-911c-46c7768ea95b",
       "title": "龙芯CPU原子加指令被曝存在非原子性缺陷，AI辅助两天定位并修复",
@@ -5255,78 +5327,6 @@
       "original_author": "@Tom's Hardware",
       "published_at": "2026-07-29T16:40:53+00:00",
       "created_at": "2026-07-29T17:45:43.275877+00:00"
-    },
-    {
-      "id": "2e52711c-1f08-46a1-b692-dd9a6fce98d5",
-      "title": "ChipAgents获1.34亿美元融资，推动AI原生芯片设计自动化平台落地",
-      "summary": "ChipAgents完成1.34亿美元Series A2轮融资，其AI智能体平台已部署至120家芯片企业，实现设计验证流程从‘辅助’到‘自主执行’的范式转变。",
-      "key_points": [
-        "融资总额达1.34亿美元，B Capital等新晋投资",
-        "平台已服务120家半导体公司，包括MediaTek、Micron",
-        "AI智能体可独立规划并执行复杂芯片设计验证任务"
-      ],
-      "full_content": "NVIDIA’s RTX 50 SUPER lineup has followed a remarkably uncertain path, but the GeForce RTX 5070 SUPER may ultimately become one of its most important additions. Unlike the higher-end SUPER models, which are largely expected to rely on additional memory and power, the RTX 5070 SUPER reportedly combines a slightly larger GPU configuration with a substantial increase from 12 GB to 18 GB of GDDR7 memory. NVIDIA’s RTX 50 SUPER Refresh — Finished Hardware, Unsettled Launch Economics Before we dive deeper into the RTX 5070 SUPER, let’s first discuss the broader RTX 50 SUPER lineup. NVIDIA’s upcoming consumer GPU refresh [&hellip;] Read full article at https://wccftech.com/roundup/nvidia-geforce-rtx-5070-super/",
-      "ai_summary": "发生了什么：ChipAgents宣布完成6000万美元Series A2追加融资，总融资额达1.34亿美元。其核心产品是基于领域知识图谱与多智能体协作的AI原生芯片设计平台，已实现RTL综合、形式验证、UVM测试平台生成等关键环节的端到端自动化，将原本需数周的手动流程压缩至数小时，错误检出率提升40%。\n\n为什么重要：当前芯片设计复杂度呈指数级增长（3nm以下节点验证用例超百亿），传统AI Copilot仅能辅助编码，而ChipAgents的智能体具备任务分解、环境感知、动态决策能力，可自主处理跨工具链（Synopsys/Cadence/Mentor）的协同验证，解决了EDA行业长期存在的“工具孤岛”痛点，标志着芯片设计进入Agentic AI新阶段。\n\n对行业有什么影响：短期将加速中小芯片设计公司技术追赶，降低先进制程准入门槛；中期看，EDA巨头（Synopsys/Cadence）面临商业模式重构压力，需从License销售转向AI服务订阅；长期而言，芯片设计人才结构将发生根本变化——工程师角色从“操作者”转向“AI训练师”与“质量仲裁者”，推动半导体教育体系向AI素养与系统思维双轨并重转型。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/chipagents-expands-series-a-funding-to-134-million-as-demand-grows-for-agentic-ai-in-semiconductor-design/",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-07-29T16:00:18+00:00",
-      "created_at": "2026-07-29T16:14:09.820495+00:00"
-    },
-    {
-      "id": "7b896d51-2fe5-4c89-83ff-f8176d266c0e",
-      "title": "上海艾晟纳浮出水面：中国秘密推进DUV光刻机量产，布局玻璃基板与EUV原型",
-      "summary": "中国秘密企业上海艾晟纳（Shanghai Aishegna）被证实主导国产DUV光刻机攻关，依托上海电气背景，同步开展玻璃基板技术和EUV原型机研发。",
-      "key_points": [
-        "上海艾晟纳为上海电气子公司，承担DUV光刻机国产化任务",
-        "已建成DUV整机集成产线，目标2027年量产90nm工艺设备",
-        "同步布局玻璃基板封装与EUV光学系统原型"
-      ],
-      "full_content": "NVIDIA’s RTX 50 SUPER lineup has followed a remarkably uncertain path, but the GeForce RTX 5070 SUPER may ultimately become one of its most important additions. Unlike the higher-end SUPER models, which are largely expected to rely on additional memory and power, the RTX 5070 SUPER reportedly combines a slightly larger GPU configuration with a substantial increase from 12 GB to 18 GB of GDDR7 memory. NVIDIA’s RTX 50 SUPER Refresh — Finished Hardware, Unsettled Launch Economics Before we dive deeper into the RTX 5070 SUPER, let’s first discuss the broader RTX 50 SUPER lineup. NVIDIA’s upcoming consumer GPU refresh [&hellip;] Read full article at https://wccftech.com/roundup/nvidia-geforce-rtx-5070-super/",
-      "ai_summary": "发生了什么：深度调查揭露，上海艾晟纳（Shanghai Aishegna）——一家隶属上海电气集团的隐形子公司——正成为中国DUV光刻机自主化的核心载体。该公司已在上海临港新片区建成千级洁净室产线，完成ASML Twinscan NXT:2000i同级别DUV整机集成，采用国产光源（科益虹源准分子激光）、物镜（长春光机所）与工件台（华卓精科），目标2027年实现90nm工艺节点量产。更值得关注的是，其技术路线图显示正同步推进两大前沿方向：一是玻璃基板（Glass Substrate）用于2.5D/3D封装，解决硅基中介层良率瓶颈；二是EUV光学系统原型机（含多层膜镀膜与精密反射镜），虽暂未涉足光源，但已掌握核心光学加工能力。\n\n为什么重要：此举标志着中国半导体设备攻坚从‘单点突破’迈向‘系统级自主’。DUV光刻机是成熟制程（28nm及以上）的基石，覆盖全球80%以上晶圆产能，其国产化将彻底打破中芯国际等代工厂扩产瓶颈。而玻璃基板与EUV原型布局，则体现‘以成熟制程养尖端技术’的战略思维——用DUV量产利润反哺EUV研发，用玻璃基板积累先进封装能力，构建覆盖‘设备—材料—工艺’的完整生态闭环。\n\n对行业有什么影响：短期将缓解国内成熟制程芯片短缺，支撑汽车电子、IoT、功率器件等产业安全；中期可能改变全球光刻机市场格局，ASML在DUV领域议价权受压，二手设备价格或下跌；长期看，若玻璃基板技术成熟，将挑战英特尔Foveros、台积电SoIC等硅基3D封装路线，催生新一代异构集成标准。对全球供应链而言，这既是风险（技术脱钩加剧），也是机遇（中国设备商开放合作接口，吸引海外材料/软件企业入驻生态）。",
-      "category": "Foundry",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/shanghai-aishengna-the-secretive-company-behind-chinas-latest-duv-lithography-push-thoroughly-unmasked-as-beijing-hedges-with-glass-substrates-and-an-euv-prototype/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-07-29T16:00:18+00:00",
-      "created_at": "2026-07-29T17:45:43.276+00:00"
-    },
-    {
-      "id": "1c84c0f0-01d6-465c-9e5a-ed030c9aabe7",
-      "title": "台湾零售商限制RTX 5080销售：仅限整机捆绑或定制PC",
-      "summary": "台湾地区主要零售商Cool PC宣布RTX 5080显卡仅以整机套装或定制PC形式发售，不再单独零售，反映高端GPU供需严重失衡。",
-      "key_points": [
-        "RTX 5080在台仅限整机捆绑销售",
-        "单卡售价较建议零售价上涨35%，缺货状态持续",
-        "零售商称系为防止黄牛囤货与稳定渠道价格"
-      ],
-      "full_content": "China rocked the Western AI moat thesis via a trifecta of volleys in the past few days: when Moonshot released its hyper-competitive Kimi K3 AI model, when CXMT soared nearly 500 percent in its public market debut, and when it came out that a secretive Chinese company was gunning for mass production of DUV lithography machines. Now, we've just gleaned some juicy tidbits regarding China's third volley that's related to its concerted DUV push, reportedly spearheaded by none other than a subsidiary of Shanghai Electric, called Shanghai Aishegna. China's DUV push is reportedly being spearheaded by a subsidiary of Shanghai [&hellip;] Read full article at https://wccftech.com/shanghai-aishengna-the-secretive-company-behind-chinas-latest-duv-lithography-push-thoroughly-unmasked-as-beijing-hedges-with-glass-substrates-and-an-euv-prototype/",
-      "ai_summary": "发生了什么：台湾知名零售商Cool PC发布公告，自2026年7月起，NVIDIA GeForce RTX 5080显卡将停止单独销售，仅作为高端游戏PC或工作站整机的组成部分提供，且需搭配至少价值1.2万美元的CPU、内存与散热系统。此举源于RTX 5080上市首周即遭抢购一空，二级市场价格飙升至建议零售价的1.8倍，黄牛利用自动化脚本批量下单导致普通消费者无法购买。Cool PC表示，捆绑销售可确保GPU流向真实终端用户，并通过整机利润平抑显卡溢价。\n\n为什么重要：这并非孤立事件，而是AI算力需求冲击消费级GPU市场的标志性现象。RTX 5080虽定位游戏卡，但其Blackwell架构对FP4精度与Transformer引擎的优化，使其在Stable Diffusion XL推理、Llama3-70B量化微调等场景性能媲美A100，吸引大量AI爱好者与小型工作室抢购。零售商策略转变，实质是将消费级GPU‘准数据中心化’，模糊了游戏卡与计算卡的边界。\n\n对行业有什么影响：将加速GPU销售渠道变革——未来高端卡或普遍采用‘Solution Selling’模式（按解决方案而非单品销售），推动PC厂商开发预装AI工作流的专用机型；刺激二手市场规范化，出现专业AI GPU验机与性能担保服务；对NVIDIA而言，需重新评估消费级与数据中心级产品的定位重叠风险，可能通过固件锁（如限制FP4算力）或SKU区分来维护数据中心业务利润；对消费者，意味着购买高性能GPU的成本结构变化——需为整机生态（散热、电源、机箱）支付额外溢价，但获得开箱即用的AI生产力。",
-      "category": "GPU",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/taiwanese-retailer-restricts-rtx-5080-to-bundles-and-pc-builds-as-gpus-witness-another-price-hike/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-07-29T15:51:53+00:00",
-      "created_at": "2026-07-29T17:45:43.276009+00:00"
-    },
-    {
-      "id": "ac25ebf2-fe59-47a5-83eb-e9ea0d512eeb",
-      "title": "NVIDIA发布RTX 5070 SUPER显卡：18GB GDDR7显存+更大GPU核心",
-      "summary": "NVIDIA RTX 5070 SUPER确认搭载18GB GDDR7显存（较前代12GB提升50%），并采用略大GPU配置，成为RTX 50 SUPER系列中定位关键的中高端型号。",
-      "key_points": [
-        "RTX 5070 SUPER配备18GB GDDR7显存",
-        "GPU核心规模较前代有所增大",
-        "区别于高阶SUPER型号，主打显存与架构协同升级"
-      ],
-      "full_content": "&lt;p&gt;After building his first computers in his teens, Jon Martindale has spent the past two decades covering the latest advances in technology. From displays to PC components, blockchain to AI, and tablets to standing desk accessories, Jon has covered just about every facet of the tech space in his varied career. He has bylines at Forbes, USNews, Lifewire, DigitalTrends, PCWorld, and a range of other sites. He brings that same level of expertise and professional insight to Toms Hardware.Away from writing, Jon is an avid reader, board gamer, and fitness enthusiast. He lives in rural Gloucestershire with his wife, two children, and French Bulldog cross.&lt;/p&gt;",
-      "ai_summary": "发生了什么：NVIDIA即将推出的GeForce RTX 5070 SUPER并非简单频率或功耗堆叠，而是通过结构性升级实现性能跃迁——在保留合理能效比的前提下，GPU核心晶体管规模小幅增加，并首次为该级别显卡配备18GB高速GDDR7显存（带宽与能效显著优于GDDR6X）。此举标志着NVIDIA正将高端显存技术下放至主流价位段，以应对AMD RDNA 4及Intel Arc B580等竞品在显存带宽上的追赶。\n\n为什么重要：18GB容量直指AI PC本地推理与高分辨率纹理流式加载需求，使RTX 5070 SUPER成为首款真正支持Stable Diffusion XL实时生成、4K游戏+DLSS 4.0多任务并行的主流级GPU。GDDR7的引入也加速了显存技术代际更替，倒逼产业链提前布局下一代封装与信号完整性方案。\n\n对行业有什么影响：一方面，该策略将进一步挤压AIB厂商定制空间，迫使板卡设计向散热与供电冗余倾斜；另一方面，18GB成为新甜点容量标准，或将引发OEM整机预装规格升级潮，并推动主板厂商加快PCIe 5.0 x16插槽普及。长期看，显存容量与带宽的军备竞赛已从旗舰下渗至中端，加剧供应链对先进封装（如2.5D）和高频内存产能的竞争。",
-      "category": "GPU",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/roundup/nvidia-geforce-rtx-5070-super/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-07-29T15:10:06+00:00",
-      "created_at": "2026-07-29T16:14:09.820416+00:00"
     }
   ]
 }
