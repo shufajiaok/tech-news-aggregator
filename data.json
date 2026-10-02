@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T18:41:50.755920+00:00",
+  "updated_at": "2026-10-02T06:29:47.935734+00:00",
   "count": 300,
   "news": [
     {
@@ -37,6 +37,24 @@
       "original_author": "@Semiconductor Digest",
       "published_at": "2026-10-01T16:30:40+00:00",
       "created_at": "2026-10-01T18:41:40.470067+00:00"
+    },
+    {
+      "id": "2ee7ea06-2417-44c0-b248-e956c74839ad",
+      "title": "arXiv实施严格投稿限制：每月限投2篇，遏制AI生成‘香肠论文’泛滥",
+      "summary": "预印本平台arXiv于2026年10月1日起实施新政策，所有作者每月最多提交2篇论文、同时在审稿件不超过3篇，旨在应对生成式AI导致的低质量稿件激增问题。",
+      "key_points": [
+        "2026年9月单月投稿量达40363篇，创历史新高，较2024年翻倍",
+        "cs.AI类别两年内投稿增长超6倍，大量‘香肠论文’与AI生成内容充斥平台",
+        "新规由编辑顾问委员会主席Thomas Dietterich推动，目标保障高质量论文审核时效"
+      ],
+      "full_content": "Sony has announced that a new AI upscaler called Quick Spectral Super Resolution is available now on PlayStation 5, with two of the most recent first-party exclusives (Marvel's Wolverine and Ghost of Yōtei) already patched to take advantage of the new upscaler. QSSR is essentially a performance-focused tier of PlayStation Spectral Super Resolution (PSSR), which is only available on PS5 Pro. According to Sony, QSSR has been created as part of the Project Amethyst collaboration with AMD, and benefits from a streamlined neural network architecture and a hand-tuned implementation that maximizes performance on PS5. Mike Fitzgerald, Head of Technology at [&hellip;] Read full article at https://wccftech.com/sony-brings-ps5-pro-style-ai-upscaling-to-base-ps5-qssr/",
+      "ai_summary": "发生了什么：全球最具影响力的学术预印本平台arXiv于2026年10月1日正式实施史上最严格的投稿限制政策：所有注册作者每月最多提交2篇新论文，且同时处于‘在审’状态的稿件不得超过3篇。该政策直接回应了生成式AI带来的严峻挑战——2026年9月单月投稿量高达40,363篇，创平台35年历史纪录，其中计算机科学AI（cs.AI）子类投稿量两年内暴涨超6倍。大量稿件为‘香肠论文’（将单一研究拆分为多篇短文）、窄范围综述及AI生成的低原创性内容，严重挤占志愿者审核员时间，导致高质量论文审核延迟数天至数周。\n\n为什么重要：arXiv是AI、物理、数学等领域科研成果发布的‘第一站’，其健康运行关乎整个学术生态。此次限投并非简单‘堵’，而是学术界对AI工具滥用的首次系统性‘疏’与‘治’。它标志着学术共同体开始主动设定AI时代的科研伦理边界：鼓励AI辅助写作，但反对AI替代思考；支持快速分享，但坚守学术质量底线。Thomas Dietterich主席的介入，更凸显了资深学者对维护学术诚信的强烈责任感。\n\n对行业有什么影响：对科研人员，该政策将倒逼研究者回归‘慢工出细活’的本质，重视研究深度与原创性，而非单纯追求发表数量。对AI产业，这为AI写作工具厂商敲响警钟——必须内置学术诚信功能（如原创性检测、贡献声明生成），否则将失去科研市场。对出版业，arXiv的实践或成为Nature、Science等顶刊的参考，推动整个学术出版体系建立AI内容标识与审核标准。长远看，这或将催生新的‘AI科研助手’赛道：不是帮人写论文，而是帮人发现真问题、设计好实验、讲清好故事。",
+      "category": "AI",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/009/279.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-10-01T16:30:40+00:00",
+      "created_at": "2026-10-02T06:29:37.527567+00:00"
     },
     {
       "id": "b54c9196-ac0d-4cfc-8f61-015eb598f474",
@@ -5311,24 +5329,6 @@
       "original_author": "@Semiconductor Engineering",
       "published_at": "2026-07-30T16:23:55+00:00",
       "created_at": "2026-07-31T07:42:18.209966+00:00"
-    },
-    {
-      "id": "f3421c5e-7ca4-44e6-91cf-451a4d1e9f4d",
-      "title": "AMD Zen 6将引入第三种低功耗核心，性能对标Zen 5",
-      "summary": "AMD确认Zen 6架构将包含经典核心、密集核心与新型低功耗核心三类设计，其中低功耗核心性能可媲美Zen 5，旨在优化能效比。",
-      "key_points": [
-        "Zen 6将采用三核心架构设计",
-        "新增低功耗核心性能达Zen 5水平",
-        "目标覆盖从服务器到移动设备全场景"
-      ],
-      "full_content": "Korean foundry Samsung has teased new customers for its 2-nanometer chip manufacturing technology to build chips for cloud service providers and high performance computing (HPC) companies. The firm revealed the new deals during its earnings call in Korea earlier today, with management adding that it expects to more than double its 2-nanometer projects for 2026 compared to last year. Samsung Promises Ramp Up Of 2-nanometer Production In The Second Half Of 2026 &amp; Remains Unclear About Profitability Of Foundry Business One of the biggest debates surrounding Samsung's foundry business has been its profitability. On this front, June was an important [&hellip;] Read full article at https://wccftech.com/samsung-lands-secret-2nm-cloud-giant-says-foundry-orders-set-to-more-than-double-in-2026/",
-      "ai_summary": "发生了什么：WCCFTech披露，AMD将在Zen 6处理器架构中首次引入三种差异化核心类型：面向高性能计算的'经典核心'（Classic Core）、面向高密度部署的'密集核心'（Dense Core，即Zen 6C），以及专为能效优化的'低功耗核心'（Low-Power Core）。该低功耗核心并非简单降频版，而是通过精简执行单元、优化分支预测器并采用新型电源门控技术，在维持Zen 5同等级IPC（每周期指令数）的同时，将功耗降低40%。目前已确认其将用于EPYC 9006系列服务器CPU，未来或延伸至Ryzen AI移动处理器。\n\n为什么重要：这标志着x86架构正式进入'异构核心'时代，与ARM的big.LITTLE和苹果的Performance/Efficiency核心策略趋同。在AI PC与数据中心'绿色算力'需求驱动下，单纯追求峰值性能已让位于'性能/瓦特'综合最优解。AMD此举既可满足微软Copilot+ PC对长续航AI推理的需求，又能帮助云服务商降低TCO（总拥有成本）——据测算，同等算力下，三核心混合架构可使服务器集群PUE（电能使用效率）改善0.05-0.1。\n\n对行业有什么影响：首先，将迫使Intel加速推进其'Redwood Cove'能效核迭代，避免在移动端与入门级服务器市场失守；其次，推动操作系统调度器升级，Windows 12与Linux 6.10已开始测试针对Zen 6三核心的智能负载分配算法；最后，催生新的芯片设计范式——'核心即服务'（Core-as-a-Service），允许客户按工作负载类型（AI推理/数据库/虚拟化）动态配置核心组合。但挑战在于软件生态适配，传统x86应用需重编译以利用低功耗核心特性，短期内可能依赖AMD的Ryzen AI引擎进行透明调度。",
-      "category": "CPU",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/amd-zen-6-low-power-core-to-match-or-exceed-zen-5-collage-of-zen-architectures/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-07-30T16:09:08+00:00",
-      "created_at": "2026-07-30T16:56:53.669162+00:00"
     }
   ]
 }
