@@ -1,7 +1,25 @@
 {
-  "updated_at": "2026-10-04T06:34:56.671868+00:00",
+  "updated_at": "2026-10-04T17:14:53.642293+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "9195ea86-c3d8-4c2d-9b34-73651e23ce0e",
+      "title": "加州叫停人机格斗赛，机器人笼斗被认定为非法轻罪活动",
+      "summary": "加州州立体育委员会向一家机器人格斗公司发出停止侵权禁令，称其未经许可举办人类与三台人形机器人对战的笼斗赛属轻罪行为，要求立即停止宣传与赞助。",
+      "key_points": [
+        "禁令针对2026年9月18日REK平台举办的真人vs机器人笼斗",
+        "油管博主Frankie LaPenna先后对阵三台机器人",
+        "事件引发安全与伦理争议，追溯至1979年首例机器人致死事故"
+      ],
+      "full_content": "&lt;p&gt;Jhet Borja is a writer with various knowledge in his arsenal. As a child, he lived above an electronics repair shop and visited every afternoon and observed how radios and TVs were assembled. In highschool he became his friends and family&amp;#39;s PC builder, consultant, and tech support. Building a PC and playing Counter-Strike all night would be the itinerary for a sleepover. He&amp;#39;s since learned all sorts of things on his own, from CAD and mechanical design, woodworking, classic calligraphy, photography, working on cars, leather craft, and getting an inkjet printer to work. Jhet has previously covered leather articles, but has since transitioned to tech and has written for MakeUseOf and XDA.&lt;/p&gt;",
+      "ai_summary": "发生了什么：2026年9月18日，一家名为REK的机器人格斗公司在旧金山举办了一场真人与三台自主人形机器人同笼对抗的表演赛，由YouTube博主Frankie LaPenna作为人类选手出战。该活动迅速引发舆论关注，随后加州州立体育委员会（CSAC）于10月初正式签发停止侵权禁令，明确指出此类活动未经审批、缺乏安全监管与运动员保护机制，违反《加州体育法》，构成轻罪，要求立即中止所有相关运营。\n\n为什么重要：这是全球首个由政府监管机构以法定体育管理权限直接叫停AI驱动型人机对抗赛事的案例，标志着人工智能实体化应用已进入强监管临界点。事件背后折射出技术演进与现行法律框架的严重脱节——当前全球尚无针对‘具身智能体’（embodied AI）在公共空间内与人类进行物理交互的资质认证、责任界定及保险规范体系。1979年福特工厂工人Robert Williams死于机械臂事故的历史阴影，再度被援引为安全底线警示。\n\n对行业有什么影响：短期看，类似营销导向的机器人格斗秀将面临合规重置，需重构为受控实验室演示或经批准的竞技运动（如RoboCup模式）。中期将加速推动各国启动‘具身AI公共安全白皮书’制定，涵盖硬件安全冗余标准、实时行为审计接口、操作员资质认证等；长期则可能催生新型‘人机协同伦理保险’市场，并倒逼机器人操作系统（ROS 3.0+）强制集成联邦学习式行为围栏（Behavioral Fence）模块。值得注意的是，该事件与同期美国国防部《自主系统作战准则》修订形成政策呼应，预示‘物理世界AI’正从技术议题全面升级为社会治理核心命题。",
+      "category": "AI",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/tech-industry/robotics/robotics-startup-has-real-human-vs-robot-cage-match-california-responds-with-cease-and-desist-order-regulator-threatens-misdemeanor-charges-after-youtuber-fights-three-robotic-humanoids",
+      "original_author": "@Tom's Hardware",
+      "published_at": "2026-10-04T14:50:00+00:00",
+      "created_at": "2026-10-04T17:14:46.170426+00:00"
+    },
     {
       "id": "3c143fb0-47b2-4691-8729-aa40731be4de",
       "title": "GAIA团队用GPT-6 Astra六小时破译拿破仑217年前军事密信",
@@ -5315,24 +5333,6 @@
       "original_author": "@Solidot (科技)",
       "published_at": "2026-07-31T10:24:47+00:00",
       "created_at": "2026-07-31T15:01:12.766433+00:00"
-    },
-    {
-      "id": "8a682fda-eb80-4130-b062-391bba1239f5",
-      "title": "苹果评估采购长江存储与长鑫存储内存芯片，以缓解供应紧张",
-      "summary": "苹果在最新财报电话会中透露正评估引入中国厂商CXMT与YMTC的内存芯片，以应对持续上涨的DRAM/NAND采购成本。",
-      "key_points": [
-        "苹果承认正评估采购长江存储（CXMT）与长鑫存储（YMTC）内存芯片",
-        "此举旨在缓解供应紧张并控制成本，尽管面临美国议员反对",
-        "标志中美科技供应链出现务实性局部松动"
-      ],
-      "full_content": "In what might well be the most significant statement from its latest earnings call, Apple has conceded that it's continuing to evaluate various memory sources, including Chinese vendors, despite the emerging strong opposition from the US lawmakers. Apple does not appear to be budging on trying to secure memory chips from China's CXMT and YMTC, saying the move would help ease the ongoing supply constraints Apple gave two very important pointers on the ongoing memory dynamics in its latest earnings call. First, it said: \"We paid more for memory in the March quarter than the December quarter. We expected to [&hellip;] Read full article at https://wccftech.com/apple-says-its-evaluating-various-memory-sources-including-chinese-ones-that-would-help-us-on-the-supply-side-despite-a-pushback-from-us-senators/",
-      "ai_summary": "发生了什么：WCCFTech报道，苹果公司在2026财年Q3财报电话会议中罕见表态，确认正在‘持续评估多种内存供应来源’，其中包括中国长江存储（YMTC）与长鑫存储（CXMT）。苹果坦言，其在3月季度支付的内存采购单价较12月季度进一步上涨，供应链压力持续加剧。尽管此举引发美国参议员强烈反对，但苹果强调‘确保稳定供应’是首要商业目标，暗示其正以务实态度推进供应链多元化。\n\n为什么重要：这是苹果首次公开承认考虑采购中国存储芯片，具有标志性意义。在美政府持续加码对华半导体出口管制背景下，苹果此举并非技术让步，而是供应链韧性战略的必然选择。YMTC的Xtacking架构NAND与CXMT的LPDDR5X DRAM已通过部分国际认证，性能接近三星/SK海力士同代产品。苹果的评估行为，实质是向全球存储厂商释放信号：技术合规性与商业可行性正逐步取代纯粹的地缘政治考量，成为供应链决策的核心依据。\n\n对行业有什么影响：短期将提振YMTC与CXMT的国际客户拓展信心，加速其产品通过苹果供应链审核流程；中期可能推动其他消费电子巨头（如三星电子、联想）跟进类似评估，形成‘去风险化’采购新范式；长期则倒逼美国存储厂商提升性价比与服务响应速度，避免因政治捆绑丧失商业竞争力。但需注意，苹果此举仍属‘评估阶段’，量产导入需通过严格质量与安全审计，且可能伴随模块级封装（如将YMTC NAND与苹果控制器集成）等技术规避措施，以平衡合规与效率。",
-      "category": "Semiconductor",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/apple-says-its-evaluating-various-memory-sources-including-chinese-ones-that-would-help-us-on-the-supply-side-despite-a-pushback-from-us-senators/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-07-30T22:35:10+00:00",
-      "created_at": "2026-07-30T23:37:46.319268+00:00"
     }
   ]
 }
