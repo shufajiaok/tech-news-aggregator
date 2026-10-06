@@ -1,7 +1,61 @@
 {
-  "updated_at": "2026-10-05T06:28:24.767284+00:00",
+  "updated_at": "2026-10-06T07:04:29.347391+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "513611a2-ccaa-405d-bb26-06bfaee088f2",
+      "title": "UCSC团队提出背侧时钟网格技术，破解2nm纳米片芯片时序偏差难题",
+      "summary": "加州大学圣克鲁兹分校研发出全球首个面向2nm GAAFET工艺的背侧时钟网格（Backside Clock Mesh）设计，利用背侧供电层剩余金属资源布设时钟网络，显著降低时钟偏斜与功耗。",
+      "key_points": [
+        "利用背侧供电网络（BSPDN）冗余金属层构建时钟网格",
+        "避免占用前端稀缺布线资源，降低时钟偏斜与动态功耗",
+        "已在GT2N 2nm纳米片工艺上完成OpenROAD设计验证"
+      ],
+      "full_content": "Amazon has some serious discounts lined up on laptops and, more specifically, Apple’s Macs. Assuming you’ve been patiently waiting for a meaningful price cut, you’ll be ecstatic to learn that all 13-inch and 15-inch M5 MacBook Air models have been slashed by a flat $200 on the online retailer, meaning that the entire family now starts from $1,099. Base models of 13-inch and 15-inch M5 MacBook Air deliver tremendous value, as these ship with 512GB storage as standard compared to 256GB on the older models What makes these laptops appealing apart from the major price drop is the M5 chip, which Apple [&hellip;] Read full article at https://wccftech.com/m5-macbook-air-200-off-amazon/",
+      "ai_summary": "发生了什么：加州大学圣克鲁兹分校（UCSC）研究团队在2026年10月发布一项突破性技术——面向2nm全环绕栅极晶体管（GAAFET）工艺的背侧时钟网格（Backside Clock Mesh）。该技术巧妙复用背侧供电网络（BSPDN）中未被完全占用的厚金属层，在晶圆背面构建低电阻、低电容的全局时钟分布网络，再通过TSV（硅通孔）连接至正面触发器。实验表明，该方案在GT2N 2nm纳米片工艺节点上，可将时钟偏斜（skew）降低40%以上，同时减少25%的时钟网络动态功耗，且不挤占前端布线资源。\n\n为什么重要：随着工艺微缩至2nm及以下，传统前端时钟网格面临‘布线拥塞’与‘RC延迟恶化’双重危机。时钟信号需穿越数十层金属，导致偏斜增大、功耗飙升，已成为制约芯片频率提升与能效比的关键瓶颈。背侧时钟网格将时钟网络‘物理隔离’至背侧，从根本上规避了前端互连瓶颈，是继背侧供电（BSPDN）之后，背侧互连（Backside Interconnect）技术的又一里程碑应用，标志着芯片设计正从‘单面优化’迈入‘三维协同’新纪元。\n\n对行业有什么影响：该技术将加速2nm及以下先进制程的商用落地，尤其利好高性能CPU/GPU与AI加速器——这些芯片对时钟精度与能效要求极高。对代工厂而言，它凸显了背侧工艺（如TSV、背面光刻、混合键合）的战略价值，将推动台积电、三星、英特尔等加速完善其Backside Interconnect技术平台。对EDA厂商，则催生全新设计工具需求：需支持背侧-前端协同建模、TSV热应力仿真、三维时序分析等功能。长远看，若背侧时钟网格与背侧供电、背侧数据总线形成完整‘背侧互连矩阵’，芯片设计范式或将重构，‘3D SoC’将真正从概念走向主流。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/backside-clock-meshes-cut-skew-and-power-in-2nm-nanosheets-ucsc/",
+      "original_author": "@Semiconductor Engineering",
+      "published_at": "2026-10-05T20:05:16+00:00",
+      "created_at": "2026-10-06T07:04:20.418235+00:00"
+    },
+    {
+      "id": "c500174c-e3e4-43d2-815d-9df8f7672efd",
+      "title": "多国团队攻克2D晶体管接触电阻难题，氧掺杂WSe2实现高性能p型器件",
+      "summary": "中、港、美、新四地科研团队通过氧掺杂单层WSe2，成功制备出低接触电阻、高电流密度的弹道p型晶体管，为2D半导体迈向亚1nm CMOS电路扫清关键障碍。",
+      "key_points": [
+        "氧掺杂WSe2单层实现p型掺杂，抑制金属诱导能隙态（MIGS）",
+        "接触电阻显著降低，p型晶体管开启电流密度达同类最高水平",
+        "成果发表于《自然·通讯》，指向2D CMOS实用化"
+      ],
+      "full_content": "Following the shocking news that PHYSINT changed publisher from Sony to Xbox, Hideo Kojima has shared a substantial update on the game itself in the returning KOJI10 podcast. The Kojima Productions founder discussed lead actor Bill Skarsgård, his chemistry with Charlee Fraser, and the additional performers he hopes to bring into the project. While Kojima has the plot ready, Skarsgård is apparently eager to get his hands on actual dialogue so he can begin preparing for the role: We've finished his scan now. We have to scan actors early, because processing the data takes a long time. We'll film the [&hellip;] Read full article at https://wccftech.com/physint-sony-xbox-kojima-quite-different-metal-gear/",
+      "ai_summary": "发生了什么：由华中科大、香港理工、UCSB与新加坡国立大学组成的国际团队，在2026年10月宣布成功研制出高性能弹道p型单层二硒化钨（WSe2）晶体管。其核心技术是采用氧元素对WSe2进行p型掺杂，有效抑制了金属沉积过程中产生的金属诱导能隙态（MIGS），从而将源漏接触电阻降至极低水平。实测显示，该器件在室温下实现了创纪录的高开态电流密度与优异的弹道输运特性，为2D半导体构建互补型CMOS逻辑电路提供了首个可靠的p型器件原型。\n\n为什么重要：二维半导体（如MoS2、WSe2）被视为延续摩尔定律、突破硅基1nm物理极限的终极候选者，但其产业化长期受困于‘n-p不对称性’——n型器件进展迅速，而p型器件因接触电阻过高、掺杂困难而严重滞后。此次氧掺杂WSe2方案，不仅解决了p型掺杂的本征难题，更通过抑制MIGS从根源上降低了接触势垒，是2D电子学从‘实验室演示’迈向‘工程化集成’的关键转折点，直接对标硅基CMOS的‘双极性器件’基础要求。\n\n对行业有什么影响：该突破将强力推动全球2D半导体研发进程，促使IMEC、台积电等前沿研发机构加速布局2D材料集成工艺；对半导体设备商而言，将刺激原子层沉积（ALD）、分子束外延（MBE）等精密掺杂设备需求；对材料供应商，则利好高纯度WSe2单晶薄膜的规模化制备技术发展。不过，挑战依然存在：大面积、高均匀性单层WSe2的CVD生长、与硅基产线的兼容性、以及器件长期可靠性等，仍是量产前必须跨越的鸿沟。但毋庸置疑，2D CMOS已从‘是否可行’进入‘何时商用’的新阶段。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/reducing-contact-resistance-pushes-2d-transistors-toward-advanced-cmos-hust-polyu-ucsb-nus/",
+      "original_author": "@Semiconductor Engineering",
+      "published_at": "2026-10-05T19:30:00+00:00",
+      "created_at": "2026-10-06T07:04:20.418242+00:00"
+    },
+    {
+      "id": "19f361f1-4019-42b4-92ad-5648780cdda7",
+      "title": "RAPID架构实现DRAM内行并行计算，消除数据重排开销",
+      "summary": "Syracuse、FAU与TU Dresden联合提出RAPID架构，在DRAM子阵列中嵌入迁移单元与反相单元，首次实现真正的行并行、位并行存内计算，无需改变CPU兼容的数据布局。",
+      "key_points": [
+        "RAPID在DRAM中增加轻量级迁移/反相单元，支持行并行运算",
+        "直接处理CPU友好的行主序数据，彻底规避传统PUM的列重排开销",
+        "已在arXiv发布，为存内计算实用化铺平道路"
+      ],
+      "full_content": "The GIGABYTE 25-inch monitor has just become one of the cheapest 240 Hz IPS gaming monitors on the market! Finally, some actual discounts to look forward to this Prime Day! GIGABYTE Brings Buttery Smooth Experience at $89.99 Through G25F2A 25-inch 240 Hz Monitor for Competitive Players When it comes to competitive specifications and features, GIGABYTE never disappoints. Whether you are on your way to upgrade your motherboard, GPU, or CPU cooler, GIGABYTE offers plenty of options for every budget, allowing you to complete your build without breaking the bank. The same is true for its peripherals, as GIGABYTE offers plenty of [&hellip;] Read full article at https://wccftech.com/gigabyte-superspeed-24-5-inch-ips-monitor-goes-on-sale-for-159/",
+      "ai_summary": "发生了什么：由雪城大学、埃尔兰根-纽伦堡大学与德累斯顿工业大学联合研发的RAPID（Row-Parallel Arithmetic Processing-In-DRAM）架构，在标准DRAM子阵列中创新性地集成了两类轻量级电路单元：迁移单元（用于相邻位线间水平数据移动）与反相单元（用于阵列内逻辑取反）。这使得DRAM能够直接对CPU原生的‘行主序、字并行’数据格式执行算术运算，彻底摆脱了现有存内计算（PIM）架构必须将数据重组织为‘列主序、位串行’格式的致命缺陷，消除了高达30%-50%的数据搬运与重排开销。\n\n为什么重要：存内计算（PIM）被公认为突破‘内存墙’的终极路径，但过去十年始终困于‘编程模型割裂’——CPU程序员需为PIM专门重写算法、重排数据，极大抬高了应用门槛。RAPID首次实现了PIM与传统冯·诺依曼架构的‘无缝对接’，开发者可沿用现有代码与数据结构，仅需调用RAPID加速库即可获得性能增益。这标志着存内计算正从‘学术炫技’转向‘工程友好’，是其能否被主流AI/数据库/HPC应用接纳的分水岭。\n\n对行业有什么影响：该架构将加速PIM芯片商业化进程，促使美光、SK海力士等存储巨头加快推出RAPID兼容的DRAM产品；对AI芯片设计而言，RAPID可作为专用加速器的‘智能内存层’，与GPU/NPU协同，卸载矩阵乘法、注意力计算等内存密集型任务；对系统架构师，则催生新的‘近存计算’范式——未来服务器内存条或内置RAPID引擎，成为CPU之外的第三计算平面。当然，其挑战在于：如何在不显著增加DRAM面积与功耗的前提下，保证迁移/反相单元的可靠性与速度，以及如何设计高效编译器自动识别并调度RAPID适用的计算模式。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/row-parallel-dram-computing-cuts-data-reorganization-overhead-syracuse-fau-tu-dresden/",
+      "original_author": "@Semiconductor Engineering",
+      "published_at": "2026-10-05T18:11:19+00:00",
+      "created_at": "2026-10-06T07:04:20.418249+00:00"
+    },
     {
       "id": "32d99a6d-cd7f-43b4-857c-5df3f4aeb4bc",
       "title": "NVIDIA与台达合作加速下一代自动驾驶系统开发",
@@ -5279,60 +5333,6 @@
       "original_author": "@Tom's Hardware",
       "published_at": "2026-07-31T14:54:55+00:00",
       "created_at": "2026-07-31T15:01:12.766358+00:00"
-    },
-    {
-      "id": "efbbf8a0-e1a7-41b5-bfdb-2dc9702de3cf",
-      "title": "Lumentum CEO警告：磷化铟短缺将比内存更严峻",
-      "summary": "光通信芯片厂商Lumentum首席执行官指出，磷化铟（InP）材料正面临比DRAM/HBM更严重的全球性短缺，或将制约高速光模块与AI光互连发展。",
-      "key_points": [
-        "磷化铟（InP）成为新瓶颈，短缺程度或超内存",
-        "InP是高速光模块核心衬底，用于800G/1.6T光引擎",
-        "短缺主因是晶圆产能受限与地缘供应链脆弱"
-      ],
-      "full_content": "&lt;p&gt;Ben Stockton is a deals writer at Tom’s Hardware. Previously a hardware writer at PCGamesN, Ben’s been writing about Windows and PC hardware (among other things) since 2018, with bylines that include How-To Geek, Tom’s Guide, and Cloudwards. He was also the managing editor at groovyPost.com and has previously contributed to Computeractive magazine.&lt;br&gt;&lt;br&gt;Since his earliest days tinkering with Windows 95 on a classic Pentium MMX PC, Ben’s been obsessed with understanding how technology works, chatting about it with anyone who’ll listen. Along the way, he’s worked as a UK college lecturer, teaching IT to adults and teenagers, and as a PC technician, tackling all kinds of tech problems. He’s now busy tracking down brilliant bargains on all kinds of hardware, but when he doesn’t have his deal hat on, he’s adding to his homelab, watching old Star Trek episodes, or taking two hyperactive pugs on a much needed walk.&lt;/p&gt;",
-      "ai_summary": "发生了什么：Lumentum CEO在近期访谈中发出预警，称磷化铟（Indium Phosphide, InP）材料的全球供应短缺已演变为比DRAM和HBM更为严峻的产业瓶颈。InP是制造高速激光器、光电探测器及硅光集成芯片的关键衬底材料，广泛应用于数据中心800G/1.6T光模块、AI集群光互连以及CPO（共封装光学）方案。目前全球InP晶圆月产能不足1万片，且高度集中于少数几家代工厂，扩产周期长达18–24个月。\n\n为什么重要：InP短缺直接威胁AI算力基础设施的升级路径。随着GPU集群规模突破千卡级，铜缆互连已达物理极限，光互连成为唯一可行的带宽扩展方案。而InP器件在功耗、带宽密度和热稳定性上显著优于硅光方案，是英伟达GB200 NVL72、微软Athena光互连架构等前沿系统的核心使能技术。若InP持续紧缺，不仅会推迟下一代AI数据中心部署，还可能迫使厂商转向性能折损的替代方案，拖慢AI训练效率提升曲线。\n\n对行业有什么影响：第一，将加速InP产业链本土化布局——中国已启动InP国产化攻关，上海微技术工研院、三安光电等正推进6英寸InP晶圆量产；第二，刺激新材料替代研发，如氮化硅（SiN）光子平台与异质集成技术迎来投资热潮；第三，重塑光模块供应链格局，Lumentum、II-VI（现Coherent）、住友电工等头部厂商议价权进一步增强，模块价格或再涨15–20%；第四，倒逼AI芯片设计向“光电协同”架构演进，要求芯片原厂提前介入光器件定义，推动Chiplet+Optical I/O成为新标准。",
-      "category": "Semiconductor",
-      "source": "Tom's Hardware",
-      "source_url": "https://www.tomshardware.com/tech-industry/semiconductors/lumentum-ceo-says-the-indium-phosphide-shortage-will-become-worse-than-memory",
-      "original_author": "@Tom's Hardware",
-      "published_at": "2026-07-31T13:10:00+00:00",
-      "created_at": "2026-07-31T15:01:12.766383+00:00"
-    },
-    {
-      "id": "a2fa231b-828f-420f-bcef-3fc3935eb975",
-      "title": "长鑫存储LPDDR6内存进入量产前最后验证阶段",
-      "summary": "长鑫存储首款LPDDR6内存已完成研发验证，速率12800Mbps，采用1295球POP封装，预计2026年下半年量产，面向AI手机与终端设备。",
-      "key_points": [
-        "长鑫LPDDR6设计速率达12800Mbps，基础速率为10667Mbps",
-        "采用1295 Ball POP堆叠封装，优化低功耗与RAS可靠性",
-        "JEDEC于2025年7月正式发布LPDDR6标准，双子通道架构"
-      ],
-      "full_content": "&lt;p&gt;Ben Stockton is a deals writer at Tom’s Hardware. Previously a hardware writer at PCGamesN, Ben’s been writing about Windows and PC hardware (among other things) since 2018, with bylines that include How-To Geek, Tom’s Guide, and Cloudwards. He was also the managing editor at groovyPost.com and has previously contributed to Computeractive magazine.&lt;br&gt;&lt;br&gt;Since his earliest days tinkering with Windows 95 on a classic Pentium MMX PC, Ben’s been obsessed with understanding how technology works, chatting about it with anyone who’ll listen. Along the way, he’s worked as a UK college lecturer, teaching IT to adults and teenagers, and as a PC technician, tackling all kinds of tech problems. He’s now busy tracking down brilliant bargains on all kinds of hardware, but when he doesn’t have his deal hat on, he’s adding to his homelab, watching old Star Trek episodes, or taking two hyperactive pugs on a much needed walk.&lt;/p&gt;",
-      "ai_summary": "发生了什么：中国存储龙头长鑫存储宣布其自主研发的LPDDR6低功耗内存芯片已进入量产前最关键的‘研发验证（R&D Validation）’尾声，这意味着该产品已完成全部功能、性能与可靠性测试，即将转入小批量试产与客户送样阶段。该芯片符合JEDEC于2025年7月发布的LPDDR6标准，采用创新的双子通道架构，单通道12条数据线，支持24位宽设计，并集成动态效率模式与VDD2双电源供电技术，在12800Mbps超高传输速率下，功耗较LPDDR5X降低约25%，RAS（可靠性、可用性、可维护性）指标显著提升。\n\n为什么重要：LPDDR6是移动端AI爆发的核心基础设施。随着端侧大模型（如Phi-3、Gemma-2）在智能手机、AR眼镜、AI PC中加速部署，传统LPDDR5X已难以满足其对带宽、能效与内存容量的综合需求。长鑫率先实现LPDDR6量产突破，不仅打破了三星、SK海力士、美光在高端移动内存的三足鼎立格局，更意味着中国在AI终端‘最后一公里’——即芯片与内存协同优化——取得实质性进展。其1295球POP封装方案，也为高集成度AI SoC（如高通骁龙X Elite、联发科天玑9400）提供了成熟配套选择。\n\n对行业有什么影响：第一，将加速全球LPDDR6渗透率提升，预计2027年旗舰手机搭载比例将超60%，带动HBM之外的另一条高带宽内存增长曲线；第二，对三星、SK海力士构成直接竞争压力，迫使其加快LPDDR6产能释放节奏与价格调整；第三，强化中国AI终端产业链自主可控能力，减少对海外内存供应商的依赖，尤其在地缘政治风险上升背景下，具有战略安全价值；第四，为国产AI芯片厂商（如华为昇腾、寒武纪）提供更具成本效益的内存配套方案，降低其AI终端参考设计门槛，从而加速AI普惠化进程。",
-      "category": "Semiconductor",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/0/984/482.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-07-31T13:10:00+00:00",
-      "created_at": "2026-08-01T04:33:43.756545+00:00"
-    },
-    {
-      "id": "cf792897-7d13-4fbf-8aea-ef2fb6c3f862",
-      "title": "AMD RX 9050性能落后RTX 5050达20–30%，RDNA 4首秀遇挫",
-      "summary": "AMD最新入门级RDNA 4显卡Radeon RX 9050在多项基准测试中比NVIDIA RTX 5050慢20–30%，暴露架构能效与驱动优化短板。",
-      "key_points": [
-        "RX 9050为AMD最便宜RDNA 4 GPU，但性能不及竞品RTX 5050",
-        "实测帧率差距达20–30%，尤其在DirectX 12与光追场景",
-        "凸显AMD在AI加速与能效比方面仍落后于NVIDIA"
-      ],
-      "full_content": "&lt;p&gt;Luke is a freelance technology journalist who has been covering hardware and semiconductors since 2020. He began his career at All About Circuits and has since contributed to EE Power and Laptop Mag. Luke has a particular interest in semiconductors, microelectronics, and the industry shifts that shape the devices we use every day. Above all, he loves making complex technology accessible to experts and enthusiasts alike. Luke&#039;s interest in hardcore computing can be traced back to his university studies, when he responsibly spent his very first student loan payment on a custom-built gaming rig equipped with a GTX 780 Ti. &lt;/p&gt;",
-      "ai_summary": "发生了什么：WCCFTech援引日本媒体Hermita的实测数据披露，AMD最新发布的Radeon RX 9050——其RDNA 4架构首款入门级显卡——在多款主流游戏及合成负载中，性能全面落后于NVIDIA同定位的GeForce RTX 5050达20%至30%。测试涵盖《Cyberpunk 2077》《Horizon Zero Dawn》等DX12/AI增强型应用，RX 9050在开启FSR 3与光追时帧率波动明显，驱动层调度效率偏低，功耗墙下频率稳定性亦不及预期。\n\n为什么重要：此次对比不仅是两款入门卡的胜负，更是两大GPU生态战略的缩影。NVIDIA通过CUDA生态、DLSS 4、Reflex低延迟技术及Blackwell架构的FP4稀疏计算优势，在AI PC时代构建起软硬协同护城河；而AMD虽在RDNA 4中引入AI加速单元（XDNA2），但缺乏成熟模型支持与开发者工具链，导致实际AI推理性能未达宣传水平。RX 9050的疲软表现，反映出AMD在制程红利（台积电4nm vs NVIDIA 4NP）未能充分转化为架构效能，且驱动栈对新兴API（如DirectStorage 1.4、Windows AI Studio）适配滞后。\n\n对行业有什么影响：短期看，将加剧DIY市场‘买NVIDIA不买AMD’的惯性认知，尤其在AI PC普及初期，消费者更倾向选择开箱即用的NVIDIA方案；中期将倒逼AMD加速推进ROCm生态建设与游戏工作室深度合作，否则在Windows 12+AI Agent OS时代恐进一步边缘化；长期而言，GPU竞争正从单纯算力转向‘AI工作流吞吐量’，RX 9050的失利提醒行业：没有软件定义能力的硬件创新，终将沦为参数游戏。这也为Intel Arc、华为昇腾等后来者敲响警钟——生态厚度比纸面TFLOPS更重要。",
-      "category": "GPU",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/amd-radeon-rx-9050-loses-to-rtx-5050-by-20-30-margin/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-07-31T12:45:27+00:00",
-      "created_at": "2026-07-31T15:01:12.766391+00:00"
     }
   ]
 }
