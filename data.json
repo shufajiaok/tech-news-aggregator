@@ -1,7 +1,43 @@
 {
-  "updated_at": "2026-10-09T07:01:00.022409+00:00",
+  "updated_at": "2026-10-09T18:38:24.686858+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "bc7401c4-a4e6-42e9-bc85-f6a5ec4cddaa",
+      "title": "苹果App Store上架鸿蒙星河互联App，支持华为手机与Apple Watch互联",
+      "summary": "华为‘鸿蒙星河互联’App正式登陆苹果App Store，支持华为Mate 90/X系列等手机与Apple Watch配对，实现消息流转、查找设备、电量查看等功能，开启跨生态互联新阶段。",
+      "key_points": [
+        "鸿蒙星河互联App已上架Apple Watch端",
+        "支持华为手机与Apple Watch/AirPods双向连接",
+        "首发适配Pura X View、Mate 90系列及Mate XT 2"
+      ],
+      "full_content": "An RTX 5090 found inside an MSI pre-built gaming PC stopped working for one user when he powered it on one day, only to realize that it wasn’t being displayed on the AI software being run. Switching from Linux to Windows didn’t help, and neither did uninstalling the driver in Safe Mode. Fearing the worst, the owner set up an RMA with the company, which was kind enough to import a replacement, but also stated that the GPU stopped working because of the very software being used. RTX 5090 temperatures were completely fine when running a 27B AI model in Ollama [&hellip;] Read full article at https://wccftech.com/msi-rtx-5090-replacement-imported-ai-software-failure/",
+      "ai_summary": "发生了什么：2026年10月9日，华为官方宣布其‘鸿蒙星河互联’App已正式登陆苹果App Store的Watch专区。该应用允许搭载HarmonyOS 7.0.0.109及以上版本的华为旗舰手机（如Mate 90系列、Pura X View、Mate XT 2）与Apple Watch进行配对连接，实现跨操作系统的信息流转、来电提醒、设备查找等核心功能。同时，该App还支持华为手机与AirPods的连接，可在手机负一屏直接查看耳机剩余电量。此举是继华为与苹果在iOS 18中实现‘照片’‘信息’等基础应用互通后，在硬件级互联领域的又一次重大突破。\n\n为什么重要：在中美科技竞争与全球生态割裂的大背景下，鸿蒙与iOS两大封闭生态的主动‘破壁’具有深远象征意义。它超越了简单的‘文件传输’或‘通知同步’，触及了设备发现、身份认证、服务调用等更底层的互联互通能力。这不仅是用户体验的升级，更是对‘操作系统主权’与‘用户数据主权’的一次务实妥协——即承认用户拥有多品牌设备的现实，并以技术手段保障其无缝体验。此举也印证了华为‘1+8+N’全场景战略的成熟，其生态已具备向外辐射、兼容主流平台的能力。\n\n对行业有什么影响：首先，这将对其他安卓阵营厂商（如三星、小米）形成示范效应，促使其加速开放与iOS的互联协议，推动Matter、Thread等跨平台标准的普及。其次，它将倒逼苹果进一步开放其HomeKit、Find My等核心框架的第三方接入权限，以维持其在高端穿戴市场的吸引力。对开发者而言，跨生态SDK的成熟将催生一批新的‘桥接型’应用与服务。长远看，这或许预示着一个‘多生态共存、互操作优先’的新计算时代的到来，操作系统间的‘围墙花园’正从绝对封闭走向有条件的开放与协作。",
+      "category": "Digital",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/011/155.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-10-09T16:15:40+00:00",
+      "created_at": "2026-10-09T18:38:17.522063+00:00"
+    },
+    {
+      "id": "fd30b5df-b8aa-4ea2-87de-8e777f73c169",
+      "title": "TSMC与格芯签署20亿美元协议，美国本土化CoWoS硅中介层生产",
+      "summary": "TSMC与GlobalFoundries达成20亿美元制造协议，由格芯在纽约Malta晶圆厂为TSMC CoWoS先进封装生态量产硅中介层，预计2028年上半年启动量产，强化美国AI芯片供应链安全。",
+      "key_points": [
+        "协议金额达20亿美元",
+        "格芯将为TSMC CoWoS提供硅中介层制造服务",
+        "量产计划于2028年上半年在纽约Malta厂启动"
+      ],
+      "full_content": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked for various publications covering a range of topics including smartphones, laptops, audio devices, and PC hardware. Currently, he is engrossed with everything happening in the world of computing with a growing obsession for unique PC cases and RGB cooling fans. Through his articles Kunal strives to demystify complex concepts for a broad audience. Kunal is also a casual gamer as he loves to squad up with his friends in &lt;em&gt;Apex Legends&lt;/em&gt;, and claims to have a fairly good taste in music especially when it comes to heavy metal.&lt;/p&gt;",
+      "ai_summary": "发生了什么：全球代工龙头TSMC与美国晶圆代工厂GlobalFoundries（GF）正式签署一项价值20亿美元的长期制造合作协议。根据协议，GF将在其位于纽约Malta的先进晶圆厂，为TSMC的CoWoS（Chip-on-Wafer-on-Substrate）先进封装生态系统批量生产关键组件——硅中介层（Silicon Interposer），并支持嵌入式深沟槽电容（eDTC）等高阶功能。该合作是美国推动AI芯片供应链本土化、降低对亚洲先进封装依赖的关键一步，也是CoWoS生态首次实现核心互连元件的美国本土化制造。\n\n为什么重要：硅中介层是CoWoS封装中实现GPU、HBM与逻辑芯片高密度、高带宽互连的“神经中枢”，技术门槛极高，长期由TSMC自产或依赖台系封测厂。此次交由GF代工，标志着美国在先进封装核心环节取得实质性突破。此举不仅响应了美国《芯片与科学法案》对本土制造能力的战略要求，更将加速AI服务器芯片（如NVIDIA GB200）在美国的产能爬坡与交付韧性，缓解当前全球CoWoS产能持续紧张的局面。\n\n对行业有什么影响：首先，该合作将重塑先进封装供应链格局，推动更多美系IDM与代工厂（如Intel Foundry、SkyWater）加速布局硅中介层与2.5D/3D封装能力；其次，为其他非美客户（如AMD、Apple、AI初创公司）提供了除TSMC自有产线外的第二来源，增强议价权与供应弹性；最后，它将倒逼设备与材料厂商（如应用材料、Lam Research、JSR）加快适配美国本土产线的工艺套件开发。长远看，这或将加速‘封装即系统’（System-in-Package）时代下地缘化制造集群的形成，中国、欧洲、日本亦将加速跟进类似布局。",
+      "category": "Foundry",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/chip-industry-week-in-review-159/",
+      "original_author": "@Semiconductor Engineering",
+      "published_at": "2026-10-09T13:43:01+00:00",
+      "created_at": "2026-10-09T18:38:17.521975+00:00"
+    },
     {
       "id": "a596c822-67b8-4068-a49d-6c8a19c9e37c",
       "title": "Micron计划五年投入5000万美元，支持美国Genesis使命博士生 fellowship 项目",
@@ -5289,42 +5325,6 @@
       "original_author": "@IT之家",
       "published_at": "2026-08-01T17:24:49+00:00",
       "created_at": "2026-08-02T01:15:38.792644+00:00"
-    },
-    {
-      "id": "3f63102c-e95f-46a6-b20a-04161efd0dfc",
-      "title": "力积电创始人黄崇仁逝世，享年76岁",
-      "summary": "力积电董事长暨创办人黄崇仁因心肺衰竭于2026年7月31日安详辞世，享年76岁；他被誉为台湾半导体界‘九命怪猫’，曾带领力晶度过多次危机并成功转型为AI Foundry。",
-      "key_points": [
-        "黄崇仁是力晶半导体与力积电创始人，推动台湾首家日资DRAM厂落地",
-        "经历2008年金融危机后主导力晶退市、重组并转型晶圆代工，2021年力积电重新上市",
-        "晚年力推‘AI Foundry’战略，布局HBM后段制造、晶圆堆叠与硅电容等先进封装技术"
-      ],
-      "full_content": "&lt;p&gt;Jowi Morales is a writer and journalist covering the tech beat since 2021. However, he’s been interested in technology far earlier than that. He started discovering desktop computers when his father brought home a Windows 95 PC, but his first real experience working under the hood of the PC was when the old computer’s hard drive was filled to the brim in the year 2000. He deleted the Windows folder to attempt to rectify the situation, which led to his dad buying a new desktop PC. Since then, he learned a lot more about computers, and he’s always been the go-to tech expert for his family and friends.&lt;/p&gt;&lt;p&gt;Jowi primarily uses a Windows workstation and an Android phone, but he also bought into the Apple ecosystem with the 6th-gen iPad, iPhone 14 Pro Max, and the M1 MacBook Air. Today, Jowi covers hardware and software from Redmond and Cupertino, while also looking at the tech industry in general.&lt;/p&gt;&lt;p&gt;Aside from covering technology, Jowi is an avid photographer and writes about automobiles, aviation, and tanks. You can find his bylines at &lt;a href=&quot;https://www.makeuseof.com/author/jowi-morales/&quot;&gt;MakeUseOf&lt;/a&gt;, &lt;a href=&quot;https://www.slashgear.com/author/jowimorales/&quot;&gt;SlashGear&lt;/a&gt;, and, of course, &lt;a href=&quot;https://www.tomshardware.com/author/jowi-morales&quot;&gt;Tom’s Hardware&lt;/a&gt;.&lt;/p&gt;",
-      "ai_summary": "发生了什么：台湾半导体传奇人物、力积电董事长兼创办人黄崇仁先生于2026年7月31日因心肺衰竭在家中安详离世，享年76岁。他早年获美国西奈山医学院医学博士，1980年返台任教后投身产业，1994年创立力晶半导体——台湾首家与日本三菱电机合资的DRAM制造商，并建成台湾首座12英寸晶圆厂。2008年全球DRAM危机中，力晶背负逾1200亿新台币债务退市，黄崇仁力主转型为开放晶圆代工厂（Open Foundry），最终于2019年完成重组、2021年以力积电之名重新上市。近年他更前瞻性提出‘AI Foundry’定位，聚焦内存+逻辑+先进封装融合，积极布局HBM后段制造、硅中介层、晶圆堆叠及硅电容等关键技术，直至去世前两周仍在公开说明技术进展。\n\n为什么重要：黄崇仁的生涯几乎贯穿台湾半导体产业从IDM到代工、从DRAM到AI芯片的完整演进史。其‘绝境重生’能力不仅挽救了企业，更重塑了台湾半导体分工格局——力积电现已成为全球少数能提供成熟制程逻辑芯片、特色工艺及HBM相关后段服务的一站式代工厂，填补了台积电与三星在AI硬件生态链中的关键缝隙。他的离世标志着一个创业型技术领袖时代的落幕，也使台湾AI芯片基础设施建设面临领导力交接考验。\n\n对行业有什么影响：短期看，力积电管理层稳定性与AI Foundry战略延续性将受关注，尤其在HBM需求爆发、全球先进封装产能紧张背景下，其硅电容与晶圆堆叠技术或成国产AI芯片厂商绕过CoWoS依赖的重要替代路径。中期而言，黄崇仁所倡导的‘内存与逻辑协同设计’理念正加速成为AI芯片主流范式（如NVIDIA GB200、AMD MI300系列），力积电的技术路线可能影响大陆与东南亚代工厂的升级方向。长期看，其‘以应用定义制程’的务实哲学，为全球成熟制程代工厂在AI时代的价值重估提供了范本——不再只是成本洼地，而是系统级创新的关键使能者。",
-      "category": "Foundry",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/0/984/637.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-08-01T17:06:31+00:00",
-      "created_at": "2026-08-01T17:28:07.124885+00:00"
-    },
-    {
-      "id": "26702357-c137-4eea-a6ed-871b965e5975",
-      "title": "AMD Ryzen 7 9800X3D获3D打印烟囱散热器，温控突破达19°C",
-      "summary": "针对Ryzen 7 9800X3D 3D V-Cache带来的散热难题，DIY玩家开发出3D打印烟囱散热器，实现19°C温度降幅，但因体积过大无法装入标准机箱。",
-      "key_points": [
-        "3D V-Cache设计使CPU成为‘热毯’，常规散热效果不佳",
-        "烟囱散热器利用‘烟囱效应’加速热空气上升，实现被动高效散热",
-        "该设计仅适用于开放测试平台，不具备商用可行性"
-      ],
-      "full_content": "Intel appears laser-focused on operationalizing its new Ohio fab complex by 2031, and is willing to award generous bonuses to achieve that overarching goal. Meanwhile, the tailwinds also appear to be aligning on Intel's EMIB-T packaging, with only the substrate yields now left as the sole unsolved piece of the puzzle. Disparate tailwinds are finally beginning to coalesce for Intel, indicating that its Ohio fab remains on schedule, and its EMIB-T advanced packaging is now poised to challenge TSMC's CoWoS-L For the benefit of those who might not be aware, Intel is building a gigantic 1,000-acre fab complex in Ohio [&hellip;] Read full article at https://wccftech.com/intel-starts-paying-overtime-bonuses-to-expedite-work-on-its-ohio-fab-as-emib-t-package-yield-approaches-90-percent/",
-      "ai_summary": "发生了什么：AMD Ryzen 7 9800X3D处理器凭借3D V-Cache技术在游戏性能上树立新标杆，但其堆叠式缓存结构也带来了严峻散热挑战——V-Cache层如同‘热毯’覆盖在CPU核心上方，导致热量难以有效传导至散热器。一位YouTuber工程师另辟蹊径，设计并3D打印了一款高达数英寸的‘烟囱式’散热器：利用热空气密度低、自然上升的物理原理（烟囱效应），在散热器顶部形成低压区，持续抽吸热空气，配合底部风扇强制进风，最终实现19°C的惊人温降。该方案完全被动强化散热，无需额外水冷设备，但其庞大体积导致无法安装于任何市售ATX或ITX机箱内，仅适用于裸板测试平台。\n\n为什么重要：这一DIY成果虽不具备量产价值，却深刻揭示了高性能CPU散热的物理极限与创新方向。它证明在功耗密度持续攀升（9800X3D TDP达120W）的背景下，传统风冷/水冷已逼近效能天花板，必须借助流体力学、材料科学等跨学科手段突破。‘烟囱效应’的应用，本质上是对散热系统进行‘气流拓扑重构’，将散热从‘点对点导热’升级为‘全域气流管理’，为未来一体式散热器设计提供了全新思路。同时，它也反向验证了AMD 3D V-Cache技术的热管理复杂性，敦促厂商在芯片设计阶段即需协同散热方案开发。\n\n对行业有什么影响：对散热厂商，将加速‘系统级散热’理念普及——未来高端散热器可能集成智能气流传感器、动态风道调节机构，甚至与主板BIOS联动优化风扇曲线。对PC DIY文化，此类开源硬件创新将进一步繁荣，3D打印、CFD仿真等工具将成极客标配。对AMD而言，该事件既是技术亮点的佐证（性能领先），也是工程挑战的警钟（散热短板），或将推动其在下一代Zen 5架构中优化V-Cache热分布设计。对消费者，它提醒我们：追求极致性能需接受相应妥协——要么接受更大机箱，要么拥抱更复杂的水冷系统，‘小而强’的PC梦想仍在路上。",
-      "category": "CPU",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/ryzen-7-9800x3d-3d-printed-chimney-cooler-19c-temp-drop/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-08-01T15:28:09+00:00",
-      "created_at": "2026-08-01T21:36:15.344885+00:00"
     }
   ]
 }
