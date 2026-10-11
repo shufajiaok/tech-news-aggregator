@@ -1,7 +1,59 @@
 {
-  "updated_at": "2026-10-11T06:52:02.485882+00:00",
+  "updated_at": "2026-10-11T17:54:44.046663+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "39c51f7f-3f4f-448b-b27b-bcb76ba8e79f",
+      "title": "GlobalFoundries发布FDX Fusion FD-SOI平台，瞄准物理AI边缘计算",
+      "summary": "格芯发布下一代FDX Fusion FD-SOI平台，面向物理AI（Sense/Think/Act/Communicate）应用，2028年在德国德累斯顿量产，提供7nm级数字性能与0.5THz射频能力。",
+      "key_points": [
+        "FDX Fusion为全球最先进FD-SOI技术，2028年量产",
+        "支持7nm级数字性能、0.5THz射频、低功耗与存内计算",
+        "首批客户包括宝马、博世、英飞凌、恩智浦、西门子"
+      ],
+      "full_content": "Ever imagined that you had your very own super-sized 201-inch TV where you can enjoy a plethora of games, movies, and TV shows? With the RayNeo Air 4 Pro AR glasses, that’s exactly what you’ll experience, without spending all of your savings. After all, these feature-packed spectacles are available for only $299 on Amazon, and you’ll be amazed at what you can get out of them. The Air 4 Pro weigh in at only 76 grams and sport a micro-OLED screen that’ll bring vivid colors to your eyes RayNeo claims that the Air 4 Pro are the world’s first AR glasses with an HDR10 [&hellip;] Read full article at https://wccftech.com/rayneo-air-4-pro-ar-glasses-201-inch-hdr10-virtual-screen-299-amazon/",
+      "ai_summary": "发生了什么：GlobalFoundries（格芯）正式发布FDX Fusion FD-SOI平台，这是其FD-SOI技术路线的第七代重大演进，专为‘物理AI’（Physical AI）——即感知、思考、行动、通信一体化的边缘智能系统——而设计。该平台基于全新基板工程与晶体管创新，将在2028年于德国德累斯顿先进工厂量产，首代工艺即达7纳米级数字性能，并集成0.5THz超高频射频（RF）、低泄漏操作、嵌入式非易失性存储器及存内计算能力，逻辑密度较初代FDX提升超2倍。\n\n为什么重要：FDX Fusion的发布标志着半导体产业重心正从‘云端大模型’向‘端侧实时智能’迁移。物理AI要求芯片在极低功耗下完成传感器数据处理、本地决策与执行反馈，传统FinFET或先进逻辑工艺难以兼顾能效、射频与模拟性能。FD-SOI凭借其天然的绝缘体上硅结构，在功耗、射频线性度、抗辐射性等方面具有不可替代优势，FDX Fusion则将其优势推向极致，为自动驾驶雷达、工业机器人、智能可穿戴设备等场景提供‘一站式’芯片平台。\n\n对行业有什么影响：首先，该平台将强化欧洲在全球半导体价值链中的地位，德累斯顿工厂作为欧盟‘芯片法案’重点支持项目，将成为物理AI芯片的欧洲制造中心；其次，宝马、博世、西门子等工业巨头的提前站台，预示着汽车与工业领域正加速拥抱FD-SOI，可能动摇台积电/三星在车规芯片市场的份额；最后，对AI初创公司而言，FDX Fusion提供的RISC-V IP、ARC处理器及完整设计工具链，大幅降低了物理AI芯片的开发门槛，有望催生一批专注于边缘智能的‘小而美’芯片公司，推动AI从数据中心走向万物。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/gf-unveils-roadmap-to-deliver-the-worlds-most-advanced-fd-soi-platform-for-physical-ai/",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-10-11T13:36:35+00:00",
+      "created_at": "2026-10-11T17:54:35.555159+00:00"
+    },
+    {
+      "id": "770d2390-ba0b-4834-aa48-fde0d7678199",
+      "title": "一加16首发第四代东方屏：行业首个日常165Hz全局高刷",
+      "summary": "一加16搭载京东方联合研发的第四代东方屏，采用X4发光材料，支持日常165Hz全局高刷与游戏场景185Hz，10月12日正式发布。",
+      "key_points": [
+        "第四代东方屏首发于一加16",
+        "实现行业首个‘日常165Hz’全局高刷",
+        "采用X4发光材料，宣称色彩准、功耗低、寿命长"
+      ],
+      "full_content": "The biggest bottleneck of running denser AI models on smartphones is the memory count, and looking at the DRAM situation, it’s unlikely that we’ll cross the 16GB threshold soon. However, Qualcomm CEO Cristiano Amon believes that we’ll soon be living in an era where handsets can run 100B LLMs continuously and confirms that AI companies are building smartphones that can achieve this feat. As for the practicality of running denser models, Amon has mentioned how phone makers will incorporate hefty amounts of RAM, especially when supply is scarce, and prices are through the roof. The only ways to run 100B [&hellip;] Read full article at https://wccftech.com/qualcomm-ceo-smartphones-100b-llms-2028-dram-supply-cost/",
+      "ai_summary": "发生了什么：一加于10月12日发布旗舰手机一加16，其最大亮点是全球首发京东方联合研发的第四代东方屏。该屏幕采用全新X4发光材料，官方宣称在色彩准确性、高刷稳定性、峰值亮度、功耗控制及使用寿命五大维度全面升级。技术上，它实现了‘行业首个全链路硬件全局超高刷’，即在日常使用中所有应用均可稳定运行165Hz刷新率，而游戏场景下最高可瞬时提升至185Hz，屏幕边框收窄至1.15mm四等边设计。\n\n为什么重要：一加16的屏幕策略代表了安卓阵营在‘体验优先’而非‘参数内卷’上的理性回归。当前多数旗舰机虽标称LTPO 1-120Hz或144Hz，但实际日常使用中常因功耗与发热限制而降频。一加选择165Hz作为‘日常常开’基准，是在流畅性、续航与温控间找到最优平衡点，是对用户真实使用场景的深度洞察。X4材料的应用也意味着国产OLED在发光效率与寿命上已逼近甚至局部超越三星E7/E8，打破高端屏幕长期被韩厂垄断的局面。\n\n对行业有什么影响：首先，165Hz将成为2027年安卓旗舰新标杆，倒逼三星、LG加速迭代LTPO驱动IC与发光材料；其次，京东方借此巩固其在高端柔性OLED市场的领导地位，为后续折叠屏、AR眼镜等新形态设备提供技术储备；最后，对消费者而言，‘高刷’概念正从营销噱头回归实用价值——当165Hz成为默认体验，用户将不再需要手动切换模式，真正实现‘无感流畅’。这也预示着手机屏幕竞争正从‘峰值参数’转向‘全场景一致性体验’的深水区。",
+      "category": "Digital",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/011/715.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-10-11T11:57:03+00:00",
+      "created_at": "2026-10-11T17:54:35.555173+00:00"
+    },
+    {
+      "id": "2224bfb1-ad72-4e89-9908-63a0a78ababd",
+      "title": "&lt;p&gt;Kunal Khullar is a co...",
+      "summary": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-se...",
+      "key_points": [
+        "&lt;p&gt;Kunal Khullar is a contributor "
+      ],
+      "full_content": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked for various publications covering a range of topics including smartphones, laptops, audio devices, and PC hardware. Currently, he is engrossed with everything happening in the world of computing with a growing obsession for unique PC cases and RGB cooling fans. Through his articles Kunal strives to demystify complex concepts for a broad audience. Kunal is also a casual gamer as he loves to squad up with his friends in &lt;em&gt;Apex Legends&lt;/em&gt;, and claims to have a fairly good taste in music especially when it comes to heavy metal.&lt;/p&gt;",
+      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked fo",
+      "category": "AI",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/pc-components/ugreens-100w-4-port-gan-charger-drops-27-percent-today-get-100w-of-power-and-four-ports-for-just-usd39-98",
+      "original_author": "Tom's Hardware",
+      "published_at": "2026-10-10T16:20:56+00:00",
+      "created_at": "2026-10-11T06:52:03.547118+00:00"
+    },
     {
       "id": "ddab4086-ab35-4ecb-ba7d-953ae914b05a",
       "title": "IT之家 10 月 10 日消息，在苹果零售店购买 iPho...",
@@ -5211,60 +5263,6 @@
       "original_author": "@Semiconductor Digest",
       "published_at": "2026-08-04T07:01:18+00:00",
       "created_at": "2026-08-04T15:12:31.962178+00:00"
-    },
-    {
-      "id": "3ffad0ed-0660-4c33-ae82-03661f81f15f",
-      "title": "XL Games与Kakao Games联合发布《ArcheAge S：自由海峡》，定档2027年PC上线",
-      "summary": "《ArcheAge》原开发商XL Games与发行商Kakao Games宣布全新MMORPG《ArcheAge S：自由海峡》将于2027年登陆PC，强调其为2013年经典作品的正统续作而非衍生版本。",
-      "key_points": [
-        "《ArcheAge S》确认为2013年原作正统续作",
-        "定档2027年PC平台",
-        "区别于此前更名的《ArcheAge Chronicles》"
-      ],
-      "full_content": "PlayStation 4 emulator ShadPS4 can now run Driveclub at up to 8K resolution on PC, thanks to a newly released patch, delivering by far the sharpest version of the game's visuals. The racing game originally ran at just Full HD resolution on PS4, and even when played on PlayStation 5, no meaningful boost is available for Driveclub. The game still runs at the same resolution and frame rate (30 frames per second) through backward compatibility, and original Game Director Paul Rustchynsky has said a PS5 upgrade was very unlikely because the frame rate and resolution are already capped. The only [&hellip;] Read full article at https://wccftech.com/shadps4-driveclub-8k-pc-glory/",
-      "ai_summary": "发生了什么：WCCFTech独家披露，韩国老牌MMORPG开发商XL Games与发行商Kakao Games正式联手推出《ArcheAge S：自由海峡》（ArcheAge S: Strait of Freedom），明确将其定位为2013年现象级沙盒MMO《ArcheAge》的‘真正续作’，而非此前曾更名的《ArcheAge Chronicles》（原计划名为《ArcheAge 2》）。新作将延续初代核心理念——PvP与PvE深度融合、土地耕种与船舶贸易自由经济、玩家驱动的世界事件，但采用虚幻引擎5重制，支持DLSS 4与光线追踪全局光照，并引入基于区块链的玩家资产确权系统（非NFT炒作，聚焦装备防伪与跨服交易安全）。\n\n为什么重要：在MMO品类整体萎缩、玩家偏好转向快节奏竞技与开放世界单机的当下，《ArcheAge S》的立项具有标志性意义。它代表了一种‘复古创新’路径：不抛弃初代成功的社会模拟与经济系统（如真实时间作物生长、跨服海运航线），而是通过现代引擎与网络架构解决当年的技术痛点（如服务器分区割裂、跨服延迟高）。更关键的是，其‘正统续作’定位直面玩家对《ArcheAge Chronicles》偏离初心的不满——后者因转向卡通渲染与简化玩法被批‘失去灵魂’，而《ArcheAge S》则由初代核心团队操刀，确保IP精神传承。\n\n对行业有什么影响：短期将提振PC端MMO市场信心，吸引网易、腾讯等国内厂商重启长线运营MMO项目；中期将推动UE5引擎在大型多人在线场景的深度优化（如Nanite地形流送、Lumen动态全局光照的万人同屏适配）；长期则可能重塑MMO商业模式——《ArcheAge S》宣布采用‘买断制+可选订阅’双轨制，基础游戏永久免费，但高级坐骑、稀有地块与跨服贸易权限需订阅，既降低入门门槛又保障长线营收。此举或成为对抗‘F2P+Pay-to-Win’恶性循环的行业新范式，尤其对中东、东南亚等新兴市场具有示范效应。",
-      "category": "Digital",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/archeage-s-2027-true-sequel-2013-mmorpg/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-08-03T17:00:00+00:00",
-      "created_at": "2026-08-03T17:22:44.538826+00:00"
-    },
-    {
-      "id": "21f198c3-e964-4503-890e-4f07f2bc0de8",
-      "title": "浦项国立大学开发自适应有机晶体管：单器件可编程实现逻辑计算与人工突触功能",
-      "summary": "韩国浦项国立大学研发出可拉伸有机电化学晶体管（OECT），通过调节电解液盐浓度，可在数字逻辑与模拟突触两种模式间动态切换，并伴随可见颜色变化。",
-      "key_points": [
-        "OECT采用PEDOT:PSS聚合物，添加双组分提升导电性与延展性",
-        "高盐浓度→快速开关→数字逻辑；低盐浓度→模拟记忆→人工突触",
-        "器件状态可通过蓝-深蓝颜色变化直观读取"
-      ],
-      "full_content": "PlayStation 4 emulator ShadPS4 can now run Driveclub at up to 8K resolution on PC, thanks to a newly released patch, delivering by far the sharpest version of the game's visuals. The racing game originally ran at just Full HD resolution on PS4, and even when played on PlayStation 5, no meaningful boost is available for Driveclub. The game still runs at the same resolution and frame rate (30 frames per second) through backward compatibility, and original Game Director Paul Rustchynsky has said a PS5 upgrade was very unlikely because the frame rate and resolution are already capped. The only [&hellip;] Read full article at https://wccftech.com/shadps4-driveclub-8k-pc-glory/",
-      "ai_summary": "发生了什么：韩国浦项国立大学Hyunseok Shim团队成功研制出一款革命性的自适应有机电化学晶体管（OECT）。该器件基于改进型导电聚合物PEDOT:PSS，通过引入两种新型添加剂，显著提升了其电导率与机械延展性（可拉伸超100%）。其核心突破在于：通过外部调控电解液中氯化钠浓度，可 reversibly（可逆地）切换其工作模式——高盐浓度下离子迁移迅速，实现纳秒级ON/OFF开关，适用于数字逻辑电路；低盐浓度下离子运动缓慢，产生类似生物突触的电压依赖性电导变化，可模拟短时程/长时程可塑性（STDP/LTP），用于神经形态计算。更独特的是，该切换过程伴随明显的颜色变化（浅蓝↔深蓝），实现‘状态可视化’。\n\n为什么重要：当前柔性电子面临根本性矛盾：传感、计算、存储功能通常需由不同材料、不同工艺的独立器件集成，导致系统臃肿、功耗高、可靠性差。这款OECT首次在单个软物质器件中实现了‘多功能可编程’，无需复杂电路即可根据任务需求动态重构其功能。这为可穿戴电子开辟了全新路径——例如，同一块电子皮肤既可实时采集生理信号（传感），又能在本地完成异常检测（计算），还能记忆用户长期健康趋势（存储），真正实现‘感知-认知-记忆’一体化。\n\n对行业有什么影响：该技术将加速柔性电子从‘功能叠加’迈向‘功能融合’。在医疗领域，可催生新一代无创动态监护贴片，实时响应水肿、炎症等病理变化并自动触发干预；在人机交互领域，可构建能学习用户手势习惯、自适应调整灵敏度的智能手套；在神经形态计算领域，其低功耗、高密度、生物相容特性，使其成为构建类脑芯片的理想候选。长远看，这种‘化学门控’的可编程理念，或将启发新一代基于离子、分子、DNA的信息器件，推动信息技术从‘电子时代’向‘物质时代’演进。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/pusan-national-university-reports-an-adaptive-organic-transistor-for-wearable-electronics/",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-08-03T17:00:00+00:00",
-      "created_at": "2026-08-03T20:39:34.004237+00:00"
-    },
-    {
-      "id": "1d063d8f-a632-4bdf-a534-f456f7cb44dc",
-      "title": "NVIDIA RTX 50系列显卡价格暴涨30%，TSMC晶圆涨价与GDDR7成本推高RTX 5090售价",
-      "summary": "韩国市场RTX 50系列显卡价格飙升至最高30%，RTX 5090售价突破5100美元，主因台积电先进制程晶圆代工涨价及单颗20美元的GDDR7显存模块成本激增。",
-      "key_points": [
-        "韩国RTX 50系列显卡价格最高上涨30%",
-        "RTX 5090售价突破5100美元",
-        "TSMC晶圆代工涨价与GDDR7成本是主因"
-      ],
-      "full_content": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked for various publications covering a range of topics including smartphones, laptops, audio devices, and PC hardware. Currently, he is engrossed with everything happening in the world of computing with a growing obsession for unique PC cases and RGB cooling fans. Through his articles Kunal strives to demystify complex concepts for a broad audience. Kunal is also a casual gamer as he loves to squad up with his friends in &lt;em&gt;Apex Legends&lt;/em&gt;, and claims to have a fairly good taste in music especially when it comes to heavy metal.&lt;/p&gt;",
-      "ai_summary": "发生了什么：Tom's Hardware报道显示，NVIDIA尚未发布的RTX 50系列显卡在韩国市场已出现大幅涨价，其中旗舰型号RTX 5090预估售价突破5100美元，较前代RTX 4090（首发价1599美元）涨幅超220%；涨价核心驱动因素包括台积电N3B/N2制程晶圆代工报价显著上调，以及新一代GDDR7显存单颗成本高达20美元——远超GDDR6X的约5美元，导致显卡BOM成本结构性跃升。\n\n为什么重要：此次涨价并非单纯渠道加价，而是反映了AI与高性能GPU供应链的深层压力。GDDR7作为RTX 50系列标配显存，其高带宽（≥100GB/s/pin）、低电压（1.1V）和先进封装（2.5D PoP）带来巨大制造挑战，良率爬坡缓慢；而TSMC为满足Blackwell架构GPU、AI加速器及移动SoC的旺盛需求，对先进节点产能实施优先级分配，进一步推高代工单价。这标志着GPU正从消费电子属性转向“算力基础设施”，定价逻辑向数据中心芯片靠拢。\n\n对行业有什么影响：首先，消费者端将面临更严峻的升级门槛，可能抑制非专业用户的换卡意愿，倒逼AMD加快RDNA 4显卡落地节奏；其次，整机厂商与OEM需重新评估高端游戏本/工作站BOM结构，或转向混合内存方案（如GDDR7+HBM缓存）以控制成本；第三，该趋势将加速显卡市场两极分化——高端市场由NVIDIA主导并持续溢价，中端市场则成为国产显存（如长鑫CXMT DDR5）、替代封装方案的竞争主战场。长远看，若GDDR7成本无法快速下探，或将推动行业提前布局GDDR8或统一内存架构（UMA）演进路径。",
-      "category": "GPU",
-      "source": "Tom's Hardware",
-      "source_url": "https://www.tomshardware.com/pc-components/gpus/in-a-troubling-sign-nvidia-rtx-50-series-prices-jump-up-to-30-percent-in-south-korea-tsmc-wafer-hikes-and-usd20-gddr7-modules-push-rtx-5090-past-usd5-100",
-      "original_author": "@Tom's Hardware",
-      "published_at": "2026-08-03T16:39:36+00:00",
-      "created_at": "2026-08-03T17:22:44.538764+00:00"
     }
   ]
 }
