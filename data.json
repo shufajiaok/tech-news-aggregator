@@ -1,7 +1,25 @@
 {
-  "updated_at": "2026-10-16T05:22:19.011707+00:00",
+  "updated_at": "2026-10-16T17:07:48.386466+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "90022431-67ef-4734-ba2a-5ce12952fc75",
+      "title": "中国初创公司演示国产EUV光源原型，输出功率15W、90%部件国产化",
+      "summary": "中国初创公司Langdao Silex成功研制EUV光刻光源原型，输出功率超15W，核心组件国产化率达90%，但距商用水平仍有3–5年差距。",
+      "key_points": [
+        "EUV光源输出功率达15W以上",
+        "90%关键部件实现国产化",
+        "量产仍需3–5年，远低于ASML商用EUV的250W+"
+      ],
+      "full_content": "&lt;p&gt;Anton Shilov has been in the PC industry since 1990s playing games, building PCs, and writing stories about pretty much everything that relates to PCs, Macs, smartphones, tablets, and even fab equipment. Over his career, he has worked at a variety of high-ranking websites, including AnandTech, EE Times, TechRadar, X-bit Labs, and now Tom&#039;s Hardware. He is also a regular features contributor to Tom&#039;s Hardware Premium, writing about the latest developments in the semiconductor industry and related tech news and roadmaps. When Anton is not reading or writing about something high-tech, he is probably watching a good movie, playing a video game, or spending time with his family.&lt;/p&gt;",
+      "ai_summary": "发生了什么：中国初创企业朗道思立信（Langdao Silex）在《南华早报》报道中公开其自主研发的极紫外（EUV）光刻光源原型机，实测输出功率超过15W，整机90%以上核心组件实现本土化供应。该成果标志着中国在EUV光源这一半导体制造‘皇冠上的明珠’领域取得实质性突破，打破了此前完全依赖ASML与Cymer（现属AMS）技术垄断的局面。\n\n为什么重要：EUV光源是当前7nm及以下先进制程芯片制造不可或缺的核心子系统，其技术壁垒极高——需在13.5nm波长下稳定输出千瓦级等离子体，并解决热管理、光学污染、脉冲稳定性等极端工程挑战。全球仅ASML-Cymer实现量产（商用机达250W以上），而中国此前连百瓦级实验室光源都未公开验证。此次15W原型虽仅为商用水平的6%，但已跨越从‘无’到‘有’的关键门槛，为后续功率爬升、可靠性验证和系统集成奠定基础。\n\n对行业有什么影响：短期看，该进展尚难撼动全球EUV供应链格局，但将加速国内光刻机整机厂商（如上海微电子SMEE）对EUV曝光系统的攻关节奏；中期将推动国产光学元件（反射镜、多层膜）、真空系统、激光激发源等配套产业链升级；长期则可能重塑全球半导体设备地缘分工——若中国能在2030年前实现200W+稳定EUV光源量产，将极大缓解先进制程‘卡脖子’风险，并倒逼ASML等巨头调整技术出口策略。值得注意的是，该成果与TrendForce评估一致，凸显中国在‘非光刻机整机’维度的自主突围正从材料、零部件向核心子系统纵深演进。",
+      "category": "Foundry",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/chip-industry-week-in-review-160/",
+      "original_author": "@Semiconductor Engineering",
+      "published_at": "2026-10-16T16:30:00+00:00",
+      "created_at": "2026-10-16T17:07:39.30365+00:00"
+    },
     {
       "id": "8ef8cbb3-860a-41c4-b488-ac35209a65d6",
       "title": "PCIe重定时器实际传输距离取决于系统级协同，非单一规格参数",
@@ -5251,22 +5269,6 @@
       "original_author": "Semiconductor Engineering",
       "published_at": "2026-09-16T07:05:15+00:00",
       "created_at": "2026-09-16T17:37:39.52663+00:00"
-    },
-    {
-      "id": "e346c31b-b3b0-4197-90e2-5176813d3b44",
-      "title": "Robotics is entering a new era",
-      "summary": "Robotics is entering a new era. Foundation models, vision-language-action systems, world models, and generative AI are t...",
-      "key_points": [
-        "Robotics is entering a new era. Foundati"
-      ],
-      "full_content": "Robotics is entering a new era. Foundation models, vision-language-action systems, world models, and generative AI are transforming what robots can perceive, reason about, and do. In this white paper, Federico Pecora, Senior Principal Robotics Research Lead at Arm, explores the systems-level challenges shaping the future of robotics. The paper examines the architectural challenges that must be solved to enable the next generation of intelligent, trustworthy, and scalable physical AI systems. Read more here . The post The Missing Science Of Robotic Systems appeared first on Semiconductor Engineering .",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nRobotics is entering a new era. Foundation models, vision-language-action systems, world models, and generative AI are transforming what robots can perceive, reason about, and do. In this white paper, Federico Pecora, Senior Principal Robotics Research Lead at Arm, explores the systems-level challenges shaping the future of robotics. The paper examines the architectural challenges that must be solved to enable the next generation of intelligent, trustworthy, and scalable physical AI systems. Rea",
-      "category": "CPU",
-      "source": "Semiconductor Engineering",
-      "source_url": "https://semiengineering.com/the-missing-science-of-robotic-systems/",
-      "original_author": "Semiconductor Engineering",
-      "published_at": "2026-09-16T07:04:55+00:00",
-      "created_at": "2026-09-16T17:37:39.526645+00:00"
     }
   ]
 }
