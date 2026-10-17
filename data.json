@@ -1,7 +1,43 @@
 {
-  "updated_at": "2026-10-17T05:15:35.922024+00:00",
+  "updated_at": "2026-10-17T16:06:16.327649+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "243dafb9-6472-4765-9bd7-5bd3283eb2de",
+      "title": "NVIDIA否认RTX 5090停产传闻，强调其仍是核心游戏产品",
+      "summary": "英伟达个人计算业务高级副总裁Jeff Fisher在台北明确驳斥RTX 5090停产传言，称该卡仍是公司重要核心产品，将持续供货；同时承认当前存在供应链产能限制。",
+      "key_points": [
+        "Fisher公开否认RTX 5090停产传闻",
+        "强调GeForce游戏业务对CUDA及AI生态的基础性作用",
+        "承认GB202芯片供应紧张，正全力推动产品上市"
+      ],
+      "full_content": "&lt;p&gt;Sarah is a hardware enthusiast and geeky dilettante who has been building computers since she discovered it was easier to move them across the world — she grew up in Tokyo — if they were in pieces. She&#039;s best-known for trying to justify ridiculous multi-monitor setups, dramatically lowering&amp;nbsp;the temperature of her entire apartment to cool overheating components, typing just to hear the sound of her keyboard, and playing video games all day &quot;for work.&quot; She&#039;s written about everything from tech to fitness to sex and relationships, and you can find more of her work in PCWorld, Macworld, TechHive, CNET, Gizmodo, Tom&#039;s Guide, PC Gamer, Men&#039;s Health, Men&#039;s Fitness, SHAPE, Cosmopolitan, and just about everywhere else. In addition to hardware, she also loves working out, public libraries, marine biology, word games, and salads. Her favorite Star Wars character is a toss-up between the Sarlacc and Jabba the Hutt.&lt;/p&gt;",
+      "ai_summary": "发生了什么：英伟达高管Jeff Fisher于2026年10月17日在台北RTX Spark活动中正式回应市场广泛流传的RTX 5090停产消息，明确表示该旗舰显卡“并非停产”，而是仍处于正常供货序列中的核心产品。他同时证实，受先进封装（如CoWoS-L）及GB202 GPU晶粒产能制约，当前零售端出现大面积缺货、部分渠道（如Micro Center）标记为“不再销售”，但此属供应链阶段性瓶颈，而非战略放弃。此外，传闻中关于将GB202转向RTX PRO专业线、并以RTX 5080填补高端空缺的说法，仍未获官方确认。\n\n为什么重要：RTX 5090作为Blackwell架构面向消费级市场的性能巅峰，其市场存续直接关系到英伟达在游戏玩家与内容创作者群体中的品牌信任度。Fisher特别指出“没有GeForce就没有今天的英伟达”，强调游戏业务不仅是营收支柱，更是CUDA生态、驱动优化、实时渲染技术演进的原始驱动力——这些能力如今已反哺AI训练与推理。在AI芯片高歌猛进的当下，此举释放出关键信号：英伟达拒绝将游戏GPU边缘化，坚持“AI+游戏”双引擎战略。\n\n对行业有什么影响：首先，该表态稳定了AIC厂商（华硕、微星等）和整机商的生产预期，避免因误判而引发渠道清库存或转向竞品；其次，凸显高端GPU产能分配已成为地缘政治与制造能力博弈的缩影——GB202依赖台积电CoWoS-L产能，而该产能正被GB200 NVL72、B200等数据中心产品优先占用，消费级产品被迫接受“次优排产”。长远看，若产能瓶颈持续，或将加速厂商推进模块化设计（如可更换GPU子卡）与二手/翻新市场规范化，同时也倒逼AMD、Intel加快RDNA4/Xe3游戏GPU落地节奏，形成实质性竞争压力。",
+      "category": "GPU",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/014/407.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-10-17T15:40:00+00:00",
+      "created_at": "2026-10-17T16:06:08.813426+00:00"
+    },
+    {
+      "id": "66f0c14f-a0c2-480a-a99f-c449ba033b33",
+      "title": "Saras Micro Devices推出嵌入式电容技术，解决AI加速器2000A级瞬态电流供电难题",
+      "summary": "Saras Micro Devices开发STILE嵌入式电容，直接集成于PCB或封装基板中，实现垂直供电路径，将AI加速器供电I²R损耗降低50%以上，已进入客户可靠性测试阶段。",
+      "key_points": [
+        "STILE电容厚度匹配PCB基材，支持2mm×2mm微型化设计",
+        "嵌入式方案缩短供电路径，消除电压骤降（droop），保障高频计算稳定性",
+        "已获客户全量表征验证，正推进量产导入，目标2027年实现设计赢"
+      ],
+      "full_content": "Intel has confirmed that its next-generation Razor Lake-AX SoCs will launch in 2028, bringing increased AI capabilities. Intel SVP Confirms Nova Lake For 2027 &amp; Razor Lake For 2028 - AX SoCs Drive AI TOPS To 700 During the \"Semiconductors Powering Humanoids\" seminar in South Korea's Samseong-dong, Intel SVP Cho Min-sung confirmed the next-generation Nova Lake and Razor Lake SoCs. These SoCs will be arriving in 2027 and 2028, respectively. The Intel Nova Lake CPUs have been expected for a while, and we have a fair bit of information that is covered in previous articles. But Intel naming Razor Lake [&hellip;] Read full article at https://wccftech.com/intel-confirms-razor-lake-ax-700-tops-launch-in-2028/",
+      "ai_summary": "发生了什么：Saras Micro Devices于2026年10月17日宣布其革命性嵌入式电容技术STILE已进入量产导入关键阶段。该技术将高性能电容直接嵌入AI加速器的PCB电路板或封装基板内部，而非传统地放置于芯片表面，从而构建一条“垂直供电”路径。此举彻底解决了当前AI芯片面临的最严峻物理挑战之一：瞬态电流尖峰——现代AI加速器峰值电流已达2000安培，且在纳秒级内剧烈波动，传统供电路径因寄生电阻（I²R）导致的电压骤降（droop）会直接造成CPU/GPU丢时钟周期。STILE电容通过紧贴芯片背面部署，将供电路径缩短至毫米级，使I²R损耗降低50%以上，确保芯片在满负荷运行时电压纹波稳定在毫伏级别。\n\n为什么重要：在AI芯片性能持续飙升而摩尔定律放缓的背景下，供电已成为制约算力提升的“最后一公里”瓶颈。Saras的方案不是简单的元件升级，而是对整个电子系统架构的重构：它将原本分散在主板、VRM（电压调节模块）、去耦电容之间的能量传输网络，压缩为一个高度集成的三维立体结构。这种“供电即芯片”的理念，与Chiplet、3D封装等先进封装技术形成完美互补，共同构成下一代AI硬件的物理基础。其2mm×2mm微型化设计更表明，该技术已从实验室走向工程化，能够满足高密度AI服务器对空间与散热的严苛要求。\n\n对行业有什么影响：首先，该技术将重塑AI硬件供应链格局——传统MLCC（多层陶瓷电容）与深槽电容厂商面临被替代风险，而掌握嵌入式工艺的PCB制造商（如欣兴、深南电路）与基板厂（如揖斐电、三星电机）将获得新增长点。其次，它将加速“供电芯片化”趋势：未来VRM、电容、甚至传感器可能被集成到同一块基板中，形成“智能供电模组”，由AI算法实时调控。最后，对终端用户而言，这意味着更高能效比与更长设备寿命——更低的I²R损耗直接转化为更低的散热需求与更高的PUE（电能使用效率），使单机柜AI算力密度突破现有极限，为千兆瓦级AI数据中心的可持续发展铺平道路。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/saras-micro-devices-embeds-capacitors-to-power-ai-accelerators/?utm_source=rss&utm_medium=rss&utm_campaign=saras-micro-devices-embeds-capacitors-to-power-ai-accelerators",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-10-17T13:40:51+00:00",
+      "created_at": "2026-10-17T16:06:08.813496+00:00"
+    },
     {
       "id": "6768ac30-c648-495b-b318-495cac76465f",
       "title": "NVIDIA DLSS 5神经渲染模型已破解，非支持游戏帧率提升达40%",
@@ -5237,42 +5273,6 @@
       "original_author": "Tom's Hardware",
       "published_at": "2026-09-16T12:15:42+00:00",
       "created_at": "2026-09-16T17:37:39.526054+00:00"
-    },
-    {
-      "id": "77ad7725-90a6-4d9e-839c-4850e0ba3af9",
-      "title": "Arteris发布FlexGen Multi-Die NoC IP，打通AI芯片多芯粒互连瓶颈",
-      "summary": "Arteris推出FlexGen Multi-Die网络互连IP，支持UCIe PHY单通道双向通信，降低芯片间互连面积与功耗50%，为非一致性AI/HPC芯片提供透明NoC扩展能力。",
-      "key_points": [
-        "FlexGen支持UCIe单PHY双向事务，节省50%芯片I/O资源",
-        "专为非一致性AI/HPC架构设计，保留QoS与虚拟通道机制",
-        "与Ncore Multi-Die形成完整多芯粒互连方案"
-      ],
-      "full_content": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked for various publications covering a range of topics including smartphones, laptops, audio devices, and PC hardware. Currently, he is engrossed with everything happening in the world of computing with a growing obsession for unique PC cases and RGB cooling fans. Through his articles Kunal strives to demystify complex concepts for a broad audience. Kunal is also a casual gamer as he loves to squad up with his friends in &lt;em&gt;Apex Legends&lt;/em&gt;, and claims to have a fairly good taste in music especially when it comes to heavy metal.&lt;/p&gt;",
-      "ai_summary": "发生了什么：Arteris于2026年9月发布FlexGen Multi-Die网络互连IP，这是业界首个专为非缓存一致性（non-coherent）AI与高性能计算架构设计的芯粒（chiplet）互连方案。该IP通过创新的单UCIe PHY双向事务协议，在物理层实现芯片间数据流的无缝穿透，无需在每个chiplet边界重新定义接口协议。相比传统方案，FlexGen可减少50%的芯片I/O引脚占用、降低同等带宽下的互连功耗，并内置高级服务质量（QoS）机制与虚拟通道技术，确保高优先级AI计算任务（如矩阵乘加）的带宽保障。它与Arteris已有的Ncore Multi-Die（面向缓存一致性系统）构成互补，配合Magillem集成自动化与Cycuity安全验证工具，形成覆盖数据移动、系统集成、硬件安全的全栈多芯粒解决方案。\n\n为什么重要：这标志着芯片设计范式正从‘单芯片系统’（SoC）全面转向‘多芯粒系统’（SiP），而FlexGen正是解决该范式转换核心痛点的关键钥匙。随着AI模型参数量突破万亿、芯片晶体管数量逼近物理极限，单颗芯片已无法兼顾性能、功耗、良率与成本。Chiplet通过将计算、内存、IO等功能模块拆分至不同工艺节点的芯粒上，实现最优性价比。但由此产生的‘芯粒间通信墙’成为最大瓶颈——传统总线/跨桥方案带宽低、延迟高、扩展性差。FlexGen以‘NoC fabric over UCIe’理念，将片上网络能力无缝延伸至片间，让多芯粒系统在软件视角下仍呈现为单一逻辑实体，极大降低系统架构师与软件工程师的认知负担。\n\n对行业有什么影响：首先，将加速AI芯片架构创新——寒武纪、壁仞、Graphcore等初创公司可基于FlexGen快速构建异构AI芯粒系统（如‘计算芯粒+内存芯粒+光互连芯粒’），缩短产品上市周期；其次，推动UCIe生态成熟：Arteris与Synopsys、Cadence等EDA巨头的IP互操作验证，将加速UCIe从‘可用’走向‘好用’，吸引更多晶圆厂（如台积电CoWoS、英特尔Foveros）与封装厂投入；最后，重塑芯片设计价值链：IP供应商（Arteris）、EDA工具商（Cadence/Synopsys）、代工厂（TSMC/Intel）、封装厂（ASE/Amkor）将形成更紧密的联合体，共同制定多芯粒设计参考流程（DRC），推动行业从‘手工作坊式集成’迈向‘工业化标准制造’。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/arteris-accelerates-industry-transition-to-multi-die-chiplet-based-architecture/",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-09-16T12:15:42+00:00",
-      "created_at": "2026-09-17T05:39:28.34367+00:00"
-    },
-    {
-      "id": "edc34407-3780-48e9-9fd1-2dbd48773cc6",
-      "title": "TeRAM获3700万美元融资，研发3D SRAM突破AI内存墙",
-      "summary": "初创公司TeRAM获3700万美元融资，专注开发3D堆叠SRAM芯片，直接集成于AI处理器，目标2029年量产，解决大模型推理带宽瓶颈。",
-      "key_points": [
-        "TeRAM研发3D SRAM，直接集成于AI芯片提升带宽",
-        "目标2029年量产，满足2万亿参数模型推理需求",
-        "创始团队拥有80年半导体存储研发经验"
-      ],
-      "full_content": "With the PlayStation 5 generation close to hitting its sixth year, chances of new features getting added to the system withy system software upgrades are slim. Still, Sony is continuing to make small improvements to both the base system and the PlayStation 5 Pro, the latest of them having come today with system software update 14.0. The biggest improvement introduced by this new update is a PlayStation 5 Pro exclusive feature. As announced last month, the new update makes the Enhance PSSR Image Quality a default setting. \"When you update the system software, this setting automatically turns on. When you [&hellip;] Read full article at https://wccftech.com/playstation-5-system-software-update-14-0-playstation-5-pro-improvement/",
-      "ai_summary": "发生了什么：TeRAM公司于2026年9月宣布完成3700万美元种子轮融资，正式启动3D堆叠SRAM芯片的研发。该公司聚焦AI推理场景下日益严峻的‘内存墙’问题——当模型参数突破两万亿，传统HBM带宽已无法满足每秒数PB级数据吞吐需求。TeRAM方案将高带宽SRAM通过TSV（硅通孔）技术三维堆叠于AI计算芯片之上，实现近存计算（Near-Memory Computing），目标带宽较HBM提升5倍以上，功耗降低40%。其技术已进入流片验证阶段，计划2029年向数据中心客户交付首颗定制化3D SRAM芯片。\n\n为什么重要：TeRAM代表了突破AI内存瓶颈的两种主流路径之一（另一为光互连/存内计算）。相比激进的新兴技术，3D SRAM基于成熟CMOS工艺，兼容现有封装生态，产业化风险更低。其核心价值在于‘精准打击’——当前AI推理瓶颈已从训练时的HBM容量转向推理时的内存带宽，而3D SRAM正是带宽密集型场景的理想解。若成功，将使AI芯片厂商摆脱对HBM供应商（SK海力士、三星）的强依赖，并重构芯片设计方法论：从‘计算为中心’转向‘内存-计算协同设计’。\n\n对行业有什么影响：对AI芯片厂商而言，TeRAM提供了一种可快速集成的带宽增强方案，英伟达、AMD、华为等均可将其纳入下一代GPU/昇腾架构；对存储产业而言，将加速SRAM在AI领域的应用拓展，带动TSV、微凸块、热管理等先进封装技术需求；对云服务商而言，采用3D SRAM的AI服务器有望将单机推理吞吐提升3倍，显著降低TCO。但挑战在于：3D堆叠带来的散热难题尚未完全解决，且良率控制难度高于2D芯片。若TeRAM成功，或将引发新一轮AI内存创业潮，推动HBM、GDDR、3D SRAM形成‘高中低’三级内存市场格局。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/teram-emerges-from-stealth-with-37m-to-develop-3d-sram-for-ai-systems/",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-09-16T09:17:04+00:00",
-      "created_at": "2026-09-16T09:56:27.069261+00:00"
     }
   ]
 }
