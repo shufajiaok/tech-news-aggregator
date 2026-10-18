@@ -1,7 +1,43 @@
 {
-  "updated_at": "2026-10-17T16:06:16.327649+00:00",
+  "updated_at": "2026-10-18T05:19:43.116384+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "11c43681-1c9a-47fc-87b0-e0093a25550c",
+      "title": "AMD显卡实现NVIDIA DLSS全功能支持：Ray Reconstruction、SR 4.5、MFG等",
+      "summary": "DLSS-NR-on-AMD项目v0.8.0正式发布，首次在RDNA 3/4架构上完整支持NVIDIA DLSS 5神经渲染、超分辨率（SR）、光线重建（Ray Reconstruction）及帧生成（MFG）等全部核心功能。",
+      "key_points": [
+        "DLSS-NR-on-AMD v0.8.0实现全功能移植",
+        "覆盖DLSS 5神经渲染、SR、Ray Reconstruction、MFG",
+        "运行于AMD Radeon RDNA 3与RDNA 4 GPU"
+      ],
+      "full_content": "&lt;p&gt;Bruno Ferreira&#039;s journey kicked off with the venerable ZX Spectrum, a cassette player, and his hopes and dreams. He quickly realized he had more fun figuring out how computers work than he did actually using the things. Kicking off a developer career with C and Assembly before moving to scripting languages, he&#039;s worn many hats, including both database architect and systems administration. As a teen, Bruno co-founded a web development outfit where he was for 17 years before moving on to spend nearly a decade at The Tech Report as a writer, editor, and (of course) developer. In this decade, he&#039;s been at Asus, MLCommons, and HotHardware, among others. When not fiddling with computers and games, his love for music and production sends him off to live shows and festivals. Occasionally, he pretends he can play the guitar and bass.&lt;/p&gt;",
+      "ai_summary": "发生了什么：由开发者danielblnc主导的开源项目DLSS-NR-on-AMD发布0.8.0版本，标志着NVIDIA专有AI图像增强技术首次被完整逆向并实现在AMD显卡平台。该版本不仅支持DLSS Super Resolution和Frame Generation，更关键的是实现了对DLSS Ray Reconstruction（光线重建）的支持——这是NVIDIA为提升光追画质而设计的高级AI去噪技术，此前仅限RTX 40系及更新GPU使用。项目还整合了Multi-Frame Generation（MFG）等复杂功能，使AMD用户可在《赛博朋克2077》《控制》等支持DLSS 3.5的游戏里获得接近原生RTX体验的性能与画质平衡。\n\n为什么重要：这一突破打破了NVIDIA长期依赖硬件绑定构建的软件生态壁垒。DLSS不仅是性能工具，更是驱动高端游戏内容开发的关键API；其开放化意味着游戏引擎厂商可更自由地适配多GPU平台，降低对单一供应商的依赖。同时，它验证了通过高质量模型蒸馏与反向工程，可绕过专利限制复现商业AI功能，为开源AI基础设施发展提供新范式。\n\n对行业有什么影响：短期看，将加速AMD显卡在高端游戏市场的竞争力，尤其利好尚未大规模部署FSR 4的厂商；中期将倒逼NVIDIA加快开放接口或强化硬件级加密（如Secure DLSS），也可能促使AMD加速推进FSR 4与自研AI超分方案；长期而言，此类社区驱动的跨平台兼容性工程，或将重塑GPU厂商、游戏开发商与开源社区之间的协作关系，推动形成更中立、可互操作的AI图形标准体系。",
+      "category": "GPU",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/nvidia-dlss-ray-reconstruction-now-works-on-amd-radeon-gpus-through-new-mod-alongside-dlss-sr-4-5-mfg-dlss-5/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-10-17T20:30:58+00:00",
+      "created_at": "2026-10-18T05:19:34.767715+00:00"
+    },
+    {
+      "id": "452ae319-3567-47a5-8638-31a7f11e50ad",
+      "title": "Saras Micro Devices推出嵌入式电容技术：垂直供电降低I²R损耗，赋能AI加速器",
+      "summary": "Saras Micro Devices开发STILE嵌入式电容，直接集成于PCB/封装基板中，为AI/HPC加速器提供垂直供电路径，降低I²R损耗超50%。",
+      "key_points": [
+        "STILE电容厚度匹配基板核心层，支持垂直供电",
+        "嵌入式设计缩短供电路径，I²R损耗降低50%以上",
+        "已量产2mm×2mm小尺寸版本，进入可靠性测试"
+      ],
+      "full_content": "Much of the media coverage on the biggest games of this Fall season has been on Rockstar's Grand Theft Auto 6 and Nintendo's The Legend of Zelda: Ocarina of Time remake, but there's a third one that has no intention of getting overshadowed: Activision's Call of Duty Modern Warfare 4. In an interview with The Game Business, Activision's Chief Marketing Officer Tyler Bahl argued that Call of Duty is still relevant enough to be a real contender for GTA 6, leaving Zelda sidelined. No offense to Zelda, but I think these are the two biggest games of the year. In [&hellip;] Read full article at https://wccftech.com/activision-snubs-zelda-modern-warfare-4-gta-6-biggest-games/",
+      "ai_summary": "发生了什么：Saras Micro Devices推出STILE嵌入式电容技术，将高性能电容直接制造于PCB或封装基板内部，而非传统贴装于表面。该技术通过精确匹配基板核心层厚度（如100μm），实现从电压调节器（VRM）到AI芯片的垂直供电路径，将供电距离从厘米级缩短至毫米级，使I²R损耗降低50%以上。公司已推出4mm×4mm初代产品，并于2026年10月量产2mm×2mm微型版本，正进行AEC-Q200车规级可靠性认证。\n\n为什么重要：AI加速器电流已达2000A（未来5000A），传统供电架构面临物理极限。VRM响应速度有限，无法应对GPU瞬时功耗波动（微秒级），导致电压跌落（droop）与性能损失。STILE电容作为‘本地储能池’，在VRM响应间隙提供毫秒级支撑，确保GPU始终运行在标称电压，是提升AI芯片能效比（TOPS/W）的关键‘隐形基础设施’。\n\n对行业有什么影响：对AI硬件厂商，STILE将成下一代AI服务器/加速卡的标配，推动PCB与封装基板设计范式变革（从‘布线优先’转向‘供电优先’）；对PCB制造商，深埋电容工艺（如ABF载板嵌入）将成为核心竞争力，沪电股份、深南电路等厂商技术壁垒提升；对EDA工具商，Cadence、Synopsys需强化电源完整性（PI）仿真能力，支持嵌入式元件建模；长远看，该技术或延伸至Chiplet互连供电，成为先进封装‘供电-计算-存储’三维集成的关键拼图。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/saras-micro-devices-embeds-capacitors-to-power-ai-accelerators/",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-10-17T19:30:00+00:00",
+      "created_at": "2026-10-18T05:19:34.767843+00:00"
+    },
     {
       "id": "243dafb9-6472-4765-9bd7-5bd3283eb2de",
       "title": "NVIDIA否认RTX 5090停产传闻，强调其仍是核心游戏产品",
@@ -19,6 +55,24 @@
       "original_author": "@IT之家",
       "published_at": "2026-10-17T15:40:00+00:00",
       "created_at": "2026-10-17T16:06:08.813426+00:00"
+    },
+    {
+      "id": "b139fa2c-c75a-40bd-898a-2f5e7a94e8c4",
+      "title": "美光推出边缘推理内存EIM：融合HBM带宽与LPDDR能效，瞄准AI机器人",
+      "summary": "美光发布Edge Inference Memory（EIM），兼具HBM级低延迟高带宽与LPDDR级低功耗特性，目标2028年商用，有望解决AI机器人实时决策的能效瓶颈。",
+      "key_points": [
+        "EIM融合HBM带宽与LPDDR能效优势",
+        "预计2028年实现商业化",
+        "可集成至LPDDR6，避免HBM高功耗问题"
+      ],
+      "full_content": "&lt;p&gt;Sarah is a hardware enthusiast and geeky dilettante who has been building computers since she discovered it was easier to move them across the world — she grew up in Tokyo — if they were in pieces. She&#039;s best-known for trying to justify ridiculous multi-monitor setups, dramatically lowering&amp;nbsp;the temperature of her entire apartment to cool overheating components, typing just to hear the sound of her keyboard, and playing video games all day &quot;for work.&quot; She&#039;s written about everything from tech to fitness to sex and relationships, and you can find more of her work in PCWorld, Macworld, TechHive, CNET, Gizmodo, Tom&#039;s Guide, PC Gamer, Men&#039;s Health, Men&#039;s Fitness, SHAPE, Cosmopolitan, and just about everywhere else. In addition to hardware, she also loves working out, public libraries, marine biology, word games, and salads. Her favorite Star Wars character is a toss-up between the Sarlacc and Jabba the Hutt.&lt;/p&gt;",
+      "ai_summary": "发生了什么：美光宣布推出全新内存技术Edge Inference Memory（EIM），旨在专为边缘侧AI推理场景优化。EIM并非简单堆叠，而是通过创新架构设计，在保持LPDDR系列极低静态功耗（<10mW/Gb）的同时，实现接近HBM3的带宽密度（>1TB/s）与纳秒级访问延迟（<100ns）。该技术已进入流片验证阶段，据称最早将于2028年随首批AI人形机器人量产落地，并可无缝嵌入下一代LPDDR6标准，无需额外散热与供电改造。\n\n为什么重要：当前AI机器人面临根本性矛盾：大模型推理需高带宽内存支撑，但HBM的高功耗（单颗>35W）与高成本使其难以用于电池供电的移动终端；而LPDDR虽节能却带宽不足，导致模型压缩严重、响应迟滞。EIM正是为弥合这一‘能效-性能鸿沟’而生，是继存算一体、近存计算之后，内存架构层面的关键演进路径。\n\n对行业有什么影响：若EIM如期量产，将重塑AI边缘芯片格局——高通、英伟达Jetson、地平线征程等平台有望快速集成，催生真正具备自主导航、实时语义理解能力的消费级机器人；同时倒逼三星、SK海力士加速开发类似混合内存方案，加剧存储巨头在AI专用内存赛道的竞争；长远看，EIM可能成为AIoT设备的‘事实标准内存’，推动边缘AI从‘云端依赖’转向‘端侧自治’，并对数据中心HBM需求形成结构性分流。",
+      "category": "Semiconductor",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/micron-edge-inference-memory-hbm-power-efficiency-ai-robots/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-10-17T15:40:00+00:00",
+      "created_at": "2026-10-18T05:19:34.767748+00:00"
     },
     {
       "id": "66f0c14f-a0c2-480a-a99f-c449ba033b33",
@@ -5223,56 +5277,6 @@
       "original_author": "Tom's Hardware",
       "published_at": "2026-09-16T14:22:54+00:00",
       "created_at": "2026-09-16T17:37:39.526003+00:00"
-    },
-    {
-      "id": "0b05c98e-882c-46db-a990-b86dff022db1",
-      "title": "Micron发布全球首款512GB DDR5 RDIMM，单服务器最高支持12TB内存",
-      "summary": "美光宣布世界首颗512GB DDR5 RDIMM模块，采用TSV垂直堆叠技术，速率高达9200MT/s，功耗较四条128GB模组降低60%，预计2027年下半年量产。",
-      "key_points": [
-        "512GB模块基于TSV三维堆叠，单颗容量达行业新高",
-        "支持AMD/Intel下一代服务器平台，单24槽双路服务器可达12TB",
-        "功耗降低60%，Spark/SVM等内存敏感型应用性能提升1.4倍"
-      ],
-      "full_content": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked for various publications covering a range of topics including smartphones, laptops, audio devices, and PC hardware. Currently, he is engrossed with everything happening in the world of computing with a growing obsession for unique PC cases and RGB cooling fans. Through his articles Kunal strives to demystify complex concepts for a broad audience. Kunal is also a casual gamer as he loves to squad up with his friends in &lt;em&gt;Apex Legends&lt;/em&gt;, and claims to have a fairly good taste in music especially when it comes to heavy metal.&lt;/p&gt;",
-      "ai_summary": "发生了什么：美光科技于2026年9月正式发布全球首款512GB DDR5 Registered DIMM（RDIMM）模块，该产品通过先进的硅通孔（TSV）垂直互连技术，在单个DRAM封装内堆叠多层DRAM裸片，突破传统平面封装的容量极限。模块工作频率达9200MT/s，兼容JEDEC DDR5标准，并已在AMD EPYC和Intel Xeon平台完成验证。其最大价值在于系统级整合效益：在标准24插槽双路服务器中，仅需24条512GB模组即可实现12TB内存容量，彻底消除传统方案中因插槽数量限制导致的容量天花板问题。实测显示，相比四条128GB模组方案，新模块整机功耗下降超60%，在Spark、SVM等大数据分析场景下性能提升1.4倍。\n\n为什么重要：这标志着服务器内存正从‘带宽驱动’迈入‘容量-能效协同驱动’新阶段。AI大模型训练与推理、实时数据库、内存计算等新兴负载对内存容量的需求呈指数级增长，而单纯增加插槽数量会带来信号完整性恶化、功耗飙升、主板布线复杂度剧增等系统级挑战。512GB RDIMM以‘单模组高密度’方案，在不改变服务器物理形态的前提下，直接将内存容量提升4倍，同时大幅优化能效比，为数据中心运营商提供了极具吸引力的TCO（总拥有成本）优化路径。更重要的是，它验证了TSV技术在主流服务器内存领域的成熟商用能力，为后续1TB+ DDR5及DDR6模块铺平道路。\n\n对行业有什么影响：首先，将加速服务器平台迭代——AMD和Intel下一代CPU平台将强制要求支持更高密度RDIMM，推动主板厂商升级PCB层数与信号完整性设计；其次，重塑内存供应链格局：美光凭借TSV先发优势巩固高端市场地位，SK海力士、三星将加速追赶，可能引发新一轮HBM与TSV DRAM的技术路线之争；最后，对AI产业产生连锁反应：更大内存容量意味着单台服务器可加载更大模型（如万亿参数MoE）、运行更复杂的RAG检索增强系统，降低AI服务延迟与云服务调用成本，进一步推动AI应用向边缘和端侧渗透。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/micron-advances-memory-innovation-with-the-worlds-first-ultra-dense-module-for-next-generation-servers/",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-09-16T14:22:54+00:00",
-      "created_at": "2026-09-17T05:39:28.343655+00:00"
-    },
-    {
-      "id": "40e2a079-7cd2-4a55-b68a-85585949b01d",
-      "title": "&lt;p&gt;Anton Shilov has been...",
-      "summary": "&lt;p&gt;Anton Shilov has been in the PC industry since 1990s playing games, building PCs, and writing stories about pre...",
-      "key_points": [
-        "&lt;p&gt;Anton Shilov has been in the PC"
-      ],
-      "full_content": "&lt;p&gt;Anton Shilov has been in the PC industry since 1990s playing games, building PCs, and writing stories about pretty much everything that relates to PCs, Macs, smartphones, tablets, and even fab equipment. Over his career, he has worked at a variety of high-ranking websites, including AnandTech, EE Times, TechRadar, X-bit Labs, and now Tom&#039;s Hardware. He is also a regular features contributor to Tom&#039;s Hardware Premium, writing about the latest developments in the semiconductor industry and related tech news and roadmaps. When Anton is not reading or writing about something high-tech, he is probably watching a good movie, playing a video game, or spending time with his family.&lt;/p&gt;",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n&lt;p&gt;Anton Shilov has been in the PC industry since 1990s playing games, building PCs, and writing stories about pretty much everything that relates to PCs, Macs, smartphones, tablets, and even fab equipment. Over his career, he has worked at a variety of high-ranking websites, including AnandTech, EE Times, TechRadar, X-bit Labs, and now Tom&#039;s Hardware. He is also a regular features contributor to Tom&#039;s Hardware Premium, writing about the latest developments in the semiconductor i",
-      "category": "Semiconductor",
-      "source": "Tom's Hardware",
-      "source_url": "https://www.tomshardware.com/pc-components/dram/micron-announces-512gb-ddr5-9200-memory-modules-with-16w-power-draw-up-to-12tb-per-server-claims-60-percent-less-energy-intensive-than-four-128gb-modules",
-      "original_author": "Tom's Hardware",
-      "published_at": "2026-09-16T14:07:31+00:00",
-      "created_at": "2026-09-16T17:37:39.526029+00:00"
-    },
-    {
-      "id": "3110872a-5230-4d13-b230-fb34a3dc18da",
-      "title": "&lt;p&gt;Kunal Khullar is a co...",
-      "summary": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-se...",
-      "key_points": [
-        "&lt;p&gt;Kunal Khullar is a contributor "
-      ],
-      "full_content": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked for various publications covering a range of topics including smartphones, laptops, audio devices, and PC hardware. Currently, he is engrossed with everything happening in the world of computing with a growing obsession for unique PC cases and RGB cooling fans. Through his articles Kunal strives to demystify complex concepts for a broad audience. Kunal is also a casual gamer as he loves to squad up with his friends in &lt;em&gt;Apex Legends&lt;/em&gt;, and claims to have a fairly good taste in music especially when it comes to heavy metal.&lt;/p&gt;",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked fo",
-      "category": "AI",
-      "source": "Tom's Hardware",
-      "source_url": "https://www.tomshardware.com/pc-components/ram/ai-induced-memory-shortage-is-changing-how-devices-are-built-fairphone-says-memory-now-60-percent-of-materials-cost-smaller-laptop-and-phone-makers-are-redesigning-products-and-have-to-test-for-fake-chips",
-      "original_author": "Tom's Hardware",
-      "published_at": "2026-09-16T12:15:42+00:00",
-      "created_at": "2026-09-16T17:37:39.526054+00:00"
     }
   ]
 }
