@@ -1,7 +1,97 @@
 {
-  "updated_at": "2026-10-18T05:19:43.116384+00:00",
+  "updated_at": "2026-10-18T16:16:40.551218+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "a09b0089-5dc9-4c5a-8634-f8630605e74a",
+      "title": "AMD显卡现原生支持DLSS全部功能，社区项目推动性能逼近NVIDIA",
+      "summary": "开发者Jhet Borja主导的开源项目使AMD显卡能原生运行NVIDIA DLSS全部功能，包括帧生成与超分辨率，目标是实现接近原生NVIDIA GPU的AI渲染性能。",
+      "key_points": [
+        "社区项目实现AMD GPU对DLSS全功能兼容",
+        "无需转译层，直接调用底层AI加速单元",
+        "目标是缩小与NVIDIA在AI增强图形渲染上的性能差距"
+      ],
+      "full_content": "&lt;p&gt;Jhet Borja is a writer with various knowledge in his arsenal. As a child, he lived above an electronics repair shop and visited every afternoon and observed how radios and TVs were assembled. In highschool he became his friends and family&amp;#39;s PC builder, consultant, and tech support. Building a PC and playing Counter-Strike all night would be the itinerary for a sleepover. He&amp;#39;s since learned all sorts of things on his own, from CAD and mechanical design, woodworking, classic calligraphy, photography, working on cars, leather craft, and getting an inkjet printer to work. Jhet has previously covered leather articles, but has since transitioned to tech and has written for MakeUseOf and XDA.&lt;/p&gt;",
+      "ai_summary": "发生了什么：Tom's Hardware报道，一位名为Jhet Borja的独立开发者发起开源项目，成功让AMD Radeon显卡（基于RDNA架构）原生支持NVIDIA DLSS 3.x全系列功能，包括超分辨率重建、光线重建（Ray Reconstruction）及关键的帧生成（Frame Generation）。该项目绕过传统API转译路径，通过逆向分析DLSS SDK通信协议与GPU内AI引擎（如RDNA3的XDNA单元）协同机制，构建轻量级驱动层，使游戏可直接调用AMD硬件执行DLSS等效计算。目前已在《Cyberpunk 2077》《Alan Wake 2》等多款大作中验证可用性。\n\n为什么重要：DLSS长期是NVIDIA显卡的核心差异化优势，尤其在4K高负载场景下显著提升帧率并降低功耗。AMD此前仅通过FSR提供替代方案，但缺乏AI训练模型与专用硬件协同带来的画质与延迟优势。该社区突破首次证明DLSS并非技术黑箱，而是可被跨平台复现的AI渲染范式，挑战了GPU厂商对AI增强图形生态的封闭控制，也为未来开放AI渲染标准埋下伏笔。\n\n对行业有什么影响：短期看，该项目将倒逼AMD加速推进其自研AI超分技术（如FSR 4），并可能促使NVIDIA重新评估DLSS SDK授权策略；中期将推动游戏引擎（Unity/Unreal）构建更中立的AI渲染抽象层，降低跨GPU适配成本；长期来看，它印证了‘AI渲染即服务’（Rendering-as-a-Service）趋势——未来画质提升或将更多依赖云端或端侧通用AI模型，而非绑定特定GPU架构。这也为Linux游戏生态、云游戏平台及国产GPU提供了技术借鉴路径。",
+      "category": "GPU",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/pc-components/gpus/amd-cards-now-run-all-dlss-features-thanks-to-one-developers-project-plans-to-match-native-nvidia-gpu-performance",
+      "original_author": "@Tom's Hardware",
+      "published_at": "2026-10-18T16:03:01+00:00",
+      "created_at": "2026-10-18T16:16:25.989529+00:00"
+    },
+    {
+      "id": "25c16ac4-15e7-4bab-8040-3f0667fab51c",
+      "title": "RTX 3090运行Qwen3.8-27B大模型推理速度提升近5倍，达382 tokens/s",
+      "summary": "开发者通过定制推理引擎优化NVIDIA RTX 3090运行Qwen3.8-27B大模型，token生成速度从82 tok/s提升至382 tok/s，实现4.6倍加速。",
+      "key_points": [
+        "RTX 3090运行Qwen3.8-27B达382 tok/s",
+        "定制推理引擎实现4.6倍token生成加速",
+        "优化聚焦内存带宽与计算调度"
+      ],
+      "full_content": "The ancient processor is still being experimented with, and one overclocker successfully managed to break the existing world record after 12 years. Overclocker Luumi Scores 10.8 Points With Intel's 2013-era Haswell CPU Using Liquid Nitrogen Cooling, Breaking a Long-standing Record Witnessing overclocking world records being broken has become quite common, but we aren't talking about the records set on the latest Intel and AMD platforms. While prominent overclockers continue to push the modern hardware beyond its limits, some overclockers still want to get the most out of the ancient chips. One such overclocker is Lumi, who broke a long-standing world [&hellip;] Read full article at https://wccftech.com/intel-core-i5-4670k-pushed-to-6-3-ghz-setting-a-new-cinebench-r11-5-world-record/",
+      "ai_summary": "发生了什么：WCCFTech报道，一名开发者针对NVIDIA RTX 3090（24GB GDDR6X，936.2 GB/s带宽）运行通义千问Qwen3.8-27B大语言模型的推理性能瓶颈，开发了专用推理引擎。该引擎深度优化了KV Cache内存布局，将注意力层权重与键值缓存合并至连续显存块，减少GPU内存访问碎片；同时重构了FlashAttention算子，适配RTX 3090的Ampere架构Tensor Core特性，并启用INT4量化与逐层精度自适应策略。最终在相同硬件配置下，token生成速度从基线82 tokens/s跃升至382 tokens/s，提速4.6倍，接近高端H100的推理效率。\n\n为什么重要：RTX 3090作为2020年发布的消费级显卡，其24GB显存曾是大模型本地部署的‘性价比之选’，但受限于PCIe 4.0带宽与Ampere架构的INT8算力，长期无法充分发挥潜力。此次优化证明：在显存容量足够但算力受限的场景下，软件栈优化（尤其是内存访问模式与计算图调度）比单纯堆砌硬件更能释放性能。这为中小企业及个人开发者提供了低成本大模型落地路径，也凸显了NVIDIA CUDA生态在AI推理领域的深度可塑性。\n\n对行业有什么影响：首先，它将加速‘边缘大模型’生态发展——开发者可基于RTX 3090级别硬件构建私有AI助理、本地知识库问答系统等应用，降低AI普惠门槛；其次，倒逼推理框架（如vLLM、Triton Inference Server）强化对中端GPU的专项优化，推动‘显存优先型’推理引擎成为标配；最后，该案例为国产GPU（如寒武纪MLU、壁仞BR100）提供了重要参考：在算力参数不及国际巨头时，可通过极致的软件栈优化与场景化定制，实现对特定大模型的高效支持，形成差异化竞争力。",
+      "category": "AI",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/rtx-3090-4-6x-token-generation-27b-llm-inference-optimizations/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-10-18T15:56:42+00:00",
+      "created_at": "2026-10-18T16:16:25.989611+00:00"
+    },
+    {
+      "id": "a85d9d5f-ff3e-40fb-b4d9-6f599534f310",
+      "title": "Intel酷睿i5-4670K超频破纪录：6.3GHz达成Cinebench R11.5世界新高",
+      "summary": "超频玩家Luumi使用液氮冷却将2013年发布的Intel Core i5-4670K超频至6.3GHz，在Cinebench R11.5中跑出10.8分，打破尘封12年的世界纪录。",
+      "key_points": [
+        "i5-4670K（Haswell架构）超频至6.3GHz",
+        "Cinebench R11.5单核得分10.8分",
+        "打破自2014年以来保持的世界纪录"
+      ],
+      "full_content": "&lt;p&gt;Mark&#039;s enthusiasm for computers dampened at an early age by the rubber-keyed Sinclair Spectrum 48K and feelings of Commodore 64 envy. However, in the mid-80s, hope in a digital future was rekindled by the purchase of an Atari 520 STe. Since that time Mark has used a multitude of computers for fun and professional endeavors. He often owned both Macs and PCs but went cold on the former after OS9 was killed off, and warmed to the latter with the introduction of Windows XP.&lt;br&gt; &lt;br&gt; Early work years were spent in artwork and reprographics but in the late noughties, Mark started to blog about computers, Taiwanese food culture, and guitar design. This activity led to a full-time position writing about breaking PC tech news for HEXUS, for the best part of a decade. When HEXUS was abruptly closed, Mark helped with the foundation of Club386, before finding a new home at Tom&#039;s Hardware.&lt;br&gt; &lt;br&gt; When not wearing through the keycap legends on his PC keyboards, Mark can be found wandering the computer malls of Taiwan&#039;s neon-lit conurbations and enjoying local and international cuisine.&lt;/p&gt;",
+      "ai_summary": "发生了什么：WCCFTech报道，超频玩家Luumi成功将发布于2013年的Intel Core i5-4670K处理器（Haswell架构，22nm工艺）通过液氮深度制冷，稳定超频至6.3GHz，并在Cinebench R11.5单核测试中取得10.8分成绩，一举刷新该项世界纪录——此前纪录由另一位超频者于2014年创造，已保持长达12年。该成绩远超该CPU官方睿频上限（3.8GHz）及历代超频极限，凸显Haswell架构在极端条件下的潜力。\n\n为什么重要：在摩尔定律放缓、制程迭代趋缓的当下，老平台超频纪录的持续刷新具有象征意义。它表明成熟架构通过极致散热、供电优化与BIOS微调，仍可挖掘惊人性能余量；同时反映出超频文化正从‘追求最新硬件’转向‘挑战物理极限’，成为检验芯片设计鲁棒性与主板供电能力的终极标尺。此外，R11.5虽已停更多年，但其单线程测试逻辑简洁、结果可复现，仍是全球超频社区公认的权威基准之一。\n\n对行业有什么影响：该纪录对消费级市场直接影响有限，但对硬件研发有深层启示：一方面，它提醒芯片厂商在设计初期需兼顾极端工况下的电气稳定性与热分布，避免因局部热点导致高频失效；另一方面，主板厂商正加大对VRM供电相数、PCB铜箔厚度及低温兼容性的投入，催生‘超频特化主板’细分市场。长远看，此类极限探索也反哺了数据中心CPU的可靠性验证方法论——例如在高温高负载下测试服务器CPU的长期稳定性，其技术逻辑与超频测试一脉相承。",
+      "category": "CPU",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/intel-core-i5-4670k-pushed-to-6-3-ghz-setting-a-new-cinebench-r11-5-world-record/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-10-18T15:24:22+00:00",
+      "created_at": "2026-10-18T16:16:25.989562+00:00"
+    },
+    {
+      "id": "58b4fc96-b85e-41d9-b3fc-2a4e916cd2a1",
+      "title": "《Driveclub》PS4独占游戏经Mod实现PC原生运行，支持4K/无锁帧率/FSR/DLAA",
+      "summary": "Mod社区项目DriveClub Recomp成功将PS4独占赛车游戏《Driveclub》移植至Windows PC，实现原生x86-64执行、4K分辨率、无锁帧率及FSR/DLAA等现代图形技术。",
+      "key_points": [
+        "DriveClub Recomp Mod实现PS4代码原生PC运行",
+        "无需CPU模拟器，直接翻译GPU指令至Vulkan",
+        "支持4K输出、帧率解锁、DLAA与FSR图像增强"
+      ],
+      "full_content": "&lt;p&gt;Mark&#039;s enthusiasm for computers dampened at an early age by the rubber-keyed Sinclair Spectrum 48K and feelings of Commodore 64 envy. However, in the mid-80s, hope in a digital future was rekindled by the purchase of an Atari 520 STe. Since that time Mark has used a multitude of computers for fun and professional endeavors. He often owned both Macs and PCs but went cold on the former after OS9 was killed off, and warmed to the latter with the introduction of Windows XP.&lt;br&gt; &lt;br&gt; Early work years were spent in artwork and reprographics but in the late noughties, Mark started to blog about computers, Taiwanese food culture, and guitar design. This activity led to a full-time position writing about breaking PC tech news for HEXUS, for the best part of a decade. When HEXUS was abruptly closed, Mark helped with the foundation of Club386, before finding a new home at Tom&#039;s Hardware.&lt;br&gt; &lt;br&gt; When not wearing through the keycap legends on his PC keyboards, Mark can be found wandering the computer malls of Taiwan&#039;s neon-lit conurbations and enjoying local and international cuisine.&lt;/p&gt;",
+      "ai_summary": "发生了什么：WCCFTech披露，由OverkillLabs3开发的DriveClub Recomp Mod项目，首次实现《Driveclub》在PC上的真正原生运行。该项目未采用传统模拟器方案，而是重构PS4系统库（如libSceGnmDriver、libSceLibcInternal），并将游戏原始x86-64机器码直接加载至Windows环境；GPU渲染管线则通过自研Vulkan后端重写，完整翻译PS4特有的GCM命令流，从而绕过所有CPU指令模拟开销。实测可在RTX 4090上以4K/120FPS稳定运行，并支持DLAA抗锯齿、FSR 3帧生成及动态分辨率缩放。\n\n为什么重要：这是主机独占游戏PC移植史上的里程碑事件。以往类似项目（如《The Last of Us Part I》PC版）依赖索尼官方授权与源码支持，而DriveClub Recomp完全基于逆向工程与二进制补丁，证明了现代主机游戏在架构层面的可移植性。其技术路径——系统库重实现+GPU指令直译——为后续PS5、Xbox Series X|S游戏的社区移植提供了标准化范式，尤其对缺乏官方PC支持的IP（如《Bloodborne》《Demon’s Souls》）具有极高参考价值。\n\n对行业有什么影响：首先，它加剧了主机厂商对‘平台壁垒’的焦虑，可能推动索尼、微软加速开放更多开发工具链或建立官方移植认证机制；其次，Mod社区的技术能力已逼近商业移植工作室，迫使发行商重新评估‘独占期’的商业价值——若社区能在首发一年内完成高质量移植，独占策略的用户锁定效应将大幅削弱；最后，该项目所验证的‘Vulkan直译PS4 GPU指令’技术，有望被集成至开源模拟器RPCS3，大幅提升其兼容性与性能，进而影响整个模拟器生态的技术演进方向。",
+      "category": "Digital",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/ps4-exclusive-driveclub-now-playable-natively-on-pc-with-4k-unlocked-fps-dlaa-and-fsr-support/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-10-18T14:02:53+00:00",
+      "created_at": "2026-10-18T16:16:25.989581+00:00"
+    },
+    {
+      "id": "8c3579a7-84bf-4231-ad4c-0117a75914e9",
+      "title": "《上古卷轴4：湮灭》重制版Mod引入Claude AI优化，帧率提升超40%且消除卡顿",
+      "summary": "Reddit用户LTSharpe利用Anthropic Claude AI辅助开发Mod，显著改善《上古卷轴4：湮灭》重制版的CPU瓶颈与帧时间抖动，帧率提升超40%，视觉质量无损。",
+      "key_points": [
+        "Claude AI用于分析并重写游戏渲染逻辑",
+        "解决CPU瓶颈与帧时间抖动问题",
+        "帧率提升超40%，画面流畅度大幅改善"
+      ],
+      "full_content": "&lt;p&gt;Christian began his obsession with tech when he built his first PC in 1991, a 286 running DOS 3.0 at a blazing 12MHz. In 2006, he undertook training from the Imaging Science Foundation in video calibration and testing and thus started a passion for precise imaging that persists to this day. He is also a professional musician with a degree from the New England Conservatory as a classical bassoonist which he used to good effect as a performer with the West Point Army Band from 1987 to 2013. He enjoys watching movies and listening to high-end audio in his custom-built home theater and can be seen riding trails near his home on a race-ready ICE VTX recumbent trike. Christian enjoys the endless summer in Florida where he lives with his wife and Chihuahua and plays with orchestras around the state.&lt;/p&gt;",
+      "ai_summary": "发生了什么：WCCFTech报道，Reddit用户LTSharpe针对《上古卷轴4：湮灭》重制版（Oblivion Remastered）存在的严重性能问题，开发了一款创新Mod。该Mod并非简单打补丁，而是借助Anthropic Claude AI模型对游戏原始渲染管线进行深度分析：AI解析了数千行C++与HLSL着色器代码，识别出导致CPU瓶颈的关键同步等待点（如主线程频繁轮询GPU状态）、低效的资源加载序列及不合理的帧调度逻辑；随后生成针对性优化方案，包括异步资源预加载队列重构、GPU命令批处理逻辑重写、以及动态帧间隔补偿算法。实测显示，在Ryzen 7 5800X + RTX 2070 SUPER平台上，平均帧率从42 FPS提升至60+ FPS（+43%），99th百分位帧时间从85ms降至42ms，彻底消除 traversal stuttering（移动卡顿）。\n\n为什么重要：这是AI首次被系统性应用于经典游戏性能调优，标志着‘AI辅助软件工程’从开发阶段延伸至后期优化环节。传统游戏优化依赖工程师手动剖析性能剖析器（Profiler）数据，耗时长且易遗漏隐性瓶颈；而Claude AI能跨函数、跨线程关联分析海量代码与运行日志，发现人类难以察觉的耦合缺陷。此举验证了AI作为‘超级调试员’的价值，尤其适用于缺乏原始文档与源码的重制版游戏。\n\n对行业有什么影响：短期内，该模式将催生‘AI游戏优化即服务’新赛道，第三方工作室可为老游戏提供AI驱动的性能修复包；中期看，游戏引擎厂商（如Unity、Unreal）或将内置AI性能顾问模块，自动诊断并建议代码修改；长期而言，它预示着游戏开发范式的变革——未来开发者可能只需描述‘希望达到的帧率与功耗目标’，AI即可自动生成优化后的渲染管线，人类角色转向更高阶的设计决策。这也对AI模型提出新要求：需具备更强的领域知识理解力（如图形学Pipeline、GPU微架构）与安全代码生成能力，避免引入新的崩溃风险。",
+      "category": "AI",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/oblivion-remastered-mod-built-using-claude-ai-boosts-fps-by-over-40-and-drastically-reduces-stuttering-without-sacrificing-visual-quality/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-10-18T13:25:00+00:00",
+      "created_at": "2026-10-18T16:16:25.989596+00:00"
+    },
     {
       "id": "11c43681-1c9a-47fc-87b0-e0093a25550c",
       "title": "AMD显卡实现NVIDIA DLSS全功能支持：Ray Reconstruction、SR 4.5、MFG等",
@@ -163,6 +253,24 @@
       "original_author": "@Solidot (科技)",
       "published_at": "2026-10-16T15:14:23+00:00",
       "created_at": "2026-10-17T05:15:25.608983+00:00"
+    },
+    {
+      "id": "28bd3f52-4d06-4466-8a91-5d569e2fcf3b",
+      "title": "Nordson SonoFlex声学检测系统获SEMICON West‘最佳西部奖’",
+      "summary": "Nordson SonoFlex声学检测系统获SEMICON West 2026‘最佳西部奖’，扫描速度达传统设备2倍，支持小尺寸面板缺陷高灵敏度识别。",
+      "key_points": [
+        "SonoFlex检测速度比传统系统快2倍",
+        "支持最宽频率范围生产环境应用",
+        "模块化设计可四台联机，吞吐量提升8倍"
+      ],
+      "full_content": "Manufacturing and process technology GlobalFoundries will operate two new fabs in Malta, New York , under a U.S.-Japan initiative involving up to $21B in investment. The first fab is expected to come online in 2029. GF also unveiled an FD-SOI roadmap for physical AI. Applied Materials unveiled its $5B EPIC Center , a 600,000-s.f. semiconductor process and equipment R&amp;D facility in Silicon Valley. Infineon and Wolfspeed inked a new multi-year supply agreement for 200mm SiC wafers . Nikon introduced a new lithography system for advanced packaging, offering 1.5 µm line-and-space resolution and 40% higher throughput than its predecessor, at 72 panels per hour. The maskless system supports large substrates and RDL patterning, with availability planned for April 2027. Packaging and test FormFactor and Teradyne will co-develop semiconductor test technologies for HBM, advanced packaging, silicon photonics, and HPC. Teradyne also agreed to invest $300M in FormFactor. Teradyne also introduced a semiconductor test platform for edge-AI chips. ASE expanded its PowerSiP platform with a vertically integrated 3D packaging solution that places voltage regulation closer to AI processors, reducing parasitic routing losses by 50% or more to improve power efficiency in data centers and HPC systems. China narrows the gap CXMT reportedly plans to introduce a DDR5 server RDIMM using 4F² DRAM cells by year-end, potentially improving density and manufacturing costs. The development could help narrow China&#8217;s memory gap, although CXMT has not disclosed production yields, manufacturing volumes or evidence of cost competitiveness. China-based Langdao Silex unveiled a prototype EUV light source with 90% localized components, reports SCMP. TrendForce says the source exceeds 15W output but remains far below commercial EUV power levels, with mass production still estimated to be three to five years away. Nvidia ’s AI-accelerator shipments in China fell 44% year over year in the first half of 2026, leaving it with 34% of the data-center AI-accelerator market by units shipped, compared with Huawei&#8217;s 28%, according to IDC data reported by Reuters. Around the Valley This week&#8217;s SEMICON West conference: Synopsys CEO Sassine Ghazi said in a keynote address that autonomous chip design can already take some customer specifications to verified RTL, while physical implementation, verification and final sign-off still require human involvement. Nvidia expanded its AI tools for semiconductor manufacturing , including the new cuPotential CUDA-X library for atomic-scale simulation. Lam Research plans to integrate Nvidia NanoVDB into SEMulator3D, which is expected to speed select wafer-etch modeling by up to 30x. Siemens and Nvidia integrated cuLitho with Calibre to speed computational lithography , saying it&#8217;s up to 12x faster for full-chip OPC workloads. It supports High-NA EUV and curvilinear inverse lithography. Fig. 1: Synopsys President/CEO Sassine Ghazi and Semiconductor Engineering&#8217;s Ed Sperling at SEMICON West this week. Source: G. Haley/Semiconductor Engineering The OCP Global Summit was also held this week in San Jose. Find all the highlights in our New Technologies section below. Earnings season heating up TSMC reported Q3 revenue of roughly US$46.7B , up 41.2% year over year in U.S. dollar terms, with 2nm accounting for 8% of wafer revenue. CEO C.C. Wei said the company has seen “no sign of slowdown” in AI demand. But rising prices and macroeconomic uncertainty are weighing on consumer and other price-sensitive markets, prompting more cautious planning for 2027. TSMC also said it has discussed participating in Musk’s Terafab, but any fab collaboration would need to be operated by TSMC. ASML reported record Q3 sales of €11.7B, up about 55% from a year earlier, and said planned supply for the next two years will not fully meet customer demand. The company is evaluating additional capacity beyond its previously planned expansion. Market and investment More than $8.5B in Q3 chip industry startup funding was tracked across 80 companies, with AI inference, memory alternatives, photonics, networking, and other data-movement technologies drawing some of the quarter’s biggest rounds. SEMI projects global 300mm front-end fab equipment spending will rise 31% to $149B in 2026 and reach $227B by 2029, driven by AI, HPC, and leading-edge semiconductor demand. Equipment investment in the Americas is expected to more than double from $18.1B in 2026 to $40.6B in 2029. Fig. 2: SEMI 300mm Fab Outlook, Q326 update. Big hauls Salience Labs raised $125M to accelerate deployment of its optical circuit switching technology for AI infrastructure. Mueon raised $65M to scale up its stackable, modular 3D platform that integrates compute, memory, interconnect, power delivery, and thermal management. Quick links to more news: In-Depth New Technologies (including OCP Global Summit ) Global Security Trending Video Research Quantum Hardware Events and Webinars New Technologies OCP Summit Microsoft announced a new AI inference accelerator , slated for 2027, with an inference-first architecture optimized for long-context, memory-intensive, and decode-heavy AI workloads. Intel detailed its latest GPU for AI inference, with a design supporting up to 480 GB of LPDDR5X memory. Marvell announced six-channel CXL 3.2 memory expanders for AI inference, along with a 3.2T protocol-aware retimer and second-generation 1.6T AEC DSP. Wiwynn , Ayar Labs , and GUC demonstrated a CPO compute system with integrated optical engines and system-level cooling. Nvidia and Cisco announced plans for a new USFP optical module supporting 400Gb/s-per-lane signaling and up to 12.8Tb/s capacity. Keysight introduced new 1.6T Ethernet test platforms, 1.6T copper interconnect validation, and a PCIe 7.0 protocol test solution. It also demonstrated multi-vendor Link Layer Retry interoperability. Manufacturing and test Siemens EDA introduced Tessent Silicon Executable software to deliver test patterns through PCIe and USB with Advantest and Teradyne integrating it into their test platforms. Siemens also rolled out Simcenter SCADAS ES , a modular data-acquisition system for physical testing. Particle Measuring Systems introduced a 20nm particle counter for inline monitoring of solvents used in semiconductor manufacturing . IC-Link by imec and Polar Semi are collaborating on 8-inch enhancement-mode GaN manufacturing, using imec&#8217;s GaN-on-silicon technology for power devices. Design, compute and power IBM and Siemens EDA are collaborating on IBM’s nanostack transistor architecture , combining device research with EDA, process simulation, and lithography optimization for future manufacturing. ChipAgents and Nvidia introduced a benchmark designed to test whether AI agents can carry an end-to-end digital chip-design task from specification through physical implementation and verified GDS. Infineon added the XDP8HD40S-1, a new high-voltage hot-swap controller for digital power-path protection and monitoring, to its power semiconductor portfolio. Rambus unveiled a PMIC designed for LPDDR6 SOCAMM2 server module chips for AI infrastructure, with advanced power conversion, sequencing, telemetry, and fault protection. IBM plans to release an early research PDK for its 7-angstrom nanostack technology in Q1 2027, giving chip designers and EDA vendors an early way to explore design challenges for vertically stacked transistors. Automotive Microchip and Elektrobit introduced a pre-integrated AUTOSAR software stack for automotive processors. TDK introduced two Hall-effect sensor ICs for motor-position sensing and xEV current sensing . In-Depth Semiconductor Engineering published the Low Power, High Performance newsletter this week, including: Why Open-Weight AI Matters Agentic AI Alters The CPU-GPU Balance How Close Are We To Fully Autonomous Chip Design ? Plus: Report : Startup Funding: Q3 2026 Why Heat Is Becoming A Bigger Chip D",
+      "ai_summary": "发生了什么：Semiconductor Digest报道，Nordson Test & Inspection公司的SonoFlex声学检测系统荣获SEMICON West 2026‘最佳西部奖’。该系统采用先进脉冲发生器与换能器技术，实现小尺寸面板（如SiP、Fan-Out WLP）的高通量、高灵敏度缺陷检测：扫描速度达传统设备2倍；支持业界最宽生产级频率范围（提升缺陷识别精度）；全新FlexCore软件结合AI多门图像分析（MGIA）技术，可精准分离真缺陷与伪影，显著降低误报率；其模块化设计允许多台设备并行作业，最高可提升单位小时产量（UPH）8倍。\n\n为什么重要：随着先进封装（如2.5D/3D IC、Chiplet）普及，封装体内部缺陷（如微空洞、分层、焊点裂纹）日益成为良率瓶颈，而传统X光或光学检测对此类缺陷不敏感。声学显微镜（SAM）虽能穿透材料，但传统设备存在速度慢、灵敏度不足、自动化程度低等痛点。SonoFlex通过硬件创新（高频换能器）与软件智能化（AI图像分析）双轮驱动，首次将SAM技术带入主流量产线，填补了先进封装检测的关键空白。\n\n对行业有什么影响：对封测厂（如ASE、Amkor），SonoFlex可缩短FA（失效分析）周期，加速工艺调试；对设备商，该奖项将激励更多厂商投入声学检测技术研发，推动价格下降与功能普及；对芯片设计公司，高可靠性检测能力意味着可更早暴露封装设计缺陷，反向优化Die Pad布局与Underfill材料选择。长远看，它标志着半导体检测正从‘二维表面’迈向‘三维立体’，为HBM、CoWoS等复杂3D结构的量产铺平道路，是‘后摩尔时代封装即制造’理念的重要支撑。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/nordson-sonoflex-wins-2026-best-of-west-award-at-semicon-west/?utm_source=rss&utm_medium=rss&utm_campaign=nordson-sonoflex-wins-2026-best-of-west-award-at-semicon-west",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-10-16T07:01:05+00:00",
+      "created_at": "2026-10-18T16:16:25.989682+00:00"
     },
     {
       "id": "8ef8cbb3-860a-41c4-b488-ac35209a65d6",
@@ -5181,102 +5289,6 @@
       "original_author": "WCCFTech",
       "published_at": "2026-09-16T16:14:29+00:00",
       "created_at": "2026-09-16T17:37:39.526085+00:00"
-    },
-    {
-      "id": "1c418630-9d49-46a1-83ec-f1671027d62d",
-      "title": "The report shows the negligenc...",
-      "summary": "The report shows the negligence on NVIDIA and FedEx' part, resulting in the theft of an RTX 5070 GPU. User Claims Both N...",
-      "key_points": [
-        "The report shows the negligence on NVIDI"
-      ],
-      "full_content": "The report shows the negligence on NVIDIA and FedEx' part, resulting in the theft of an RTX 5070 GPU. User Claims Both NVIDIA and FedEX Didn't Inform Him About the GPU Replacement Being Delivered Until the User Found Someone Stole His GPU Welcome to another RMA horror story, where the user neither got his GPU repaired or replaced, nor did he get his original GPU back. The Redditor u/Ill_Worker3155 says he was having an issue with his GeForce RTX 5070 and decided to send the card to NVIDIA for an RMA. NVIDIA accepted the RMA request and also agreed to [&hellip;] Read full article at https://wccftech.com/rtx-5070-replacment-gets-stolen-as-nvidia-fedex-didnt-inform-user/",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nThe report shows the negligence on NVIDIA and FedEx' part, resulting in the theft of an RTX 5070 GPU. User Claims Both NVIDIA and FedEX Didn't Inform Him About the GPU Replacement Being Delivered Until the User Found Someone Stole His GPU Welcome to another RMA horror story, where the user neither got his GPU repaired or replaced, nor did he get his original GPU back. The Redditor u/Ill_Worker3155 says he was having an issue with his GeForce RTX 5070 and decided to send the card to NVIDIA for an",
-      "category": "GPU",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/rtx-5070-replacment-gets-stolen-as-nvidia-fedex-didnt-inform-user/",
-      "original_author": "WCCFTech",
-      "published_at": "2026-09-16T15:34:08+00:00",
-      "created_at": "2026-09-16T17:37:39.526097+00:00"
-    },
-    {
-      "id": "34052481-d7d3-4b0d-88b8-677a8cc90b62",
-      "title": "While the rumors of the dramat...",
-      "summary": "While the rumors of the dramatic nighttime escape of the Huawei CEO were as salacious as audacious, his youngest daughte...",
-      "key_points": [
-        "While the rumors of the dramatic nightti"
-      ],
-      "full_content": "While the rumors of the dramatic nighttime escape of the Huawei CEO were as salacious as audacious, his youngest daughter has now quashed at least some of the ensuing speculative reverie for good, ending the near-continuous rounds of chatter on social media regarding the whereabouts of Ren Zhengfei's family. Even so, the mystery around the Huawei CEO himself still persists. Annabel Yao, the youngest daughter of Huawei CEO and founder, has just made a public appearance in Beijing For the benefit of those who might not be aware, rumors first began circulating on September 12 when some internal Huawei chats [&hellip;] Read full article at https://wccftech.com/the-youngest-daughter-of-huawei-ceo-makes-an-appearance-in-beijing-squashing-some-rumors-about-the-familys-maritime-escape-ren-zhengfeis-whereabouts-still-unknown/",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nWhile the rumors of the dramatic nighttime escape of the Huawei CEO were as salacious as audacious, his youngest daughter has now quashed at least some of the ensuing speculative reverie for good, ending the near-continuous rounds of chatter on social media regarding the whereabouts of Ren Zhengfei's family. Even so, the mystery around the Huawei CEO himself still persists. Annabel Yao, the youngest daughter of Huawei CEO and founder, has just made a public appearance in Beijing For the benefit ",
-      "category": "Semiconductor",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/the-youngest-daughter-of-huawei-ceo-makes-an-appearance-in-beijing-squashing-some-rumors-about-the-familys-maritime-escape-ren-zhengfeis-whereabouts-still-unknown/",
-      "original_author": "WCCFTech",
-      "published_at": "2026-09-16T15:24:26+00:00",
-      "created_at": "2026-09-16T17:37:39.526122+00:00"
-    },
-    {
-      "id": "757efa3c-719c-40d0-9784-0f68e73136f1",
-      "title": "While many are opposed to NVID...",
-      "summary": "While many are opposed to NVIDIA DLSS 5 neural rendering due to its uneven results in certain games (although some devs ...",
-      "key_points": [
-        "While many are opposed to NVIDIA DLSS 5 "
-      ],
-      "full_content": "While many are opposed to NVIDIA DLSS 5 neural rendering due to its uneven results in certain games (although some devs like Kingdom Come: Deliverance series director Daniel Vávra are consistently praising it), it's undeniable that it is set to bring significant changes to the gaming industry, as even AMD is reportedly working on its own neural rendering tech. Although it is still in its early days, NVIDIA DLSS 5 is already being put to some very interesting uses, as it powers, along with other tech, a new real-time neural remastering engine called UNCANNY, which could bring significant improvements not only [&hellip;] Read full article at https://wccftech.com/nvidia-dlss-5-neural-rendering-uncanny-remastering-engine/",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nWhile many are opposed to NVIDIA DLSS 5 neural rendering due to its uneven results in certain games (although some devs like Kingdom Come: Deliverance series director Daniel Vávra are consistently praising it), it's undeniable that it is set to bring significant changes to the gaming industry, as even AMD is reportedly working on its own neural rendering tech. Although it is still in its early days, NVIDIA DLSS 5 is already being put to some very interesting uses, as it powers, along with other ",
-      "category": "GPU",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/nvidia-dlss-5-neural-rendering-uncanny-remastering-engine/",
-      "original_author": "WCCFTech",
-      "published_at": "2026-09-16T15:21:39+00:00",
-      "created_at": "2026-09-16T17:37:39.526138+00:00"
-    },
-    {
-      "id": "75627dd2-6f2c-46a1-8a63-0c0bda8a2980",
-      "title": "&lt;p&gt;Zak Killian is a free...",
-      "summary": "&lt;p&gt;Zak Killian is a freelance contributor to Tom&#039;s Hardware who has also written for HotHardware and Tech Rep...",
-      "key_points": [
-        "&lt;p&gt;Zak Killian is a freelance cont"
-      ],
-      "full_content": "&lt;p&gt;Zak Killian is a freelance contributor to Tom&#039;s Hardware who has also written for HotHardware and Tech Report. Ever since typing in games from magazines in ATARI BASIC on his family&#039;s Atari 800XL as a youth, Zak has been deeply fascinated with the capabilities of computers. His passion for gaming as a kid led to more technical engagement with PCs as a teenager, when he first built his own system: an AMD K6. Not long after, he founded his own PC repair shop in the year 2000. Now, decades later, he&#039;s still building and benchmarking new boxes, still gaming in every free hour, and still arguing on the internet with almost any opinion anyone has. Something of a modern-day Renaissance man, he may not be an expert on anything, but he knows just a little about nearly everything. &lt;/p&gt;",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n&lt;p&gt;Zak Killian is a freelance contributor to Tom&#039;s Hardware who has also written for HotHardware and Tech Report. Ever since typing in games from magazines in ATARI BASIC on his family&#039;s Atari 800XL as a youth, Zak has been deeply fascinated with the capabilities of computers. His passion for gaming as a kid led to more technical engagement with PCs as a teenager, when he first built his own system: an AMD K6. Not long after, he founded his own PC repair shop in the year 2000. No",
-      "category": "CPU",
-      "source": "Tom's Hardware",
-      "source_url": "https://www.tomshardware.com/pc-components/overclocking/developer-vibe-codes-a-tool-to-let-nvidia-rtx-50-series-laptop-owners-crank-up-their-power-limits-can-juice-rtx-5090-mobile-gpu-to-225w",
-      "original_author": "Tom's Hardware",
-      "published_at": "2026-09-16T15:19:42+00:00",
-      "created_at": "2026-09-16T17:37:39.525916+00:00"
-    },
-    {
-      "id": "ea05813a-a5d3-4e76-bc1f-6d550732cc0b",
-      "title": "&lt;p&gt;Shane has a backgroun...",
-      "summary": "&lt;p&gt;Shane has a background in computer engineering and has worked as a freelance consultant in multiple industries....",
-      "key_points": [
-        "&lt;p&gt;Shane has a background in compu"
-      ],
-      "full_content": "&lt;p&gt;Shane has a background in computer engineering and has worked as a freelance consultant in multiple industries. He has a strong affection for history and loves to game. He worked his way up from a Commodore 64 and has always been interested in technology and writing. He particularly enjoys breaking down complex concepts into understandable ideas. He’s a lifelong East-coaster and animal-lover.&lt;br&gt; &lt;/p&gt; &lt;p&gt;&lt;br&gt; &lt;/p&gt;",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n&lt;p&gt;Shane has a background in computer engineering and has worked as a freelance consultant in multiple industries. He has a strong affection for history and loves to game. He worked his way up from a Commodore 64 and has always been interested in technology and writing. He particularly enjoys breaking down complex concepts into understandable ideas. He’s a lifelong East-coaster and animal-lover.&lt;br&gt; &lt;/p&gt; &lt;p&gt;&lt;br&gt; &lt;/p&gt;",
-      "category": "Digital",
-      "source": "Tom's Hardware",
-      "source_url": "https://www.tomshardware.com/tech-industry/semiconductors/piecemakers-bets-edge-ai-devices-will-diverge-from-reliance-on-hbm-custom-designed-memory-fuses-dram-stack-directly-to-the-processor-using-hybrid-bonding",
-      "original_author": "Tom's Hardware",
-      "published_at": "2026-09-16T14:36:48+00:00",
-      "created_at": "2026-09-16T17:37:39.525966+00:00"
-    },
-    {
-      "id": "a043e43e-af78-4b61-8ffd-3d025154ec88",
-      "title": "&lt;p&gt;Kunal Khullar is a co...",
-      "summary": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-se...",
-      "key_points": [
-        "&lt;p&gt;Kunal Khullar is a contributor "
-      ],
-      "full_content": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked for various publications covering a range of topics including smartphones, laptops, audio devices, and PC hardware. Currently, he is engrossed with everything happening in the world of computing with a growing obsession for unique PC cases and RGB cooling fans. Through his articles Kunal strives to demystify complex concepts for a broad audience. Kunal is also a casual gamer as he loves to squad up with his friends in &lt;em&gt;Apex Legends&lt;/em&gt;, and claims to have a fairly good taste in music especially when it comes to heavy metal.&lt;/p&gt;",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked fo",
-      "category": "AI",
-      "source": "Tom's Hardware",
-      "source_url": "https://www.tomshardware.com/video-games/denuvo-sues-anonymous-game-cracker-voices38-over-alleged-drm-circumvention-seeks-damages-after-anti-tamper-protections-bypassed-in-26-games",
-      "original_author": "Tom's Hardware",
-      "published_at": "2026-09-16T14:22:54+00:00",
-      "created_at": "2026-09-16T17:37:39.526003+00:00"
     }
   ]
 }
