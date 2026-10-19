@@ -1,7 +1,61 @@
 {
-  "updated_at": "2026-10-18T16:16:40.551218+00:00",
+  "updated_at": "2026-10-19T05:32:36.913819+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "9176e528-b47a-43bd-9edb-34d232558ef9",
+      "title": "阿里玄铁RISC-V处理器出货超60亿颗，发布车规级E908A芯片",
+      "summary": "阿里巴巴达摩院玄铁RISC-V处理器累计出货量突破60亿颗，覆盖云计算、AI、汽车等领域；同期发布首款车规增强型E908A芯片，强化功能安全与实时性。",
+      "key_points": [
+        "玄铁处理器出货量超60亿颗，2024年已突破40亿",
+        "发布车规级E908A芯片，满足ASIL-D功能安全等级",
+        "玄铁产品线覆盖C/R/E/XT-Link四大系列，C950旗舰主频达3.2GHz"
+      ],
+      "full_content": "A new AI-powered modding toolkit called NPCTalk is bringing unscripted, real-time conversations to Grand Theft Auto V, allowing players to speak directly with NPCs and receive responses in their original, AI-cloned voices. Developed by Universal Modder, the open-source project aims to introduce similar functionality to virtually any moddable game. Unlike traditional NPC dialogue systems, which rely on prerecorded voice lines and scripted responses, NPCTalk generates conversations dynamically using AI models. Players can approach virtually any character in GTA V, speak through their microphone, and receive contextually appropriate responses that reflect the character's personality, surroundings, and circumstances. The developers have demonstrated [&hellip;] Read full article at https://wccftech.com/gta-v-npcs-can-now-talk-back-in-real-time-with-ai-powered-npctalk-mod-free-release-coming-next-week/",
+      "ai_summary": "发生了什么：在第六届RISC-V中国峰会上，阿里巴巴达摩院宣布其玄铁RISC-V处理器IP核累计出货量正式突破60亿颗，创下全球RISC-V商用化里程碑。这一数字不仅体现其在IoT、MCU等传统嵌入式市场的统治地位，更凸显其向高性能领域的快速渗透——旗舰产品C950主频达3.2GHz，SPECint2006单核性能超70分，已应用于云计算与AI加速场景。更具战略意义的是，玄铁同步发布了首款车规级增强芯片E908A，该芯片专为智能汽车设计，满足ISO 26262 ASIL-D最高功能安全等级，并强化实时响应能力，标志着RISC-V正式进军对可靠性要求最严苛的汽车电子核心域控市场。\n\n为什么重要：60亿颗出货量绝非简单数量叠加，而是RISC-V生态成熟度的硬指标。它意味着玄铁已构建起从IP授权、EDA工具链、编译器优化到量产落地的完整商业闭环，且获得海思、全志、平头哥等数百家芯片公司的信任。E908A的发布则具有划时代意义：汽车电子长期被ARM与PowerPC垄断，RISC-V此前仅限于车身控制等边缘节点；此次直接切入ADAS、智能座舱等主控领域，证明其在功能安全、实时性、长期供货等维度已达到车规级工业标准。这不仅是玄铁的胜利，更是中国主导的开放指令集架构在全球半导体价值链中话语权提升的关键一步。\n\n对行业有什么影响：对芯片设计业，玄铁的成功将极大提振RISC-V信心，吸引更多厂商放弃ARM高额授权费，转向开源架构，加速RISC-V在服务器CPU（如阿里倚天）、AI加速器（如平头哥含光）等高端市场的渗透。对汽车产业，E908A为国内车企提供了真正自主可控的车规芯片选项，可规避地缘政治断供风险，推动‘软件定义汽车’向‘芯片定义汽车’演进。对全球半导体格局，它加剧了指令集架构的多元化趋势——ARM、x86、RISC-V三足鼎立已成定局，而中国力量正从追随者变为规则制定者之一。长远看，随着RISC-V在AI、汽车、服务器等关键领域的规模化应用，其生态繁荣度将反哺全球创新，降低芯片设计门槛，催生更多垂直领域专用处理器（DSA），重塑半导体产业创新范式。",
+      "category": "CPU",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/014/770.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-10-18T21:44:12+00:00",
+      "created_at": "2026-10-19T05:32:26.616627+00:00"
+    },
+    {
+      "id": "403ef99d-0190-43c5-a6f1-1956c97e8add",
+      "title": "AI篡改人类记忆：实验显示AI生成图像可植入虚假记忆且增强自信度",
+      "summary": "麻省理工学院研究证实，AI篡改图像可导致受试者产生错误记忆，且对虚假记忆的自信程度反而更高；多项研究揭示AI正系统性削弱人类记忆巩固、批判性思维与独立判断能力。",
+      "key_points": [
+        "AI修改图片使受试者错误记忆概率大幅上升，自信度反增",
+        "使用ChatGPT写作会削弱大脑神经连接，影响记忆复述",
+        "AI摘要误导可使目击者记忆准确率从84%降至45%"
+      ],
+      "full_content": "The latest Ryzen 7 9800X3D combo listed on Newegg is currently available for the price of $1,034.99 after savings of $189, with the price cut alone making it an excellent offer, but the online retailer has something that'll be even more ridiculously impressive. It has bundled a wired gaming mouse, an AAA game, and an AIO for a grand total of $185 in freebies. In short, this is one deal you're not going to want to miss out on. An ASUS ROG Harpe Mini Core gaming mouse, Cooler Master Elite Liquid 240 AIO, and Capcom's Onimusha: Way of the Sword are [&hellip;] Read full article at https://wccftech.com/newegg-ryzen-7-9800x3d-bundle-189-off-32gb-ddr5-asus-motherboard-freebies/",
+      "ai_summary": "发生了什么：麻省理工学院媒体实验室帕蒂·梅斯教授团队开展了一系列开创性实验，首次以严谨科学方法证实生成式AI对人类记忆的直接干预效应。在核心实验中，受试者观看真实照片后，再接触AI篡改版本（如添加军人、气候变化元素），结果其产生错误记忆的概率显著升高，且对这些虚假记忆的自信程度竟高于真实记忆。后续研究进一步发现，使用ChatGPT撰写文章会削弱大脑不同区域间的神经连接强度，导致受试者难以复述自己刚写下的内容；而当AI生成的事故摘要包含错误信息时，目击者记忆准确率从84%暴跌至45%，且提前告知‘摘要由AI生成’也无法消除该效应。这些结果共同指向一个严峻现实：AI不仅存储记忆，更在主动重写人类的记忆编码与提取机制。\n\n为什么重要：这项研究将AI伦理讨论从宏观的‘就业替代’‘超级智能威胁’拉回微观的人类认知层面。记忆是人类心智的基石，它塑造身份认同、指导决策、维系社会信任。当AI能系统性植入虚假记忆，其危害远超信息失真——它侵蚀司法公正（目击证词不可靠）、动摇历史共识（集体记忆被操控）、瓦解人际关系（共享记忆被污染）。更值得警惕的是，研究揭示了一种‘认知退化’的隐性路径：人类正将记忆巩固、批判性评估、细节关联等核心脑力活动外包给AI，导致相关神经通路萎缩，形成‘用进废退’的恶性循环，这比技术失业更具根本性威胁。\n\n对行业有什么影响：对AI产业，这要求监管框架必须前移——不能仅关注模型输出合规性，更要评估其对用户认知过程的长期影响。欧盟AI法案、美国NIST AI RMF等需纳入‘认知安全’评估维度。对企业，需重构产品设计伦理：所有AI记忆辅助工具（如Memoro）必须内置‘记忆溯源’与‘认知提示’机制，明确区分机器记录与生物记忆。对教育界，亟需将‘AI认知素养’纳入基础课程，培养学生对AI生成内容的元认知能力。长远看，这或将催生‘神经接口安全’新学科，推动脑机接口与AI伦理交叉研究，甚至影响未来AI芯片设计——是否需内置‘认知保护协处理器’来监测与缓冲AI对神经活动的干扰？人类正站在技术重塑心智的历史拐点。",
+      "category": "AI",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/014/768.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-10-18T21:15:23+00:00",
+      "created_at": "2026-10-19T05:32:26.616642+00:00"
+    },
+    {
+      "id": "a75ec4fc-f860-46a7-9637-8a16dea1d958",
+      "title": "Linux内核开发允许AI辅助：维护者峰会取消‘Assisted-by’标签强制要求",
+      "summary": "Linux内核维护者峰会决定取消代码提交时必须标注AI辅助的要求，Linus Torvalds称禁用AI如同禁用编辑器般荒谬；其本人已提交Claude Code编写但存在缺陷的补丁。",
+      "key_points": [
+        "Linux内核开发正式允许AI辅助，无需强制声明",
+        "Linus Torvalds亲自使用Claude Code开发补丁",
+        "补丁因竞态条件等问题交由人类开发者修复"
+      ],
+      "full_content": "Fallout: New Vegas is very high on the list of games that RPG fans want remastered, and in July 2026, Bethesda confirmed earlier rumors that remasters of Fallout 3 and New Vegas are underway. However, modder Kim2091 might have beaten them to the punch with her impressive New Vegas RTX mod, which launched earlier today on Nexus after extensive testing. NVIDIA released RTX Remix as a PC remastering toolkit in early 2024, and in the matter of just a few months, a work-in-progress version of Fallout: New Vegas (developed by another modder, Darko P) was already shown. However, making huge [&hellip;] Read full article at https://wccftech.com/fallout-new-vegas-rtx-mod-kim2091-rtx-remix-path-traced/",
+      "ai_summary": "发生了什么：2026年10月8日，Linux内核维护者峰会在布拉格达成一项历史性决议：取消向内核提交代码时必须使用‘Assisted-by’标签声明AI辅助的要求。这意味着开发者可自由使用GitHub Copilot、Claude Code等AI工具进行编码、调试与文档撰写，无需在补丁描述中特别注明。Linux创始人Linus Torvalds对此表态鲜明——他认为禁止AI辅助开发‘就像禁止使用文本编辑器一样愚蠢’，强调内核开发者应具备专业判断力，能对AI生成代码进行严格审查与验证。颇具象征意义的是，Torvalds本人本周即提交了一组由Claude Code编写的补丁，虽随后因竞态条件与内存回收问题被社区指出缺陷，但该事件本身印证了AI已深度融入顶级开源项目的日常开发流程。\n\n为什么重要：这一决定标志着开源软件开发范式发生根本性转折。Linux内核作为全球最复杂、最严苛的开源项目，其政策具有风向标意义。取消强制标注并非放任AI滥用，而是承认AI已成为与编译器、调试器同等重要的‘开发者工具链’一环。其背后逻辑是：工具的价值取决于使用者，而非工具本身。只要开发者保持最终责任（review, test, sign-off），AI就能像Git、GCC一样，成为提升生产力、降低入门门槛、加速创新的杠杆。Torvalds的实践更传递出关键信号：AI不是替代人类，而是延伸人类——它处理重复劳动，人类聚焦架构决策与质量把关。\n\n对行业有什么影响：对软件工程，这将加速AI编程助手在企业级开发中的普及，CI/CD流程需新增AI代码审计环节（如自动检测幻觉、安全漏洞）。对教育界，计算机专业课程需从‘教语法’转向‘教提示工程与代码审查’，培养新一代‘AI协同开发者’。对开源生态，可能催生新治理模式：如建立AI生成代码的‘可信签名’机制，或开发专用静态分析工具识别AI典型缺陷模式。长远看，当AI成为默认开发环境，软件质量保障重心将从‘写对代码’转向‘问对问题’——如何精准描述需求、如何设计有效测试用例、如何解读AI输出，将成为开发者核心竞争力。Linux的这次放手，不是终点，而是人机协同新纪元的起点。",
+      "category": "AI",
+      "source": "Solidot (科技)",
+      "source_url": "https://www.solidot.org/story?sid=85641",
+      "original_author": "@Solidot (科技)",
+      "published_at": "2026-10-18T19:00:00+00:00",
+      "created_at": "2026-10-19T05:32:26.616671+00:00"
+    },
     {
       "id": "a09b0089-5dc9-4c5a-8634-f8630605e74a",
       "title": "AMD显卡现原生支持DLSS全部功能，社区项目推动性能逼近NVIDIA",
@@ -5239,56 +5293,6 @@
       "original_author": "@Ars Technica (Gadgets)",
       "published_at": "2026-09-16T23:07:38+00:00",
       "created_at": "2026-09-17T05:39:28.343677+00:00"
-    },
-    {
-      "id": "430a82ce-c910-446f-aa9f-eceb2c1840b5",
-      "title": "苹果MacOS 27 Golden Gate强制集成Apple Intelligence，AI成系统级基础设施",
-      "summary": "macOS 27 Golden Gate取消AI功能开关，Apple Intelligence深度融入系统底层，所有设备默认启用，需下载数GB本地模型，Siri迎来全新生成式交互范式。",
-      "key_points": [
-        "macOS 27取消Apple Intelligence关闭选项，AI功能强制启用",
-        "新版Siri支持上下文理解与多步骤任务执行",
-        "本地运行大模型，对M系列芯片NPU提出更高要求"
-      ],
-      "full_content": "Melbourne-based developer PlaySide Studios sat down with us at gamescom 2026 to walk through Game of Thrones: War for Westeros, fresh off the game's first gameplay reveal at Opening Night Live and a second showcase that officially added two more heroes to the roster (Gregor 'The Mountain' Clegane and Arya Stark). The pitch is that of a classic real-time strategy game where you build armies, claim territory and fight for the Iron Throne, playing as House Stark, House Lannister, House Targaryen, or the White Walkers. What PlaySide is chasing, in their own words, is the battles people picture while watching [&hellip;] Read full article at https://wccftech.com/game-of-thrones-war-for-westeros-rule-of-cool-rewrite-ending/",
-      "ai_summary": "发生了什么：苹果于2026年9月发布的macOS 27 Golden Gate操作系统，标志着其AI战略从‘可选功能’升级为‘系统级基础设施’。最显著变化是彻底移除设置中的‘Apple Intelligence’开关——用户无法再选择禁用该功能，系统会在安装后自动下载数GB的本地化大语言模型与多模态模型（包括文本、图像、语音处理引擎）。新版Siri不再局限于关键词唤醒与简单指令，而是具备完整的上下文理解能力，可跨App执行多步骤任务（如‘将邮件中提到的会议加入日历，并发送提醒给参会者’），其响应逻辑由本地运行的生成式AI模型实时生成，而非云端调用。这一转变依托于M4芯片NPU的算力跃升，单次token生成延迟控制在200ms内，确保交互流畅性。\n\n为什么重要：这代表了消费电子领域AI演进的分水岭——从‘AI赋能应用’（AI in apps）进入‘AI即操作系统’（AI as OS）时代。苹果通过将AI深度绑定系统内核、驱动、安全模块与隐私框架，构建起难以复制的软硬协同壁垒。其‘端侧优先’策略（所有敏感数据不出设备）既回应了全球隐私监管趋势（如欧盟AI法案），又规避了云端AI服务的延迟与带宽瓶颈，为AR眼镜、折叠屏等下一代终端奠定交互基础。更深远的意义在于，它迫使整个开发者生态转向AI原生：Xcode已集成AI代码补全、测试生成、UI自动生成工具链，第三方App若不接入Apple Intelligence API，将在系统级功能调用（如Spotlight搜索、通知摘要、邮件智能回复）中处于明显劣势。\n\n对行业有什么影响：对安卓阵营构成降维打击——谷歌Android的Gemini AI仍重度依赖云端，三星One UI的Galaxy AI功能在离线场景表现有限，华为鸿蒙Next虽强调端云协同，但大模型规模与生态整合度尚不及Apple Intelligence。对开发者而言，将面临双重挑战：既要适配新的AI驱动API（如‘PerformActionWithContext’），又要重构应用架构以支持AI代理（Agent）调用；对芯片厂商而言，M系列NPU的成功将加速高通、联发科、紫光展锐等厂商加大NPU研发投入，推动移动端AI算力竞赛从‘TOPS’指标转向‘端侧大模型推理效率’新维度。长远看，这或将终结‘操作系统即平台’的传统定义，开启‘AI操作系统即生态入口’的新纪元。",
-      "category": "Digital",
-      "source": "Ars Technica (Gadgets)",
-      "source_url": "https://arstechnica.com/gadgets/2026/09/macos-27-golden-gate-the-ars-technica-review/",
-      "original_author": "@Ars Technica (Gadgets)",
-      "published_at": "2026-09-16T20:00:00+00:00",
-      "created_at": "2026-09-17T05:39:28.343684+00:00"
-    },
-    {
-      "id": "4404ac79-e92d-4b5f-8623-402d7ee703bc",
-      "title": "MLPerf v6",
-      "summary": "MLPerf v6.1 is now out, with AMD, NVIDIA and Intel submitting their latest results across a range of AI benchmarks. AMD ...",
-      "key_points": [
-        "MLPerf v6.1 is now out, with AMD, NVIDIA"
-      ],
-      "full_content": "MLPerf v6.1 is now out, with AMD, NVIDIA and Intel submitting their latest results across a range of AI benchmarks. AMD &amp; NVIDIA Show Strong AI Performance In MLPerf 6.1, Intel Also Submits Xeon &amp; Arc Pro To The Benching Showcase The latest release from MLCommons comes in the form of the MLPerf Inference v6.1 benchmark suite, which features a range of workflows that align with recent trends within the AI segment. As always, all three camps are submitting the results of their current and latest hardware, and we've compiled the tests in the following charts. Starting with DeepSeek R1, [&hellip;] Read full article at https://wccftech.com/mlperf-v-6-1-benchmarks-nvidia-amd-intel-blackwell-vera-rubin-mi355x-arc-b70/",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nMLPerf v6.1 is now out, with AMD, NVIDIA and Intel submitting their latest results across a range of AI benchmarks. AMD &amp; NVIDIA Show Strong AI Performance In MLPerf 6.1, Intel Also Submits Xeon &amp; Arc Pro To The Benching Showcase The latest release from MLCommons comes in the form of the MLPerf Inference v6.1 benchmark suite, which features a range of workflows that align with recent trends within the AI segment. As always, all three camps are submitting the results of their current and ",
-      "category": "GPU",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/mlperf-v-6-1-benchmarks-nvidia-amd-intel-blackwell-vera-rubin-mi355x-arc-b70/",
-      "original_author": "WCCFTech",
-      "published_at": "2026-09-16T17:15:03+00:00",
-      "created_at": "2026-09-16T17:37:39.526071+00:00"
-    },
-    {
-      "id": "dba7cab4-ae99-4d62-bda6-466b7db9b909",
-      "title": "Valve highlights the importanc...",
-      "summary": "Valve highlights the importance of NVIDIA GPU support for SteamOS as certain GPU generations now become compatible, but ...",
-      "key_points": [
-        "Valve highlights the importance of NVIDI"
-      ],
-      "full_content": "Valve highlights the importance of NVIDIA GPU support for SteamOS as certain GPU generations now become compatible, but performance optimizations are still going on. Valve Enables NVIDIA's Driver in the Main SteamOS Tree, but Performance Remains Behind the Current Linux Driver Stack Valve is making some significant progress in bringing NVIDIA GPU support to SteamOS, which has been one of the biggest hardware compatibility barriers. Speaking to IGN ahead of the Steam Frame launch, Valve software developer Pierre-Loup Griffais said that the company is working heavily on NVIDIA support and described it as a top priority. Yeah, we're working on [&hellip;] Read full article at https://wccftech.com/steamos-is-getting-closer-to-nvidia-gpu-support/",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nValve highlights the importance of NVIDIA GPU support for SteamOS as certain GPU generations now become compatible, but performance optimizations are still going on. Valve Enables NVIDIA's Driver in the Main SteamOS Tree, but Performance Remains Behind the Current Linux Driver Stack Valve is making some significant progress in bringing NVIDIA GPU support to SteamOS, which has been one of the biggest hardware compatibility barriers. Speaking to IGN ahead of the Steam Frame launch, Valve software ",
-      "category": "GPU",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/steamos-is-getting-closer-to-nvidia-gpu-support/",
-      "original_author": "WCCFTech",
-      "published_at": "2026-09-16T16:14:29+00:00",
-      "created_at": "2026-09-16T17:37:39.526085+00:00"
     }
   ]
 }
