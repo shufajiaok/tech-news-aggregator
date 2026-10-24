@@ -1,7 +1,43 @@
 {
-  "updated_at": "2026-10-24T05:16:30.492513+00:00",
+  "updated_at": "2026-10-24T16:24:58.785828+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "623319aa-3e4d-4000-82cf-eac415f9ce01",
+      "title": "NVIDIA发布DLSS 5神经渲染技术，支持《Portal RTX》与《Half-Life 2 RTX》",
+      "summary": "NVIDIA正式将DLSS 5（3D-Guided Neural Rendering）引入《Portal with RTX》和《Half-Life 2 RTX》演示版，同时为RTX 50系列显卡提供最高6倍多帧生成（MFG）性能提升。",
+      "key_points": [
+        "DLSS 5首次实装于两款经典游戏RTX重制版",
+        "支持3D引导神经渲染与路径追踪",
+        "兼容RTX 50系列GPU，最高支持6X多帧生成"
+      ],
+      "full_content": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked for various publications covering a range of topics including smartphones, laptops, audio devices, and PC hardware. Currently, he is engrossed with everything happening in the world of computing with a growing obsession for unique PC cases and RGB cooling fans. Through his articles Kunal strives to demystify complex concepts for a broad audience. Kunal is also a casual gamer as he loves to squad up with his friends in &lt;em&gt;Apex Legends&lt;/em&gt;, and claims to have a fairly good taste in music especially when it comes to heavy metal.&lt;/p&gt;",
+      "ai_summary": "发生了什么：NVIDIA在2026年10月正式将第五代深度学习超级采样（DLSS 5）技术落地至实际游戏场景，首发搭载于Valve推出的《Portal with RTX》和《Half-Life 2 RTX》两个全路径追踪重制版演示中。该技术基于全新‘3D-Guided Neural Rendering’架构，不仅提升图像重建质量，更深度融合几何、材质与光照先验信息，实现更精准的时序一致性与动态细节还原。同步发布的RTX Remix 1.6工具包也集成了DLSS 5，并新增Windows on ARM支持与扩展帧生成能力。\n\n为什么重要：这是DLSS技术首次从AI超分延伸至端到端神经渲染范式，标志着实时图形正从‘后处理增强’迈向‘前向神经合成’。相较于DLSS 4依赖运动矢量+历史帧缓存，DLSS 5通过神经网络直接建模3D场景结构，在低分辨率输入下即可生成高保真像素，大幅降低GPU渲染负载。尤其对《Half-Life 2》这类老引擎游戏，DLSS 5使全路径追踪在消费级硬件上真正可玩，极大拓展了光追内容生态边界。\n\n对行业有什么影响：首先，DLSS 5进一步固化NVIDIA在AI图形栈的垄断性技术护城河——AMD FSR 4与Intel XeSS尚未公布类似3D引导架构，短期内难以对标。其次，其与Multi Frame Generation（MFG）深度耦合，推动游戏引擎与驱动层协同重构：开发者需适配新API以释放6X MFG潜力，而硬件厂商则加速布局更高带宽显存与专用神经计算单元。长远看，DLSS 5预示着‘渲染即服务’（Rendering-as-a-Service）趋势：未来游戏可能仅传输轻量几何流与语义指令，由云端或终端神经渲染器完成最终画面合成，这对边缘AI芯片、低延迟网络及跨平台统一渲染标准提出全新要求。",
+      "category": "GPU",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/nvidia-dlss-5-neural-rendering-now-available-in-portal-with-rtx-and-half-life-2-rtx-demo-alongside-6x-multi-frame-generation/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-10-24T13:58:40+00:00",
+      "created_at": "2026-10-24T16:24:50.788374+00:00"
+    },
+    {
+      "id": "be189771-c16e-4bfe-a1c3-90e63967287e",
+      "title": "开源工具GPU Unlock释放RTX 30系显卡AI算力，BF16性能提升近80%",
+      "summary": "开源项目GPU Unlock成功绕过NVIDIA软件限制，使RTX 3090 Ti的BF16计算性能从87.5 TFLOPS跃升至157 TFLOPS，vLLM推理速度提升达36%。",
+      "key_points": [
+        "GPU Unlock工具解除消费级GPU的Tensor Core限制",
+        "RTX 3090 Ti BF16算力提升79.7%",
+        "无需修改驱动或刷写VBIOS，仅Linux环境即可运行"
+      ],
+      "full_content": "&lt;p&gt;Jowi Morales is a writer and journalist covering the tech beat since 2021. However, he’s been interested in technology far earlier than that. He started discovering desktop computers when his father brought home a Windows 95 PC, but his first real experience working under the hood of the PC was when the old computer’s hard drive was filled to the brim in the year 2000. He deleted the Windows folder to attempt to rectify the situation, which led to his dad buying a new desktop PC. Since then, he learned a lot more about computers, and he’s always been the go-to tech expert for his family and friends.&lt;/p&gt;&lt;p&gt;Jowi primarily uses a Windows workstation and an Android phone, but he also bought into the Apple ecosystem with the 6th-gen iPad, iPhone 14 Pro Max, and the M1 MacBook Air. Today, Jowi covers hardware and software from Redmond and Cupertino, while also looking at the tech industry in general.&lt;/p&gt;&lt;p&gt;Aside from covering technology, Jowi is an avid photographer and writes about automobiles, aviation, and tanks. You can find his bylines at &lt;a href=&quot;https://www.makeuseof.com/author/jowi-morales/&quot;&gt;MakeUseOf&lt;/a&gt;, &lt;a href=&quot;https://www.slashgear.com/author/jowimorales/&quot;&gt;SlashGear&lt;/a&gt;, and, of course, &lt;a href=&quot;https://www.tomshardware.com/author/jowi-morales&quot;&gt;Tom’s Hardware&lt;/a&gt;.&lt;/p&gt;",
+      "ai_summary": "发生了什么：GitHub用户zagitta开发的开源项目‘GPU Unlock’通过Linux内核级干预，成功绕过NVIDIA对GeForce RTX 30系列显卡（Ampere架构）的FP16/BF16 Tensor Core指令发射率限制。该工具针对Ampere GPU中‘FP32累加模式下FP16/BF16指令吞吐被人为削减’的设计策略，恢复其接近专业级A100/A800的半精度计算通路。实测显示，RTX 3090 Ti的BF16峰值算力从87.5 TFLOPS提升至157 TFLOPS（+79.7%），vLLM框架下的大模型推理吞吐提升最高达36%，且全程无需修改官方驱动或刷写VBIOS，仅需在Linux系统中加载内核模块。\n\n为什么重要：这一突破直击AI普惠化核心矛盾——专业AI算力成本高企与消费级硬件存在大量未释放潜能之间的鸿沟。NVIDIA长期通过软件锁频（software gating）区分消费级与数据中心产品线，而GPU Unlock证明该壁垒本质是可逆的固件/驱动策略，而非物理不可逾越的硬件差异。此举不仅为个人开发者、高校实验室等预算受限群体提供了低成本AI训练/推理方案，更倒逼行业重新审视‘硬件即服务’（HaaS）商业模式的合理性。\n\n对行业有什么影响：短期看，该工具将加速二手RTX 30系显卡在AI社区的再流通，抑制A100/H100等专业卡的入门级需求；中期将迫使NVIDIA加快驱动层安全加固（如启用Secure Boot签名验证），并可能加速下一代架构（如RTX 50系列）的硬件级权限隔离设计；长期来看，它印证了‘算力民主化’的技术可行性——当开源社区能持续破解商业封锁，芯片厂商的竞争焦点将从‘功能阉割’转向‘生态粘性构建’，包括优化CUDA-X AI库、强化云边协同框架及提供差异化编译器工具链，从而真正形成技术护城河而非政策护城河。",
+      "category": "AI",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/nvidia-geforce-rtx-3090-ti-gets-nearly-80-fp16-bf16-compute-boost-with-linux-based-unlocking-trick/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-10-24T13:42:41+00:00",
+      "created_at": "2026-10-24T16:24:50.788404+00:00"
+    },
     {
       "id": "60d4ccb7-fcfe-4807-9686-8fef80bd235e",
       "title": "Micron发布G11 3D NAND：超400层、位密度翻倍、性能跃升",
@@ -5257,42 +5293,6 @@
       "original_author": "@IT之家",
       "published_at": "2026-09-22T16:00:48+00:00",
       "created_at": "2026-09-22T17:29:52.052844+00:00"
-    },
-    {
-      "id": "17514235-a52c-4520-a27d-ec14431338f6",
-      "title": "美国国会终止火星样本返回（MSR）任务：预算超支与政策转向致110亿美元项目搁浅",
-      "summary": "美国国会预算法案取消NASA火星样本返回（MSR）任务全部资助，该项目因成本飙升至110亿美元且面临科学预算削减，实际已被终止，毅力号采集样本将无法返回地球。",
-      "key_points": [
-        "MSR项目成本从最初预估膨胀至110亿美元",
-        "2025年虽压缩至70亿美元仍难获国会批准",
-        "任务终止意味着火星岩石样本永久滞留火星"
-      ],
-      "full_content": "When Xbox CEO Asha Sharma announced the first part of the Big Xbox Reset, Undead Labs was confirmed to have been sold to an unknown third-party. However, today, just as Xbox dropped the second part of the division-wide reset (which includes another couple of hundred layoffs and various studio mergers), Undead Labs revealed that the buyer is the company itself, which means they have effectively returned to independence, just like Compulsion Games and Double Fine Productions. In a statement posted on the State of Decay website, Philip Holt, Studio Head of Undead Labs, said: Independence brings us closer to our [&hellip;] Read full article at https://wccftech.com/undead-labs-xbox-reset-state-of-decay-3-game-pass/",
-      "ai_summary": "发生了什么：美国国会2026财年预算法案正式取消对NASA火星样本返回（Mars Sample Return, MSR）任务的全部拨款。尽管该法案尚待两院最终表决与总统签署，但因其已通过关键委员会审议，业界普遍视其为MSR项目的事实性终结。该项目自立项以来成本持续失控——2024年估算达110亿美元，占NASA当年科学预算近半；虽经2025年重组压缩至70亿美元，仍无法满足国会‘成本效益比’审查要求。最终，MSR被列为‘不可持续项目’，其核心使命——将‘毅力号’火星车采集的数十管岩石与土壤样本送回地球实验室分析——宣告失败。\n\n为什么重要：MSR的终止不仅是航天项目管理的警示案例，更是人类深空探测战略转向的标志性事件。作为NASA与ESA联合开展的最复杂地外采样任务，MSR承载着验证生命起源、火星地质演化等根本科学命题的希望。其失败意味着未来十年内，人类将失去对火星物质进行高精度同位素、有机分子与微生物化石分析的唯一机会，相关研究只能依赖轨道器遥感与火星车原位探测等间接手段，科学深度与可信度大打折扣。\n\n对行业有什么影响：首先，将加速航天机构转向‘低成本、模块化、可重复’探测范式，推动商业航天公司（如SpaceX、Rocket Lab）承接更多深空任务；其次，倒逼行星科学界重构研究方法论——加强AI驱动的原位光谱分析、微型实验室（如MOXIE衍生技术）研发，以弥补样本缺失；第三，对半导体与仪器厂商而言，火星任务终止将减少高可靠性辐射加固芯片、微型质谱仪等特种器件订单，但可能刺激月球与小行星探测相关载荷需求上升。长远看，MSR的挫折或将促使国际社会重启多边合作框架，避免单一国家项目因预算政治化而夭折。",
-      "category": "Semiconductor",
-      "source": "Solidot (科技)",
-      "source_url": "https://www.solidot.org/story?sid=85452",
-      "original_author": "@Solidot (科技)",
-      "published_at": "2026-09-22T16:00:00+00:00",
-      "created_at": "2026-09-22T17:29:52.052853+00:00"
-    },
-    {
-      "id": "4fd50329-d4db-44ca-afc9-1a38648682c7",
-      "title": "加州拟对亿万富翁征5%一次性税：Page、Brin、Thiel已迁离，黄仁勋承诺缴税",
-      "summary": "加州公投提案Initiative 25-0024拟对净资产超10亿美元者征收5%一次性税，已致Larry Page、Sergey Brin、Peter Thiel等迁出加州；黄仁勋公开表示将缴纳约80亿美元税款。",
-      "key_points": [
-        "提案拟向加州亿万富翁征收5%一次性财富税",
-        "多位科技巨头已迁居佛罗里达、内华达等地",
-        "黄仁勋是少数公开承诺纳税的硅谷领袖"
-      ],
-      "full_content": "The “AI Mode” extension in Google search is a quick way to provide user queries without having to click multiple times to find the elusive answer. Unfortunately, it’s a rarity that these LLMs provide a helpful solution regarding tech support. A laptop owner whose display started flickering, showing two instances of the same image and resonating a black halo effect, was advised to uninstall the driver, which resulted in exacerbating the problem by making the text blurry. Judging from the issue, the problem appears more hardware than software. LLMs should be avoided when searching for hardware or software-related queries, which can often [&hellip;] Read full article at https://wccftech.com/google-ai-mode-driver-uninstall-advice-backfires-blurry-text/",
-      "ai_summary": "发生了什么：加州将于2026年11月3日就‘亿万富翁一次性税’提案（Initiative Number 25-0024）举行公投。该提案拟对在加州居住且净资产超10亿美元的个人征收5%一次性税。胡佛研究所数据显示，已有近三成目标亿万富翁提前迁离——Larry Page购入迈阿密两栋临水豪宅并将家族办公室迁至特拉华州；Sergey Brin定居迈阿密并资助反对征税的政治行动委员会；Peter Thiel于2025年12月将投资公司迁至迈阿密；而NVIDIA CEO黄仁勋则罕见公开表态，承诺将缴纳约80亿美元税款，成为少数未采取避税行动的硅谷领袖。\n\n为什么重要：该提案是美国州级财政政策应对‘财富集中化’与‘税收公平性’争议的激进尝试。在联邦层面减税、州政府财政承压背景下，加州试图通过‘财富税’弥补教育、住房与基建缺口。其成败不仅关乎加州财政可持续性，更将成为全美各州评估类似政策可行性的关键风向标，直接影响科技资本流动、区域创新生态与人才吸引力。\n\n对行业有什么影响：首先，将加速科技企业总部与研发中心地理重构——湾区高成本与高税率可能促使初创公司向得克萨斯、亚利桑那等低税州迁移；其次，对半导体与AI产业而言，人才流失风险上升，尤其影响高校（如斯坦福、伯克利）与企业的产学研合作密度；第三，若提案通过，或倒逼科技公司优化股权激励结构、调整高管薪酬方案以应对税务合规挑战。长远看，这场博弈或将推动美国建立更统一的联邦级财富税框架，避免各州‘逐底竞争’损害整体创新环境。",
-      "category": "Semiconductor",
-      "source": "Solidot (科技)",
-      "source_url": "https://www.solidot.org/story?sid=85453",
-      "original_author": "@Solidot (科技)",
-      "published_at": "2026-09-22T15:35:29+00:00",
-      "created_at": "2026-09-22T17:29:52.052862+00:00"
     }
   ]
 }
