@@ -1,7 +1,25 @@
 {
-  "updated_at": "2026-10-24T16:24:58.785828+00:00",
+  "updated_at": "2026-10-25T05:33:51.269141+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "b4496815-6dc4-4efe-853e-06ec8ed50b7b",
+      "title": "小米18 Fold发布：新一代折叠架构实现平均折痕深度≤30μm",
+      "summary": "小米18 Fold于9月7日发布，搭载玄戒O3芯片与徕卡三摄，首发采用新一代折叠架构，官方宣称平均折痕深度控制在30微米以内，首销零售量同比上代增长300%。",
+      "key_points": [
+        "小米18 Fold采用全新折叠架构，平均折痕深度≤30μm",
+        "配备5.38英寸外屏+7.58英寸内屏，首发玄戒O3芯片",
+        "首销零售量同比上代大折叠增长300%，售价10999元起"
+      ],
+      "full_content": "NVIDIA has officially brought DLSS 5 with 3D-Guided Neural Rendering to Portal with RTX and the Half-Life 2 RTX demo, allowing players to experience its latest AI-powered graphics technology in two classic Valve titles enhanced with full path tracing. Both games have also received additional rendering and performance improvements, including support for up to 6X Multi Frame Generation on compatible GeForce RTX 50 Series GPUs. The updates follow the release of NVIDIA RTX Remix 1.6, which we covered yesterday. The latest version of NVIDIA's open-source modding platform introduces DLSS 5 integration, expanded frame generation capabilities, Windows on ARM support, and [&hellip;] Read full article at https://wccftech.com/nvidia-dlss-5-neural-rendering-now-available-in-portal-with-rtx-and-half-life-2-rtx-demo-alongside-6x-multi-frame-generation/",
+      "ai_summary": "发生了什么：小米于2026年9月7日正式发布其旗舰折叠手机小米18 Fold，该机型被视为小米在高端折叠屏市场确立领导地位的关键产品。其核心突破在于自研‘新一代折叠架构’，通过优化铰链结构、UTG玻璃厚度与屏幕堆叠方式，将用户最关心的‘折痕’问题控制在极高水平——官方实测数据显示平均折痕深度≤30微米（μm），较上代产品显著改善。硬件配置上，该机首发搭载小米自研玄戒O3芯片（定位高端AI协处理器），配备5.38英寸AMOLED外屏与7.58英寸内屏，并后置徕卡专业三摄系统。市场表现强劲，据小米集团总裁卢伟冰透露，其首销零售量同比上一代大折叠产品增长300%，起售价为10999元人民币。\n\n为什么重要：小米18 Fold的成功，标志着中国智能手机厂商在折叠屏核心技术攻坚上取得实质性突破。过去，折痕深度是制约折叠屏体验的核心痛点，也是苹果等国际巨头迟迟未入局的重要原因。小米通过系统级工程创新（非单一部件升级），将折痕控制在肉眼几乎不可辨的30μm级别，不仅提升了产品口碑与用户粘性，更验证了‘以用户体验为导向’的硬件研发路径的有效性。此外，玄戒O3芯片的首发，表明小米正将AI能力深度融入终端硬件，为后续AI影像、AI办公等场景提供底层算力支撑，构建差异化竞争力。\n\n对行业有什么影响：短期看，小米18 Fold的热销将加剧国内折叠屏市场竞争，倒逼华为、荣耀、OPPO等厂商加速迭代铰链与屏幕技术，推动行业整体折痕控制水平向20μm甚至10μm迈进；中期看，玄戒O3等自研AI芯片的规模化应用，将带动国内RISC-V生态、先进封装（如Chiplet）及AI编译器产业发展，形成‘终端需求—芯片创新—生态繁荣’的良性循环；长期看，小米以‘极致用户体验’为突破口的策略，为全球消费电子行业提供了新范式——在硬件参数趋同的今天，真正的护城河在于对用户真实痛点的深刻洞察与系统性解决能力。这或将引导产业从‘参数军备竞赛’转向‘体验价值创造’的新赛道。",
+      "category": "Digital",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/017/579.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-10-24T15:29:37+00:00",
+      "created_at": "2026-10-25T05:33:42.945578+00:00"
+    },
     {
       "id": "623319aa-3e4d-4000-82cf-eac415f9ce01",
       "title": "NVIDIA发布DLSS 5神经渲染技术，支持《Portal RTX》与《Half-Life 2 RTX》",
@@ -5275,24 +5293,6 @@
       "original_author": "@IT之家",
       "published_at": "2026-09-22T16:32:55+00:00",
       "created_at": "2026-09-22T17:29:52.052834+00:00"
-    },
-    {
-      "id": "a7827d42-16a3-4cd8-8709-15b0182fb6af",
-      "title": "威联通发布TS-432XeU短机身NAS：Annapurna Labs四核ARM处理器，支持10GbE+2.5GbE",
-      "summary": "威联通推出1U 12英寸短机身NAS TS-432XeU，搭载亚马逊Annapurna Labs AL-324四核ARM处理器，配备4盘位、10GbE SFP+与双2.5GbE接口，主打空间受限商用场景。",
-      "key_points": [
-        "1U 12英寸超紧凑设计，适配壁挂与小型机柜",
-        "采用Annapurna Labs AL-324 ARM处理器（4核@1.8GHz）",
-        "接口丰富：1×10GbE SFP+、2×2.5GbE RJ-45、4×USB 5Gbps"
-      ],
-      "full_content": "Alibaba stole the show at today's Apsara Conference in Hangzhou, China, detailing ambitious compute deployment plans, offering tantalizing details about its upcoming Zhenwu V900 chip, and laying down the gauntlet by disclosing between 4 trillion and 10 trillion parameters for its upcoming Qwen 4.5 and Qwen 5.0 AI models. Alibaba's upcoming Zhenwu V900 chip will have 216GB of on-package memory vs. the paltry 141GB that NVIDIA H200 GPU offers Alibaba is now claiming that the upcoming Zhenwu V900 chip will have 216GB of on-package memory, with an official launch slated for Q1 2027. We can only theorize that the V900 [&hellip;] Read full article at https://wccftech.com/alibaba-brags-that-its-next-gen-zhenwu-v900-ai-chip-offers-more-on-package-memory-than-nvidia-h200-outlines-plans-to-deploy-20-gw-of-compute-and-teases-4-10-trillion-parameters-for-upcoming-qwen-mod/",
-      "ai_summary": "发生了什么：威联通（QNAP）于2026年9月22日发布全新1U 12英寸短机身NAS——TS-432XeU。该设备采用亚马逊旗下Annapurna Labs AL-324四核ARM Cortex-A57处理器（主频1.8GHz），配备4个3.5英寸SATA III盘位、4GB DDR4内存与4GB嵌入式闪存；网络方面集成1个10GbE SFP+光口、2个2.5GbE电口及4个USB 5Gbps接口；整机功耗仅100W，采用3风扇主动散热。其核心定位是满足办公室、工厂、车载设备等空间受限环境下的轻量级商用存储需求。\n\n为什么重要：TS-432XeU体现了NAS设备向‘场景定制化’与‘ARM生态化’的双重演进。选择Annapurna Labs ARM芯片而非传统x86方案，既规避了Intel/AMD平台授权与功耗瓶颈，又借助亚马逊在云基础设施领域的ARM优化经验，提升容器化服务与边缘AI负载效率。12英寸超短深度设计，则精准响应中小企业对‘即插即用、不占空间’IT设备的迫切需求，填补了传统NAS与微型服务器之间的市场空白。\n\n对行业有什么影响：首先，将推动ARM架构在专业存储设备中的渗透率提升，加速国产ARM芯片（如飞腾、鲲鹏）在NAS领域的适配与替代；其次，10GbE+2.5GbE双速网络组合，为中小企业提供平滑升级路径——既可连接高速备份服务器，又能兼容现有千兆办公网络；第三，其低功耗（100W）与静音设计，使其可部署于开放式办公区，拓展NAS应用场景至数字标牌、多媒体教室等新领域。长远看，威联通与亚马逊ARM生态的深度绑定，或将催生更多面向边缘AI推理的专用NAS产品线。",
-      "category": "Digital",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/005/992.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-09-22T16:00:48+00:00",
-      "created_at": "2026-09-22T17:29:52.052844+00:00"
     }
   ]
 }
