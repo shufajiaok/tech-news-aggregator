@@ -1,7 +1,43 @@
 {
-  "updated_at": "2026-10-27T18:32:09.155046+00:00",
+  "updated_at": "2026-10-28T06:30:35.299379+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "7b0f7ffa-dcd7-486d-9f65-92a5293943c8",
+      "title": "IBM研发模拟叠加相变存储器，提升神经网络向量存储密度",
+      "summary": "IBM欧洲研究院提出‘叠加模拟内存’新架构，利用相变存储器（PCM）在同一物理单元中并行存储多个AI向量，实验证明其推理精度接近全精度软件水平。",
+      "key_points": [
+        "IBM提出PCM模拟叠加存储新方法",
+        "同一存储单元可并行存多个AI向量",
+        "原型芯片推理精度接近全精度软件"
+      ],
+      "full_content": "SK Hynix estimates that memory supply shortages will persist through 2030 despite the creation of additional production capacity. SK Hynix Doubles Down On 10nm \"1c\" DRAM &amp; HBM4 Production This Year But Expects Memory Supply Shortages To Persist Through 2030 Today, SK Hynix announced its 3Q26 financial results, posting a record revenue of 104.6155 trillion won (~$78.1B), a 32% increase versus the previous quarter, and boosting its operating profit by 80% to 83.3338 trillion won (~$62.2B), &amp; its net profit margin by 38% to 39.7756 trillion won (~$29.6B). In a market environment in which prices of key products have risen [&hellip;] Read full article at https://wccftech.com/sk-hynix-memory-shortages-to-persist-through-2030-despite-expansion/",
+      "ai_summary": "发生了什么：IBM欧洲研究院团队在2026年10月发布一项突破性研究，提出‘叠加模拟内存’（Superposed Analog Memory）架构。该技术利用相变存储器（PCM）的模拟特性，通过精心设计的电压脉冲序列，使单个PCM存储单元能够同时承载并区分多个神经网络权重向量，从而在物理层面实现存储密度的数倍提升。研究人员在真实PCM硬件原型上进行了验证，结果显示其在图像分类等典型AI推理任务中，准确率与标准全精度浮点软件实现相差无几，证明了该技术的工程可行性。\n\n为什么重要：当前AI模型规模呈指数级膨胀，而传统数字存储器（如SRAM、DRAM）受限于面积、功耗与带宽，已成为AI芯片发展的主要瓶颈之一。IBM的叠加模拟内存，跳出了‘一个单元存一位/一字节’的传统范式，直接在模拟域操作，本质上是将存储器本身变成了一个可编程的、低功耗的‘近存计算’单元。这不仅是存储密度的提升，更是对‘存储-计算边界’的一次根本性重构，为突破‘内存墙’提供了全新的物理路径。\n\n对行业有什么影响：若该技术走向量产，将首先冲击AI加速器芯片设计领域，促使厂商重新思考芯片架构——例如可将更多计算逻辑嵌入存储阵列，发展出真正意义上的存内计算（Computing-in-Memory）芯片。其次，将挑战现有存储器巨头（三星、SK海力士、美光）的技术路线，迫使其加速模拟存储、新型忆阻器（ReRAM）等下一代技术的研发投入。最后，对AI算法也有深远影响：叠加存储天然适合稀疏、低精度、向量化的AI模型，或将推动业界更广泛采用量化、知识蒸馏等轻量化技术，形成‘硬件创新—算法适配—应用落地’的正向循环。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/analog-superposition-increases-effective-pcm-storage-density-ibm-research-europe/",
+      "original_author": "@Semiconductor Engineering",
+      "published_at": "2026-10-28T06:00:06+00:00",
+      "created_at": "2026-10-28T06:30:27.502868+00:00"
+    },
+    {
+      "id": "7197f012-dba6-4454-bda5-19069cda6b2b",
+      "title": "AI基建驱动设备市场爆发，2031年晶圆厂设备营收将达220亿美元",
+      "summary": "Yole Group报告预测，全球晶圆厂设备市场营收将从2025年的1290亿美元增至2031年的2200亿美元，年复合增长率9%，增长动力主要来自AI芯片对先进逻辑、HBM及先进封装的设备需求激增。",
+      "key_points": [
+        "晶圆厂设备市场2031年将达2200亿美元",
+        "AI驱动先进逻辑、HBM、先进封装设备需求",
+        "中国设备国产化率2025年达17%，较2021年提升11个百分点"
+      ],
+      "full_content": "The TUF RTX 5080&nbsp;OC from ASUS was purchased as a second-hand GPU from Amazon U.K. for a steep €1,340 (almost $1,500), and for a PC part that’s only four months old, you’d expect it to work flawlessly. Unfortunately, one owner shows proof that the graphics card is giving off a rather loud and irritating coil whine that would likely distract him even while he was busy in his gaming sessions, prompting him to reach out to ASUS for a warranty claim. Sadly, the company rejected both the request and an inspection. Coil whine is a normal characteristic of a GPU, [&hellip;] Read full article at https://wccftech.com/rtx-5080-coil-whine-asus-warranty-claim-rejected/",
+      "ai_summary": "发生了什么：Yole Group最新报告指出，全球晶圆制造设备（WFE）市场正经历历史性扩张，营收将从2025年的1290亿美元，以9%的年复合增长率攀升至2031年的2200亿美元。这一增长并非源于传统消费电子需求，而是由AI基础设施建设所驱动的结构性变革：为满足AI芯片对更高晶体管密度（先进逻辑）、更大内存带宽（HBM）及更复杂互连（先进封装）的需求，晶圆厂必须大规模采购新型刻蚀、沉积、光刻与检测设备。与此同时，中国本土设备国产化率已从2021年的6%跃升至2025年的17%，在化学机械抛光（CMP）、晶圆减薄等环节取得显著突破。\n\n为什么重要：该数据揭示了一个深刻现实：半导体产业的增长引擎已从‘终端产品销量’转向‘底层算力投资’。AI不再是芯片的一个应用市场，它本身就是最大的‘客户’与‘驱动力’。每一次大模型参数量的翻倍、每一轮数据中心集群的扩建，都直接转化为对上游设备厂商的订单潮。这也解释了为何ASML、应用材料等巨头近年营收与股价屡创新高——它们卖的不是机器，而是AI时代的‘算力基建许可证’。\n\n对行业有什么影响：对全球供应链而言，设备市场的繁荣加剧了地缘政治博弈。美国对华设备出口管制，正迫使中国加速构建‘去美化’设备供应链，而这一过程又反过来刺激了全球设备商（如日本、欧洲厂商）寻求新的市场机会。对技术路线而言，AI需求正重塑设备研发优先级——例如，为HBM3e开发的超高深宽比刻蚀设备、为2.5D/3D封装开发的混合键合设备，其研发热度已超过传统逻辑器件设备。长远看，设备市场将从‘通用型’向‘AI定制型’加速演进，谁能率先提供满足AI芯片独特工艺需求的设备解决方案，谁就将赢得下一个十年的市场主导权。",
+      "category": "Foundry",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/wafer-fab-equipment-a-booming-market-built-on-a-fragmenting-supply-chain/",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-10-27T19:17:23+00:00",
+      "created_at": "2026-10-28T06:30:27.502917+00:00"
+    },
     {
       "id": "b460d49d-489b-4e4d-900a-0c4ab8030449",
       "title": "台积电考虑上调CoWoS封装价格20%，Blackwell与Rubin芯片加剧产能压力",
@@ -19,6 +55,24 @@
       "original_author": "@Tom's Hardware",
       "published_at": "2026-10-27T17:42:49+00:00",
       "created_at": "2026-10-27T18:31:55.301643+00:00"
+    },
+    {
+      "id": "44597227-6777-425d-9572-f62490d8c429",
+      "title": "SK Hynix预计内存短缺将持续至2030年，加速10nm DRAM与HBM4扩产",
+      "summary": "SK Hynix在2026年第三季度财报中宣布创纪录营收与利润，并确认尽管正大力扩产10nm '1c' DRAM及HBM4，但全球内存供应短缺局面仍将延续至2030年。",
+      "key_points": [
+        "SK Hynix Q3营收达104.6万亿韩元，创历史新高",
+        "正双倍加码10nm DRAM与HBM4产能",
+        "内存短缺预计持续至2030年"
+      ],
+      "full_content": "&lt;p&gt;Jowi Morales is a writer and journalist covering the tech beat since 2021. However, he’s been interested in technology far earlier than that. He started discovering desktop computers when his father brought home a Windows 95 PC, but his first real experience working under the hood of the PC was when the old computer’s hard drive was filled to the brim in the year 2000. He deleted the Windows folder to attempt to rectify the situation, which led to his dad buying a new desktop PC. Since then, he learned a lot more about computers, and he’s always been the go-to tech expert for his family and friends.&lt;/p&gt;&lt;p&gt;Jowi primarily uses a Windows workstation and an Android phone, but he also bought into the Apple ecosystem with the 6th-gen iPad, iPhone 14 Pro Max, and the M1 MacBook Air. Today, Jowi covers hardware and software from Redmond and Cupertino, while also looking at the tech industry in general.&lt;/p&gt;&lt;p&gt;Aside from covering technology, Jowi is an avid photographer and writes about automobiles, aviation, and tanks. You can find his bylines at &lt;a href=&quot;https://www.makeuseof.com/author/jowi-morales/&quot;&gt;MakeUseOf&lt;/a&gt;, &lt;a href=&quot;https://www.slashgear.com/author/jowimorales/&quot;&gt;SlashGear&lt;/a&gt;, and, of course, &lt;a href=&quot;https://www.tomshardware.com/author/jowi-morales&quot;&gt;Tom’s Hardware&lt;/a&gt;.&lt;/p&gt;",
+      "ai_summary": "发生了什么：SK Hynix于2026年第三季度发布创纪录财报，营收达104.6万亿韩元（约78.1亿美元），环比增长32%；营业利润达83.3万亿韩元（约62.2亿美元），环比飙升80%。公司在财报中明确指出，尽管已启动史上最大规模的10nm级‘1c’ DRAM及下一代HBM4存储芯片扩产计划，但受AI服务器、高性能计算及消费电子需求持续超预期拉动，全球内存（尤其是高带宽HBM）供需失衡状况短期内无法缓解，短缺态势将至少延续至2030年。\n\n为什么重要：HBM已成为AI训练芯片（如NVIDIA GB200、AMD MI300X）的‘血液’，其供应能力直接制约全球AI算力增长上限。SK Hynix作为HBM市场绝对龙头（市占率超50%），其长期短缺预警具有行业风向标意义。这不仅印证了AI基础设施建设已进入‘内存墙’阶段，更凸显出存储芯片在AI时代已从传统周期性产品，转变为与逻辑芯片同等重要的战略级核心组件。\n\n对行业有什么影响：第一，将加剧AI芯片厂商对HBM的争夺战，NVIDIA、AMD等可能进一步锁定SK Hynix长期供应协议，甚至参与上游投资；第二，加速国产替代进程，长鑫存储、兆易创新等中国厂商将获得更大政策与资本支持，但技术代差（如HBM3e/HBM4良率）仍是严峻挑战；第三，推动系统架构创新，如NVIDIA Rubin CPX采用GDDR7替代HBM，即是对HBM瓶颈的主动规避策略。长远看，内存短缺正倒逼整个计算体系从‘通用带宽’向‘场景定制化内存’演进。",
+      "category": "Semiconductor",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/sk-hynix-memory-shortages-to-persist-through-2030-despite-expansion/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-10-27T17:42:49+00:00",
+      "created_at": "2026-10-28T06:30:27.502803+00:00"
     },
     {
       "id": "dacc698b-9d2b-4397-a6a8-9da48372dbc7",
@@ -5239,60 +5293,6 @@
       "original_author": "@WCCFTech",
       "published_at": "2026-09-23T22:00:00+00:00",
       "created_at": "2026-09-24T05:42:34.366027+00:00"
-    },
-    {
-      "id": "4e1d5256-cc70-4b6a-a315-9541d16e14ae",
-      "title": "NVIDIA Smooth Motion登陆RTX 30系列显卡，Mod社区实现官方未支持功能",
-      "summary": "开发者Adeline发布NVSmooth30模组，首次在GeForce RTX 30系列（含RTX 3050笔记本版与RTX 3080）上成功运行NVIDIA Smooth Motion帧生成技术，突破官方仅限RTX 40/50系列的限制。",
-      "key_points": [
-        "NVSmooth30是实验性兼容模组",
-        "支持RTX 3050笔记本与RTX 3080等30系GPU",
-        "Smooth Motion为驱动级AI帧生成，无需游戏集成SDK"
-      ],
-      "full_content": "&lt;p&gt;Andrew oversees laptop and desktop coverage and keeps up with the latest news in tech and gaming. His work has been published in Kotaku, PCMag, Complex, Tom’s Guide and Laptop Mag, among others. He fondly remembers his first computer: a Gateway that still lives in a spare room in his parents&#039; home, albeit without an internet connection. When he’s not writing about tech, you can find him playing video games, checking social media and waiting for the next Marvel movie. Follow him on Threads &lt;a href=&quot;https://www.threads.net/@freedmanae&quot;&gt;@FreedmanAE&lt;/a&gt; and BlueSky &lt;a href=&quot;https://bsky.app/profile/andrewfreedman.net&quot;&gt;@andrewfreedman.net&lt;/a&gt;.&lt;a href=&quot;https://bsky.app/profile/andrewfreedman.net&quot;&gt; &lt;/a&gt;You can send him tips on Signal: andrewfreedman.01&lt;/p&gt;",
-      "ai_summary": "发生了什么：NVIDIA Smooth Motion作为继DLSS Frame Generation之后推出的第二代帧生成技术，原生仅支持RTX 40及更新架构GPU。WCCFTech报道显示，开发者Adeline通过逆向工程与驱动层注入，成功开发出NVSmooth30模组，使RTX 30系列显卡（包括移动版RTX 3050和桌面版RTX 3080）首次获得该功能。该技术在兼容游戏中可实时生成中间帧，显著提升流畅度，且不依赖游戏厂商集成NVIDIA SDK，大幅拓宽适用范围。\n\n为什么重要：此举标志着AI增强图形技术正从“厂商封闭生态”加速转向“社区开放演进”。RTX 30系仍保有庞大用户基数（尤其在中端市场），其硬件AI单元（Tensor Core）虽弱于新架构，但经优化后仍可承担轻量级帧生成任务。NVSmooth30的成功验证了旧世代GPU的AI潜力未被充分释放，也反映出NVIDIA驱动架构存在向下兼容的技术可行性，只是商业策略选择未开放。\n\n对行业有什么影响：首先，它将倒逼NVIDIA重新评估技术下沉策略——若社区能稳定运行，官方未来或考虑为RTX 30系提供有限支持，延长产品生命周期并巩固用户粘性。其次，该模组为开源AI渲染生态埋下伏笔，类似OpenDLSS-NR（DLSS 5 Vulkan复刻）项目已证明，关键AI图形技术正逐步模块化、可移植化。长远看，这将削弱GPU代际壁垒，推动跨代际AI加速能力标准化；同时对AIC厂商和整机OEM构成压力，促使其更重视驱动兼容性与长期软件支持，而非单纯堆砌新硬件参数。",
-      "category": "GPU",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/nvidia-smooth-motion-now-runs-on-rtx-30-series-gpus-thanks-to-nvsmooth30-mod-rtx-3050-laptop-and-rtx-3080-confirmed-working/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-09-23T20:30:00+00:00",
-      "created_at": "2026-09-24T05:42:34.36596+00:00"
-    },
-    {
-      "id": "0209b608-8445-47dc-9d34-27f48e386963",
-      "title": "月之暗面Kimi K3.1模型即将发布，Carnegie报告称57%顶尖AI人才来自中国",
-      "summary": "月之暗面内部代码证实Kimi K3.1模型将在10月前发布；Carnegie报告显示全球57%顶级AI人才源自中国，凸显中国AI人才优势。",
-      "key_points": [
-        "Kimi K3.1模型已进入发布倒计时",
-        "Carnegie报告指出中国贡献全球57%顶尖AI人才",
-        "人才优势正转化为模型研发与产业落地的领先动能"
-      ],
-      "full_content": "Final Fantasy VII Revelation Director Naoki Hamaguchi recently appeared on the IGN Japan special Tokyo Game Show livestream (around the 2:04:50 mark), talking extensively with the hosts about the highly anticipated final chapter in the remake trilogy. Perhaps the most interesting comment he made on this occasion was that players will have to play Final Fantasy VII Revelation more than once to experience everything that the game has to offer; indeed, some of the side quests will change depending on the main character being used by the player. By letting the player choose which character takes on a side quest, [&hellip;] Read full article at https://wccftech.com/final-fantasy-vii-revelation-replay-one-playthrough-not-everything/",
-      "ai_summary": "发生了什么：AI初创公司月之暗面（Moonshot）被曝在其内部代码片段中明确提及‘Kimi K3.1’模型，WCCFTech据此确认该下一代大模型预计将于10月前正式发布。与此同时，卡内基国际和平基金会（Carnegie）最新研究报告显示，全球排名前1%的AI研究人才中，高达57%来自中国大陆。这一数据远超美国（约22%）与欧盟（约15%），标志着中国已从AI‘追赶者’转变为全球AI人才的核心策源地。\n\n为什么重要：人才是AI竞争最根本的要素。57%的占比不仅反映中国高校在AI基础研究领域的强大输出能力，更体现其在算法、系统、应用全链条上的成熟人才梯队。Kimi K3.1的快速迭代正是这一人才红利的直接产物——其研发团队平均年龄不足30岁，大量成员拥有清华、北大、中科大等顶尖院校背景，并曾在OpenAI、Google等国际机构工作。这表明中国AI创新已形成‘人才集聚—技术突破—商业验证’的正向飞轮。\n\n对行业有什么影响：首先，将加剧全球AI人才争夺战。美国等国或将出台更激进的签证与移民政策，试图延揽中国AI毕业生，而中国则会加速‘顶尖人才回流计划’与本土培养体系升级。其次，人才优势将加速中国AI模型的‘垂直化’与‘场景化’演进。Kimi系列聚焦长文本与知识密集型任务，正是人才结构偏向工程实现与应用创新的体现，未来在金融、法律、医疗等专业领域将涌现更多‘小而强’的专用模型。最后，该趋势将重塑全球AI产业分工：中国或主导模型应用层与数据层创新，而美欧则继续把控底层芯片与操作系统，形成一种新型竞合关系。",
-      "category": "AI",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/kimi-k3-1-model-teased-within-moonshots-internal-code-snippet-and-expected-to-land-before-october-as-carnegie-finds-57-percent-of-top-global-ai-talent-now-originates-from-china/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-09-23T17:00:00+00:00",
-      "created_at": "2026-09-23T17:38:53.728674+00:00"
-    },
-    {
-      "id": "f9161956-9bd1-45eb-a07a-fe1cc94b7be5",
-      "title": "Anthropic限制华为与亚马逊芯片用于Claude Opus 5.5前沿模型开发",
-      "summary": "Anthropic在Claude Opus 5.5文档中明确限制华为及亚马逊AI芯片用于前沿大模型内核开发，凸显地缘技术脱钩深化。",
-      "key_points": [
-        "Anthropic禁止华为芯片用于Opus 5.5内核开发",
-        "亚马逊自研芯片亦被同等限制",
-        "限制聚焦于LLM内核开发环节，非通用推理"
-      ],
-      "full_content": "Moonshot won laurels for itself when it released the Kimi K3 model back in July to widespread acclaim. It is hardly a surprise, therefore, that the AI enthusiasts and netizens alike have been eagerly waiting for the next iteration of the model. And, we've just received the clearest sign yet that Moonshot is preparing for the rollout of its next-gen offering, officially dubbed Kimi K3.1. Meanwhile, in a report that goes to the very heart of the prevailing tug-of-war between the US and China on AI, a Carnegie report has just delineated China's growing dominance in the AI sphere, replete [&hellip;] Read full article at https://wccftech.com/kimi-k3-1-model-teased-within-moonshots-internal-code-snippet-and-expected-to-land-before-october-as-carnegie-finds-57-percent-of-top-global-ai-talent-now-originates-from-china/",
-      "ai_summary": "发生了什么：Anthropic公司发布的Claude Opus 5.5模型技术文档中，首次明确写入硬件使用限制条款：禁止使用华为昇腾（Ascend）系列芯片及亚马逊Trainium芯片进行‘大型语言模型（LLM）内核开发’。该限制并非针对通用推理服务，而是精准锁定在模型训练、微调及底层kernel编译等最核心的研发环节。值得注意的是，亚马逊作为Anthropic的最大投资方与云服务伙伴，其自研芯片竟与受制裁的华为芯片被置于同一限制清单，表明该政策是基于技术主权与供应链安全的全局考量，而非单纯的政治站队。\n\n为什么重要：这一举措标志着AI时代的‘技术冷战’已从硬件禁运升级至软件生态隔离。过去，出口管制主要针对GPU等算力硬件；如今，顶级AI公司正通过模型许可证（License）主动构建‘可信计算环境’，将特定硬件排除在最前沿研发之外。这比政府禁令更具隐蔽性与执行力，因为它直接嵌入到开发者每日使用的工具链中，使合规成本内化为企业自身的技术选择。\n\n对行业有什么影响：首先，将加速全球AI芯片生态的‘阵营化’分裂。中国厂商（华为、寒武纪、壁仞）必须加速构建从芯片、编译器、框架到模型的全栈自主生态，而无法再依赖西方开源模型进行二次开发。其次，对云服务商构成严峻挑战：AWS需在支持Anthropic的Opus 5.5与推广自家Trainium之间做出艰难平衡；华为云则需全力扶持基于昇腾的国产模型社区（如盘古、千问）。最后，该趋势将倒逼AI治理框架升级——如何界定‘内核开发’与‘应用开发’的边界？模型许可证的法律效力如何与各国出口法规协调？这些问题亟待国际社会共同回答。",
-      "category": "AI",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/anthropic-blocks-huawei-chips-from-using-latest-opus-5-5-to-develop-ai-models-yet-amazon-appears-to-have-gotten-caught-in-the-crossfire/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-09-23T16:56:35+00:00",
-      "created_at": "2026-09-23T17:38:53.728682+00:00"
     }
   ]
 }
