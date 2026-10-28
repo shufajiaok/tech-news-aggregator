@@ -1,7 +1,187 @@
 {
-  "updated_at": "2026-10-28T06:30:35.299379+00:00",
+  "updated_at": "2026-10-28T18:38:17.221421+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "09fbe9d8-ac0d-4448-a009-f2c8647041e6",
+      "title": "苹果发布首款触控屏MacBook Pro，搭载PROLED XDR双OLED显示屏",
+      "summary": "苹果在洛杉矶‘Pro and Tell’活动中正式推出首款支持多点触控的MacBook Pro，采用双层串联OLED面板，HDR峰值亮度达2000尼特，起售价22999元，最高可选16TB存储与512GB统一内存。",
+      "key_points": [
+        "全球首款触控MacBook Pro，配备PROLED XDR双OLED屏",
+        "支持完整多点触控，首批适配Pixelmator Pro、Logic Pro等专业应用",
+        "M5 Pro/M5 Max芯片，24小时续航，起售价22999元"
+      ],
+      "full_content": "&lt;p&gt;Andrew oversees laptop and desktop coverage and keeps up with the latest news in tech and gaming. His work has been published in Kotaku, PCMag, Complex, Tom’s Guide and Laptop Mag, among others. He fondly remembers his first computer: a Gateway that still lives in a spare room in his parents&#039; home, albeit without an internet connection. When he’s not writing about tech, you can find him playing video games, checking social media and waiting for the next Marvel movie. Follow him on Threads &lt;a href=&quot;https://www.threads.net/@freedmanae&quot;&gt;@FreedmanAE&lt;/a&gt; and BlueSky &lt;a href=&quot;https://bsky.app/profile/andrewfreedman.net&quot;&gt;@andrewfreedman.net&lt;/a&gt;.&lt;a href=&quot;https://bsky.app/profile/andrewfreedman.net&quot;&gt; &lt;/a&gt;You can send him tips on Signal: andrewfreedman.01&lt;/p&gt;",
+      "ai_summary": "发生了什么：苹果于2026年10月28日（太平洋时间）正式发布革命性MacBook Pro，首次引入全屏幕多点触控功能，并命名为‘PROLED XDR Display’机型。该设备采用业界首创的双层串联OLED技术，实现1Hz–120Hz自适应刷新率、2000尼特HDR峰值亮度及P3+Adobe RGB广色域覆盖；硬件上首发M5 Pro与M5 Max芯片，顶配M5 Ultra版Mac Studio同步支持512GB统一内存（加价11.6万元）与16TB存储；触控交互深度集成至Final Cut Pro、Logic Pro、Pixelmator Pro等第一方应用，并推动Notion、Adobe、Microsoft等第三方生态启动适配。\n\n为什么重要：此举标志着苹果彻底打破Mac产品线十年来‘无触控’的设计哲学，是继iPad之后对人机交互范式的又一次重构。在AI原生操作系统演进与创意工作流加速融合的背景下，触控不再仅是补充输入方式，而是成为时间线缩放、手势绘画、实时混音等专业场景的核心操作入口。同时，PROLED XDR技术代表OLED在大尺寸、高可靠性、低功耗专业笔记本领域的重大突破，挑战传统mini-LED与LCD方案的技术边界。\n\n对行业有什么影响：短期将倒逼Windows阵营加速推进触控MacOS级体验（如Surface Studio迭代、Dell XPS触控优化），并加剧高端创意本市场分化；中长期看，触控+AI原生OS（如macOS 15的Contextual Intelligence引擎）将重塑专业软件开发标准，推动‘触控优先’UI框架普及；供应链层面，双OLED模组、高精度触控传感器、M5系列先进封装（预计台积电N3E+CoWoS-S）将拉动面板厂（三星Display、京东方）、IC载板与封测厂订单。值得注意的是，触控引入也带来新的可靠性挑战——正如同期发布的iPhone Duo已出现早期屏幕失效问题，MacBook Pro的铰链耐久性与OLED长期触控老化将成为用户关注焦点。",
+      "category": "Digital",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/019/249.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-10-28T17:15:39+00:00",
+      "created_at": "2026-10-28T18:38:06.452903+00:00"
+    },
+    {
+      "id": "3234e75e-ad68-4449-a05e-17baa4710210",
+      "title": "马来西亚海关查获1200万美元AI芯片走私案，涉30台服务器",
+      "summary": "马来西亚海关截获一个涉嫌利用该国作为中转枢纽的AI芯片走私网络，查扣价值1200万美元的先进AI芯片，藏匿于30台服务器中，案件已进入司法调查阶段。",
+      "key_points": [
+        "查获价值1200万美元的先进AI芯片",
+        "芯片被隐藏在30台服务器内",
+        "马来西亚被用作向第三国转运的走私中转 hub"
+      ],
+      "full_content": "&lt;p&gt;Etiido Uko is a mechanical engineer and senior technical writer with over nine years of experience in documentation and reporting. He is deeply passionate about all things engineering and technology, and is an expert in gadgets, manufacturing, robotics, automotive, and aerospace. His work spans content creation for industry leaders across multiple sectors, including Autodesk, Siemens, Xometry, Telus, and Coca-Cola. When he is not writing or keeping up with the latest innovations, you can find him exploring lands unknown. Check out more of his work at etiidowrites.com.&lt;/p&gt;",
+      "ai_summary": "发生了什么：马来西亚海关于2026年10月下旬宣布破获一起重大高科技走私案件，缴获总值约1200万美元的先进AI加速芯片，这些芯片被刻意伪装并嵌入30台普通服务器机箱中，企图规避出口管制与关税审查。官方通报指出，该走私网络具有高度组织性，利用马来西亚相对宽松的物流监管环境和区域中转便利性，将受美国EAR条例严格管制的高性能AI芯片（极可能为NVIDIA A100/H100级别或定制ASIC）转运至未授权国家和地区。\n\n为什么重要：此案凸显全球AI算力地缘政治博弈已从政策层面深入到实体供应链执行环节。随着美国持续收紧对华及‘友岸外包’（friend-shoring）目标外国家的AI芯片出口，灰色渠道正加速演化——从传统拆机散件走私，升级为整机系统级隐匿运输，显著提升监管难度。马来西亚作为全球半导体封测重镇（占全球封测产能约13%）和关键物流节点，其海关能力与合规体系正面临前所未有的压力测试。\n\n对行业有什么影响：首先，将加速推动东盟国家建立区域性AI芯片进出口联合审查机制，并促使台积电、日月光等本地巨头强化供应链溯源审计；其次，服务器OEM厂商（如超微、纬创）或将被迫升级BOM管控与出货审计流程，增加‘反隐匿设计’（如芯片级唯一ID绑定、固件签名验证）；长远看，此类事件将强化‘芯片即战略物资’共识，进一步刺激中国、印度、沙特等国加速构建自主AI芯片设计—制造—封测闭环，但也可能抬高全球AI基础设施部署成本与交付周期。",
+      "category": "Semiconductor",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/tech-industry/policy/malaysia-seizes-usd12-million-worth-of-advanced-ai-chips-hidden-inside-30-servers-customs-says-suspected-smuggling-network-used-the-country-as-a-transit-hub",
+      "original_author": "@Tom's Hardware",
+      "published_at": "2026-10-28T17:02:14+00:00",
+      "created_at": "2026-10-28T18:38:06.452933+00:00"
+    },
+    {
+      "id": "4daeb8f3-8ba2-4840-9898-ef961e529712",
+      "title": "DDR5内存价格暴涨1285%，32GB套条从110美元飙升至1523美元",
+      "summary": "一款2024年8月售价仅109.99美元的Patriot DDR5-7600 32GB内存套条，如今在亚马逊标价高达1523.47美元，涨幅达1285%，反映AI PC需求激增下的内存供需严重失衡。",
+      "key_points": [
+        "DDR5-7600 32GB套条价格暴涨1285%",
+        "AI PC爆发推高HBM与高端DDR5需求",
+        "内存厂商正加速扩产但短期难缓解"
+      ],
+      "full_content": "With AMD's upcoming Zen 6 desktop CPUs and Intel's Nova Lake desktop processors both expected to launch in 2027, we were curious to see just how bad the DDR5 memory pricing situation has become ahead of these next-generation platforms. And the results are rather alarming. As highlighted by my post on X, a Patriot Viper Xtreme 5 32 GB (2x16GB) DDR5-7600 CL36 memory kit purchased on Amazon for just $109.99 on August 29, 2024, is now advertised for a staggering $1,523.47 on the same platform. That's a price difference of approximately 1,285%, or nearly 14 times the original purchase price. [&hellip;] Read full article at https://wccftech.com/32gb-ddr5-ram-kit-bought-for-just-110-in-2024-now-listed-for-over-1500-but-cheaper-alternatives-still-exist/",
+      "ai_summary": "发生了什么：WCCFTech披露一组惊人数据：一款Patriot Viper Xtreme 5 DDR5-7600 CL36 32GB（2×16GB）内存套条，于2024年8月29日在亚马逊售价仅为109.99美元，截至2026年10月已飙升至1523.47美元，涨幅达1285%（近14倍）。该现象并非孤例，同期DDR5-6400及以上高频内存普遍涨价800%–1000%，而主流DDR5-5600价格亦上涨300%。驱动因素包括AMD Zen 6与Intel Nova Lake平台对高带宽内存的强制要求，以及AI PC对大容量、低延迟内存的刚性需求（如本地运行7B参数LLM需至少32GB DDR5）。\n\n为什么重要：内存价格异动是观察AI硬件生态健康度的关键温度计。DDR5作为CPU与GPU间的数据‘咽喉’，其成本与供应稳定性直接影响AI PC终端定价、厂商利润率及消费者接受度。当前暴涨已远超正常供需波动范畴，暴露出三大结构性矛盾：一是HBM产能（用于GPU）与高端DDR5产能（用于CPU平台）争夺同一套先进封装与测试资源；二是内存厂商扩产周期（12–18个月）滞后于AI PC需求爆发节奏；三是JEDEC标准演进缓慢，厂商借‘超频认证’之名行溢价之实，缺乏有效监管。\n\n对行业有什么影响：对PC OEM而言，将加速推动内存异构策略——在非AI负载机型中回归DDR4以控本，在旗舰AI PC中捆绑HBM-CPU混合内存方案；对芯片厂商，将倒逼AMD/Intel在下一代平台中强化内存控制器（IMC）兼容性，支持更宽泛的JEDEC SPD规范；对消费者，短期将面临AI PC‘买不到、买不起’双重困境，但长期看，价格泡沫终将挤出，而真正受益者或是专注DDR5细分市场的国产厂商（如长鑫存储已宣布DDR5L 6400量产），有望借此切入国际一线品牌供应链。",
+      "category": "Semiconductor",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/32gb-ddr5-ram-kit-bought-for-just-110-in-2024-now-listed-for-over-1500-but-cheaper-alternatives-still-exist/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-10-28T16:04:45+00:00",
+      "created_at": "2026-10-28T18:38:06.452974+00:00"
+    },
+    {
+      "id": "bb1b43be-ffda-4ca1-a002-d6cd90200f8a",
+      "title": "半导体工程推出‘Build-A-Chip-Bench’基准，评估AI代理全流程芯片设计能力",
+      "summary": "半导体工程联合NVIDIA等企业推出‘Build-A-Chip-Bench’开源基准测试，首次覆盖从工作负载定义到GDSII版图生成的完整芯片设计流程，评估AI代理的端到端工程能力。",
+      "key_points": [
+        "首个覆盖‘规格→GDS’全流程的AI芯片设计基准",
+        "采用开源PDK与工具链，强调功能正确性与PPA指标",
+        "当前最优AI代理通过率仅65%，综合得分16.6%"
+      ],
+      "full_content": "Today, Polish developer Bloober Team has unveiled the launch date of Cronos: Lazarus, the expansion to 2025's horror game. Lazarus is set to launch on December 3 for PC, PlayStation 5, and Xbox Series S|X, while the Nintendo Switch 2 version will be released in the first quarter of 2027. Cronos: Lazarus aims to pull players back into the gritty, dark sci-fi horror world of Cronos: The New Dawn, building on what went down in last year's original game. This DLC cranks up Bloober Team's signature recipe of suffocating atmosphere, brutal encounters, and survival mechanics that force players to manage [&hellip;] Read full article at https://wccftech.com/cronos-lazarus-999-december-3-bloober-prequel-dlc-teleportation-invisibility-decoys-faster-blade/",
+      "ai_summary": "发生了什么：半导体工程（Semiconductor Engineering）联合NVIDIA、Cadence、Synopsys等产业力量，正式发布‘Build-A-Chip-Bench’——全球首个面向AI驱动芯片设计的端到端基准测试套件。该基准摒弃传统分段式评测（如仅测RTL生成），要求AI代理从自然语言工作负载描述出发，自主完成架构探索、RTL编写、逻辑综合、物理实现、时序分析、DRC/LVS验证，直至输出可流片的GDSII文件。评测采用开源SkyWater 130nm PDK与OpenROAD工具链，硬性门坎包括功能正确性（通过隐藏VIP验证）、可布线性、保持时间（hold timing）与DRC合规，通过者再按PPA（功耗、性能、面积）评分。\n\n为什么重要：当前AI for EDA仍处于‘单点提效’阶段（如AI优化布局布线），而芯片设计本质是跨层次、强约束、高试错成本的系统工程。Build-A-Chip-Bench的推出，标志着产业界开始用工程化思维定义AI代理的‘芯片设计成熟度’，其核心价值在于暴露AI的深层短板：无法回溯修正早期架构决策、难以在优化过程中保护已验证功能、对EDA工具长周期运行缺乏规划能力——这些正是人类工程师的核心竞争力。\n\n对行业有什么影响：将加速EDA厂商从‘AI插件’向‘AI原生平台’转型，如Synopsys正在开发的DSO.ai 4.0已集成多智能体协同框架；推动芯片设计流程标准化与接口开放（如IEEE P2417标准加速落地），为AI代理提供统一‘操作语义’；对人才市场，则可能重塑IC设计岗位结构——初级工程师将更多承担AI提示工程与结果验证工作，而架构师与验证专家的价值将进一步凸显。长远看，该基准或成为晶圆厂认证AI设计服务提供商的准入门槛，深刻影响Fabless企业的IP采购与流片策略。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/introducing-build-a-chip-bench-from-workload-specification-to-gds/",
+      "original_author": "@Semiconductor Engineering",
+      "published_at": "2026-10-28T16:00:00+00:00",
+      "created_at": "2026-10-28T18:38:06.452981+00:00"
+    },
+    {
+      "id": "bfd8766d-47e9-480d-94a1-6c8d7226d64b",
+      "title": "AI数据中心电压裕量每降50mV，单GW电力可多部署270机架算力",
+      "summary": "半导体工程论文指出，在AI数据中心中，供电电压裕量（Voltage Margin）每降低50mV，每吉瓦输入电力可额外部署约270个NVL72计算机架，凸显精密电源管理的战略价值。",
+      "key_points": [
+        "50mV电压裕量优化可提升270机架/GW算力密度",
+        "AI负载动态性加剧电压跌落（droop）预测难度",
+        "需系统级PDN设计与协同控制"
+      ],
+      "full_content": "The Crimson Desert Charting the Unknown DLC expansion is right around the corner, as Pearl Abyss is launching it on PC, PlayStation 5, Xbox Series X, and Xbox Series S on October 29. However, those expecting to play the expansion right at midnight will be disappointed by the official release timing, as Kliff, Damiane, and Oongka will only be able to embark on their new journeys on October 30 in most of the world, or close enough. Earlier today, Pearl Abyss confirmed exactly when the Charting the Unknown DLC will launch on all formats worldwide, and in most regions, the [&hellip;] Read full article at https://wccftech.com/crimson-desert-charting-the-unknown-dlc-drops-on-october-29-later-day-world/",
+      "ai_summary": "发生了什么：半导体工程发表深度技术论文《AI时代电源管理基础》，通过建模分析证实：在运行NVIDIA Vera Rubin NVL72 AI服务器的数据中心中，若将GPU核心供电电压从0.80V降至0.75V（压降50mV），在相同时钟频率下，单GPU功耗降低约8%，单机架功耗减少约17kW，最终使每吉瓦（GW）输入电力可多部署约270个机架的AI算力。这一结论基于对电压裕量（为应对最坏情况电压跌落而预留的额外电压）的精细化建模，揭示了电源输送网络（PDN）设计已成为AI算力密度的隐形瓶颈。\n\n为什么重要：电压裕量看似微小，实则是AI芯片能效的‘最大漏斗’。传统设计为保障极端工况（如瞬态电流突变Ldi/dt）下的稳定性，常预留100–150mV裕量，但这直接导致晶体管工作在次优电压点，功耗呈平方级增长（P∝V²）。而AI负载的突发性、不规则性（如Transformer attention矩阵计算的脉冲式功耗）使裕量预测愈发困难，过度设计造成巨大算力浪费，设计不足则引发系统崩溃。\n\n对行业有什么影响：将推动电源管理从‘被动防护’转向‘主动协同’——硅片厂商（如NVIDIA、AMD）需在芯片内集成更精准的电压传感与动态调压电路；平台厂商（如超微、技嘉）须重构主板PDN，采用更低阻抗的供电路径与分布式VRM；EDA工具链将强化多物理场耦合仿真（电-热-机械应力），支持‘裕量感知’的芯片-系统协同设计。Movellus等初创公司推出的Aeonic平台已验证该路径可行性，预示着‘电源即算力’（Power-as-Compute）将成为下一代AI基础设施的核心设计理念。",
+      "category": "Foundry",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/foundations-of-power-management-in-the-age-of-ai/",
+      "original_author": "@Semiconductor Engineering",
+      "published_at": "2026-10-28T15:53:35+00:00",
+      "created_at": "2026-10-28T18:38:06.452988+00:00"
+    },
+    {
+      "id": "7988c270-5928-42e2-8593-51f305601a0d",
+      "title": "AI组件涨价迫使全球PC大厂回流中国设厂，寻求成本与供应链效率",
+      "summary": "受AI相关元器件（GPU、HBM、电源管理IC等）价格大幅上涨影响，全球主要PC制造商正将部分产能迁回中国大陆，依托成熟供应链降低制造成本并提升交付韧性。",
+      "key_points": [
+        "AI组件涨价成PC厂商产能回流主因",
+        "中国具备完整的AI终端制造供应链",
+        "回流聚焦高附加值组装与系统级集成"
+      ],
+      "full_content": "&lt;p&gt;Jowi Morales is a writer and journalist covering the tech beat since 2021. However, he’s been interested in technology far earlier than that. He started discovering desktop computers when his father brought home a Windows 95 PC, but his first real experience working under the hood of the PC was when the old computer’s hard drive was filled to the brim in the year 2000. He deleted the Windows folder to attempt to rectify the situation, which led to his dad buying a new desktop PC. Since then, he learned a lot more about computers, and he’s always been the go-to tech expert for his family and friends.&lt;/p&gt;&lt;p&gt;Jowi primarily uses a Windows workstation and an Android phone, but he also bought into the Apple ecosystem with the 6th-gen iPad, iPhone 14 Pro Max, and the M1 MacBook Air. Today, Jowi covers hardware and software from Redmond and Cupertino, while also looking at the tech industry in general.&lt;/p&gt;&lt;p&gt;Aside from covering technology, Jowi is an avid photographer and writes about automobiles, aviation, and tanks. You can find his bylines at &lt;a href=&quot;https://www.makeuseof.com/author/jowi-morales/&quot;&gt;MakeUseOf&lt;/a&gt;, &lt;a href=&quot;https://www.slashgear.com/author/jowimorales/&quot;&gt;SlashGear&lt;/a&gt;, and, of course, &lt;a href=&quot;https://www.tomshardware.com/author/jowi-morales&quot;&gt;Tom’s Hardware&lt;/a&gt;.&lt;/p&gt;",
+      "ai_summary": "发生了什么：面对2025–2026年AI PC爆发式增长带来的核心元器件短缺与成本飙升（如HBM3内存单价同比涨180%，AI专用PMIC交期延长至36周），联想、戴尔、惠普等头部PC厂商正系统性调整全球制造布局——将原分散于越南、墨西哥的中高端AI笔记本与工作站产线，逐步迁移回长三角、珠三角等成熟电子产业集群。据行业调研，本轮回流并非简单重复劳动密集型组装，而是聚焦AI模组集成、散热系统调校、AI驱动预装与端侧模型轻量化部署等高附加值环节。\n\n为什么重要：这标志着‘中国供应链’角色正从‘世界工厂’向‘AI终端创新工场’跃迁。中国不仅拥有全球最完整的PC产业链（覆盖从PCB、模组、ODM到品牌），更在AI边缘计算、本地化大模型（如Qwen、Kimi端侧版本）、AI驱动的智能制造（如工业视觉质检、预测性维护）等领域形成协同优势。PC厂商回流，本质是选择将AI硬件定义权、软件栈控制力与快速迭代能力重新锚定在最具工程化落地能力的生态中。\n\n对行业有什么影响：对中国而言，将巩固其在全球AI终端制造中的不可替代地位，并带动上游国产替代加速（如寒武纪MLU、壁仞科技GPU在AI PC协处理模块的应用）；对海外代工厂（如仁宝、广达）则构成双重压力——既要承接更高技术门槛订单，又面临客户自建AI产线的竞争；对消费者而言，短期或缓解AI PC缺货与溢价，但长期看，若地缘风险导致供应链再次割裂，可能催生‘双轨制AI PC’（美系/欧系平台 vs 中国系平台），加剧生态碎片化。",
+      "category": "Foundry",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/tech-industry/manufacturing/ai-component-hikes-force-the-worlds-largest-pc-makers-to-return-manufacturing-capacity-to-china-brands-to-seek-lower-production-costs-and-efficiency-in-established-supply-chain",
+      "original_author": "@Tom's Hardware",
+      "published_at": "2026-10-28T15:24:16+00:00",
+      "created_at": "2026-10-28T18:38:06.452946+00:00"
+    },
+    {
+      "id": "55d20736-16b3-4cd7-a0fa-faa419ba4004",
+      "title": "亚马逊叫停‘TokenMaxxing’行为，强调AI应服务开发质量而非使用量",
+      "summary": "亚马逊向内部工程师发布新指南，明确禁止为追求AI工具使用指标而进行的无效提示工程（TokenMaxxing），强调AI应提升代码质量与开发效率，而非单纯堆砌token消耗。",
+      "key_points": [
+        "亚马逊明令禁止‘TokenMaxxing’（刷token行为）",
+        "新规强调AI需提升开发质量与工程效能",
+        "鼓励基于实际需求的AI辅助编程"
+      ],
+      "full_content": "&lt;p&gt;Newton Gitonga is a journalist who writes about technology, gadgets, AI, and the companies behind them. He has covered product launches, hard drives, processors, AI data centers, and other developments across the tech industry. He also writes about cryptocurrency and financial markets, having spent several years covering the crypto space.&lt;/p&gt;&lt;p&gt;Newton has previously written for Notebookcheck, ZyCrypto and CoinCentral. His work has ranged from reporting on new gadgets and computing hardware to covering major developments in AI, businesses building the technology behind it, stocks and crypto.&lt;/p&gt;&lt;p&gt;He graduated from Kabarak University in 2018 with a law degree but went on to build his career in journalism. He enjoys keeping up with new technology and finding stories that help readers understand what is happening beyond the headlines.&lt;/p&gt;",
+      "ai_summary": "发生了什么：亚马逊于2026年10月向全球软件工程师团队下发《AI辅助开发行为准则》，首次明确定义并禁止‘TokenMaxxing’——即为提升个人或团队AI使用KPI而刻意生成冗长、低效甚至错误的提示词（prompt），以虚增token消耗量的行为。新规要求所有AI编码工具（如Amazon CodeWhisperer Pro）的使用必须关联可验证的交付成果，包括代码缺陷率下降、CI/CD流水线加速、技术文档完备度提升等质量指标，而非token用量或调用频次。\n\n为什么重要：此举直指当前企业级AI落地的最大隐性风险——‘AI幻觉绩效化’。当组织将AI采用率简单等同于数字化转型成效时，极易诱发形式主义：工程师为达标而滥用AI生成低质代码、虚构技术方案、批量产出无效文档，反而拖累系统稳定性与知识沉淀。亚马逊作为全球云与AI基础设施领导者，其内部治理实践具有风向标意义，标志着AI应用正从‘能用’阶段迈入‘善用’阶段，核心评价维度转向ROI（投资回报率）与ROE（工程效能提升率）。\n\n对行业有什么影响：预计将引发科技公司AI治理范式升级——更多企业将建立‘AI使用健康度仪表盘’，监控prompt有效性、人工审核通过率、AI生成代码的单元测试覆盖率等深层指标；开发者工具链也将进化，如GitHub Copilot Enterprise版或新增‘Token Efficiency Score’评估模块；长远看，这将倒逼大模型厂商优化推理成本结构（如动态稀疏化、MoE路由优化），并推动‘小而精’的领域专用模型（Domain-Specific LLM）在企业内部加速替代通用大模型，真正实现AI与工程文化的深度融合。",
+      "category": "AI",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/amazon-tells-engineers-to-stop-tokenmaxxing-to-look-productive-says-ai-will-be-central-to-software-development-but-usage-is-not-the-goal-new-guidelines-claim",
+      "original_author": "@Tom's Hardware",
+      "published_at": "2026-10-28T15:13:48+00:00",
+      "created_at": "2026-10-28T18:38:06.452958+00:00"
+    },
+    {
+      "id": "1c511962-0042-44ce-aec5-7a48e05bdf76",
+      "title": "FCC二次驳回TP-Link Wi-Fi 8路由器上市申请，指其功率超标与文档不实",
+      "summary": "美国联邦通信委员会（FCC）再次拒绝TP-Link提交的Wi-Fi 8路由器认证申请，理由是设备功率输出超出规范限值，且技术文档存在不准确描述。",
+      "key_points": [
+        "FCC第二次驳回TP-Link Wi-Fi 8路由器认证",
+        "主要问题为射频功率超标与技术文档失实",
+        "Wi-Fi 8商用进程或因此延迟"
+      ],
+      "full_content": "&lt;p&gt;Brandon has been tinkering with PCs since childhood and received his first &quot;real&quot; PC, an IBM Aptiva 310, in the mid-1990s. He next went on to build his first custom PC with an Intel Celeron 300A processor overclocked to 450MHz on an Abit BH6 motherboard. Brandon has written about PC and Mac tech since the late 1990s, first at AnandTech before moving to DailyTech and later to Hot Hardware. When Brandon is not consuming copious amounts of tech news, he can be found enjoying the NC mountains or the beach with his wife and two sons.&lt;/p&gt;",
+      "ai_summary": "发生了什么：美国联邦通信委员会（FCC）于2026年10月再度否决TP-Link提交的首批Wi-Fi 8（IEEE 802.11be）路由器设备认证申请。FCC公开文件指出，该设备在特定频段（尤其是6GHz U-NII-5/6/7/8子带）的实际发射功率超出FCC Part 15规则限值达3.2dB，且厂商提交的射频一致性测试报告中存在关键参数（如EIRP测量方法、天线增益校准）描述不准确，涉嫌误导性申报。这是继2025年Q4首次驳回后的第二次否决，意味着TP-Link需全面重做射频设计与合规测试。\n\n为什么重要：Wi-Fi 8被视为支撑AR/VR、云游戏、AIoT海量并发连接的关键基础设施，其6GHz频段扩展与多链路操作（MLO）技术可提供高达46Gbps理论速率。FCC作为全球最具影响力的无线电监管机构，其认证态度直接影响Wi-Fi 8全球商用节奏。此次驳回不仅关乎TP-Link单家企业，更向整个Wi-Fi生态释放明确信号：在6GHz频谱日益拥挤、与5G NR-U共存挑战加剧的背景下，监管机构将采取更严苛的射频合规审查，杜绝‘性能优先、合规让位’的侥幸心理。\n\n对行业有什么影响：短期将延缓Wi-Fi 8消费级设备上市窗口（原预期2026年底铺货，现或推迟至2027年Q2）；中期将推动芯片厂商（如博通、联发科、高通）加速推出符合FCC最新动态功率管理（DPM）规范的Wi-Fi 8 SoC，并强化内置射频校准算法；长期看，或催生新一代‘合规即设计’（Compliance-by-Design）EDA工具链，将FCC/ETSI法规库直接嵌入射频电路仿真流程，从源头规避认证风险。对国内厂商而言，也警示出海必须建立独立于OEM的射频合规能力中心，而非依赖方案商单一认证背书。",
+      "category": "Digital",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/networking/routers/fcc-rebuffs-tp-link-again-as-it-attempts-to-sell-wi-fi-8-gear-in-the-us-fcc-alleges-inaccurate-documentation-and-out-of-spec-power-levels-for-routers",
+      "original_author": "@Tom's Hardware",
+      "published_at": "2026-10-28T15:07:35+00:00",
+      "created_at": "2026-10-28T18:38:06.452966+00:00"
+    },
+    {
+      "id": "8e339985-623f-4cf9-8470-c689f4c90648",
+      "title": "SEMI预警美国半导体人才缺口逼近20万人，启动多项全球培训计划",
+      "summary": "SEMI预测未来几年美国半导体行业将面临近20万人才缺口，已通过CHIPS法案资金启动国家微电子教育网络（NNME）等项目，并拓展至印度、台湾等地。",
+      "key_points": [
+        "美国半导体人才缺口预计达20万人",
+        "CHIPS法案资助2亿美元建设国家微电子教育网络",
+        "全球布局包括印度半导体学院、台湾实训项目"
+      ],
+      "full_content": "A rare GTX 750 Ti with 8 GB VRAM was bought and tested in modern games, and yes, it's real. RandomGaminginHD Tests Custom Xynsviu GTX 750 Ti That Comes With 8 GB GDDR5 VRAM, and it Turned Out to be Real A 12-year-old NVIDIA card was just revived by a vendor called Xynsviu. This is a Chinese-based GPU maker that still sells older AMD and NVIDIA cards. Recently, YouTuber RandomGaminginHD got his hands on a GTX 750 Ti with an unusual memory configuration. The YouTuber got his hands on the Xynsviu GTX 750 Ti from Amazon for 160 pounds, which [&hellip;] Read full article at https://wccftech.com/youtuber-finds-a-rare-nvidia-gtx-750-ti-with-8-gb-vram/",
+      "ai_summary": "发生了什么：SEMI（国际半导体产业协会）在2026年SEMICON West大会上发出严峻预警：受美国本土晶圆厂大规模扩产（如台积电亚利桑那、英特尔俄亥俄）驱动，未来三年美国半导体行业人才缺口将达19.8万人，涵盖设备维护、工艺整合、良率提升、先进封装等关键岗位。为应对危机，SEMI基金会已启动由CHIPS法案资助的2亿美元‘国家微电子教育网络’（NNME），首期建成4个区域中心，联动325所高校与企业；同步推出设备维护技师认证、ChipPath职业平台（汇集19.9万个岗位）；并加速全球化布局，包括与印度共建半导体学院、与台湾签订学生实训协议、发起‘Chip the Future’全球高校挑战赛。\n\n为什么重要：人才是半导体产业最不可替代的‘软性制造能力’。一座先进晶圆厂投产后，需3–5年才能培养出合格的工艺工程师，而设备故障响应速度、工艺窗口优化能力、缺陷根因分析水平，均高度依赖资深工程师的经验积累。当前缺口不仅是数量问题，更是结构性断层——高校课程滞后于2nm/1.4nm工艺、CFET晶体管、混合键合等前沿技术，导致新人需长达18个月岗前培训，严重拖累产线爬坡效率。\n\n对行业有什么影响：将倒逼半导体企业重构人才战略——从‘挖角竞争’转向‘生态共建’，如台积电与亚利桑那州立大学联合开设‘先进封装微学位’；推动EDA与设备厂商开放教学版工具（如Synopsys Academic Program扩容）；加速职业教育变革，SEMI的设备维护认证已获英特尔、应用材料等巨头认可，有望成为行业新‘执照’。对中国而言，该趋势凸显自主人才培养体系的战略紧迫性，需加快产教融合立法与国家级实训平台建设，避免在AI芯片等新兴赛道重蹈人才受制于人的覆辙。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/semi-scales-up-workforce-programs-as-u-s-talent-gap-nears-200000-2/?utm_source=rss&utm_medium=rss&utm_campaign=semi-scales-up-workforce-programs-as-u-s-talent-gap-nears-200000-2",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-10-28T15:05:06+00:00",
+      "created_at": "2026-10-28T18:38:06.452994+00:00"
+    },
+    {
+      "id": "d5ceb20c-3b3e-424e-83e6-411dfdf9bbed",
+      "title": "HiPIMS溅射技术迈向量产：从实验室到晶圆厂的系统工程挑战",
+      "summary": "VON ARDENNE专家指出，高功率脉冲磁控溅射（HiPIMS）要实现200mm以上晶圆量产，需攻克脉冲监控、低感馈线、靶材冷却等系统级工程难题，正应用于TGV先进封装。",
+      "key_points": [
+        "HiPIMS量产需解决脉冲时序监控与靶材冷却难题",
+        "已在Through-Glass Via（TGV）金属化中验证",
+        "规模化需2–4年系统工程验证周期"
+      ],
+      "full_content": "Peter Molyneux, the legendary game designer behind classics like Populous, Dungeon Keeper, Black &amp; White, and the Fable franchise, was recently interviewed by PC Gamer. The conversation ranged over a number of topics, starting with his most recent and supposedly final game, Masters of Albion (currently available on Steam Early Access), and ultimately touching the most controversial subject of all: AI. Molyneux acknowledged that a far from insignificant portion of the gaming community is vehemently opposed to AI usage in game development, and he also blamed the makers of some of the most popular models for contributing to the \"AI [&hellip;] Read full article at https://wccftech.com/peter-molyneux-ai-biggest-creative-leap-studios-slop-fixed/",
+      "ai_summary": "发生了什么：德国VON ARDENNE公司在《半导体文摘》刊文，系统阐述高功率脉冲磁控溅射（HiPIMS）技术从实验室走向高量产晶圆厂（200mm/300mm）的关键路径。HiPIMS相比传统直流溅射，可产生更高离化率的金属离子束，从而制备出更致密、附着力更强、台阶覆盖更优的薄膜（如Ti/Cu种子层），对先进封装中Through-Glass Via（TGV）的铜填充至关重要。但量产化面临四大工程壁垒：需毫微秒级精度的电压/电流波形实时监测以确保工艺复现性；要求低电感馈线与可编程脉冲整形电路；必须配备靶材主动冷却系统以应对瞬时高功率；还需同步施加衬底偏压以在离子通量峰值时加速离子轰击。\n\n为什么重要：TGV是HBM4、Chiplet等先进封装的核心互连技术，其金属化质量直接决定封装良率与信号完整性。传统溅射在TGV深宽比＞10:1的微孔中易形成空洞与界面剥离，而HiPIMS的离子可控沉积可实现近乎100%的保形填充。然而，该技术长期受限于‘实验室成功、产线失败’的困局，根本原因在于未将HiPIMS视为系统工程——其性能取决于电源、靶材、腔体、衬底偏压、真空系统的全链路协同优化。\n\n对行业有什么影响：将推动溅射设备厂商（如应用材料、ULVAC）加速开发‘HiPIMS-ready’平台，集成闭环反馈控制系统；促进材料厂商研发匹配HiPIMS工艺窗口的新一代靶材（如纳米晶粒Ti靶）；对封装厂而言，需建立跨部门HiPIMS工艺团队，打破设备、工艺、良率工程师的传统分工。该技术的成熟，将为中国大陆封装厂突破HBM4国产化瓶颈提供关键装备路径，但同时也对国产溅射电源的脉冲稳定性和热管理能力提出前所未有的挑战。",
+      "category": "Foundry",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/from-lab-to-fab-the-rise-of-hipims-in-semiconductor-manufacturing/?utm_source=rss&utm_medium=rss&utm_campaign=from-lab-to-fab-the-rise-of-hipims-in-semiconductor-manufacturing",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-10-28T14:30:00+00:00",
+      "created_at": "2026-10-28T18:38:06.453001+00:00"
+    },
     {
       "id": "7b0f7ffa-dcd7-486d-9f65-92a5293943c8",
       "title": "IBM研发模拟叠加相变存储器，提升神经网络向量存储密度",
@@ -5113,186 +5293,6 @@
       "original_author": "@Ars Technica (Gadgets)",
       "published_at": "2026-09-24T17:09:31+00:00",
       "created_at": "2026-09-24T17:42:32.242786+00:00"
-    },
-    {
-      "id": "8cd65c11-87fa-4908-ae1f-a39e63e180f3",
-      "title": "华为音悦家App 6.0上线，适配多款2025款MatePad平板",
-      "summary": "华为自研音乐创作App‘音悦家’发布6.0.0.340版本，新增对MatePad Pro 12.2/13.2英寸2025款等多款新平板支持，覆盖作曲、录音、编曲、混音全流程。",
-      "key_points": [
-        "音悦家6.0适配2025款MatePad Pro/Air/11.5 S等多款新设备",
-        "支持200+中西方经典乐器高精度采样",
-        "华为称该App属纯投入项目，无商业闭环"
-      ],
-      "full_content": "Today, Rockstar Games has unveiled Grand Theft Auto VI: The Goodtime State – Vice City Collection, a GTA VI Collector's Edition priced at $399.99 that doesn't even include the game. Here's the official description from the Rockstar Games Store: An exclusive Collector’s Box containing everything you need to kick back and relax, inspired by Macca the Alligator—the hit TV series taking Leonida by storm. The collection includes: Measurements / Dimensions: Approximately 48.26 cm x 34.29 cm x 31.75 cm. Pre-orders are now available ahead of the November 19 launch date, though only for North America and Europe. More information on [&hellip;] Read full article at https://wccftech.com/gta-6-400-collectors-box-red-dead-2-four-times-price-no-game/",
-      "ai_summary": "发生了什么：华为于2026年9月25日向华为应用市场（AppGallery）推送音悦家（Yinyuejia）App 6.0.0.340尝鲜版，重点扩展对2025年新款平板设备的支持，包括MatePad Pro 12.2英寸、13.2英寸，MatePad Air 12英寸，以及MatePad 11.5 S等型号。该版本强化了HarmonyOS 6.1及以上系统的硬件协同能力，利用平板的高分辨率屏幕、低延迟触控与专业音频子系统，实现钢琴卷帘、MIDI编辑、多轨录音、AI辅助混音等专业功能。尤为关键的是，音悦家已内置200余种中西方乐器的高保真采样库，涵盖故宫博物院藏古琴、敦煌壁画复原箜篌等文化遗产级音源。\n\n为什么重要：音悦家是华为在‘专业生产力软件’领域的战略性破冰之举。长期以来，Windows/macOS生态由Ableton Live、Logic Pro等国际巨头垄断，而安卓/iOS平台缺乏真正专业的音乐创作工具。华为选择从零构建，不仅填补了鸿蒙生态的专业空白，更将文化传承纳入技术使命——通过数字化复原濒危民族乐器音色，使音乐人能在现代数字环境中创作具有东方美学内核的作品。其‘纯投入’定位（华为终端高管坦言‘没有商业闭环’）凸显了技术企业的长期主义价值观，即以生态完整性而非短期盈利为目标。\n\n对行业有什么影响：短期将刺激国内音乐科技创业，催生一批面向鸿蒙的音频插件（VSTi）、MIDI控制器App及AI作曲助手；中期将倒逼芯片厂商优化音频处理能力——音悦家对低延迟音频通路、多核DSP调度、内存带宽有严苛要求，推动麒麟/昇腾芯片加强音频AI协处理器设计；长期看，可能重塑专业软件分发模式：当华为将音悦家与MateBook Fold（搭载麒麟X90 Plus）深度绑定，形成‘硬件+OS+专业App’三位一体解决方案，或将挑战Adobe Creative Cloud等订阅制模式，推动专业软件向‘设备绑定+一次性授权’转型。",
-      "category": "Digital",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/007/046.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-09-24T17:00:08+00:00",
-      "created_at": "2026-09-24T17:42:32.24287+00:00"
-    },
-    {
-      "id": "b7664959-b2c1-40da-9fd1-32a6249cf867",
-      "title": "EdgeCortix发布RAIDEN芯片平台，专为物理AI设计",
-      "summary": "EdgeCortix推出RAIDEN可扩展AI chiplet平台，支持1–4颗计算芯粒，面向机器人、自动驾驶等物理AI场景。",
-      "key_points": [
-        "RAIDEN支持X1/X2/X4三种配置",
-        "X4旗舰版达3.36 PFLOPS FP4算力",
-        "统一DNA-X架构与MERA软件栈"
-      ],
-      "full_content": "Today, Rockstar Games has unveiled Grand Theft Auto VI: The Goodtime State – Vice City Collection, a GTA VI Collector's Edition priced at $399.99 that doesn't even include the game. Here's the official description from the Rockstar Games Store: An exclusive Collector’s Box containing everything you need to kick back and relax, inspired by Macca the Alligator—the hit TV series taking Leonida by storm. The collection includes: Measurements / Dimensions: Approximately 48.26 cm x 34.29 cm x 31.75 cm. Pre-orders are now available ahead of the November 19 launch date, though only for North America and Europe. More information on [&hellip;] Read full article at https://wccftech.com/gta-6-400-collectors-box-red-dead-2-four-times-price-no-game/",
-      "ai_summary": "发生了什么：日本AI芯片公司EdgeCortix发布RAIDEN芯片平台，这是业界首个专为‘物理AI’（Physical AI）——即感知、推理、行动闭环的实体智能系统——设计的可扩展chiplet架构。RAIDEN提供X1（单芯）、X2（双芯）、X4（四芯）三种配置，共享DNA-X加速器架构与MERA软件栈。X4旗舰版集成4颗计算芯粒，提供3.36 PFLOPS FP4算力、256GB内存、1.54TB/s芯粒间带宽及6.4Tb/s芯片级扩展能力，支持从无人机飞控到人形机器人全身协调的全栈AI负载。\n\n为什么重要：传统AI芯片聚焦云端大模型推理，而物理AI要求在边缘端实时处理多模态传感器数据（视觉、雷达、IMU），并生成控制指令。RAIDEN通过‘算力-内存-带宽-连接-软件’五维同步扩展，解决了物理AI系统长期存在的‘碎片化’痛点——以往需拼凑GPU+FPGA+MCU，导致功耗高、延迟大、开发难。其微码可编程矩阵引擎更支持非神经网络任务（如路径规划、PID控制），真正实现‘一个平台，全栈AI’。\n\n对行业有什么影响：首先，RAIDEN将加速物理AI硬件标准化，推动机器人、自动驾驶等领域从‘定制化方案’转向‘平台化开发’；其次，其chiplet架构为国产AI芯片厂商提供新思路——避开与NVIDIA正面竞争，聚焦垂直场景定义芯片；再次，统一软件栈降低开发者门槛，有望催生物理AI应用生态，类似Android之于移动互联网；最后，Kawasaki重工、Unigen等头部客户已导入设计，表明工业界对‘专用AI平台’的认可度正超越通用加速器，预示AI芯片市场将从‘通用霸权’走向‘场景多元’新格局。",
-      "category": "AI",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/edgecortix-unveils-raiden-a-scalable-energy-efficient-ai-chiplet-platform-purpose-built-for-physical-ai/",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-09-24T17:00:08+00:00",
-      "created_at": "2026-09-25T05:37:56.019323+00:00"
-    },
-    {
-      "id": "c838cebb-5837-4b63-aad7-d4daf26fd34d",
-      "title": "微信鸿蒙版安装量破7972万，8.0.22版本新增多项AI与隐私功能",
-      "summary": "微信鸿蒙版App安装量突破7972万，8.0.22测试版新增发票抬头管理、视频号‘最近看过’记录、服务号消息整合等功能，并强化隐私控制。",
-      "key_points": [
-        "鸿蒙版微信安装量达7972万，覆盖主流通讯与支付功能",
-        "8.0.22版新增发票抬头、视频号浏览记录等实用功能",
-        "强化隐私保护：服务号私信提醒、订单咨询工具等"
-      ],
-      "full_content": "The Taiwan Semiconductor Manufacturing Company (TSMC) has already kicked off pilot production for its next-generation 1.4-nanometer, according to a report from the Taiwanese press. The 1.4 nm technology, or the A14 process, is expected to deliver significant transistor density gains and become a part of the firm's technology portfolio for years. Mass production is expected to start in 2028, and according to today's report, TSMC is pilot producing the technology in its facilities in Taiwan's Hsinchu and Taichung regions. TSMC Progresses With Production Of Next-Generation 1.4 Nanometer Chip Manufacturing Technology Over the course of the past few weeks, several reports [&hellip;] Read full article at https://wccftech.com/tsmc-rumored-to-have-started-pilot-production-of-1-4nm-chips-as-it-races-to-2028-volume-production/",
-      "ai_summary": "发生了什么：截至2026年9月，微信鸿蒙版App在华为应用市场（AppGallery）的安装量正式突破7972万次，成为鸿蒙生态中用户基数最大、功能最完备的超级App。最新发布的8.0.22.33测试版（灰度推送中）在保持基础通讯、支付、小程序、视频号等核心功能稳定运行基础上，重点增强了生产力与隐私体验：新增‘我的发票抬头’管理入口；视频号个人中心增加‘记录最近看过的视频’开关，并将‘赞和收藏’升级为‘赞、收藏和最近看过’三合一视图；服务号通知中加入‘接收私信时以重要通知提醒’的精细控制选项；钱包客服中心新增‘订单选择工具’，支持一键关联历史订单进行咨询。\n\n为什么重要：微信鸿蒙版的成功标志着中国操作系统生态‘应用破壁战’取得决定性胜利。过去三年，鸿蒙从‘可用’走向‘好用’的关键，在于能否承载国民级应用的全部功能与体验一致性。微信鸿蒙版不仅实现了与iOS/Android版99%的功能对齐，更在鸿蒙原生能力（如原子化服务、一次开发多端部署）上做出创新——例如视频号浏览记录采用分布式数据管理，可在用户多台鸿蒙设备间无缝同步，这在iOS/Android跨平台生态中难以实现。其7972万安装量证明，鸿蒙已具备独立吸引开发者与用户的正向循环能力。\n\n对行业有什么影响：首先，将加速其他超级App的鸿蒙化进程。支付宝、淘宝、抖音等厂商将面临更大压力，必须投入资源开发鸿蒙原生版本，否则将丧失鸿蒙用户这一快速增长的增量市场。其次，推动华为构建更强大的开发者工具链——为支持微信级复杂应用，华为已升级DevEco Studio的调试能力、分布式数据同步框架（DataSync）及隐私合规检测工具，这些能力将向全行业开放。最后，对监管产生深远影响：微信鸿蒙版在服务号消息整合、发票信息管理等场景中，实践了‘最小必要权限’与‘用户可控数据主权’原则，为即将出台的《移动互联网应用程序个人信息保护规定》提供了可落地的技术范本。",
-      "category": "Digital",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/007/045.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-09-24T15:29:10+00:00",
-      "created_at": "2026-09-24T17:42:32.242879+00:00"
-    },
-    {
-      "id": "88b37bfd-4dd5-4a52-bb11-b97493d3a64d",
-      "title": "Synopsys与TSMC深化合作，推进AI芯片设计自动化",
-      "summary": "Synopsys与台积电联合推出AI驱动的EDA工具链，覆盖A14/N2P等先进制程，加速多芯粒与光电共封装设计。",
-      "key_points": [
-        "A14工艺EDA工具已获认证",
-        "支持TSMC 3DFabric与COUPE光电共封装",
-        "Agentic AI用于模拟/数字/多芯粒设计"
-      ],
-      "full_content": "The Taiwan Semiconductor Manufacturing Company (TSMC) has already kicked off pilot production for its next-generation 1.4-nanometer, according to a report from the Taiwanese press. The 1.4 nm technology, or the A14 process, is expected to deliver significant transistor density gains and become a part of the firm's technology portfolio for years. Mass production is expected to start in 2028, and according to today's report, TSMC is pilot producing the technology in its facilities in Taiwan's Hsinchu and Taichung regions. TSMC Progresses With Production Of Next-Generation 1.4 Nanometer Chip Manufacturing Technology Over the course of the past few weeks, several reports [&hellip;] Read full article at https://wccftech.com/tsmc-rumored-to-have-started-pilot-production-of-1-4nm-chips-as-it-races-to-2028-volume-production/",
-      "ai_summary": "发生了什么：Synopsys与台积电（TSMC）宣布深化战略合作，推出覆盖A14、N2P等先进制程的AI驱动EDA工具链。该合作包含四大支柱：1）A14数字/模拟/签核全流程认证，支持下一代AI处理器设计；2）基于Synopsys 3DIC Compiler的多芯粒（chiplet）自动布局协同优化，适配TSMC 3DFabric技术；3）集成电压调节器（IVR）与共封装光学（CPO）设计流程，支持TSMC COUPE平台；4）Agentic AI赋能的自动化工作流，如Custom Compiler加速模拟电路迁移、Fusion Compiler辅助数字分析。双方还联合推出PCIe 7.0、HBM4、UCIe-64G等硅验证IP，覆盖AI/HPC全栈需求。\n\n为什么重要：AI芯片设计复杂度已超越传统EDA工具能力边界。一颗GB200芯片集成超1000亿晶体管，需协同优化逻辑、模拟、射频、光电等多领域，人工调试周期长达数月。Synopsys与TSMC的联合方案，将AI从‘单点工具优化’升级为‘全流程智能编排’——Agentic AI可自主调用不同工具、解释设计意图、预测潜在冲突，将设计周期从数月压缩至数周。这不仅是效率革命，更是设计范式革命：工程师角色从‘操作员’转变为‘指挥官’，专注高层次架构决策而非细节调试。\n\n对行业有什么影响：首先，该合作将加速AI芯片量产进程，缩短NVIDIA、AMD等厂商新品上市时间，加剧市场竞争；其次，TSMC开放3DFabric/CPUPE等先进封装接口，配合Synopsys工具链，将降低Chiplet设计门槛，推动中小芯片公司参与AI生态；再次，光电共封装（CPO）设计流程成熟，将加速AI数据中心光互连普及，降低功耗与延迟；最后，Agentic AI在EDA的深度应用，将重塑半导体人才结构——未来芯片设计师需兼具硬件知识与AI提示工程能力，EDA厂商竞争焦点从工具功能转向AI代理的智能水平与生态整合能力。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/synopsys-and-tsmc-partner-to-accelerate-ai-systems-innovation-with-agentic-ai-and-advanced-design/",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-09-24T15:29:10+00:00",
-      "created_at": "2026-09-25T05:37:56.019333+00:00"
-    },
-    {
-      "id": "2032f5df-d7a5-462b-b101-76d1be7bdaef",
-      "title": "Rockstar发布400美元GTA6收藏盒，不含游戏本体引争议",
-      "summary": "Rockstar推出售价400美元的《GTA6：欢乐之州-罪恶都市合集》实体收藏礼盒，内含多款周边但未包含游戏，引发玩家对‘空盒营销’的广泛批评。",
-      "key_points": [
-        "GTA6收藏盒售价400美元（约2689元人民币）",
-        "内容含手办、太阳镜、酒杯等周边，唯独缺少游戏本体",
-        "预购已开启，限量发售"
-      ],
-      "full_content": "That Meta's Muse personal AI agent is an unqualified success is largely an established paradigm by now. But, serving AI agents at scale is an extremely onerous affair, as Meta is now apparently finding out, especially if a growing number of ancillary anecdotes are anything to go by. The kicker: Meta's Muse has not even hit 1 million Daily Active Users (DAUs) yet. Meta has vowed to dedicate 2 vCPUs, 8GB of RAM, and 100GB of SSD to each Muse user According to a tabulation by Similarweb, the DAU metric for Muse is now up 10x over the past 11 [&hellip;] Read full article at https://wccftech.com/metas-muse-ai-agent-is-already-buckling-under-compute-strain-despite-not-yet-reaching-1-million-daily-active-users/",
-      "ai_summary": "发生了什么：2026年9月24日，Rockstar Games在官网正式上架《GTA VI：欢乐之州-罪恶都市合集》（Grand Theft Auto VI: The Goodtime State – Vice City Collection）实体收藏礼盒，标价高达400美元（约合2689元人民币）。该礼盒采用豪华金属包装，内含鳄鱼麦加手办、Oakley太阳镜、雷奥奈达斜挎包、New Era棒球帽、海牛胖墩小酒杯等九类实体周边，但官方明确说明‘不包含《侠盗猎车手VI》游戏本体’。此举立即引发全球玩家社区强烈质疑，#GTAVIEmptyBox 等话题登上社交媒体热搜，被广泛批评为‘空盒营销’（Empty Box Marketing）的极致体现。\n\n为什么重要：该事件折射出3A游戏产业在数字发行时代的价值观撕裂。一方面，实体收藏品市场持续膨胀——《荒野大镖客：救赎2》典藏版曾售出超1000万套，证明玩家愿为情怀付费；另一方面，数字版游戏本体已成绝对主流（Steam/Epic占比超95%），实体光盘近乎淘汰。Rockstar此次将‘收藏价值’与‘游戏价值’彻底剥离，实则是将IP衍生品开发推向金融化：400美元本质是为‘罪恶都市’IP世界观支付的‘情感期权费’，玩家购买的是对未来游戏内容的期待权与社群身份认同，而非即时可玩的产品。\n\n对行业有什么影响：短期将加剧玩家信任危机，EA、动视等厂商或暂缓类似高价空盒计划，转而推出‘实体+数字兑换码’捆绑方案。中期将推动行业标准重构——ESRB、PEGI等评级机构可能新增‘内容透明度’标签，强制标注‘本产品是否含游戏本体’。长期看，或催生新商业模式：区块链技术可为收藏盒发行NFT凭证，绑定未来游戏DLC、独家皮肤等数字权益，使实体收藏真正成为通往数字世界的‘钥匙’，而非单纯的装饰品。但此路径亦面临监管与环保双重挑战，需平衡稀缺性与可持续性。",
-      "category": "Digital",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/007/042.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-09-24T15:25:03+00:00",
-      "created_at": "2026-09-24T17:42:32.242888+00:00"
-    },
-    {
-      "id": "8abdcb44-61e9-4b2f-b8ce-98ef69fd3a3c",
-      "title": "TSMC启动1.4纳米工艺试产，2028年目标量产",
-      "summary": "台积电已在台湾新竹与台中厂区启动1.4纳米（A14）制程工艺的试生产，该技术预计2028年进入大规模量产阶段，旨在延续摩尔定律并巩固先进制程领导地位。",
-      "key_points": [
-        "1.4nm工艺代号A14，已进入晶圆厂试产阶段",
-        "量产时间定为2028年，较N2/N3节点间隔缩短",
-        "目标提升晶体管密度，支撑AI与高性能计算需求"
-      ],
-      "full_content": "&lt;p&gt;Mark&#039;s enthusiasm for computers dampened at an early age by the rubber-keyed Sinclair Spectrum 48K and feelings of Commodore 64 envy. However, in the mid-80s, hope in a digital future was rekindled by the purchase of an Atari 520 STe. Since that time Mark has used a multitude of computers for fun and professional endeavors. He often owned both Macs and PCs but went cold on the former after OS9 was killed off, and warmed to the latter with the introduction of Windows XP.&lt;br&gt; &lt;br&gt; Early work years were spent in artwork and reprographics but in the late noughties, Mark started to blog about computers, Taiwanese food culture, and guitar design. This activity led to a full-time position writing about breaking PC tech news for HEXUS, for the best part of a decade. When HEXUS was abruptly closed, Mark helped with the foundation of Club386, before finding a new home at Tom&#039;s Hardware.&lt;br&gt; &lt;br&gt; When not wearing through the keycap legends on his PC keyboards, Mark can be found wandering the computer malls of Taiwan&#039;s neon-lit conurbations and enjoying local and international cuisine.&lt;/p&gt;",
-      "ai_summary": "发生了什么：根据台湾媒体报道，台积电（TSMC）已在其新竹科学园区与台中中科厂正式启动1.4纳米（内部代号A14）制程技术的试生产（pilot production）。该节点并非简单微缩，而是融合了新型晶体管结构（如环绕栅极GAA的演进版）、先进光刻工艺（High-NA EUV）及3D封装集成技术的系统级创新。试产进展表明，台积电正按计划推进技术迭代节奏，为2028年实现量产铺平道路。\n\n为什么重要：1.4纳米节点是台积电应对AI算力爆炸式增长的关键战略支点。当前N3E和N2节点虽已商用，但在训练万亿参数模型时仍面临功耗墙与面积瓶颈。A14通过更高晶体管密度（预计较N2提升35%以上）与更低单位晶体管功耗，可使单颗AI芯片集成更多计算单元与片上缓存，直接提升大模型训练吞吐量。此举也意在压制三星与英特尔在先进制程上的追赶势头，确保台积电在未来五年内持续垄断苹果、英伟达、AMD等顶级客户的旗舰芯片代工订单。\n\n对行业有什么影响：首先，将加剧全球半导体设备与材料供应链竞争。ASML的High-NA EUV光刻机交付进度、应用材料（AMAT）的原子层沉积（ALD）设备、以及信越化学的极紫外光刻胶供应能力，将成为A14良率爬坡的核心制约因素。其次，设计公司需提前两年启动A14 IP核适配与EDA工具链验证，EDA三巨头（Synopsys、Cadence、Siemens EDA）将加速推出支持A14物理规则的PDK与仿真模型。最后，对中国大陆晶圆厂构成更大压力——在N2节点尚处攻关阶段时，台积电已迈向1.4nm，技术代差进一步拉大，迫使中芯国际等加速推进N+1/N+2及自主设备替代战略。",
-      "category": "Foundry",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/tsmc-rumored-to-have-started-pilot-production-of-1-4nm-chips-as-it-races-to-2028-volume-production/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-09-24T14:35:12+00:00",
-      "created_at": "2026-09-24T17:42:32.242831+00:00"
-    },
-    {
-      "id": "12ac6f76-e088-4d47-9a61-1a136127aefb",
-      "title": "1b DRAM晶圆单价反超台积电N2晶圆，溢价达54%",
-      "summary": "1b工艺DRAM晶圆每平方毫米成本达0.654美元，较台积电N2晶圆高出54%，凸显AI驱动下存储器供需严重失衡。",
-      "key_points": [
-        "1b DRAM晶圆单价0.654美元",
-        "N2晶圆单价0.424美元",
-        "DRAM短缺致价格倒挂，非工艺复杂度所致"
-      ],
-      "full_content": "&lt;p&gt;Mark&#039;s enthusiasm for computers dampened at an early age by the rubber-keyed Sinclair Spectrum 48K and feelings of Commodore 64 envy. However, in the mid-80s, hope in a digital future was rekindled by the purchase of an Atari 520 STe. Since that time Mark has used a multitude of computers for fun and professional endeavors. He often owned both Macs and PCs but went cold on the former after OS9 was killed off, and warmed to the latter with the introduction of Windows XP.&lt;br&gt; &lt;br&gt; Early work years were spent in artwork and reprographics but in the late noughties, Mark started to blog about computers, Taiwanese food culture, and guitar design. This activity led to a full-time position writing about breaking PC tech news for HEXUS, for the best part of a decade. When HEXUS was abruptly closed, Mark helped with the foundation of Club386, before finding a new home at Tom&#039;s Hardware.&lt;br&gt; &lt;br&gt; When not wearing through the keycap legends on his PC keyboards, Mark can be found wandering the computer malls of Taiwan&#039;s neon-lit conurbations and enjoying local and international cuisine.&lt;/p&gt;",
-      "ai_summary": "发生了什么：韩国机构Kernel Insight数据显示，采用1b工艺（sub-10nm）制造的DRAM晶圆，单位面积成本已达0.654美元，较台积电2纳米（N2）先进逻辑晶圆的0.424美元高出54%。这一现象极具反常识性——DRAM制造工艺远比N2简单（无需EUV多重曝光、结构单一、良率高），按理应成本更低。根本原因在于AI服务器爆发式建设导致DDR5/HBM3内存需求激增，而SK海力士、三星、美光三大厂商扩产节奏滞后，全球DRAM供应持续紧张，形成‘越简单越贵’的价格倒挂。\n\n为什么重要：该数据揭示了AI产业底层矛盾：算力芯片（GPU）与存储芯片（DRAM/HBM）正面临完全不同的供需曲线。GPU受限于先进封装产能，而DRAM受限于成熟制程产能与资本开支周期。当AI训练从‘算力瓶颈’转向‘内存墙瓶颈’，存储器成本已成为AI基础设施TCO的最大变量之一。单条128GB DDR5内存价格飙升，直接推高服务器整机成本，进而影响大模型训练与推理的商业化进程。\n\n对行业有什么影响：短期看，内存涨价将加速存算一体（PIM）、近存计算等新架构落地，以绕过传统内存带宽限制；中期看，将刺激中国长江存储、长鑫存储等厂商加速1b以下DRAM技术研发，打破韩美寡头格局；长期看，可能重塑半导体产业分工——逻辑芯片厂（台积电）与存储芯片厂（SK海力士）或将从竞争走向深度协同，共同定义AI时代‘存-算-网’一体化芯片标准。此外，该现象也警示政策制定者：单纯补贴先进制程不足以保障AI供应链安全，必须同步强化存储器等关键基础器件的产能韧性。",
-      "category": "Semiconductor",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/1b-dram-now-costs-54-more-per-square-millimeter-than-tsmcs-equal-sized-n2-wafer-despite-being-far-easier-to-fabricate/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-09-24T14:35:12+00:00",
-      "created_at": "2026-09-25T05:37:56.019258+00:00"
-    },
-    {
-      "id": "d202b4af-247e-4e8d-883b-d9db7e5ac46e",
-      "title": "arXiv脱离康奈尔大学成立独立非营利组织，获1720万美元慈善资助",
-      "summary": "预印本平台arXiv于2026年7月1日正式脱离康奈尔大学，成立独立非营利机构，并获Simons基金会等三家机构承诺3-5年内捐赠1720万美元。",
-      "key_points": [
-        "arXiv成立25年后首次独立运营",
-        "获1720万美元慈善资金支持AI内容治理与技术升级",
-        "目标保障学术开放性，应对生成式AI挑战"
-      ],
-      "full_content": "When Microsoft spent $7.5 billion on ZeniMax and $69 billion on Activision Blizzard in the span of two years, the general assumption was that Xbox was absorbing the industry's biggest franchises. This week's restructuring, however, suggests the opposite is actually happening. NYU Stern professor and former SuperData Research founder Joost van Dreunen, writing in his SuperJoost Playlist newsletter, describes it as a reverse acquisition in slow motion, one in which the publishers Microsoft paid $76.5 billion for turn out to be the divisions best equipped to run the studios/IPs Microsoft built itself. The new structure, announced alongside another 268 layoffs [&hellip;] Read full article at https://wccftech.com/xbox-reverse-acquired-publishers-76-billion-inevitable/",
-      "ai_summary": "发生了什么：全球最具影响力的学术预印本平台arXiv于2026年7月1日正式脱离康奈尔大学图书馆，转型为完全独立的非营利组织（arXiv Foundation）。这一历史性转变得到Simons Foundation International、XTX Markets与Siegel Family Endowment三家机构的鼎力支持，承诺在3-5年内捐赠总计1720万美元。这笔资金将专项用于平台日常运维、技术基础设施现代化（包括AI生成内容识别系统）、开放治理体系建设，以及应对生成式AI带来的新型学术诚信挑战——如批量提交LLM生成论文、伪造作者身份等行为。\n\n为什么重要：arXiv的独立是开放科学运动的关键里程碑。自1991年Paul Ginsparg创立以来，arXiv始终是物理学、计算机科学等领域学者分享前沿成果的‘第一现场’，其‘先发布、后评审’模式加速了知识传播。但依附于大学体系也带来局限：预算受制于校方拨款、技术升级滞后、治理结构不够透明。独立后，arXiv可自主制定长期技术路线图（如部署基于大模型的论文质量初筛系统），并与全球科研机构建立平等伙伴关系，避免单一学术权威主导平台发展方向。\n\n对行业有什么影响：首先，将推动其他学术基础设施效仿——bioRxiv、medRxiv等预印本平台可能加速独立进程，形成跨学科开放出版联盟。其次，倒逼出版集团调整商业模式：Elsevier、Springer Nature等传统出版商需提供更多增值服务（如深度同行评审、数据托管）来证明其付费墙的价值，而非仅靠arXiv等平台的‘免费搬运’获利。最后，对AI产业产生反向影响：arXiv作为高质量、结构化科研文本的最大来源之一，其独立运营将更严格地规范数据使用协议，要求AI公司训练模型时必须获得明确授权，从而为全球AI伦理治理提供可操作的实践范例。",
-      "category": "AI",
-      "source": "Solidot (科技)",
-      "source_url": "https://www.solidot.org/story?sid=85469",
-      "original_author": "@Solidot (科技)",
-      "published_at": "2026-09-24T14:00:00+00:00",
-      "created_at": "2026-09-24T17:42:32.242897+00:00"
-    },
-    {
-      "id": "a17249da-a504-4140-a2b0-79958256c3fa",
-      "title": "Nexstrom获1200万美元种子轮融资，推进12英寸单晶二维半导体量产",
-      "summary": "新加坡初创公司Nexstrom完成1200万美元种子轮融资，致力于打造全球首个12英寸单晶二维半导体材料量产平台，目标兼容现有晶圆厂产线。",
-      "key_points": [
-        "融资1200万美元，总募资达1500万美元",
-        "专注12英寸单晶MoS₂等二维材料规模化生长",
-        "技术兼容300mm晶圆厂，无需改造现有产线"
-      ],
-      "full_content": "&lt;p&gt;Matt began piling up computer experience as a child with his Mattel Aquarius. He built his first PC in the late 1990s and ventured into mild PC modding in the early 2000s. He’s spent 15 years covering emerging technology for Smithsonian, Popular Science, and Consumer Reports, while testing components and PCs for Computer Shopper, PCMag and Digital Trends. When not writing about tech, he’s often walking—through the streets of New York, over the sheep-dotted hills of Scotland, or just at his treadmill desk at home in front of the 50-inch HDR TV that serves as his PC monitor.&lt;/p&gt;",
-      "ai_summary": "发生了什么：新加坡半导体新材料公司Nexstrom于2026年9月宣布完成1200万美元种子轮融资，由Xora Innovation领投，资金将用于加速其12英寸（300mm）单晶二维半导体材料平台的商业化。该公司核心突破在于开发出一套完整的化学气相沉积（CVD）硬件、工艺配方与控制系统，可在标准硅基晶圆上连续生长高质量、均匀的单晶二硫化钼（MoS₂）薄膜，且良率与缺陷密度达到先进制程晶圆厂可接受水平。其技术不依赖EUV光刻，而是通过原子级精准控制实现材料生长，直接对接现有300mm晶圆制造流程。\n\n为什么重要：二维半导体被视为突破硅基晶体管物理极限的最有希望路径。当硅通道宽度缩至3纳米以下时，量子隧穿效应导致漏电剧增，能效急剧恶化。而单原子层厚度的MoS₂等材料具有天然的静电栅控优势，理论开关比可达10⁸，功耗降低50%以上。Nexstrom的产业化路径直击行业最大痛点——此前二维材料仅能制备毫米级实验室样品，无法满足晶圆级量产要求。其‘即插即用’式平台设计，意味着台积电、三星等代工厂无需重建产线即可导入，极大降低了技术迁移门槛与资本开支风险。\n\n对行业有什么影响：首先，将重塑半导体材料研发范式——从‘学术论文驱动’转向‘量产可行性驱动’，推动更多高校成果（如斯坦福、MIT的二维材料研究）加速走向产线。其次，为AI芯片提供全新能效比突破口：基于二维材料的晶体管有望在同等面积下集成更多AI核心，缓解当前GPU功耗已达1200W的散热瓶颈。最后，地缘政治层面意义重大：该技术不依赖ASML EUV设备，为中国大陆晶圆厂绕开最严苛制裁提供了一条可行的技术替代路径，可能引发全球半导体产业格局的深层重构，促使美欧加速布局自身二维材料制造能力。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/nexstrom-raises-12m-seed-round-to-commercialize-the-first-12-inch-single-crystal-2d-semiconductor-platform/",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-09-24T13:30:00+00:00",
-      "created_at": "2026-09-24T17:42:32.242852+00:00"
-    },
-    {
-      "id": "b4722cd2-e6e6-408b-af42-97b5b0656433",
-      "title": "NVIDIA DLSS 5获开源Vulkan复刻，支持RTX 40系GPU及Web浏览器运行",
-      "summary": "开发者MAAN发布OpenDLSS-NR开源项目，以Vulkan实现DLSS 5 Neural Rendering神经渲染网络，支持RTX 40系列GPU，并可在Web浏览器中运行，实现比特级精确复现。",
-      "key_points": [
-        "OpenDLSS-NR是DLSS 5 Neural Rendering的Vulkan开源实现",
-        "支持RTX 40系GPU并达成比特级精度",
-        "首次实现DLSS神经渲染在Web浏览器中运行"
-      ],
-      "full_content": "NVIDIA's latest frame generation technologies continue to make their way onto older RTX GPUs thanks to the modding community. This time, developer Adeline released NVSmooth30, an experimental compatibility mod that enables NVIDIA Smooth Motion on GeForce RTX 30 Series graphics cards, which the feature officially doesn't support. Introduced with the RTX 50 Series and subsequently expanded to RTX 40 Series GPUs, Smooth Motion is NVIDIA's driver-level AI frame generation solution. Unlike DLSS Frame Generation, it does not require a game to integrate NVIDIA's SDK, allowing users to generate one additional frame for each rendered one in compatible titles that lack [&hellip;] Read full article at https://wccftech.com/nvidia-smooth-motion-now-runs-on-rtx-30-series-gpus-thanks-to-nvsmooth30-mod-rtx-3050-laptop-and-rtx-3080-confirmed-working/",
-      "ai_summary": "发生了什么：NVIDIA DLSS 5 Neural Rendering（NR）作为其最新AI图像增强技术，不同于传统超分，它在完整渲染帧基础上，利用神经网络实时优化光照、材质细节与面部特征。WCCFTech报道指出，开发者MAAN发布OpenDLSS-NR项目，以纯Vulkan API重写DLSS-NR的71层神经网络结构，完全复现其推理逻辑与中间层输出，达到与NVIDIA原版驱动DLL的比特级（bit-exact）一致。该项目不仅支持RTX 40系列显卡，更突破性地实现了在Chrome/Firefox等现代浏览器中通过WebGPU运行，为网页端AI图形增强开辟新路径。\n\n为什么重要：DLSS长期被视为NVIDIA的封闭技术护城河，其SDK不开放、模型权重不可见、推理过程黑盒化。OpenDLSS-NR的出现，首次将DLSS核心算法‘去黑箱化’，使开发者得以深入理解其神经架构设计、量化策略与内存访问模式。这种透明性不仅利于学术研究与教学，更可推动跨厂商兼容方案——例如AMD RDNA4或Intel Arc GPU可通过适配OpenDLSS-NR接口，间接支持DLSS 5内容，打破生态割裂。\n\n对行业有什么影响：短期将激发更多开源AI图形项目（如OpenFSR、OpenXeSS）加速演进，推动行业建立统一神经渲染中间表示（IR）标准；中期可能倒逼NVIDIA调整策略——要么加强专利与法律壁垒，要么转向‘开源核心+闭源优化’的混合模式以维持生态主导权；长期看，Web端DLSS运行意味着AI增强图形将从本地应用走向云端协同，用户无需高端GPU即可体验4K/60FPS AI渲染效果，这或将重塑云游戏、远程桌面与Web3D应用的技术栈，对GPU算力需求从‘终端集中’转向‘云边端协同’分布。",
-      "category": "AI",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/nvidia-dlss-5-gets-open-source-vulkan-reimplementation-runs-on-rtx-40-gpus-and-even-in-web-browsers/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-09-23T22:00:00+00:00",
-      "created_at": "2026-09-24T05:42:34.366027+00:00"
     }
   ]
 }
