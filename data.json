@@ -1,7 +1,43 @@
 {
-  "updated_at": "2026-10-30T18:22:31.689375+00:00",
+  "updated_at": "2026-10-31T06:30:53.734221+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "7996cb95-d87e-48a2-87ce-f4027fca52b7",
+      "title": "英特尔股价单日暴跌29%，创历史最大跌幅，PC疲软与AI投入未达预期",
+      "summary": "英特尔2026年10月30日股价单日下跌29%，市值蒸发1370亿美元，主因PC市场持续低迷、第四季度营收指引不及预期，且全年现金流预计为负。",
+      "key_points": [
+        "单日跌幅创公司历史纪录，拖累整个半导体板块下跌2%–10%",
+        "Q4营收预期150–160亿美元，低于分析师预期的170.7亿美元",
+        "首席财务官确认公司2026年无法实现正向现金流"
+      ],
+      "full_content": "Today,&nbsp;Digital Extremes&nbsp;announced the imminent opening of its early Alpha playtest of&nbsp;Soulframe Preludes&nbsp;to all PC players. Next week, the Canadian developer is removing the invitation requirement for its in-development fantasy action RPG, so everyone can get in starting Friday, November 6. The announcement goes alongside the unveiling of Preludes 17: Verse of the Veilands, a major update introducing rideable wolf mounts and a reworked progression structure built around reclaiming corrupted regions. During a press preview attended by Wccftech, the developers also addressed my question about expanding group activities and making it easier to experience the game cooperatively. Open Preludes is not [&hellip;] Read full article at https://wccftech.com/digital-extremes-soulframe-preludes-open-alpha-november-6-pc-rideable-wolves/",
+      "ai_summary": "发生了什么：2026年10月30日，英特尔股价遭遇史诗级崩盘，单日暴跌29%，创下公司有史以来最大单日跌幅，市值瞬间蒸发逾1370亿美元。导火索是其发布的财报指引：第四季度营收预期仅为150–160亿美元，显著低于华尔街平均预期的170.7亿美元；更严峻的是，首席财务官David Zinsner明确表示，公司2026年全年将无法实现正向经营性现金流。这一信号被市场解读为：尽管英特尔在AI芯片（Gaudi 3）、代工业务（18A/14A）及客户端处理器（Arrow Lake/Nova Lake）上投入巨资，但短期业绩未能兑现，PC市场长达三年的下行周期仍未见底，而AI与代工的营收贡献尚不足以填补缺口。\n\n为什么重要：此次暴跌不仅是财务危机，更是战略信任危机。英特尔曾以‘IDM 2.0’战略宣告重返制造与代工双赛道，但18A良率爬坡缓慢、Gaudi 3生态薄弱、Arrow Lake能效争议不断，导致投资者对其技术执行力产生根本性质疑。在AI算力军备竞赛白热化的当下，市场正用脚投票——资金迅速从‘旧巨头’流向‘新势力’（如NVIDIA、AMD、Arm），反映出半导体产业权力结构正在发生不可逆的转移。PC作为英特尔基本盘的持续萎缩，更凸显其商业模式转型的紧迫性与艰巨性。\n\n对行业有什么影响：对供应链而言，代工厂（如台积电、三星）将加速承接英特尔流失的订单，尤其在先进封装（CoWoS）与AI芯片代工领域；对竞争对手，AMD与高通将借势扩大x86与Windows PC市场份额，而Arm阵营则加速向Chromebook与轻薄本渗透；对整个科技股，此次暴跌引发连锁反应，戴尔、HPE等服务器厂商及博通、美光等半导体公司股价同步下挫，凸显市场对‘后PC时代’硬件巨头估值逻辑的重估。长远看，若英特尔无法在2027年证明其AI芯片与代工双引擎的盈利能力，其在半导体产业的‘三巨头’地位或将被永久性削弱，全球芯片格局将加速向‘NVIDIA+Arm+台积电’新三角演进。",
+      "category": "CPU",
+      "source": "Solidot (科技)",
+      "source_url": "https://www.solidot.org/story?sid=85757",
+      "original_author": "@Solidot (科技)",
+      "published_at": "2026-10-30T20:30:00+00:00",
+      "created_at": "2026-10-31T06:30:45.989781+00:00"
+    },
+    {
+      "id": "c2968c88-8a48-4ec5-8a66-4e1d56b72d06",
+      "title": "Cursor Marketplace遭恶意篡改，Claude Code插件植入SSH后门影响5000名开发者",
+      "summary": "AI编程工具Cursor的官方插件市场于2026年10月29日上线被篡改的Claude Code 2.1.313扩展，植入持久化SSH后门，窃取主机信息并尝试建立远程隧道。",
+      "key_points": [
+        "恶意插件分发约11小时，影响全球约5000名开发者",
+        "后门收集主机名、用户名、IP、Git邮箱等敏感信息",
+        "攻击者利用权限漏洞实现macOS LaunchAgent/Windows计划任务持久化"
+      ],
+      "full_content": "In the previous release, AMD mentioned tons of driver bugs, which it has fixed in the latest optional driver. AMD Rolls Out Adrenalin Edition 26.10.2 Optional Driver With Plenty of Bug Fixes; Many Bugs Still Unresolved Affecting Multiple AMD Product Stacks Nearly 10 days ago, AMD rolled out its Adrenalin Edition 26.10.1 that added FSR 4.1 support for the Radeon RX 6000 series, marking a major development for the RDNA 2 series. However, we noticed in the release notes tons of bugs that AMD acknowledged at the time of the release. Most issues were related to \"intermittent\" driver timeouts and [&hellip;] Read full article at https://wccftech.com/amd-adrenalin-26-10-2-patches-driver-timeouts-and-crashes-on-radeon-rx-9000-7000-series/",
+      "ai_summary": "发生了什么：2026年10月29日，AI编程工具Cursor的官方插件市场（Cursor Marketplace）遭到供应链攻击，一款名为‘Anthropic.claude-code’的合法扩展被恶意篡改并发布为2.1.313版本。该恶意软件在extension.js文件头部注入JavaScript加载器，一旦安装即自动运行，无需用户交互。其核心功能是：收集主机名、用户名、公网IP、Git配置邮箱、环境变量等敏感信息；尝试向系统添加攻击者控制的SSH公钥，并启用本地SSH服务；通过macOS LaunchAgent或Windows计划任务实现持久化，每分钟重试建立反向SSH隧道；最终将数据回传至攻击者服务器。事件持续约11小时，Cursor已紧急下架插件、关闭市场并协同托管商关停C2服务器。\n\n为什么重要：这是AI原生开发工具链首次遭遇大规模、高隐蔽性的供应链攻击，暴露了新兴AI生态在安全治理上的巨大短板。与传统软件不同，AI插件直接接入开发者本地环境、拥有高权限、并常与代码仓库、终端、SSH等关键设施深度集成。此次攻击表明，攻击者已精准瞄准AI工作流中最脆弱的环节——第三方插件市场，利用其审核松懈、签名机制缺失、权限管理粗放等缺陷，将恶意代码伪装成‘提升生产力’的合法工具，欺骗开发者主动安装。\n\n对行业有什么影响：对开发者社区，事件将引发对AI工具安全性的深度反思，推动VS Code、Cursor等平台强制推行插件签名、沙箱隔离、最小权限原则及实时行为监控；对企业IT部门，需将AI插件纳入终端安全管控范围，禁止未经审计的第三方扩展；对AI工具厂商，必须重构供应链安全体系，包括建立可信构建流水线、实施SBOM（软件物料清单）管理、引入自动化恶意行为检测。更深远的影响在于，此类事件可能延缓企业对AI编程工具的采纳进程——当核心开发环境的安全性无法保障，‘效率提升’便失去意义。这也警示整个AI产业：在狂奔向前的同时，必须将安全基因深度植入每一层技术栈，否则再炫酷的AI功能，都可能成为攻击者的跳板。",
+      "category": "AI",
+      "source": "Solidot (科技)",
+      "source_url": "https://www.solidot.org/story?sid=85755",
+      "original_author": "@Solidot (科技)",
+      "published_at": "2026-10-30T18:46:27+00:00",
+      "created_at": "2026-10-31T06:30:45.989789+00:00"
+    },
     {
       "id": "4ac09c3c-e00b-4d1e-9bf7-66f3d39c193a",
       "title": "英特尔以色列晶圆厂爆炸致停产两周，Q4营收预计减少3亿美元",
@@ -19,6 +55,24 @@
       "original_author": "@IT之家",
       "published_at": "2026-10-30T16:28:11+00:00",
       "created_at": "2026-10-30T18:22:19.932147+00:00"
+    },
+    {
+      "id": "23340c9a-71c5-41fe-8511-e6a3e7b5c348",
+      "title": "OpenAI上线ChatGPT账号切换功能，支持双账号快速切换与独立数据隔离",
+      "summary": "OpenAI于2026年10月31日为ChatGPT网页端及移动App推出账号切换功能，用户可同时登录两个账号，聊天记录、记忆、文件与设置完全隔离。",
+      "key_points": [
+        "支持网页端、iOS、安卓端，桌面端即将上线",
+        "最多同时登录两个账号，切换后所有数据（含工作区）严格隔离",
+        "同一设备不可登录超两个账号，新账号默认免费"
+      ],
+      "full_content": "As per a prominent leaker, Intel's upcoming Nova Lake CPUs could deliver up to 20% higher gaming performance than Arrow Lake. Intel 28-Core Nova Lake Chip Expected to Benefit Significantly From APX, and Could Deliver Substantially Higher Gaming Performance Than Arrow Lake As we get closer to the launch of Intel's next-generation CPUs, we are getting a glimpse of the performance through leaks. We still don't have the official charts or any benchmarks on popular platforms, but according to recent reports by prominent leakers, it appears that Nova Lake is going to deliver a substantial performance boost over Arrow Lake. [&hellip;] Read full article at https://wccftech.com/intel-nova-lake-rumored-to-deliver-20-higher-gaming-performance-vs-arrow-lake/",
+      "ai_summary": "发生了什么：2026年10月31日，OpenAI正式向全球用户推出ChatGPT账号切换功能。该功能允许用户在同一设备上同时登录并快速切换两个ChatGPT账号（如个人免费账号与企业付费账号），无需反复登出与重新登录。切换后，聊天历史、个性化记忆、上传文件、自定义设置及专属工作区（Workspace）均随账号完全隔离，不会发生任何数据交叉或合并。该功能已覆盖网页端、iOS与Android应用，桌面客户端版本将在数日内上线。值得注意的是，系统限制单设备最多登录两个账号，若需添加第三个账号，必须先注销其中一个；新创建的账号默认为免费套餐，不额外收费。\n\n为什么重要：这一看似微小的功能更新，实则是AI应用从‘消费级工具’迈向‘生产力平台’的关键一步。在AI办公场景中，用户普遍存在身份割裂问题：个人账号用于创意探索与学习，企业账号用于合规工作与客户沟通。过去，频繁切换不仅效率低下，更易导致敏感数据意外泄露或混淆。账号切换功能通过严格的沙箱隔离，既保障了多身份使用的便捷性，又满足了企业级安全与合规要求（如GDPR、HIPAA），为ChatGPT深度融入企业IT架构扫清了障碍。\n\n对行业有什么影响：对竞品而言，Anthropic、Perplexity等AI助手厂商将被迫跟进类似功能，推动行业标准统一；对SaaS生态，该功能为‘AI Agent即服务’铺平道路——用户可为不同账号配置专属Agent（如‘财务分析Agent’绑定企业账号，‘学习辅导Agent’绑定个人账号），实现真正的场景化智能；对开发者，OpenAI此举释放明确信号：AI应用的下一阶段竞争焦点，将从‘模型能力’转向‘用户体验’与‘工作流集成’。谁能提供更无缝、更安全、更符合人类工作习惯的多账号、多Agent、多设备协同体验，谁就能在AI应用红海中赢得持久优势。",
+      "category": "AI",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/020/470.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-10-30T14:49:56+00:00",
+      "created_at": "2026-10-31T06:30:45.989807+00:00"
     },
     {
       "id": "17e5f270-a331-4439-9b12-88288dae8dee",
@@ -5239,60 +5293,6 @@
       "original_author": "@WCCFTech",
       "published_at": "2026-09-27T14:14:40+00:00",
       "created_at": "2026-09-28T06:09:33.126467+00:00"
-    },
-    {
-      "id": "5ab11b22-035e-44f9-86aa-2290074535a4",
-      "title": "半导体行业推进NoC跨芯片互联：解决AI加速器数据流瓶颈",
-      "summary": "为应对物理AI系统中加速器间海量数据流，业界正推动网络-on-芯片（NoC）协议直接跨芯片边界传输，取代传统缓存一致性协议。",
-      "key_points": [
-        "传统缓存一致性协议在AI数据流中效率低下",
-        "NoC跨芯片互联可减少协议开销，提升带宽利用率",
-        "Arteris等公司已推出支持该架构的解决方案"
-      ],
-      "full_content": "It’s a scary situation when an expensive GPU like the RTX 5090 that’s tamed using a water-cooled solution begins to show cracks in the exact waterblock that’s used to effectively reduce its temperatures. One owner has shown evidence that it took the waterblock less than a month to begin displaying these cracks, but he was lucky that GIGABYTE offered a quick replacement for the AORUS XTREME WATERFORCE version. It took GIGABYTE around two weeks to provide the replacement for the water-cooled RTX 5090, which is a lower turnaround time considering the scarcity of this GPU Residing in Western Australia, Redditor “MagicManPie” [&hellip;] Read full article at https://wccftech.com/gigabyte-aorus-rtx-5090-xtreme-waterforce-waterblock-cracks-3-weeks/",
-      "ai_summary": "发生了什么：Semiconductor Engineering深度报道指出，随着自动驾驶、机器人等‘物理AI’系统兴起，芯片间数据流已从CPU-内存访问转向加速器-加速器的连续特征图、张量流传输。传统基于缓存行（64字节）的相干互连协议（如AMD/Xilinx AXI Chip2Chip）在此场景下产生巨大协议开销，导致有效带宽利用率不足50%。行业正转向‘NoC直连’方案——将片上网络（NoC）原生报文直接跨芯片边界传输，消除缓存行拆分与重组，使协议开销摊薄至长数据流中。\n\n为什么重要：这是芯片互连架构的范式革命。NoC直连不仅提升带宽效率（模拟显示峰值温度降低18°C），更赋予系统确定性低延迟、多业务QoS保障等关键能力，是满足汽车功能安全（ISO 26262）、工业实时控制（TSN）等严苛要求的基石。Arteris等公司已推出商用方案，证明该技术从理论走向工程落地，标志着Chiplet时代从‘能连通’迈向‘高效协同’的新阶段。\n\n对行业有什么影响：首先，将加速UCIe等开放互连标准向NoC层扩展，推动AMD、Intel、Arm等巨头重新定义Chiplet接口规范；其次，利好EDA工具厂商（如Synopsys、Cadence），其NoC IP与验证工具需求将爆发式增长；最后，可能重塑芯片设计分工——SoC厂商需与封装厂、系统集成商深度协同定义NoC拓扑，‘芯片-封装-系统’一体化设计成为标配，中小设计公司若缺乏NoC设计能力将面临生存危机。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Engineering",
-      "source_url": "https://semiengineering.com/a-network-on-chip-noc-for-multi-die-devices/",
-      "original_author": "@Semiconductor Engineering",
-      "published_at": "2026-09-27T12:43:47+00:00",
-      "created_at": "2026-09-28T06:09:33.126577+00:00"
-    },
-    {
-      "id": "2387cdde-0f0d-45df-911c-46c7768ea95b",
-      "title": "龙芯CPU原子加指令被曝存在非原子性缺陷，AI辅助两天定位并修复",
-      "summary": "龙芯LoongArch架构CPU被发现原子加法指令偶发失效，开发者借助AI辅助两天内复现问题，龙芯两周后发布固件修复，影响3C6000/S与3A6000处理器。",
-      "key_points": [
-        "问题表现为normaliz软件包编译时原子加指令丢失更新，导致死循环",
-        "开发者利用AI辅助最小化复现程序，两天内定位根源为CPU指令非原子性",
-        "龙芯确认问题并承诺国庆节前发布修复固件，影响LA664核心的3C6000/S与3A6000"
-      ],
-      "full_content": "Microsoft CEO Satya Nadella was recently featured in a lengthy interview on the Sources Podcast, and he briefly discussed this week's new chapter in the Xbox restructuring plan, though not in a way that would make him any more endearing to fans and developers. For starters, he called the streamlining that CEO Asha Sharma and her team are doing \"great to see\". That's certainly not how a lot of people would describe the significant job losses accompanying the Xbox reset; just this week, 268 layoffs were announced on top of the 1,600 that occurred two months ago. And it's not [&hellip;] Read full article at https://wccftech.com/nadella-xbox-streamlining-layoffs-268-cuts/",
-      "ai_summary": "发生了什么：2026年9月，龙芯中科一款基于LA664核心的处理器（3C6000/S与3A6000）被曝出严重硬件级缺陷：其原子加法（atomic add）指令在特定条件下会丧失‘原子性’，即无法保证操作的不可分割性。该问题最早在Debian 13龙芯移植版编译normaliz数学库时暴露——测试程序陷入死循环，原因在于并发线程对同一内存地址的原子加操作发生冲突与丢失。开发者起初排查无果，后转向AI辅助调试：通过指令AI逐步缩小复现范围、生成测试用例、分析汇编行为，仅用两天便构建出稳定复现程序，最终确认是CPU微架构层面的设计缺陷。龙芯迅速响应，两周内完成固件修复，并承诺于10月1日前发布。\n\n为什么重要：原子指令是多线程编程、操作系统内核、数据库事务等基础软件的基石，其失效将导致难以预测的竞态条件与数据损坏。此次事件虽属个案，却揭示了国产CPU在复杂指令集验证上的严峻挑战。龙芯作为中国自主指令集（LoongArch）的领军者，其芯片被广泛用于政务、教育、工业控制等关键领域，此类硬件缺陷一旦未被及时发现，可能引发系统性安全风险。而AI辅助快速定位的方式，则展现了大模型在芯片验证这一传统‘黑盒’领域的巨大潜力，标志着硬件Debug正进入‘人机协同’新阶段。\n\n对行业有什么影响：对龙芯而言，此次事件既是危机也是转机——快速响应与透明沟通有助于重建用户信任，而AI辅助调试能力的引入将大幅提升其未来芯片的验证效率与质量。对整个国产CPU生态而言，它敲响了警钟：在追求性能与功能的同时，必须将硬件可靠性验证（尤其是并发与内存一致性）置于同等甚至更高优先级。对EDA与IP厂商而言，这将刺激对AI驱动的硬件形式化验证（Formal Verification）、模糊测试（Fuzz Testing）工具的需求爆发。最后，对开发者社区而言，它提供了一个经典案例：当面对底层硬件不确定性时，如何利用AI这一新工具进行高效逆向工程与问题诊断，这将成为未来系统工程师的必备技能。",
-      "category": "CPU",
-      "source": "Solidot (科技)",
-      "source_url": "https://www.solidot.org/story?sid=85484",
-      "original_author": "@Solidot (科技)",
-      "published_at": "2026-09-27T08:00:00+00:00",
-      "created_at": "2026-09-27T17:25:46.737536+00:00"
-    },
-    {
-      "id": "231091fa-1119-4114-95da-45a6e5c9651e",
-      "title": "Bitget交易所遭黑客攻击，3.875亿美元加密货币被盗，CEO称后端系统被入侵",
-      "summary": "加密货币交易所Bitget于9月24日遭遇严重安全事件，黑客通过入侵钱包服务后端系统伪造转账指令，盗取价值3.875亿美元的XRP、ETH等资产。",
-      "key_points": [
-        "攻击发生在UTC时间9月24日18:31，18分钟内转出2.28亿美元资产",
-        "被盗资产包括1.53亿美元XRP、6620万美元ETH、3480万美元USDT等",
-        "CEO确认私钥未泄露，攻击源于后端服务漏洞，非智能合约或热钱包问题"
-      ],
-      "full_content": "SpaceXAI's Elon Musk outlined that his firm's Grok Bot agentic AI platform is growing rapidly despite his firm's Grok model lagging behind leading products from Anthropic. Musk made the remarks in an interview given to Chinese media, where he also opined that China could overcome lithography and chip manufacturing limitations in three years. SpaceXAI Will Focus On Making AI Excellent At Real World Engineering, Says Elon Musk Over the past couple of weeks, Musk has reportedly admitted that this firm's Grok AI is unable to match the leading products from OpenAI and Anthropic. For instance, he admitted in mid-September that [&hellip;] Read full article at https://wccftech.com/elon-musk-admits-grok-trails-anthropic-by-years-yet-claims-his-agentic-ai-is-exploding-100-monthly/",
-      "ai_summary": "发生了什么：全球知名加密货币交易所Bitget于2026年9月24日UTC时间18:31遭遇大规模黑客攻击。区块链情报公司Arkham追踪显示，在随后的18分钟内（18:58–19:16），价值2.28亿美元的数字资产被从Bitget钱包中转出。具体包括：1.53亿美元XRP（来自被识别为Bitget冷钱包的地址）、6620万美元ETH、3480万美元USDT、1290万美元USDC以及1280万美元Tether Gold on Ethereum。Bitget CEO Gracy Chen随后证实，事件并非源于私钥泄露或智能合约漏洞，而是黑客成功入侵了其钱包服务的一个关键后端系统，利用该系统伪造转账请求，并触发了授权签名流程，从而完成了资金转移。\n\n为什么重要：此次事件是2026年迄今金额最大的中心化交易所（CEX）安全事件之一，其攻击手法具有典型性与警示性。与以往常见的私钥窃取、钓鱼攻击不同，本次攻击直指交易所最核心的‘后端风控与签名系统’，表明黑客已具备对复杂金融系统进行深度渗透与逻辑绕过的能力。CEO的公开说明也罕见地承认了‘系统性设计缺陷’的存在——即后端服务与签名流程之间的权限隔离与审计机制未能有效拦截恶意伪造指令。这暴露了CEX在快速扩张过程中，对底层系统安全架构投入不足的普遍问题。\n\n对行业有什么影响：首先，将引发全行业对CEX后端系统安全的全面审查与升级，特别是签名服务、风控引擎、资金划转API等核心模块的零信任架构改造。其次，将加速‘非托管钱包’与‘去中心化交易所’（DEX）的 adoption，用户对资产自主控制权的意识将空前提高。第三，对保险与审计服务商构成利好：CipherTrace、Chainalysis等链上分析公司及专业安全审计机构（如OpenZeppelin）的业务需求将激增。最后，监管层面或迎来新动作：美国SEC、英国FCA等机构可能出台更严格的CEX后端系统安全合规指南，要求强制实施多签、硬件安全模块（HSM）隔离、实时交易行为AI监控等措施，推动行业从‘野蛮生长’走向‘合规成熟’。",
-      "category": "Digital",
-      "source": "Solidot (科技)",
-      "source_url": "https://www.solidot.org/story?sid=85486",
-      "original_author": "@Solidot (科技)",
-      "published_at": "2026-09-26T19:02:16+00:00",
-      "created_at": "2026-09-27T17:25:46.737545+00:00"
     }
   ]
 }
