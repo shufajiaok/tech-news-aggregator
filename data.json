@@ -1,7 +1,133 @@
 {
-  "updated_at": "2026-11-03T07:26:55.990779+00:00",
+  "updated_at": "2026-11-03T19:57:34.703486+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "5994bba2-4967-4cee-8290-28e011f37350",
+      "title": "Bosch成立独立半导体事业部，目标2030年营收50亿欧元",
+      "summary": "博世宣布自2028年起设立独立半导体事业部，聚焦MEMS传感器、SiC芯片与ASIC，计划2030年半导体业务营收达50亿欧元。",
+      "key_points": [
+        "新事业部隶属Mobility业务板块，2028年1月1日生效",
+        "重点发展MEMS、碳化硅、ASIC三大技术方向",
+        "全球投资超50亿欧元，强化德、美、马、日四地制造"
+      ],
+      "full_content": "Last month, Microsoft made a promise that it would be rolling out an update&nbsp;that would not just make Windows 11 snappier, but 8GB RAM configurations would feel as if their operating system has transformed. Well, the software giant’s Executive Vice President for Windows + Devices, Pavan Davuluri, says that the company is ‘raising the bar’ for Windows 11, claiming that the OS is now up to 20 percent more responsive and up to 40 percent faster in multitasking. More importantly, memory efficiency has thoroughly improved. Windows 11 will make better use of memory present in your system, even if it’s [&hellip;] Read full article at https://wccftech.com/microsoft-windows-evp-pavan-davuluri-8gb-pcs-40-percent-faster-multitasking/",
+      "ai_summary": "发生了什么：博世于2026年11月宣布重大组织变革——自2028年1月1日起，将其半导体业务从现有Mobility Electronics部门剥离，成立独立的‘Semiconductors’事业部。该部门将整合全球约40个研发与制造基地，聚焦三大核心技术：全球领先的MEMS传感器（用于汽车、机器人）、碳化硅功率芯片（Roseville工厂投资20亿美元）及车规级ASIC（专用集成电路），目标是到2030年实现50亿欧元半导体销售额，占集团总营收比重显著提升。\n\n为什么重要：此举标志着汽车Tier 1巨头向IDM（垂直整合制造商）模式的战略跃迁。在智能驾驶、人形机器人、AI边缘计算爆发的背景下，博世不再满足于‘芯片使用者’角色，而是以‘芯片定义者+制造者’身份掌控技术主权。其MEMS传感器已应用于波士顿动力Atlas等机器人，碳化硅芯片则为下一代800V快充系统提供核心器件，这种‘系统级芯片协同’能力，正是特斯拉、比亚迪等车企自研芯片逻辑的工业级放大版。\n\n对行业有什么影响：对半导体产业链，博世加大SiC投入将加速IGBT向SiC MOSFET切换进程，挤压传统功率器件厂商份额；对代工厂如台积电、意法半导体，博世IDM化意味着订单结构从‘代工为主’转向‘合作研发+部分外包’；对下游客户（车企、机器人公司），博世可提供‘传感器+执行器+控制芯片+算法’全栈方案，缩短产品开发周期。更宏观看，欧洲正通过博世、恩智浦等本土力量构建AIoT时代的‘欧洲芯片自主链’，减少对美、亚供应链的依赖。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/bosch-establishes-dedicated-semiconductor-division-to-strengthen-chip-business/",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-11-03T19:50:32+00:00",
+      "created_at": "2026-11-03T19:57:23.802967+00:00"
+    },
+    {
+      "id": "6bac1e95-01f2-4e3c-84ea-d56afcca242a",
+      "title": "Entegris进军AI热管理新材料市场，收购金刚石抛光商并合作Element Six",
+      "summary": "Entegris收购Advanced Abrasives并联手Element Six，布局碳化硅与金刚石基热界面材料，应对AI芯片散热挑战。",
+      "key_points": [
+        "收购金刚石精密抛光商，补强SiC CMP能力",
+        "与De Beers旗下Element Six共建金刚石热管理方案",
+        "目标降低3D封装热阻，支撑下一代逻辑与存储芯片"
+      ],
+      "full_content": "Today, well ahead of the 15th anniversary of Skyrim, Bethesda Game Studios finally unveiled the full title of the next game in its premier franchise: The Elder Scrolls VI: Sentinel. We already had plenty of evidence that would be the case, so that's not really big news. The more interesting tidbit coming out of the new trailer was the following quote, attributed to Yazar, Moth Priest of High Queen Iradne of Hammerfell: The scroll offered only a shimmer, a veil thinly lifted to my eyes. A future lost. A victory undone. Sands of time scattered by fate. This confirms that [&hellip;] Read full article at https://wccftech.com/the-elder-scrolls-vi-sentinel-release-window-jason-schreier/",
+      "ai_summary": "发生了什么：半导体材料巨头Entegris于2026年11月宣布两项重大战略举措：一是完成对美国金刚石精密抛光商Advanced Abrasives Corporation的收购，强化其在碳化硅（SiC）化学机械抛光（CMP）领域的全套解决方案能力；二是与全球合成钻石领导者Element Six（戴比尔斯集团子公司）建立长期研发伙伴关系，共同开发面向AI先进封装的金刚石增强型热界面材料（TIM）。双方将聚焦晶圆级与异构集成场景，旨在降低热边界电阻，提升3D堆叠芯片的散热效率。\n\n为什么重要：随着AI芯片功耗突破1200W（如GB200 NVL72），传统铜/铟基热界面材料已达物理极限。金刚石凭借超高导热率（2000 W/mK）与可调控热膨胀系数，成为突破‘散热墙’的关键新材料。Entegris此举并非单纯材料销售，而是切入AI芯片‘性能—散热—可靠性’三角关系的核心支点，其技术将直接影响NVIDIA、AMD等GPU及华为昇腾等AI加速器的封装良率与长期稳定性。\n\n对行业有什么影响：对封装厂（ASE、Amkor），Entegris新材料将推动2.5D/3D封装从‘能用’走向‘可靠商用’，加速HBM3E与Chiplet互连普及；对晶圆厂（TSMC、Intel Foundry），高性能TIM是其实现更高晶体管密度与更小制程节点的前提条件；对AI公司，更优散热意味着服务器可维持更高持续频率，降低PUE（电能使用效率），直接削减数据中心运营成本。长远看，这场由AI驱动的‘热材料革命’，或将重塑半导体材料供应商格局，使Entegris、住友电工等专业厂商地位比肩传统硅片巨头。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/entegris-enters-silicon-carbide-and-diamond-enabled-thermal-management-materials-market-for-ai-advanced-packaging/",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-11-03T19:15:00+00:00",
+      "created_at": "2026-11-03T19:57:23.802975+00:00"
+    },
+    {
+      "id": "81691559-aa28-4b76-9cbd-02219be9c8e1",
+      "title": "ACM Research交付全球首台310×310mm面板级水平电镀量产设备",
+      "summary": "ACM Research向亚洲客户交付全球首台310×310mm面板级水平电镀系统Ultra ECP ap-p，支持铜/镍/锡银/金多种金属工艺。",
+      "key_points": [
+        "设备采用专利水平电镀+旋转电场同步技术",
+        "支持300微米高铜柱均匀电镀",
+        "标志面板级封装设备从研发走向量产"
+      ],
+      "full_content": "Once again, sales data have proved that AMD's AM4 platform isn't going anywhere and will likely continue the domination for months. Ryzen 9800X3D Keeps AM5's Momentum, But AM4 Comes Next With A Good 38% CPU Market Share, Reveals October Amazon US Sales Data Intel getting totally dominated by AMD CPUs isn't new, but Intel was gaining some momentum a few weeks ago when it aggressively priced its new Arrow Lake Refresh chips. The deep discounts didn't last long enough to continue their dominance, and they were soon kicked out of the top 10 best-selling CPUs. According to the latest Amazon [&hellip;] Read full article at https://wccftech.com/ryzen-9800x3d-keeps-am5s-momentum-but-am4-comes-next-with-a-good-38-cpu-market-share/",
+      "ai_summary": "发生了什么：中国半导体设备龙头ACM Research于2026年11月宣布，向亚洲（非中国大陆）客户交付全球首台310×310mm规格的Ultra ECP ap-p面板级水平电镀量产系统。该设备采用其独创的‘水平电镀+旋转矩形电场同步’专利技术，配合高速镀铜桨叶与四边密封干接触卡盘，可在300微米高铜柱应用中实现优异片内均匀性，同时支持Cu/Ni/SnAg/Au等多种金属电镀工艺，满足Fan-Out、Chiplet等先进封装对大尺寸基板的精密金属化需求。\n\n为什么重要：面板级封装（PLP）被视为替代传统晶圆级封装（WLP）的下一代主流技术，其核心优势在于更大基板面积（>515×515mm）带来的成本优势与设计灵活性。而电镀作为PLP最关键的金属化步骤，长期被日本SCREEN、韩国SEMES等厂商垄断。ACM此次交付，不仅打破国际巨头在大尺寸面板电镀设备领域的技术封锁，更验证了其从R&D工具（去年交付515×510mm研发机）到量产设备的快速转化能力，标志着中国在先进封装核心装备领域实现关键突破。\n\n对行业有什么影响：对封测厂（长电科技、通富微电），ACM设备将降低PLP产线建设成本与交期，加速Fan-Out RDL、硅桥等高密度互连技术普及；对芯片设计公司，PLP成本下降将推动更多中小芯片采用Chiplet设计，提升IP复用率；对AI产业，面板级封装是支撑HBM3E与GPU Chiplet异构集成的物理基础，ACM设备量产将间接提升AI服务器供应链韧性。更深远的意义在于，它为中国半导体设备业提供了‘从细分环节突破→构建平台化能力→参与全球技术标准制定’的可复制路径。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/acm-research-announces-shipment-of-its-first-310-x-310-mm-ultra-ecp-ap-p-panel-level-horizontal-electroplating-production-tool/",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-11-03T18:12:16+00:00",
+      "created_at": "2026-11-03T19:57:23.802983+00:00"
+    },
+    {
+      "id": "1c4730b8-6e49-41b4-9024-4af153718875",
+      "title": "Tower与Innolight合作推进近封装光学（NPO），首款产品进入早期量产",
+      "summary": "Tower Semiconductor与Innolight联合推出基于硅光子平台的近封装光学（NPO）器件，首款产品已在美工厂进入早期量产。",
+      "key_points": [
+        "首款NPO器件采用Tower PH18M 200mm硅光平台",
+        "支持16+光通道集成，满足AI芯片高带宽互连需求",
+        "双方正向300mm硅光平台扩展"
+      ],
+      "full_content": "Games industry veteran Adam Boyes has spent this week at GamesBeat Next in San Francisco making a pointed argument, drawing on his consultancy's research: the industry's AI debate, which we've covered extensively over the past year, is measuring the wrong thing. The VAIA Report, produced by games consultancy Vivrato (founded in September 2024 by former PlayStation and Iron Galaxy executive Boyes), ran 101 confidential one-on-one interviews with senior studio leaders and decision-makers between April and September, primarily at studios headquartered in North America and Europe. The headline figures are stark in both directions: The median self-rating of how deeply AI [&hellip;] Read full article at https://wccftech.com/94-percent-game-studios-use-ai-integration-labels-meaningless-sweeney/",
+      "ai_summary": "发生了什么：Foundry厂商Tower Semiconductor与光模块龙头Innolight宣布，双方合作开发的首款Near-Package Optics（NPO）器件已基于Tower位于美国加州的200mm硅光子（SiPho）PH18M工艺平台进入早期量产阶段。该NPO器件集成16路以上光通道，采用单片集成波分复用/解复用技术，直接安装于AI加速器封装基板附近，将传统插拔式光模块的电气互连距离从米级缩短至厘米级，从而突破铜互连带宽瓶颈，满足GB200、MI300X等AI芯片间TB/s级数据交换需求。\n\n为什么重要：NPO是继CPO（共封装光学）之后更激进的光电融合方案，其核心价值在于‘极致靠近’——将光引擎置于CPU/GPU封装旁，最大限度降低信号衰减与功耗。Tower的200mm/300mm硅光量产能力，为Innolight提供了高良率、低成本的制造保障；而Innolight在光引擎设计与系统集成上的优势，则确保NPO器件性能达标。这种‘Foundry+IDM’深度协同模式，正在重塑AI基础设施的底层连接范式。\n\n对行业有什么影响：对AI芯片厂商，NPO将加速Chiplet架构普及，使不同工艺节点（如3nm CPU + 5nm HBM）的芯粒通过光互连无缝集成；对数据中心运营商，NPO可降低单机柜功耗15–20%，缓解供电与散热压力；对光通信产业，NPO将开辟一个区别于传统电信/数通市场的全新赛道，预计2027年市场规模将超20亿美元。对中国企业而言，Tower与Innolight的合作也提示了突围路径：在高端光芯片制造受限情况下，可聚焦NPO封装、测试与系统集成等环节，构建差异化竞争力。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/tower-semiconductor-and-innolight-advance-high-performance-near-package-optics-for-ai-infrastructure/",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-11-03T18:00:00+00:00",
+      "created_at": "2026-11-03T19:57:23.80299+00:00"
+    },
+    {
+      "id": "7151bb97-0ca9-41a0-bf23-27cf0afded39",
+      "title": "微软称Windows 11在8GB内存设备上多任务速度提升40%，响应性提高20%",
+      "summary": "微软Windows负责人Pavan Davuluri宣布，Windows 11通过内存优化，使8GB配置设备多任务处理速度提升40%，系统响应性提高20%。",
+      "key_points": [
+        "优化聚焦内存效率与后台进程管理",
+        "特别针对8GB主流PC配置调优",
+        "与AI负载增长导致的内存价格上涨形成对冲"
+      ],
+      "full_content": "The developer behind Tiny11 has managed to get Windows 11 26H2 running with just 128MB of RAM, or 3.125% of Microsoft's official minimum requirement, in another remarkable demonstration of how far the operating system can be stripped down while retaining some basic functionality. As Tom's Hardware reports, NTDEV, best known for developing Tiny11, recently showcased a heavily modified installation of Windows 11 version 26H2 operating with only 128MB of system memory. For comparison, Microsoft's official system requirements specify a minimum of 4GB of RAM, alongside 64GB of storage and other hardware requirements. Despite operating with one-thirty-second of the officially required [&hellip;] Read full article at https://wccftech.com/windows-11-26h2-runs-on-just-128mb-of-ram-32-times-below-microsofts-official-minimum/",
+      "ai_summary": "发生了什么：微软Windows + Devices执行副总裁Pavan Davuluri公开表示，通过一系列底层内存管理优化（包括更智能的后台进程休眠、压缩算法升级及虚拟内存调度重构），Windows 11在配备8GB RAM的主流PC上实现了多任务处理速度提升40%、系统整体响应性提高20%。该优化并非简单功能删减，而是在保持全部Windows 11 UI与功能完整性的前提下，通过动态资源分配与预测性加载，显著改善内存受限场景下的用户体验。值得注意的是，这一消息发布于DRAM价格持续飙升、8GB笔记本成本大幅上涨的背景下。\n\n为什么重要：8GB内存仍是全球PC市场最主流配置（尤其在入门级与商用本领域），微软此举直击最大用户群痛点。在AI应用日益普及、Chrome等浏览器内存占用激增的当下，系统级内存效率优化比硬件升级更具普惠性。它体现了微软从‘硬件驱动更新’向‘软件定义体验’的战略转变，即通过算法与架构创新，延缓摩尔定律放缓对用户体验的影响。\n\n对行业有什么影响：对OEM厂商（联想、戴尔、惠普），Windows 11的优化降低了其继续销售8GB机型的体验风险，有助于稳定入门级市场出货；对内存厂商（三星、SK海力士），虽短期缓解涨价压力，但长期可能抑制用户升级至16GB的意愿，影响高端颗粒需求；对开发者，微软优化逻辑（如WinRT内存感知API）或将开放，推动应用层适配低内存环境。更深层意义在于，它为整个操作系统产业树立标杆：在硬件红利见顶时代，软件效率将成为核心竞争力，倒逼Linux发行版、macOS等加速内存管理革新。",
+      "category": "Digital",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/microsoft-windows-evp-pavan-davuluri-8gb-pcs-40-percent-faster-multitasking/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-11-03T17:08:09+00:00",
+      "created_at": "2026-11-03T19:57:23.802998+00:00"
+    },
+    {
+      "id": "1ba8e327-3cb0-439d-b7d5-b3a83d61b7a6",
+      "title": "Windows 11 26H2 可在仅128MB内存运行，远低于官方4GB要求",
+      "summary": "开发者NTDEV成功将Windows 11 26H2精简至仅需128MB RAM即可运行，仅为微软官方最低要求（4GB）的3.125%，展现系统极致可裁剪性。",
+      "key_points": [
+        "NTDEV通过Tiny11项目实现超轻量部署",
+        "128MB内存为官方4GB要求的1/32",
+        "基础功能仍可保留，但属高度定制化实验"
+      ],
+      "full_content": "&lt;p&gt;Stephen is Tom&#039;s Hardware&#039;s News Editor with almost a decade of industry experience covering technology, having worked at TechRadar, iMore, and even Apple over the years. He has covered the world of consumer tech from nearly every angle, including supply chain rumors, patents and litigation, and more. When he&#039;s not at work, he loves reading about history and playing video games.&lt;/p&gt;",
+      "ai_summary": "发生了什么：WCCFTech报道，知名系统精简开发者NTDEV（Tiny11作者）成功在仅配备128MB物理内存的x86-64设备上启动并运行Windows 11 26H2开发者预览版。该配置远低于微软官方标称的4GB最低内存要求（即32倍差距），属于深度剥离驱动、服务与UI组件后的极限实验版本，具备基本命令行交互与部分GUI响应能力。\n\n为什么重要：这一成果并非面向普通用户，而是对操作系统底层架构弹性的技术验证。它揭示了Windows内核在资源极度受限场景下的潜在适应能力，也为嵌入式、IoT或教育类超低成本计算设备提供了理论可行性参考。同时，它反向凸显微软当前系统臃肿化趋势与实际最小可行需求之间的巨大鸿沟，引发对OS设计哲学与能效比的行业反思。\n\n对行业有什么影响：短期内不会改变PC硬件准入门槛，但长期可能推动两大方向：一是刺激开源社区（如ReactOS、SerenityOS）加速构建真正轻量级替代方案；二是倒逼微软优化内存管理策略——正如其近期在8GB机型上实现40%多任务提速所表明的，资源效率正成为Windows核心竞争力。此外，该案例也将被用于芯片厂商（如高通、联发科）推广低功耗ARM Windows设备时的技术背书，强化‘Windows on Any Device’叙事。",
+      "category": "Digital",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/windows-11-26h2-runs-on-just-128mb-of-ram-32-times-below-microsofts-official-minimum/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-11-03T17:00:00+00:00",
+      "created_at": "2026-11-03T19:57:23.802899+00:00"
+    },
+    {
+      "id": "64a28532-61f1-471d-a8f6-05939d54d819",
+      "title": "苹果Apple Intelligence国行版上线，与阿里千问深度集成",
+      "summary": "iOS 27.3开发者版正式向中国用户开放Apple Intelligence，首发支持实时翻译、写作工具、视觉智能等，并深度接入阿里巴巴千问大模型。",
+      "key_points": [
+        "国行版Apple Intelligence已随iOS 27.3 Beta上线",
+        "千问能力覆盖文本理解、图像识别、语音交互",
+        "首批支持iPhone 15 Pro及更新机型"
+      ],
+      "full_content": "&lt;p&gt;Oliver Haslam has written about technology of all shapes and sizes for over 15 years, both online and in print.&lt;/p&gt;&lt;p&gt;Having grown up using PCs and spending far too much money on graphics cards and fancy RAM, Oliver switched to the Mac with a G5 iMac. Nowadays, he uses both macOS and Windows depending on the job at hand. Oliver&amp;#39;s previous career in I.T. service management means he&amp;#39;s uniquely placed to understand the complexities of keeping a modern service online. Not that it stops him from getting grumpy when something stops working.&lt;/p&gt;&lt;p&gt;Passionate about mobile apps and the developer ecosystem, Oliver is always keen to try out the hottest new things to hit the various app stores.&lt;/p&gt;",
+      "ai_summary": "发生了什么：苹果于2026年11月4日向中国开发者推送iOS 27.3首个Beta版，正式启用国行版Apple Intelligence。该版本并非简单本地化，而是与阿里巴巴达成独家合作，将通义千问（Qwen）大模型深度集成至系统级功能：包括信息/FaceTime中的实时对话翻译（支持AirPods 4）、照片App的AI消除与自然语言搜索、邮件摘要、Siri跨模态提问（如‘这张图里有什么？’），以及备忘录音频转录摘要等共15项高频AI能力。用户无需跳转App，通过Apple ID或‘通过Apple登录’即可调用千问服务。\n\n为什么重要：这是全球科技巨头首次在核心AI功能上采用第三方大模型进行区域定制，标志着‘AI主权化’趋势不可逆转。苹果放弃自研模型在中国市场的落地，既是对监管合规的务实回应，也凸显其‘生态优先’战略——以开放接口换取本地顶级AI能力，快速补齐体验短板。此举为后续Mac、iPadOS、visionOS平台的国行AI演进铺平道路，更确立了‘硬件+OS+本地大模型’的新移动AI范式。\n\n对行业有什么影响：对国内AI公司，千问获得亿级终端入口，极大提升模型迭代数据飞轮效率；对安卓阵营，华为、小米等厂商将加速推进‘小艺+盘古’‘小米AI+混元’等全栈整合，避免生态被动；对开发者，Apple Intelligence API开放后，将催生一批基于系统级AI能力的原生应用（如教育类实时批改、医疗影像辅助解读）。长远看，全球AI终端竞争正从‘算力参数’转向‘本地模型协同深度’与‘场景化服务能力’的综合较量。",
+      "category": "AI",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/021/861.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-11-03T15:02:09+00:00",
+      "created_at": "2026-11-03T19:57:23.802949+00:00"
+    },
     {
       "id": "2cd23737-1727-4afd-938e-b3c0535a1dd9",
       "title": "TechInsights预警2027年半导体五大趋势：HBM成最大瓶颈，AI驱动内存市场占比达62%",
@@ -5167,132 +5293,6 @@
       "original_author": "@Semiconductor Engineering",
       "published_at": "2026-09-29T16:40:00+00:00",
       "created_at": "2026-09-29T18:26:43.458178+00:00"
-    },
-    {
-      "id": "fce5a915-e557-4d0e-a1e2-face7caebf94",
-      "title": "Lam Research启用47万平方英尺AI时代物流枢纽，检索速度提升12倍",
-      "summary": "Lam Research在美国加州利弗莫尔启用全美最大半导体物流中心，面积47万平方英尺，配备15台机器人自动化系统，零件检索时间从6分钟缩短至30秒，支撑AI芯片设备交付提速。",
-      "key_points": [
-        "47万平方英尺物流中心，相当于8个足球场",
-        "自动化系统实现15秒内精准取件，效率提升12倍",
-        "专为AI芯片设备高周转、高弹性需求设计"
-      ],
-      "full_content": "A 20B AI model running on an RTX 5070 Ti with 16GB GDDR7 VRAM was no problem, but one user decided that this LLM was too limiting for his daily workflow. Instead, he opted to switch to a 35B one, and to help offload the model without experiencing performance issues, he leveraged the use of 128GB of DDR4 ECC memory from a workstation. Unfortunately, just 90 minutes in, one DDR4 stick mysteriously dies, with the user claiming that thermals didn’t kill the RAM. Surprisingly, the user only mentions CPU and GPU temperatures, as a second DDR4 stick started showing errors [&hellip;] Read full article at https://wccftech.com/35b-llm-database-workload-destroys-ddr4-ram-stick-90-minutes/",
-      "ai_summary": "发生了什么：Lam Research于2026年9月在加州利弗莫尔启用其全美最大半导体物流枢纽，占地47万平方英尺（约4.4万平方米），相当于8个标准足球场。该中心核心是4万平方英尺的自动化存储与检索系统（ASRS），配备15台自主移动机器人，可管理超50万个零件编号，将平均零件检索时间从传统仓库的6分钟压缩至30秒以内，整体运营效率提升12倍。该设施不仅服务Lam自身设备制造，更深度对接其在利弗莫尔的高量产工厂与弗里蒙特的研发实验室，形成‘研发-制造-物流’一体化闭环。\n\n为什么重要：在AI芯片制造设备（如刻蚀、薄膜沉积系统）交付周期被压缩至极限的当下，物流已从后台支持跃升为战略竞争力。Lam此举直击行业痛点：AI客户要求设备厂商能随晶圆厂扩产节奏同步交付，任何供应链延迟都可能导致数十亿美元的AI训练集群投产推迟。该物流中心通过‘集中化+自动化+区域化’三重设计，实现了对客户需求的毫秒级响应能力——当客户因AI芯片良率问题急需更换某个腔室部件时，Lam可在半小时内完成定位、出库、配送全流程，这是传统分散式仓储无法企及的。\n\n对行业有什么影响：首先，将引发设备厂商物流军备竞赛——应用材料（AMAT）、泛林（Lam）、东京电子（TEL）等头部厂商或将加速建设区域性超级物流中心；其次，推动半导体物流标准升级：ASRS系统需兼容超洁净环境、精密部件防震要求及实时库存区块链追溯，这将催生新一代工业物流解决方案；最后，它凸显出AI时代的‘硬科技’本质——没有强大的物理世界支撑（从光刻机到物流机器人），再先进的AI算法也无法落地。半导体产业的竞争，正从晶圆厂走向涵盖研发、制造、物流、服务的全价值链对抗。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/lams-new-logistics-hub-built-for-velocity-resilience-and-ai-era-growth/",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-09-29T16:34:27+00:00",
-      "created_at": "2026-09-29T18:26:43.458183+00:00"
-    },
-    {
-      "id": "3c42247b-a2ac-47f4-9183-eeb3e0ba1f6c",
-      "title": "Gigaphoton启动L300KZ激光器评估，推进高温超导线材量产",
-      "summary": "Gigaphoton在日本部署L300KZ KrF准分子激光器，用于脉冲激光沉积（PLD）工艺，助力日本‘月球计划’实现高温超导线材低成本量产，支撑未来聚变反应堆建设。",
-      "key_points": [
-        "L300KZ激光器专为PLD工艺开发，应用于高温超导材料制备",
-        "属日本内阁府‘月球计划’Goal 10关键项目",
-        "目标建立REBCO高温超导线材大规模量产技术"
-      ],
-      "full_content": "OpenAI is finally delivering on the hype that it attempted to build over the past few weeks for its DevDay 2026, replete with over 20 distinct product launches, albeit complicated by an evolving competitive environment where Anthropic has again taken an apparent lead by launching the eminently stellar Opus 5.5 and Sonnet 5.5 AI models. Here's everything you need to know before tuning into OpenAI's DevDay 2026 event OpenAI has suffered a series of setbacks recently. First, Anthropic launched its Claude Opus 5.5 model last week that not only exceeded the capabilities of its Fable 5.1 model but also beat [&hellip;] Read full article at https://wccftech.com/openai-devday-2026-goes-live-over-20-product-launches-including-a-meta-muse-competitor-called-dot-as-sam-altman-takes-the-stage-amid-a-string-of-recent-setbacks/",
-      "ai_summary": "发生了什么：日本光源巨头Gigaphoton于2026年9月25日在一家国内高温超导线材制造商现场部署L300KZ KrF准分子激光器，正式启动其在脉冲激光沉积（PLD）工艺中的量产评估。该激光器是日本内阁府‘Moonshot Research and Development Program’第10号目标（Goal 10）的核心装备，旨在攻克高性能稀土钡铜氧（REBCO）高温超导线材的低成本、高质量、大批量制造难题。REBCO线材是建造紧凑型聚变反应堆超导磁体的关键材料，其量产进度直接决定人类可控核聚变商业化的时间表。\n\n为什么重要：PLD工艺是制备高性能超导薄膜的黄金标准，而准分子激光器（尤其是KrF波长248nm）因其高脉冲能量与精确烧蚀控制，成为PLD首选光源。Gigaphoton将半导体光刻领域积累的激光稳定性、高可用性技术迁移至PLD，解决了传统PLD设备在长时间运行中功率衰减、光斑漂移等产业化瓶颈。此举标志着日本正将半导体尖端制造能力跨界赋能能源革命，形成‘从芯片到聚变’的技术跃迁路径。\n\n对行业有什么影响：首先，将加速全球超导材料产业化进程——若L300KZ成功验证，其技术可快速复制至其他PLD产线，推动REBCO线材成本下降50%以上，使聚变示范堆建设成本大幅降低；其次，为半导体设备商开辟新增长曲线：ASML专注光刻，Gigaphoton则通过激光技术延伸至能源、生物医疗等高端制造领域；最后，它揭示了一条关键趋势：AI与聚变同为‘终极技术’，前者优化信息处理，后者解决能源供给，而半导体制造技术正是二者共同的底层基石。谁能掌握从光源到系统的全栈能力，谁就将在下一轮科技革命中占据制高点。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/gigaphoton-begins-evaluation-of-l300kz-excimer-laser-for-pulsed-laser-deposition-for-advanced-materials-applications/",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-09-29T16:31:39+00:00",
-      "created_at": "2026-09-29T18:26:43.458189+00:00"
-    },
-    {
-      "id": "70bc86a0-add2-403b-b62c-11410b0fb261",
-      "title": "Arkansas成立ARIES研究所，打造全美顶尖半导体与功率电子创新中心",
-      "summary": "美国阿肯色大学成立ARIES研究所，整合MUSiC碳化硅晶圆厂、HiDEC封装中心、NCREPT高功率测试平台，聚焦功率电子、AI安全、光子学等四大前沿方向。",
-      "key_points": [
-        "ARIES整合全美唯一开放SiC晶圆厂MUSiC等三大国家级设施",
-        "聚焦功率电子、AI安全、光子学、射频微波四大研究支柱",
-        "目标成为美国半导体与功率电子技术转化核心枢纽"
-      ],
-      "full_content": "The Surface lineup belonging to Microsoft largely comprises machines shipping with Snapdragon chipsets or Intel processors, with the latest addition being NVIDIA’s RTX Spark&nbsp;SoCs for the ultra-premium Surface Laptop Ultra. If you’ve noticed, AMD is sorely missing from the list, even though the company’s Xbox hardware ships with these chips. Well, a company executive has provided a reason, and it’s not because Microsoft has little to no love for AMD. A Microsoft executive says “we love working with AMD,” but it’s working with a limited product range, forcing it to exclude its processors from the Surface series Speaking with Windows [&hellip;] Read full article at https://wccftech.com/microsoft-prioritizes-snapdragon-socs-over-amd-surface-limited-portfolio/",
-      "ai_summary": "发生了什么：2026年9月，美国阿肯色大学正式成立‘阿肯色电子系统研究院’（ARIES），这是一个集研发、制造、测试、转化于一体的垂直整合型半导体创新平台。其核心资产包括：全美唯一的开放式碳化硅（SiC）集成电路晶圆厂MUSiC（支持宽禁带半导体研发）、全球领先的高密度电子封装中心HiDEC、以及全美最强大的6MVA高功率电力电子测试平台NCREPT。ARIES以功率电子为根基，向上延伸至AI安全（硬件级可信执行）、光子学（硅光集成）与射频微波（6G通信），形成覆盖‘材料-器件-系统’的完整技术链条。\n\n为什么重要：在全球半导体供应链重塑背景下，ARIES代表一种新型国家创新范式：不追求‘大而全’的IDM模式，而是以大学为枢纽，将分散的国家级科研设施、军工级测试能力与产业需求精准对接。例如，其MUSiC晶圆厂允许全美研究人员远程提交流片订单，极大降低SiC芯片研发门槛；NCREPT平台则为电动汽车逆变器、数据中心电源等功率电子系统提供‘一站式’验证服务。这种‘开放基础设施+垂直领域聚焦’的模式，比单纯建厂更具可持续性与辐射力。\n\n对行业有什么影响：首先，将加速美国功率半导体自主化进程——SiC是新能源车、光伏逆变器、AI服务器电源的关键材料，ARIES的开放流片能力可缩短初创公司产品上市周期6-12个月；其次，推动‘AI for Semiconductor’落地：ARIES正与TSMC等合作开发AI驱动的功率器件设计工具，利用AI优化SiC MOSFET的元胞布局与热管理；最后，它为中国等地区提供镜鉴：半导体强国竞争不仅是晶圆厂数量比拼，更是‘创新基础设施’的软实力较量。谁能构建起开放、高效、跨学科的共性技术平台，谁就能吸引全球最顶尖的工程师与创意，从而赢得未来十年的技术主导权。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/research-institute-to-drive-semiconductor-innovation/",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-09-29T15:17:39+00:00",
-      "created_at": "2026-09-29T18:26:43.458194+00:00"
-    },
-    {
-      "id": "9891866d-46ab-4e50-9ba7-c1a705123539",
-      "title": "OpenAI发布GPT-6.1 Sol：性能接近Astra，成本仅为其1/5",
-      "summary": "OpenAI在DevDay 2026推出高性价比大模型GPT-6.1 Sol，在软件工程、专业文档、自动化工作流等任务中性能逼近旗舰GPT-6 Astra，但标准输入/输出token价格仅为Astra的20%，缓存成本降低50%。",
-      "key_points": [
-        "GPT-6.1 Sol在多项基准测试中表现接近GPT-6 Astra",
-        "标准模式token价格为Astra的五分之一，缓存费用低50%",
-        "事实错误率下降32%，安全对齐与可靠性显著提升"
-      ],
-      "full_content": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked for various publications covering a range of topics including smartphones, laptops, audio devices, and PC hardware. Currently, he is engrossed with everything happening in the world of computing with a growing obsession for unique PC cases and RGB cooling fans. Through his articles Kunal strives to demystify complex concepts for a broad audience. Kunal is also a casual gamer as he loves to squad up with his friends in &lt;em&gt;Apex Legends&lt;/em&gt;, and claims to have a fairly good taste in music especially when it comes to heavy metal.&lt;/p&gt;",
-      "ai_summary": "发生了什么：OpenAI在DevDay 2026正式发布GPT-6.1 Sol模型，定位为‘当前同等性能下性价比最高的模型’。该模型在DeepSWE、GDP.pdf、AutomationBench、OSWorld 2.0等专业评测中，得分与旗舰GPT-6 Astra差距极小（平均仅低2.1个百分点），但标准输入/输出价格仅为Astra的20%，长上下文场景下单任务成本甚至低至Astra的七分之一；缓存费用降至每百万tokens 0.1美元，较前代GPT-6 Sol再降50%。同时，其事实错误率从11.4%降至7.7%（降幅32%），在安全测试中未出现绕过审查行为，展现出更强的意图遵循能力。\n\n为什么重要：在AI商业化加速落地的背景下，模型成本已成为企业规模化部署的核心瓶颈。GPT-6.1 Sol并非单纯降配版，而是在保持Astra级智能体编程、复杂文档理解与终端操作能力的同时，通过架构优化与推理策略改进实现成本断崖式下降。这标志着OpenAI正从‘单一旗舰驱动’转向‘高性能-高性价比双轨并行’战略，回应开发者与企业客户对TCO（总拥有成本）的迫切诉求，也对Anthropic Opus 5.5、Meta Llama 4等竞品构成直接压力。\n\n对行业有什么影响：首先，该模型将加速AI原生应用在中小企业和开发者社区的普及，尤其利好需高频调用API的自动化工具、Copilot类插件及教育类产品；其次，其定价结构（如Batch/Flex模式）推动行业向‘按场景付费’演进，倒逼云服务商优化推理调度与缓存策略；最后，它强化了OpenAI生态的粘性——通过与ChatGPT资料空间、协作式幻灯片、会议插件等新生产力工具深度绑定，使低成本模型成为整个协同工作流的‘智能引擎’而非孤立组件，进一步巩固其在AI应用层的事实标准地位。",
-      "category": "AI",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/008/527.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-09-29T15:17:35+00:00",
-      "created_at": "2026-09-29T18:26:43.458127+00:00"
-    },
-    {
-      "id": "21ae2dfe-a9e9-402b-9a38-2a7f2380d287",
-      "title": "OpenAI DevDay 2026发布ChatGPT资料空间与协作式生产力套件",
-      "summary": "OpenAI推出全新‘ChatGPT资料空间’，支持团队共建动态页面、协作式幻灯片、共享任务及会议智能纪要，实现端到端AI协同工作流，覆盖Pro至Enterprise全层级用户。",
-      "key_points": [
-        "资料空间支持将对话一键转为可编辑页面或幻灯片",
-        "动态页面可自动连接工具并实时更新待办清单与数据表",
-        "会议插件可生成带决策要点与行动项的智能纪要"
-      ],
-      "full_content": "&lt;p&gt;Etiido Uko is a mechanical engineer and senior technical writer with over nine years of experience in documentation and reporting. He is deeply passionate about all things engineering and technology, and is an expert in gadgets, manufacturing, robotics, automotive, and aerospace. His work spans content creation for industry leaders across multiple sectors, including Autodesk, Siemens, Xometry, Telus, and Coca-Cola. When he is not writing or keeping up with the latest innovations, you can find him exploring lands unknown. Check out more of his work at etiidowrites.com.&lt;/p&gt;",
-      "ai_summary": "发生了什么：OpenAI在DevDay 2026正式发布以‘ChatGPT资料空间’为核心的下一代协作生产力套件，包含动态页面、协作式幻灯片、团队任务系统、Slack/Teams深度集成、会议插件及可分享个人资料页六大模块。所有功能均基于ChatGPT原生交互设计，例如用户可对一段对话说‘转成幻灯片’，ChatGPT即提问需求后起草初稿；团队成员能同时编辑、评论并@ChatGPT修改内容；会议录音自动转为纪要，并结合历史协作上下文提炼关键决策与后续步骤；任务可设定为定时触发或事件驱动（如新邮件到达时自动生成报告）。\n\n为什么重要：此举标志着OpenAI正从‘对话式AI助手’全面升级为‘AI原生操作系统’。传统办公套件（如Notion、Slack）需用户在多个工具间切换并手动整合AI能力，而ChatGPT资料空间将AI深度嵌入工作流每个环节——从信息生成、组织、协作到执行闭环，且所有数据保留在用户可控的工作空间内。这不仅是功能叠加，更是工作范式的重构：AI不再作为辅助插件，而是作为默认的‘协作者’参与项目全生命周期。\n\n对行业有什么影响：短期看，将加剧AI办公赛道竞争，迫使Microsoft 365 Copilot、Google Workspace AI等加速开放API与深度集成；中期看，推动‘AI就绪型应用’标准形成——未来SaaS产品若无法与主流AI工作空间（如ChatGPT资料空间、Microsoft Loop）无缝互操作，将面临用户流失风险；长期看，它正在定义新一代人机协作基础设施：当团队知识沉淀于AI可理解的动态页面中，组织记忆将具备自我演化与主动服务的能力，这或将重塑企业知识管理、项目交付与人才协作的基本逻辑。",
-      "category": "AI",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/008/530.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-09-29T14:10:00+00:00",
-      "created_at": "2026-09-29T18:26:43.458152+00:00"
-    },
-    {
-      "id": "c7b8844c-2bd9-4fa5-817b-3e2513ece914",
-      "title": "OpenAI推‘Sign in with ChatGPT’：构建跨平台身份认证新标准",
-      "summary": "OpenAI推出‘使用ChatGPT登录’功能，允许用户以ChatGPT账户一键认证第三方应用，首批合作方包括Notion、GitLab、Vercel等，仅共享基础身份信息，不泄露对话与账单数据。",
-      "key_points": [
-        "支持姓名、邮箱、头像三项最小化数据共享",
-        "首批接入Airtable、HubSpot、Supabase等10+主流开发与协作平台",
-        "企业版由管理员统一控制启用策略"
-      ],
-      "full_content": "&lt;p&gt;Jowi Morales is a writer and journalist covering the tech beat since 2021. However, he’s been interested in technology far earlier than that. He started discovering desktop computers when his father brought home a Windows 95 PC, but his first real experience working under the hood of the PC was when the old computer’s hard drive was filled to the brim in the year 2000. He deleted the Windows folder to attempt to rectify the situation, which led to his dad buying a new desktop PC. Since then, he learned a lot more about computers, and he’s always been the go-to tech expert for his family and friends.&lt;/p&gt;&lt;p&gt;Jowi primarily uses a Windows workstation and an Android phone, but he also bought into the Apple ecosystem with the 6th-gen iPad, iPhone 14 Pro Max, and the M1 MacBook Air. Today, Jowi covers hardware and software from Redmond and Cupertino, while also looking at the tech industry in general.&lt;/p&gt;&lt;p&gt;Aside from covering technology, Jowi is an avid photographer and writes about automobiles, aviation, and tanks. You can find his bylines at &lt;a href=&quot;https://www.makeuseof.com/author/jowi-morales/&quot;&gt;MakeUseOf&lt;/a&gt;, &lt;a href=&quot;https://www.slashgear.com/author/jowimorales/&quot;&gt;SlashGear&lt;/a&gt;, and, of course, &lt;a href=&quot;https://www.tomshardware.com/author/jowi-morales&quot;&gt;Tom’s Hardware&lt;/a&gt;.&lt;/p&gt;",
-      "ai_summary": "发生了什么：OpenAI在DevDay 2026正式上线‘Sign in with ChatGPT’（使用ChatGPT登录）功能，这是一种基于OAuth 2.0标准的去中心化身份认证方案。用户可在支持网站点击该选项，授权后仅向第三方应用传递姓名、电子邮件地址及头像（如有）三项基础信息，严格隔离对话历史、记忆、文件、支付凭证等敏感数据。目前该功能已向全球所有认证用户开放，并率先接入Airtable、GitLab、HubSpot、Notion、Supabase、Vercel等六家头部开发与协作平台，后续将扩展至更多插件与合作伙伴生态。\n\n为什么重要：在数字身份碎片化与隐私焦虑加剧的当下，该功能直击两大痛点：一是用户需为每个应用单独注册、管理密码的‘身份疲劳’；二是企业对第三方登录数据滥用的合规担忧。OpenAI此举并非简单复刻‘Google登录’，而是依托其全球最大AI用户群（超2亿月活）与高信任度账户体系，试图构建一个以AI原生身份为核心的新认证层。其最小化数据原则（仅三项）与明确的数据隔离承诺，符合GDPR、CCPA等全球主流隐私法规要求，为AI时代身份基础设施提供了可信范本。\n\n对行业有什么影响：首先，将加速‘AI身份’成为下一代互联网基础协议——当ChatGPT账户成为数亿用户的默认数字ID，其他平台若拒绝接入，可能面临用户增长瓶颈；其次，倒逼身份提供商（如Auth0、Okta）升级AI兼容能力，支持对AI账户的验证与权限映射；最后，为Web3与去中心化身份（DID）提供现实锚点：OpenAI虽未采用区块链，但其开放、标准化、用户可控的设计理念，与DID运动目标高度一致，可能催生‘链上AI身份’等融合创新。长远看，这或是OpenAI从AI模型公司迈向AI基础设施巨头的关键一步。",
-      "category": "AI",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/008/529.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-09-29T13:30:00+00:00",
-      "created_at": "2026-09-29T18:26:43.45816+00:00"
-    },
-    {
-      "id": "eca16575-57e0-44ad-9217-78fb8daa54ec",
-      "title": "中国生成式AI用户破7亿，国产算力集群迈入十万卡级新阶段",
-      "summary": "《生成式人工智能应用发展报告（2026）》显示，我国生成式AI用户超7亿，普及率超50%；全国产10万卡AI超集群已投运，算力规模达2185EFLOPS。",
-      "key_points": [
-        "生成式AI用户达7.02亿，智能问答使用率达76%",
-        "首个全国产10万卡AI超集群投入运行，全栈自主可控",
-        "AI已贯通工业研发、生产、质检全链条，制造业应用普及率超30%"
-      ],
-      "full_content": "Montage Technology has started mass producing its fastest CKD chips to date, hitting 9200 MT/s on mainstream &amp; 8000 MT/s on DDR5 RDIMMs. China Amps Up Its Memory Game With Montage Technology's Latest 9200 MT/s &amp; 8000 MT/s DDR5 Clock Driver Chips While memory shortages continue to persist, memory manufacturers continue to amp up their game. Faster memory modules are already in the works despite the fact that prices are on the rise, and almost the entirety of the consumer market is facing drastic price hikes. And with the rise of AI, memory demand is rising tremendously. In all of [&hellip;] Read full article at https://wccftech.com/china-montage-technology-mass-producing-ddr5-9200-mtps-enterprise-8000-mtps-ckd/",
-      "ai_summary": "发生了什么：2026年9月29日，中国互联网络信息中心（CNNIC）在第七届中国互联网基础资源大会上发布《生成式人工智能应用发展报告（2026）》。数据显示，截至2026年上半年，我国生成式AI用户规模达7.02亿人，占网民总数超50%；智能问答为最主流应用（76%用户使用），图片/视频处理、办公提效类应用渗透率分别达47.8%与32.5%。尤为关键的是，我国首个全国产10万卡人工智能超集群已正式投入运行——其芯片（昇腾/寒武纪）、计算框架（MindSpore/PaddlePaddle）、存储、网络、散热等软硬件全部实现自主可控，算力总规模达2185 EFLOPS（同比激增177%），标志着中国AI基础设施正式迈入‘十万卡级’部署新纪元。\n\n为什么重要：该报告不仅呈现用户规模数据，更揭示了中国AI发展的深层结构性转变：从‘技术追赶’转向‘生态主导’。10万卡全栈国产集群的落地，意味着中国已具备独立支撑万亿参数大模型训练与推理的底层能力，摆脱对英伟达H100/A100 GPU及DGX超算的依赖；而‘神农’‘谷雨’等农业大模型、‘具身智能机器人超400款’等成果，则体现AI正从消费互联网向实体经济深度渗透，政策重心也从‘技术攻关’全面转向‘场景落地+规范治理’双轮驱动。\n\n对行业有什么影响：对芯片厂商，国产AI芯片（如昇腾910B、寒武纪MLU370）将加速替代进口GPU，带动国产存算一体、光计算等新型架构研发；对云服务商，需重构AI服务架构以适配国产算力集群；对开发者，开源模型（DeepSeek、Qwen）与国产工具链（ModelScope、OpenI）的成熟，将大幅降低AI应用开发门槛；对全球格局，中国‘AI+行业’规模化落地经验（如钢铁质检、电网调度）正成为输出标准，挑战西方以通用大模型为中心的发展范式。但报告亦隐含挑战：高质量数据集（12万个）与算力、模型的协同仍需加强，数据要素市场化配置机制亟待完善。",
-      "category": "AI",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/008/245.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-09-29T05:45:06+00:00",
-      "created_at": "2026-09-29T06:27:37.74714+00:00"
     }
   ]
 }
