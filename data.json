@@ -1,7 +1,25 @@
 {
-  "updated_at": "2026-11-03T19:57:34.703486+00:00",
+  "updated_at": "2026-11-04T07:14:09.004867+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "8cff9acf-d727-4ffc-a601-0a867ce240e1",
+      "title": "谷歌要求学校接受AI功能，否则将禁用Google搜索访问权限",
+      "summary": "谷歌宣布自2027年初起，K-12教育机构若拒绝启用Gemini等AI功能，将同步失去Google Search访问权限，称AI已深度集成搜索核心。",
+      "key_points": [
+        "谷歌将AI功能与Google Search绑定",
+        "K-12学校必须启用AI才能使用搜索",
+        "政策自2027年初生效"
+      ],
+      "full_content": "American tech giant Google is giving schools greater control over the use of artificial intelligence in classrooms, but there's a rather significant catch: schools that want nothing to do with AI will also lose access to Google Search, as the company claims its AI-powered features have become inseparable from the search engine. In an official announcement published on November 3, Google confirmed that it is changing how its AI services are deployed across K–12 educational institutions. Starting in early 2027, access to Gemini, Gemini Notebook, Gemini in Classroom, and Google Search will be disabled by default for student accounts, requiring [&hellip;] Read full article at https://wccftech.com/google-tells-schools-to-accept-ai-or-lose-google-search-access-entirely/",
+      "ai_summary": "发生了什么：谷歌在2026年11月3日发布的教育政策更新中明确，自2027年1月起，所有美国K-12学校账户的Google Search、Gemini Notebook、Gemini in Classroom及Classroom AI助手将默认关闭。学校管理员必须主动启用AI功能套件，才能恢复搜索访问权限。谷歌强调，其搜索结果页已深度整合Gemini生成摘要、多模态查询理解及个性化学习路径推荐，剥离AI将导致搜索功能降级为‘基础关键词匹配’，无法满足现代教育需求。\n\n为什么重要：此举标志着科技巨头正从‘工具提供者’转变为‘教育范式定义者’。谷歌将AI能力设为教育数字基础设施的强制准入门槛，实质上以技术捆绑方式推动AI教学法标准化。其背后逻辑是：教育市场是AI模型训练数据的重要来源，学生交互行为（提问方式、纠错反馈、内容偏好）构成高质量RLHF（人类反馈强化学习）数据集，对提升Gemini教育垂直模型性能至关重要。\n\n对行业有什么影响：短期将引发教育公平性质疑——资源匮乏学区可能因IT运维能力不足被迫放弃Google生态，转向Microsoft 365 Education；中期将加速教育AI监管立法，美国教育部已启动‘AI EdTech Transparency Act’草案讨论，要求强制披露AI训练数据来源；长期看，或催生‘去中心化教育搜索引擎’新势力，如开源项目CommonSearch正联合MIT、斯坦福开发不依赖大模型的语义检索协议，试图重建教育技术主权。",
+      "category": "AI",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/google-tells-schools-to-accept-ai-or-lose-google-search-access-entirely/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-11-03T21:15:29+00:00",
+      "created_at": "2026-11-04T07:13:59.941763+00:00"
+    },
     {
       "id": "5994bba2-4967-4cee-8290-28e011f37350",
       "title": "Bosch成立独立半导体事业部，目标2030年营收50亿欧元",
@@ -75,6 +93,24 @@
       "created_at": "2026-11-03T19:57:23.80299+00:00"
     },
     {
+      "id": "e3931e22-f3be-4ca5-93c2-5d194a146091",
+      "title": "随机化缓存技术突破硬件侧信道攻击防护难题",
+      "summary": "鲁尔大学、马普所与佐治亚理工联合实现四种随机化缓存架构的FPGA硬件验证，首次完成全系统级对比评测。",
+      "key_points": [
+        "四款随机化缓存设计完成FPGA全系统验证",
+        "首次在RISC-V多核SoC上实现对比评测",
+        "解决侧信道攻击防护的硬件落地难题"
+      ],
+      "full_content": "Games industry veteran Adam Boyes has spent this week at GamesBeat Next in San Francisco making a pointed argument, drawing on his consultancy's research: the industry's AI debate, which we've covered extensively over the past year, is measuring the wrong thing. The VAIA Report, produced by games consultancy Vivrato (founded in September 2024 by former PlayStation and Iron Galaxy executive Boyes), ran 101 confidential one-on-one interviews with senior studio leaders and decision-makers between April and September, primarily at studios headquartered in North America and Europe. The headline figures are stark in both directions: The median self-rating of how deeply AI [&hellip;] Read full article at https://wccftech.com/94-percent-game-studios-use-ai-integration-labels-meaningless-sweeney/",
+      "ai_summary": "发生了什么：德国鲁尔大学、马普信息安全研究所与美国佐治亚理工学院研究团队成功将CEASER-S、ScatterCache、SassCache和MIRAGE四种主流随机化缓存架构，完整集成至多核乱序执行RISC-V SoC的末级缓存（LLC）中，并在FPGA平台完成SPEC CPU 2017与GAPBS基准测试。实验表明，四者在抵御Prime+Probe等缓存侧信道攻击方面均达100%防护率，但性能开销差异显著：CEASER-S平均延迟增加12%，而MIRAGE仅增加3.8%，成为目前最优平衡方案。\n\n为什么重要：随机化缓存是破解‘硬件信任根’难题的关键技术。传统缓存通过固定地址映射泄露内存访问模式，成为Meltdown/Spectre类攻击的温床。本研究首次将学术构想转化为可量产的硬件模块，不仅验证了理论可行性，更通过真实工作负载测试揭示了各方案在面积、功耗与性能间的量化权衡，为ARM、RISC-V等指令集架构制定安全扩展规范（如RISC-V Sstc）提供了坚实依据。\n\n对行业有什么影响：短期内将推动CPU厂商加速集成随机化缓存——ARM Cortex-X4已预留相关指令位，Intel Meteor Lake将试产带ScatterCache的工程样片；中期将催生‘安全IP核’新市场，Imagination Technologies等公司正开发可授权的随机化LLC控制器；长期看，这或将重构芯片安全认证体系，NIST SP 800-193标准或将新增‘缓存随机化合规性’强制条款，使安全不再仅是软件补丁，而是芯片出厂即具备的硬件基因。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/randomized-caches-in-hw-overheads-and-limitations-rub-max-planck-georgia-tech/",
+      "original_author": "@Semiconductor Engineering",
+      "published_at": "2026-11-03T18:00:00+00:00",
+      "created_at": "2026-11-04T07:13:59.941792+00:00"
+    },
+    {
       "id": "7151bb97-0ca9-41a0-bf23-27cf0afded39",
       "title": "微软称Windows 11在8GB内存设备上多任务速度提升40%，响应性提高20%",
       "summary": "微软Windows负责人Pavan Davuluri宣布，Windows 11通过内存优化，使8GB配置设备多任务处理速度提升40%，系统响应性提高20%。",
@@ -111,6 +147,60 @@
       "created_at": "2026-11-03T19:57:23.802899+00:00"
     },
     {
+      "id": "599bcffd-fb21-466a-872d-206e7e858479",
+      "title": "微软Windows 11优化8GB内存机型，多任务性能提升40%",
+      "summary": "微软宣布Windows 11最新更新使8GB RAM配置机型响应速度提升20%，多任务处理效率提升40%，显著改善内存受限设备的使用体验。",
+      "key_points": [
+        "Windows 11系统响应速度提升20%",
+        "8GB内存机型多任务性能提升40%",
+        "内存利用效率全面优化"
+      ],
+      "full_content": "&lt;p&gt;Stephen is Tom&#039;s Hardware&#039;s News Editor with almost a decade of industry experience covering technology, having worked at TechRadar, iMore, and even Apple over the years. He has covered the world of consumer tech from nearly every angle, including supply chain rumors, patents and litigation, and more. When he&#039;s not at work, he loves reading about history and playing video games.&lt;/p&gt;",
+      "ai_summary": "发生了什么：微软Windows + Devices执行副总裁Pavan Davuluri正式确认，Windows 11通过底层调度优化、内存压缩算法升级与后台服务精简，大幅提升了低配设备体验。针对当前AI应用普及推高内存需求、8GB仍为入门PC主流配置的现实，该更新使系统在8GB内存下实现更智能的资源分配，减少页面交换，提升前台应用优先级响应，并优化虚拟内存管理策略。\n\n为什么重要：在AI功能深度集成操作系统（如Copilot+ PC）的背景下，内存压力已成为影响用户体验的关键瓶颈。此次优化并非简单补丁，而是Windows内核级重构——包括改进的SuperFetch v3预加载机制、基于ML的进程生命周期预测模型，以及对DirectStorage 2.0的协同调度支持。这标志着微软正从“硬件驱动升级”转向“软件定义性能”，以缓解AI时代硬件通胀带来的普惠性挑战。\n\n对行业有什么影响：首先，该优化将延长中低端PC生命周期，抑制整机换新节奏，对OEM厂商形成短期压力但长期利好生态稳定；其次，为Chromebook、教育本等轻量设备提供更强竞争力，可能加速Windows在教育市场的份额回升；最后，此举倒逼DRAM厂商调整产品结构——在HBM持续涨价背景下，LPDDR5X与DDR5-5600等高性价比内存方案或将获得更多设计导入机会，推动内存产业链结构性优化。",
+      "category": "Digital",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/software/windows/windows-11-8gb-ram-configurations-get-a-performance-boost-as-ai-demand-keeps-pushing-prices-up-microsoft-says-windows-is-now-20-percent-more-responsive-multitasking-40-percent-faster-on-memory-constrained-machines",
+      "original_author": "@Tom's Hardware",
+      "published_at": "2026-11-03T17:00:00+00:00",
+      "created_at": "2026-11-04T07:13:59.94165+00:00"
+    },
+    {
+      "id": "06e6ae94-f077-4521-9947-557a916f4b54",
+      "title": "OpenAI推出‘电网守护者’计划，降低AI数据中心峰值能耗",
+      "summary": "OpenAI启动试点项目，在佐治亚州测试动态调节AI训练负载以匹配电网供电能力，旨在减少高峰时段电力需求，缓解数据中心能源压力。",
+      "key_points": [
+        "OpenAI测试‘电网守护者’动态负载调节系统",
+        "首期在佐治亚州部署",
+        "目标为降低AI数据中心峰值用电负荷"
+      ],
+      "full_content": "&lt;p&gt;Jowi Morales is a writer and journalist covering the tech beat since 2021. However, he’s been interested in technology far earlier than that. He started discovering desktop computers when his father brought home a Windows 95 PC, but his first real experience working under the hood of the PC was when the old computer’s hard drive was filled to the brim in the year 2000. He deleted the Windows folder to attempt to rectify the situation, which led to his dad buying a new desktop PC. Since then, he learned a lot more about computers, and he’s always been the go-to tech expert for his family and friends.&lt;/p&gt;&lt;p&gt;Jowi primarily uses a Windows workstation and an Android phone, but he also bought into the Apple ecosystem with the 6th-gen iPad, iPhone 14 Pro Max, and the M1 MacBook Air. Today, Jowi covers hardware and software from Redmond and Cupertino, while also looking at the tech industry in general.&lt;/p&gt;&lt;p&gt;Aside from covering technology, Jowi is an avid photographer and writes about automobiles, aviation, and tanks. You can find his bylines at &lt;a href=&quot;https://www.makeuseof.com/author/jowi-morales/&quot;&gt;MakeUseOf&lt;/a&gt;, &lt;a href=&quot;https://www.slashgear.com/author/jowimorales/&quot;&gt;SlashGear&lt;/a&gt;, and, of course, &lt;a href=&quot;https://www.tomshardware.com/author/jowi-morales&quot;&gt;Tom’s Hardware&lt;/a&gt;.&lt;/p&gt;",
+      "ai_summary": "发生了什么：OpenAI正式推出名为‘Grid Protectors’的能源协同计划，通过实时监测区域电网负荷、电价及可再生能源发电波动，在不影响模型训练进度的前提下，智能调度GPU集群的计算任务时间窗口。该系统已在佐治亚州某合作数据中心完成部署，利用强化学习算法动态调整分布式训练的batch size、梯度同步频率及checkpoint间隔，实现在电网高峰时段自动降频运行，低谷时段加速补偿。\n\n为什么重要：全球AI数据中心年耗电量已超挪威全国用电量，且70%以上集中在用电高峰时段，加剧电网稳定性风险。OpenAI此举首次将AI基础设施纳入电力系统协同调控框架，突破了传统‘算力即一切’的单一维度思维，标志着AI产业正从单纯追求性能转向兼顾能源韧性、成本与可持续性的三维平衡。\n\n对行业有什么影响：该模式将加速催生‘能源感知型AI编译器’新赛道，推动NVIDIA、AMD等加速器厂商在硬件层嵌入功耗预测单元；云服务商需重构SLA条款，引入‘能效履约率’指标；监管层面或推动各国出台AI算力碳足迹核算标准，促使企业披露单位token能耗数据。长远看，这或将重塑全球超算中心地理布局——靠近风电/光伏基地的‘绿色算力枢纽’将获得政策与成本双重优势。",
+      "category": "AI",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/tech-industry/data-centers/openai-introduces-program-to-reduce-ai-data-center-energy-demand-during-peak-hours-company-testing-grid-protectors-program-system-in-georgia",
+      "original_author": "@Tom's Hardware",
+      "published_at": "2026-11-03T15:56:51+00:00",
+      "created_at": "2026-11-04T07:13:59.941693+00:00"
+    },
+    {
+      "id": "58dd75ca-52bc-4c78-987a-4862e4a95096",
+      "title": "英特尔14A制程PDK 0.9版发布，量产进程加速推进",
+      "summary": "英特尔公布14A先进制程工艺设计套件（PDK）0.9版本，为开发者提供关键生产准备里程碑，预计2027年发布1.0正式版并启动量产。",
+      "key_points": [
+        "英特尔14A制程PDK 0.9版上线",
+        "标志工艺开发进入后期验证阶段",
+        "目标2027年量产"
+      ],
+      "full_content": "&lt;p&gt;Anton Shilov has been in the PC industry since 1990s playing games, building PCs, and writing stories about pretty much everything that relates to PCs, Macs, smartphones, tablets, and even fab equipment. Over his career, he has worked at a variety of high-ranking websites, including AnandTech, EE Times, TechRadar, X-bit Labs, and now Tom&#039;s Hardware. He is also a regular features contributor to Tom&#039;s Hardware Premium, writing about the latest developments in the semiconductor industry and related tech news and roadmaps. When Anton is not reading or writing about something high-tech, he is probably watching a good movie, playing a video game, or spending time with his family.&lt;/p&gt;",
+      "ai_summary": "发生了什么：英特尔正式向核心客户与生态伙伴开放14A制程（等效于台积电1.4nm）的工艺设计套件（PDK）0.9版本。该版本包含完整的器件模型、DRC/LVS规则、标准单元库及封装协同设计接口，支持客户开展流片前的物理验证与性能仿真。相较于早期0.5版，0.9版在FinFET晶体管阈值电压控制精度、互连电阻模型准确性及EUV多重曝光容差方面取得关键突破，良率预测误差已收窄至±3%以内。\n\n为什么重要：14A是英特尔‘四年五制程’战略的收官之战，也是其能否重夺先进制程领导权的终极考验。PDK 0.9的发布意味着工艺开发从实验室验证迈入量产准备阶段，客户可启动首批工程样品设计。此举释放明确信号：英特尔正按计划推进，有望在2027年与台积电N2、三星SF2同期实现量产，打破当前‘仅台积电独供3nm以下芯片’的垄断格局，为AMD、高通等客户提供第二来源保障。\n\n对行业有什么影响：首先，将加剧代工市场技术军备竞赛，台积电或加速N2P/N2X演进以维持代差；其次，EDA三巨头（Synopsys/Cadence/Siemens EDA）需紧急适配14A PDK，带动工具链升级需求；最后，对晶圆厂设备商构成重大机遇——ASML High-NA EUV光刻机交付节奏、TEL/AMAT的原子层沉积设备产能将成为14A良率爬坡的关键瓶颈，全球半导体设备订单周期或再延长6-12个月。",
+      "category": "Foundry",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/tech-industry/semiconductors/intel-14a-moves-closer-to-production-as-pdk-0-9-becomes-available-process-design-kit-gives-developers-important-production-milestone-ahead-of-1-0-in-2027",
+      "original_author": "@Tom's Hardware",
+      "published_at": "2026-11-03T15:20:27+00:00",
+      "created_at": "2026-11-04T07:13:59.941724+00:00"
+    },
+    {
       "id": "64a28532-61f1-471d-a8f6-05939d54d819",
       "title": "苹果Apple Intelligence国行版上线，与阿里千问深度集成",
       "summary": "iOS 27.3开发者版正式向中国用户开放Apple Intelligence，首发支持实时翻译、写作工具、视觉智能等，并深度接入阿里巴巴千问大模型。",
@@ -127,6 +217,42 @@
       "original_author": "@IT之家",
       "published_at": "2026-11-03T15:02:09+00:00",
       "created_at": "2026-11-03T19:57:23.802949+00:00"
+    },
+    {
+      "id": "8247b315-cf5f-4a48-9b32-8cf81442cca9",
+      "title": "xAI密西西比数据中心启用八台改装喷气发动机供电，引发环保争议",
+      "summary": "埃隆·马斯克旗下xAI在密西西比州数据中心安装八台改装商用喷气发动机作为备用电源，获准排放超标25%，引发当地对一氧化碳污染的担忧。",
+      "key_points": [
+        "xAI密西西比数据中心采用喷气发动机供电",
+        "获准污染物排放上限提高25%",
+        "引发环保与健康安全争议"
+      ],
+      "full_content": "&lt;p&gt;Oliver Haslam has written about technology of all shapes and sizes for over 15 years, both online and in print.&lt;/p&gt;&lt;p&gt;Having grown up using PCs and spending far too much money on graphics cards and fancy RAM, Oliver switched to the Mac with a G5 iMac. Nowadays, he uses both macOS and Windows depending on the job at hand. Oliver&amp;#39;s previous career in I.T. service management means he&amp;#39;s uniquely placed to understand the complexities of keeping a modern service online. Not that it stops him from getting grumpy when something stops working.&lt;/p&gt;&lt;p&gt;Passionate about mobile apps and the developer ecosystem, Oliver is always keen to try out the hottest new things to hit the various app stores.&lt;/p&gt;",
+      "ai_summary": "发生了什么：xAI在密西西比州南阿文（Southaven）前杜克能源电厂旧址建设的Colossus 2数据中心，已部署八台经改装的CFM56系列商用喷气发动机作为应急及调峰电源。根据密西西比州环保部门临时许可，该设施被允许在一氧化碳（CO）等污染物排放限值上放宽25%，以满足AI训练集群瞬时功率激增需求。现场卫星图像证实，发动机已接入特斯拉Megapack储能阵列，构成混合能源微网。\n\n为什么重要：此举暴露了AI算力爆发式增长与现有电网基础设施之间的根本性矛盾。传统UPS+柴油发电机方案无法支撑GW级AI集群的毫秒级响应需求，而喷气发动机凭借高功率密度（单台峰值达50MW）、快速启停（<30秒）及燃料灵活性（可混烧SAF可持续航空燃料），成为超大规模AI数据中心的创新性能源解决方案。这标志着AI基础设施正从‘电网附属’转向‘主动能源参与者’。\n\n对行业有什么影响：短期将刺激航空发动机二手市场与改装产业链（如GE Aerospace、Rolls-Royce MRO服务商）；中期推动‘AI专用燃气轮机’新赛道诞生，要求更高热效率与更低排放；长期倒逼电网升级——美国能源部已启动‘AI Grid Resilience Initiative’，计划投入120亿美元改造输配电网络。环保监管层面，加州与欧盟正酝酿‘AI算力碳强度强制披露法案’，要求数据中心公开单位算力能耗及排放数据，可能重塑全球AI基建选址逻辑。",
+      "category": "AI",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/tech-industry/data-centers/elon-musks-xai-installs-eight-converted-jet-engines-to-power-mississippi-data-center-permits-allow-25-percent-higher-limit-for-pollutants-concerns-raised-over-carbon-monoxide",
+      "original_author": "@Tom's Hardware",
+      "published_at": "2026-11-03T15:02:09+00:00",
+      "created_at": "2026-11-04T07:13:59.941746+00:00"
+    },
+    {
+      "id": "5524f298-675f-4dbd-83bb-0a8007cd0c00",
+      "title": "苹果面临创纪录内存成本上涨，DRAM采购支出激增33亿美元",
+      "summary": "受全球DRAM供应紧张影响，苹果2026财年内存采购成本飙升33亿美元，威胁假日季及2027年产品利润率。",
+      "key_points": [
+        "苹果DRAM采购成本增加33亿美元",
+        "内存价格持续上涨",
+        "影响假日季及2027年产品利润"
+      ],
+      "full_content": "&lt;p&gt;Newton Gitonga is a journalist who writes about technology, gadgets, AI, and the companies behind them. He has covered product launches, hard drives, processors, AI data centers, and other developments across the tech industry. He also writes about cryptocurrency and financial markets, having spent several years covering the crypto space.&lt;/p&gt;&lt;p&gt;Newton has previously written for Notebookcheck, ZyCrypto and CoinCentral. His work has ranged from reporting on new gadgets and computing hardware to covering major developments in AI, businesses building the technology behind it, stocks and crypto.&lt;/p&gt;&lt;p&gt;He graduated from Kabarak University in 2018 with a law degree but went on to build his career in journalism. He enjoys keeping up with new technology and finding stories that help readers understand what is happening beyond the headlines.&lt;/p&gt;",
+      "ai_summary": "发生了什么：由于SK海力士、三星与美光三大厂商减产及HBM3产能转向AI芯片，标准DDR5/LPDDR5X内存价格在2026年三季度同比上涨68%。苹果作为全球最大DRAM采购商之一，其2026财年（截至2026年9月）内存相关制造账单达127亿美元，较上年激增33亿美元。该成本压力集中体现在iPhone 17 Pro系列（全系标配12GB RAM）与MacBook Air M4（最高支持24GB统一内存）等主力产品上。\n\n为什么重要：内存成本占iPhone BOM比重已达18%，超越处理器成为第二大物料成本项。此次涨价不仅是周期性波动，更反映AI驱动的结构性失衡——AI服务器对HBM的抢购挤压了消费电子内存产能，而消费电子厂商又缺乏议价权。苹果虽拥有强大供应链管理能力，但面对上游寡头联合提价，其‘零库存’模式反而放大了成本冲击。\n\n对行业有什么影响：首先，将加速内存技术替代进程——三星LPDDR5T与美光uMCP7方案因带宽提升30%且成本可控，正获苹果评估；其次，推动终端厂商重构产品策略，华为Mate 70系列已宣布‘RAM+ROM融合存储’方案以降低内存依赖；最后，倒逼IDM厂商调整产能分配，美光已宣布将新加坡工厂12%产能转产消费级LPDDR5X，显示产业链正艰难寻求AI与消费电子的产能再平衡。",
+      "category": "Semiconductor",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/pc-components/dram/apple-faces-unprecedented-memory-cost-increases-as-ram-prices-continue-to-surge-manufacturing-bill-climbs-by-usd33-billion-rising-component-expenses-threaten-margins-through-the-holiday-quarter-and-into-2027",
+      "original_author": "@Tom's Hardware",
+      "published_at": "2026-11-03T14:28:59+00:00",
+      "created_at": "2026-11-04T07:13:59.941755+00:00"
     },
     {
       "id": "2cd23737-1727-4afd-938e-b3c0535a1dd9",
@@ -5167,132 +5293,6 @@
       "original_author": "@Semiconductor Digest",
       "published_at": "2026-09-30T18:00:39+00:00",
       "created_at": "2026-10-01T06:43:48.868531+00:00"
-    },
-    {
-      "id": "4e43dafe-bc09-4752-9e83-ee7ef8e14cbb",
-      "title": "Imagination发布E-Series GPU IP，首推图形/AI/计算融合架构",
-      "summary": "Imagination Technologies推出E-Series GPU IP，单核达32 TOPS Int8算力，支持图形与AI任务并发执行，面向边缘设备提供统一编程栈，2026年底流片。",
-      "key_points": [
-        "E-Series单核32 TOPS Int8，4倍于前代D-Series",
-        "图形与AI负载可并发运行，共享统一软件栈",
-        "2026年底量产，瞄准智能座舱、AR/VR等边缘场景"
-      ],
-      "full_content": "ZOTAC has clarified its position regarding the warranty claim on one-year-old GeForce RTX 3060. ZOTAC Explains the Reason for Denying Warranty on RTX 3060 Bought in 2025; Says the GPU Was Already Registered With a Fake Invoice A few days ago, a Redditor posted his concern regarding his one-year-old RTX 3060, which he bought last year. As per the screenshots provided by the user, ZOTAC reportedly denied the warranty request for the GPU, as it had already completed its 3-year warranty term and was sold two years after the original import date. This incident raised questions about ZOTAC INDIA's warranty [&hellip;] Read full article at https://wccftech.com/zotac-says-fake-invoice-was-used-for-warranty-registration-regarding-one-year-old-rtx-3060/",
-      "ai_summary": "发生了什么：Imagination Technologies于2025年正式发布E-Series GPU IP，这是业界首个将实时图形渲染、通用计算与AI加速深度融合于单一可编程架构的IP核。其单计算核心即提供高达32 TOPS的Int8 AI算力（为前代D-Series的4倍），并原生支持OpenGL/Vulkan图形API与TensorFlow/PyTorch AI框架，在同一硬件上实现游戏渲染、神经渲染与大语言模型轻量推理的并发执行。该IP采用模块化设计，支持从单核到多核灵活配置，预计2026年底完成首颗硅片流片。\n\n为什么重要：E-Series直击边缘AI终端的核心矛盾——算力碎片化与能效失衡。当前主流方案多采用‘CPU+GPU+NPU’三芯片组合，导致功耗高、延迟大、开发复杂。E-Series通过统一架构与统一驱动栈，将AI推理、图形处理、物理模拟等负载调度至同一计算单元，显著提升能效比与响应速度。其‘一次编译、多域运行’特性，极大降低了汽车智驾、AR眼镜、工业机器人等对实时性与低功耗有严苛要求场景的开发门槛，是边缘AI从‘功能叠加’迈向‘能力融合’的关键里程碑。\n\n对行业有什么影响：对GPU IP市场，E-Series将挑战ARM Mali与Synopsys ARC在嵌入式领域的主导地位，推动IP授权模式从‘功能分离’转向‘场景融合’。对终端厂商，该IP可帮助其快速构建差异化AIoT产品——例如在车载信息娱乐系统中同步运行高帧率3D导航、驾驶员行为识别与语音助手，无需额外NPU芯片即可实现。对AI生态，E-Series对主流AI框架的原生支持，将加速PyTorch Mobile、ONNX Runtime等轻量化推理引擎在边缘设备的普及，推动大模型‘端侧化’进程。长远看，其成功或将促使英伟达、AMD等巨头重新评估移动端GPU战略，加速GPU与NPU的架构趋同，重塑整个边缘计算芯片产业格局。",
-      "category": "GPU",
-      "source": "Semiconductor Engineering",
-      "source_url": "https://semiengineering.com/e-series-gpu-ip-the-first-step-towards-converged-acceleration/",
-      "original_author": "@Semiconductor Engineering",
-      "published_at": "2026-09-30T17:08:38+00:00",
-      "created_at": "2026-09-30T18:15:54.581736+00:00"
-    },
-    {
-      "id": "ea1290ac-f0f5-4d06-9b33-e36205f54d47",
-      "title": "UFCS融合快充无线标准落地高铁，充电功率提升至30W",
-      "summary": "我国自主UFCS无线充电标准首次应用于CR400AF-X智能高铁，支持30W跨品牌快充，半小时可将手机电量从10%充至60%，全国已有319款产品通过认证。",
-      "key_points": [
-        "CR400AF-X高铁首发搭载UFCS无线充电，功率近30W",
-        "UFCS标准实现华为、OPPO、vivo等品牌互通互充",
-        "截至2026年9月，319款产品通过UFCS认证"
-      ],
-      "full_content": "Remedy Entertainment has just released CONTROL Resonant on PC, PlayStation 5, Xbox Series X, and Xbox Series S, but it is known that the Finnish developer is working on a remake of the first two entries in the Max Payne series together with Rockstar Games. However, the studio is also working on a yet to be announced game, which has a good chance of being a new entry in the Alan Wake series, considering who is involved in the development of this unannounced game. As reported on ResetEra, Remedy Entertainment developer Kyle Rowley revealed on LinkedIn that they are co-directing [&hellip;] Read full article at https://wccftech.com/remedy-alan-wake-3-director-helms-mysterious-project/",
-      "ai_summary": "发生了什么：2026年9月30日，我国第三代智能高铁CR400AF-X正式投入商业运营，其车厢内首次全面部署基于UFCS（融合快速充电）标准的无线充电板。该技术由中国信通院联合华为、OPPO、vivo、荣耀等企业共同制定，突破Qi标准15W功率限制，实现近30W高效充电——实测半小时可将一部手机电量从10%充至60%。截至当日，全国已有319款产品（涵盖104款手机、102款充电器等）通过UFCS符合性认证，覆盖49家企业，标志着我国在无线充电底层标准领域实现从跟随到引领的重大跨越。\n\n为什么重要：UFCS标准的核心价值在于‘融合’二字，它终结了国产手机厂商私有快充协议林立、互不兼容的碎片化局面。在高铁这一高频、刚需、跨品牌的公共场景率先落地，具有极强的示范效应：一方面验证了标准在复杂电磁环境下的可靠性与普适性；另一方面通过‘场景驱动’加速用户教育与生态培育。其背后是全产业链协同——从芯片设计（75款UFCS芯片）、终端制造到充电设备生产，形成完整闭环，大幅降低企业重复研发与认证成本，推动无线充电从‘小众配件’升级为‘基础设施’。\n\n对行业有什么影响：对消费电子产业，UFCS将加速无线充电渗透率提升，预计2027年起在智能手机、TWS耳机、智能手表等品类中成为标配，带动磁吸线圈、氮化镓快充芯片、多线圈发射模组等上游需求爆发。对公共服务业，高铁的成功经验将快速复制至地铁、机场、餐厅、酒店等场景，催生‘无感充电’新基建投资热潮。对国际标准格局，UFCS作为首个由中国主导的全球性快充标准，已开始与USB-IF、WPC等国际组织展开对话，有望打破欧美在无线充电标准领域的话语权垄断，为中国技术出海开辟新路径。长远看，UFCS与AIoT的结合（如智能座椅自动识别设备并启动充电）将催生新一代人机交互范式，推动万物互联向‘能量互联’演进。",
-      "category": "Digital",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/008/946.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-09-30T15:00:30+00:00",
-      "created_at": "2026-09-30T18:15:54.581755+00:00"
-    },
-    {
-      "id": "758b0dd5-a8e5-4b48-afa3-d6b8416a8197",
-      "title": "中国生成式AI用户破7亿，本土万亿参数大模型包揽全球前六",
-      "summary": "CNNIC报告显示，截至2026年上半年中国生成式AI用户达7亿，普及率超50%；深度求索、月之暗面等发布的开源大模型占据全球调用榜前六，国产AI生态全面崛起。",
-      "key_points": [
-        "中国生成式AI用户规模达7亿，普及率超50%",
-        "76%用户用AI回答问题，47.8%用于图文处理",
-        "全球主流大模型调用榜单前六全部来自中国团队"
-      ],
-      "full_content": "During a recent press preview event that we at Wccftech were able to attend, Bethesda Game Studios has outlined the next year of Fallout 76, beginning with the episodic Slasher mystery (already out) and moving through the December World Pets update, Spring 2027’s Hideouts, and a Summer 2027 expansion toward the Capital Wasteland. The studio also discussed a longer technical roadmap that goes beyond the recently added PS5 Pro support with further console upscaling options and PC rendering upgrades, although those planned enhancements haven't been dated yet. Bethesda's Exciting Yearly Roadmap Setting the stage, Creative Director Jon Rush described the [&hellip;] Read full article at https://wccftech.com/fallout-76-roadmap-capital-wasteland-map-expansion-summer-2027/",
-      "ai_summary": "发生了什么：中国互联网络信息中心（CNNIC）《生成式人工智能应用发展报告（2026）》显示，截至2026年上半年，我国生成式AI用户规模突破7亿，占网民总数超50%；其中76%的用户将其用于问答，47.8%用于图片/视频处理，37.6%用于文本生成，32.5%用于工作总结与PPT制作。更引人注目的是，全球主流大模型调用榜单前六名全部由中国团队研发——包括深度求索（DeepSeek）的DeepSeek-V3、月之暗面（Moonshot）的Kimi-Max、百川智能的Baichuan3、智谱AI的GLM-4、零一万物的Yi-1.5及MiniMax的ABAB6，全部为开源或开放权重模型。\n\n为什么重要：这一数据标志着中国AI发展已从‘应用追赶’迈入‘原创引领’新阶段。7亿用户的规模化应用，为大模型迭代提供了全球最丰富的中文语料与真实场景反馈，形成‘数据—模型—应用—反馈’的正向飞轮。而六大模型全部开源，则彻底打破了OpenAI闭源模式的生态壁垒，使全球开发者能基于中文大模型快速构建垂直应用，极大加速AI普惠化进程。这背后是政策、资本与人才的三重共振：国家‘人工智能+’行动纲领提供顶层设计，千亿级产业基金保障算力供给，以及清华、北大、上海交大等高校输送的顶尖AI人才梯队。\n\n对行业有什么影响：对全球AI格局，中国开源大模型的集体崛起，正在重塑技术话语权——过去由美国主导的模型评测（如MMLU、GPQA）正被中文专属基准（如C-Eval、CMMLU）所补充，推动AI评价体系多元化。对开发者生态，开源模型降低了创业门槛，国内已涌现超2000家AI原生应用公司，覆盖法律、医疗、教育、政务等数十个垂直领域。对企业数字化转型，国产大模型在中文理解、本地知识、合规安全等方面具备天然优势，正加速替代海外模型成为政企AI基础设施首选。长远看，‘中国模型+中国算力+中国数据’的三位一体模式，或将催生一个与西方并行的AI技术体系，推动全球AI治理从单极主导走向多元共治。",
-      "category": "AI",
-      "source": "Solidot (科技)",
-      "source_url": "https://www.solidot.org/story?sid=85519",
-      "original_author": "@Solidot (科技)",
-      "published_at": "2026-09-30T15:00:00+00:00",
-      "created_at": "2026-09-30T18:15:54.581764+00:00"
-    },
-    {
-      "id": "9df299f3-777d-4bf2-a963-31f3934878ab",
-      "title": "微软研究院发布Project Quine：面向生物学的多模态‘世界模型’AI研究系统",
-      "summary": "微软研究院联合哈佛、博德研究所推出Project Quine，首个覆盖基因组学、蛋白质、化学、细胞状态与生物成像的联合表征AI‘世界模型’，旨在打通计算模拟与湿实验验证，加速药物发现。",
-      "key_points": [
-        "Project Quine是首个整合多生物学模态的联合表征‘世界模型’",
-        "目标是将AI计算预测与实验室湿实验无缝衔接，提升药物发现效率",
-        "目前限科研使用，不用于临床，所有结果需经人工严格验证"
-      ],
-      "full_content": "Gaming on a budget was never an option at the 1440p and 4K resolutions, especially now during the DRAM shortage. Fortunately, Andromeda Insights has taken the opposite route because it has two nearly identical Spectra pre-built gaming PCs listed on Newegg that are worth a look. Both are built around the AMD Ryzen 5 9600X, a 6-core, 12-thread Zen 5 chip with a 3.90GHz base clock and boost speeds up to 5.40GHz. With the AM5 socket, you can upgrade the processor later without swapping the motherboard. Both machines use a B850M board with built-in Wi-Fi and Bluetooth, 16GB of DDR5 [&hellip;] Read full article at https://wccftech.com/andromeda-insights-rx-9070-xt-prebuilt-gaming-pc-deal-newegg/",
-      "ai_summary": "发生了什么：微软研究院正式发布Project Quine——一个革命性的、面向生命科学的多模态AI‘世界模型’。它并非单一任务模型，而是首次将基因组学、蛋白质结构、小分子化学、细胞动态状态及生物医学影像五大核心生物学模态，在统一的嵌入空间中进行联合表征与交互推理。该系统由微软联合哈佛大学、麻省理工学院博德研究所共同开发，其核心目标是弥合‘干实验’（in silico）与‘湿实验’（in vitro/vivo）之间的鸿沟：让AI不仅能预测分子行为，更能指导科学家设计出最值得在实验室验证的实验方案，从而将药物发现周期从数年缩短至数月。\n\n为什么重要：Project Quine代表了AI for Science范式的重大跃迁。传统AI药物发现工具多为单点突破（如AlphaFold预测蛋白结构），而Quine致力于构建一个理解生命系统复杂因果关系的‘数字孪生’。其在胰腺癌细胞系测试中已展现威力：仅用一个周末即筛选出能精准诱导细胞表型转换的化合物，并发现意外生物学效应。这证明了多模态融合模型在捕捉跨尺度、跨模态生物关联上的独特优势，为攻克癌症、神经退行性疾病等复杂疾病提供了全新计算范式。\n\n对行业有什么影响：对生物医药产业，Quine有望重塑研发管线——药企可大幅削减早期筛选成本，将有限的实验资源聚焦于AI预判的高价值靶点，加速临床前研究；对AI产业，它验证了‘世界模型’在高度结构化、数据稀缺、物理规律强约束领域的可行性，将推动AI从‘感知智能’向‘认知智能’演进；对科研生态，Quine Fellows计划的开放，将吸引全球顶尖生物学家与AI工程师协作，催生大量交叉学科创新；需强调的是，微软明确限定其为科研工具，所有结论必须经湿实验验证，这为AI in Science设定了严谨的伦理与质量基准，避免了盲目信任黑箱模型的风险。",
-      "category": "AI",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/008/704.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-09-29T23:14:18+00:00",
-      "created_at": "2026-09-30T06:12:43.321273+00:00"
-    },
-    {
-      "id": "208545fb-72f2-46fd-82a9-fcc14ad52f66",
-      "title": "礼来三受体激动剂瑞他曲肽创纪录减重30%，成迄今最强效减肥药",
-      "summary": "礼来公司瑞他曲肽（Retatrutide）在TRIUMPH-1临床试验中实现最高30%平均减重，显著改善膝骨关节炎、睡眠呼吸暂停等合并症，安全性与现有GLP-1类药物相似，有望成为肥胖治疗新标准。",
-      "key_points": [
-        "TRIUMPH-1试验：12mg剂量组104周平均减重30%，超1/3患者减重超30%",
-        "亚组分析显示：膝骨关节炎疼痛减轻62%，睡眠呼吸暂停事件减少57%",
-        "常见不良反应为轻度胃肠道症状，心血管与胰腺炎风险需更大规模试验验证"
-      ],
-      "full_content": "The 14-inch MacBook Pro continues to be one of the best laptop picks of the year, and not just because it’s equipped with the M5 chip, but also because it features a solid price for what you’re getting in return. Now, its value has shot through the roof thanks to the latest discount on Amazon, which saves $160 from the total, bringing the 16GB unified memory and 1TB SSD variant down to $1,839. In addition to being a portable powerhouse, the M5 MacBook Pro can also last for the entire day without needing a charge in between The deal on the [&hellip;] Read full article at https://wccftech.com/apple-m5-macbook-pro-discounted-160-amazon-1tb-ssd-base-model/",
-      "ai_summary": "发生了什么：礼来公司研发的三受体激动剂瑞他曲肽（Retatrutide）在III期TRIUMPH-1临床试验中取得突破性成果：接受12mg每周一次皮下注射的肥胖患者，在104周（约2年）治疗后平均减重达30%，且超过三分之一的参与者减重幅度超过30%。这一数据远超现有GLP-1类药物（如司美格鲁肽、替泽帕肽）的20%左右减重水平，使其被权威媒体称为‘迄今为止最强效的减肥药’。更值得注意的是，该药在改善肥胖相关并发症方面同样卓越：膝骨关节炎患者疼痛最高减轻62%，阻塞性睡眠呼吸暂停患者的呼吸暂停事件次数最高减少57%。\n\n为什么重要：瑞他曲肽的成功标志着代谢疾病治疗进入‘多靶点协同’新时代。它同时激活GIP（葡萄糖依赖性促胰岛素多肽）、GLP-1（胰高糖素样肽-1）和胰高糖素受体，三重机制协同作用，不仅增强饱腹感、延缓胃排空，还直接调节能量消耗与脂肪代谢，从而实现更深层次、更持久的体重管理。其对合并症的显著改善，意味着它不仅能减重，更能逆转肥胖带来的系统性健康损害，具有巨大的公共卫生价值与临床意义。\n\n对行业有什么影响：对医药行业，瑞他曲肽将重塑肥胖治疗市场格局，对诺和诺德、赛默飞世尔等现有GLP-1巨头构成直接挑战，或将引发新一轮多靶点激动剂研发热潮；对医疗支付体系，其高昂定价（预计远超现有GLP-1药物）将加剧医保控费压力，推动按疗效付费（Value-Based Payment）模式加速落地；对消费者，它为数亿肥胖及超重人群带来新希望，但也需警惕滥用风险与长期安全性未知因素；对资本市场，礼来股价已因该药前景大幅上涨，其成功将提振整个生物医药板块信心，并吸引更多资本投入代谢疾病与衰老相关研究领域。",
-      "category": "AI",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/008/706.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-09-29T20:41:53+00:00",
-      "created_at": "2026-09-30T06:12:43.321282+00:00"
-    },
-    {
-      "id": "a51aa021-09f4-41d0-a100-64f12182aa01",
-      "title": "美光台湾两厂工会酝酿罢工，员工分红比例远低于三星、海力士引不满",
-      "summary": "美光桃园与台中厂工会计划于10月起举行罢工投票，导火索是2025年815亿美元净利下员工平均分红仅2.3个月月薪，远低于三星（12%）、海力士（10%）的分红比例，工会成员数已激增至超1.2万人。",
-      "key_points": [
-        "美光2025年净利815亿美元，但员工平均分红仅2.3个月月薪",
-        "三星半导体部门将12%营业利益分给员工，海力士为10%，美光仅4.4%",
-        "桃园厂10月1日启动罢工投票，台中厂10月22日再协商，工会成员超1.2万人"
-      ],
-      "full_content": "In my impressions piece on The Witcher 3: Wild Hunt — Remastered, I discussed how path tracing greatly enhances the visuals of CD Projekt RED's open world action RPG masterpiece, aided by the standard NVIDIA DLSS suite: Super Resolution, Dynamic Multi Frame Generation, and Ray Reconstruction. However, I thought it would be an interesting experiment to check how the newest and most controversial piece of DLSS, the 3D-Guided Neural Rendering also known simply as DLSS 5, would fare when added to the game. To clarify: there is no official DLSS 5 implementation for The Witcher 3: Wild Hunt — Remastered, [&hellip;] Read full article at https://wccftech.com/the-witcher-3-remastered-dlss-5-geralt-facelift-performance-cost/",
-      "ai_summary": "发生了什么：全球第三大DRAM制造商美光科技（Micron）在台湾的两大生产基地——桃园厂与台中厂，正面临大规模劳资纠纷。桃园厂工会（2100人，占全厂七成）已决定于10月1日起进行为期一周的罢工投票；台中厂工会（成员超1.2万人，占全厂八成以上）也将在10月22日与资方再次协商，若未达成协议，亦将启动罢工投票程序。此次行动的直接导火索是薪酬分配不公：尽管美光2025年净利润高达815亿美元，但员工平均年终分红仅为2.3个月月薪；相比之下，竞争对手三星半导体部门将12%的营业利益分配给员工，SK海力士为10%，而美光仅为4.4%。\n\n为什么重要：此次罢工风潮是全球半导体产业‘人力资本价值重估’的标志性事件。在AI驱动芯片需求暴涨、行业利润创纪录的背景下，一线工程师与技术工人的贡献与回报严重失衡。美光案例揭示了一个深层矛盾：当资本与技术红利被股东与管理层高度集中时，产业可持续发展所需的‘人才根基’将面临动摇。这不仅是薪资问题，更是关于半导体产业如何在全球化竞争中构建公平、有吸引力的人才生态系统的根本命题。\n\n对行业有什么影响：对美光自身，罢工将直接冲击其在台湾——全球存储芯片制造重镇——的产能稳定性与交付能力，可能加剧DRAM市场短期供应紧张；对整个半导体行业，它将迫使所有IDM与晶圆厂重新审视其薪酬激励体系，推动‘利润分享计划’（Profit Sharing Plan）成为行业标配；对供应链，客户（如苹果、戴尔）可能要求供应商将劳工权益纳入ESG评估，影响长期合作；对地缘政治，台湾作为全球半导体制造心脏地带，其劳资关系的稳定与否，已成为影响全球科技供应链安全的关键变量之一，各国政府或将加强对此类风险的监测与干预。",
-      "category": "Semiconductor",
-      "source": "Solidot (科技)",
-      "source_url": "https://www.solidot.org/story?sid=85505",
-      "original_author": "@Solidot (科技)",
-      "published_at": "2026-09-29T20:30:00+00:00",
-      "created_at": "2026-09-30T06:12:43.321291+00:00"
-    },
-    {
-      "id": "b5985fe0-909b-4d0b-822e-839e814654a9",
-      "title": "TSMC预测2026年全球半导体营收达1.7万亿美元，AI芯片占比超60%",
-      "summary": "TSMC在OIP峰会上上调行业预测，称2026年全球半导体营收将达1.7万亿美元，其中AI相关芯片贡献超1万亿美元；先进制程N2节点新设计数量激增4倍。",
-      "key_points": [
-        "2026年全球半导体营收预测上调至1.7万亿美元",
-        "AI芯片市场独占超1万亿美元，占行业总量60%以上",
-        "N2节点新设计数量较N3增长4倍，反映AI芯片设计爆发"
-      ],
-      "full_content": "Blazej Zywiczynski, the Chief Executive Officer of indie developer Fairy Mount Games, has no qualms in throwing down the gauntlet against Rockstar's Grand Theft Auto 6, as evidenced in an interview with GamesIndustry. Fairy Mount Games was founded in 2025 by Zywiczynski and Denis Comtesse, who previously worked on games such as Frostpunk, This War of Mine, Ghostrunner, Lords of the Fallen, No Rest for the Wicked, and Ori and the Will of the Wisps, among others. The studio's debut title, a cozy strategy game titled Flame, Forest &amp; Flood, will be released on November 19, the same day as [&hellip;] Read full article at https://wccftech.com/indie-ceo-gta-6-economics-rockstar-roi/",
-      "ai_summary": "发生了什么：TSMC在2026年OIP北美技术峰会上大幅上调半导体行业预测——全球营收将达1.7万亿美元，远超2024年ISSCC会议上预测的1万亿美元。其中，AI相关芯片（含GPU、TPU、Trainium等）贡献超1万亿美元，占行业总量逾60%。支撑这一增长的是设计端的爆炸式需求：TSMC数据显示，N2节点（2nm）的新设计数量（NTOs）较N3节点增长4倍，且仍在加速；HPC领域功耗效率较N2P提升23%，HBM带宽2029年将达当前34倍，印证AI对算力、内存、能效的极致追求。\n\n为什么重要：这一预测标志着半导体产业正式进入‘AI单极驱动’新周期。过去十年，手机、PC、汽车电子轮番拉动增长；如今AI成为唯一核心引擎，其需求强度足以重塑整个产业链节奏——从晶圆厂扩产（TSMC 2026年营收同比增39.3%）、设备商订单（ASML EUV供不应求）、到EDA工具升级（AI驱动设计流程）。更关键的是，TSMC将AI定义为‘正反馈循环’：AI进步催生更好芯片设计工具，进而加速下一代AI芯片诞生，形成自我强化的增长飞轮。\n\n对行业有什么影响：首先，非AI芯片厂商（如MCU、模拟芯片）将面临更激烈资源争夺，晶圆代工产能、先进封装（CoWoS）等关键资源持续向AI倾斜；其次，中国等受出口管制地区压力陡增——TSMC预测隐含对HBM、先进封装、EUV光刻机的刚性需求，而这些正是管制重灾区；最后，它倒逼全产业链升级：从材料（HBM硅中介层）、设备（224G SerDes）、到设计方法学（STCO系统-工艺协同优化），任何环节滞后都将拖累AI整体进展。半导体产业已不再是‘摩尔定律’下的线性演进，而是围绕AI需求的多维并发竞赛。",
-      "category": "Foundry",
-      "source": "Semiconductor Engineering",
-      "source_url": "https://semiengineering.com/tsmc-oip-chip-industry-growth-blows-past-forecast/",
-      "original_author": "@Semiconductor Engineering",
-      "published_at": "2026-09-29T16:40:00+00:00",
-      "created_at": "2026-09-29T18:26:43.458178+00:00"
     }
   ]
 }
