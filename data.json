@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T19:49:41.223861+00:00",
+  "updated_at": "2026-11-07T06:46:25.553659+00:00",
   "count": 300,
   "news": [
     {
@@ -91,6 +91,24 @@
       "original_author": "@Tom's Hardware",
       "published_at": "2026-11-06T14:00:00+00:00",
       "created_at": "2026-11-06T19:49:32.645508+00:00"
+    },
+    {
+      "id": "2f3dc2ab-1f15-42e0-a900-fc86fae1d0b4",
+      "title": "NVIDIA六托盘GPU被盗，价值1140万美元创纪录",
+      "summary": "美国加州发生史上最大单笔GPU货运盗窃案：六托盘NVIDIA硬件（估值1140万美元）于8月29日从奥克兰运往得州途中被冒充食品运输公司的卡车劫走，至今未破案，已牵出涉案超1亿美元的AI芯片跨州连环盗窃团伙。",
+      "key_points": [
+        "案件为已知单笔案值最高的NVIDIA货运失窃案",
+        "嫌犯使用伪装成食品运输公司的车辆作案",
+        "货运安全机构确认该案属2026年中以来AI芯片系列组织化犯罪"
+      ],
+      "full_content": "&lt;p&gt;Denise has been crafting with PCs since she discovered Print Shop had clip art on her Apple IIe. She’s been a freelance newspaper reporter, online columnist and craft blogger with an eye for kid’s STEM activities. She got hooked on 3D printing after her son made a tiny Tinkercad Jeep for a school science project. Excited to learn more, she got a Creality CR10s and hasn’t looked back. She loves reviewing 3D printers because she can mix all her passions: printing, photography and writing. When she’s not modding her Ender 3 Pro or stirring glitter into a batch of resin, you’ll find her at the latest superhero movie with her husband and two sons. &lt;/p&gt;",
+      "ai_summary": "发生了什么：2026年8月29日，一批总计六托盘、估值高达1140万美元（约合7622万元人民币）的NVIDIA GPU及相关AI硬件，在从加州奥克兰运往得克萨斯州的途中失踪。据IT之家与Ars Technica等多方报道，该货物由一辆印有食品运输公司标识的卡车提走，随后在加州圣贝纳迪诺县失去踪迹。奥克兰警方于9月13日正式立案，但截至11月7日，案件仍未侦破，无逮捕或货物追回消息。货运安全机构Verisk CargoNet指出，此案与2026年中以来活跃于全美的高度组织化AI芯片盗窃团伙直接相关，该团伙已实施多起跨州劫案，总涉案金额突破1亿美元。\n\n为什么重要：此案远超普通电子设备盗窃范畴，凸显AI算力硬件已成为新型战略级高价值目标。随着全球AI数据中心建设加速，H100、H200等高端GPU持续供不应求、价格飙升，其单卡黑市价值可达数十万美元，整托盘运输更成为犯罪集团重点盯防对象。此次事件暴露了当前高科技物流链在身份核验、实时追踪、跨 jurisdiction 协同响应等方面存在严重短板，也反映出地缘政治紧张下关键科技资产的物理安全风险正在系统性上升。\n\n对行业有什么影响：首先，将倒逼云服务商、AI芯片厂商及物流合作伙伴重构高价值硬件运输标准——包括强制采用区块链货运凭证、GPS+IMU双模加密追踪、武装押运升级及承运商白名单认证机制。其次，可能加速“去中心化交付”模式落地，例如通过多地分布式小批量直送替代长距离集中托盘运输。第三，保险业或将大幅上调AI硬件物流险费率，并推动建立行业共保池。长远看，此类事件还可能促使各国将AI芯片列为受控物项，纳入出口管制与国内流通监管体系，进一步加剧全球AI基础设施供应链的区域化与碎片化趋势。",
+      "category": "GPU",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/023/684.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-11-06T14:00:00+00:00",
+      "created_at": "2026-11-07T06:46:16.200721+00:00"
     },
     {
       "id": "52bd97cd-d7e1-404f-ac19-e3dc6304d33d",
@@ -5275,24 +5293,6 @@
       "original_author": "@Tom's Hardware",
       "published_at": "2026-10-03T14:50:50+00:00",
       "created_at": "2026-10-03T16:55:43.721251+00:00"
-    },
-    {
-      "id": "3f9c12bb-0467-4dea-a47a-0ef5d2fb38ed",
-      "title": "AMD Radeon RX 9070 XT价格跳涨至759美元，创当前市场最低价",
-      "summary": "ASRock Radeon RX 9070 XT Steel Legend显卡在Best Buy降至759美元，为当前市场最低售价，较其他渠道低140美元以上。",
-      "key_points": [
-        "ASRock RX 9070 XT Steel Legend售价759美元",
-        "较多数零售商900美元报价低141美元",
-        "该GPU首发价为600美元，现价已上涨26%"
-      ],
-      "full_content": "&lt;p&gt;Stewart has loved PCs since he was a child dabbling with BASIC on a ZX Spectrum 48K and still gets far too excited about building and playing on PCs now. He loves to tune and overclock his computers to smooth and stable clocks and run his favorite games and applications on the best settings without compromising quality and framerates. &lt;/p&gt;&lt;p&gt;A firm believer in “Bang for the buck,” Stewart likes to research the best prices and locate the best coupon codes for computers, components and peripherals. Stewart also needs a spare room to house all his old PC parts and peripherals and maybe needs an intervention to stop him from buying more headphones, mice, and keyboards.&lt;/p&gt;",
-      "ai_summary": "发生了什么：WCCFTech报道显示，ASRock推出的Radeon RX 9070 XT Steel Legend显卡在Best Buy平台大幅降价至759美元，成为当前市场上该型号最低售价。对比其他主流渠道普遍标价800–900美元、甚至部分第三方卖家报价高达1000美元的情况，此次降价幅度达141–241美元。值得注意的是，这款基于RDNA 4架构的旗舰GPU于去年首发时定价仅为600美元，目前759美元的促销价仍比首发价高出26%，反映出在AI算力外溢与显存短缺双重驱动下，高端消费级GPU价格中枢已系统性上移。\n\n为什么重要：此次调价并非单纯清库存行为，而是AMD应对‘RAMpocalypse’（内存危机）与HBM资源挤兑的战略调整。随着AI训练与推理需求持续虹吸HBM3/HBM3e产能，GPU厂商被迫转向GDDR6X/GDDR7方案以维持出货节奏。RX 9070 XT虽定位游戏卡，但其16GB显存与高带宽设计使其具备轻量级AI本地部署能力（如Llama-3 8B模型推理），因而成为开发者与边缘AI用户的高性价比选择。759美元的定价，使其在性能/价格比上对NVIDIA RTX 4070 Ti Super构成显著压制。\n\n对行业有什么影响：首先，该价格策略将加剧AMD与NVIDIA在‘AI PC’细分市场的正面竞争，推动Windows平台AI应用生态加速成熟；其次，低价高性能GPU普及将降低个人开发者与中小AI团队的算力门槛，加速开源模型微调与Agent开发浪潮；最后，零售端价格剧烈波动也暴露了当前GPU供应链的脆弱性——当HBM产能无法满足AI服务器与消费级双线需求时，厂商只能通过动态调价来平衡供需，这种模式或将长期延续，直至2027年HBM5量产爬坡完成。",
-      "category": "GPU",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/best-buy-drops-radeon-rx-9070-xt-to-759/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-10-03T14:40:00+00:00",
-      "created_at": "2026-10-03T16:55:43.721289+00:00"
     }
   ]
 }
