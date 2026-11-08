@@ -1,7 +1,25 @@
 {
-  "updated_at": "2026-11-07T17:58:33.028265+00:00",
+  "updated_at": "2026-11-08T06:53:03.038991+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "bfd17555-86c9-4f17-8c78-719778e48f2a",
+      "title": "NVIDIA定制NVHBM内存：三星与台积电合作推进3nm基板制造",
+      "summary": "报道称NVIDIA正推动定制化HBM（NVHBM）开发，要求三星与台积电协同制造3nm工艺基板；台积电否认将量产3D DRAM，强调专注逻辑芯片。",
+      "key_points": [
+        "NVIDIA定制NVHBM需三星与台积电联合制造",
+        "台积电否认量产3D DRAM计划",
+        "NVHBM采用更 streamlined 制造流程"
+      ],
+      "full_content": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked for various publications covering a range of topics including smartphones, laptops, audio devices, and PC hardware. Currently, he is engrossed with everything happening in the world of computing with a growing obsession for unique PC cases and RGB cooling fans. Through his articles Kunal strives to demystify complex concepts for a broad audience. Kunal is also a casual gamer as he loves to squad up with his friends in &lt;em&gt;Apex Legends&lt;/em&gt;, and claims to have a fairly good taste in music especially when it comes to heavy metal.&lt;/p&gt;",
+      "ai_summary": "发生了什么：根据WCCFTech报道，NVIDIA为其下一代AI加速器定制了新型高带宽内存NVHBM，该方案打破传统由单一厂商完成核心+基板的模式，转而要求三星负责HBM核心堆叠，台积电则承担先进制程基板（base die）的制造。最新消息指出，NVIDIA已向台积电提出启动3D DRAM量产的请求，但台积电迅速回应称其战略聚焦于逻辑芯片制造，明确否认将进入3D DRAM代工领域。这一合作本质是“分工制造”——三星延续其在HBM封装领域的turnkey优势，而台积电凭借3nm及CoWoS-L等先进封装能力，承担更高集成度、更高性能密度的基板设计与量产任务。\n\n为什么重要：HBM是AI大模型训练与推理的性能瓶颈和成本核心，占GPU总BOM比重持续攀升（GB300中HBM已成最大单项成本）。NVIDIA此举标志着其正从“采购标准件”转向“深度定义内存架构”，通过定制基板工艺（如3nm）、优化互连结构与热管理路径，实现更高带宽、更低功耗与更强可靠性。这不仅是技术升级，更是供应链控制权的前移——将内存这一关键环节纳入自身技术路线图，削弱对传统HBM厂商的依赖，并为Blackwell后续架构（如Rubin系列）铺平道路。\n\n对行业有什么影响：首先，该模式将加速HBM产业分工重构，促使三星、SK海力士等存储巨头强化与晶圆代工厂的垂直协作，而非仅依赖自有产线；其次，台积电虽不涉足DRAM制造，但其基板代工地位进一步巩固，有望带动CoWoS-L产能持续扩张，加剧全球先进封装产能紧张；第三，对AMD、Intel等竞争对手构成双重压力——既要追赶NVIDIA的GPU性能，又需同步构建同等深度的内存协同生态；最后，中国厂商（如长鑫、长江存储）若想突破HBM壁垒，必须同步攻克高带宽接口IP、2.5D/3D封装及基板制造三大关卡，难度陡增。",
+      "category": "Foundry",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/nvidia-custom-hbm-samsung-tsmc-3nm-base-die/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-11-07T21:27:30+00:00",
+      "created_at": "2026-11-08T06:52:54.844665+00:00"
+    },
     {
       "id": "f4284b57-aaf1-44d0-ae3a-3d944916dcb8",
       "title": "HBM走私猖獗：三星/SK海力士HBM经香港中转流入中国AI芯片厂商",
@@ -5275,24 +5293,6 @@
       "original_author": "@IT之家",
       "published_at": "2026-10-03T20:30:32+00:00",
       "created_at": "2026-10-04T06:34:48.467592+00:00"
-    },
-    {
-      "id": "9e0458f1-1a31-466f-8cb7-3db5363efe6f",
-      "title": "马斯克确认与台积电洽谈Terafab晶圆厂合作，将 exclusive 供应特斯拉、SpaceX及xAI",
-      "summary": "埃隆·马斯克证实正与台积电就Terafab芯片制造项目展开合作谈判；Terafab将作为特斯拉、SpaceX和xAI的专属晶圆厂，此前已与英特尔达成合作。",
-      "key_points": [
-        "马斯克亲承与台积电就Terafab项目进行交涉",
-        "Terafab将 exclusively 供应特斯拉、SpaceX和xAI",
-        "台积电或在美国德州新建第二园区，Terafab为潜在合作方"
-      ],
-      "full_content": "&lt;p&gt;Anton Shilov has been in the PC industry since 1990s playing games, building PCs, and writing stories about pretty much everything that relates to PCs, Macs, smartphones, tablets, and even fab equipment. Over his career, he has worked at a variety of high-ranking websites, including AnandTech, EE Times, TechRadar, X-bit Labs, and now Tom&#039;s Hardware. He is also a regular features contributor to Tom&#039;s Hardware Premium, writing about the latest developments in the semiconductor industry and related tech news and roadmaps. When Anton is not reading or writing about something high-tech, he is probably watching a good movie, playing a video game, or spending time with his family.&lt;/p&gt;",
-      "ai_summary": "发生了什么：根据IT之家与Tom's Hardware联合报道，埃隆·马斯克已亲自确认正与台积电（TSMC）就其自建晶圆厂项目Terafab展开实质性合作洽谈。该工厂定位为“专属晶圆厂”（exclusive fab），将仅服务于马斯克旗下三大核心实体——特斯拉（电动汽车与AI机器人）、SpaceX（星链与星舰计算）以及xAI（大模型训练与推理）。此举标志着继英特尔之后，台积电第二次被明确列为Terafab的官方技术合作伙伴。值得注意的是，Terafab并非传统IDM模式，而是采用“设计-制造-系统集成”垂直协同架构，其选址极可能落于美国得克萨斯州，与台积电265亿美元的亚利桑那建厂计划形成战略呼应。\n\n为什么重要：这一合作若落地，将打破全球先进制程代工格局的现有范式。台积电长期坚持“中立代工”原则，而Terafab作为客户专属产线，意味着台积电首次深度介入客户定制化制造生态——既提供先进工艺节点（预计为N3E/N2），又参与封装整合（如CoWoS-L适配）与良率优化。对马斯克而言，这不仅是供应链安全的终极保障（规避地缘政治断供风险），更是实现“AI+能源+航天”三位一体硬件主权的关键一环：从Dojo超算芯片到Optimus执行器SoC，再到星链V3终端基带，全部可实现端到端可控。\n\n对行业有什么影响：短期看，该合作将加剧全球先进封装产能争夺战，尤其推高CoWoS-L与InFO-LSI等2.5D/3D封装需求；中期将倒逼三星、Intel Foundry加速开放专属产线（Custom Foundry）服务；长期则可能催生“超级客户代工联盟”新模式——即由头部科技公司联合投资建设区域性先进制程集群，削弱纯代工厂议价权。此外，此举亦向中国半导体产业释放明确信号：在美欧技术管制持续收紧背景下，“自主可控”已从口号升级为必须落地的战略基础设施工程，华为Ascend、寒武纪思元等国产AI芯片厂商或将加速推进自有封测基地与特色工艺线建设。",
-      "category": "Foundry",
-      "source": "Tom's Hardware",
-      "source_url": "https://www.tomshardware.com/tech-industry/semiconductors/elon-musk-confirms-discussions-with-tsmc-about-terafab-chipmaking-collaboration-intel-is-the-only-other-named-partner-terafab-to-exclusively-supply-tesla-spacex-and-xai",
-      "original_author": "@Tom's Hardware",
-      "published_at": "2026-10-03T14:50:50+00:00",
-      "created_at": "2026-10-03T16:55:43.721251+00:00"
     }
   ]
 }
