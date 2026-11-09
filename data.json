@@ -1,7 +1,25 @@
 {
-  "updated_at": "2026-11-08T18:13:10.626534+00:00",
+  "updated_at": "2026-11-09T07:28:30.543220+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "abd085e9-b2a1-4040-9511-197c32ebace9",
+      "title": "Asahi Linux项目转用GPLv2许可证，应对AI时代代码洗白风险",
+      "summary": "Asahi Linux项目因发现有人利用AI重写其MIT许可代码牟利，决定将许可证升级为GPLv2，以强制衍生作品开源并保护开发者权益。",
+      "key_points": [
+        "MIT许可证宽松性被滥用，AI可低成本重写代码掩盖来源",
+        "GPLv2要求衍生作品必须开源，增加侵权成本",
+        "开源社区首次因AI威胁主动升级许可证"
+      ],
+      "full_content": "U.S. voters favored restrictions on data center development in 40 of 41 local ballot measures during the November 3 midterm elections. Image credit: Hanwha Data Centers. Read full article at https://wccftech.com/u-s-voters-favor-data-center-restrictions-in-40-of-41-local-ballot-measures-putting-the-ai-boom-under-pressure/",
+      "ai_summary": "发生了什么：Asahi Linux项目（致力于为Apple Silicon Mac提供Linux支持）于2026年11月宣布将其许可证从MIT切换为GPLv2或更高版本。此举直接导火索是发现多个商业实体利用大语言模型（LLM）对其尚在开发分支的代码进行‘AI洗白’——即通过语义理解重写函数逻辑、替换变量名、调整控制流，生成看似原创实则高度同源的代码，并以此为基础开发闭源产品牟利，且未履行MIT许可的署名义务。\n\n为什么重要：这是开源史上首个因AI技术特性主动升级许可证的标志性事件。MIT许可证的‘宽松自由’曾是开源繁荣基石，但LLM使代码剽窃成本趋近于零，原有法律威慑失效。GPLv2的‘传染性’条款（衍生作品必须开源）提高了侵权门槛，迫使商业使用者回归协作生态。此举也揭示了AI时代知识产权新范式：代码价值不再仅取决于功能，更在于可追溯的开发脉络与社区信任。\n\n对行业有什么影响：短期将引发许可证选择潮——Linux内核、GCC等GPL项目地位强化，而Apache 2.0、BSD等宽松许可证项目可能面临类似风险；中期将推动‘AI版权溯源’技术发展，如代码指纹、训练数据水印等；长期看，或催生新型开源治理模式，例如‘贡献者许可协议（CLA）+AI使用条款’双轨制。对开发者而言，需重新评估项目许可证策略；对企业法务，则需将AI代码审计纳入合规流程，避免无意侵权。",
+      "category": "Semiconductor",
+      "source": "Solidot (科技)",
+      "source_url": "https://www.solidot.org/story?sid=85832",
+      "original_author": "@Solidot (科技)",
+      "published_at": "2026-11-08T16:50:10+00:00",
+      "created_at": "2026-11-09T07:28:23.66702+00:00"
+    },
     {
       "id": "d6443377-19bf-4ddb-9413-40336b1caa37",
       "title": "Diamond Foundry发布全球首片200mm单晶金刚石晶圆，瞄准AI芯片散热瓶颈",
@@ -5275,24 +5293,6 @@
       "original_author": "@IT之家",
       "published_at": "2026-10-04T14:36:25+00:00",
       "created_at": "2026-10-05T06:28:16.902908+00:00"
-    },
-    {
-      "id": "224b95e1-400d-4574-99c5-d081123038ed",
-      "title": "施耐德电气226亿美元收购PTC，加码工业AI软件",
-      "summary": "施耐德电气宣布以226亿美元全现金收购工业软件巨头PTC，强化其在工业AI、数字孪生与智能制造领域的布局，交易预计2027年Q3完成。",
-      "key_points": [
-        "226亿美元全现金收购PTC，溢价超40%",
-        "聚焦工业AI、数字孪生与产品全生命周期管理",
-        "完善从硬件到软件的端到端工业自动化解决方案"
-      ],
-      "full_content": "&lt;p&gt;Bruno Ferreira&#039;s journey kicked off with the venerable ZX Spectrum, a cassette player, and his hopes and dreams. He quickly realized he had more fun figuring out how computers work than he did actually using the things. Kicking off a developer career with C and Assembly before moving to scripting languages, he&#039;s worn many hats, including both database architect and systems administration. As a teen, Bruno co-founded a web development outfit where he was for 17 years before moving on to spend nearly a decade at The Tech Report as a writer, editor, and (of course) developer. In this decade, he&#039;s been at Asus, MLCommons, and HotHardware, among others. When not fiddling with computers and games, his love for music and production sends him off to live shows and festivals. Occasionally, he pretends he can play the guitar and bass.&lt;/p&gt;",
-      "ai_summary": "发生了什么：法国工业巨头施耐德电气于2026年10月宣布，将以每股205美元、总计约226亿美元的全现金方式收购美国工业软件公司PTC。该交易较PTC前一交易日收盘价溢价超40%，预计于2027年第三季度完成。PTC核心产品包括Windchill（PLM）、ThingWorx（IoT平台）及Vuforia（AR工业应用），其AI驱动的设计仿真与预测性维护工具正成为制造业数字化转型的关键基础设施。\n\n为什么重要：此次收购是欧洲工业巨头应对‘AI+制造’浪潮的战略性卡位。施耐德虽在配电、自动化硬件领域全球领先，但在工业软件与AI模型层存在短板；而PTC拥有深厚的制造业客户基础（通用电气、波音、丰田等）及成熟的AI工程化能力。二者结合，将打造覆盖‘传感器—边缘控制器—云平台—AI应用’的完整工业智能栈，直接对标西门子Xcelerator与罗克韦尔FactoryTalk生态。\n\n对行业有什么影响：第一，加速工业软件市场整合，中小厂商面临被并购或边缘化的压力；第二，推动AI从消费互联网向工业互联网纵深渗透，PTC的AI工具将快速嵌入施耐德的EcoStruxure平台，赋能工厂能效优化、产线柔性重构与供应链韧性提升；第三，凸显‘硬件定义软件、软件激活硬件’的新范式——传统工业巨头正通过收购获取AI时代的话语权，而不再仅依赖自身研发。这也预示着未来工业竞争的核心，将从单一设备性能转向‘物理系统+数字孪生+AI决策’的系统级竞争力。",
-      "category": "Digital",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/009/805.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-10-04T14:25:00+00:00",
-      "created_at": "2026-10-05T06:28:16.902922+00:00"
     }
   ]
 }
