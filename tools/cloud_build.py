@@ -91,9 +91,13 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", default=str(REPO / "scripts" / "weibo_config.json"))
     ap.add_argument("--data", default=str(REPO / "frontend" / "wallpaper" / "data.json"))
+    ap.add_argument("--feed", default=str(REPO / "frontend" / "wallpaper" / "feed.json"))
+    ap.add_argument("--feed-max", type=int, default=2000, help="动态流最多保留多少条")
     ap.add_argument("--set-key", default="main")
     ap.add_argument("--label", default="主轮")
     ap.add_argument("--uids", default="", help="逗号分隔，只跑这些 uid")
+    ap.add_argument("--names", default="", help="逗号分隔，按昵称搜索 uid 后抓")
+    ap.add_argument("--pages", type=int, default=6, help="登录态下每号翻几页")
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--max-new", type=int, default=0, help="本次最多追加多少条，0 不限")
     ap.add_argument("--dry-run", action="store_true")
@@ -101,7 +105,9 @@ def main():
 
     cfg = json.loads(Path(args.config).read_text(encoding="utf-8"))
     accounts = cfg["accounts"]
-    if args.uids:
+    if args.names:
+        accounts = []  # 指定名字时只抓这些，名单只用来快速命中 nick
+    elif args.uids:
         want = {u.strip() for u in args.uids.split(",") if u.strip()}
         accounts = [a for a in accounts if str(a["uid"]) in want]
         if not accounts:
@@ -111,12 +117,42 @@ def main():
     old_by_key, old_items, old_meta = load_old(data_path)
     log(f"== 账号 {len(accounts)} 个 | 既有条目 {len(old_items)} | 输出 {data_path}")
 
+    cookie_kv, mode, xsrf = wb.parse_cookie("WB_COOKIE")
+    if cookie_kv:
+        log(f"== 登录态: {sorted(cookie_kv.keys())} | 通道 {mode} | 每号 {args.pages} 页")
+    else:
+        log("== 无 WB_COOKIE，走访客态（每号第 1 页 + 相册流；部分账号仅相册可见）")
+
     t0 = time.time()
     recs = {}
-    with wb.WeiboSession({}, "guest") as sess:
+    with wb.WeiboSession(cookie_kv, mode) as sess:
+        if args.names:
+            known = {a["nick"]: a for a in cfg["accounts"] if a.get("nick")}
+            for raw in [n.strip() for n in args.names.split(",") if n.strip()]:
+                if raw in known:
+                    accounts.append(known[raw])
+                    log(f"   名单命中 {raw} -> uid {known[raw]['uid']}")
+                    continue
+                if raw.isdigit():
+                    accounts.append({"label": raw, "group": "临时", "nick": raw, "uid": raw})
+                    continue
+                hit = sess.resolve_uid(raw)
+                if hit:
+                    log(f"   搜索 {raw} -> {hit[0]} ({hit[1]})")
+                    accounts.append({"label": hit[0], "group": "临时",
+                                     "nick": hit[0], "uid": hit[1]})
+                else:
+                    log(f"   搜索 {raw} 无结果，跳过")
+            if not accounts:
+                sys.exit(f"名字都没解析出 uid: {args.names}")
+            log(f"== 本次只抓 {len(accounts)} 个账号")
+
         for acc in accounts:
             try:
-                rows, st = wb.harvest_guest(sess, acc)
+                if mode == "pc":
+                    rows, st = wb.harvest_pc(sess, acc, args.pages, xsrf)
+                else:
+                    rows, st = wb.harvest_guest(sess, acc)
             except Exception as e:
                 log(f"   {acc['label']:16s} 失败: {type(e).__name__}: {e}")
                 continue
@@ -146,16 +182,47 @@ def main():
     log(f"== 探测完成，失败 {failed} 张")
 
     fresh = []
+    # ---- 动态流：所有探测成功的图，不筛 16:9 / 体积，独立于壁纸页
+    feed_path = Path(args.feed)
+    old_feed = []
+    if feed_path.exists():
+        try:
+            old_feed = json.loads(feed_path.read_text(encoding="utf-8")).get("items") or []
+        except Exception:
+            old_feed = []
+    if not old_feed:
+        # 首次生成：用壁纸索引当种子，动态流一上线就有历史
+        old_feed = [{
+            "key": i["key"], "owner": i.get("owner", ""), "group": i.get("group", ""),
+            "w": i.get("w", 0), "h": i.get("h", 0), "mb": i.get("mb", 0),
+            "created": i.get("created", ""), "post": i.get("post", ""),
+            "text": i.get("text", ""), "set_key": i.get("set_key"),
+        } for i in old_items if i.get("key")]
+        log(f"== 动态流种子 {len(old_feed)} 条（取自壁纸索引）")
+    feed_seen = {i["key"] for i in old_feed}
+    feed_added = 0
+
     drop = {"已收录": 0, "无 key": 0, "窄图": 0, "非16:9": 0, "不足2MB": 0, "宽度<1920": 0}
     for pid, r in recs.items():
         key = sina_key(r["large_url"])
+        w, h, n = r.get("w", 0), r.get("h", 0), r.get("bytes", 0)
         if not key:
             drop["无 key"] += 1
             continue
+        if w >= 600 and h > 0 and key not in feed_seen:
+            old_feed.append({
+                "key": key, "owner": r["owner"], "group": r.get("group", ""),
+                "w": w, "h": h, "mb": round(n / 1048576, 2),
+                "created": parse_created(r.get("created") or ""),
+                "post": r.get("post_url") or "",
+                "text": (r.get("text") or "")[:160],
+                "set_key": args.set_key,
+            })
+            feed_seen.add(key)
+            feed_added += 1
         if key in old_by_key:
             drop["已收录"] += 1
             continue
-        w, h, n = r.get("w", 0), r.get("h", 0), r.get("bytes", 0)
         if w < 600 or h <= 0:
             drop["窄图"] += 1
             continue  # 探测失败或错误页
@@ -200,11 +267,29 @@ def main():
         log(f"   ... 其余 {len(fresh) - 15} 张")
 
     if args.dry_run:
-        log("== dry-run，不写文件")
+        log(f"== dry-run，不写文件（壁纸 +{len(fresh)}，动态 +{feed_added}）")
         return
 
+    # 动态流滚动窗口：时间倒序，只保留最近 --feed-max 条
+    old_feed.sort(key=lambda x: x.get("created") or "", reverse=True)
+    if args.feed_max and len(old_feed) > args.feed_max:
+        old_feed = old_feed[:args.feed_max]
+    if feed_added or not feed_path.exists():
+        feed_meta = {
+            "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
+            "count": len(old_feed),
+            "items": old_feed,
+        }
+        feed_path.parent.mkdir(parents=True, exist_ok=True)
+        tmpf = feed_path.with_suffix(".json.tmp")
+        tmpf.write_text(json.dumps(feed_meta, ensure_ascii=False,
+                                   separators=(",", ":")), encoding="utf-8")
+        tmpf.replace(feed_path)
+        log(f"== 写入 {feed_path} | 共 {len(old_feed)} 条（+{feed_added}）"
+            f" | {feed_path.stat().st_size / 1024:.0f}KB")
+
     if not fresh:
-        log("== 无新增，data.json 保持不变")
+        log("== 壁纸无新增，data.json 保持不变")
         return
 
     items = old_items + fresh
@@ -241,7 +326,8 @@ def main():
         if summary.parent.exists():
             with summary.open("a", encoding="utf-8") as f:
                 f.write(f"### 壁纸增量\n\n- 账号 {len(accounts)} 个，探测图片 {len(todo)} 张\n"
-                        f"- 新增 {len(fresh)} 张，累计 {len(items)} 张\n"
+                        f"- 壁纸新增 {len(fresh)} 张，累计 {len(items)} 张\n"
+                        f"- 动态新增 {feed_added} 张，累计 {len(old_feed)} 条\n"
                         f"- 耗时 {time.time() - t0:.0f}s\n")
     except Exception:
         pass

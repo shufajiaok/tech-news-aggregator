@@ -1,6 +1,8 @@
 name: 壁纸画廊增量
 
-# 只产出元数据（frontend/wallpaper/data.json），不落地任何图片：
+# 只产出元数据，不落地任何图片：
+#   frontend/wallpaper/data.json —— 壁纸页（16:9 / >=2MB / 宽>=1920）
+#   frontend/wallpaper/feed.json —— 动态流（本次抓到的全部图，不筛比例）
 # 缩略图与原图都由站点的 /i/<档位>/<key> 实时代理微博 CDN。
 
 on:
@@ -9,12 +11,20 @@ on:
     - cron: '30 19 * * *'
   workflow_dispatch:
     inputs:
-      uids:
-        description: '只跑指定 uid（逗号分隔，留空跑全部）'
+      names:
+        description: '账号昵称（逗号分隔），留空跑完整名单'
         required: false
         default: ''
+      uids:
+        description: '只跑指定 uid（逗号分隔）'
+        required: false
+        default: ''
+      pages:
+        description: '登录态下每号翻几页'
+        required: false
+        default: '6'
       max_new:
-        description: '本次最多追加多少张（0 = 不限）'
+        description: '壁纸最多追加多少张（0 = 不限）'
         required: false
         default: '0'
       dry_run:
@@ -51,21 +61,30 @@ jobs:
           python -m playwright install --with-deps chromium
 
       - name: 增量抓取（只出元数据）
+        env:
+          # 可选：填了就走登录态（能翻页、能看到仅粉丝可见的正文流）
+          WB_COOKIE: ${{ secrets.WB_COOKIE }}
         run: |
           python tools/cloud_build.py \
+            --names "${{ inputs.names }}" \
             --uids "${{ inputs.uids }}" \
+            --pages "${{ inputs.pages || 6 }}" \
             --max-new "${{ inputs.max_new || 0 }}" \
             ${{ inputs.dry_run && '--dry-run' || '' }}
 
-      - name: 提交 data.json
+      - name: 提交索引
         if: ${{ !inputs.dry_run }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if [[ -n $(git status --porcelain frontend/wallpaper/data.json) ]]; then
-            git add frontend/wallpaper/data.json
-            git commit -m "chore(wallpaper): 增量更新壁纸索引 $(date -u +%FT%TZ)"
+          files=""
+          for f in frontend/wallpaper/data.json frontend/wallpaper/feed.json; do
+            if [[ -n $(git status --porcelain "$f") ]]; then files="$files $f"; fi
+          done
+          if [[ -n "$files" ]]; then
+            git add $files
+            git commit -m "chore(wallpaper): 增量更新索引 $(date -u +%FT%TZ)"
             git push
           else
-            echo "data.json 无变化，跳过提交"
+            echo "索引无变化，跳过提交"
           fi

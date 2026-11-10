@@ -2,82 +2,130 @@
 <html lang="zh-CN" data-theme="dark">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>微博壁纸画廊 · Weibo Wallpaper</title>
-<meta name="description" content="微博原图壁纸画廊：云端只存缩略图，本机在线时直出高清原图。">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>微博画廊 · 动态与壁纸</title>
+<meta name="description" content="微博动态流与 16:9 高清壁纸：缩略图走 CDN 代理，原图实时向微博取回。">
+<meta name="theme-color" content="#0a0c10">
+<link rel="stylesheet" href="glass/liquid-glass.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="topbar">
-  <div class="topbar-inner">
-    <div class="brand">
-      <span class="brand-mark">◐</span>
-      <span class="brand-text">壁纸画廊</span>
-      <span class="brand-sub" id="statCount">—</span>
-    </div>
+<!-- 玻璃折射的纹理来源：自托管的压暗壁纸底，按 cover / center top 对齐 -->
+<div class="site-backdrop" aria-hidden="true" data-glass-source="/bg.jpg"></div>
+<canvas class="glass-layer" id="glassLayer" hidden aria-hidden="true"></canvas>
 
-    <div class="status" id="status" data-state="probing" title="本机 agent 探测中">
-      <span class="dot"></span>
-      <span class="status-text" id="statusText">检测本机…</span>
-    </div>
-
-    <button class="icon-btn" id="themeToggle" title="切换深浅色">🌙</button>
+<nav class="nav" id="nav" aria-label="页面切换">
+  <div class="glass__content">
+    <a href="#feed" data-page="feed" class="active" aria-current="page">动态</a>
+    <a href="#wall" data-page="wall">壁纸</a>
   </div>
-</header>
+</nav>
 
-<section class="filters">
-  <div class="filter-row">
-    <div class="chips" id="setChips"></div>
-    <div class="chips" id="gradeChips"></div>
-  </div>
-  <div class="filter-row">
-    <div class="chips scroll-x" id="ownerChips"></div>
-    <div class="sort">
-      <select id="sortSel" title="排序">
-        <option value="bytes">体积优先</option>
-        <option value="created">时间新→旧</option>
-        <option value="ratio">比例接近 16:9</option>
-      </select>
-    </div>
-  </div>
-</section>
+<main>
+  <!-- ───────── 动态流 ───────── -->
+  <section class="page" id="page-feed" aria-label="最新动态">
+    <header class="page-head">
+      <h1>最新动态</h1>
+      <p class="sub" id="feedSub">载入中…</p>
+      <div class="chips" id="feedChips"></div>
+    </header>
+    <div class="feed" id="feedList"></div>
+    <div class="sentinel" id="feedSentinel"></div>
+    <div class="empty" id="feedEmpty" hidden>还没有动态</div>
+  </section>
 
-<main class="grid-wrap">
-  <div class="grid" id="grid"></div>
-  <div class="empty" id="empty" hidden>没有符合条件的图片</div>
-  <div class="more-sentinel" id="sentinel"></div>
+  <!-- ───────── 壁纸 ───────── -->
+  <section class="page" id="page-wall" aria-label="壁纸" hidden>
+    <header class="page-head">
+      <h1>壁纸</h1>
+      <p class="sub" id="wallSub">载入中…</p>
+      <div class="chips" id="wallChips"></div>
+      <div class="chips dim" id="sortChips"></div>
+    </header>
+    <div class="grid" id="grid"></div>
+    <div class="sentinel" id="wallSentinel"></div>
+    <div class="empty" id="wallEmpty" hidden>没有符合条件的图片</div>
+  </section>
 </main>
 
-<footer class="footer">
-  <span id="footStat">—</span>
-  <span class="sep">·</span>
-  <span>云端仅存缩略图，原图不出本机</span>
-</footer>
+<!-- 抓取控制台：全站唯一的 Studio 折射卡片 -->
+<button class="fab" id="fab" aria-label="打开抓取控制台" aria-expanded="false">⌘</button>
+
+<aside class="console card" id="console" hidden aria-label="抓取控制台">
+  <div class="con-head">
+    <span class="con-title">抓取控制台</span>
+    <button class="con-close" id="conClose" aria-label="关闭">✕</button>
+  </div>
+
+  <section class="con-sec">
+    <label class="con-label" for="qInput">抓谁</label>
+    <div class="con-row">
+      <input id="qInput" type="text" placeholder="昵称或 uid，多个用逗号分隔" autocomplete="off" spellcheck="false">
+      <button class="btn" id="qGo">开始</button>
+    </div>
+    <p class="con-hint" id="qHint">留空 = 按完整名单抓一轮</p>
+  </section>
+
+  <section class="con-sec">
+    <label class="con-label">GitHub PAT <span class="tag" id="patState">未设置</span></label>
+    <div class="con-row">
+      <input id="patInput" type="password" placeholder="ghp_… 需要 repo + workflow" autocomplete="off">
+      <button class="btn" id="patSave">保存</button>
+    </div>
+    <p class="con-hint">只存这台浏览器，用于写 Secret 和触发抓取</p>
+  </section>
+
+  <section class="con-sec">
+    <label class="con-label">微博 Cookie <span class="tag" id="ckState">未设置</span></label>
+    <textarea id="ckInput" rows="3" placeholder="SUB=…; SUBP=…; 粘贴整条" spellcheck="false"></textarea>
+    <div class="con-row end">
+      <button class="btn ghost" id="ckClear">清空 Secret</button>
+      <button class="btn" id="ckSave">加密写入</button>
+    </div>
+    <p class="con-hint">浏览器本地用仓库公钥加密后直传 GitHub，不经过本站服务器</p>
+  </section>
+
+  <section class="con-sec">
+    <label class="con-label">大模型 API Key <span class="tag" id="llmState">未设置</span></label>
+    <div class="con-row">
+      <input id="llmInput" type="password" placeholder="sk-…" autocomplete="off">
+      <button class="btn" id="llmSave">保存</button>
+    </div>
+    <p class="con-hint">让「白泠最近的图」这类说法解析成抓取参数</p>
+  </section>
+
+  <div class="con-status" id="conStatus" role="status">—</div>
+</aside>
 
 <!-- 灯箱 -->
 <div class="lb" id="lb" hidden>
-  <button class="lb-close" id="lbClose" title="关闭 (Esc)">×</button>
-  <button class="lb-nav prev" id="lbPrev" title="上一张 (←)">‹</button>
-  <button class="lb-nav next" id="lbNext" title="下一张 (→)">›</button>
+  <button class="lb-close" id="lbClose" aria-label="关闭">✕</button>
+  <button class="lb-nav prev" id="lbPrev" aria-label="上一张">‹</button>
+  <button class="lb-nav next" id="lbNext" aria-label="下一张">›</button>
   <div class="lb-stage">
-    <div class="lb-spinner" id="lbSpinner"><i></i><span>载入原图…</span></div>
+    <div class="lb-spinner" id="lbSpinner"><i></i><span>载入大图…</span></div>
     <img id="lbImg" alt="">
   </div>
-  <div class="lb-bar" id="lbBar">
+  <div class="lb-bar glass-css" id="lbBar">
     <div class="lb-meta">
       <strong id="lbOwner"></strong>
       <span id="lbDim"></span>
     </div>
     <div class="lb-actions">
-      <span class="lb-tag" id="lbTag"></span>
-      <a id="lbLocal" target="_blank" rel="noopener" hidden>本机看原图 ↗</a>
       <a id="lbPost" target="_blank" rel="noopener">原微博 ↗</a>
-      <a id="lbOpen" target="_blank" rel="noopener">新窗口打开</a>
+      <a id="lbOpen" target="_blank" rel="noopener">原图 ↗</a>
     </div>
   </div>
 </div>
 
+<footer class="foot">
+  <span id="footStat">—</span>
+</footer>
+
+<script id="glass-config" type="application/json">{"material":{"blurRadius":12,"tintAlpha":0.62,"refDispersion":14},"geometry":{"card":{"radius":28}}}</script>
+<script type="module" src="glass/liquid-glass.js"></script>
+<script src="vendor/nacl.min.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
