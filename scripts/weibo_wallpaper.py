@@ -129,6 +129,14 @@ def parse_cookie(env_name):
 
 
 # ---------------------------------------------------------------- 浏览器会话
+class WbRequestError(RuntimeError):
+    """接口层面的失败（HTTP 非 200 / 空 body / 非 JSON），与「查无此人」区分开。
+
+    旧版 get_json 用 `except: return {}` 把所有异常吞成空字典，
+    导致「被 WAF 拦了」和「这个人搜不到」在日志里长得一模一样。
+    """
+
+
 class WeiboSession:
     """真实 Chromium 建立会话（绕过 WAF 432），复用该会话调接口。"""
 
@@ -138,6 +146,8 @@ class WeiboSession:
         self.pw = None
         self.browser = None
         self.ctx = None
+        self.page = None
+        self.last_error = ""
 
     def __enter__(self):
         try:
@@ -169,6 +179,7 @@ class WeiboSession:
         page.goto("https://weibo.com/" if pc else "https://m.weibo.cn/",
                   wait_until="domcontentloaded", timeout=30000)
         page.wait_for_timeout(1500)
+        self.page = page
         return self
 
     def __exit__(self, *a):
@@ -178,31 +189,83 @@ class WeiboSession:
         except Exception:
             pass
 
+    def page_json(self, url):
+        """在页面上下文里 fetch，带真实浏览器指纹。
+
+        APIRequestContext（self.ctx.request）是裸请求，境外 runner 上会被 WAF 打成 432；
+        页面内 fetch 走完整浏览器上下文，同样的 URL 通常能正常返回。
+        """
+        js = """async (u) => {
+            try {
+                const r = await fetch(u, {
+                    credentials: 'include',
+                    headers: {'Accept': 'application/json, text/plain, */*',
+                              'X-Requested-With': 'XMLHttpRequest'},
+                });
+                return {status: r.status, body: (await r.text()).slice(0, 400000)};
+            } catch (e) { return {status: 0, body: String(e)}; }
+        }"""
+        try:
+            res = self.page.evaluate(js, url)
+        except Exception as e:
+            self.last_error = f"{type(e).__name__}: {e}"
+            return None
+        status, body = res.get("status") or 0, res.get("body") or ""
+        if status != 200:
+            self.last_error = f"HTTP {status} (body {len(body)}B)"
+            return None
+        try:
+            return json.loads(body)
+        except Exception:
+            self.last_error = f"非 JSON 响应 ({len(body)}B)"
+            return None
+
     def get_json(self, url, referer=None, extra=None, retries=2):
+        """先试裸请求，失败自动降级到页面内 fetch；两种都失败时 last_error 有真实原因。"""
         h = {"Referer": referer or "https://m.weibo.cn/",
              "X-Requested-With": "XMLHttpRequest",
              "Accept": "application/json, text/plain, */*"}
         if extra:
             h.update(extra)
+        self.last_error = ""
         for i in range(retries + 1):
             try:
-                return self.ctx.request.get(url, headers=h, timeout=25000).json()
-            except Exception:
-                if i == retries:
-                    return {}
+                r = self.ctx.request.get(url, headers=h, timeout=25000)
+                if r.status != 200:
+                    self.last_error = f"HTTP {r.status}"
+                else:
+                    try:
+                        return r.json()
+                    except Exception:
+                        self.last_error = f"非 JSON 响应 (HTTP {r.status})"
+            except Exception as e:
+                self.last_error = f"{type(e).__name__}: {e}"
+            if i < retries:
                 time.sleep(1.0)
+        # 裸请求走不通，改用页面上下文再要一次
+        if self.page is not None:
+            d = self.page_json(url)
+            if d is not None:
+                self.last_error = ""
+                return d
         return {}
 
     def resolve_uid(self, term, expect=None):
+        """昵称 -> uid。接口被风控时抛 WbRequestError，与「查无此人」区分开。"""
         cid = urllib.parse.quote("100103type=3&q=" + term, safe="")
         url = ("https://m.weibo.cn/api/container/getIndex?containerid="
                + cid + "&page_type=searchall")
         d = self.get_json(url)
+        if not d:
+            raise WbRequestError(f"搜索接口不可用（{self.last_error or '空响应'}）")
         hits = []
         for c in d.get("data", {}).get("cards", []):
             grp = [c] if c.get("card_type") != 11 else c.get("card_group", [])
             for cc in grp:
                 u = cc.get("user") or {}
+                if not (u.get("screen_name") and u.get("id")):
+                    # 综合页里大量卡片是 card_type 9（微博卡片），用户挂在 mblog.user 上
+                    u = (cc.get("mblog") or {}).get("user") or {}
                 if u.get("screen_name") and u.get("id"):
                     hits.append((u["screen_name"], str(u["id"]),
                                  u.get("verified_reason") or cc.get("desc1") or ""))
@@ -211,6 +274,26 @@ class WeiboSession:
                 if expect.lower() in (h[0] + h[2]).lower():
                     return h
         return hits[0] if hits else None
+
+    def profile(self, uid):
+        """取主页信息，用于复核「这个 uid 到底是谁」。拿不到返回 None。"""
+        d = self.get_json(f"https://weibo.com/ajax/profile/info?uid={uid}",
+                          referer=f"https://weibo.com/u/{uid}")
+        data = d.get("data")
+        u = (data.get("user") or {}) if isinstance(data, dict) else {}
+        if not u:
+            d2 = self.get_json(
+                f"https://m.weibo.cn/api/container/getIndex?type=uid&value={uid}",
+                referer=f"https://m.weibo.cn/u/{uid}")
+            d2data = d2.get("data")
+            u = (d2data.get("userInfo") or {}) if isinstance(d2data, dict) else {}
+        if not u:
+            return None
+        return {"uid": str(u.get("id") or uid),
+                "nick": u.get("screen_name") or "",
+                "verified": u.get("verified_reason") or "",
+                "followers": u.get("followers_count") or 0,
+                "desc": (u.get("description") or "")[:80]}
 
 
 # ---------------------------------------------------------------- 图片记录提取

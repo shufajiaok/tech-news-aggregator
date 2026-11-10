@@ -124,7 +124,9 @@ function groupPosts(items) {
 function buildFeedChips() {
   const owners = new Map();
   for (const p of state.posts) owners.set(p.owner, (owners.get(p.owner) || 0) + 1);
-  const top = [...owners.entries()].sort((a, b) => b[1] - a[1]).slice(0, 9);
+  // 不截断：名单已 24 人，早先的 slice(0, 9) 会让一半账号永远没有入口。
+  // .chips 本身是横向滚动容器，多出来的分类左右滑即可。
+  const top = [...owners.entries()].sort((a, b) => b[1] - a[1]);
   const box = $('#feedChips');
   box.innerHTML = '';
   box.appendChild(chip('全部', state.posts.length, state.feedFilter === 'all', () => {
@@ -451,13 +453,23 @@ async function deleteSecret(name) {
   await gh('/repos/' + REPO + '/actions/secrets/' + name, { method: 'DELETE' });
 }
 
+// 主页链接 / 纯数字 -> uid。搜索接口在境外常被风控，直接给 uid 是最稳的路子。
+function uidOf(s) {
+  const t = (s || '').trim();
+  if (/^\d{5,}$/.test(t)) return t;
+  const m = t.match(/weibo\.(?:com|cn)\/(?:u\/|profile\/)?(\d{5,})/i);
+  return m ? m[1] : '';
+}
+
 function splitInput(raw) {
-  const parts = raw.split(',').map((s) => s.trim()).filter(Boolean);
-  const allUid = parts.length > 0 && parts.every((p) => /^\d{5,}$/.test(p));
-  return {
-    names: allUid ? '' : parts.join(','),
-    uids: allUid ? parts.join(',') : '',
-  };
+  const parts = raw.split(/[,，、]+/).map((s) => s.trim()).filter(Boolean);
+  const names = [], uids = [];
+  for (const p of parts) {
+    const u = uidOf(p);
+    if (u) uids.push(u);
+    else names.push(p);
+  }
+  return { names: names.join(','), uids: uids.join(',') };
 }
 
 async function startScrape() {
@@ -488,17 +500,32 @@ async function startScrape() {
   }
 }
 
-async function pollLatest() {
+async function pollLatest(tries) {
+  tries = tries || 0;
   try {
     const d = await gh('/repos/' + REPO + '/actions/runs?per_page=1');
     const run = d && d.workflow_runs && d.workflow_runs[0];
     if (!run) return;
     const map = { queued: '排队中', in_progress: '运行中', completed: '已完成' };
     const st = map[run.status] || run.status;
-    const kind = run.conclusion === 'success' ? 'ok'
-      : (run.conclusion && run.conclusion !== 'success') ? 'err' : '';
-    con.status(st + (run.conclusion ? ' · ' + run.conclusion : '') +
+    const bad = run.conclusion && run.conclusion !== 'success';
+    // 失败时把挂在哪个步骤拉回来，省得再去 GitHub 翻日志
+    let detail = '';
+    if (bad && tries > 0) {
+      try {
+        const j = await gh('/repos/' + REPO + '/actions/runs/' + run.id + '/jobs');
+        const steps = (((j.jobs || [])[0] || {}).steps) || [];
+        const badStep = steps.filter((s) => s.conclusion === 'failure')[0];
+        if (badStep) detail = ' · 挂在「' + badStep.name + '」';
+      } catch (_) { /* 拿不到就算了，不挡住状态显示 */ }
+    }
+    const kind = run.conclusion === 'success' ? 'ok' : bad ? 'err' : '';
+    con.status(st + (run.conclusion ? ' · ' + run.conclusion + detail : '') +
       ' · ' + new Date(run.created_at).toLocaleTimeString('zh-CN') + '\n' + run.html_url, kind);
+    // 还在跑就继续追（约 15 分钟），不要只查一次就停
+    if (run.status !== 'completed' && tries < 60) {
+      setTimeout(() => pollLatest(tries + 1), 15000);
+    }
   } catch (e) {
     con.status('查询失败：' + e.message, 'err');
   }

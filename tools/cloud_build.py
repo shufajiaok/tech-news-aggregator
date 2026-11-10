@@ -111,6 +111,49 @@ def find_account(raw, accounts):
     return None
 
 
+def uid_from_text(raw):
+    """纯数字 / 主页链接 -> uid；抽不到返回空串。"""
+    s = (raw or "").strip()
+    if s.isdigit() and len(s) >= 6:
+        return s
+    m = re.search(r"weibo\.(?:com|cn)/(?:u/|profile/)?(\d{6,})", s)
+    if m:
+        return m.group(1)
+    m = re.search(r"(?<!\d)(\d{9,10})(?!\d)", s)
+    return m.group(1) if m else ""
+
+
+def verify_and_add(sess, uid, want, accounts, log, hint="", trust=False):
+    """复核 uid 到底是谁，通过才加入 accounts。
+
+    模型联网找 uid 有编造风险，所以一律走 profile/info 对照昵称与认证信息；
+    对不上就拒绝并打印真实昵称，让人改用主页链接。
+    """
+    info = sess.profile(uid)
+    if not info:
+        if trust:
+            accounts.append({"label": want or uid, "group": "临时",
+                             "nick": want or uid, "uid": uid})
+            log(f"   ✓ 直接使用 uid {uid}（复核接口不可用，按输入信任）")
+            return True
+        log(f"   ! {want}: uid {uid} 复核拿不到主页（cookie 失效或被风控），跳过")
+        return False
+    nick, ver = info["nick"], info["verified"]
+    if not nick:
+        log(f"   ! {want or uid}: uid {uid} 主页读不到昵称，跳过")
+        return False
+    w = (want or "").strip().lower()
+    if w and w not in (nick + " " + ver).lower():
+        log(f"   ! {want}: uid {uid} 实际是「{nick}」"
+            f"{('（' + ver + '）') if ver else ''}，与所指不符，跳过。"
+            f"若确是这个号，请直接粘主页链接")
+        return False
+    accounts.append({"label": nick, "group": "临时", "nick": nick, "uid": uid})
+    log(f"   ✓ {want or nick} -> {nick} (uid {uid})"
+        f"{(' | ' + ver) if ver else ''}{hint}")
+    return True
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", default=str(REPO / "scripts" / "weibo_config.json"))
@@ -138,10 +181,13 @@ def main():
             args.q, [a.get("nick") for a in cfg["accounts"] if a.get("nick")],
             log=log)
         if plan:
+            # 前端已经拆出 uid（粘了主页链接）时要保留，不能被模型解析结果覆盖
+            preset = {u.strip() for u in (args.uids or "").split(",") if u.strip()}
+            merged = sorted(preset | set(plan["uids"]))
             args.names = ",".join(plan["names"])
-            args.uids = ",".join(plan["uids"])
+            args.uids = ",".join(merged)
             args.pages = plan["pages"]
-            if not plan["names"] and not plan["uids"]:
+            if not plan["names"] and not merged:
                 log("   [llm] 判定为全量，跑完整名单")
         else:
             log("   [llm] 解析失败，原句按逗号当昵称处理")
@@ -179,18 +225,45 @@ def main():
                     accounts.append(hit)
                     log(f"   名单命中 {raw} -> {hit['label']} (uid {hit['uid']})")
                     continue
-                if raw.isdigit():
-                    accounts.append({"label": raw, "group": "临时", "nick": raw, "uid": raw})
+
+                # ① 用户直接给了 uid 或主页链接：最可靠，不经过任何搜索
+                direct = uid_from_text(raw)
+                if direct:
+                    verify_and_add(sess, direct, "" if raw.isdigit() else raw,
+                                   accounts, log, hint=" [直接输入]", trust=True)
                     continue
-                hit = sess.resolve_uid(raw)
+
+                # ② 模型联网确认「微博上的显示名」（简称/外号 -> 全名，提高搜索命中）
+                variants = [raw]
+                try:
+                    variants += llm_plan.find_names(raw, log=log)
+                except Exception as e:
+                    log(f"   [llm-find] 异常: {type(e).__name__}: {e}")
+
+                # ③ 拿显示名回微博实查 uid（get_json 已带页面内 fetch 降级，绕 WAF 432）
+                hit, search_err = None, None
+                for name in variants:
+                    try:
+                        hit = sess.resolve_uid(name, expect=raw)
+                    except wb.WbRequestError as e:
+                        search_err = e
+                        log(f"   搜索 {name} 失败：{e}")
+                        break
+                    if hit:
+                        log(f"   搜索命中 {name} -> {hit[0]} ({hit[1]})")
+                        break
                 if hit:
-                    log(f"   搜索 {raw} -> {hit[0]} ({hit[1]})")
                     accounts.append({"label": hit[0], "group": "临时",
                                      "nick": hit[0], "uid": hit[1]})
+                    continue
+                if search_err:
+                    log(f"   ✗ {raw} 搜索通道不可用，跳过（可改用主页链接）")
                 else:
-                    log(f"   搜索 {raw} 无结果，跳过")
+                    log(f"   ✗ {raw} 搜不到，跳过（可改用主页链接）")
+
             if not accounts:
-                sys.exit(f"名字都没解析出 uid: {args.names}")
+                sys.exit("没有任何账号解析成功，本次不写文件（保留旧索引）。"
+                         "请确认 WB_COOKIE 有效，或直接粘主页链接 / 纯数字 uid")
         seen_uid, uniq = set(), []
         for a in accounts:
             if str(a["uid"]) in seen_uid:
