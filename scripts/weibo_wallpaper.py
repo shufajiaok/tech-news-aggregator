@@ -352,14 +352,22 @@ class WeiboSession:
             return None
         if expect:
             e = expect.strip().lower()
-            # 昵称里直接含待查词的才算候选人
-            cand = [h for h in hits if e in h[0].lower()]
-            if cand:
-                # 成员个人号的昵称带团名后缀（不渝uyuna_Diamond），粉丝号通常不带；
-                # 同分时短的优先，长的大多是「XX的粉丝号」
-                cand.sort(key=lambda h: (0 if _has_group_suffix(h[0]) else 1,
+            # 只认「完全相等」和「以待查词开头」两档。
+            # 不能放宽到「包含」：用户输入两三个字的简称（「琴子」）时，
+            # 「岛谷琴子」这类同名路人会因包含子串而被当成目标（实测踩过，
+            # 抓了 177 张情感博主的图进索引）。
+            # 地偶成员号都是「中文名+罗马音+团名」，简称必然是昵称的前缀。
+            tiers = [
+                [h for h in hits if h[0].strip().lower() == e],
+                [h for h in hits if h[0].lower().startswith(e)],
+            ]
+            for pool in tiers:
+                if not pool:
+                    continue
+                # 同档内：带团名后缀（成员号）优先，有认证优先，再短的优先
+                pool.sort(key=lambda h: (0 if _has_group_suffix(h[0]) else 1,
                                          len(h[0]), -len(h[2])))
-                return cand[0]
+                return pool[0]
             # 不匹配就宁可不认。以前这里 fallback 到 hits[0]，
             # 搜「不渝」会拿到「捕娱」（娱评团账号）并被当成目标抓进索引。
             log(f"   搜索 {term}: 前几个用户都不含「{expect}」，判定非本人 → 放弃")

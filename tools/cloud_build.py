@@ -234,11 +234,16 @@ def main():
                     continue
 
                 # ② 模型联网确认「微博上的显示名」（简称/外号 -> 全名，提高搜索命中）
-                variants = [raw]
+                #    注意顺序：完整昵称必须排在原始词前面。
+                #    用户输入常常是两三个字的中文简称（「琴子」），拿它直接搜会命中
+                #    「岛谷琴子」「XX琴子」这类同名路人；微博的用户搜索又是按完整昵称匹配的，
+                #    只有带团名后缀的全名才可能搜到本人。
+                variants = []
                 try:
                     variants += llm_plan.find_names(raw, log=log)
                 except Exception as e:
                     log(f"   [llm-find] 异常: {type(e).__name__}: {e}")
+                variants.append(raw)
 
                 # ③ 拿显示名回微博实查 uid（get_json 已带页面内 fetch 降级，绕 WAF 432）
                 hit, search_err = None, None
