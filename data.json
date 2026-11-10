@@ -1,7 +1,25 @@
 {
-  "updated_at": "2026-11-09T22:50:50.015278+00:00",
+  "updated_at": "2026-11-10T03:40:12.954670+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "89bfa943-de37-440d-9391-b6286e0d89b3",
+      "title": "英飞凌率先实现300mm碳化硅晶圆量产功率器件",
+      "summary": "英飞凌在奥地利维拉赫晶圆厂成功利用现有硅产线加工出功能完整的300mm碳化硅（SiC）功率器件，成为全球首家在全规模半导体厂实现该技术突破的企业。",
+      "key_points": [
+        "全球首家在量产晶圆厂实现300mm SiC器件制造",
+        "复用现有硅产线设备，降低扩产门槛",
+        "同步验证冷分片（Cold Split）技术提升晶圆产出效率"
+      ],
+      "full_content": "&lt;p&gt;Bruno Ferreira&#039;s journey kicked off with the venerable ZX Spectrum, a cassette player, and his hopes and dreams. He quickly realized he had more fun figuring out how computers work than he did actually using the things. Kicking off a developer career with C and Assembly before moving to scripting languages, he&#039;s worn many hats, including both database architect and systems administration. As a teen, Bruno co-founded a web development outfit where he was for 17 years before moving on to spend nearly a decade at The Tech Report as a writer, editor, and (of course) developer. In this decade, he&#039;s been at Asus, MLCommons, and HotHardware, among others. When not fiddling with computers and games, his love for music and production sends him off to live shows and festivals. Occasionally, he pretends he can play the guitar and bass.&lt;/p&gt;",
+      "ai_summary": "发生了什么：英飞凌于2026年11月9日正式宣布，其位于奥地利维拉赫的全规模半导体晶圆厂已成功将300mm（12英寸）碳化硅晶圆加工为功能完备的功率半导体器件。该里程碑并非依赖全新专用产线，而是通过改造升级现有硅基制造设备实现，大幅降低了大尺寸SiC量产的技术与资本壁垒。同时，英飞凌还在德国德累斯顿工厂验证了其自主研发的‘冷分片’技术在300mm SiC晶锭切割中的可行性，该工艺可显著减少材料损耗、缩短加工时间，提升单晶锭的可用晶圆数量。\n\n为什么重要：300mm晶圆相比主流200mm晶圆可提升约2.3倍的芯片产出效率，对缓解当前SiC功率器件严重供不应求的局面具有战略意义。SiC是新能源汽车、光伏逆变器、工业电源及AI数据中心固态变压器等高能效应用的核心材料，其性能优势（如更低导通损耗、更高开关频率、耐高温）直接决定系统效率与功率密度。英飞凌此举不仅巩固了其在宽禁带半导体领域的领导地位，更标志着SiC从‘实验室先进工艺’迈向‘规模化、经济化制造’的关键转折点。\n\n对行业有什么影响：首先，该技术路径为其他IDM和代工厂提供了可复制的降本范式——无需新建天价SiC专属产线，即可加速产能爬坡，有望推动SiC器件价格进一步下探，加速在中端电动车、储能和服务器电源等市场的渗透。其次，300mm SiC量产将强化欧洲本土供应链韧性，配合欧盟《芯片法案》扶持政策，助力构建自主可控的功率半导体生态。最后，冷分片等配套工艺的成熟，将带动上游SiC长晶、切片设备厂商的技术迭代，形成从材料到器件的全链条协同升级，加速整个宽禁带半导体产业的工业化进程。",
+      "category": "Semiconductor",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/024/733.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-11-10T00:03:08+00:00",
+      "created_at": "2026-11-10T03:40:07.980955+00:00"
+    },
     {
       "id": "99cbf587-003c-40dd-a499-67718bb4f357",
       "title": "OCI-MSA光学互连联盟成立：NVIDIA、AMD、Meta、微软等共建AI‘光速高速公路’标准",
@@ -109,6 +127,42 @@
       "original_author": "@Tom's Hardware",
       "published_at": "2026-11-09T15:57:13+00:00",
       "created_at": "2026-11-09T22:50:39.653365+00:00"
+    },
+    {
+      "id": "1dac4b19-5326-4a96-a070-ec5cc8f97480",
+      "title": "宝马新增三星SDI与LG新能源为第六代电池电芯供应商",
+      "summary": "宝马集团宣布与三星SDI、LG新能源达成合作，两家公司将从2020年代后期起，分别在欧洲和美国工厂为其第六代高压电池供应电芯，强化‘本地服务本地’供应链战略。",
+      "key_points": [
+        "第六代电池电芯供应商扩容至宁德时代、亿纬锂能、三星SDI、LG新能源",
+        "践行‘本地服务本地’原则，电芯与组装厂均靠近整车生产基地",
+        "全球新建五座电池组装基地，覆盖欧、亚、美、墨四大区域"
+      ],
+      "full_content": "&lt;p&gt;Stephen is Tom&#039;s Hardware&#039;s News Editor with almost a decade of industry experience covering technology, having worked at TechRadar, iMore, and even Apple over the years. He has covered the world of consumer tech from nearly every angle, including supply chain rumors, patents and litigation, and more. When he&#039;s not at work, he loves reading about history and playing video games.&lt;/p&gt;",
+      "ai_summary": "发生了什么：宝马集团于2026年11月9日宣布，正式将三星SDI和LG新能源纳入其第六代高压电池电芯供应商体系。根据协议，三星SDI将利用其在欧洲的现有工厂供货，LG新能源则依托其在美国的产能进行配套。此举使宝马的全球电芯供应商阵容扩展至四家——中国宁德时代、亿纬锂能，韩国三星SDI、LG新能源，形成横跨东亚、欧洲、北美的多元化供应网络。与此同时，宝马同步推进‘本地化组装’，在全球范围内新建五座电池生产基地，分别位于德国伊尔巴赫、匈牙利德布勒森、中国沈阳、美国伍德拉夫和墨西哥圣路易斯波托西，全部紧邻其整车工厂。\n\n为什么重要：这一系列动作是宝马应对地缘政治风险、保障供应链安全与韧性的系统性布局。‘本地服务本地’（local for local）原则不仅大幅缩短物流距离、降低运输成本与碳排放，更关键的是规避了单一区域政策变动（如出口管制、贸易壁垒）带来的断供风险。在动力电池作为电动车核心‘心脏’且技术迭代加速的背景下，拥有多元、稳定、贴近生产的电芯与组装能力，直接决定了宝马新车型的上市节奏、成本控制能力和市场响应速度。此举也反映了全球汽车产业供应链正从‘全球化效率优先’转向‘区域化安全优先’的深刻变革。\n\n对行业有什么影响：宝马的策略将对整个汽车行业产生示范效应，加速全球车企重构其电池供应链。一方面，将刺激三星SDI、LG新能源等韩系电池巨头加速在欧美建厂，加剧海外产能竞争；另一方面，也将倒逼中国电池企业（如宁德时代、亿纬锂能）深化本地化合作，从单纯‘出口电芯’升级为‘共建生态’。此外，电池组装厂的区域化布局，将带动当地精密制造、自动化设备、BMS（电池管理系统）等配套产业发展，形成新的产业集群。长远看，这或将推动全球动力电池产业形成‘中国主导原材料与基础制造、韩日欧美主导高端电芯与系统集成’的多极化格局。",
+      "category": "Semiconductor",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/024/737.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-11-09T15:57:13+00:00",
+      "created_at": "2026-11-10T03:40:07.981001+00:00"
+    },
+    {
+      "id": "a4f8a1ce-a51a-490c-879c-9067ad3e4923",
+      "title": "Adobe与迪士尼达成多年AI战略合作，定制化生成模型进军主题乐园",
+      "summary": "Adobe与华特迪士尼公司建立官方AI创新合作伙伴关系，将基于Firefly Foundry平台开发专属生成式AI模型，应用于迪士尼主题乐园设计、影视制作及体育内容创新。",
+      "key_points": [
+        "Firefly Foundry将针对迪士尼IP（角色、场景、风格）定制训练",
+        "迪士尼幻想工程已将AI工具导入乐园开发流程，实现手绘草图转2D概念图",
+        "合作覆盖StudioLAB创意工作流与ESPN Edge体育内容创新中心"
+      ],
+      "full_content": "&lt;p&gt;Mark&#039;s enthusiasm for computers dampened at an early age by the rubber-keyed Sinclair Spectrum 48K and feelings of Commodore 64 envy. However, in the mid-80s, hope in a digital future was rekindled by the purchase of an Atari 520 STe. Since that time Mark has used a multitude of computers for fun and professional endeavors. He often owned both Macs and PCs but went cold on the former after OS9 was killed off, and warmed to the latter with the introduction of Windows XP.&lt;br&gt; &lt;br&gt; Early work years were spent in artwork and reprographics but in the late noughties, Mark started to blog about computers, Taiwanese food culture, and guitar design. This activity led to a full-time position writing about breaking PC tech news for HEXUS, for the best part of a decade. When HEXUS was abruptly closed, Mark helped with the foundation of Club386, before finding a new home at Tom&#039;s Hardware.&lt;br&gt; &lt;br&gt; When not wearing through the keycap legends on his PC keyboards, Mark can be found wandering the computer malls of Taiwan&#039;s neon-lit conurbations and enjoying local and international cuisine.&lt;/p&gt;",
+      "ai_summary": "发生了什么：Adobe于2026年11月9日宣布与华特迪士尼公司达成一项覆盖多年期的战略合作协议，正式成为其官方AI创新合作伙伴。合作核心是利用Adobe Firefly Foundry平台，为迪士尼量身打造一系列生成式AI模型。这些模型将基于迪士尼海量的版权资产（包括经典角色、标志性场景、独特视觉风格）进行深度训练，确保生成内容严格符合品牌调性与商业使用规范。目前，迪士尼幻想工程（Imagineering）部门已率先将AI工具嵌入主题乐园开发流程，例如将设计师的手绘草图自动转化为精细的2D概念图；StudioLAB则探索AI优化内部创意流程；ESPN Edge则聚焦于利用AI盘活历史档案、提升粉丝互动体验。\n\n为什么重要：这是全球顶级IP持有方与专业创意软件巨头在生成式AI领域的深度耦合，标志着AI正从‘通用生产力工具’跃升为‘垂直领域创意中枢’。对于迪士尼而言，在IP价值高度依赖原创性与一致性的娱乐产业，拥有可控、可信、可审计的专属AI模型，远比调用公开大模型更安全、更高效、更具商业价值。对于Adobe而言，此举不仅锁定了一个重量级标杆客户，更验证了其Firefly Foundry‘企业级AI工厂’模式的成功——即提供从模型训练、部署到治理的全栈能力，而非仅出售API或SaaS服务。\n\n对行业有什么影响：该合作将强力推动AIGC在泛娱乐产业的规模化落地。一方面，将加速电影、游戏、广告等行业对‘IP专属大模型’的需求，催生一批面向特定文化符号、艺术流派、行业知识的垂类模型服务商。另一方面，将重塑创意工作流：艺术家从‘执行者’转变为‘导演+提示工程师’，AI承担大量重复性、基础性创作任务，极大提升内容生产效率与试错成本。更重要的是，它确立了一种新型‘人机协作’范式——‘以人为本，艺术家主导’，即AI始终作为辅助工具，最终决策权与审美判断权牢牢掌握在人类创作者手中，这为解决AIGC伦理、版权与质量争议提供了可借鉴的实践路径。",
+      "category": "AI",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/024/731.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-11-09T15:15:00+00:00",
+      "created_at": "2026-11-10T03:40:07.981012+00:00"
     },
     {
       "id": "abd085e9-b2a1-4040-9511-197c32ebace9",
@@ -5241,58 +5295,6 @@
       "original_author": "@Semiconductor Digest",
       "published_at": "2026-10-06T17:40:12+00:00",
       "created_at": "2026-10-06T18:45:48.991475+00:00"
-    },
-    {
-      "id": "8feeb2a3-ece8-4304-85b7-44b1f1c01f78",
-      "title": "Amazon has disabled Alexa cont...",
-      "summary": "Amazon has disabled Alexa control of devices plugged into the company's Echo smart speaker’s AUX port. Users have report...",
-      "key_points": [
-        "Amazon has disabled Alexa control of dev"
-      ],
-      "full_content": "Amazon has disabled Alexa control of devices plugged into the company's Echo smart speaker’s AUX port. Users have reported receiving an email from Amazon this week informing them of the change. “This is a reminder that as of today, voice commands to control your Echo device’s Aux input are no longer available. Requests like 'Alexa, play from line in” or “Alexa, set aux input' will no longer work,” an email that Amazon sent reads, according to a screenshot a Reddit user shared this week. An Amazon spokesperson confirmed the news to Ars Technica today. Read full article Comments",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nAmazon has disabled Alexa control of devices plugged into the company's Echo smart speaker’s AUX port. Users have reported receiving an email from Amazon this week informing them of the change. “This is a reminder that as of today, voice commands to control your Echo device’s Aux input are no longer available. Requests like 'Alexa, play from line in” or “Alexa, set aux input' will no longer work,” an email that Amazon sent reads, according to a screenshot a Reddit user shared this week. An Amazo",
-      "category": "AI",
-      "source": "Ars Technica (Gadgets)",
-      "source_url": "https://arstechnica.com/gadgets/2026/10/amazon-bricks-alexas-ability-to-control-echo-speakers-aux-input/",
-      "original_author": "Ars Technica (Gadgets)",
-      "published_at": "2026-10-06T17:03:16+00:00",
-      "created_at": "2026-10-08T19:18:37.351128+00:00"
-    },
-    {
-      "id": "67636c6b-ad83-4e44-8be0-e1feb9fcd207",
-      "title": "Teradyne Titan HP平台集成烧录测试，应对AI芯片高可靠性挑战",
-      "summary": "泰瑞达推出Titan HP系统级测试平台，首次将烧录（Burn-in）与功能测试融合，支持单芯片结温精准控制与千瓦级供电，满足AI加速器媲美车规级的可靠性要求。",
-      "key_points": [
-        "Titan HP实现每芯片独立结温控制与真实负载烧录，替代传统恒温烘箱",
-        "异步插槽架构支持单站点维护，避免整机停机，提升测试产线效率",
-        "覆盖AI芯片全生命周期测试：晶圆探针→封装测试→系统级测试→可靠性验证"
-      ],
-      "full_content": "Sony's decision to go forward with a fully discless future for its PlayStation consoles, starting with the PS6, took even one of its former executives by surprise. Back in February 2025, Shawn Layden (who had left Sony in 2019 after a 32-year career during which he was CEO of SIE America and Chairman of SIE Worldwide Studios) claimed Sony wouldn't do that because of their far-ranging market reach: some countries, he reasoned, still had a prominent retail presence. However, on July 1, 2026, Sony proved him wrong when it announced that it would cease producing PlayStation discs from January 2028 [&hellip;] Read full article at https://wccftech.com/shawn-layden-sony-2028-discless-disc-cutoff-significant-brand-hit/",
-      "ai_summary": "发生了什么：泰瑞达于2026年10月发布Titan HP生产级系统测试平台，首次将传统分离的‘烧录（Burn-in）’与‘功能测试’流程深度融合。该平台摒弃了将芯片批量置于恒温烘箱的老方法，改为对每个芯片施加真实工作负载，同时通过每站点独立的热控系统，精确维持其结温（Junction Temperature）在目标值（如125°C），实现‘应力即测试’。其单插槽千瓦级供电能力，可满足GB200、MI300X等高功耗AI芯片的严苛可靠性验证需求，单芯片测试数据全程记录，形成完整质量追溯链。\n\n为什么重要：AI加速器正面临可靠性标准的范式转移。过去，数据中心芯片可靠性要求接近消费级（FIT率<1000），而今因单卡故障导致整机柜瘫痪的代价高昂，客户要求向车规级（FIT<100）看齐。传统烧录方式无法模拟真实负载下的热应力分布，漏检率高；而功能测试又无法覆盖长期老化失效。Titan HP的融合方案，既保证了应力有效性，又实现了测试数据闭环，将可靠性验证周期缩短40%，并为芯片设计反馈关键失效模式数据。\n\n对行业有什么影响：对晶圆厂与封测厂（OSAT）而言，Titan HP将推动测试环节从‘成本中心’转向‘质量中枢’——其采集的每芯片热-电-时序数据，可反哺设计优化（如热点分布改进）与工艺监控（如焊点疲劳预警）。对AI芯片公司而言，获得Titan HP认证意味着产品可靠性获得第三方背书，成为云厂商招标的关键资质。对整个产业链而言，该方案预示着‘测试即服务（TaaS）’新模式兴起：泰瑞达等厂商可提供云端测试数据分析平台，帮助客户预测芯片寿命、优化运维策略，推动AI基础设施从‘故障维修’转向‘预测性维护’。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/teradyne-integrates-burn-in-and-system-level-test-for-high-power-ai-chips/",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-10-06T16:30:33+00:00",
-      "created_at": "2026-10-06T18:45:48.991482+00:00"
-    },
-    {
-      "id": "a258bf2e-8544-479b-a81d-5380f29f141b",
-      "title": "英伟达RTX Spark处理器登陆笔记本，多品牌新品搭载亮相",
-      "summary": "英伟达正式推出RTX Spark PC处理器，首批搭载机型包括Surface Laptop Ultra、华硕ProArt P16/P14、戴尔XPS 16 Creator Edition等，主打AI创作与本地大模型运行能力。",
-      "key_points": [
-        "RTX Spark为面向创作者的专用PC处理器，集成AI加速单元与高性能GPU",
-        "首批机型覆盖微软、华硕、戴尔、惠普、联想、微星六大品牌，定位AI内容创作",
-        "《明日方舟：终末地》等游戏确认支持RTX Spark平台"
-      ],
-      "full_content": "Ukrainian developer Frogwares has just released a major free update to The Sinking City 2, updating the survival horror game to version 1.1.0. The development team boasts over 150 between fixes and improvements, covering performance, stability, puzzles, visuals, and localization. Most of them are aimed at addressing the community's main complaints. For example, Frogwares redesigned multiple encounters to ease enemy pressure and deliver a more balanced combat experience while preserving the challenge level. Encounters that players identified as excessively demanding, specifically \"The Wake-Up Call,\" \"A Sight for Sore Eyes,\" \"Time and Tide,\" and \"Cold Comfort\", now feature reduced enemy counts [&hellip;] Read full article at https://wccftech.com/the-sinking-city-2-150-fixes-improvements-patch-1-1-0-steam-demo/",
-      "ai_summary": "发生了什么：英伟达于2026年6月台北电脑展正式发布RTX Spark PC处理器，这是继GeForce RTX显卡、Data Center GPU之后，NVIDIA面向个人计算终端推出的第三大产品线。RTX Spark并非传统CPU，而是高度集成的异构计算平台：包含定制CPU核心、专用AI引擎（支持FP16/INT4稀疏计算）、以及基于Ada Lovelace架构的GPU单元，专为本地运行10B级大模型、实时AI视频生成、3D内容创作等负载优化。首批搭载机型已于2026年秋季上市，涵盖微软Surface Laptop Ultra（mini-LED屏+最大触控板）、华硕ProArt P16/P14（OLED屏+全天续航）、戴尔XPS 16 Creator Edition（Tandem OLED+AI工作流加速）等六品牌十余款产品。\n\n为什么重要：RTX Spark的发布标志着AI PC进入‘专用加速器’新阶段。此前AI PC依赖CPU NPU（如Intel Meteor Lake）或GPU CUDA核心，存在算力碎片化、软件栈割裂问题。RTX Spark以统一架构、完整驱动（NVIDIA Studio）与优化SDK（如TensorRT-LLM），提供端到端AI体验：用户可一键运行Llama 3、Phi-3等模型，或使用Stable Diffusion XL进行实时图像编辑。游戏《明日方舟：终末地》的官方支持，更验证其在3D渲染与AI NPC交互等混合负载上的优势，拓展了AI PC的应用边界。\n\n对行业有什么影响：对PC厂商而言，RTX Spark提供差异化卖点——摆脱‘参数军备竞赛’，转向‘AI体验营销’，微软Surface系列借此强化创意专业形象。对软件生态而言，Adobe、Blackmagic、DaVinci Resolve等专业工具正深度适配RTX Spark，推动AI功能从‘噱头’变为‘生产力标配’。对消费者而言，本地大模型运行不再依赖昂贵云服务或显卡，16GB内存+RTX Spark即可流畅运行7B模型，隐私与响应速度双重提升。长远看，这或将加速Windows生态的AI重构：微软Copilot+PC标准或纳入RTX Spark认证，形成NVIDIA主导的‘AI PC新事实标准’，挑战Intel/AMD的CPU中心地位。",
-      "category": "CPU",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/010/123.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-10-06T16:00:00+00:00",
-      "created_at": "2026-10-06T18:45:48.991489+00:00"
     }
   ]
 }
