@@ -225,10 +225,26 @@ class WeiboSession:
                 return {status: r.status, body: (await r.text()).slice(0, 400000)};
             } catch (e) { return {status: 0, body: String(e)}; }
         }"""
-        try:
-            res = pg.evaluate(js, url)
-        except Exception as e:
-            self.last_error = f"{type(e).__name__}: {e}"
+        res, transient = None, False
+        for attempt in range(3):
+            try:
+                res = pg.evaluate(js, url)
+                break
+            except Exception as e:
+                msg = f"{type(e).__name__}: {e}"
+                self.last_error = msg
+                # m.weibo.cn 首页加载完常有二次跳转，此时 evaluate 的执行上下文被销毁。
+                # 这不是「接口不可用」，等页面稳定后重试即可。
+                transient = any(k in msg for k in (
+                    "Execution context was destroyed",
+                    "Execution context is not available",
+                    "Target closed",
+                    "Element is not attached",
+                )) or "navigat" in msg.lower()
+                if not transient or attempt == 2:
+                    return None
+                self._settle(pg)
+        if res is None:
             return None
         status, body = res.get("status") or 0, res.get("body") or ""
         if status != 200:
@@ -240,6 +256,18 @@ class WeiboSession:
             self.last_error = f"非 JSON 响应 ({len(body)}B)"
             return None
 
+    @staticmethod
+    def _settle(page, timeout=15000):
+        """等页面导航结束，避免在跳转中途执行脚本。"""
+        try:
+            page.wait_for_load_state("domcontentloaded", timeout=timeout)
+        except Exception:
+            pass
+        try:
+            page.wait_for_timeout(700)
+        except Exception:
+            pass
+
     def search_page(self):
         """取一个位于 m.weibo.cn 的页面供搜索接口 fetch。
 
@@ -248,7 +276,7 @@ class WeiboSession:
         if self._sp is None:
             sp = self.ctx.new_page()
             sp.goto("https://m.weibo.cn/", wait_until="domcontentloaded", timeout=30000)
-            sp.wait_for_timeout(1200)
+            self._settle(sp)
             self._sp = sp
         return self._sp
 

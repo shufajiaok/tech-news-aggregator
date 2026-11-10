@@ -33,6 +33,17 @@ KNOWN_SUFFIX = {
     "Fuwafuwa夢": "_Fuwafuwa夢", "恋时青空": "_恋时青空",
     "弥漫星雲": "-弥漫星雲", "Astoria": "-Astoria", "夏日青空": "_夏日青空",
     "Purelee": "_Purelee", "StarWinK": "-StarWinK", "天枢Polaris": "_Polaris",
+    "StarCandy": "-StarCandy",
+}
+
+# 图鉴里没收录、但已人工去微博核实过的团体。
+# 每项写「微博上真实存在的完整昵称」，重建名册时不会被覆盖。
+EXTRA_GROUPS = {
+    "StarCandy": [
+        "琴子Kotoko-StarCandy",   # uid 7928592755 认证：StarCandy偶像团体成员
+        "巧可Choco-StarCandy",    # uid 7312611017 认证：StarCandy偶像团体成员
+        "鲨鲨Same-StarCandy",     # uid 5498817895 昵称完全一致（认证为动漫博主）
+    ],
 }
 
 
@@ -102,6 +113,13 @@ def main(paths):
         if len(g) > 24:
             continue
         groups.setdefault(g, []).append(n)
+
+    # 图鉴没收录、但已核实过的团体补进来（保持人在前、不重复）
+    for g, members in EXTRA_GROUPS.items():
+        bucket = groups.setdefault(g, [])
+        for m in members:
+            if m not in bucket:
+                bucket.append(m)
 
     acc = json.loads(CFG.read_text(encoding="utf-8"))["accounts"]
 

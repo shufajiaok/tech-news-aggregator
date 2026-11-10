@@ -18,6 +18,7 @@
 | Purelee | `_Purelee` | 小鸟Kotori_Purelee |
 | StarWinK | `-StarWinK` | 熹熹Remiki-StarWinK |
 | 天枢Polaris | `_Polaris` | - |
+| StarCandy | `-StarCandy` | - |
 
 团体官博多为「团名Official / 团名_Official」，个别带 `-` 前后缀。
 结论：知道姓名 + 团体就能拼出完整昵称；反过来，搜到的昵称必须含「中文名」或「罗马音」才算命中，否则是同名路人。
@@ -65,4 +66,5 @@
 - **YUMEDOLL 夢㒖**：YGG IDOL Fes 常驻、wiki 成员表无此人、待核实
 - **Jams Collection**：保科凜EmeraldGreen、北乃咲久、花坂環
 - **StarShips**：羽蝶Yumiko、小栯Yuna、暮奈Kurenai
+- **StarCandy**：琴子Kotoko-StarCandy、巧可Choco-StarCandy、鲨鲨Same-StarCandy
 - **Re:Comi**：奶萌Reno、团子Kinana

@@ -41,8 +41,9 @@ def _roster_block():
     r = load_roster()
     if not r:
         return ""
-    return ("下面是用户资料库里已人工核对过的微博账号资料，判断「这个人是谁、"
-            "账号叫什么」时以此为准：\n\n" + r + "\n\n")
+    return ("下面是从用户资料库里整理的**已知账号示例**，用来了解命名规律、判断同名归属。\n"
+            "注意：这份示例**不完整，不是白名单**——里面没有的团体和人照样要按联网检索"
+            "结果补出完整显示名，不要因为「示例里没写」就返回空。\n\n" + r + "\n\n")
 
 SYSTEM = """你是一个抓取任务参数解析器。把用户的中文自然语言请求，转成 JSON 参数。
 
@@ -66,11 +67,14 @@ FIND_SYSTEM = """你是微博账号检索助手。任务：把用户说的昵称
 
 规则：
 - 只给「显示名」，不要给 uid、不要给任何数字 ID。后台会拿这些名字回微博实查。
-- 成员个人号的昵称规律是「中文名 + 罗马音 + _团名」，例如「不渝uyuna_Diamond」
-  「白泠Mio-StarHoney」「鼠条Kyuko-Astoria」。用户只给中文名时，按他所属团体补出完整昵称。
+- 成员个人号的昵称规律是「中文名 + 罗马音 + 团名后缀」，后缀可能是下划线或连字符：
+  「不渝uyuna_Diamond」「白泠Mio-StarHoney」「鼠条Kyuko-Astoria」「琴子Kotoko-StarCandy」。
+  用户只给中文名（或中文名+罗马音）时，务必按她所属团体补出带后缀的完整昵称，
+  因为微博用户搜索是按完整昵称匹配的，少了后缀就搜不到人。
 - 最多 3 个，按可能性从高到低排列。
-- 优先使用参考资料里出现过的人名与团名，不要凭印象另外造名字。
-- 完全没有线索时返回 {"names": []}。"""
+- 参考资料只是**已知示例，不是白名单**。示例里没有的团体和人，照样按联网检索补全；
+  绝不能因为「参考资料没提到」就返回空数组。
+- 只有联网检索确实查不到任何相关账号时，才返回 {"names": []}。"""
 
 
 def _extract_json(text):
@@ -224,37 +228,49 @@ def find_names(term, log=print):
     为什么不返回 uid：实测联网搜索只回摘要文本，里面不含数字 uid，
     模型会凭空编一个（同一个名字两次调用给出不同 uid，且与真实值不符）。
     所以 uid 一律由调用方拿这些显示名回微博实查。
+
+    名册要问两遍的原因：名册能帮模型把简称补全（不渝 -> 不渝uyuna_Diamond），
+    但也会诱导它把名册当成白名单——遇到名册外的团体（如 StarCandy）直接回空数组。
+    所以第一遍带名册，空结果时去掉名册重问，两条路至少通一条。
     """
     model = (os.environ.get("WB_LLM_MODEL") or DEFAULT_MODEL).strip()
-    payload = {
-        "model": model,
-        "input": {"messages": [
-            {"role": "system", "content": FIND_SYSTEM},
-            {"role": "user", "content": _roster_block()
-             + f"「{term}」在微博上的完整昵称是什么？"},
-        ]},
-        "parameters": {"enable_search": True, "result_format": "message",
-                       "temperature": 0, "max_tokens": 500},
-    }
-    text = _post_native_search(payload, log, "llm-find")
-    if not text:
-        return []
-    plan = _extract_json(text)
-    if not isinstance(plan, dict):
-        log(f"   [llm-find] 无法解析输出: {text[:120]}")
-        return []
-    raw = plan.get("names")
-    if not isinstance(raw, list):
-        raw = [plan.get("nick")] if plan.get("nick") else []
-    out, seen = [], {(term or "").strip().lower()}
-    for n in raw[:4]:
-        s = str(n or "").strip()
-        if not s or s.lower() in seen:
-            continue
-        seen.add(s.lower())
-        out.append(s)
+
+    def ask(with_roster):
+        payload = {
+            "model": model,
+            "input": {"messages": [
+                {"role": "system", "content": FIND_SYSTEM},
+                {"role": "user", "content": (_roster_block() if with_roster else "")
+                 + f"「{term}」在微博上的完整昵称是什么？"},
+            ]},
+            "parameters": {"enable_search": True, "result_format": "message",
+                           "temperature": 0, "max_tokens": 500},
+        }
+        text = _post_native_search(payload, log, "llm-find")
+        if not text:
+            return []
+        plan = _extract_json(text)
+        if not isinstance(plan, dict):
+            log(f"   [llm-find] 无法解析输出: {text[:120]}")
+            return []
+        raw = plan.get("names")
+        if not isinstance(raw, list):
+            raw = [plan.get("nick")] if plan.get("nick") else []
+        out, seen = [], {(term or "").strip().lower()}
+        for n in raw[:4]:
+            s = str(n or "").strip()
+            if not s or s.lower() in seen:
+                continue
+            seen.add(s.lower())
+            out.append(s)
+        return out[:3]
+
+    out = ask(True)
+    if not out:
+        log(f"   [llm-find] 「{term}」名册内无结论，去掉名册重试一次")
+        out = ask(False)
     if out:
         log(f"   [llm-find] 「{term}」-> {out}")
     else:
         log(f"   [llm-find] 「{term}」没有给出可用显示名")
-    return out[:3]
+    return out
