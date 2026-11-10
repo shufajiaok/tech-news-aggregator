@@ -110,6 +110,29 @@ body {
     border-color: var(--accent);
     background: var(--accent-glow);
 }
+
+/* ── 壁纸画廊入口 ────────────────────────────────── */
+.wp-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 36px;
+    padding: 0 14px;
+    margin-left: 10px;
+    border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--border));
+    border-radius: 18px;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: all var(--transition);
+}
+.wp-link:hover {
+    border-color: var(--accent);
+    background: var(--accent-glow);
+}
 .nav {
     display: flex;
     gap: 4px;
@@ -438,6 +461,10 @@ body {
         gap: 8px;
     }
     .theme-toggle {
+        order: 1;
+        margin-left: 0;
+    }
+    .wp-link {
         order: 1;
         margin-left: 0;
     }

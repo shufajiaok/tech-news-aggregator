@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>微博壁纸画廊 · Weibo Wallpaper</title>
+<meta name="description" content="微博原图壁纸画廊：云端只存缩略图，本机在线时直出高清原图。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="brand-mark">◐</span>
+      <span class="brand-text">壁纸画廊</span>
+      <span class="brand-sub" id="statCount">—</span>
+    </div>
+
+    <div class="status" id="status" data-state="probing" title="本机 agent 探测中">
+      <span class="dot"></span>
+      <span class="status-text" id="statusText">检测本机…</span>
+    </div>
+
+    <button class="icon-btn" id="themeToggle" title="切换深浅色">🌙</button>
+  </div>
+</header>
+
+<section class="filters">
+  <div class="filter-row">
+    <div class="chips" id="setChips"></div>
+    <div class="chips" id="gradeChips"></div>
+  </div>
+  <div class="filter-row">
+    <div class="chips scroll-x" id="ownerChips"></div>
+    <div class="sort">
+      <select id="sortSel" title="排序">
+        <option value="bytes">体积优先</option>
+        <option value="created">时间新→旧</option>
+        <option value="ratio">比例接近 16:9</option>
+      </select>
+    </div>
+  </div>
+</section>
+
+<main class="grid-wrap">
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" hidden>没有符合条件的图片</div>
+  <div class="more-sentinel" id="sentinel"></div>
+</main>
+
+<footer class="footer">
+  <span id="footStat">—</span>
+  <span class="sep">·</span>
+  <span>云端仅存缩略图，原图不出本机</span>
+</footer>
+
+<!-- 灯箱 -->
+<div class="lb" id="lb" hidden>
+  <button class="lb-close" id="lbClose" title="关闭 (Esc)">×</button>
+  <button class="lb-nav prev" id="lbPrev" title="上一张 (←)">‹</button>
+  <button class="lb-nav next" id="lbNext" title="下一张 (→)">›</button>
+  <div class="lb-stage">
+    <div class="lb-spinner" id="lbSpinner"><i></i><span>载入原图…</span></div>
+    <img id="lbImg" alt="">
+  </div>
+  <div class="lb-bar" id="lbBar">
+    <div class="lb-meta">
+      <strong id="lbOwner"></strong>
+      <span id="lbDim"></span>
+    </div>
+    <div class="lb-actions">
+      <span class="lb-tag" id="lbTag"></span>
+      <a id="lbLocal" target="_blank" rel="noopener" hidden>本机看原图 ↗</a>
+      <a id="lbPost" target="_blank" rel="noopener">原微博 ↗</a>
+      <a id="lbOpen" target="_blank" rel="noopener">新窗口打开</a>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
