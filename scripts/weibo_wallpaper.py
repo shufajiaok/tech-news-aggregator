@@ -147,6 +147,7 @@ class WeiboSession:
         self.browser = None
         self.ctx = None
         self.page = None
+        self._sp = None
         self.last_error = ""
 
     def __enter__(self):
@@ -189,12 +190,17 @@ class WeiboSession:
         except Exception:
             pass
 
-    def page_json(self, url):
+    def page_json(self, url, page=None):
         """在页面上下文里 fetch，带真实浏览器指纹。
 
         APIRequestContext（self.ctx.request）是裸请求，境外 runner 上会被 WAF 打成 432；
         页面内 fetch 走完整浏览器上下文，同样的 URL 通常能正常返回。
+        注意必须用同源页面：pc 模式主页面在 weibo.com，拿它 fetch m.weibo.cn 会被 CORS 拦。
         """
+        pg = page if page is not None else self.page
+        if pg is None:
+            self.last_error = "没有可用页面"
+            return None
         js = """async (u) => {
             try {
                 const r = await fetch(u, {
@@ -206,19 +212,31 @@ class WeiboSession:
             } catch (e) { return {status: 0, body: String(e)}; }
         }"""
         try:
-            res = self.page.evaluate(js, url)
+            res = pg.evaluate(js, url)
         except Exception as e:
             self.last_error = f"{type(e).__name__}: {e}"
             return None
         status, body = res.get("status") or 0, res.get("body") or ""
         if status != 200:
-            self.last_error = f"HTTP {status} (body {len(body)}B)"
+            self.last_error = f"HTTP {status} (body {body[:60]})"
             return None
         try:
             return json.loads(body)
         except Exception:
             self.last_error = f"非 JSON 响应 ({len(body)}B)"
             return None
+
+    def search_page(self):
+        """取一个位于 m.weibo.cn 的页面供搜索接口 fetch。
+
+        pc 模式主页面在 weibo.com，直接跨域 fetch m.weibo.cn 会 CORS 失败（实测 HTTP 0）。
+        """
+        if self._sp is None:
+            sp = self.ctx.new_page()
+            sp.goto("https://m.weibo.cn/", wait_until="domcontentloaded", timeout=30000)
+            sp.wait_for_timeout(1200)
+            self._sp = sp
+        return self._sp
 
     def get_json(self, url, referer=None, extra=None, retries=2):
         """先试裸请求，失败自动降级到页面内 fetch；两种都失败时 last_error 有真实原因。"""
@@ -262,7 +280,11 @@ class WeiboSession:
         cid = urllib.parse.quote("100103type=1&q=" + term, safe="")
         url = ("https://m.weibo.cn/api/container/getIndex?containerid="
                + cid + "&page_type=searchall")
-        d = self.page_json(url) if self.page is not None else self.get_json(url)
+        try:
+            d = self.page_json(url, page=self.search_page())
+        except Exception as e:
+            log(f"   搜索页打开失败: {type(e).__name__}: {e}")
+            d = self.get_json(url)
         if not d:
             raise WbRequestError(f"搜索接口不可用（{self.last_error or '空响应'}）")
         data = d.get("data")
