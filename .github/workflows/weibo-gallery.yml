@@ -51,6 +51,10 @@ jobs:
     steps:
       - name: 检出代码
         uses: actions/checkout@v4
+        with:
+          # 定时只在默认分支 master 触发，但抓取脚本与索引都在 feat 分支；
+          # 不显式检出就会找不到 tools/cloud_build.py 直接挂。
+          ref: feat/wallpaper-gallery
 
       - name: 设置 Python
         uses: actions/setup-python@v5
@@ -93,7 +97,7 @@ jobs:
           if [[ -n "$files" ]]; then
             git add $files
             git commit -m "chore(wallpaper): 增量更新索引 $(date -u +%FT%TZ)"
-            git push
+            git push origin HEAD:feat/wallpaper-gallery
           else
             echo "索引无变化，跳过提交"
           fi
