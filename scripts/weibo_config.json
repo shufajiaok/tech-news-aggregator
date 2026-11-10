@@ -1,0 +1,185 @@
+{
+  "_说明": "已核实的默认名单：用户口径「除小乱外我在意的团」，故不含小乱。换人改 accounts（nick 填微博昵称，缺省填 uid 数字即可跳过昵称解析）；调口径改 min_bytes / ratio / ratio_tolerance / min_width。本文件只被 tools/cloud_build.py 读取，不落任何图片。",
+  "min_bytes": 2097152,
+  "ratio": 1.7778,
+  "ratio_tolerance": 0.06,
+  "min_width": 1920,
+  "extra_pages_with_cookie": 6,
+  "accounts": [
+    {
+      "label": "白泠 Mio",
+      "group": "核心",
+      "nick": "白泠Mio-StarHoney",
+      "expect": "StarHoney",
+      "uid": "7926989456"
+    },
+    {
+      "label": "恋恋 Renren",
+      "group": "核心",
+      "nick": "恋恋Renren-StarHoney",
+      "expect": "StarHoney",
+      "uid": "7117031969"
+    },
+    {
+      "label": "小卡 moka",
+      "group": "核心",
+      "nick": "小卡moka_Fuwafuwa夢",
+      "expect": "Fuwafuwa",
+      "uid": "6800222219"
+    },
+    {
+      "label": "七奈 Kaname",
+      "group": "核心",
+      "nick": "七奈Kaname-弥漫星雲",
+      "expect": "弥漫星雲",
+      "uid": "9007664855"
+    },
+    {
+      "label": "石榴 Zakuro",
+      "group": "核心",
+      "nick": "石榴Zakuro_恋时青空",
+      "expect": "恋时青空",
+      "uid": "7840946214"
+    },
+    {
+      "label": "梦喃 yumechi",
+      "group": "核心",
+      "nick": "梦喃yumechi_恋时青空",
+      "expect": "恋时青空",
+      "uid": "6680227387"
+    },
+    {
+      "label": "小月 Tsuki",
+      "group": "核心",
+      "nick": "小月Tsuki_恋时青空",
+      "expect": "恋时青空",
+      "uid": "7035676523"
+    },
+    {
+      "label": "小夏 Natsumi",
+      "group": "扩展",
+      "nick": "小夏Natsumi-Astoria",
+      "expect": "Astoria",
+      "uid": "7829809669"
+    },
+    {
+      "label": "云羽 Kumoha",
+      "group": "扩展",
+      "nick": "云羽Kumoha_夏日青空",
+      "expect": "夏日青空",
+      "uid": "8276766954"
+    },
+    {
+      "label": "殷殷 moiko",
+      "group": "扩展",
+      "nick": "殷殷moiko_Diamond",
+      "expect": "Diamond",
+      "uid": "8363994694"
+    },
+    {
+      "label": "小乔 ameko",
+      "group": "扩展",
+      "nick": "小乔ameko_Fuwafuwa夢",
+      "expect": "Fuwafuwa",
+      "uid": "4009109008"
+    },
+    {
+      "label": "小鸟 Kotori",
+      "group": "扩展",
+      "nick": "小鸟Kotori_Purelee",
+      "expect": "Purelee",
+      "uid": "8006015019"
+    },
+    {
+      "label": "咲悠 Sakuyu",
+      "group": "扩展",
+      "nick": "咲悠Sakuyu-弥漫星雲",
+      "expect": "弥漫星雲",
+      "uid": "9163099928"
+    },
+    {
+      "label": "熹熹 Remiki",
+      "group": "扩展",
+      "nick": "熹熹Remiki-StarWinK",
+      "expect": "StarWinK",
+      "uid": "2421490380"
+    },
+    {
+      "label": "鼠条 Kyuko",
+      "group": "扩展",
+      "nick": "鼠条Kyuko-Astoria",
+      "expect": "Astoria",
+      "uid": "7977384479"
+    },
+    {
+      "label": "StarHoney 官博",
+      "group": "官博",
+      "nick": "StarHoneyOfficial",
+      "expect": "StarHoney",
+      "uid": "7901112897"
+    },
+    {
+      "label": "弥漫星雲 官博",
+      "group": "官博",
+      "nick": "弥漫星雲Official",
+      "expect": "弥漫星雲",
+      "uid": "5466742004"
+    },
+    {
+      "label": "恋时青空 官博",
+      "group": "官博",
+      "nick": "恋时青空_AzuraToki_Official",
+      "expect": "恋时青空",
+      "uid": "8005960120"
+    },
+    {
+      "label": "Fuwafuwa夢 官博",
+      "group": "官博",
+      "nick": "Fuwafuwa夢_Official",
+      "expect": "Fuwafuwa",
+      "uid": "6055634313"
+    },
+    {
+      "label": "Astoria 官博",
+      "group": "官博",
+      "nick": "AstoriaOfficial",
+      "expect": "Astoria",
+      "uid": "7969451525"
+    },
+    {
+      "label": "Diamond% 官博",
+      "group": "官博",
+      "nick": "Diamond_Percent",
+      "expect": "Diamond",
+      "uid": "9114311004"
+    },
+    {
+      "label": "夏日青空 官博",
+      "group": "官博",
+      "nick": "夏日青空_AzuraSummer_Official",
+      "expect": "夏日青空",
+      "uid": "4028956292"
+    },
+    {
+      "label": "StarWinK 官博",
+      "group": "官博",
+      "nick": "StarWinK",
+      "expect": "StarWinK",
+      "uid": "7544960611"
+    },
+    {
+      "label": "Purelee 官博",
+      "group": "官博",
+      "nick": "-Purelee-",
+      "expect": "Purelee",
+      "uid": "8013612297"
+    },
+    {
+      "label": "天枢Polaris 官博",
+      "group": "官博",
+      "nick": "天枢Polaris_Official",
+      "expect": "Polaris",
+      "uid": "9026139384"
+    }
+  ]
+}

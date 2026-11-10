@@ -1,0 +1,71 @@
+name: 壁纸画廊增量
+
+# 只产出元数据（frontend/wallpaper/data.json），不落地任何图片：
+# 缩略图与原图都由站点的 /i/<档位>/<key> 实时代理微博 CDN。
+
+on:
+  schedule:
+    # UTC 19:30 = 北京时间 03:30，避开微博白天风控高峰
+    - cron: '30 19 * * *'
+  workflow_dispatch:
+    inputs:
+      uids:
+        description: '只跑指定 uid（逗号分隔，留空跑全部）'
+        required: false
+        default: ''
+      max_new:
+        description: '本次最多追加多少张（0 = 不限）'
+        required: false
+        default: '0'
+      dry_run:
+        description: '只统计不写文件'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weibo-gallery
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pillow playwright
+          python -m playwright install --with-deps chromium
+
+      - name: 增量抓取（只出元数据）
+        run: |
+          python tools/cloud_build.py \
+            --uids "${{ inputs.uids }}" \
+            --max-new "${{ inputs.max_new || 0 }}" \
+            ${{ inputs.dry_run && '--dry-run' || '' }}
+
+      - name: 提交 data.json
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [[ -n $(git status --porcelain frontend/wallpaper/data.json) ]]; then
+            git add frontend/wallpaper/data.json
+            git commit -m "chore(wallpaper): 增量更新壁纸索引 $(date -u +%FT%TZ)"
+            git push
+          else
+            echo "data.json 无变化，跳过提交"
+          fi
