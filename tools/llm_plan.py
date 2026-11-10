@@ -265,10 +265,14 @@ def find_names(term, log=print):
             out.append(s)
         return out[:3]
 
+    # 两遍都问并合并：带名册那遍容易诱导模型「按团名后缀拼装」昵称
+    # （名册外的团就猜错，如把 DOKISTAR 拼成 StarHoney）；去掉名册那遍
+    # 报的是联网真实看到的账号。别让名册把结果锁死，交给微博实查去验。
     out = ask(True)
-    if not out:
-        log(f"   [llm-find] 「{term}」名册内无结论，去掉名册重试一次")
-        out = ask(False)
+    for n in ask(False):
+        if n.lower() not in {x.lower() for x in out}:
+            out.append(n)
+    out = out[:6]
     if out:
         log(f"   [llm-find] 「{term}」-> {out}")
     else:
