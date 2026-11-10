@@ -31,6 +31,7 @@ const state = {
   wallSort: 'bytes',
   lb: [],
   lbIndex: -1,
+  favItems: [],
   dispatchAt: 0,   // 本次触发的时刻，用来认出「属于这次的新 run」
   doneRunId: 0,    // 已经同步过索引的 run，避免重复刷新
   indexSha: '',    // 当前索引对应的 commit，有它才能绕开 CDN 缓存
@@ -75,6 +76,7 @@ function setPage(name, push) {
   state.page = name;
   $('#page-feed').hidden = name !== 'feed';
   $('#page-wall').hidden = name !== 'wall';
+  $('#page-fav').hidden = name !== 'fav';
   $$('#nav a').forEach((a) => {
     const on = a.dataset.page === name;
     a.classList.toggle('active', on);
@@ -82,7 +84,9 @@ function setPage(name, push) {
     else a.removeAttribute('aria-current');
   });
   if (push !== false && location.hash !== '#' + name) history.replaceState(null, '', '#' + name);
-  if (name === 'wall') ensureWall(); else ensureFeed();
+  if (name === 'fav') renderFav();
+  else if (name === 'wall') ensureWall();
+  else ensureFeed();
   scrollTo(0, 0);
   glassDirty();
 }
@@ -289,7 +293,7 @@ function renderWallMore() {
   $('#wallEmpty').hidden = state.wallView.length > 0;
 }
 
-function tile(it, idx) {
+function tile(it, idx, list) {
   const el = document.createElement('button');
   el.type = 'button';
   el.className = 'tile';
@@ -300,7 +304,7 @@ function tile(it, idx) {
   const img = el.querySelector('img');
   img.addEventListener('load', () => revealImg(img), { once: true });
   if (img.complete) revealImg(img);
-  el.addEventListener('click', () => openLb(state.wallView, idx));
+  el.addEventListener('click', () => openLb(list || state.wallView, idx));
   return el;
 }
 
@@ -348,6 +352,7 @@ function paintLb() {
   $('#lbPost').hidden = !postUrl;
   if (postUrl) $('#lbPost').href = postUrl;
   $('#lbOpen').href = imgUrl(it.key, 'large');
+  paintFavBtn();
 }
 
 function stepLb(d) {
@@ -360,6 +365,201 @@ function closeLb() {
   $('#lb').hidden = true;
   document.body.style.overflow = '';
   $('#lbImg').removeAttribute('src');
+}
+
+/* ══════════════════════════ 我的收藏（只在本机） ══════════════════════════ */
+const DB_NAME = 'wg-fav';
+const STORE = 'imgs';
+
+function openDb() {
+  return new Promise((ok, no) => {
+    const r = indexedDB.open(DB_NAME, 1);
+    r.onupgradeneeded = () => r.result.createObjectStore(STORE, { keyPath: 'key' });
+    r.onsuccess = () => ok(r.result);
+    r.onerror = () => no(r.error);
+  });
+}
+async function favAll() {
+  const db = await openDb();
+  return new Promise((ok, no) => {
+    const q = db.transaction(STORE).objectStore(STORE).getAll();
+    q.onsuccess = () => ok(q.result || []);
+    q.onerror = () => no(q.error);
+  });
+}
+async function favPut(items) {
+  const db = await openDb();
+  return new Promise((ok, no) => {
+    const t = db.transaction(STORE, 'readwrite');
+    const s = t.objectStore(STORE);
+    for (const it of items) s.put(it);
+    t.oncomplete = () => ok(items.length);
+    t.onerror = () => no(t.error);
+  });
+}
+async function favDel(key) {
+  const db = await openDb();
+  return new Promise((ok, no) => {
+    const t = db.transaction(STORE, 'readwrite');
+    t.objectStore(STORE).delete(key);
+    t.oncomplete = ok;
+    t.onerror = () => no(t.error);
+  });
+}
+async function favClear() {
+  const db = await openDb();
+  return new Promise((ok, no) => {
+    const t = db.transaction(STORE, 'readwrite');
+    t.objectStore(STORE).clear();
+    t.oncomplete = ok;
+    t.onerror = () => no(t.error);
+  });
+}
+
+function renderFav() {
+  const items = state.favItems.slice().sort((a, b) => (b.saved || 0) - (a.saved || 0));
+  $('#favSub').textContent = items.length + ' 张 · 只存在你自己的浏览器，不上传';
+  $('#favEmpty').hidden = items.length > 0;
+  const grid = $('#favGrid');
+  grid.innerHTML = '';
+  items.forEach((it, i) => grid.appendChild(tile(it, i, items)));
+  const box = $('#favChips');
+  box.innerHTML = '';
+  if (items.length) box.appendChild(chip('清空收藏', 0, false, async () => {
+    if (!confirm('确定清空这台浏览器上的收藏？')) return;
+    await favClear();
+    state.favItems = [];
+    renderFav();
+  }));
+}
+
+function paintFavBtn() {
+  const it = state.lb[state.lbIndex];
+  const on = !!(it && state.favItems.some((f) => f.key === it.key));
+  const b = $('#lbFav');
+  b.textContent = on ? '✓ 已收藏' : '☆ 收藏';
+  b.setAttribute('aria-pressed', on ? 'true' : 'false');
+}
+
+async function toggleFav() {
+  const it = state.lb[state.lbIndex];
+  if (!it || !it.key) return;
+  const i = state.favItems.findIndex((f) => f.key === it.key);
+  if (i >= 0) {
+    await favDel(it.key);
+    state.favItems.splice(i, 1);
+  } else {
+    const rec = {
+      key: it.key, owner: it.owner || '', w: it.w || 0, h: it.h || 0,
+      post: it.post || '', created: it.created || '', text: it.text || '',
+      saved: Date.now(),
+    };
+    await favPut([rec]);
+    state.favItems.push(rec);
+  }
+  renderFav();
+  paintFavBtn();
+}
+
+/* ══════════════════════════ 高清原图提取 ══════════════════════════ */
+/* 不找人、不猜昵称、不调任何微博接口。微博图床靠 URL 路径里的尺寸档位
+   动态重采样，把档位换成 /large/ 就是源站原始二进制（skill 实测结论：
+   woriginal 是带水印二次压缩、orj1080 是缩水版，只有 /large/ 是真原图）。
+   本站 /i/large/<key> 会带 Referer: https://weibo.com/ 取回，所以是
+   「能直接打开、能直接下载」的链接；CDN 直链浏览器直开会 403。 */
+
+// 服务端 KEY_RE 只放行这三种后缀的纯字母数字 key，前端按同一口径过滤
+const KEY_OK = /^[0-9a-zA-Z]{6,}\.(?:jpg|gif|png)$/i;
+const CDN_HOST = 'wx3.sinaimg.cn';
+
+function extractKeys(raw) {
+  // 兼容网页源码里被转义的 \/、HTML 实体 &amp;、协议相对 //host
+  const text = String(raw || '').replace(/\\\//g, '/').replace(/&amp;/g, '&');
+  const re = /(?:https?:\/\/|\/\/)[a-z0-9.-]*sinaimg\.cn\/[^\s"'<>`]+/gi;
+  const out = [], seen = new Set();
+  for (const m of text.match(re) || []) {
+    // 中文标点 / 右括号经常紧跟在链接后面，会被正则一起吞进来
+    const s = (m.startsWith('//') ? 'https:' + m : m)
+      .replace(/[)\],，。；、！？"'>】〉》]+$/g, '');
+    try {
+      const u = new URL(s);
+      if (!/(^|\.)sinaimg\.cn$/i.test(u.hostname)) continue;
+      const parts = u.pathname.split('/').filter(Boolean);
+      const key = parts[parts.length - 1] || '';
+      if (!KEY_OK.test(key) || seen.has(key)) continue;
+      seen.add(key);
+      out.push(key);
+    } catch (e) { /* 不是合法 URL，跳过 */ }
+  }
+  return out;
+}
+
+const absProxy = (key) => location.origin + imgUrl(key, 'large');
+const absCdn = (key) => 'https://' + CDN_HOST + '/large/' + key;
+
+async function copyText(s) {
+  try {
+    await navigator.clipboard.writeText(s);
+    return true;
+  } catch (e) {
+    const ta = document.createElement('textarea');   // 非安全上下文降级
+    ta.value = s;
+    ta.style.cssText = 'position:fixed;left:-9999px;top:0';
+    document.body.appendChild(ta);
+    ta.select();
+    let ok = false;
+    try { ok = document.execCommand('copy'); } catch (_) { /* 忽略 */ }
+    ta.remove();
+    return ok;
+  }
+}
+
+async function copyAndSay(s, msg) {
+  const ok = await copyText(s);
+  con.status(ok ? msg : '浏览器不允许复制，请手动选中链接文本', ok ? 'ok' : 'err');
+}
+
+function extractLinks() {
+  const keys = extractKeys($('#qInput').value);
+  const head = $('#exHead'), list = $('#exList');
+  if (!keys.length) {
+    head.hidden = true; list.hidden = true; list.innerHTML = '';
+    con.status('没找到微博图片链接。请粘贴图片地址（微博网页里右键图片 → 复制图片地址），' +
+      '或一整段含图片链接的文本。\n只给帖子 / 主页链接取不到图：那需要登录微博，本站不解析。', 'err');
+    return;
+  }
+  head.hidden = false; list.hidden = false;
+  $('#exCount').textContent = '找到 ' + keys.length + ' 张 · /large/ 源站原图';
+  $('#exCopyAll').onclick = () => copyAndSay(
+    keys.map(absProxy).join('\n'), '已复制 ' + keys.length + ' 条可直开的原图链接');
+
+  list.innerHTML = '';
+  for (const key of keys) {
+    const proxy = absProxy(key), cdn = absCdn(key);
+    const el = document.createElement('div');
+    el.className = 'ex-item';
+    el.innerHTML =
+      '<a class="ex-thumb" href="' + esc(proxy) + '" target="_blank" rel="noopener">' +
+        '<img loading="lazy" src="' + esc(imgUrl(key, 'wap360')) + '" alt=""></a>' +
+      '<div class="ex-body">' +
+        '<code class="ex-key">' + esc(key) + '</code>' +
+        '<a class="ex-url" href="' + esc(proxy) + '" target="_blank" rel="noopener">' + esc(proxy) + '</a>' +
+        '<span class="ex-cdn">' + esc(cdn) + '</span>' +
+        '<div class="ex-btns">' +
+          '<button class="btn ghost" type="button" data-a="proxy">复制可直开</button>' +
+          '<button class="btn ghost" type="button" data-a="cdn">复制 CDN 直链</button>' +
+          '<a class="btn ghost" href="' + esc(proxy) + '" download="' + esc(key) + '">下载 ↓</a>' +
+        '</div>' +
+      '</div>';
+    el.querySelector('[data-a="proxy"]').addEventListener('click',
+      () => copyAndSay(proxy, '已复制可直开的原图链接'));
+    el.querySelector('[data-a="cdn"]').addEventListener('click',
+      () => copyAndSay(cdn, '已复制微博 CDN 直链\n注意：浏览器直接打开会 403（需带 Referer），拿去下载器用'));
+    list.appendChild(el);
+  }
+  con.status('提取到 ' + keys.length + ' 张。「可直开」走本站代理带 Referer，能直接打开和下载；' +
+    '「CDN 直链」给下载器用。', 'ok');
+  glassDirty();
 }
 
 /* ══════════════════════════ 控制台 ══════════════════════════ */
@@ -388,6 +588,7 @@ const getLlm = () => localStorage.getItem(LS_LLM) === '1';
 const getLlmModel = () => localStorage.getItem(LS_LLM_MODEL) || 'qwen-plus';
 
 function refreshTags() {
+  // 主流程与 PAT 完全解耦：有没有 PAT 都是同一个「粘贴链接 → 出原图」。
   con.tag('#patState', getPat() ? '已保存' : '未设置', getPat() ? 'ok' : '');
   con.tag('#llmState', getLlm() ? '已写入' : '未设置', getLlm() ? 'ok' : '');
   $('#patInput').value = '';
@@ -667,12 +868,22 @@ function bindConsole() {
     }
   });
 
-  $('#qGo').addEventListener('click', startScrape);
+  // 简化版：主流程只有「粘贴链接 → 提取高清原图」，与 PAT 完全解耦。
+  $('#qGo').addEventListener('click', extractLinks);
+  $('#qClear').addEventListener('click', () => {
+    $('#qInput').value = '';
+    $('#exHead').hidden = true;
+    $('#exList').hidden = true;
+    $('#exList').innerHTML = '';
+    con.status('已清空，粘贴图片链接再点「提取高清原图」');
+    $('#qInput').focus();
+  });
   $('#qInput').addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') startScrape();
+    if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) { e.preventDefault(); extractLinks(); }
   });
 
   refreshTags();
+  con.status('粘贴微博图片链接 → 提取 /large/ 源站原图。纯本地解析，无需账号。');
 }
 
 /* ══════════════════════════ 绑定 ══════════════════════════ */
@@ -686,7 +897,7 @@ function bindNav() {
   });
   addEventListener('hashchange', () => {
     const p = location.hash.replace('#', '');
-    if (p === 'feed' || p === 'wall') setPage(p, false);
+    if (p === 'feed' || p === 'wall' || p === 'fav') setPage(p, false);
   });
 }
 
@@ -707,6 +918,7 @@ function bindInfinite() {
 
 function bindLb() {
   $('#lbClose').addEventListener('click', closeLb);
+  $('#lbFav').addEventListener('click', toggleFav);
   $('#lbPrev').addEventListener('click', () => stepLb(-1));
   $('#lbNext').addEventListener('click', () => stepLb(1));
   $('#lb').addEventListener('click', (e) => {
@@ -747,7 +959,7 @@ function ensureWall() {
   bindInfinite();
 
   const hashed = location.hash.replace('#', '');
-  const start = (hashed === 'wall' || hashed === 'feed') ? hashed : 'feed';
+  const start = (hashed === 'wall' || hashed === 'feed' || hashed === 'fav') ? hashed : 'feed';
 
   // 有 PAT 就先问一下当前索引对应的 commit：按 commit 拉的索引不会被 CDN 的
   // 5 分钟缓存拖住，首屏看到的就是仓库里的最新数据。失败就退化成按分支拉。
@@ -760,6 +972,10 @@ function ensureWall() {
     }
     setPage(start, false);
   })();
+
+  favAll()
+    .then((a) => { state.favItems = a || []; if (state.page === 'fav') renderFav(); })
+    .catch(() => {});
 
   fetch('data.json', { cache: 'no-cache' })
     .then((r) => (r.ok ? r.json() : null))

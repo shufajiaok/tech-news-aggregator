@@ -20,6 +20,7 @@
   <div class="glass__content">
     <a href="#feed" data-page="feed" class="active" aria-current="page">动态</a>
     <a href="#wall" data-page="wall">壁纸</a>
+    <a href="#fav" data-page="fav">我的收藏</a>
   </div>
 </nav>
 
@@ -48,6 +49,17 @@
     <div class="sentinel" id="wallSentinel"></div>
     <div class="empty" id="wallEmpty" hidden>没有符合条件的图片</div>
   </section>
+
+  <!-- ───────── 我的收藏（只存本机 IndexedDB） ───────── -->
+  <section class="page" id="page-fav" aria-label="我的收藏" hidden>
+    <header class="page-head">
+      <h1>我的收藏</h1>
+      <p class="sub" id="favSub">只存在你自己的浏览器里，不上传</p>
+      <div class="chips" id="favChips"></div>
+    </header>
+    <div class="grid" id="favGrid"></div>
+    <div class="empty" id="favEmpty" hidden>还没有收藏。点开任意图片按「收藏」即可；控制台只负责把链接换成高清原图。</div>
+  </section>
 </main>
 
 <!-- 抓取控制台：全站唯一的 Studio 折射卡片 -->
@@ -60,14 +72,22 @@
   </div>
 
   <section class="con-sec">
-    <label class="con-label" for="qInput">抓谁</label>
-    <div class="con-row">
-      <input id="qInput" type="text" placeholder="不渝uyuna / 白泠最近的图 / 主页链接" autocomplete="off" spellcheck="false">
-      <button class="btn" id="qGo">开始</button>
+    <label class="con-label" for="qInput">粘贴图片链接</label>
+    <textarea id="qInput" rows="3" placeholder="https://wx1.sinaimg.cn/mw690/006xxxx.jpg&#10;也可粘一整段微博文本或网页源码" spellcheck="false"></textarea>
+    <div class="con-row end">
+      <button class="btn ghost" id="qClear" type="button">清空</button>
+      <button class="btn" id="qGo" type="button">提取高清原图</button>
     </div>
-    <p class="con-hint" id="qHint">大模型会对照资料库里的图鉴名册把人认准。地偶昵称是「中文名+罗马音_团名」，写成「不渝uyuna」最稳；实在搜不到就直接粘微博主页链接</p>
+    <p class="con-hint" id="qHint">任意微博图片链接（缩略图也行）一律换成 /large/ 源站原图。纯本地解析，不联网找人、不需要账号；Ctrl+Enter 也能提交。</p>
+    <div class="ex-head" id="exHead" hidden>
+      <span id="exCount"></span>
+      <button class="btn ghost" id="exCopyAll" type="button">复制全部</button>
+    </div>
+    <div class="ex-list" id="exList" hidden></div>
   </section>
 
+  <details class="con-adv" id="advBox">
+    <summary>高级 · 定时抓取配置（可选，主流程不需要）</summary>
   <section class="con-sec">
     <label class="con-label">GitHub PAT <span class="tag" id="patState">未设置</span></label>
     <div class="con-row">
@@ -104,6 +124,7 @@
     </div>
     <p class="con-hint">写入 WB_LLM_KEY / MODEL / BASE_URL，供 Action 解析「白泠最近的图」这类说法</p>
   </section>
+  </details>
 
   <div class="con-status" id="conStatus" role="status">—</div>
 </aside>
@@ -123,6 +144,7 @@
       <span id="lbDim"></span>
     </div>
     <div class="lb-actions">
+      <button class="btn ghost" id="lbFav" type="button">☆ 收藏</button>
       <a id="lbPost" target="_blank" rel="noopener">原微博 ↗</a>
       <a id="lbOpen" target="_blank" rel="noopener">原图 ↗</a>
     </div>
