@@ -16,6 +16,7 @@
 <canvas class="glass-layer" id="glassLayer" hidden aria-hidden="true"></canvas>
 
 <nav class="nav" id="nav" aria-label="页面切换">
+  <span class="nav__lens" aria-hidden="true"></span>
   <div class="glass__content">
     <a href="#feed" data-page="feed" class="active" aria-current="page">动态</a>
     <a href="#wall" data-page="wall">壁纸</a>
@@ -132,7 +133,7 @@
   <span id="footStat">—</span>
 </footer>
 
-<script id="glass-config" type="application/json">{"material":{"blurRadius":12,"tintAlpha":0.62,"refDispersion":14},"geometry":{"card":{"radius":28}}}</script>
+<script id="glass-config" type="application/json">{"material":{"blurRadius":2,"tintAlpha":0.55,"refDispersion":21},"geometry":{"card":{"radius":28}},"nav":{"navEdge":16,"navRefraction":5.5,"navFill":0.34,"navBlur":3}}</script>
 <script type="module" src="glass/liquid-glass.js"></script>
 <script src="vendor/nacl.min.js"></script>
 <script src="app.js"></script>

@@ -49,6 +49,29 @@ body {
 .nav { top: max(14px, env(safe-area-inset-top)); }
 .nav a { font-size: 13.5px; letter-spacing: .01em; padding: 9px 20px; }
 
+/* 组件用 backdrop-filter:url(#nav-refraction) 做真折射，但 Chrome 不支持
+   backdrop-filter 引用 SVG filter（实测开关像素差 0.15，等于没渲染）。
+   这里补一层 CSS 能真正渲染出来的玻璃厚度：顶缘高光 + 侧缘反光 + 上亮下暗的
+   斜面感 + 落影。Safari 等支持 url() 的环境仍会叠加组件的真折射。 */
+.nav::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    radial-gradient(130% 120% at 50% -20%, rgba(190, 216, 255, .16), transparent 62%),
+    linear-gradient(180deg, rgba(255, 255, 255, .09), transparent 46%, rgba(0, 0, 0, .16));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, .46),
+    inset 0 -1px 0 rgba(255, 255, 255, .09),
+    inset 1px 0 0 rgba(255, 255, 255, .13),
+    inset -1px 0 0 rgba(255, 255, 255, .13),
+    0 10px 26px rgba(0, 0, 0, .42);
+}
+.nav .glass__content { z-index: 2; }
+
 /* ───────── 页面骨架 ───────── */
 main {
   padding: calc(var(--head-h) + 26px) max(18px, env(safe-area-inset-left)) 96px;
@@ -364,6 +387,9 @@ main {
 .fab:active { transform: scale(.95); }
 .fab[aria-expanded="true"] { transform: rotate(45deg); }
 
+/* 玻璃画布留在组件默认的 z-index:1（原设计：canvas 垫底、内容在上，玻璃从卡片的
+   透明背景透出来）。把 canvas 提到内容之上会整块盖住面板内容，不要这么做。 */
+
 /* ───────── 控制台面板（唯一走 Studio 折射的卡片） ───────── */
 .console {
   position: fixed;
@@ -388,12 +414,15 @@ main {
   to   { opacity: 1; transform: none; }
 }
 
-/* 这套材质的设计是「中央近乎透明、折射集中在边缘倒角」，直接做阅读面板会透底。
-   补一层磨砂底兜住文字，Studio 的边缘折射仍叠在上面。 */
+/* 这套材质的 canvas 只在边缘倒角带绘制，中央 alpha 为 0（中央稳定、折射集中在边缘）。
+   所以正文底色必须由 CSS 提供；模糊只用 2px，够压住背景字又不把边缘折射糊平。
+   顶缘内高光按 GlassKit 的口径补 0.22，让边缘质感在 canvas 被压时仍在。 */
 .console.card.glass-gpu {
-  background: rgba(10, 13, 19, .66);
-  -webkit-backdrop-filter: blur(22px) saturate(1.45);
-  backdrop-filter: blur(22px) saturate(1.45);
+  background: rgba(9, 12, 17, .6);
+  -webkit-backdrop-filter: blur(2px) saturate(1.12);
+  backdrop-filter: blur(2px) saturate(1.12);
+  box-shadow: inset 0 1px rgba(255, 255, 255, .22),
+              inset 0 -1px rgba(0, 0, 0, .3);
 }
 
 .con-head {
