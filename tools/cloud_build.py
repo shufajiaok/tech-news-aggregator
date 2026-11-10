@@ -264,6 +264,19 @@ def main():
             if not accounts:
                 sys.exit("没有任何账号解析成功，本次不写文件（保留旧索引）。"
                          "请确认 WB_COOKIE 有效，或直接粘主页链接 / 纯数字 uid")
+
+        # 粘链接 / 直填 uid 时 label 是数字，取主页昵称替换，
+        # 否则分类 chips 会显示成一串数字
+        for a in accounts:
+            lab = str(a.get("label") or "")
+            if lab.isdigit() or lab == str(a.get("uid")):
+                info = sess.profile(str(a["uid"]))
+                if info and info.get("nick"):
+                    a["label"] = a["nick"] = info["nick"]
+                    log(f"   uid {a['uid']} -> {info['nick']}"
+                        f"{('（' + info['verified'] + '）') if info.get('verified') else ''}")
+                elif lab.isdigit():
+                    log(f"   提示：uid {a['uid']} 取不到昵称，分类会显示成数字")
         seen_uid, uniq = set(), []
         for a in accounts:
             if str(a["uid"]) in seen_uid:
