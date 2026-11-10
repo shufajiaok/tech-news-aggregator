@@ -9,7 +9,8 @@ const REPO = 'shufajiaok/tech-news-aggregator';
 const WORKFLOW_ID = '412852248';
 const DISPATCH_REF = 'feat/wallpaper-gallery';
 const LS_PAT = 'wg.pat';
-const LS_LLM = 'wg.llm';
+const LS_LLM = 'wg.llm';          // 只存「已写入过」的标记，key 本体在仓库 Secret
+const LS_LLM_MODEL = 'wg.llm.model';
 
 const FEED_PAGE = 24;
 const WALL_PAGE = 30;
@@ -372,13 +373,15 @@ const con = {
 };
 
 const getPat = () => localStorage.getItem(LS_PAT) || '';
-const getLlm = () => localStorage.getItem(LS_LLM) || '';
+const getLlm = () => localStorage.getItem(LS_LLM) === '1';
+const getLlmModel = () => localStorage.getItem(LS_LLM_MODEL) || 'qwen-plus';
 
 function refreshTags() {
   con.tag('#patState', getPat() ? '已保存' : '未设置', getPat() ? 'ok' : '');
-  con.tag('#llmState', getLlm() ? '已保存' : '未设置', getLlm() ? 'ok' : '');
+  con.tag('#llmState', getLlm() ? '已写入' : '未设置', getLlm() ? 'ok' : '');
   $('#patInput').value = '';
   $('#llmInput').value = '';
+  $('#llmModel').value = getLlmModel();
   $('#patInput').placeholder = getPat() ? '已保存，重新输入可替换' : 'ghp_… 需要 repo + workflow';
 }
 
@@ -405,13 +408,22 @@ async function gh(path, opts) {
   return data;
 }
 
-/* sealed box：ephemeral 公钥 || box(msg, nonce=SHA512(epk||rpk)[:24]) */
-function sealBox(msg, recipientPk) {
+/* sealed box：ephemeral 公钥 || box(msg, nonce=blake2b(epk||rpk)[:24])
+   注意 nonce 必须是 blake2b（libsodium crypto_box_seal 的约定），
+   用 SHA-512 会得到 422 improperly encrypted secret。 */
+let _blake2b = null;
+async function getBlake2b() {
+  if (!_blake2b) _blake2b = (await import('./vendor/blakejs.esm.js')).blake2b;
+  return _blake2b;
+}
+
+async function sealBox(msg, recipientPk) {
+  const blake2b = await getBlake2b();
   const eph = nacl.box.keyPair();
   const buf = new Uint8Array(eph.publicKey.length + recipientPk.length);
   buf.set(eph.publicKey, 0);
   buf.set(recipientPk, eph.publicKey.length);
-  const nonce = nacl.hash(buf).slice(0, nacl.box.nonceLength);
+  const nonce = blake2b(buf, null, 24);
   const boxed = nacl.box(msg, nonce, recipientPk, eph.secretKey);
   const out = new Uint8Array(eph.publicKey.length + boxed.length);
   out.set(eph.publicKey, 0);
@@ -428,7 +440,7 @@ function b64(u8) {
 async function putSecret(name, value) {
   const pk = await gh('/repos/' + REPO + '/actions/secrets/public-key');
   const bin = Uint8Array.from(atob(pk.key), (c) => c.charCodeAt(0));
-  const sealed = sealBox(new TextEncoder().encode(value), bin);
+  const sealed = await sealBox(new TextEncoder().encode(value), bin);
   await gh('/repos/' + REPO + '/actions/secrets/' + name, {
     method: 'PUT',
     body: JSON.stringify({ encrypted_value: b64(sealed), key_id: pk.key_id }),
@@ -453,13 +465,18 @@ async function startScrape() {
   const parts = splitInput(raw);
   const btn = $('#qGo');
   btn.disabled = true;
-  con.status('正在触发…');
+  con.status(raw ? '正在触发（先由大模型解析目标）…' : '正在触发全量抓取…');
   try {
     await gh('/repos/' + REPO + '/actions/workflows/' + WORKFLOW_ID + '/dispatches', {
       method: 'POST',
       body: JSON.stringify({
         ref: DISPATCH_REF,
-        inputs: { names: parts.names, uids: parts.uids, pages: '6', max_new: '0', dry_run: false },
+        inputs: {
+          q: raw,                    // 原句交给 Action 里的大模型解析
+          names: parts.names,        // 模型不可用时的兜底参数
+          uids: parts.uids,
+          pages: '6', max_new: '0', dry_run: false,
+        },
       }),
     });
     con.status('已触发，排队中。抓完会自动提交索引。', 'ok');
@@ -507,12 +524,45 @@ function bindConsole() {
     }
   });
 
-  $('#llmSave').addEventListener('click', () => {
+  $('#llmSave').addEventListener('click', async () => {
     const v = $('#llmInput').value.trim();
-    if (!v) return;
-    localStorage.setItem(LS_LLM, v);
-    refreshTags();
-    con.status('大模型 Key 已保存在本机浏览器。');
+    const model = $('#llmModel').value;
+    if (!v) { con.status('先粘贴大模型 Key', 'err'); return; }
+    if (!getPat()) { con.status('先填 GitHub PAT', 'err'); return; }
+    const btn = $('#llmSave');
+    btn.disabled = true;
+    con.status('正在加密写入大模型 Key…');
+    try {
+      // 百炼是 OpenAI 兼容接口；换别家就改这里的 base
+      await putSecret('WB_LLM_KEY', v);
+      await putSecret('WB_LLM_MODEL', model);
+      await putSecret('WB_LLM_BASE_URL', 'https://dashscope.aliyuncs.com/compatible-mode/v1');
+      localStorage.setItem(LS_LLM, '1');
+      localStorage.setItem(LS_LLM_MODEL, model);
+      $('#llmInput').value = '';
+      refreshTags();
+      con.status('大模型 Key 已写入 Secret（' + model + '），下次抓取生效。', 'ok');
+    } catch (e) {
+      con.status('写入失败：' + e.message, 'err');
+    } finally {
+      btn.disabled = false;
+    }
+  });
+
+  $('#llmClear').addEventListener('click', async () => {
+    if (!getPat()) { con.status('先填 GitHub PAT', 'err'); return; }
+    con.status('正在清空…');
+    try {
+      for (const n of ['WB_LLM_KEY', 'WB_LLM_MODEL', 'WB_LLM_BASE_URL']) {
+        try { await deleteSecret(n); } catch (e) { /* 不存在就跳过 */ }
+      }
+      localStorage.removeItem(LS_LLM);
+      localStorage.removeItem(LS_LLM_MODEL);
+      refreshTags();
+      con.status('大模型 Secret 已清空，自然语言解析停用。', 'ok');
+    } catch (e) {
+      con.status('清空失败：' + e.message, 'err');
+    }
   });
 
   $('#ckSave').addEventListener('click', async () => {

@@ -16,6 +16,7 @@
 import argparse
 import io
 import json
+import re
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -30,7 +31,9 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
 sys.path.insert(0, str(REPO / "scripts"))
+sys.path.insert(0, str(HERE))
 import weibo_wallpaper as wb  # noqa: E402
+import llm_plan  # noqa: E402
 
 RATIO = 1.7778
 TOL = 0.06
@@ -87,6 +90,27 @@ def load_old(path):
     return {i["key"]: i for i in items if i.get("key")}, items, d
 
 
+def find_account(raw, accounts):
+    """昵称模糊命中：全名优先，再试 label，最后试包含关系。
+
+    用户和模型都会说简称（「白泠」而不是「白泠Mio-StarHoney」），
+    先在本地名单里消掉，能省掉微博搜索（境外调用不稳定）。
+    """
+    def norm(s):
+        return re.sub(r"[\s\-_·・]+", "", s or "").lower()
+
+    n = norm(raw)
+    if not n:
+        return None
+    for a in accounts:
+        if any(norm(a.get(k)) == n for k in ("nick", "label", "uid")):
+            return a
+    for a in accounts:  # 包含：白泠 -> 白泠Mio-StarHoney
+        if any(n and n in norm(a.get(k)) for k in ("nick", "label")):
+            return a
+    return None
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", default=str(REPO / "scripts" / "weibo_config.json"))
@@ -97,6 +121,7 @@ def main():
     ap.add_argument("--label", default="主轮")
     ap.add_argument("--uids", default="", help="逗号分隔，只跑这些 uid")
     ap.add_argument("--names", default="", help="逗号分隔，按昵称搜索 uid 后抓")
+    ap.add_argument("--q", default="", help="自然语言请求，由大模型解析成 names/uids/pages")
     ap.add_argument("--pages", type=int, default=6, help="登录态下每号翻几页")
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--max-new", type=int, default=0, help="本次最多追加多少条，0 不限")
@@ -105,13 +130,34 @@ def main():
 
     cfg = json.loads(Path(args.config).read_text(encoding="utf-8"))
     accounts = cfg["accounts"]
-    if args.names:
-        accounts = []  # 指定名字时只抓这些，名单只用来快速命中 nick
-    elif args.uids:
+
+    # 自然语言优先：解析成功就用它的 names/uids/pages，失败才退回结构化参数
+    if args.q.strip():
+        log(f"== 自然语言请求: {args.q}")
+        plan = llm_plan.resolve(
+            args.q, [a.get("nick") for a in cfg["accounts"] if a.get("nick")],
+            log=log)
+        if plan:
+            args.names = ",".join(plan["names"])
+            args.uids = ",".join(plan["uids"])
+            args.pages = plan["pages"]
+            if not plan["names"] and not plan["uids"]:
+                log("   [llm] 判定为全量，跑完整名单")
+        else:
+            log("   [llm] 解析失败，原句按逗号当昵称处理")
+            args.names = args.q
+
+    explicit = []
+    if args.uids:
         want = {u.strip() for u in args.uids.split(",") if u.strip()}
-        accounts = [a for a in accounts if str(a["uid"]) in want]
-        if not accounts:
-            sys.exit(f"没有匹配的 uid: {args.uids}")
+        for a in accounts:
+            if str(a["uid"]) in want:
+                explicit.append(a)
+                want.discard(str(a["uid"]))
+        for u in sorted(want):
+            explicit.append({"label": u, "group": "临时", "nick": u, "uid": u})
+    if args.names or args.uids:
+        accounts = explicit  # 指定了目标就只抓这些；names 在会话内解析后追加
 
     data_path = Path(args.data)
     old_by_key, old_items, old_meta = load_old(data_path)
@@ -127,11 +173,11 @@ def main():
     recs = {}
     with wb.WeiboSession(cookie_kv, mode) as sess:
         if args.names:
-            known = {a["nick"]: a for a in cfg["accounts"] if a.get("nick")}
             for raw in [n.strip() for n in args.names.split(",") if n.strip()]:
-                if raw in known:
-                    accounts.append(known[raw])
-                    log(f"   名单命中 {raw} -> uid {known[raw]['uid']}")
+                hit = find_account(raw, cfg["accounts"])
+                if hit:
+                    accounts.append(hit)
+                    log(f"   名单命中 {raw} -> {hit['label']} (uid {hit['uid']})")
                     continue
                 if raw.isdigit():
                     accounts.append({"label": raw, "group": "临时", "nick": raw, "uid": raw})
@@ -145,7 +191,14 @@ def main():
                     log(f"   搜索 {raw} 无结果，跳过")
             if not accounts:
                 sys.exit(f"名字都没解析出 uid: {args.names}")
-            log(f"== 本次只抓 {len(accounts)} 个账号")
+        seen_uid, uniq = set(), []
+        for a in accounts:
+            if str(a["uid"]) in seen_uid:
+                continue
+            seen_uid.add(str(a["uid"]))
+            uniq.append(a)
+        accounts = uniq
+        log("== 目标: " + ", ".join(f"{a['label']}({a['uid']})" for a in accounts))
 
         for acc in accounts:
             try:

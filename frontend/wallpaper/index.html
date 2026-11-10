@@ -61,10 +61,10 @@
   <section class="con-sec">
     <label class="con-label" for="qInput">抓谁</label>
     <div class="con-row">
-      <input id="qInput" type="text" placeholder="昵称或 uid，多个用逗号分隔" autocomplete="off" spellcheck="false">
+      <input id="qInput" type="text" placeholder="白泠最近的图 / 昵称 / uid" autocomplete="off" spellcheck="false">
       <button class="btn" id="qGo">开始</button>
     </div>
-    <p class="con-hint" id="qHint">留空 = 按完整名单抓一轮</p>
+    <p class="con-hint" id="qHint">可以说人话，由大模型解析成抓取参数；留空 = 按完整名单抓一轮</p>
   </section>
 
   <section class="con-sec">
@@ -89,10 +89,19 @@
   <section class="con-sec">
     <label class="con-label">大模型 API Key <span class="tag" id="llmState">未设置</span></label>
     <div class="con-row">
-      <input id="llmInput" type="password" placeholder="sk-…" autocomplete="off">
-      <button class="btn" id="llmSave">保存</button>
+      <input id="llmInput" type="password" placeholder="sk-…（阿里云百炼）" autocomplete="off">
+      <select id="llmModel" aria-label="模型">
+        <option value="qwen-plus">qwen-plus</option>
+        <option value="qwen-max">qwen-max</option>
+        <option value="qwen-turbo">qwen-turbo</option>
+        <option value="qwen-long">qwen-long</option>
+      </select>
     </div>
-    <p class="con-hint">让「白泠最近的图」这类说法解析成抓取参数</p>
+    <div class="con-row end">
+      <button class="btn ghost" id="llmClear">清空 Secret</button>
+      <button class="btn" id="llmSave">加密写入</button>
+    </div>
+    <p class="con-hint">写入 WB_LLM_KEY / MODEL / BASE_URL，供 Action 解析「白泠最近的图」这类说法</p>
   </section>
 
   <div class="con-status" id="conStatus" role="status">—</div>
