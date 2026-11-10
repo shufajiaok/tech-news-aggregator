@@ -11,6 +11,10 @@ on:
     - cron: '30 19 * * *'
   workflow_dispatch:
     inputs:
+      q:
+        description: '自然语言（如「白泠最近的图」），由大模型解析，优先级最高'
+        required: false
+        default: ''
       names:
         description: '账号昵称（逗号分隔），留空跑完整名单'
         required: false
@@ -64,8 +68,13 @@ jobs:
         env:
           # 可选：填了就走登录态（能翻页、能看到仅粉丝可见的正文流）
           WB_COOKIE: ${{ secrets.WB_COOKIE }}
+          # 自然语言解析用（默认阿里云百炼 qwen-plus，OpenAI 兼容接口）
+          WB_LLM_KEY: ${{ secrets.WB_LLM_KEY }}
+          WB_LLM_BASE_URL: ${{ secrets.WB_LLM_BASE_URL }}
+          WB_LLM_MODEL: ${{ secrets.WB_LLM_MODEL }}
         run: |
           python tools/cloud_build.py \
+            --q "${{ inputs.q }}" \
             --names "${{ inputs.names }}" \
             --uids "${{ inputs.uids }}" \
             --pages "${{ inputs.pages || 6 }}" \
