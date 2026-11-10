@@ -251,24 +251,39 @@ class WeiboSession:
         return {}
 
     def resolve_uid(self, term, expect=None):
-        """昵称 -> uid。接口被风控时抛 WbRequestError，与「查无此人」区分开。"""
-        cid = urllib.parse.quote("100103type=3&q=" + term, safe="")
+        """昵称 -> uid。只认搜索「用户」Tab 里的用户卡片。
+
+        两个坑（都实测过）：
+        1. 必须走 page_json：ctx.request 是裸请求，境外 runner 上微博会回
+           HTTP 200 + {"ok":0} 或空 data，看着像「搜不到人」，其实是被风控。
+        2. 只认 card_type==10 的用户卡片。card_type 9 是微博卡片，挂在
+           mblog.user 上的是「发这条微博的人」，不是搜索目标——照抓会错号。
+        """
+        cid = urllib.parse.quote("100103type=1&q=" + term, safe="")
         url = ("https://m.weibo.cn/api/container/getIndex?containerid="
                + cid + "&page_type=searchall")
-        d = self.get_json(url)
+        d = self.page_json(url) if self.page is not None else self.get_json(url)
         if not d:
             raise WbRequestError(f"搜索接口不可用（{self.last_error or '空响应'}）")
+        data = d.get("data")
+        cards = (data.get("cards") if isinstance(data, dict) else None) or []
+        if not cards:
+            log(f"   搜索 {term}: ok={d.get('ok')} 无 cards | "
+                + json.dumps(d, ensure_ascii=False)[:240])
+            return None
         hits = []
-        for c in d.get("data", {}).get("cards", []):
-            grp = [c] if c.get("card_type") != 11 else c.get("card_group", [])
+        for c in cards:
+            grp = [c] if c.get("card_type") != 11 else (c.get("card_group") or [])
             for cc in grp:
+                if cc.get("card_type") != 10:      # 只认用户卡片
+                    continue
                 u = cc.get("user") or {}
-                if not (u.get("screen_name") and u.get("id")):
-                    # 综合页里大量卡片是 card_type 9（微博卡片），用户挂在 mblog.user 上
-                    u = (cc.get("mblog") or {}).get("user") or {}
                 if u.get("screen_name") and u.get("id"):
                     hits.append((u["screen_name"], str(u["id"]),
                                  u.get("verified_reason") or cc.get("desc1") or ""))
+        if not hits:
+            types = [c.get("card_type") for c in cards][:14]
+            log(f"   搜索 {term}: cards={len(cards)} card_type={types}，无用户卡片")
         if expect:
             for h in hits:
                 if expect.lower() in (h[0] + h[2]).lower():
