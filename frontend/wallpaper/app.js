@@ -31,6 +31,9 @@ const state = {
   wallSort: 'bytes',
   lb: [],
   lbIndex: -1,
+  dispatchAt: 0,   // 本次触发的时刻，用来认出「属于这次的新 run」
+  doneRunId: 0,    // 已经同步过索引的 run，避免重复刷新
+  indexSha: '',    // 当前索引对应的 commit，有它才能绕开 CDN 缓存
 };
 
 /* ───────── 小工具 ───────── */
@@ -86,8 +89,10 @@ function setPage(name, push) {
 
 /* ══════════════════════════ 动态流 ══════════════════════════ */
 
-async function loadFeed() {
-  const r = await fetch('feed.json', { cache: 'no-cache' });
+async function loadFeed(fresh, sha) {
+  const rev = sha != null ? sha : state.indexSha;
+  const qs = (fresh ? '?fresh=1' : '') + (rev ? (fresh ? '&' : '?') + 'sha=' + rev : '');
+  const r = await fetch('feed.json' + qs, { cache: 'no-cache' });
   if (!r.ok) throw new Error('feed.json ' + r.status);
   const d = await r.json();
   state.feedItems = d.items || [];
@@ -96,6 +101,7 @@ async function loadFeed() {
     state.posts.length + ' 条动态 · ' + state.feedItems.length + ' 张图 · ' + (d.generated_at || '');
   buildFeedChips();
   applyFeed();
+  return state.feedItems.length;
 }
 
 function groupPosts(items) {
@@ -212,8 +218,10 @@ function postCard(p) {
 
 /* ══════════════════════════ 壁纸 ══════════════════════════ */
 
-async function loadWall() {
-  const r = await fetch('data.json', { cache: 'no-cache' });
+async function loadWall(fresh, sha) {
+  const rev = sha != null ? sha : state.indexSha;
+  const qs = (fresh ? '?fresh=1' : '') + (rev ? (fresh ? '&' : '?') + 'sha=' + rev : '');
+  const r = await fetch('data.json' + qs, { cache: 'no-cache' });
   if (!r.ok) throw new Error('data.json ' + r.status);
   const d = await r.json();
   state.wallItems = d.items || [];
@@ -221,6 +229,7 @@ async function loadWall() {
     state.wallItems.length + ' 张 · 16:9 且不小于 2MB · ' + (d.generated_at || '');
   buildWallChips();
   applyWall();
+  return state.wallItems.length;
 }
 
 function buildWallChips() {
@@ -492,12 +501,39 @@ async function startScrape() {
       }),
     });
     con.status('已触发，排队中。抓完会自动提交索引。', 'ok');
+    state.dispatchAt = Date.now();
     setTimeout(pollLatest, 8000);
   } catch (e) {
     con.status('触发失败：' + e.message, 'err');
   } finally {
     btn.disabled = false;
   }
+}
+
+/* 抓完必须重新拉一次索引：
+   Action 提交的是仓库里的 data.json / feed.json，页面不主动要就还是旧数据，
+   用户会以为「又搜失败了」。
+   带上最新 commit sha 是关键：raw 域名对分支名有 5 分钟 CDN 缓存，按分支拉
+   大概率还是旧的那份；换成具体 commit 后 URL 唯一，必然回源，拿到就是这次的结果。 */
+async function syncIndex() {
+  con.status('抓取完成，正在同步索引…');
+  let sha = '';
+  try {
+    const c = await gh('/repos/' + REPO + '/commits?sha=' + encodeURIComponent(DISPATCH_REF) + '&per_page=1');
+    sha = (c && c[0] && c[0].sha) || '';
+  } catch (e) { /* 拿不到就退化成按分支拉，慢一点但能用 */ }
+
+  let feedN = null, wallN = null;
+  state.indexSha = sha;
+  try { feedN = await loadFeed(true, sha); } catch (e) { /* 下面统一报 */ }
+  try { wallN = await loadWall(true, sha); } catch (e) { /* 同上 */ }
+  if (feedN == null && wallN == null) {
+    con.status('抓取完成，但索引同步失败，稍后手动刷新页面', 'err');
+    return;
+  }
+  const wallMsg = wallN == null ? '' : ' · 壁纸 ' + wallN + ' 张';
+  con.status('抓取完成，索引已更新：动态 ' + (feedN == null ? '?' : feedN) +
+    ' 张图' + wallMsg + '（壁纸只收 16:9 / ≥2MB，不够多半是筛选标准所致）', 'ok');
 }
 
 async function pollLatest(tries) {
@@ -522,6 +558,15 @@ async function pollLatest(tries) {
     const kind = run.conclusion === 'success' ? 'ok' : bad ? 'err' : '';
     con.status(st + (run.conclusion ? ' · ' + run.conclusion + detail : '') +
       ' · ' + new Date(run.created_at).toLocaleTimeString('zh-CN') + '\n' + run.html_url, kind);
+
+    // 跑到终点就同步索引。只认本次触发之后新建的 run，
+    // 否则触发的头几秒会读到上一条已完成的 run，白刷一次还误导状态。
+    const mine = new Date(run.created_at).getTime() >= state.dispatchAt - 60000;
+    if (run.status === 'completed' && mine && state.doneRunId !== run.id) {
+      state.doneRunId = run.id;
+      await syncIndex();
+      return;
+    }
     // 还在跑就继续追（约 15 分钟），不要只查一次就停
     if (run.status !== 'completed' && tries < 60) {
       setTimeout(() => pollLatest(tries + 1), 15000);
@@ -703,8 +748,18 @@ function ensureWall() {
 
   const hashed = location.hash.replace('#', '');
   const start = (hashed === 'wall' || hashed === 'feed') ? hashed : 'feed';
-  ensureFeed();
-  setPage(start, false);
+
+  // 有 PAT 就先问一下当前索引对应的 commit：按 commit 拉的索引不会被 CDN 的
+  // 5 分钟缓存拖住，首屏看到的就是仓库里的最新数据。失败就退化成按分支拉。
+  (async () => {
+    if (getPat()) {
+      try {
+        const c = await gh('/repos/' + REPO + '/commits?sha=' + encodeURIComponent(DISPATCH_REF) + '&per_page=1');
+        state.indexSha = (c && c[0] && c[0].sha) || '';
+      } catch (e) { /* 不影响正常浏览 */ }
+    }
+    setPage(start, false);
+  })();
 
   fetch('data.json', { cache: 'no-cache' })
     .then((r) => (r.ok ? r.json() : null))
