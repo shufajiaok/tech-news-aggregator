@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T03:40:12.954670+00:00",
+  "updated_at": "2026-11-10T04:06:09.572586+00:00",
   "count": 300,
   "news": [
     {
@@ -37,6 +37,24 @@
       "original_author": "@Semiconductor Engineering",
       "published_at": "2026-11-09T19:55:34+00:00",
       "created_at": "2026-11-09T22:50:39.653392+00:00"
+    },
+    {
+      "id": "0eb6fce4-92d3-4c4a-b04a-08609445ef7d",
+      "title": "SEMIFoundation启动‘Chip the Future’全球挑战赛：培育下一代半导体创新人才",
+      "summary": "SEMI基金会 launched 全球性学生竞赛‘Chip the Future Challenge’，聚焦芯片设计、先进封装、AI硬件等前沿方向，设10万美元奖金，推动产学研深度融合。",
+      "key_points": [
+        "面向全球本硕学生，分Research与Innovation双赛道",
+        "Micron与Galatek提供资金与产业支持",
+        "强调IP归属学生，注重真实产业问题解决能力"
+      ],
+      "full_content": "Today is not a good day for OpenAI, especially as it is getting hammered from two sides, with Anthropic's Claude Fable 5.2 leaving GPT-6 Astra in the proverbial dust, and Meta's Muse Ember squeezing GPT-6 Luna hard in the bargain category of AI models. Anthropic's Claude Fable 5.2 outcompetes Fable 5.1, Opus 5.5, OpenAI's GPT-6 Astra, and Google's Gemini 4 Carbon in nearly every benchmark We noted towards the middle of October that Anthropic's Fable 5.5 AI model had been spotted in the wild. Well, the high-flying AI lab has just chosen to launch a different model, the Claude Fable [&hellip;] Read full article at https://wccftech.com/openai-squeezed-at-the-frontier-end-by-anthropics-claude-fable-5-2-while-metas-muse-ember-gives-its-bargain-class-gpt-6-luna-a-bruise/",
+      "ai_summary": "发生了什么：2026年9月，SEMI基金会正式启动‘Chip the Future Challenge’全球半导体创新挑战赛，面向全球高校本科生与研究生开放。竞赛设立‘研究挑战’（Research Challenge）与‘创新挑战’（Innovation Challenge）两条赛道，鼓励学生围绕芯片设计自动化（EDA）、先进封装、AI加速器架构、新材料（如二维半导体）、量子芯片等前沿方向，提出原创性研究或可落地的技术解决方案。赛事总奖金10万美元，并获得美光（Micron）、Galatek等产业巨头支持，提供技术指导与产业对接通道。\n\n为什么重要：全球半导体产业正面临严峻的人才断层危机——据SEMI预测，2030年前全球将短缺逾百万名半导体工程师。‘Chip the Future’并非传统学术竞赛，其核心在于‘真问题、真场景、真转化’：参赛项目需直面产业痛点（如3D IC热管理、存算一体能效瓶颈），评审标准强调‘行业影响’与‘实施可行性’，且明确保障学生对知识产权的完全所有权。这标志着半导体人才培养正从‘知识传授’转向‘创新实战’，为产业输送兼具理论深度与工程直觉的复合型人才。\n\n对行业有什么影响：该赛事将加速半导体创新生态的年轻化与多元化——一方面，为初创公司与大厂研发部门提供低成本、高潜力的‘人才漏斗’与‘创意源泉’；另一方面，将推动高校课程体系改革，促使更多院校开设AI硬件、chiplet设计、光电集成等交叉学科。长期看，此类平台有望孵化出下一代颠覆性技术（如基于RISC-V的AI指令集、新型神经形态芯片），并增强全球半导体产业对青年人才的吸引力，缓解地缘政治加剧下的人才流动壁垒，为行业可持续发展注入源头活水。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/semi-foundation-launches-global-chip-the-future-challenge/",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-11-09T19:55:34+00:00",
+      "created_at": "2026-11-10T04:05:57.776933+00:00"
     },
     {
       "id": "db0c1d54-41d3-416d-8b1f-193775b359e0",
@@ -163,6 +181,24 @@
       "original_author": "@IT之家",
       "published_at": "2026-11-09T15:15:00+00:00",
       "created_at": "2026-11-10T03:40:07.981012+00:00"
+    },
+    {
+      "id": "d621b3cd-6f6a-4114-a38c-8c01d4addaf5",
+      "title": "Infineon率先实现300mm碳化硅晶圆量产：开启SiC功率半导体新纪元",
+      "summary": "英飞凌在奥地利维拉赫晶圆厂成功流片300mm SiC功率器件，成为全球首家实现该技术全产线落地的企业，晶圆产能提升2.3倍，成本显著下降。",
+      "key_points": [
+        "全球首条300mm SiC量产线，复用现有硅产线设备",
+        "单片晶圆芯片数提升2.3倍，大幅降低单位芯片成本",
+        "同步验证Cold Split晶圆切割技术，提升材料利用率"
+      ],
+      "full_content": "&lt;p&gt;Mark&#039;s enthusiasm for computers dampened at an early age by the rubber-keyed Sinclair Spectrum 48K and feelings of Commodore 64 envy. However, in the mid-80s, hope in a digital future was rekindled by the purchase of an Atari 520 STe. Since that time Mark has used a multitude of computers for fun and professional endeavors. He often owned both Macs and PCs but went cold on the former after OS9 was killed off, and warmed to the latter with the introduction of Windows XP.&lt;br&gt; &lt;br&gt; Early work years were spent in artwork and reprographics but in the late noughties, Mark started to blog about computers, Taiwanese food culture, and guitar design. This activity led to a full-time position writing about breaking PC tech news for HEXUS, for the best part of a decade. When HEXUS was abruptly closed, Mark helped with the foundation of Club386, before finding a new home at Tom&#039;s Hardware.&lt;br&gt; &lt;br&gt; When not wearing through the keycap legends on his PC keyboards, Mark can be found wandering the computer malls of Taiwan&#039;s neon-lit conurbations and enjoying local and international cuisine.&lt;/p&gt;",
+      "ai_summary": "发生了什么：2026年11月，英飞凌宣布在其奥地利维拉赫晶圆厂成功完成300mm碳化硅（SiC）功率器件的全流程制造，包括光刻、刻蚀、离子注入及封装前工艺，成为全球首家实现300mm SiC全产线量产的半导体公司。该产线并非新建，而是通过改造升级既有硅基产线设备实现，显著缩短了资本开支周期。同时，英飞凌验证了‘Cold Split’新型晶圆切割技术，相比传统线锯可减少材料损耗、提升单晶棒出片率。\n\n为什么重要：SiC是新能源汽车、光伏逆变器、工业电源及AI数据中心电源系统的核心材料，但其高昂成本长期制约普及。300mm晶圆相比主流200mm晶圆，单片可产出芯片数量提升2.3倍，直接摊薄设备折旧、人工、洁净室等固定成本。此举不仅巩固英飞凌在功率半导体的领导地位，更标志着宽禁带半导体正式迈入‘大尺寸、低成本、高良率’的工业化成熟期，为SiC在800V高压平台、固态变压器、AI电源模块等新兴场景的大规模渗透扫清最大障碍。\n\n对行业有什么影响：英飞凌的突破将加速全球SiC产业竞争格局重构——一方面倒逼Wolfspeed、罗姆等对手加速300mm产线建设；另一方面，将推动上游设备商（应用材料、东京电子）快速适配SiC工艺，带动SiC专用PVD、高温离子注入机等设备市场爆发。对下游而言，车企、光伏逆变器厂商及AI数据中心运营商将获得更具成本竞争力的高效电源方案，间接降低电动车续航焦虑、提升数据中心PUE水平。此外，该技术路径也为氮化镓（GaN）300mm量产提供了可复用的工程范式，加速整个宽禁带半导体生态成熟。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/infineon-processes-functional-power-devices-on-300mm-sic-wafers/",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-11-09T15:15:00+00:00",
+      "created_at": "2026-11-10T04:05:57.776889+00:00"
     },
     {
       "id": "abd085e9-b2a1-4040-9511-197c32ebace9",
@@ -5259,42 +5295,6 @@
       "original_author": "Semiconductor Digest",
       "published_at": "2026-10-06T18:41:33+00:00",
       "created_at": "2026-10-08T19:18:37.351042+00:00"
-    },
-    {
-      "id": "e4e0fca8-7849-4028-bd0e-20be178a68c7",
-      "title": "CFET晶体管迈向量产：imec发布双翻转sCFET架构，支持逻辑与SRAM协同缩放",
-      "summary": "imec推出新型双翻转顺序式CFET（sCFET）架构，首次在同一器件中自然支持共栅与分栅两种模式，可将标准单元缩至3T，推动逻辑与SRAM同步延伸至A3节点，为2nm以下制程提供可行路径。",
-      "key_points": [
-        "双翻转sCFET架构解决共栅/分栅兼容难题，无需牺牲面积效率",
-        "结合背侧供电（BSPDN）与背侧时钟网格，降低2nm纳米片芯片功耗与偏斜",
-        "CFET被列为欧洲‘超越2nm SoC’计划的关键使能技术"
-      ],
-      "full_content": "Huawei's LogicFolding tech, while borne out of its sanction-laden realities, and quite innovative all things considered, is no match for the process miniaturization-led advancements that Qualcomm and Apple continue to pursue for their mobile SoCs. This is partly a function of the thermal tax that LogicFolding imposes on clock speeds, as recently explained by a semiconductor expert. Huawei's LogicFolding imposes thermal constraints on clock speeds, while requiring active cooling capabilities, diminishing its attractiveness for Qualcomm and Apple As we noted last week, Kurnal Insights has now published the die shots for Huawei's Kirin 9050 Pro chip, showing a compute die and [&hellip;] Read full article at https://wccftech.com/huawei-touts-logicfoldings-50-clock-buffer-cut-but-a-semiconductor-expert-warns-the-heat-problem-remains-which-is-why-qualcomm-and-apple-are-not-interested-in-the-tech/",
-      "ai_summary": "发生了什么：比利时微电子研究中心imec于2026年VLSI会议发布革命性双翻转顺序式互补场效应晶体管（sCFET）架构。该技术通过两次晶圆翻转与精密对准，在同一垂直堆叠结构中实现pFET与nFET的独立栅极控制（分栅模式），同时保留共用栅极选项（共栅模式），彻底解决传统CFET在逻辑门（如触发器、多路复用器）中栅极独立控制难的问题。配合此前已验证的背侧供电（BSPDN）与背侧时钟网格技术，该架构可将标准单元高度压缩至3-track（3T），使CMOS逻辑与SRAM同步缩放至A3（~1.4nm）节点，突破FinFET与纳米片晶体管的物理极限。\n\n为什么重要：CFET代表半导体延续摩尔定律的终极路径之一。当纳米片晶体管在A7节点（~2.2nm）逼近性能与良率瓶颈，CFET通过三维垂直堆叠，将晶体管密度提升2倍以上，并大幅降低互连延迟。imec此次突破的关键在于‘工艺可行性’：双翻转sCFET虽工艺步骤更复杂，但避免了单片CFET（mCFET）中高深宽比结构带来的刻蚀与填充难题，且与现有CMOS产线兼容度更高。欧盟将其列为‘NanoIC试点线’核心项目，旨在确保欧洲在后2nm时代不丧失技术主权。\n\n对行业有什么影响：对晶圆厂而言，三星、英特尔已宣布CFET量产时间表（2027–2028），imec成果为其提供关键工艺模块参考；台积电虽暂未公开CFET路线，但其3DFabric技术积累可快速迁移。对芯片设计公司而言，CFET将引发EDA工具链重构：Synopsys、Cadence需开发支持三维器件建模、热仿真与可靠性分析的新工具。对终端应用而言，更致密的晶体管意味着AI加速器可在同等面积集成更多计算单元，手机SoC能塞入更强NPU，而SRAM容量提升将直接缓解大模型推理中的内存墙问题。长远看，CFET或催生‘三维芯片设计范式’——逻辑、存储、IO甚至光子电路可在单芯片内垂直集成，模糊传统芯片与系统界限。",
-      "category": "Foundry",
-      "source": "Semiconductor Engineering",
-      "source_url": "https://semiengineering.com/advancing-the-cfet-based-device-roadmap-novel-integration-modules-and-standard-cell-configurations-2/",
-      "original_author": "@Semiconductor Engineering",
-      "published_at": "2026-10-06T17:40:28+00:00",
-      "created_at": "2026-10-06T18:45:48.991467+00:00"
-    },
-    {
-      "id": "7c8cd1dc-b5c5-4893-93e3-2ef3acf38475",
-      "title": "Renesas推出100V GaN功率晶体管，赋能AI数据中心与机器人高效供电",
-      "summary": "瑞萨电子发布首款100V增强型GaN FET系列，支持MHz级开关频率，较硅MOSFET降低40–70%开关损耗，采用兼容封装便于设计迁移，专为AI服务器48V供电、机器人驱动等高功率密度场景优化。",
-      "key_points": [
-        "RTP100E系列GaN FET支持100V耐压，硬/软开关优值（FOM）领先同业35–63%",
-        "MHz级开关频率可缩小磁性元件体积，提升AI电源功率密度达2倍",
-        "采用标准MOSFET封装，支持硅基设计无缝迁移，降低客户导入门槛"
-      ],
-      "full_content": "The Galaxy S26 family continues to offer incredible value for the specifications all three flagships pack underneath the hood, and during Amazon’s Prime Big Deals, you have the opportunity to grab one, two, or all three devices at up to $420 off. Now, does that sound like an exceptional offer or what? Best of all, the starting price of the entire lineup is $724.99, making it worthy of a purchase. The Galaxy S26 Ultra drops below $1,000 in one of the rarest price drops, one of the best Android flagships, now listed for $979.99 During this blockbuster sale period, which [&hellip;] Read full article at https://wccftech.com/samsung-galaxy-s26-mega-deals-amazon-420-off/",
-      "ai_summary": "发生了什么：瑞萨电子于2026年10月正式发布RTP100E系列100V增强型氮化镓（GaN）功率晶体管，包括RTP100E005G1FL等四款型号，导通电阻覆盖5mΩ至1.2mΩ。该系列采用E-mode（常关）技术，具备零反向恢复电荷（Qrr=0）、超低栅极电荷（Qg）与输出电荷（Qoss）等特性，在硬开关与软开关场景下分别实现最高35%与63%的优值（FOM）提升。其核心价值在于支持MHz级高频开关——相比传统硅基电源的数百kHz，可将变压器、电感等磁性元件体积缩小50%以上，显著提升AI服务器48V供电系统、人形机器人关节驱动、工业电机等场景的功率密度与能效。\n\n为什么重要：AI数据中心正面临前所未有的供电挑战：单机柜功率已达30–100kW，传统硅基电源转换效率（94–96%）与散热瓶颈制约算力提升。GaN器件凭借高频、低损特性，成为破局关键。瑞萨此举意义在于‘规模化落地’：不同于实验室级GaN，RTP100E系列采用标准TO-220、LFPAK等封装，引脚与PCB布局完全兼容硅MOSFET，客户无需重新设计电路板即可完成升级，极大缩短产品上市周期。同时，其100V耐压精准匹配AI服务器主流48V输入/12V输出架构，填补了中压GaN市场的关键空白。\n\n对行业有什么影响：对电源厂商而言，瑞萨方案将加速GaN在AI基础设施中的渗透——预计2027年AI服务器GaN电源渗透率将从当前不足5%跃升至30%。对AI芯片公司而言，更高效率的供电意味着GPU/CPU可维持更高持续功耗（PL2），提升实际AI训练吞吐量。对机器人产业而言，高频GaN驱动可使关节电机响应速度提升，为人形机器人实现更自然步态与更快动作提供底层电力保障。此外，瑞萨与意法半导体、Navitas等厂商的竞争，将推动GaN成本曲线加速下移，有望在3年内将价格降至硅基方案的1.5倍以内，真正实现大规模商用拐点。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/renesas-moves-gan-into-100-v-power-applications-for-ai-data-centers-and-robotics/",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-10-06T17:40:12+00:00",
-      "created_at": "2026-10-06T18:45:48.991475+00:00"
     }
   ]
 }
