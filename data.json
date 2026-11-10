@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T04:06:09.572586+00:00",
+  "updated_at": "2026-11-10T04:16:20.766496+00:00",
   "count": 300,
   "news": [
     {
@@ -57,6 +57,24 @@
       "created_at": "2026-11-10T04:05:57.776933+00:00"
     },
     {
+      "id": "587b8afd-06f9-4d83-b683-dddc3bd00c9b",
+      "title": "龙芯中科6600系列CPU进入回片阶段：第五代微结构桌面处理器量产在即",
+      "summary": "龙芯中科董事长胡伟武宣布，基于自主指令集的第五代微结构桌面CPU 3B6600已于2026年Q2流片，预计2026年Q4回片；配套芯片7A3000同步推进，国产CPU自主化进程加速。",
+      "key_points": [
+        "3B6600为龙芯第五代微结构，采用高自主工艺，设计周期长",
+        "7A3000桥片与3A6600低成本版均计划2026年Q4完成关键节点",
+        "标志着龙芯从‘可用’向‘好用’、‘量产’的关键跨越"
+      ],
+      "full_content": "Today is not a good day for OpenAI, especially as it is getting hammered from two sides, with Anthropic's Claude Fable 5.2 leaving GPT-6 Astra in the proverbial dust, and Meta's Muse Ember squeezing GPT-6 Luna hard in the bargain category of AI models. Anthropic's Claude Fable 5.2 outcompetes Fable 5.1, Opus 5.5, OpenAI's GPT-6 Astra, and Google's Gemini 4 Carbon in nearly every benchmark We noted towards the middle of October that Anthropic's Fable 5.5 AI model had been spotted in the wild. Well, the high-flying AI lab has just chosen to launch a different model, the Claude Fable [&hellip;] Read full article at https://wccftech.com/openai-squeezed-at-the-frontier-end-by-anthropics-claude-fable-5-2-while-metas-muse-ember-gives-its-bargain-class-gpt-6-luna-a-bruise/",
+      "ai_summary": "发生了什么：龙芯中科在2026年11月业绩会上披露，其第五代微结构桌面CPU——3B6600已于2026年第二季度完成流片，预计第四季度完成回片验证；配套的7A3000桥片也于第三季度流片，同样瞄准Q4回片；而面向成本敏感市场的3A6600低成本版本亦计划于Q4完成设计。3B6600采用龙芯完全自主的LoongArch指令集与自研微架构，强调高安全性与高可靠性，其‘高自主工艺’意味着从设计工具、IP核到制造流程均深度国产化，虽设计磨合与流片周期较长，但为长期技术主权奠定基础。\n\n为什么重要：在中美科技博弈持续深化、x86/ARM生态面临不确定性背景下，龙芯6600系列的进展是中国CPU自主可控战略的里程碑事件。它不再停留于‘能跑通’的演示阶段，而是进入真实流片、回片、测试、量产的工业级闭环。3B6600与7A3000的协同，意味着龙芯已构建起完整的‘CPU+Chipset’平台，可支撑桌面办公、行业终端、信创服务器等全场景应用，为党政、金融、能源等关键领域提供真正可替代的国产算力底座。\n\n对行业有什么影响：短期将提振国产信创产业链信心，加速操作系统（统信UOS、麒麟OS）、数据库、中间件等基础软件与龙芯平台的深度适配；中期将推动国产EDA工具（如华大九天、概伦电子）针对LoongArch架构进行优化，促进工具链自主；长期看，若3B6600在性能功耗比、生态丰富度上持续突破，有望吸引更多开发者与ISV加入，形成正向循环。此外，其‘高自主工艺’路径也为其他国产CPU厂商（如申威、飞腾）提供了差异化发展思路——不盲目追求制程数字，而聚焦架构创新与系统级优化。",
+      "category": "CPU",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/024/746.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-11-09T19:55:34+00:00",
+      "created_at": "2026-11-10T04:16:14.113375+00:00"
+    },
+    {
       "id": "db0c1d54-41d3-416d-8b1f-193775b359e0",
       "title": "半导体行业AI投资趋理性：技术采纳率高但ROI衡量体系滞后，价值转化成最大挑战",
       "summary": "半导体行业AI采纳率居各行业之首（48%已AI-native），但仅22%企业能清晰阐述AI价值目标；强投资纪律与弱价值度量形成鲜明反差，人才与流程成为AI规模化最大瓶颈。",
@@ -73,6 +91,24 @@
       "original_author": "@Semiconductor Digest",
       "published_at": "2026-11-09T19:00:00+00:00",
       "created_at": "2026-11-09T22:50:39.653397+00:00"
+    },
+    {
+      "id": "c5c73d17-0786-4069-86c9-67dd86495a6d",
+      "title": "七彩虹主板与微星显卡全线涨价：RTX50系列代理价最高上涨8000元",
+      "summary": "七彩虹11月起上调主力主板MSRP指导价，涨幅10–100元；微星同步调涨RTX50全系显卡代理价，RTX5080最高涨8000元，反映上游GPU供应紧张与成本压力。",
+      "key_points": [
+        "七彩虹B760/B860系列主板普遍涨价10–50元",
+        "微星RTX5080系列代理价暴涨1300–8000元，高阶型号涨幅更大",
+        "涨价主因或为NVIDIA新卡产能爬坡慢、供应链成本上升"
+      ],
+      "full_content": "BioWare co-founder Trent Oster, who is currently CEO of Beamdog, has openly said he's running the numbers to see whether there's a way to save the closing studio's IPs, especially Mass Effect. He started hinting at it on November 4, tweeting about his desire to \"get the band together\": I love seeing all the energy around #SaveMassEffect. I think there is still a great thesis for a well-funded RPG developer who can deliver. Makes me want to get some of the original band back together. The following day, Oster discussed the challenges that would have to be overcome to fund [&hellip;] Read full article at https://wccftech.com/trent-oster-saving-mass-effect-james-ohlen-bioware-reunion/",
+      "ai_summary": "发生了什么：2026年11月，中国主流硬件品牌七彩虹与微星同步宣布价格调整政策。七彩虹自11月12日起，对其BATTLE-AX与CVN系列主流主板（如B760M、B850M、X870E）执行新一轮MSRP指导价上调，涨幅集中在10–100元区间；微星则对RTX50全系显卡（RTX5060至RTX5080）实施大幅代理价调涨，其中RTX5080系列最高涨幅达8000元，RTX5070 Ti系列达4000元，RTX5060系列亦有200–500元涨幅。此次调价并非孤立事件，而是继NVIDIA H200芯片滞港、AI芯片走私频发、台积电CoWoS封装产能持续紧张等供应链扰动后的连锁反应。\n\n为什么重要：硬件厂商集体涨价，是上游供应链压力向消费端传导的明确信号。RTX50系列作为NVIDIA下一代消费级GPU，其高昂涨幅远超历史水平，暗示其制造成本（如先进封装、HBM3e内存、定制PCB）显著增加，且产能极度稀缺。七彩虹主板涨价则反映出Intel/AMD新平台（B760/B850/X870）配套芯片组、WiFi 7/DDR5内存模组等BOM成本上升。这标志着AI算力军备竞赛已深刻影响消费级市场，消费者购买高性能PC的成本正在系统性抬升。\n\n对行业有什么影响：首先，将抑制部分DIY用户与中小型工作室的升级意愿，延缓新平台普及速度；其次，利好AMD Radeon RX 8000系列等竞品，可能加速AMD在中高端市场的份额提升；第三，推动整机厂商（如联想、戴尔）调整产品策略，或提高OEM机型溢价，或转向更成熟的上一代GPU方案；最后，从产业角度看，此类价格波动将促使渠道商加强库存管理与风险对冲，也可能加速二手显卡市场活跃度。长远看，若供应持续紧张，或倒逼NVIDIA加快RTX50产能释放，甚至影响其后续RTX60系列的发布时间表。",
+      "category": "Digital",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/024/745.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-11-09T19:00:00+00:00",
+      "created_at": "2026-11-10T04:16:14.113383+00:00"
     },
     {
       "id": "c8b4de76-9c51-44af-a4e0-5b613fa136a1",
@@ -5263,38 +5299,6 @@
       "original_author": "@Semiconductor Digest",
       "published_at": "2026-10-06T20:55:37+00:00",
       "created_at": "2026-10-07T06:45:01.076575+00:00"
-    },
-    {
-      "id": "c596aa5d-ab9c-4bf0-8d71-c0dc8901a5fc",
-      "title": "After months of industry and c...",
-      "summary": "After months of industry and customer speculation, Paramount Skydance has shed some light on the future of the HBO Max a...",
-      "key_points": [
-        "After months of industry and customer sp"
-      ],
-      "full_content": "After months of industry and customer speculation, Paramount Skydance has shed some light on the future of the HBO Max and Paramount+ streaming services. Paramount Skydance completed its acquisition of Warner Bros. Discovery (WBD) today, ending a monthslong saga that began when Netflix last year announced its own plans to buy WBD. Netflix scrapped those plans in February. Skydance is the name of the company created from the $111 billion merger. In an announcement today, Skydance said that all of the direct-to-consumer streaming services it owns, including the Discovery+ service that Discovery Inc. (which merged with WarnerMedia in 2022 to create WBD) launched in 2021, “will unify into a single service over time.” Read full article Comments",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nAfter months of industry and customer speculation, Paramount Skydance has shed some light on the future of the HBO Max and Paramount+ streaming services. Paramount Skydance completed its acquisition of Warner Bros. Discovery (WBD) today, ending a monthslong saga that began when Netflix last year announced its own plans to buy WBD. Netflix scrapped those plans in February. Skydance is the name of the company created from the $111 billion merger. In an announcement today, Skydance said that all of",
-      "category": "AI",
-      "source": "Ars Technica (Gadgets)",
-      "source_url": "https://arstechnica.com/gadgets/2026/10/hbo-max-paramount-and-discovery-will-unify-into-a-single-service/",
-      "original_author": "Ars Technica (Gadgets)",
-      "published_at": "2026-10-06T20:32:12+00:00",
-      "created_at": "2026-10-08T19:18:37.351108+00:00"
-    },
-    {
-      "id": "035a10ff-0e98-43b2-a59f-d6db9350e21b",
-      "title": "Qnity Electronics, Inc",
-      "summary": "Qnity Electronics, Inc. (“Qnity”) (NYSE: Q), a technology solutions leader across the semiconductor value chain, introdu...",
-      "key_points": [
-        "Qnity Electronics, Inc. (“Qnity”) (NYSE:"
-      ],
-      "full_content": "Qnity Electronics, Inc. (“Qnity”) (NYSE: Q), a technology solutions leader across the semiconductor value chain, introduced Kalrez 7080 perfluoroelastomer parts, a high-performance sealing solution engineered for semiconductor processes operating at temperatures up to 330°C. Designed to support increasingly demanding thermal environments, the new solution strengthens Qnity&#8217;s portfolio of Kalrez sealing technologies for semiconductor manufacturing. Kalrez 7080 parts and other Kalrez® sealing solutions will be featured at Qnity’s booth at SEMICON West, Oct. 13-15, in San Francisco, Calif. “Qnity&#8217;s breadth of knowledge across semiconductor manufacturing gives us a unique perspective on the challenges our customers face throughout the fab, from process performance to equipment reliability,” said Kate Dei Cas, President, Semiconductor Technologies at Qnity. “Kalrez sealing solutions are a powerful example of how we translate that deep understanding into innovations that directly improve yield, enhance reliability, and address increasingly demanding manufacturing requirements.” Introducing Kalrez 7080 parts: High-purity sealing performance beyond 300°C Debuting at SEMICON West, Kalrez 7080 parts are designed to address the growing demands of advanced thermal semiconductor processes. Engineered for applications operating at temperatures up to 330°C, the new perfluoroelastomer sealing solution combines thermal resistance with ultra-low outgassing and extremely low metallic contamination. In internal thermal-aging evaluations conducted over four weeks (672 hours) of air exposure at temperatures up to 325°C, Kalrez 7080 parts demonstrated exceptional thermal stability, extending the high-temperature capabilities of the Kalrez sealing portfolio. This performance helps semiconductor manufacturers maintain sealing integrity in extreme-temperature environments, supporting process consistency, equipment reliability, and yield improvement. Kalrez 7080 parts are well suited for critical semiconductor applications, including diffusion, oxidation, thermal atomic layer deposition (ALD), metal chemical vapor deposition (CVD), and low-pressure chemical vapor deposition (LPCVD), helping customers improve process stability, enhance wafer yield, and reduce unplanned maintenance. A comprehensive portfolio for semiconductor process challenges At SEMICON West, Qnity will also highlight additional Kalrez sealing technologies designed to support semiconductor manufacturing across a range of demanding operating environments: Kalrez 9400 parts are engineered for advanced plasma processing environments, delivering excellent plasma resistance, low particle generation, and reliable sealing performance for demanding etch and strip applications. First introduced at SEMICON West 2025, Kalrez 9400 parts were recognized as one of three finalists for the Best of West Award from SEMI and Semiconductor Digest. Kalrez PF3 components combine Kalrez perfluoroelastomer materials with precision-engineered metal hardware to simplify installation and improve sealing consistency. Designed to accommodate thermal expansion and demanding thermal cycling conditions, they support reliable performance in semiconductor and plasma processing applications. Kalrez UPHT grade parts are composed of an ultra-pure, high-temperature FFKM sealing compound developed for advanced semiconductor plasma processes. Offering ultra-low outgassing, low particle generation, and excellent plasma durability, they help manufacturers reduce contamination risks and support higher wafer yields. Technologies for next-generation semiconductor manufacturing at SEMICON West At SEMICON West, Qnity will showcase how advances in materials, process technologies, and critical equipment components can help manufacturers achieve reliable, high-yield production for next-generation semiconductor devices and advanced packaging architectures. In addition to its Kalrez® portfolio, Qnity will highlight a range of solutions supporting advanced node semiconductor fabrication, advanced packaging, and thermal management. Attendees are invited to visit Qnity at booth #965 to learn more about the company&#8217;s latest innovations, speak with technical experts, and explore solutions tailored to their design and manufacturing challenges. To learn more about Kalrez® sealing solutions and explore their applications, visit kalrez.com . To schedule a meeting or learn more about Qnity at SEMICON West, explore Qnity’s virtual booth . The post Qnity Develops 330°C Sealing Material for High-Temperature Chipmaking Processes appeared first on Semiconductor Digest .",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nQnity Electronics, Inc. (“Qnity”) (NYSE: Q), a technology solutions leader across the semiconductor value chain, introduced Kalrez 7080 perfluoroelastomer parts, a high-performance sealing solution engineered for semiconductor processes operating at temperatures up to 330°C. Designed to support increasingly demanding thermal environments, the new solution strengthens Qnity&#8217;s portfolio of Kalrez sealing technologies for semiconductor manufacturing. Kalrez 7080 parts and other Kalrez® sealin",
-      "category": "AI",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/qnity-develops-330c-sealing-material-for-high-temperature-chipmaking-processes/?utm_source=rss&utm_medium=rss&utm_campaign=qnity-develops-330c-sealing-material-for-high-temperature-chipmaking-processes",
-      "original_author": "Semiconductor Digest",
-      "published_at": "2026-10-06T18:41:33+00:00",
-      "created_at": "2026-10-08T19:18:37.351042+00:00"
     }
   ]
 }
