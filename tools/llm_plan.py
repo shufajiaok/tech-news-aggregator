@@ -14,11 +14,35 @@ Key 只从 Actions Secret 读，不进浏览器、不打日志。
 
 import json
 import os
+from pathlib import Path
 
 import requests
 
+ROSTER_PATH = Path(__file__).resolve().parent / "roster.md"
+
 DEFAULT_BASE = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 DEFAULT_MODEL = "qwen-plus"
+
+
+def load_roster(max_chars=7000):
+    """读资料库导出的名册（人物 -> 团体 + 昵称命名规律）。
+
+    纯规则找人不可靠：微博搜索只认完整昵称，用户输入的常常是中文简称
+    （「不渝」），而账号实际叫「不渝uyuna_Diamond」。把用户自己整理的图鉴
+    喂给模型，它才能把简称补成可搜的完整昵称，而不是乱猜一个同名人。
+    """
+    try:
+        return ROSTER_PATH.read_text(encoding="utf-8")[:max_chars]
+    except Exception:
+        return ""
+
+
+def _roster_block():
+    r = load_roster()
+    if not r:
+        return ""
+    return ("下面是用户资料库里已人工核对过的微博账号资料，判断「这个人是谁、"
+            "账号叫什么」时以此为准：\n\n" + r + "\n\n")
 
 SYSTEM = """你是一个抓取任务参数解析器。把用户的中文自然语言请求，转成 JSON 参数。
 
@@ -29,21 +53,24 @@ SYSTEM = """你是一个抓取任务参数解析器。把用户的中文自然�
 
 规则：
 - 不要臆造账号。用户提到但名单里没有的名字，按用户原话填进 names。
+- **原样保留用户写出的名字**：用户写「不渝uyuna」就填「不渝uyuna」，绝不能删掉罗马音只留「不渝」——
+  地偶圈昵称是「中文名+罗马音_团名」，少了罗马音就搜不到人。
 - 不要把昵称自己转换成 uid：你无法凭记忆知道 uid，转换由后续联网搜索完成。
 - 用户说"全部账号""都抓"时，names 和 uids 都返回空数组（表示跑完整名单）。
 - 无法判断就返回 {"names": [], "uids": [], "pages": 6}。"""
 
-FIND_SYSTEM = """你是微博账号检索助手。请用联网搜索，确认用户说的昵称/外号对应哪个微博账号。
+FIND_SYSTEM = """你是微博账号检索助手。任务：把用户说的昵称/外号，补全成微博上真实存在的完整显示名。
 
 只输出一个 JSON 对象，不要任何解释、不要 markdown 代码块：
 {"names": ["微博显示名1", "微博显示名2"]}
 
 规则：
-- 只给「显示名」，不要给 uid、不要给任何数字 ID。后台会拿这些名字回微博实查 uid。
-- 最多 3 个，按可能性从高到低排列。同名账号全部列出。
-- 显示名要写成微博上真实出现的形态，例如简称「白泠」可能对应「白泠Mio-StarHoney」，
-  外号「鼠条」可能对应「鼠条Kyuko-Astoria」。
-- 一次检索都没命中任何账号时返回 {"names": []}。"""
+- 只给「显示名」，不要给 uid、不要给任何数字 ID。后台会拿这些名字回微博实查。
+- 成员个人号的昵称规律是「中文名 + 罗马音 + _团名」，例如「不渝uyuna_Diamond」
+  「白泠Mio-StarHoney」「鼠条Kyuko-Astoria」。用户只给中文名时，按他所属团体补出完整昵称。
+- 最多 3 个，按可能性从高到低排列。
+- 优先使用参考资料里出现过的人名与团名，不要凭印象另外造名字。
+- 完全没有线索时返回 {"names": []}。"""
 
 
 def _extract_json(text):
@@ -203,7 +230,8 @@ def find_names(term, log=print):
         "model": model,
         "input": {"messages": [
             {"role": "system", "content": FIND_SYSTEM},
-            {"role": "user", "content": f"「{term}」在微博上的显示名是什么？"},
+            {"role": "user", "content": _roster_block()
+             + f"「{term}」在微博上的完整昵称是什么？"},
         ]},
         "parameters": {"enable_search": True, "result_format": "message",
                        "temperature": 0, "max_tokens": 500},

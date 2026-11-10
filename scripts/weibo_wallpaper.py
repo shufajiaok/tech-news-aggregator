@@ -75,6 +75,20 @@ def log(*a):
     print(*a, flush=True)
 
 
+# 成员个人号昵称里的团名后缀。地偶圈昵称＝「中文名+罗马音_团名」，
+# 区分本尊与同名粉丝号时这是最可靠的信号。
+GROUP_SUFFIXES = (
+    "Diamond", "StarHoney", "Astoria", "StarWinK", "Polaris", "Purelee",
+    "Fuwafuwa", "恋时青空", "弥漫星雲", "夏日青空", "极夜", "永昼", "Solstella",
+    "ReaLume", "ReHeart", "ReComi", "Re:Comi", "YUMEDOLL", "星空",
+)
+
+
+def _has_group_suffix(nick):
+    n = nick or ""
+    return any(g in n for g in GROUP_SUFFIXES)
+
+
 # ---------------------------------------------------------------- 原图基础函数
 def to_large(url):
     """把任意微博图片 URL 的尺寸前缀重写为源站 /large/，去掉查询参数。"""
@@ -306,10 +320,25 @@ class WeiboSession:
         if not hits:
             types = [c.get("card_type") for c in cards][:14]
             log(f"   搜索 {term}: cards={len(cards)} card_type={types}，无用户卡片")
+        if not hits:
+            return None
         if expect:
-            for h in hits:
-                if expect.lower() in (h[0] + h[2]).lower():
-                    return h
+            e = expect.strip().lower()
+            # 昵称里直接含待查词的才算候选人
+            cand = [h for h in hits if e in h[0].lower()]
+            if cand:
+                # 成员个人号的昵称带团名后缀（不渝uyuna_Diamond），粉丝号通常不带；
+                # 同分时短的优先，长的大多是「XX的粉丝号」
+                cand.sort(key=lambda h: (0 if _has_group_suffix(h[0]) else 1,
+                                         len(h[0]), -len(h[2])))
+                return cand[0]
+            # 不匹配就宁可不认。以前这里 fallback 到 hits[0]，
+            # 搜「不渝」会拿到「捕娱」（娱评团账号）并被当成目标抓进索引。
+            log(f"   搜索 {term}: 前几个用户都不含「{expect}」，判定非本人 → 放弃")
+            for h in hits[:3]:
+                log(f"     候选 {h[0]} ({h[1]})"
+                    f"{(' | ' + h[2][:24]) if h[2] else ''}")
+            return None
         return hits[0] if hits else None
 
     def profile(self, uid):
