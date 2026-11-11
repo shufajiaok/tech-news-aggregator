@@ -71,6 +71,34 @@
     <button class="con-close" id="conClose" aria-label="关闭">✕</button>
   </div>
 
+  <details class="con-adv" id="tunerBox">
+    <summary>视觉调节 · 玻璃引擎（实时）</summary>
+    <div class="tuner-top">
+      <span id="tunerCount">载入中…</span>
+      <button class="btn ghost" id="tunerReset" type="button">恢复默认</button>
+      <button class="btn ghost" id="tunerCopy" type="button">复制配置</button>
+    </div>
+    <p class="con-hint">全局统一控制所有玻璃面与卡片圆角，不按组件单独配置。连续曲率 n=2 是普通圆弧，n=4 起是 GlassKit 的 G2 连续曲率。参数只存这台浏览器。</p>
+    <div id="tunerGroups"></div>
+    <details class="tuner-adv" id="tunerAdvancedBox">
+      <summary>高级 · 原始引擎参数<span class="hint">（日常不用碰）</span></summary>
+      <div id="tunerAdvanced"></div>
+    </details>
+
+    <div class="tuner-title">背景 · 网页自定义</div>
+    <div class="bg-row">
+      <label class="btn ghost" for="bgFile">上传图片…</label>
+      <input type="file" id="bgFile" accept="image/*" hidden>
+      <button class="btn ghost" id="bgReset" type="button">恢复默认</button>
+    </div>
+    <div class="bg-row">
+      <input id="bgUrl" type="url" placeholder="或粘贴图片 URL / 本站 /i/large/ 链接" spellcheck="false">
+      <button class="btn" id="bgGo" type="button">应用</button>
+    </div>
+    <p class="con-hint" id="bgState">当前：站点默认壁纸</p>
+    <p class="con-hint">壁纸卡片或灯箱里点「设为背景」也能一键切换。图片只存这台浏览器；外链可能因跨域只显示、不参与玻璃折射。应用后页面会刷新一次。</p>
+  </details>
+
   <section class="con-sec">
     <label class="con-label" for="qInput">粘贴图片链接</label>
     <textarea id="qInput" rows="3" placeholder="https://wx1.sinaimg.cn/mw690/006xxxx.jpg&#10;也可粘一整段微博文本或网页源码" spellcheck="false"></textarea>
@@ -144,6 +172,7 @@
       <span id="lbDim"></span>
     </div>
     <div class="lb-actions">
+      <button class="btn ghost" id="lbBg" type="button">设为背景</button>
       <button class="btn ghost" id="lbFav" type="button">☆ 收藏</button>
       <a id="lbPost" target="_blank" rel="noopener">原微博 ↗</a>
       <a id="lbOpen" target="_blank" rel="noopener">原图 ↗</a>
@@ -154,6 +183,14 @@
 <footer class="foot">
   <span id="footStat">—</span>
 </footer>
+
+<!-- 账号选择气泡（26+ 个账号不再横滑找） -->
+<div class="picker" id="picker" hidden>
+  <div class="picker-panel" role="dialog" aria-label="选择账号">
+    <input type="search" id="pickerSearch" placeholder="搜账号…" autocomplete="off">
+    <div class="picker-grid" id="pickerGrid"></div>
+  </div>
+</div>
 
 <script id="glass-config" type="application/json">{"material":{"blurRadius":2,"tintAlpha":0.55,"refDispersion":21},"geometry":{"card":{"radius":28}},"nav":{"navEdge":16,"navRefraction":5.5,"navFill":0.34,"navBlur":3}}</script>
 <script type="module" src="glass/liquid-glass.js"></script>

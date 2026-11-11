@@ -320,6 +320,33 @@ main {
   transition: opacity 380ms var(--ease);
 }
 .tile img.on { opacity: 1; }
+/* 一键设为网页背景：hover 才浮出，触屏常显 */
+.tile .tile-bg {
+  position: absolute;
+  top: 7px; right: 7px;
+  padding: 4px 9px;
+  border: .5px solid rgba(255, 255, 255, .22);
+  border-radius: 8px;
+  background: rgba(8, 10, 14, .68);
+  color: rgba(255, 255, 255, .9);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(-3px);
+  transition: opacity 160ms var(--ease), transform 160ms var(--ease), background 160ms var(--ease);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+@media (hover: hover) {
+  .tile:hover .tile-bg, .tile:focus-within .tile-bg { opacity: 1; transform: none; }
+}
+@media (hover: none) {
+  .tile .tile-bg { opacity: 1; transform: none; }
+}
+.tile .tile-bg:hover { background: rgba(60, 110, 180, .82); }
+.tile .tile-bg:focus-visible { opacity: 1; transform: none; outline: 2px solid #86bcff; }
 .tile .badge {
   position: absolute;
   bottom: 7px; left: 7px;
@@ -414,15 +441,24 @@ main {
   to   { opacity: 1; transform: none; }
 }
 
-/* 这套材质的 canvas 只在边缘倒角带绘制，中央 alpha 为 0（中央稳定、折射集中在边缘）。
-   所以正文底色必须由 CSS 提供；模糊只用 2px，够压住背景字又不把边缘折射糊平。
-   顶缘内高光按 GlassKit 的口径补 0.22，让边缘质感在 canvas 被压时仍在。 */
+/* Plan A：canvas 的 studioMain 输出是整块不透明背景（中央 alpha=1，并非只在边缘
+   绘制），只能压在内容底下（z=1）。原先半透明底 + backdrop-filter 透出的是网页
+   背景而不是引擎折射 —— 那块矩形「透视窗」和边缘玻璃是两张皮，所以看着脱节。
+   按 GlassKit 规范：内容层完全不透明，玻璃质感只由 CSS 落在边缘
+   （顶缘高光 0.25 + 左右冷暖色散 + 内阴影），文字对比度最高。 */
 .console.card.glass-gpu {
-  background: rgba(9, 12, 17, .6);
-  -webkit-backdrop-filter: blur(2px) saturate(1.12);
-  backdrop-filter: blur(2px) saturate(1.12);
-  box-shadow: inset 0 1px rgba(255, 255, 255, .22),
-              inset 0 -1px rgba(0, 0, 0, .3);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, 0) 13%) top / 100% 100% no-repeat,
+    linear-gradient(90deg, rgba(134, 188, 255, .07), rgba(134, 188, 255, 0) 7%, rgba(134, 188, 255, 0) 93%, rgba(255, 150, 184, .06)) left / 100% 100% no-repeat,
+    #0b0e14;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, .25),
+    inset 0 -1px rgba(0, 0, 0, .38),
+    inset 1px 0 rgba(134, 188, 255, .12),
+    inset -1px 0 rgba(255, 150, 184, .10),
+    0 18px 50px rgba(0, 0, 0, .55);
 }
 
 .con-head {
@@ -768,3 +804,113 @@ main {
   padding: 4px 9px; font-size: 10.5px; font-weight: 500;
   text-decoration: none; color: var(--fg-2);
 }
+
+/* 视觉调节面板 */
+.tuner-top {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  margin: 4px 0 6px; font-size: 11.5px; color: var(--fg-2);
+}
+.tuner-top .btn { padding: 4px 9px; font-size: 11px; }
+.tuner-top span { flex: 1; min-width: 84px; }
+.tuner-title {
+  margin: 12px 0 5px; font-size: 11px; font-weight: 600;
+  letter-spacing: .04em; color: var(--fg-3);
+}
+.tuner-title::before { content: '— '; }
+.tuner-row { display: flex; align-items: center; gap: 8px; min-height: 29px; }
+.tuner-row label { flex: none; width: 94px; font-size: 11.5px; color: var(--fg-2); }
+.tuner-row input[type="range"] {
+  flex: 1; min-width: 0; height: 18px; margin: 0; padding: 0;
+  border: 0; background: transparent; accent-color: #86bcff; cursor: pointer;
+}
+.tuner-row input[type="color"] {
+  flex: 1; height: 22px; padding: 0;
+  border: .5px solid rgba(255, 255, 255, .18); border-radius: 6px;
+  background: transparent; cursor: pointer;
+}
+.tuner-row output {
+  flex: none; width: 48px; text-align: right;
+  font: 11px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  color: var(--fg-3); font-variant-numeric: tabular-nums;
+}
+
+/* 背景自定义 */
+.bg-row { display: flex; gap: 8px; align-items: center; margin: 8px 0; }
+.bg-row .btn { flex: none; }
+.bg-row input[type="url"] { flex: 1; min-width: 0; }
+.bg-row label.btn { cursor: pointer; }
+#tunerBox #bgState { color: var(--accent); font-weight: 600; }
+
+/* 连续曲率圆角：GlassKit native 用的是普通圆角（RoundedCornerShape），
+   这里保留 superellipse 作为可调项（n=2 就是普通圆弧），因为用户要留 n 滑块。
+   CSS 的形与 shader 的 superellipseCornerSDF(p,r,n) 共用同一个 n。
+   注意：拖动时只让 shader 变，CSS 变量由 app.js 在松手后才写，避免逐帧重栅格化。 */
+.post, .tile, .card, .console, .ex-item, .lb-bar, .empty, .con-status {
+  border-radius: var(--corner-radius, 22px);
+  corner-shape: superellipse(var(--corner-n, 4));
+}
+
+/* ───────── 账号气泡选择（26+ 账号不再横滑找） ───────── */
+.chip-owner { display: inline-flex; align-items: center; gap: 6px; max-width: 62vw; }
+.chip-owner .caret { opacity: .55; font-size: 10px; }
+
+.picker {
+  position: fixed; inset: 0; z-index: 80;
+  display: grid; place-items: center; padding: 20px;
+  background: rgba(4, 7, 12, .55);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+}
+.picker[hidden] { display: none; }
+.picker-panel {
+  width: min(560px, 100%); max-height: min(70vh, 560px);
+  display: flex; flex-direction: column; gap: 12px; padding: 16px;
+  border-radius: var(--corner-radius, 22px);
+  background: #0b0e14;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, .55), inset 0 1px rgba(255, 255, 255, .12);
+}
+.picker-panel input {
+  width: 100%; padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, .12); border-radius: 12px;
+  background: rgba(255, 255, 255, .05); color: inherit; font: inherit;
+}
+.picker-panel input:focus { outline: 2px solid rgba(122, 184, 255, .45); outline-offset: 1px; }
+.picker-grid {
+  display: grid; gap: 8px; padding: 2px; overflow: auto;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  overscroll-behavior: contain;
+}
+.bubble {
+  display: grid; grid-template-columns: 28px 1fr auto; align-items: center; gap: 8px;
+  padding: 8px 10px; text-align: left; cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, .1); border-radius: 999px;
+  background: rgba(255, 255, 255, .04); color: inherit; font: inherit;
+  transition: background 160ms var(--ease), border-color 160ms var(--ease);
+}
+.bubble:hover { background: rgba(255, 255, 255, .09); }
+.bubble.on {
+  border-color: rgba(122, 184, 255, .6);
+  background: rgba(122, 184, 255, .14);
+}
+.bubble .avatar {
+  display: grid; place-items: center; width: 28px; height: 28px;
+  border-radius: 50%; background: rgba(255, 255, 255, .1);
+  font-size: 12px; font-weight: 600;
+}
+.bubble .bname { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; }
+.bubble .bcount { font-size: 11px; color: var(--fg-3); font-variant-numeric: tabular-nums; }
+.picker-empty {
+  grid-column: 1 / -1; padding: 18px; text-align: center;
+  font-size: 13px; color: var(--fg-3);
+}
+
+/* ───────── 控制台「高级」折叠 ───────── */
+.tuner-adv { margin-top: 10px; border-top: 1px solid rgba(255, 255, 255, .08); }
+.tuner-adv > summary {
+  padding: 10px 2px; cursor: pointer; font-size: 12px;
+  color: var(--fg-3); list-style: none;
+}
+.tuner-adv > summary::-webkit-details-marker { display: none; }
+.tuner-adv > summary::before { content: '▸ '; }
+.tuner-adv[open] > summary::before { content: '▾ '; }
+.tuner-adv .hint { opacity: .6; }
+

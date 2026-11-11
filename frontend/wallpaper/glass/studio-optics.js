@@ -61,9 +61,11 @@ export function createStudioPass(gl,fragment) {
     gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
     gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,true);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,source);return tex;
   }
-  function prepare(img,rect,w,h,dpr,blur) {
-    const next=[img.src,rect.x,rect.y,rect.w,rect.h,w,h,dpr,blur].join('|');
-    if(next===signature)return;
+  // 纹理重建分两种：几何变了（换背景/视口/滚动）立即重建；只有模糊值变了就防抖。
+  // 之前把 blur 塞进 signature 里逐帧比较，拖动模糊滑块 = 每帧一次全屏 CPU 高斯，必卡。
+  let geomSig='',blurSig='',blurTimer=0,pendingBlur=null;
+
+  function build(img,rect,w,h,dpr,blur) {
     // Keep offscreen wallpaper pixels available to the blur kernel before cropping.
     const pad=Math.ceil(blur*dpr*3)+2,source=document.createElement('canvas');
     source.width=Math.round(w*dpr)+pad*2;source.height=Math.round(h*dpr)+pad*2;
@@ -76,12 +78,34 @@ export function createStudioPass(gl,fragment) {
     if(rect.y+rect.h<=h)ctx.drawImage(source,0,source.height-pad-1,source.width,1,0,source.height-pad,source.width,pad);
     const sharp=document.createElement('canvas');sharp.width=Math.round(w*dpr);sharp.height=Math.round(h*dpr);
     sharp.getContext('2d').drawImage(source,-pad,-pad);
-    const soft=document.createElement('canvas');soft.width=sharp.width;soft.height=sharp.height;
-    const b=soft.getContext('2d');b.filter=`blur(${blur*dpr}px)`;b.drawImage(source,-pad,-pad);
+    // 模糊层用半分辨率：玻璃本来就是糊的，肉眼分不出，但像素量只剩 1/4，CPU 高斯快约 4 倍。
+    const soft=document.createElement('canvas');
+    soft.width=Math.max(1,Math.round(sharp.width/2));soft.height=Math.max(1,Math.round(sharp.height/2));
+    const b=soft.getContext('2d');
+    b.filter=`blur(${Math.max(.5,blur*dpr/2)}px)`;
+    b.drawImage(source,-pad,-pad,w*dpr,h*dpr,0,0,soft.width,soft.height);
     for(const tex of textures)gl.deleteTexture(tex);
-    textures=[upload(sharp),upload(soft)];signature=next;textureBuilds++;
+    textures=[upload(sharp),upload(soft)];signature=geomSig+'|'+blurSig;textureBuilds++;
   }
-  function draw(r,radius,c,w,h,dpr,debug=0) {
+
+  function prepare(img,rect,w,h,dpr,blur) {
+    const geom=[img.src,rect.x,rect.y,rect.w,rect.h,w,h,dpr].join('|');
+    if(geom!==geomSig){
+      geomSig=geom;blurSig=String(blur);
+      build(img,rect,w,h,dpr,blur);
+      return;
+    }
+    if(String(blur)===blurSig)return;
+    blurSig=String(blur);
+    // 拖到停下来 140ms 才按最终值重建，拖动过程中继续用上一张纹理，画面不跳。
+    pendingBlur={img,rect,w,h,dpr,blur};
+    clearTimeout(blurTimer);
+    blurTimer=setTimeout(()=>{
+      const p=pendingBlur;pendingBlur=null;
+      if(p)build(p.img,p.rect,p.w,p.h,p.dpr,p.blur);
+    },140);
+  }
+  function draw(r,radius,roundness,c,w,h,dpr,debug=0) {
     gl.useProgram(program);
     textures.forEach((t,i)=>{gl.activeTexture(gl.TEXTURE0+i);gl.bindTexture(gl.TEXTURE_2D,t);});
     uniform('uQuad',[r.left-2,r.top-2,r.width+4,r.height+4]);uniform('uView',[w,h]);
@@ -89,8 +113,9 @@ export function createStudioPass(gl,fragment) {
     uniform('u_resolution',[Math.round(w*dpr),Math.round(h*dpr)]);uniform('u_dpr',dpr);
     uniform('u_mouseSpring',[(r.left+r.width/2)*dpr,(h-r.top-r.height/2)*dpr]);
     uniform('u_shapeWidth',r.width);uniform('u_shapeHeight',r.height);uniform('u_shapeRadius',radius);
-    // Cards keep CSS circular corners; the Studio experiment's superellipse is scene geometry.
-    uniform('u_shapeRoundness',2);uniform('u_mergeRate',.05);uniform('u_showShape1',0,true);
+    // 与 CSS corner-shape: superellipse(n) 共用同一个 n，折射轮廓和卡片形状严丝合缝；
+    // n=2 圆弧，n=4 起是 GlassKit(com.kyant.shapes) 的 G2 连续曲率。
+    uniform('u_shapeRoundness',roundness);uniform('u_mergeRate',.05);uniform('u_showShape1',0,true);
     uniform('STEP',debug===1?0:debug===2?4:debug===3?6:9,true);
     for(const key of ['refThickness','refFactor','refDispersion','refFresnelRange','glareRange'])uniform('u_'+key,c[key]);
     for(const key of ['refFresnelHardness','refFresnelFactor','glareHardness','glareFactor','glareConvergence','glareOppositeFactor'])uniform('u_'+key,c[key]/100);

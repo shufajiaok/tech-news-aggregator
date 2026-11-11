@@ -44,6 +44,97 @@ const esc = (s) => String(s == null ? '' : s)
 
 const imgUrl = (key, size) => `/i/${size}/${encodeURIComponent(key || '')}`;
 
+/* ───────── 网页背景（只存这台浏览器） ───────── */
+const BG_LS = 'wg.bg';
+const BG_DEFAULT = '/bg.jpg';
+
+function bgRead() {
+  try { return JSON.parse(localStorage.getItem(BG_LS) || 'null'); } catch (e) { return null; }
+}
+
+function bgValid(src) {
+  return /^data:image\/(jpeg|png|webp|gif);base64,[A-Za-z0-9+/=]+$/.test(src)
+    || /^https?:\/\/[^\s"'<>]+$/i.test(src)
+    || /^\/[^\s"'<>]+$/.test(src);
+}
+
+/* CSS 的 background-image 与 shader 的 data-glass-source 必须是同一张图，
+   否则玻璃还在折射旧壁纸。这段在普通 script 里同步跑，早于 defer 的玻璃
+   module 初始化，所以不用改引擎、也不必等异步存储。 */
+function applyBg() {
+  const bd = $('.site-backdrop');
+  if (!bd) return;
+  const cfg = bgRead();
+  const src = cfg && bgValid(cfg.src) ? cfg.src : '';
+  bd.style.backgroundImage = src ? 'url(' + JSON.stringify(src) + ')' : '';
+  bd.dataset.glassSource = src || BG_DEFAULT;
+  const st = $('#bgState');
+  if (st) st.textContent = '当前：' + (src ? (cfg.label || bgShort(src)) : '站点默认壁纸');
+}
+
+function bgShort(src) {
+  if (src.startsWith('data:')) return '本机上传的图片';
+  return src.length > 52 ? src.slice(0, 49) + '…' : src;
+}
+
+function setBg(src, label) {
+  if (src && !bgValid(src)) { con.status('图片地址不合法', 'err'); return; }
+  try {
+    if (src) localStorage.setItem(BG_LS, JSON.stringify({ src, label: label || '' }));
+    else localStorage.removeItem(BG_LS);
+  } catch (e) {
+    con.status('保存失败：图片太大，换张小一点的', 'err');
+    return;
+  }
+  // shader 纹理在页面初始化时按 img.src 建立；重载一次即可让玻璃折射用上新图
+  location.reload();
+}
+
+async function bgFromFile(file) {
+  const url = URL.createObjectURL(file);
+  try {
+    const img = new Image();
+    img.src = url;
+    await img.decode();
+    const max = 1920;
+    const k = Math.min(1, max / Math.max(img.naturalWidth, img.naturalHeight));
+    const c = document.createElement('canvas');
+    c.width = Math.max(1, Math.round(img.naturalWidth * k));
+    c.height = Math.max(1, Math.round(img.naturalHeight * k));
+    c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+    return c.toDataURL('image/jpeg', .82);
+  } finally {
+    URL.revokeObjectURL(url);
+  }
+}
+
+function bindBg() {
+  if (!$('#bgState')) return;
+  $('#bgFile').addEventListener('change', async (e) => {
+    const f = e.target.files && e.target.files[0];
+    if (!f) return;
+    if (!/^image\//.test(f.type)) { con.status('请选择图片文件', 'err'); return; }
+    con.status('正在处理图片…');
+    try {
+      setBg(await bgFromFile(f), '本机上传 · ' + f.name);
+    } catch (err) {
+      con.status('图片读取失败：' + err.message, 'err');
+    }
+    e.target.value = '';
+  });
+  $('#bgGo').addEventListener('click', () => {
+    const v = $('#bgUrl').value.trim();
+    if (!v) { con.status('先粘贴图片链接', 'err'); return; }
+    setBg(v, '');
+  });
+  $('#bgUrl').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); $('#bgGo').click(); }
+  });
+  $('#bgReset').addEventListener('click', () => setBg('', ''));
+  const cfg = bgRead();
+  if (cfg && cfg.src && !cfg.src.startsWith('data:')) $('#bgUrl').value = cfg.src;
+}
+
 function thumbOf(it) {
   if (it.thumb) return it.thumb;
   return imgUrl(it.key, 'wap720');
@@ -131,26 +222,83 @@ function groupPosts(items) {
   return arr;
 }
 
+// 26+ 个账号不再横滑逐个找：一个按钮 + 弹出气泡列表（可搜）
+function ownerChip(current, owners, onPick) {
+  const b = document.createElement('button');
+  b.type = 'button';
+  b.className = 'chip chip-owner' + (current !== 'all' ? ' on' : '');
+  b.setAttribute('aria-pressed', current !== 'all' ? 'true' : 'false');
+  b.innerHTML = (current === 'all'
+    ? '选择账号'
+    : esc(current) + ' <span class="n">' + (owners.get(current) || 0) + '</span>')
+    + ' <span class="caret" aria-hidden="true">▾</span>';
+  b.addEventListener('click', () => openPicker(owners, current, onPick));
+  return b;
+}
+
+function openPicker(owners, current, onPick) {
+  const box = $('#picker');
+  const grid = $('#pickerGrid');
+  const search = $('#pickerSearch');
+  const render = (q) => {
+    const kw = (q || '').trim().toLowerCase();
+    const list = [...owners.entries()]
+      .filter(([name]) => !kw || String(name).toLowerCase().includes(kw))
+      .sort((a, b) => b[1] - a[1]);
+    grid.innerHTML = '';
+    if (!list.length) {
+      grid.innerHTML = '<p class="picker-empty">没有匹配的账号</p>';
+      return;
+    }
+    for (const [name, n] of list) {
+      const el = document.createElement('button');
+      el.type = 'button';
+      el.className = 'bubble' + (name === current ? ' on' : '');
+      el.innerHTML = '<span class="avatar">' + esc(initials(name)) + '</span>' +
+        '<span class="bname">' + esc(name) + '</span>' +
+        '<span class="bcount">' + n + '</span>';
+      el.addEventListener('click', () => { closePicker(); onPick(name); });
+      grid.appendChild(el);
+    }
+  };
+  search.value = '';
+  search.oninput = () => render(search.value);
+  render('');
+  box.hidden = false;
+  setTimeout(() => search.focus(), 30);
+}
+
+function closePicker() {
+  const box = $('#picker');
+  if (box) box.hidden = true;
+}
+
+function bindPicker() {
+  const box = $('#picker');
+  if (!box) return;
+  // 点遮罩关闭
+  box.addEventListener('click', (e) => { if (e.target === box) closePicker(); });
+  addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !box.hidden) closePicker();
+  });
+}
+
 function buildFeedChips() {
   const owners = new Map();
   for (const p of state.posts) owners.set(p.owner, (owners.get(p.owner) || 0) + 1);
-  // 不截断：名单已 24 人，早先的 slice(0, 9) 会让一半账号永远没有入口。
-  // .chips 本身是横向滚动容器，多出来的分类左右滑即可。
-  const top = [...owners.entries()].sort((a, b) => b[1] - a[1]);
+  const cur = state.feedFilter;
   const box = $('#feedChips');
   box.innerHTML = '';
-  box.appendChild(chip('全部', state.posts.length, state.feedFilter === 'all', () => {
+  box.appendChild(chip('全部', state.posts.length, cur === 'all', () => {
     state.feedFilter = 'all';
     buildFeedChips();
     applyFeed();
   }));
-  for (const pair of top) {
-    box.appendChild(chip(pair[0], pair[1], state.feedFilter === pair[0], () => {
-      state.feedFilter = pair[0];
-      buildFeedChips();
-      applyFeed();
-    }));
-  }
+  box.appendChild(ownerChip(cur, owners, (name) => {
+    state.feedFilter = name;
+    buildFeedChips();
+    applyFeed();
+  }));
 }
 
 function applyFeed() {
@@ -230,7 +378,7 @@ async function loadWall(fresh, sha) {
   const d = await r.json();
   state.wallItems = d.items || [];
   $('#wallSub').textContent =
-    state.wallItems.length + ' 张 · 16:9 且不小于 2MB · ' + (d.generated_at || '');
+    state.wallItems.length + ' 张 · 16:9 或 3:2 竖图，≥2MB 且长边 ≥1920 · ' + (d.generated_at || '');
   buildWallChips();
   applyWall();
   return state.wallItems.length;
@@ -247,18 +395,15 @@ function buildWallChips() {
     buildWallChips();
     applyWall();
   }));
-  const sorted = [...owners.entries()].sort((a, b) => b[1] - a[1]);
-  for (const pair of sorted) {
-    box.appendChild(chip(pair[0], pair[1], state.wallOwner === pair[0], () => {
-      state.wallOwner = pair[0];
-      buildWallChips();
-      applyWall();
-    }));
-  }
+  box.appendChild(ownerChip(state.wallOwner, owners, (name) => {
+    state.wallOwner = name;
+    buildWallChips();
+    applyWall();
+  }));
 
   const sbox = $('#sortChips');
   sbox.innerHTML = '';
-  const sorts = [['bytes', '体积优先'], ['created', '时间新→旧'], ['ratio', '最接近 16:9']];
+  const sorts = [['bytes', '体积优先'], ['created', '时间新→旧'], ['ratio', '最接近目标比例']];
   for (const pair of sorts) {
     sbox.appendChild(chip(pair[1], 0, state.wallSort === pair[0], () => {
       state.wallSort = pair[0];
@@ -273,10 +418,15 @@ function applyWall() {
     ? state.wallItems.slice()
     : state.wallItems.filter((it) => it.owner === state.wallOwner);
 
+  // 壁纸现在同时收 16:9 横图和 3:2 竖图，「最接近目标比例」= 离这两个比例里更近的那个最近
+  const ratioDist = (it) => {
+    const r = it.ratio || 0;
+    return Math.min(Math.abs(r - 1.7778), Math.abs(r - 0.6667));
+  };
   const bytesOf = (it) => it.bytes || (it.mb ? it.mb * 1048576 : 0);
   if (state.wallSort === 'bytes') v.sort((a, b) => bytesOf(b) - bytesOf(a));
   else if (state.wallSort === 'created') v.sort((a, b) => String(b.created || '').localeCompare(String(a.created || '')));
-  else v.sort((a, b) => Math.abs((a.ratio || 0) - 1.7778) - Math.abs((b.ratio || 0) - 1.7778));
+  else v.sort((a, b) => ratioDist(a) - ratioDist(b));
 
   state.wallView = v;
   state.wallShown = 0;
@@ -300,10 +450,20 @@ function tile(it, idx, list) {
   el.setAttribute('aria-label', (it.owner || '') + ' ' + it.w + '×' + it.h);
   el.innerHTML =
     '<img loading="lazy" decoding="async" src="' + esc(thumbOf(it)) + '" alt="">' +
-    '<span class="badge">' + (it.mb ? it.mb + 'MB' : '') + '</span>';
+    '<span class="badge">' + (it.mb ? it.mb + 'MB' : '') + '</span>' +
+    '<span class="tile-bg" role="button" tabindex="0" title="设为网页背景">设为背景</span>';
   const img = el.querySelector('img');
   img.addEventListener('load', () => revealImg(img), { once: true });
   if (img.complete) revealImg(img);
+  const useAsBg = (e) => {
+    e.preventDefault(); e.stopPropagation();
+    setBg(imgUrl(it.key, 'orj1080'), (it.owner || '壁纸') + ' · ' + it.key);
+  };
+  const bgb = el.querySelector('.tile-bg');
+  bgb.addEventListener('click', useAsBg);
+  bgb.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') useAsBg(e);
+  });
   el.addEventListener('click', () => openLb(list || state.wallView, idx));
   return el;
 }
@@ -884,6 +1044,180 @@ function bindConsole() {
 
   refreshTags();
   con.status('粘贴微博图片链接 → 提取 /large/ 源站原图。纯本地解析，无需账号。');
+  initTuner();
+}
+
+/* ══════════════════════════ 视觉调节 · 玻璃引擎 ══════════════════════════ */
+/* 引擎是 ES module；动态 import 命中同一个已加载的模块实例，不会二次初始化。
+   全部参数全局统一控制（不按组件单独配），范围直接取引擎的 GLASS_LIMITS，
+   这样滑块和 setGlassConfig 的校验永远一致。 */
+
+const TUNER_LS = 'wg.glass.tuner';
+const ROUNDNESS_BOUNDS = [2, 8, .1];
+
+const TUNER_GROUPS = [
+  // 主面板只保留 GlassKit native 的 4 个倍率（GlassSettings.kt：1 = 默认，0 = 关掉该效果），
+  // 上限 2.5 / 3 / 2 / 2 也照抄 native 的建议滑块范围。
+  { title: '玻璃强度 · native 4 倍率', group: 'material', primary: true, keys: [
+    ['blurScale', '模糊倍率'], ['tintScale', '着色倍率'],
+    ['lensScale', '透镜倍率'], ['glowScale', '高光倍率'],
+  ]},
+  { title: '形状 · 圆角', group: 'geometry', primary: true, keys: [
+    ['radius', '圆角半径'], ['roundness', '连续曲率 n'],
+  ]},
+  // ── 以下是引擎原始参数，收进「高级」折叠区，日常不用碰 ──
+  { title: '材质 · 折射', group: 'material', keys: [
+    ['refThickness', '折射带厚度'], ['refFactor', '折射强度'],
+    ['refDispersion', '色散'], ['refFresnelRange', '菲涅尔范围'],
+    ['refFresnelHardness', '菲涅尔硬度'], ['refFresnelFactor', '菲涅尔强度'],
+  ]},
+  { title: '材质 · 高光', group: 'material', keys: [
+    ['glareRange', '高光范围'], ['glareHardness', '高光硬度'],
+    ['glareFactor', '高光强度'], ['glareConvergence', '高光汇聚'],
+    ['glareOppositeFactor', '对侧高光'], ['glareAngle', '高光角度'],
+  ]},
+  { title: '材质 · 基础', group: 'material', keys: [
+    ['blurRadius', '模糊半径'], ['blurEdge', '边缘模糊'],
+    ['tintAlpha', '着色浓度'], ['tint', '着色颜色'],
+  ]},
+  { title: '导航', group: 'nav', keys: [
+    ['height', '导航高度'], ['navEdge', '边缘厚度'],
+    ['navRefraction', '折射强度'], ['lensWidth', '透镜宽度'],
+    ['lensStrength', '透镜强度'], ['navBlur', '导航模糊'],
+    ['navFill', '填充浓度'], ['navSaturation', '饱和度'],
+  ]},
+];
+
+let glassApi = null;
+let tunerInitial = null;
+
+function tunerBounds(key) {
+  if (key === 'roundness') return ROUNDNESS_BOUNDS;
+  return glassApi.GLASS_LIMITS[key] || [0, 1, .01];
+}
+
+function tunerValue(cfg, group, key) {
+  return group === 'geometry' ? cfg.geometry.card[key] : cfg[group][key];
+}
+
+function tunerPatch(group, key, v) {
+  if (group !== 'geometry') return { [group]: { [key]: v } };
+  // geometry 有 card/dense/showcase 三组，全局统一，一次写齐
+  const g = {};
+  for (const kind of ['card', 'dense', 'showcase']) g[kind] = { [key]: v };
+  return { geometry: g };
+}
+
+function tunerRead() {
+  try { return JSON.parse(localStorage.getItem(TUNER_LS) || '{}'); } catch (e) { return {}; }
+}
+
+function tunerSave(patch) {
+  try { localStorage.setItem(TUNER_LS, JSON.stringify(patch)); } catch (e) { /* 隐私模式 */ }
+}
+
+function tunerFormat(key, v, step) {
+  if (key === 'tint') return v;
+  if (key === 'blurEdge') return (+v ? '开' : '关');
+  return (+v).toFixed(step >= 1 ? 0 : 2);
+}
+
+async function initTuner() {
+  const box = $('#tunerGroups');
+  if (!box) return;
+  try {
+    glassApi = await import('./glass/liquid-glass.js');
+  } catch (e) {
+    box.innerHTML = '<p class="cand-tip">玻璃引擎未加载：' + esc(e.message) + '</p>';
+    return;
+  }
+  tunerInitial = glassApi.getGlassConfig();   // 页面 #glass-config 应用后的初值
+  const cfg = tunerInitial;
+  box.innerHTML = '';
+
+  const advBox = $('#tunerAdvanced');
+  // 拖动中的 localStorage 写入防抖：以前每次 input 都同步写一次，拖滑块每秒几十次
+  let pendingSave = null, saveTimer = 0;
+
+  for (const grp of TUNER_GROUPS) {
+    const target = grp.primary ? box : advBox;
+    const h = document.createElement('div');
+    h.className = 'tuner-title';
+    h.textContent = grp.title;
+    target.appendChild(h);
+    for (const [key, label] of grp.keys) {
+      const [min, max, step] = tunerBounds(key);
+      const isColor = key === 'tint';
+      const isBool = key === 'blurEdge';
+      const id = 'tuner_' + grp.group + '_' + key;
+      let cur = tunerValue(cfg, grp.group, key);
+      if (isBool) cur = cur ? 1 : 0;
+      const row = document.createElement('div');
+      row.className = 'tuner-row';
+      row.innerHTML =
+        '<label for="' + id + '">' + esc(label) + '</label>' +
+        (isColor
+          ? '<input type="color" id="' + id + '" value="' + esc(cur) + '">'
+          : '<input type="range" id="' + id + '" min="' + min + '" max="' + max +
+            '" step="' + (isBool ? 1 : step) + '" value="' + cur + '">') +
+        '<output for="' + id + '"></output>';
+      const input = row.querySelector('input');
+      const out = row.querySelector('output');
+      out.textContent = tunerFormat(key, cur, step);
+      // 圆角/曲率的 CSS 只认松手后的最终值：逐帧改 corner-shape 会让浏览器
+      // 反复重新栅格化整块卡片，看起来就是闪。拖动中只让 shader 变。
+      const deferCss = grp.group === 'geometry';
+      input.addEventListener('input', () => {
+        const v = isBool ? (input.value === '1') : (isColor ? input.value : +input.value);
+        out.textContent = tunerFormat(key, input.value, step);
+        glassApi.setGlassConfig(tunerPatch(grp.group, key, v), deferCss ? { deferCss: true } : null);
+        pendingSave = Object.assign(pendingSave || {}, { [grp.group + '.' + key]: v });
+        clearTimeout(saveTimer);
+        saveTimer = setTimeout(() => {
+          tunerSave(Object.assign(tunerRead(), pendingSave));
+          pendingSave = null;
+        }, 300);
+      });
+      if (deferCss) input.addEventListener('change', () => glassApi.setGlassConfig({}));
+      target.appendChild(row);
+    }
+  }
+  $('#tunerCount').textContent =
+    TUNER_GROUPS.reduce((n, g) => n + g.keys.length, 0) + ' 项 · 全局统一';
+
+  // 恢复上次调过的值（刷新后仍在）
+  const saved = tunerRead();
+  for (const k of Object.keys(saved)) {
+    const [group, key] = k.split('.');
+    const el = document.getElementById('tuner_' + group + '_' + key);
+    if (!el) continue;
+    const v = saved[k];
+    el.value = (key === 'blurEdge') ? (v ? 1 : 0) : v;
+    el.dispatchEvent(new Event('input'));
+  }
+  // 恢复值走的是 input 事件，geometry 的 CSS 被 defer 了，这里补一次应用
+  glassApi.setGlassConfig({});
+
+  $('#tunerReset').addEventListener('click', () => {
+    localStorage.removeItem(TUNER_LS);
+    glassApi.setGlassConfig(tunerInitial);
+    const c0 = glassApi.getGlassConfig();
+    for (const grp of TUNER_GROUPS) for (const [key] of grp.keys) {
+      const el = document.getElementById('tuner_' + grp.group + '_' + key);
+      if (!el) continue;
+      let v = tunerValue(c0, grp.group, key);
+      if (key === 'blurEdge') v = v ? 1 : 0;
+      el.value = v;
+      const [, , st] = tunerBounds(key);
+      el.closest('.tuner-row').querySelector('output').textContent = tunerFormat(key, v, st);
+    }
+    con.status('已恢复页面默认参数', 'ok');
+  });
+
+  $('#tunerCopy').addEventListener('click', () => {
+    copyAndSay(JSON.stringify(glassApi.getGlassConfig(), null, 2), '已复制当前引擎配置 JSON');
+  });
+  glassDirty();
 }
 
 /* ══════════════════════════ 绑定 ══════════════════════════ */
@@ -919,6 +1253,10 @@ function bindInfinite() {
 function bindLb() {
   $('#lbClose').addEventListener('click', closeLb);
   $('#lbFav').addEventListener('click', toggleFav);
+  $('#lbBg').addEventListener('click', () => {
+    const it = state.lb[state.lbIndex];
+    if (it) setBg(imgUrl(it.key, 'orj1080'), (it.owner || '壁纸') + ' · ' + it.key);
+  });
   $('#lbPrev').addEventListener('click', () => stepLb(-1));
   $('#lbNext').addEventListener('click', () => stepLb(1));
   $('#lb').addEventListener('click', (e) => {
@@ -953,10 +1291,13 @@ function ensureWall() {
 
 /* ───────── 启动 ───────── */
 (function boot() {
+  applyBg();          // 必须早于 defer 的玻璃 module 初始化
+  bindBg();
   bindNav();
   bindConsole();
   bindLb();
   bindInfinite();
+  bindPicker();
 
   const hashed = location.hash.replace('#', '');
   const start = (hashed === 'wall' || hashed === 'feed' || hashed === 'fav') ? hashed : 'feed';
