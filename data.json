@@ -1,7 +1,61 @@
 {
-  "updated_at": "2026-11-11T07:25:28.408353+00:00",
+  "updated_at": "2026-11-11T19:59:56.117783+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "425355ff-2936-47c8-b21c-dfe01d9fac57",
+      "title": "Quadric Chimera GPNPU支持变长提示词，破解边缘AI推理效率瓶颈",
+      "summary": "Quadric推出Chimera GPNPU架构，首创单图编译支持任意长度提示词（最高至配置上限），消除传统推理中因固定长度导致的97%以上padding计算浪费，显著提升边缘设备能效比。",
+      "key_points": [
+        "Chimera GPNPU无需为不同提示长度编译多个二进制文件，节省存储与验证成本",
+        "单次编译即可处理从12词语音指令到数千词文档的全范围输入",
+        "该技术特别适用于资源受限的终端设备，如智能音箱、车载系统"
+      ],
+      "full_content": "It seems SpaceX's very lucrative compute deal with Anthropic is not long for this world, at least as per the anecdotes of a recent meeting between the AI lab's executives and sell-side analysts. What's more, these uncharacteristically blunt remarks have just received an equally nonchalant response from Elon Musk, who is not only the least bit bothered by this potential development, but also actively postulates that the \"opposite is going to happen.\" Elon Musk does not think Anthropic will actually cull its compute deal with SpaceX For the benefit of those who might not be aware, from December 2026 onward, [&hellip;] Read full article at https://wccftech.com/anthropic-believes-its-partnership-with-spacex-wont-last-beyond-q2-2027-and-elon-musk-now-says-well-be-happy-to-take-the-compute-back/",
+      "ai_summary": "发生了什么：Quadric公司推出的Chimera GPNPU（通用处理器神经处理单元）架构，解决了边缘AI推理中一个长期被忽视的效率黑洞——变长提示词（variable-length prompts）处理。传统编译型推理引擎（如TensorRT、ONNX Runtime）需为每个预设长度（如1024 tokens）单独编译图模型，当实际输入仅50 tokens时，剩余974个位置仍需执行无意义的padding计算，造成巨大算力与能耗浪费。Chimera GPNPU通过硬件级动态调度机制，允许单次编译的模型无缝处理从12词语音命令到数千词文档的任意长度输入，彻底消除padding开销。\n\n为什么重要：这标志着AI推理从'静态优化'迈向'动态适应'。在边缘计算场景中，设备资源（内存、功耗、散热）极度受限，任何计算浪费都直接转化为用户体验下降（如语音助手响应延迟、电池续航缩短）。Chimera的方案不仅提升能效比，更简化了软件开发流程——开发者无需维护数十个长度版本的模型，大幅降低认证与部署复杂度。其价值在AIoT爆发期尤为突出：当智能音箱、汽车座舱、工业传感器等设备普遍搭载本地大模型时，这种'零浪费'推理能力将成为核心竞争力。\n\n对行业有什么影响：对芯片厂商，这将推动RISC-V等可扩展指令集架构在AI加速器中的普及，因其更易实现动态长度调度逻辑。对云服务，可能催生'边缘-云协同推理'新范式：边缘端处理短提示，复杂长文本交由云端，Chimera的低开销特性使其成为理想边缘节点。对终端厂商，这意味着可选用更低规格SoC实现同等AI体验，降低BOM成本。长远看，这或将改变AI模型设计哲学——开发者不再需要为'最坏情况'（最长提示）预留资源，转而追求'平均最优'，从而推动更轻量、更绿色的大模型生态发展。",
+      "category": "AI",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/variable-length-prompts-on-chimera-gpnpu/",
+      "original_author": "@Semiconductor Engineering",
+      "published_at": "2026-11-11T18:38:43+00:00",
+      "created_at": "2026-11-11T19:59:39.792391+00:00"
+    },
+    {
+      "id": "95109cbc-f8a6-47fd-a440-f77872bffe50",
+      "title": "UCIe标准在2.5D与3D封装中面临根本性工程差异",
+      "summary": "UCIe作为die-to-die互连标准，在2.5D封装中需应对高损耗信道挑战，而在3D堆叠中则侧重连接密度与热管理；设计者必须根据封装类型选择PHY方案、拓扑结构与可靠性策略。",
+      "key_points": [
+        "2.5D中UCIe需高精度信号完整性设计，对抗插入损耗与串扰",
+        "3D中UCIe依赖微凸块密度提升带宽，热管理成首要挑战",
+        "F2B与F2F拓扑对测试、良率、可靠性影响迥异"
+      ],
+      "full_content": "Two registry values can eliminate Windows 11's built-in startup application delays, potentially making a noticeable difference on powerful PCs. A Windows 11 user has discovered that two simple registry modifications can dramatically accelerate startup applications, reducing the time needed to launch their programs from 2 minutes and 30 seconds to just 30 seconds. Sharing their findings on r/Windows11, Reddit user PersianMG explained that their high-end PC was taking an unusually long time to load approximately 30 startup applications, six AutoHotkey scripts, and several background services. Despite Windows itself booting quickly, applications would launch gradually, with lengthy pauses between them. Using [&hellip;] Read full article at https://wccftech.com/windows-11-startup-apps-taking-forever-to-load-a-simple-registry-tweak-cut-one-users-wait-by-80/",
+      "ai_summary": "发生了什么：UCIe（Universal Chiplet Interconnect Express）作为开放的芯粒互连标准，正从理论走向大规模实践，但其在不同封装形态下的实施路径存在本质差异。在2.5D封装（如NVIDIA GB200的硅中介层）中，UCIe链路需穿越PCB基板或有机中介层，面临严重的插入损耗、高频串扰与阻抗不连续性，要求PHY层具备强大均衡与信道训练能力。而在3D堆叠（如三星X-Cube）中，芯片间距离缩短至微米级，UCIe可通过超高密度微凸块（microbump）实现带宽扩展，此时物理挑战从'信号传输'转向'热传导'与'应力控制'，热膨胀系数（CTE）失配可能导致堆叠失效。\n\n为什么重要：这一差异揭示了先进封装已不再是单纯的'制造工艺'，而是与芯片架构深度耦合的'系统工程'。选择2.5D还是3D，不再仅由性能需求决定，更受制于供应链成熟度（如TSMC CoWoS vs Intel Foveros）、成本结构（硅中介层昂贵）与可靠性目标（3D堆叠良率挑战更大）。UCIe的'通用性'恰恰要求设计者做出更精细的权衡——例如在2.5D中采用F2B（Face-to-Back）拓扑可缓解热问题，但在3D中F2F（Face-to-Face）才能实现最高带宽，却带来散热噩梦。\n\n对行业有什么影响：对EDA厂商，需开发针对不同封装类型的专用仿真工具链，整合电磁场、热力学与机械应力多物理场分析。对OSAT（外包封测厂），将分化为'2.5D专家'与'3D堆叠大师'两类，技术壁垒进一步提高。对芯片设计公司，必须在架构早期就与封装厂协同定义UCIe PHY参数，否则可能遭遇'设计即失效'。对投资者，这意味着先进封装投资逻辑需从'产能扩张'转向'技术组合'——拥有2.5D与3D全栈能力的厂商（如TSMC、Intel）将获得更大议价权，而单一技术路线玩家面临被边缘化风险。",
+      "category": "Foundry",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/ucie-connectivity-for-2-5d-and-3d-multi-die-designs/",
+      "original_author": "@Semiconductor Engineering",
+      "published_at": "2026-11-11T18:00:00+00:00",
+      "created_at": "2026-11-11T19:59:39.792401+00:00"
+    },
+    {
+      "id": "4b34e45e-02c5-4467-bfb9-b2a16a64a216",
+      "title": "Technic、Brewer Science等材料巨头齐聚SEMICON Europa，聚焦AI先进封装",
+      "summary": "Technic推出Elevate Cu 3000/1500铜电镀液，Brewer Science展示2D材料转移与HBM临时键合技术，TOPCO Scientific建立德累斯顿枢纽，共同支撑欧洲AI芯片本土化制造。",
+      "key_points": [
+        "Technic铜电镀液支持2.5D/3D集成，满足AI芯片高密度互连需求",
+        "Brewer Science低温转移技术突破2D半导体集成瓶颈",
+        "TOPCO Dresden hub整合日台供应链，服务欧洲IDM与车规芯片厂"
+      ],
+      "full_content": "Over the past few weeks, we have seen rapid progress in console homebrew and emulation projects, leading to some previously unthinkable developments, including&nbsp;Nintendo Switch 2&nbsp;games like&nbsp;Mario Kart World&nbsp;and&nbsp;Pokémon Pokopia&nbsp;being ported to the original Nintendo Switch with surprisingly decent performance. Today, something similar has happened with the PlayStation 5 and PlayStation 4, as God of War: Sons of Sparta is reportedly running at 40 FPS on the Pro model via EmuFive, a PS5 emulator for its predecessor. This experimental emulator built on PS4 Multiboot, which requires a jailbroken system, is based on the KytyPS5 emulator, which rewrites PS5-only CPU instructions into [&hellip;] Read full article at https://wccftech.com/playstation-5-games-on-playstation-4-emufive/",
+      "ai_summary": "发生了什么：在SEMICON Europa 2026展会上，全球半导体材料巨头集体亮出'AI赋能'新武器：Technic发布Elevate Cu 3000/1500电镀液，专为AI芯片所需的高密度铜互连（如TSV、微凸块）设计，兼顾优异的沟槽填充能力与表面平整度；Brewer Science展出针对二维半导体（如MoS2）的低温临时键合材料，解决其在HBM堆叠中易碎难题；TOPCO Scientific则宣布以德国德累斯顿为欧洲枢纽，整合日本信越化学的12英寸FOUP载具与台湾精密加工的石英部件，为欧洲车规芯片厂提供'一站式'材料与设备服务。\n\n为什么重要：这标志着半导体产业重心正从'晶体管微缩'转向'系统集成'。当摩尔定律放缓，AI算力增长越来越依赖先进封装（如HBM、Chiplet），材料科学成为突破'互连瓶颈'的关键。铜电镀液的均匀性决定TSV良率，临时键合材料的热稳定性影响HBM堆叠成品率，而供应链本地化则关乎地缘政治安全。这些看似微观的材料创新，实则是支撑GB200、Trainium2等巨构芯片落地的'隐形基石'。\n\n对行业有什么影响：对欧洲半导体产业，这加速了《欧洲芯片法案》落地——通过材料-设备-制造全链条本土化，降低对亚洲供应链依赖。对中国厂商，需警惕技术标准围堵：当欧美主导UCIe、SEMI等接口标准时，材料参数（如电镀液纯度、键合温度窗口）可能成为新的合规门槛。对投资者，材料领域正从'配角'变为'主角'，具备'材料-工艺-设备'协同创新能力的企业（如Brewer Science）将获得估值溢价。对终端用户，这意味着AI硬件成本结构将重构——材料与封装成本占比或首次超过晶圆制造，推动产业利润向上游材料商转移。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/technic-showcases-copper-plating-chemistries-for-advanced-packaging/",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-11-11T16:08:51+00:00",
+      "created_at": "2026-11-11T19:59:39.792425+00:00"
+    },
     {
       "id": "104203ab-1b4a-4a5d-a024-f1785a988404",
       "title": "MiniMax发布H3-Image开源图像模型：10秒生成1600万像素高保真图像",
@@ -5275,56 +5329,6 @@
       "original_author": "IT之家",
       "published_at": "2026-10-08T16:16:27+00:00",
       "created_at": "2026-10-08T19:18:37.351169+00:00"
-    },
-    {
-      "id": "0d746e14-2d31-4bcf-8eab-702b99f57d4a",
-      "title": "&lt;p&gt;Jowi Morales is a wri...",
-      "summary": "&lt;p&gt;Jowi Morales is a writer and journalist covering the tech beat since 2021. However, he’s been interested in tec...",
-      "key_points": [
-        "&lt;p&gt;Jowi Morales is a writer and jo"
-      ],
-      "full_content": "&lt;p&gt;Jowi Morales is a writer and journalist covering the tech beat since 2021. However, he’s been interested in technology far earlier than that. He started discovering desktop computers when his father brought home a Windows 95 PC, but his first real experience working under the hood of the PC was when the old computer’s hard drive was filled to the brim in the year 2000. He deleted the Windows folder to attempt to rectify the situation, which led to his dad buying a new desktop PC. Since then, he learned a lot more about computers, and he’s always been the go-to tech expert for his family and friends.&lt;/p&gt;&lt;p&gt;Jowi primarily uses a Windows workstation and an Android phone, but he also bought into the Apple ecosystem with the 6th-gen iPad, iPhone 14 Pro Max, and the M1 MacBook Air. Today, Jowi covers hardware and software from Redmond and Cupertino, while also looking at the tech industry in general.&lt;/p&gt;&lt;p&gt;Aside from covering technology, Jowi is an avid photographer and writes about automobiles, aviation, and tanks. You can find his bylines at &lt;a href=&quot;https://www.makeuseof.com/author/jowi-morales/&quot;&gt;MakeUseOf&lt;/a&gt;, &lt;a href=&quot;https://www.slashgear.com/author/jowimorales/&quot;&gt;SlashGear&lt;/a&gt;, and, of course, &lt;a href=&quot;https://www.tomshardware.com/author/jowi-morales&quot;&gt;Tom’s Hardware&lt;/a&gt;.&lt;/p&gt;",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n&lt;p&gt;Jowi Morales is a writer and journalist covering the tech beat since 2021. However, he’s been interested in technology far earlier than that. He started discovering desktop computers when his father brought home a Windows 95 PC, but his first real experience working under the hood of the PC was when the old computer’s hard drive was filled to the brim in the year 2000. He deleted the Windows folder to attempt to rectify the situation, which led to his dad buying a new desktop PC. Since ",
-      "category": "AI",
-      "source": "Tom's Hardware",
-      "source_url": "https://www.tomshardware.com/tech-industry/data-centers/finland-orders-google-to-stop-work-on-two-ai-data-centers-over-alleged-deforestation-company-admits-it-has-fallen-short-of-our-own-high-standards-in-this-instance",
-      "original_author": "Tom's Hardware",
-      "published_at": "2026-10-08T15:52:45+00:00",
-      "created_at": "2026-10-08T19:18:37.350078+00:00"
-    },
-    {
-      "id": "63ddfcab-ae8e-44ab-84bf-0d8cce8b82a6",
-      "title": "Astera Labs发布业界最全PCIe 7信号调理产品组合，覆盖铜缆与光缆多场景",
-      "summary": "Astera Labs推出Aries 7系列PCIe 7连接芯片，涵盖智能重定时器、重驱动器、线缆模块及光器件，支持从PCB走线到50米光缆的全链路连接，统一由COSMOS软件管理。",
-      "key_points": [
-        "Aries 7支持PCIe 7速率，覆盖铜/光全介质",
-        "采用OCP标准封装，实现‘一次设计、多种选择’",
-        "AMD与Intel已确认合作推进PCIe 7平台落地"
-      ],
-      "full_content": "&lt;p&gt;Jowi Morales is a writer and journalist covering the tech beat since 2021. However, he’s been interested in technology far earlier than that. He started discovering desktop computers when his father brought home a Windows 95 PC, but his first real experience working under the hood of the PC was when the old computer’s hard drive was filled to the brim in the year 2000. He deleted the Windows folder to attempt to rectify the situation, which led to his dad buying a new desktop PC. Since then, he learned a lot more about computers, and he’s always been the go-to tech expert for his family and friends.&lt;/p&gt;&lt;p&gt;Jowi primarily uses a Windows workstation and an Android phone, but he also bought into the Apple ecosystem with the 6th-gen iPad, iPhone 14 Pro Max, and the M1 MacBook Air. Today, Jowi covers hardware and software from Redmond and Cupertino, while also looking at the tech industry in general.&lt;/p&gt;&lt;p&gt;Aside from covering technology, Jowi is an avid photographer and writes about automobiles, aviation, and tanks. You can find his bylines at &lt;a href=&quot;https://www.makeuseof.com/author/jowi-morales/&quot;&gt;MakeUseOf&lt;/a&gt;, &lt;a href=&quot;https://www.slashgear.com/author/jowimorales/&quot;&gt;SlashGear&lt;/a&gt;, and, of course, &lt;a href=&quot;https://www.tomshardware.com/author/jowi-morales&quot;&gt;Tom’s Hardware&lt;/a&gt;.&lt;/p&gt;",
-      "ai_summary": "发生了什么：Astera Labs于2026年10月正式发布Aries 7系列PCIe 7信号调理芯片，这是业界首个覆盖全连接场景的PCIe 7平台。该系列包含智能重定时器（Retimer）、重驱动器（Redriver）、线缆模块（Cable Module）、光驱动器（Optical Driver）及光电探测器（TIA），支持从几厘米的PCB走线、数米的铜缆，到长达50米以上的多模光纤连接，彻底打通AI集群内GPU、内存池、网络端口间的‘最后一公里’。所有器件均采用OCP（开放计算项目）信号调理器标准封装，并由统一的COSMOS软件套件进行配置、监控与诊断，实现跨介质、跨厂商的无缝管理。\n\n为什么重要：PCIe 7将数据速率提升至128 GT/s，信号完整性挑战呈指数级增长——微小的阻抗失配、串扰或抖动即可导致链路失效，使昂贵的AI加速器陷入空闲。Aries 7的发布，正是为解决这一‘带宽悖论’：速率翻倍，但可用性不能打折。其核心价值在于‘智能’与‘统一’：智能体现在每个器件都具备实时链路分析、自适应均衡与故障预测能力；统一则体现在COSMOS软件将原本割裂的铜/光生态整合为单一控制平面，极大降低了多供应商方案的集成复杂度与验证周期。这标志着高速互连正从‘物理层器件’升级为‘可编程网络层服务’。\n\n对行业有什么影响：首先，它将加速PCIe 7在AI基础设施中的商用落地，为NVIDIA GB300、AMD MI400等下一代AI芯片提供可靠互连底座；其次，推动OCP标准成为AI硬件事实规范，削弱传统封闭生态的壁垒，利好戴尔、浪潮等OEM厂商快速推出兼容方案；第三，光互连将从长距骨干走向AI机柜内部，催生新一代低功耗、高密度光引擎市场；最后，对网络芯片厂商（如博通、Marvell）构成跨界挑战——当PCIe互连本身具备网络级智能与可观测性时，专用网络芯片的价值边界将被重新定义。长远看，Aries 7所代表的‘硬件可编程化+软件定义互连’范式，或将延伸至CXL、UCIe等其他先进互连协议，重塑整个AI系统架构。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/astera-labs-unveils-pcie-7-connectivity-chips-for-next-generation-ai-systems/",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-10-08T15:52:45+00:00",
-      "created_at": "2026-10-09T07:00:52.048236+00:00"
-    },
-    {
-      "id": "3ee18bce-1a7e-4868-a254-a04186d777b1",
-      "title": "Embark Studios has just releas...",
-      "summary": "Embark Studios has just released Frozen Trail, ARC Raiders' biggest update to date. The patch is headlined by a new nort...",
-      "key_points": [
-        "Embark Studios has just released Frozen "
-      ],
-      "full_content": "Embark Studios has just released Frozen Trail, ARC Raiders' biggest update to date. The patch is headlined by a new northern map, expanded player housing, weapon progression beyond the previous cap and a full new season of challenges. Alongside the patch, the game is running a Free Play Weekend starting today through Monday, October 12, with 50% discounts on the base game and Deluxe editions across Steam, Xbox and PlayStation. Frozen Trail's main attraction is Pendola Pass, a harsh, remote mountain region on the northern edge of the Rust Belt. Embark described it as the game's most ambitious map so [&hellip;] Read full article at https://wccftech.com/arc-raiders-frozen-trail-update-free-weekend-50-percent-off/",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nEmbark Studios has just released Frozen Trail, ARC Raiders' biggest update to date. The patch is headlined by a new northern map, expanded player housing, weapon progression beyond the previous cap and a full new season of challenges. Alongside the patch, the game is running a Free Play Weekend starting today through Monday, October 12, with 50% discounts on the base game and Deluxe editions across Steam, Xbox and PlayStation. Frozen Trail's main attraction is Pendola Pass, a harsh, remote mount",
-      "category": "AI",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/arc-raiders-frozen-trail-update-free-weekend-50-percent-off/",
-      "original_author": "WCCFTech",
-      "published_at": "2026-10-08T15:30:00+00:00",
-      "created_at": "2026-10-08T19:18:37.350155+00:00"
     }
   ]
 }
