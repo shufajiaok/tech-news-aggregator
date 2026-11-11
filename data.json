@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:10:30.402515+00:00",
+  "updated_at": "2026-11-11T07:25:28.408353+00:00",
   "count": 300,
   "news": [
     {
@@ -39,6 +39,24 @@
       "created_at": "2026-11-10T20:10:15.901661+00:00"
     },
     {
+      "id": "67812d01-89ae-428a-a673-ca0adf3691aa",
+      "title": "AMD Zen 6架构深度解析：IPC提升27%，Zen 6c专为高密度优化",
+      "summary": "AMD正式披露Zen 6 CPU架构细节，单核IPC提升27%，整数性能提升14%、浮点提升11%；推出差异化设计的Zen 6c核心，IPC提升达20%，面向EPYC Venice服务器平台，最高支持256核。",
+      "key_points": [
+        "Zen 6实现27% IPC跃升，分支预测延迟降低",
+        "Zen 6c为高密度场景重构，IPC提升20%",
+        "EPYC Venice支持256核，L3缓存扩容至128MB"
+      ],
+      "full_content": "&lt;p&gt;Jowi Morales is a writer and journalist covering the tech beat since 2021. However, he’s been interested in technology far earlier than that. He started discovering desktop computers when his father brought home a Windows 95 PC, but his first real experience working under the hood of the PC was when the old computer’s hard drive was filled to the brim in the year 2000. He deleted the Windows folder to attempt to rectify the situation, which led to his dad buying a new desktop PC. Since then, he learned a lot more about computers, and he’s always been the go-to tech expert for his family and friends.&lt;/p&gt;&lt;p&gt;Jowi primarily uses a Windows workstation and an Android phone, but he also bought into the Apple ecosystem with the 6th-gen iPad, iPhone 14 Pro Max, and the M1 MacBook Air. Today, Jowi covers hardware and software from Redmond and Cupertino, while also looking at the tech industry in general.&lt;/p&gt;&lt;p&gt;Aside from covering technology, Jowi is an avid photographer and writes about automobiles, aviation, and tanks. You can find his bylines at &lt;a href=&quot;https://www.makeuseof.com/author/jowi-morales/&quot;&gt;MakeUseOf&lt;/a&gt;, &lt;a href=&quot;https://www.slashgear.com/author/jowimorales/&quot;&gt;SlashGear&lt;/a&gt;, and, of course, &lt;a href=&quot;https://www.tomshardware.com/author/jowi-morales&quot;&gt;Tom’s Hardware&lt;/a&gt;.&lt;/p&gt;",
+      "ai_summary": "发生了什么：AMD在2026年11月正式公开Zen 6微架构全貌，标志着其服务器与桌面CPU进入全新代际。Zen 6并非Zen 5的简单迭代，而是一次深度重构——分支预测单元延迟缩短至3–3.5纳秒，解码能力从单线程1个集群升级为2个集群，整数加法吞吐达5.96次/周期（Zen 5为5.25次）。更关键的是，AMD首次在同一代中分化出Zen 6（高频优化）与Zen 6c（高密度/高并发优化）两种核心架构：前者采用12核CCD+48MB L3，后者采用32核CCD+128MB L3，L3延迟虽增至66周期，但通过更大调度窗口与乱序结构容量弥补。EPYC 9006 Venice系列已量产，支持SP7/SP8平台，最高256核心，实测相较上代性能提升达93%。\n\n为什么重要：Zen 6的发布终结了市场对AMD能否持续挑战NVIDIA AI算力霸权之外的另一重疑虑——即在通用计算底层架构上是否仍具创新动能。27%的IPC提升远超行业平均（通常5–10%），且通过Zen 6/Zen 6c双轨策略，AMD首次在单一架构下同时覆盖高性能计算（HPC）与超大规模云服务（如AI推理、数据库）两类截然不同的负载需求。这使AMD得以在EPYC市场直接对标NVIDIA Vera等专用AI芯片的能效比优势，而非仅靠核心数量堆叠。\n\n对行业有什么影响：首先，Zen 6c的规模化部署将加速数据中心‘去GPU化’趋势——在非训练类AI负载（如RAG、向量检索、实时推荐）中，高密度CPU方案正成为更具成本效益的选择，削弱NVIDIA纯GPU方案的垄断叙事。其次，AMD双核心路线倒逼Intel加速推进Granite Rapids与Clearwater Forest的差异化分工，也促使Arm阵营（如Ampere Altra Max、AWS Graviton4）重新评估其单一同构设计的可持续性。最后，Zen 6对L3缓存与互连结构的激进扩容，将进一步推高先进封装（如CoWoS-R、InFO-LSI）在CPU领域的渗透率，加剧台积电与日月光在高端封测产能上的战略博弈。",
+      "category": "CPU",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/amd-zen-6-architecture-ipc-cores-memory-performance-epyc-venice/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-11-10T17:51:31+00:00",
+      "created_at": "2026-11-11T07:25:10.88106+00:00"
+    },
+    {
       "id": "c458f1cf-d381-4886-9e3d-0bc4a07d5f15",
       "title": "微软高管开源GPU任务管理器GPU Taskman：精准监控每进程VRAM占用",
       "summary": "微软GitHub副总裁Scott Hanselman开源GPU Taskman工具，提供比Windows任务管理器更精细的每进程VRAM占用、GPU遥测及本地AI模型内存消耗分析功能。",
@@ -57,6 +75,42 @@
       "created_at": "2026-11-10T20:10:15.90178+00:00"
     },
     {
+      "id": "8028caa9-057d-433f-a9d2-1c89ad27091c",
+      "title": "ICsense创纪录增长：医疗专用ASIC需求爆发，欧洲独立设计厂成美企新首选",
+      "summary": "ICsense 2025财年营收增长30%、利润增50%，受益于脑机接口、神经调控等医疗ASIC需求激增；其无晶圆厂独立模式，正吸引美国客户转向欧洲寻求高定制化、小批量芯片支持。",
+      "key_points": [
+        "ICsense营收利润双增长，创22年历史最佳",
+        "专注医疗ASIC，获ISO13485认证，服务BCI/神经植入设备",
+        "Fab独立模式规避供应链风险，成美企替代大厂新选择"
+      ],
+      "full_content": "The relationship between NVIDIA CEO Jensen Huang and Alice Huang wasn’t a short-term fling that spiraled into something deeper before the controversy disseminated around the globe. According to the latest report, shortly after Huang admitted to the affair and NVIDIA fired up an independent board investigation, new details have come to light, stating that Alice not only used her personal intimacy with the Chief Executive as a primary marketing tool to build a $7.5 billion hardware conduit directly into China-linked data pipelines, but she also boasted about her romance publicly. Personal intimacy and annual birthday celebrations unlocked priority access to [&hellip;] Read full article at https://wccftech.com/alleged-chinese-spy-alice-huang-flaunted-bond-nvidia-jensen-huang-7-5-billion-ai-gpu-network/",
+      "ai_summary": "发生了什么：比利时ICsense公司（隶属TDK集团）在2025财年实现营收增长30%、利润增长超50%，创下成立22年来最佳业绩。驱动因素是全球脑机接口（BCI）、神经调控、植入式神经设备等前沿医疗电子爆发式增长——这些设备依赖高度定制化的低功耗模拟/混合信号ASIC，且单项目用量常仅数千至数万颗，与台积电、三星等大厂聚焦的百万级逻辑芯片形成鲜明错位。ICsense凭借其‘fab-independent’（无晶圆厂绑定）模式，灵活切换多家代工厂（包括中芯国际、格罗方德），确保在任一产线变更或停产时无缝迁移，2025年更扩建洁净室与测试能力，支撑医疗ASIC从设计到量产的全周期交付。\n\n为什么重要：ICsense的崛起揭示半导体产业正在发生结构性裂变：一边是摩尔定律驱动的‘巨量逻辑芯片’竞赛，另一边是AIoT、医疗、汽车电子催生的‘海量专用芯片’蓝海。后者不追求晶体管密度，而强调模拟精度、生物兼容性、长期可靠性（如15年植入寿命），这恰是欧洲设计公司在工艺Know-how与质量体系上的传统优势。美国企业因本土foundry集中于先进节点，难以满足此类需求，转而寻求ICsense等欧洲伙伴，形成‘美国创新+欧洲定制’新协作范式。\n\n对行业有什么影响：首先，全球ASIC设计服务市场将加速分化——大型IDM（如TI、ADI）聚焦车规/工业通用方案，而ICsense类专业玩家深耕医疗、量子等超细分领域。其次，中国半导体企业可借鉴此模式：依托中芯国际、华虹等成熟制程产能，打造面向国产医疗器械、工业传感器的‘小而美’设计服务商。最后，ISO13485等医疗认证正从准入门槛变为竞争壁垒，倒逼更多芯片设计公司投入质量体系建设，推动中国半导体产业从‘能做’向‘可信’升级。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/icsense-reports-record-growth-as-demand-rises-for-specialized-medical-asics/",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-11-10T17:04:49+00:00",
+      "created_at": "2026-11-11T07:25:10.881188+00:00"
+    },
+    {
+      "id": "696e3e19-4bf2-4e74-8e3f-d9d636edf778",
+      "title": "Hummink发布BIRD模块：AI芯片先进封装新增‘缺陷修复’能力",
+      "summary": "Hummink推出BIRD模块，基于高精度毛细管打印（HPCaP）技术，可在FOPLP生产线上实现亚微米级缺陷修复，单次修复挽回数万欧元损失，提升先进封装良率。",
+      "key_points": [
+        "BIRD模块支持0.6–50μm微米级打印与缺陷修复",
+        "已在亚洲半导体/显示产线进入试点，首站聚焦RDL良率提升",
+        "直接集成产线，修复过程仅需数分钟，减少材料消耗"
+      ],
+      "full_content": "AMD has disclosed its full Zen 6 architecture for EPYC Venice CPUs, bringing a massive 27% IPC uplift, 256 cores, and more to SP7/SP8 platforms. AMD EPYC 9006 Venice CPUs Demolish The Competition, Including Vera, With General Availability Starting Today - Bring Up To 256 \"Zen 6\" Cores To SP7 &amp; SP8 Platforms AMD's EPYC CPUs have seen a total of six generations so far. The first generation EPYC with the first generation Zen core architecture was launched as Naples back in 2018, and since then, the EPYC lineup has evolved with various new core architectures, technologies, and features. Today, [&hellip;] Read full article at https://wccftech.com/amd-zen-6-architecture-ipc-cores-memory-performance-epyc-venice/",
+      "ai_summary": "发生了什么：德国Hummink公司于2026年SEMICON Europa展会发布BIRD（Breakthrough Integration and Resolution in Defect Repair）模块，这是全球首款专为先进封装设计的在线缺陷修复系统。其核心技术High Precision Capillary Printing（HPCaP）采用掩模无关的直写式沉积，配合局部激光烧结，可在Fan-Out Panel-Level Packaging（FOPLP）的再布线层（RDL）上，对宽度仅0.6微米的线路断路、短路或污染缺陷进行精准修复。在亚洲某头部显示制造商的试点中，BIRD已实现单面板修复挽回超2万美元损失，且全程耗时仅数分钟，无需停机或转移基板。\n\n为什么重要：FOPLP是AI芯片高密度集成的必经之路，但其大尺寸面板（>500mm）导致RDL良率成为最大瓶颈——单个RDL缺陷即导致整板报废。传统方案只能接受良率损失或返工（成本高昂），BIRD则首次将‘修复’引入量产流程，将良率管理从‘事前预防’拓展至‘事中纠正’。这不仅直接提升HBM封装良率，更赋予制造商应对AI芯片日益复杂3D堆叠结构（如TSV+RDL混合）的柔性能力。\n\n对行业有什么影响：首先，BIRD将重塑先进封装设备市场格局——传统光刻、蚀刻设备商（ASML、Lam）需与Hummink等新兴精密制造企业合作，提供集成化解决方案。其次，对台积电、日月光等OSAT而言，BIRD可成为其高端封装服务的增值亮点，支撑其在AI服务器Chiplet封装等高毛利市场溢价。最后，该技术为中国封装企业提供了弯道超车机会：无需攻克EUV光刻等尖端设备，通过BIRD类创新工艺装备，即可在FOPLP良率上追赶国际龙头，加速国产AI芯片供应链自主化进程。",
+      "category": "Foundry",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/hummink-unveils-the-bird-module-at-semicon-europa-2026/",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-11-10T17:00:41+00:00",
+      "created_at": "2026-11-11T07:25:10.881197+00:00"
+    },
+    {
       "id": "244b5acd-5edb-413c-9626-5aa472a9b9ef",
       "title": "Mixx Technologies力推近封装光学互联：SxC连接器支持单机柜2.4万光纤",
       "summary": "Mixx Technologies发布SxC扩展光束连接器，支持单OCP机柜24,576根光纤，损耗低于0.5dB，联合EBO MSA与Open CPX MSA推动AI数据中心近封装光学标准化。",
@@ -73,6 +127,24 @@
       "original_author": "@Semiconductor Digest",
       "published_at": "2026-11-10T17:00:37+00:00",
       "created_at": "2026-11-10T20:10:15.901807+00:00"
+    },
+    {
+      "id": "a5351512-346e-46e6-83b7-837508576837",
+      "title": "Seagate推FireCuda Forge：SSD+HDD混合存储回归，Alkemi平台智能管理",
+      "summary": "希捷发布FireCuda Forge混合硬盘，用户自配NVMe SSD（最高1TB）与8TB/20TB HDD组合，由Alkemi平台智能调度，读写达2500MB/s，USB4接口。",
+      "key_points": [
+        "FireCuda Forge需用户自带M.2 NVMe SSD，最高支持1TB",
+        "Alkemi平台智能管理SSD缓存与HDD存储，读写2500MB/s",
+        "首发8TB（699美元）与20TB（899美元）版本，不含SSD"
+      ],
+      "full_content": "AMD MEXT is a brand new memory solution that utilizes Flash to mitigate DRAM costs and supply concerns across EPYC CPUs. AMD MEXT Aims To Address The Ongoing DRAM Crisis Through An Innovative \"Flash-Based\" Memory Solution The memory supercycle continues to rage, and supply/demand continues to worsen. Today, the DRAM cost alone makes up 75% of the total server cost, and DRAM manufacturers face shortages that show no sign of ending. Although DRAM prices have seen a major reduction over time if we compare the ~$50M / GB cost from the 1970s to ~$8 / GB in the 2010s (a [&hellip;] Read full article at https://wccftech.com/amd-mext-memory-solution-flash-repaces-dram-same-performance/",
+      "ai_summary": "发生了什么：希捷于2026年11月发布FireCuda Forge系列混合存储设备，标志着SSD+HDD混合架构在AI时代强势回归。该产品并非传统缓存盘，而是采用全新Alkemi智能存储平台，将用户自配的M.2 2280 NVMe SSD（PCIe Gen3+，需DRAM缓存，推荐2400MB/s读速）与8TB/20TB机械硬盘深度融合。Alkemi平台通过实时分析访问模式，自动将高频数据（如操作系统、常用软件）驻留SSD，低频大文件（如视频库、备份镜像）存放HDD，最终实现2500MB/s读取与2000MB/s写入的混合性能，远超同价位纯SSD或HDD方案。\n\n为什么重要：在AI PC与创意工作站普及背景下，用户面临‘容量焦虑’与‘速度焦虑’双重压力——100GB+的AI模型权重、4K视频素材库动辄数十TB。FireCuda Forge以接近纯SSD的价格（699美元起）提供20TB+存储与准SSD体验，精准切中内容创作者、AI开发者等专业用户痛点。更重要的是，Alkemi平台代表存储智能化新方向：它不再依赖用户手动分区，而是通过机器学习理解使用习惯，实现真正的‘无感加速’，为未来AI驱动的存储管理树立标杆。\n\n对行业有什么影响：首先，该产品将挤压中端NAS与DAS市场——传统方案需用户自行配置SSD缓存，而Forge提供开箱即用的智能体验。其次，对三星、WD等竞品构成压力，迫使其加速推出类似智能混合方案，或强化QLC SSD性价比。最后，Alkemi平台的成功将推动存储控制器IP市场变革，Rambus、Marvell等厂商需开发更强大的AI协处理器，以支持实时数据热度分析与预测，存储芯片产业正从‘通道带宽竞赛’迈向‘智能调度竞赛’。",
+      "category": "Digital",
+      "source": "Ars Technica (Gadgets)",
+      "source_url": "https://arstechnica.com/gadgets/2026/11/seagate-resurrects-the-ssd-hdd-hybrid-drive/",
+      "original_author": "@Ars Technica (Gadgets)",
+      "published_at": "2026-11-10T17:00:37+00:00",
+      "created_at": "2026-11-11T07:25:10.881205+00:00"
     },
     {
       "id": "d23cb35d-d6dd-4fa0-9277-396778c09345",
@@ -5253,70 +5325,6 @@
       "original_author": "WCCFTech",
       "published_at": "2026-10-08T15:30:00+00:00",
       "created_at": "2026-10-08T19:18:37.350155+00:00"
-    },
-    {
-      "id": "003379bc-ba6c-4444-8335-47b56e286cd2",
-      "title": "Being the best AMD upscaling t...",
-      "summary": "Being the best AMD upscaling technology, FSR 4 needs to work on more devices apart from the RX 9000/7000 series. Jack Hu...",
-      "key_points": [
-        "Being the best AMD upscaling technology,"
-      ],
-      "full_content": "Being the best AMD upscaling technology, FSR 4 needs to work on more devices apart from the RX 9000/7000 series. Jack Huynh Says AMD is Set to Expand FSR 4 to APUs, Gaming Laptops, and Handhelds Before 2027 AMD's FidelityFX Super Resolution 4.0 remains strictly reserved for a few GPU lineups. Since the launch of the RDNA 4-based Radeon RX 9000 series, AMD took over a year to announce FSR 4's availability to older GPUs such as the RDNA 3-based Radeon RX 7000 series. However, AMD is soon going to bring the technology to the RDNA 2-based Radeon RX 6000 [&hellip;] Read full article at https://wccftech.com/amd-confirms-fsr-4-will-ship-to-apus-gaming-laptops-and-handhelds-by-the-end-of-2026/",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nBeing the best AMD upscaling technology, FSR 4 needs to work on more devices apart from the RX 9000/7000 series. Jack Huynh Says AMD is Set to Expand FSR 4 to APUs, Gaming Laptops, and Handhelds Before 2027 AMD's FidelityFX Super Resolution 4.0 remains strictly reserved for a few GPU lineups. Since the launch of the RDNA 4-based Radeon RX 9000 series, AMD took over a year to announce FSR 4's availability to older GPUs such as the RDNA 3-based Radeon RX 7000 series. However, AMD is soon going to ",
-      "category": "GPU",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/amd-confirms-fsr-4-will-ship-to-apus-gaming-laptops-and-handhelds-by-the-end-of-2026/",
-      "original_author": "WCCFTech",
-      "published_at": "2026-10-08T15:02:52+00:00",
-      "created_at": "2026-10-08T19:18:37.350169+00:00"
-    },
-    {
-      "id": "a469bfbd-38a1-4be9-b79a-242956773455",
-      "title": "经历收购风波的中国 AI 企业 Manus 完成超过 5 亿...",
-      "summary": "经历收购风波的中国 AI 企业 Manus 完成超过 5 亿美元融资，创始人肖弘也已解除边控，让这家一度卷入中美科技博弈、前途未卜的公司迎来“重启”，也彰显了中国资本市场对 AI 的热情。 Manus 的母公司蝴蝶效应，星期四（10月8日）...",
-      "key_points": [
-        "经历收购风波的中国 AI 企业 Manus 完成超过 5 亿美元融资，创始人肖弘"
-      ],
-      "full_content": "经历收购风波的中国 AI 企业 Manus 完成超过 5 亿美元融资，创始人肖弘也已解除边控，让这家一度卷入中美科技博弈、前途未卜的公司迎来“重启”，也彰显了中国资本市场对 AI 的热情。 Manus 的母公司蝴蝶效应，星期四（10月8日）在公众号宣布融资消息。这是中国 AI 应用领域迄今规模最大的单轮融资之一，由中国私募股权基金博裕资本和老牌美元基金 IDG 领投，老股东腾讯、红杉中国、真格基金跟投。 公司投后估值达到 40 亿美元，也让 Manus 成为中国估值最高的 AI 智能体初创企业。 去年 12 月 Meta 斥资 20 亿美元收购 Manus，但交易被中国监管部门要求撤回。",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n经历收购风波的中国 AI 企业 Manus 完成超过 5 亿美元融资，创始人肖弘也已解除边控，让这家一度卷入中美科技博弈、前途未卜的公司迎来“重启”，也彰显了中国资本市场对 AI 的热情。 Manus 的母公司蝴蝶效应，星期四（10月8日）在公众号宣布融资消息。这是中国 AI 应用领域迄今规模最大的单轮融资之一，由中国私募股权基金博裕资本和老牌美元基金 IDG 领投，老股东腾讯、红杉中国、真格基金跟投。 公司投后估值达到 40 亿美元，也让 Manus 成为中国估值最高的 AI 智能体初创企业。 去年 12 月 Meta 斥资 20 亿美元收购 Manus，但交易被中国监管部门要求撤回。",
-      "category": "AI",
-      "source": "Solidot (科技)",
-      "source_url": "https://www.solidot.org/story?sid=85554",
-      "original_author": "Solidot (科技)",
-      "published_at": "2026-10-08T13:59:39+00:00",
-      "created_at": "2026-10-08T19:18:37.351185+00:00"
-    },
-    {
-      "id": "2dfa869d-c2d8-49b4-8c9b-cd42a98c740a",
-      "title": "54 岁的美国北卡罗来纳州男子 Michael Smith ...",
-      "summary": "54 岁的美国北卡罗来纳州男子 Michael Smith 因 AI 辅助欺诈罪被判入狱 18 个月。他是首位涉嫌 AI 辅助流媒体欺诈而被刑事起诉的美国人。Smith 从 2017 年起利用虚假电邮账户和通过欺诈获取的借记卡在 Amazo...",
-      "key_points": [
-        "54 岁的美国北卡罗来纳州男子 Michael Smith 因 AI 辅助欺诈罪"
-      ],
-      "full_content": "54 岁的美国北卡罗来纳州男子 Michael Smith 因 AI 辅助欺诈罪被判入狱 18 个月。他是首位涉嫌 AI 辅助流媒体欺诈而被刑事起诉的美国人。Smith 从 2017 年起利用虚假电邮账户和通过欺诈获取的借记卡在 Amazon Music 、Apple Music、Spotify 和 YouTube Music 等平台创建了数千个账号，使用软件操纵机器人程序，循环播放他声称拥有版权的歌曲——这些歌曲实际上都是 AI 生成的。到 2024 年被捕时他创作了数十万首 AI 生成歌曲，播放量多达数十亿次，从流媒体获取了数百万美元的收入。他的歌曲的总播放量甚至超过了当今最炙手可热的歌星。比如 2023 年 4 月其歌曲的播放量达到了 8090 万次，相比下 Taylor Swift 所有歌曲的总播放量同期仅为 930 万次。Smith 除了服刑外还必须上缴其非法获取的 8,091,843.64 美元收入。",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n54 岁的美国北卡罗来纳州男子 Michael Smith 因 AI 辅助欺诈罪被判入狱 18 个月。他是首位涉嫌 AI 辅助流媒体欺诈而被刑事起诉的美国人。Smith 从 2017 年起利用虚假电邮账户和通过欺诈获取的借记卡在 Amazon Music 、Apple Music、Spotify 和 YouTube Music 等平台创建了数千个账号，使用软件操纵机器人程序，循环播放他声称拥有版权的歌曲——这些歌曲实际上都是 AI 生成的。到 2024 年被捕时他创作了数十万首 AI 生成歌曲，播放量多达数十亿次，从流媒体获取了数百万美元的收入。他的歌曲的总播放量甚至超过了当今最炙手可热的歌星。比如 2023 年 4 月其歌曲的播放量达到了 8090 万次，相比下 Taylor Swift 所有歌曲的总播放量同期仅为 930 万次。Smith 除了服刑外还必须上缴其非法获取的 8,091,843.64 美元收入。",
-      "category": "AI",
-      "source": "Solidot (科技)",
-      "source_url": "https://www.solidot.org/story?sid=85551",
-      "original_author": "Solidot (科技)",
-      "published_at": "2026-10-08T13:19:39+00:00",
-      "created_at": "2026-10-08T19:18:37.351201+00:00"
-    },
-    {
-      "id": "a78afadc-83e3-4714-ab34-c60ad8dbc1fc",
-      "title": "加拿大诗人 Anne Carson 赢得 2026 年诺贝尔...",
-      "summary": "加拿大诗人 Anne Carson 赢得 2026 年诺贝尔文学奖，以表彰“其大胆而富有创意的作品，通过与古典传统的妙趣横生的对话，为当代文学开创了新的形式”。Carson 毕业于多伦多大学（学士、硕士、博士），在圣安德鲁大学专攻古希腊韵律...",
-      "key_points": [
-        "加拿大诗人 Anne Carson 赢得 2026 年诺贝尔文学奖，以表彰“其大"
-      ],
-      "full_content": "加拿大诗人 Anne Carson 赢得 2026 年诺贝尔文学奖，以表彰“其大胆而富有创意的作品，通过与古典传统的妙趣横生的对话，为当代文学开创了新的形式”。Carson 毕业于多伦多大学（学士、硕士、博士），在圣安德鲁大学专攻古希腊韵律研究与文本批判，其后以古典学教授的身份开始写作诗歌与散文。2010-2016 年间她在康奈尔大学出任编外教授（professor-at-large），其后在纽约大学任驻留艺术家（artist-in-residence）至今。1986 年 Carson 出版其第一部散文集，名为《厄洛斯与甜蜜的痛苦》。该书中以莎芙把爱情（厄洛斯）称作“甜蜜的痛苦”这一有名残篇出发，从古希腊诗歌着手分析古希腊人对爱情的世界观，其中包括对莎芙的诗中“欲望的三角性”“欲望的模仿性”以及厄洛斯与孤独的关系等论点。对 Carson 来说，爱或厄洛斯在莎芙的诗中是“迁延的、被悖逆的、被阻止的、饥饿的，它围绕一个光辉的不在场来展开——将厄洛斯以缺失呈现。”该书在现代图书馆书社读者评选的史上 100 佳非虚构作品名单中排行第 57 名。",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n加拿大诗人 Anne Carson 赢得 2026 年诺贝尔文学奖，以表彰“其大胆而富有创意的作品，通过与古典传统的妙趣横生的对话，为当代文学开创了新的形式”。Carson 毕业于多伦多大学（学士、硕士、博士），在圣安德鲁大学专攻古希腊韵律研究与文本批判，其后以古典学教授的身份开始写作诗歌与散文。2010-2016 年间她在康奈尔大学出任编外教授（professor-at-large），其后在纽约大学任驻留艺术家（artist-in-residence）至今。1986 年 Carson 出版其第一部散文集，名为《厄洛斯与甜蜜的痛苦》。该书中以莎芙把爱情（厄洛斯）称作“甜蜜的痛苦”这一有名残篇出发，从古希腊诗歌着手分析古希腊人对爱情的世界观，其中包括对莎芙的诗中“欲望的三角性”“欲望的模仿性”以及厄洛斯与孤独的关系等论点。对 Carson 来说，爱或厄洛斯在莎芙的诗中是“迁延的、被悖逆的、被阻止的、饥饿的，它围绕一个光辉的不在场来展开——将厄洛斯以缺失呈现。”该书在现代图书馆书社读者评选的史上 100 佳非虚构作品名单中排行第 57 名。",
-      "category": "Digital",
-      "source": "Solidot (科技)",
-      "source_url": "https://www.solidot.org/story?sid=85550",
-      "original_author": "Solidot (科技)",
-      "published_at": "2026-10-08T11:54:19+00:00",
-      "created_at": "2026-10-08T19:18:37.351222+00:00"
     }
   ]
 }
