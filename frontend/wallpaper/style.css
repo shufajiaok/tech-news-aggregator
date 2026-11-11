@@ -291,6 +291,8 @@ main {
   display: grid;
   gap: var(--gap);
   grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  /* 竖图（3:2）与横图（16:9）混排：每块按自己的比例定高，不要拉平 */
+  align-items: start;
 }
 @media (max-width: 520px) {
   .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }

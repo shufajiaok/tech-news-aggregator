@@ -452,6 +452,9 @@ function tile(it, idx, list) {
     '<img loading="lazy" decoding="async" src="' + esc(thumbOf(it)) + '" alt="">' +
     '<span class="badge">' + (it.mb ? it.mb + 'MB' : '') + '</span>' +
     '<span class="tile-bg" role="button" tabindex="0" title="设为网页背景">设为背景</span>';
+  // 3:2 竖图必须用竖的容器，否则被 16:9 的 cover 裁成中间一条横缝
+  const ar = (it.w && it.h) ? it.w / it.h : 0;
+  if (ar && ar < 0.85) el.style.aspectRatio = '2 / 3';
   const img = el.querySelector('img');
   img.addEventListener('load', () => revealImg(img), { once: true });
   if (img.complete) revealImg(img);
