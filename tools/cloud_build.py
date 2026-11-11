@@ -36,9 +36,10 @@ import weibo_wallpaper as wb  # noqa: E402
 import llm_plan  # noqa: E402
 
 RATIO = 1.7778
+RATIO_PORTRAIT = 0.6667  # 3:2 竖图（w/h）。手机竖版原图基本都是这个比例
 TOL = 0.06
 MIN_BYTES = 2097152   # 2MB
-MIN_WIDTH = 1920
+MIN_WIDTH = 1920      # 长边门槛：横图看宽，竖图看高
 THUMB_SIZE = "wap720"  # 微博 CDN 现成档位，约 90KB，做首屏缩略图刚好
 
 
@@ -346,7 +347,7 @@ def main():
     feed_seen = {i["key"] for i in old_feed}
     feed_added = 0
 
-    drop = {"已收录": 0, "无 key": 0, "窄图": 0, "非16:9": 0, "不足2MB": 0, "宽度<1920": 0}
+    drop = {"已收录": 0, "无 key": 0, "窄图": 0, "非16:9或3:2": 0, "不足2MB": 0, "长边<1920": 0}
     for pid, r in recs.items():
         key = sina_key(r["large_url"])
         w, h, n = r.get("w", 0), r.get("h", 0), r.get("bytes", 0)
@@ -370,11 +371,12 @@ def main():
         if w < 600 or h <= 0:
             drop["窄图"] += 1
             continue  # 探测失败或错误页
-        if abs(w / h - RATIO) > TOL:
-            drop["非16:9"] += 1
+        ratio = w / h
+        if abs(ratio - RATIO) > TOL and abs(ratio - RATIO_PORTRAIT) > TOL:
+            drop["非16:9或3:2"] += 1
             continue
-        if w < MIN_WIDTH:
-            drop["宽度<1920"] += 1
+        if max(w, h) < MIN_WIDTH:
+            drop["长边<1920"] += 1
             continue
         if n < MIN_BYTES:
             drop["不足2MB"] += 1
@@ -403,7 +405,7 @@ def main():
     if args.max_new:
         fresh = fresh[:args.max_new]
     log("== 淘汰: " + " | ".join(f"{k} {v}" for k, v in drop.items() if v))
-    log(f"== 新增合格 {len(fresh)} 张（16:9 / >=2MB / 宽>=1920）")
+    log(f"== 新增合格 {len(fresh)} 张（16:9 或 3:2 竖图 / >=2MB / 长边>=1920）")
     for it in fresh[:15]:
         log(f"   + {it['owner']:16s} {it['w']}x{it['h']} {it['mb']:5.2f}MB "
             f"{it['created']} {it['key'][:22]}")
