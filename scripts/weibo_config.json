@@ -443,6 +443,69 @@
       "nick": "乐乐-Hoshimeguri",
       "expect": "Hoshimeguri",
       "uid": "7856233758"
+    },
+    {
+      "label": "糖糖 Ame",
+      "group": "YUMEHANABI",
+      "nick": "糖糖-YUMEHANABI",
+      "expect": "YUMEHANABI",
+      "uid": "7308239754"
+    },
+    {
+      "label": "StarEcho官博",
+      "group": "StarEcho",
+      "nick": "StarEcho_Official",
+      "expect": "StarEcho",
+      "uid": "4017878407"
+    },
+    {
+      "label": "kiko Kiko",
+      "group": "StarEcho",
+      "nick": "聴Kiko-StarEcho",
+      "expect": "StarEcho",
+      "uid": "5687386169"
+    },
+    {
+      "label": "晕妮 Memeko",
+      "group": "StarEcho",
+      "nick": "晕妮Memeko-StarEcho",
+      "expect": "StarEcho",
+      "uid": "7988741599"
+    },
+    {
+      "label": "狐狸 Kitsune",
+      "group": "StarEcho",
+      "nick": "狐狸Kitsune-StarEcho",
+      "expect": "StarEcho",
+      "uid": "7905848826"
+    },
+    {
+      "label": "粘粘 Nenen",
+      "group": "StarEcho",
+      "nick": "粘粘Nenen-StarEcho",
+      "expect": "StarEcho",
+      "uid": "6449770595"
+    },
+    {
+      "label": "爱酱 Renai",
+      "group": "StarEcho",
+      "nick": "爱酱Renai-StarEcho",
+      "expect": "StarEcho",
+      "uid": "7777342050"
+    },
+    {
+      "label": "诺 Nono",
+      "group": "StarEcho",
+      "nick": "诺Nono-StarEcho",
+      "expect": "StarEcho",
+      "uid": "5690342229"
+    },
+    {
+      "label": "小芽 Yuria",
+      "group": "StarEcho",
+      "nick": "小芽Yuria-StarEcho",
+      "expect": "StarEcho",
+      "uid": "8345863261"
     }
   ]
 }
