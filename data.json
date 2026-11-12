@@ -1,7 +1,79 @@
 {
-  "updated_at": "2026-11-11T19:59:56.117783+00:00",
+  "updated_at": "2026-11-12T07:56:00.931607+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "d67cd393-4dda-4aa8-9a9a-5fae2e935fbf",
+      "title": "英伟达CEO黄仁勋因婚外情丑闻面临董事会罢免压力",
+      "summary": "英伟达董事会正紧急评估CEO黄仁勋去留问题，因其被曝与公司高管及疑似中国间谍存在婚外情，股价已较丑闻爆发前下跌20%，黄仁勋执掌公司长达33年。",
+      "key_points": [
+        "黄仁勋被曝两起婚外情：一为公司医疗业务副总裁，一为疑似中国情报人员",
+        "董事会召开紧急会议讨论其去留，市场担忧公司治理风险",
+        "自丑闻发酵以来，英伟达股价累计下跌20%"
+      ],
+      "full_content": "&lt;p&gt;Anton Shilov has been in the PC industry since 1990s playing games, building PCs, and writing stories about pretty much everything that relates to PCs, Macs, smartphones, tablets, and even fab equipment. Over his career, he has worked at a variety of high-ranking websites, including AnandTech, EE Times, TechRadar, X-bit Labs, and now Tom&#039;s Hardware. He is also a regular features contributor to Tom&#039;s Hardware Premium, writing about the latest developments in the semiconductor industry and related tech news and roadmaps. When Anton is not reading or writing about something high-tech, he is probably watching a good movie, playing a video game, or spending time with his family.&lt;/p&gt;",
+      "ai_summary": "发生了什么：英伟达创始人兼CEO黄仁勋在短短数日内接连被曝出两起婚外情——先是与一名被美国官员怀疑为中方情报人员的客户企业高管发生关系，随后又被证实与公司内部高管、医疗业务副总裁金伯莉·鲍威尔（Kimberly Powell）存在亲密关系。此事引发董事会紧急闭门会议，外界普遍预期其CEO职位面临实质性威胁。黄仁勋自1993年创立英伟达以来一直担任唯一CEO，此次危机系其33年领导生涯中最严重的个人信誉与公司治理危机。\n\n为什么重要：黄仁勋不仅是英伟达的技术灵魂与战略舵手，更是全球AI芯片产业的标志性人物。在Blackwell架构GPU持续供不应求、GB200 NVL72加速部署、AI算力军备竞赛白热化的关键节点，CEO突发重大信任危机，将直接冲击投资者信心、客户合作稳定性及顶尖人才留存。尤其在地缘政治敏感背景下，与“疑似中国间谍”的关联更可能触发美国监管审查，影响出口许可与供应链安全评估。\n\n对行业有什么影响：短期来看，该事件或导致英伟达重大决策节奏放缓，影响HBM采购、CoWoS封装产能分配等关键资源协调；中长期若发生管理层更迭，可能动摇其软件生态（CUDA）战略延续性与AI全栈路线图执行力。更深远的影响在于，它将促使整个半导体行业重新审视科技巨头“强人治理”模式的风险边界——当个人声誉与国家技术安全深度绑定时，企业治理透明度、道德合规体系与继任机制建设将上升至战略优先级。此外，竞争对手（AMD、Intel、华为昇腾）或将借此强化自身“稳定可靠”的品牌形象，加速争夺云厂商与AI实验室的订单。",
+      "category": "GPU",
+      "source": "Ars Technica (Gadgets)",
+      "source_url": "https://arstechnica.com/gadgets/2026/11/ceo-jensen-huangs-job-is-suddenly-on-the-line-at-nvidia/",
+      "original_author": "@Ars Technica (Gadgets)",
+      "published_at": "2026-11-11T23:45:00+00:00",
+      "created_at": "2026-11-12T07:55:42.132228+00:00"
+    },
+    {
+      "id": "37bf6370-c8f6-4e05-be69-0e23154e025e",
+      "title": "腾讯马化腾宣布半数员工转向AI原生业务，开启‘大航海时代’",
+      "summary": "腾讯CEO马化腾提出‘陆军守土、海军拓疆’战略，将50%员工投入AI原生业务，强调资源向AI Native产品与技术倾斜，否认‘裁员50%’传闻。",
+      "key_points": [
+        "马化腾将核心业务比作‘陆军’，AI新业务比作‘海军’，各占50%人力",
+        "要求全员拥抱AI，将AI作为定义时代的核心技术",
+        "所谓‘裁员50%’系对资源重组的误读，公司实际为适应AI时代进行结构性调整"
+      ],
+      "full_content": "Today marks the 15th anniversary since Bethesda Game Studios released The Elder Scrolls V: Skyrim. The game had a lot of hype following the acclaimed releases of Morrowind and Oblivion, but it went on to become even more popular than both combined, at least in terms of sales. Last we heard this past July, the game had sold over 65 million units across all platforms, which puts it in the All-Time Top 10 best-selling premium games chart (roughly tied with another stellar open world action RPG, CD Projekt RED's The Witcher 3: Wild Hunt). To this day, it's Bethesda's most played game, [&hellip;] Read full article at https://wccftech.com/skyrim-15th-anniversary-creations-bundle-elder-scrolls-6-sentinel/",
+      "ai_summary": "发生了什么：腾讯创始人兼CEO马化腾在2026年年度内部演讲中，正式宣告公司进入‘大航海时代’，并提出极具象征意义的组织变革——将公司逾10万名员工中的50%配置为‘陆军’，专注提效现有核心业务（如微信、游戏、广告）；另50%转型为‘海军’，全力投入AI原生（AI Native）产品的研发、商业化与生态构建。此举并非简单裁员，而是对人力资源的全局性再分配，旨在将腾讯从‘移动互联网巨头’重塑为‘AI时代基础设施与应用领导者’。马化腾明确表示，AI不是工具，而是‘定义这个时代的技术’，所有业务线必须重构以AI为中心。\n\n为什么重要：作为中国最大互联网公司之一，腾讯的AI战略转向具有风向标意义。其‘半数兵力转向AI’的决断，远超多数同行的渐进式投入，反映出中国科技巨头对AI竞争烈度的深刻认知——在大模型能力趋同的背景下，胜负手在于AI原生应用的落地速度、用户规模与商业闭环。腾讯拥有微信超级入口、海量C端场景及强大支付能力，若能将AI深度融入社交、内容、服务链条，将形成难以复制的‘AI+超级App’护城河。\n\n对行业有什么影响：对国内AI创业生态，腾讯的全面拥抱将极大提振市场信心，加速资本向AI应用层聚集；对竞对（字节、百度、阿里），这将迫使其加快组织变革与资源倾斜，避免在AI用户心智与流量入口上被拉开代差；对开发者与中小企业，腾讯云、混元大模型及微信AI开放平台的持续投入，将提供更低成本、更高效率的AI能力调用渠道，推动AI技术普惠化。长远看，若腾讯成功孵化出如‘微信AI助手’‘视频号AI创作’等现象级产品，或将重新定义人机交互范式，引领全球AI应用创新方向。",
+      "category": "AI",
+      "source": "Solidot (科技)",
+      "source_url": "https://www.solidot.org/story?sid=85865",
+      "original_author": "@Solidot (科技)",
+      "published_at": "2026-11-11T22:00:00+00:00",
+      "created_at": "2026-11-12T07:55:42.13233+00:00"
+    },
+    {
+      "id": "7e99aaad-10e3-400f-8222-dc96c0fb28ee",
+      "title": "德州农工大学研发5G CATS技术，硬件级定位认证防AI芯片走私",
+      "summary": "德州农工大学团队提出5G CATS系统，利用5G URLLC超低时延特性，在GPU封装内集成5G射频与加密引擎，实现芯片运行位置的硬件级实时认证。",
+      "key_points": [
+        "5G CATS通过测量芯片到基站的往返时延，精确限定其地理范围",
+        "射频模块与加密引擎集成于GPU封装内，绕过主机软件与PCIe链路",
+        "仿真显示其抗光纤中继攻击能力达300公里，远超现有方案"
+      ],
+      "full_content": "Even though Elon Musk and SpaceX aim to target space-based AI compute aggressively, the CEO of Amazon's AWS cloud computing business, Matt Garman, believes that space data centers are unlikely to be feasible in the next decade. The executive discussed the space data centers during the Sources podcast, where he shared that cooling and serviceability are among the factors that make it difficult for space data centers to be feasible. Few Annual Launches &amp; Cooling Among Factors That Make AWS CEO Skeptical About Space Data Centers Starting out by discussing whether the plan to build out compute infrastructure in space [&hellip;] Read full article at https://wccftech.com/amazons-computing-boss-says-space-data-centers-wont-be-feasible-or-practical-for-a-decade-even-as-musk-believes-in-1300w-m%c2%b2-heat-dissipation-for-ai-satellites/",
+      "ai_summary": "发生了什么：为应对美国对华AI芯片出口管制下的‘灰色流通’问题，德州农工大学研究团队于2026年11月发布‘5G CATS’（5G-Based Cryptographic Authorization Against Trafficking of Semiconductor Devices）技术。该方案创新性地将微型5G射频收发器、专用加密引擎与硬件互锁电路直接集成至GPU封装内部，并与5G超可靠低时延通信（URLLC）基站协同工作。其核心原理是：通过测量芯片对基站加密挑战的响应时延，结合5G信号在光纤中的传播速度（约20万公里/秒），精确计算芯片与基站间的物理距离，从而判定其是否在授权区域（如美国境内）运行。该设计彻底规避了传统方案依赖主机操作系统、PCIe总线或BMC控制器的漏洞路径。\n\n为什么重要：当前出口管制的最大盲区在于‘芯片部署后监管失效’——即便芯片合法出口，也可能被转运至禁运地区用于军事或超算目的。5G CATS首次实现了‘芯片即护照’的硬件级可信执行环境（TEE），其技术指标极为严苛：在ns-3仿真中，99.9%分位往返时延抖动仅2.6毫秒，使攻击者利用光纤中继（relay）欺骗定位的距离上限从2000公里骤降至300公里，安全性提升一个数量级。这为全球半导体出口管制提供了首个可工程化落地的技术锚点。\n\n对行业有什么影响：对芯片制造商，该技术将推动‘安全可信芯片’成为新一代高端AI/GPU的标配功能，催生芯片内嵌5G射频、硬件加密等新IP模块需求；对云服务商与数据中心，未来采购AI芯片或需强制验证其5G CATS兼容性，形成新的准入门槛；对地缘政治，该技术若被广泛采纳，将极大提升美国技术封锁的有效性，但也可能加速中国等国家发展自主卫星定位（如北斗）+低轨通信（如星链）的替代方案，推动全球半导体安全标准体系分裂为多个阵营。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/hardware-based-location-checks-target-ai-chip-smuggling-texas-am/",
+      "original_author": "@Semiconductor Engineering",
+      "published_at": "2026-11-11T21:48:56+00:00",
+      "created_at": "2026-11-12T07:55:42.132345+00:00"
+    },
+    {
+      "id": "d4a3edab-d042-49ae-9673-3879fbdf06a9",
+      "title": "佛罗里达大学提出SANAI技术，嵌入式ECC保护AI权重免受比特翻转攻击",
+      "summary": "佛罗里达大学研发SANAI方案，在神经网络权重中嵌入密钥保护的纠错码，实现零额外存储开销的AI模型抗攻击加固。",
+      "key_points": [
+        "SANAI将纠错码以‘密钥调制+空间交织’方式嵌入权重本身",
+        "无需增加额外存储，即可防御针对AI模型的物理层比特翻转攻击",
+        "该技术已在FPGA平台验证，有效抵御激光/电磁脉冲注入攻击"
+      ],
+      "full_content": "During today's yearly Golden Joysticks Awards, Slovakian studio Games Farm announced Conan: The Black Pyramid, an action roguelite RPG published by Grindstone Entertainment and due on PC via Steam in 2027. Games Farm is based in Košice and has over 50 staff members and more than 20 released titles, including Vikings - Wolves of Midgard and Shadows: Awakening. Grindstone was spun off from Games Farm in 2017. The studio recently invited Wccftech and other media to attend a remote press presentation with a live gameplay demo, followed by a Q&amp;A. Below is a summary of the presentation, with the Q&amp;A [&hellip;] Read full article at https://wccftech.com/conan-the-black-pyramid-2027-pc-roguelite-arpg/",
+      "ai_summary": "发生了什么：佛罗里达大学研究团队于2026年11月发布SANAI（Secure ECC Distributed Keyed Parity Embedded in Weights）技术，旨在解决AI模型在物理层面面临的新型安全威胁——恶意攻击者通过激光照射、电磁脉冲（EMP）或辐射等方式，精准翻转AI芯片内存或缓存中的单个比特（bit-flip），从而篡改模型权重，导致推理结果被定向操控（如自动驾驶误识别红灯为绿灯）。SANAI的突破在于：它不依赖外部存储冗余ECC校验码，而是将纠错信息以‘密钥调制+二维空间交织’的方式，直接编码进模型权重的低位比特中。攻击者若想破坏，必须同时篡改多个分散的权重位置，且需知晓密钥，极大提升了攻击难度与成本。\n\n为什么重要：随着AI系统深入关键基础设施（电网、交通、医疗），其物理安全性已从学术议题变为现实刚需。传统ECC内存虽能防随机错误，但对定向、低功耗的物理攻击无效。SANAI首次实现了‘权重即防护’的本体安全范式，且零存储开销的特性使其可无缝集成至现有AI芯片（如NPU、TPU）的权重加载流程，无需修改硬件架构。该技术已在FPGA平台完成验证，对激光脉冲攻击的防护成功率超99.9%。\n\n对行业有什么影响：对AI芯片设计公司，SANAI为下一代AI加速器提供了标准化安全增强模块，有望纳入ISO/IEC 27001等安全认证体系；对云服务商与AI平台，可将其作为‘可信AI推理服务’的核心卖点，满足金融、政务等高合规要求客户的审计需求；对AI安全研究社区，该工作开辟了‘模型-硬件协同安全’新方向，将推动更多类似技术（如对抗性训练硬件化、模型水印嵌入）的产业化落地。长远看，它标志着AI安全正从‘算法鲁棒性’‘数据隐私’扩展至‘物理层可信’，构建起覆盖全栈的纵深防御体系。",
+      "category": "AI",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/embedded-ecc-protects-ai-weights-against-bit-flip-attacks-university-of-florida/",
+      "original_author": "@Semiconductor Engineering",
+      "published_at": "2026-11-11T20:00:00+00:00",
+      "created_at": "2026-11-12T07:55:42.132361+00:00"
+    },
     {
       "id": "425355ff-2936-47c8-b21c-dfe01d9fac57",
       "title": "Quadric Chimera GPNPU支持变长提示词，破解边缘AI推理效率瓶颈",
@@ -21,6 +93,24 @@
       "created_at": "2026-11-11T19:59:39.792391+00:00"
     },
     {
+      "id": "c30548af-02ac-4c48-9602-f29ede25cde9",
+      "title": "新加坡国立大学等实现单晶高κ介质集成，推动2D CFET晶体管迈向超低功耗",
+      "summary": "新加坡国立大学联合团队成功将单晶二氧化钛高κ介质与二维半导体范德华集成，实现接近热力学极限的亚阈值摆幅，为2D CFET晶体管商用铺平道路。",
+      "key_points": [
+        "采用单晶anatase TiO₂作为高κ介质，实现原子级平整界面",
+        "2D n/p型CFET晶体管亚阈值摆幅达60mV/dec，创纪录低迟滞",
+        "CMOS反相器静态功耗低至亚皮瓦级，适用于极低功耗AI边缘计算"
+      ],
+      "full_content": "It seems SpaceX's very lucrative compute deal with Anthropic is not long for this world, at least as per the anecdotes of a recent meeting between the AI lab's executives and sell-side analysts. What's more, these uncharacteristically blunt remarks have just received an equally nonchalant response from Elon Musk, who is not only the least bit bothered by this potential development, but also actively postulates that the \"opposite is going to happen.\" Elon Musk does not think Anthropic will actually cull its compute deal with SpaceX For the benefit of those who might not be aware, from December 2026 onward, [&hellip;] Read full article at https://wccftech.com/anthropic-believes-its-partnership-with-spacex-wont-last-beyond-q2-2027-and-elon-musk-now-says-well-be-happy-to-take-the-compute-back/",
+      "ai_summary": "发生了什么：由新加坡国立大学（NUS）与Nexstrom等机构组成的国际团队，在2026年11月《自然》期刊发表突破性成果：他们成功将大面积、可转移的单晶anatase相二氧化钛（TiO₂）高κ介质，通过范德华力（van der Waals）方式，无损集成至二硫化钼（MoS₂）等二维过渡金属硫化物（TMD）沟道上。该技术克服了传统ALD沉积高κ介质在二维材料表面产生的缺陷与界面态难题，实现了近乎理想的原子级平整界面。基于此，团队首次制备出高性能互补场效应晶体管（CFET），其n/p型器件均展现出接近理论极限的60mV/dec亚阈值摆幅（SS）、创纪录的低迟滞（hysteresis）以及高度匹配的转移特性，最终构建的CMOS反相器静态功耗低至亚皮瓦（sub-pW）级别。\n\n为什么重要：摩尔定律在硅基FinFET/纳米片晶体管上已逼近物理极限，而2D材料被视为后摩尔时代最具潜力的沟道候选者。但其大规模应用长期受限于‘介质-沟道’界面质量差、漏电严重、器件不匹配等瓶颈。单晶高κ介质的范德华集成，一举解决了界面态与漏电两大核心痛点，使2D CFET从实验室概念迈向可量产器件的关键一步。其亚皮瓦静态功耗特性，尤其契合AI边缘设备（如可穿戴传感器、植入式医疗芯片）对超长续航的极致需求。\n\n对行业有什么影响：对半导体制造设备商，该成果将刺激高精度范德华转移设备、单晶氧化物生长系统等新型装备需求；对芯片设计公司，2D CFET的超低功耗与高集成密度，将催生全新一代超低功耗AI协处理器IP，赋能终端侧实时大模型推理；对材料科学界，该工作验证了‘单晶介质+范德华集成’范式的普适性，有望推广至氮化硼（hBN）、氧化铪（HfO₂）等更多材料体系，加速2D电子学从科研走向产业。长远看，它为中国等在先进光刻受限地区，提供了绕过EUV光刻、通过新材料与新工艺实现芯片性能跃升的战略路径。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/single-crystal-high-%ce%ba-dielectric-enables-low-power-2d-cfets-nus-et-al/",
+      "original_author": "@Semiconductor Engineering",
+      "published_at": "2026-11-11T18:38:43+00:00",
+      "created_at": "2026-11-12T07:55:42.132372+00:00"
+    },
+    {
       "id": "95109cbc-f8a6-47fd-a440-f77872bffe50",
       "title": "UCIe标准在2.5D与3D封装中面临根本性工程差异",
       "summary": "UCIe作为die-to-die互连标准，在2.5D封装中需应对高损耗信道挑战，而在3D堆叠中则侧重连接密度与热管理；设计者必须根据封装类型选择PHY方案、拓扑结构与可靠性策略。",
@@ -37,6 +127,24 @@
       "original_author": "@Semiconductor Engineering",
       "published_at": "2026-11-11T18:00:00+00:00",
       "created_at": "2026-11-11T19:59:39.792401+00:00"
+    },
+    {
+      "id": "0369387a-f0e6-4cf4-b24d-3975351c2ca5",
+      "title": "Technic展示先进铜电镀化学工艺，支撑AI芯片2.5D/3D封装需求",
+      "summary": "Technic在SEMICON Europa 2026推出Elevate® Cu 3000/1500电镀液，专为AI芯片所需的高密度2.5D/3D互连与HBM堆叠优化。",
+      "key_points": [
+        "Elevate Cu 3000支持高深宽比TSV填充与优异共面性",
+        "Elevate Cu 1500专攻微孔填充与表面平整，保障HBM高可靠性互连",
+        "技术服务于AI、HPC等下一代半导体应用，提升先进封装良率与效率"
+      ],
+      "full_content": "Two registry values can eliminate Windows 11's built-in startup application delays, potentially making a noticeable difference on powerful PCs. A Windows 11 user has discovered that two simple registry modifications can dramatically accelerate startup applications, reducing the time needed to launch their programs from 2 minutes and 30 seconds to just 30 seconds. Sharing their findings on r/Windows11, Reddit user PersianMG explained that their high-end PC was taking an unusually long time to load approximately 30 startup applications, six AutoHotkey scripts, and several background services. Despite Windows itself booting quickly, applications would launch gradually, with lengthy pauses between them. Using [&hellip;] Read full article at https://wccftech.com/windows-11-startup-apps-taking-forever-to-load-a-simple-registry-tweak-cut-one-users-wait-by-80/",
+      "ai_summary": "发生了什么：全球领先半导体湿法工艺供应商Technic于2026年11月SEMICON Europa展会上，正式发布面向AI时代先进封装的两款核心电镀化学产品——Elevate® Cu 3000与Elevate® Cu 1500。前者专为2.5D/3D集成中的高深宽比硅通孔（TSV）填充设计，在宽电流密度范围内提供灵活的特征轮廓控制与卓越共面性；后者则聚焦于高密度微孔（via）填充与表面平整，确保HBM（高带宽内存）堆叠中数千个微凸点（microbump）的高一致性与高可靠性。这两款产品均基于Technic数十年电镀化学经验，旨在解决AI芯片对互连密度、信号完整性与热管理提出的前所未有的严苛要求。\n\n为什么重要：AI芯片性能的瓶颈已从晶体管密度转向‘芯片间互连带宽’。HBM3e、CoWoS-L等先进封装技术依赖数万乃至数十万个微米级铜互连结构，其电镀质量直接决定芯片良率、性能与寿命。传统电镀液在高深宽比结构中易产生空洞、应力不均等问题，导致信号延迟、发热甚至早期失效。Technic的新配方通过分子级添加剂调控，实现了对铜晶粒生长方向与应力的精准控制，将互连缺陷率降低一个数量级以上，为GB200、MI300X等旗舰AI芯片的大规模量产提供关键工艺保障。\n\n对行业有什么影响：对晶圆代工厂与OSAT（外包封测）厂商，Elevate系列电镀液可直接集成至现有电镀产线，无需昂贵设备改造，显著缩短AI芯片封装工艺验证周期；对AI芯片设计公司，更可靠的互连意味着可更大胆地采用更高带宽、更复杂堆叠的封装方案，释放芯片性能潜力；对整个半导体供应链，Technic作为关键材料供应商的持续创新，凸显了‘材料即核心竞争力’的趋势——在EUV光刻机受限的当下，先进封装材料与工艺已成为中国等地区突破技术封锁、提升芯片整体性能的重要突破口。其与台积电、三星等头部代工厂的深度合作，也印证了材料-工艺-设计协同创新的产业新范式。",
+      "category": "Foundry",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/technic-showcases-copper-plating-chemistries-for-advanced-packaging/?utm_source=rss&utm_medium=rss&utm_campaign=technic-showcases-copper-plating-chemistries-for-advanced-packaging",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-11-11T18:00:00+00:00",
+      "created_at": "2026-11-12T07:55:42.132382+00:00"
     },
     {
       "id": "4b34e45e-02c5-4467-bfb9-b2a16a64a216",
@@ -5233,102 +5341,6 @@
       "original_author": "@Semiconductor Digest",
       "published_at": "2026-10-08T18:23:28+00:00",
       "created_at": "2026-10-09T07:00:52.048169+00:00"
-    },
-    {
-      "id": "d9c46570-ba9a-4895-9659-1f0d0a6264c1",
-      "title": "&lt;p&gt;Bruno Ferreira&#039;s...",
-      "summary": "&lt;p&gt;Bruno Ferreira&#039;s journey kicked off with the venerable ZX Spectrum, a cassette player, and his hopes and d...",
-      "key_points": [
-        "&lt;p&gt;Bruno Ferreira&#039;s journey k"
-      ],
-      "full_content": "&lt;p&gt;Bruno Ferreira&#039;s journey kicked off with the venerable ZX Spectrum, a cassette player, and his hopes and dreams. He quickly realized he had more fun figuring out how computers work than he did actually using the things. Kicking off a developer career with C and Assembly before moving to scripting languages, he&#039;s worn many hats, including both database architect and systems administration. As a teen, Bruno co-founded a web development outfit where he was for 17 years before moving on to spend nearly a decade at The Tech Report as a writer, editor, and (of course) developer. In this decade, he&#039;s been at Asus, MLCommons, and HotHardware, among others. When not fiddling with computers and games, his love for music and production sends him off to live shows and festivals. Occasionally, he pretends he can play the guitar and bass.&lt;/p&gt;",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n&lt;p&gt;Bruno Ferreira&#039;s journey kicked off with the venerable ZX Spectrum, a cassette player, and his hopes and dreams. He quickly realized he had more fun figuring out how computers work than he did actually using the things. Kicking off a developer career with C and Assembly before moving to scripting languages, he&#039;s worn many hats, including both database architect and systems administration. As a teen, Bruno co-founded a web development outfit where he was for 17 years before mov",
-      "category": "Digital",
-      "source": "Tom's Hardware",
-      "source_url": "https://www.tomshardware.com/tech-industry/policy/u-s-suspends-green-card-path-for-h-1b-workers-at-microsoft-and-adobe-labor-certification-program-blocked-due-to-alleged-fraud",
-      "original_author": "Tom's Hardware",
-      "published_at": "2026-10-08T17:26:07+00:00",
-      "created_at": "2026-10-08T19:18:37.349974+00:00"
-    },
-    {
-      "id": "3dade43d-a1e4-454c-9837-8c838d40a9b8",
-      "title": "IT之家 10 月 9 日消息，博主 @数码闲聊站 发文透露...",
-      "summary": "IT之家 10 月 9 日消息，博主 @数码闲聊站 发文透露，菊菊（此处预计指华为）阔直板手机有多产品线布局的动作， n 中端线（预计指 nova 产品线）也在评估阔直板中 。 有网友询问 Mate 系列是否会推出阔直板形态手机，博主表示：...",
-      "key_points": [
-        "IT之家 10 月 9 日消息，博主 @数码闲聊站 发文透露，菊菊（此处预计指华"
-      ],
-      "full_content": "IT之家 10 月 9 日消息，博主 @数码闲聊站 发文透露，菊菊（此处预计指华为）阔直板手机有多产品线布局的动作， n 中端线（预计指 nova 产品线）也在评估阔直板中 。 有网友询问 Mate 系列是否会推出阔直板形态手机，博主表示：“ Mate 暂时没有这个计划。 ”还有网友谈及了 Pura X View 的销量带火了阔直板这一形态，博主回复称：“ 所以都在跟，但进度最快的也还是晚华子大半年。 ” 据IT之家此前报道， 全球首款阔直板手机 —— 华为 Pura X View 已于 9 月 7 日正式上市 ，其采用 16:9.5 比例面板设计、搭载麒麟 9030S 处理器，定价 5999 元起。 消息称华为 Pura X View 阔直板首周激活销量约 28.2 万 ，实销均价约 7000，开售时间 5 天，W37 全品牌单品销量第一，同时助力华为品牌拿下 W37 份额第一。",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nIT之家 10 月 9 日消息，博主 @数码闲聊站 发文透露，菊菊（此处预计指华为）阔直板手机有多产品线布局的动作， n 中端线（预计指 nova 产品线）也在评估阔直板中 。 有网友询问 Mate 系列是否会推出阔直板形态手机，博主表示：“ Mate 暂时没有这个计划。 ”还有网友谈及了 Pura X View 的销量带火了阔直板这一形态，博主回复称：“ 所以都在跟，但进度最快的也还是晚华子大半年。 ” 据IT之家此前报道， 全球首款阔直板手机 —— 华为 Pura X View 已于 9 月 7 日正式上市 ，其采用 16:9.5 比例面板设计、搭载麒麟 9030S 处理器，定价 5999 元起。 消息称华为 Pura X View 阔直板首周激活销量约 28.2 万 ，实销均价约 7000，开售时间 5 天，W37 全品牌单品销量第一，同时助力华为品牌拿下 W37 份额第一。",
-      "category": "CPU",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/010/744.htm",
-      "original_author": "IT之家",
-      "published_at": "2026-10-08T16:50:47+00:00",
-      "created_at": "2026-10-08T19:18:37.351148+00:00"
-    },
-    {
-      "id": "60f4f808-77df-42c5-a274-2814b8bc1f2a",
-      "title": "&lt;p&gt;Mark&#039;s enthusias...",
-      "summary": "&lt;p&gt;Mark&#039;s enthusiasm for computers dampened at an early age by the rubber-keyed Sinclair Spectrum 48K and fee...",
-      "key_points": [
-        "&lt;p&gt;Mark&#039;s enthusiasm for comp"
-      ],
-      "full_content": "&lt;p&gt;Mark&#039;s enthusiasm for computers dampened at an early age by the rubber-keyed Sinclair Spectrum 48K and feelings of Commodore 64 envy. However, in the mid-80s, hope in a digital future was rekindled by the purchase of an Atari 520 STe. Since that time Mark has used a multitude of computers for fun and professional endeavors. He often owned both Macs and PCs but went cold on the former after OS9 was killed off, and warmed to the latter with the introduction of Windows XP.&lt;br&gt; &lt;br&gt; Early work years were spent in artwork and reprographics but in the late noughties, Mark started to blog about computers, Taiwanese food culture, and guitar design. This activity led to a full-time position writing about breaking PC tech news for HEXUS, for the best part of a decade. When HEXUS was abruptly closed, Mark helped with the foundation of Club386, before finding a new home at Tom&#039;s Hardware.&lt;br&gt; &lt;br&gt; When not wearing through the keycap legends on his PC keyboards, Mark can be found wandering the computer malls of Taiwan&#039;s neon-lit conurbations and enjoying local and international cuisine.&lt;/p&gt;",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n&lt;p&gt;Mark&#039;s enthusiasm for computers dampened at an early age by the rubber-keyed Sinclair Spectrum 48K and feelings of Commodore 64 envy. However, in the mid-80s, hope in a digital future was rekindled by the purchase of an Atari 520 STe. Since that time Mark has used a multitude of computers for fun and professional endeavors. He often owned both Macs and PCs but went cold on the former after OS9 was killed off, and warmed to the latter with the introduction of Windows XP.&lt;br&gt; &",
-      "category": "AI",
-      "source": "Tom's Hardware",
-      "source_url": "https://www.tomshardware.com/video-games/retro-gaming/the-atari-800xl-returns-with-a-faithful-but-modern-retro-games-ltd-redesign-classic-8-bit-home-computer-revamp-sports-mechanical-keyboard-and-hdmi-connectivity",
-      "original_author": "Tom's Hardware",
-      "published_at": "2026-10-08T16:37:20+00:00",
-      "created_at": "2026-10-08T19:18:37.350013+00:00"
-    },
-    {
-      "id": "0fec8e08-d373-4e2c-a868-a8f6b997e5b2",
-      "title": "NVIDIA has added 10 PC games t...",
-      "summary": "NVIDIA has added 10 PC games to the ever-growing GeForce NOW-compatible list. Here's the full list of new additions: We'...",
-      "key_points": [
-        "NVIDIA has added 10 PC games to the ever"
-      ],
-      "full_content": "NVIDIA has added 10 PC games to the ever-growing GeForce NOW-compatible list. Here's the full list of new additions: We've recently reviewed The Coalition's Gears of War: E-Day and Fuse Games' STAR WARS: Galactic Racer on Wccftech, so you can read what our reviewers thought in the excerpts below: Gears of War: E-Day has been promoted as the most ambitious game ever made by The Coalition, but to be honest, it feels like a step back from Gears 5 in several ways. The narrative is a lot less memorable, and the side content is forgettable. Its saving grace is that [&hellip;] Read full article at https://wccftech.com/nvidia-gears-of-war-e-day-star-wars-galactic-racer-hellraiser-revival-solasta-ii-geforce-now/",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nNVIDIA has added 10 PC games to the ever-growing GeForce NOW-compatible list. Here's the full list of new additions: We've recently reviewed The Coalition's Gears of War: E-Day and Fuse Games' STAR WARS: Galactic Racer on Wccftech, so you can read what our reviewers thought in the excerpts below: Gears of War: E-Day has been promoted as the most ambitious game ever made by The Coalition, but to be honest, it feels like a step back from Gears 5 in several ways. The narrative is a lot less memorab",
-      "category": "GPU",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/nvidia-gears-of-war-e-day-star-wars-galactic-racer-hellraiser-revival-solasta-ii-geforce-now/",
-      "original_author": "WCCFTech",
-      "published_at": "2026-10-08T16:30:00+00:00",
-      "created_at": "2026-10-08T19:18:37.350137+00:00"
-    },
-    {
-      "id": "5e5f0144-d8be-4a78-8223-2fef86ad18ae",
-      "title": "&lt;p&gt;Etiido Uko is a mecha...",
-      "summary": "&lt;p&gt;Etiido Uko is a mechanical engineer and senior technical writer with over nine years of experience in documenta...",
-      "key_points": [
-        "&lt;p&gt;Etiido Uko is a mechanical engi"
-      ],
-      "full_content": "&lt;p&gt;Etiido Uko is a mechanical engineer and senior technical writer with over nine years of experience in documentation and reporting. He is deeply passionate about all things engineering and technology, and is an expert in gadgets, manufacturing, robotics, automotive, and aerospace. His work spans content creation for industry leaders across multiple sectors, including Autodesk, Siemens, Xometry, Telus, and Coca-Cola. When he is not writing or keeping up with the latest innovations, you can find him exploring lands unknown. Check out more of his work at etiidowrites.com.&lt;/p&gt;",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n&lt;p&gt;Etiido Uko is a mechanical engineer and senior technical writer with over nine years of experience in documentation and reporting. He is deeply passionate about all things engineering and technology, and is an expert in gadgets, manufacturing, robotics, automotive, and aerospace. His work spans content creation for industry leaders across multiple sectors, including Autodesk, Siemens, Xometry, Telus, and Coca-Cola. When he is not writing or keeping up with the latest innovations, you ca",
-      "category": "Digital",
-      "source": "Tom's Hardware",
-      "source_url": "https://www.tomshardware.com/tech-industry/semiconductors/department-of-war-dishes-out-usd1-5-billion-loan-commitment-to-boost-semiconductor-supply-chain-wolfspeed-to-focus-on-national-security-applications-as-part-of-30-year-agreement",
-      "original_author": "Tom's Hardware",
-      "published_at": "2026-10-08T16:24:54+00:00",
-      "created_at": "2026-10-08T19:18:37.350037+00:00"
-    },
-    {
-      "id": "de3a738c-fb7c-4975-a2b1-0139c8da23b9",
-      "title": "IT之家 10 月 9 日消息，华为今日面向 Mate 80...",
-      "summary": "IT之家 10 月 9 日消息，华为今日面向 Mate 80 系列等机型，推送了鸿蒙 HarmonyOS 7.0.0.109 版本最新补丁包，包体大小约 206.99MB，优化了部分场景的使用体验。 IT之家实测发现，更新该补丁包除了带来多...",
-      "key_points": [
-        "IT之家 10 月 9 日消息，华为今日面向 Mate 80 系列等机型，推送了"
-      ],
-      "full_content": "IT之家 10 月 9 日消息，华为今日面向 Mate 80 系列等机型，推送了鸿蒙 HarmonyOS 7.0.0.109 版本最新补丁包，包体大小约 206.99MB，优化了部分场景的使用体验。 IT之家实测发现，更新该补丁包除了带来多设备互助通信共享外， 还支持了隔空手势翻转加密分享功能 （使用隔空手势抓取需要分享的内容，设备弹出动画后再翻转手势）。具体效果如下： 根据华为官方说法，加密后的内容仅可查看一次，无法截屏录屏或分享；加密分享的图片和视频不支持缩略图预览。 加密 内容保存后用户需要前往“隐私和安全” → “加密分享文件”查看 。 此外，华为鸿蒙 HarmonyOS 7 系统还支持碰一碰加密分享。",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nIT之家 10 月 9 日消息，华为今日面向 Mate 80 系列等机型，推送了鸿蒙 HarmonyOS 7.0.0.109 版本最新补丁包，包体大小约 206.99MB，优化了部分场景的使用体验。 IT之家实测发现，更新该补丁包除了带来多设备互助通信共享外， 还支持了隔空手势翻转加密分享功能 （使用隔空手势抓取需要分享的内容，设备弹出动画后再翻转手势）。具体效果如下： 根据华为官方说法，加密后的内容仅可查看一次，无法截屏录屏或分享；加密分享的图片和视频不支持缩略图预览。 加密 内容保存后用户需要前往“隐私和安全” → “加密分享文件”查看 。 此外，华为鸿蒙 HarmonyOS 7 系统还支持碰一碰加密分享。",
-      "category": "Digital",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/010/742.htm",
-      "original_author": "IT之家",
-      "published_at": "2026-10-08T16:16:27+00:00",
-      "created_at": "2026-10-08T19:18:37.351169+00:00"
     }
   ]
 }
