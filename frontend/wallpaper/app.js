@@ -1,6 +1,6 @@
 /* ══════════════════════════════════════════════════════════════
    微博画廊 · 前端
-   数据：data.json（壁纸 16:9）/ feed.json（动态，全部图）
+   数据：data.json（壁纸，所有横竖比例 + S/A/B/C/V 分级）/ feed.json（动态，全部图）
    图片：/i/<档位>/<key> —— 服务端实时向微博 CDN 取回
    ══════════════════════════════════════════════════════════════ */
 'use strict';
@@ -28,6 +28,8 @@ const state = {
   wallView: [],
   wallShown: 0,
   wallOwner: 'all',
+  wallOrient: 'all',   // 'all' | 'landscape' | 'portrait'
+  wallGrade: 'all',    // 'all' | 'S' | 'A' | 'B' | 'C' | 'V'
   wallSort: 'bytes',
   lb: [],
   lbIndex: -1,
@@ -42,7 +44,17 @@ const esc = (s) => String(s == null ? '' : s)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
   .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
-const imgUrl = (key, size) => `/i/${size}/${encodeURIComponent(key || '')}`;
+/* 分享码必须显式透传到图片代理：网关只在「带 sharecode 或带 __wb_rsc Cookie」
+   时放行 /i/ 请求。首屏、隐私模式、Cookie 失效、新标签打开大图时 Cookie 可能
+   还没写入，不带码就是 403 —— 新抓的 11181 张代理图会整片空白。 */
+const SHARE_CODE = (() => {
+  try { return new URLSearchParams(location.search).get('sharecode') || ''; }
+  catch (e) { return ''; }
+})();
+const withShare = (u) => (SHARE_CODE && u && u.indexOf('sharecode=') < 0)
+  ? u + (u.indexOf('?') >= 0 ? '&' : '?') + 'sharecode=' + encodeURIComponent(SHARE_CODE)
+  : u;
+const imgUrl = (key, size) => withShare(`/i/${size}/${encodeURIComponent(key || '')}`);
 
 /* ───────── 网页背景（只存这台浏览器） ───────── */
 const BG_LS = 'wg.bg';
@@ -136,8 +148,9 @@ function bindBg() {
 }
 
 function thumbOf(it) {
-  if (it.thumb) return it.thumb;
-  return imgUrl(it.key, 'wap720');
+  // 旧 1085 张是 thumbs/ 本地文件，新抓的是 /i/ 代理路径；只有代理路径需要带码
+  const u = it.thumb || imgUrl(it.key, 'wap720');
+  return u.charAt(0) === '/' ? withShare(u) : u;
 }
 
 function relTime(s) {
@@ -378,10 +391,34 @@ async function loadWall(fresh, sha) {
   const d = await r.json();
   state.wallItems = d.items || [];
   $('#wallSub').textContent =
-    state.wallItems.length + ' 张 · 16:9 或 3:2 竖图，≥2MB 且长边 ≥1920 · ' + (d.generated_at || '');
+    state.wallItems.length + ' 张 · 所有横竖比例，≥2MB 且长边 ≥1920 · ' + (d.generated_at || '');
   buildWallChips();
   applyWall();
   return state.wallItems.length;
+}
+
+/* 横/竖判定：ratio = w/h，<1 是竖图；没有 ratio 的旧条目用宽高兜底。
+   tile() 的竖容器也走这个函数，筛选与容器不会错位。 */
+function orientOf(it) {
+  const r = (it.ratio != null) ? it.ratio : ((it.w && it.h) ? it.w / it.h : 0);
+  return (r > 0 && r < 1) ? 'portrait' : 'landscape';
+}
+
+/* 旧版 S/A/B/C/V 五级（scripts/weibo_wallpaper.py 的口径）：
+   S=16:9且≥2MB / A=16:9 / B=横图≥2MB / C=横图 / V=竖图。
+   前端按 w/h/bytes 现算，不依赖数据里的 grade 字段（历史数据是脏的）。
+   与 tools/cloud_build.py 的 grade_of() 保持同一套规则。 */
+const GRADE_LABEL = {
+  S: 'S·16:9达标', A: 'A·16:9', B: 'B·大横图', C: 'C·横图', V: 'V·竖图',
+};
+function gradeOf(it) {
+  const w = it.w || 0, h = it.h || 0;
+  const r = (it.ratio != null) ? it.ratio : (h ? w / h : 0);
+  const big = (it.bytes || (it.mb ? it.mb * 1048576 : 0)) >= 2097152;
+  const is169 = w > h && h > 0 && Math.abs(r - 1.7778) <= 0.06;
+  if (is169) return big ? 'S' : 'A';
+  if (w > h) return big ? 'B' : 'C';
+  return 'V';
 }
 
 function buildWallChips() {
@@ -401,6 +438,45 @@ function buildWallChips() {
     applyWall();
   }));
 
+  // 横竖筛选：计数按当前账号过滤后的集合算，切账号时数字跟着变
+  const obox = $('#orientChips');
+  obox.innerHTML = '';
+  const scoped = state.wallOwner === 'all'
+    ? state.wallItems
+    : state.wallItems.filter((it) => it.owner === state.wallOwner);
+  let nLand = 0, nPort = 0;
+  for (const it of scoped) (orientOf(it) === 'portrait' ? nPort++ : nLand++);
+  const orients = [
+    ['all', '横竖不限', scoped.length],
+    ['landscape', '横图', nLand],
+    ['portrait', '竖图', nPort],
+  ];
+  for (const [key, label, n] of orients) {
+    obox.appendChild(chip(label, n, state.wallOrient === key, () => {
+      state.wallOrient = key;
+      buildWallChips();
+      applyWall();
+    }));
+  }
+
+  // 分级筛选：S/A/B/C/V，计数同样按当前账号过滤后的集合算
+  const gbox = $('#gradeChips');
+  gbox.innerHTML = '';
+  const gc = { S: 0, A: 0, B: 0, C: 0, V: 0 };
+  for (const it of scoped) gc[gradeOf(it)]++;
+  const grades = [
+    ['all', '全部等级', scoped.length],
+    ['S', 'S 达标', gc.S], ['A', 'A 16:9', gc.A],
+    ['B', 'B 大横图', gc.B], ['C', 'C 横图', gc.C], ['V', 'V 竖图', gc.V],
+  ];
+  for (const [key, label, n] of grades) {
+    gbox.appendChild(chip(label, n, state.wallGrade === key, () => {
+      state.wallGrade = key;
+      buildWallChips();
+      applyWall();
+    }));
+  }
+
   const sbox = $('#sortChips');
   sbox.innerHTML = '';
   const sorts = [['bytes', '体积优先'], ['created', '时间新→旧'], ['ratio', '最接近目标比例']];
@@ -418,7 +494,10 @@ function applyWall() {
     ? state.wallItems.slice()
     : state.wallItems.filter((it) => it.owner === state.wallOwner);
 
-  // 壁纸现在同时收 16:9 横图和 3:2 竖图，「最接近目标比例」= 离这两个比例里更近的那个最近
+  if (state.wallOrient !== 'all') v = v.filter((it) => orientOf(it) === state.wallOrient);
+  if (state.wallGrade !== 'all') v = v.filter((it) => gradeOf(it) === state.wallGrade);
+
+  // 壁纸收录所有横竖比例，「最接近目标比例」= 离 16:9 或 3:2 里更近的那个最近
   const ratioDist = (it) => {
     const r = it.ratio || 0;
     return Math.min(Math.abs(r - 1.7778), Math.abs(r - 0.6667));
@@ -448,13 +527,15 @@ function tile(it, idx, list) {
   el.type = 'button';
   el.className = 'tile';
   el.setAttribute('aria-label', (it.owner || '') + ' ' + it.w + '×' + it.h);
+  const g = gradeOf(it);
   el.innerHTML =
     '<img loading="lazy" decoding="async" src="' + esc(thumbOf(it)) + '" alt="">' +
     '<span class="badge">' + (it.mb ? it.mb + 'MB' : '') + '</span>' +
+    '<span class="grade g-' + g + '" title="' + esc(GRADE_LABEL[g]) + '">' + g + '</span>' +
     '<span class="tile-bg" role="button" tabindex="0" title="设为网页背景">设为背景</span>';
-  // 3:2 竖图必须用竖的容器，否则被 16:9 的 cover 裁成中间一条横缝
-  const ar = (it.w && it.h) ? it.w / it.h : 0;
-  if (ar && ar < 0.85) el.style.aspectRatio = '2 / 3';
+  // 3:2 竖图必须用竖的容器，否则被 16:9 的 cover 裁成中间一条横缝。
+  // 判定与横竖筛选共用 orientOf，避免两处口径不一致。
+  if (orientOf(it) === 'portrait') el.style.aspectRatio = '2 / 3';
   const img = el.querySelector('img');
   img.addEventListener('load', () => revealImg(img), { once: true });
   if (img.complete) revealImg(img);
@@ -509,7 +590,7 @@ function paintLb() {
 
   $('#lbOwner').textContent = it.owner || '';
   $('#lbDim').textContent = it.w + '×' + it.h + (it.mb ? ' · ' + it.mb + 'MB' : '') +
-    ' · ' + (state.lbIndex + 1) + '/' + state.lb.length;
+    ' · ' + GRADE_LABEL[gradeOf(it)] + ' · ' + (state.lbIndex + 1) + '/' + state.lb.length;
 
   const postUrl = (state.lbPost && state.lbPost.post) || it.post || '';
   $('#lbPost').hidden = !postUrl;
@@ -860,7 +941,7 @@ async function startScrape() {
           q: raw,                    // 原句交给 Action 里的大模型解析
           names: parts.names,        // 模型不可用时的兜底参数
           uids: parts.uids,
-          pages: '6', max_new: '0', dry_run: false,
+          pages: '12', max_new: '0', dry_run: false,
         },
       }),
     });
@@ -897,7 +978,7 @@ async function syncIndex() {
   }
   const wallMsg = wallN == null ? '' : ' · 壁纸 ' + wallN + ' 张';
   con.status('抓取完成，索引已更新：动态 ' + (feedN == null ? '?' : feedN) +
-    ' 张图' + wallMsg + '（壁纸只收 16:9 / ≥2MB，不够多半是筛选标准所致）', 'ok');
+    ' 张图' + wallMsg + '（壁纸收所有横竖比例，要求 ≥2MB 且长边 ≥1920）', 'ok');
 }
 
 async function pollLatest(tries) {
@@ -1059,31 +1140,11 @@ const TUNER_LS = 'wg.glass.tuner';
 const ROUNDNESS_BOUNDS = [2, 8, .1];
 
 const TUNER_GROUPS = [
-  // 主面板只保留 GlassKit native 的 4 个倍率（GlassSettings.kt：1 = 默认，0 = 关掉该效果），
-  // 上限 2.5 / 3 / 2 / 2 也照抄 native 的建议滑块范围。
-  { title: '玻璃强度 · native 4 倍率', group: 'material', primary: true, keys: [
-    ['blurScale', '模糊倍率'], ['tintScale', '着色倍率'],
-    ['lensScale', '透镜倍率'], ['glowScale', '高光倍率'],
-  ]},
-  { title: '形状 · 圆角', group: 'geometry', primary: true, keys: [
+  // 玻璃只剩顶部导航一处，材质参数（折射/高光/着色）已经没有承载体，整组撤掉。
+  { title: '几何 · 连续曲率圆角', group: 'geometry', keys: [
     ['radius', '圆角半径'], ['roundness', '连续曲率 n'],
   ]},
-  // ── 以下是引擎原始参数，收进「高级」折叠区，日常不用碰 ──
-  { title: '材质 · 折射', group: 'material', keys: [
-    ['refThickness', '折射带厚度'], ['refFactor', '折射强度'],
-    ['refDispersion', '色散'], ['refFresnelRange', '菲涅尔范围'],
-    ['refFresnelHardness', '菲涅尔硬度'], ['refFresnelFactor', '菲涅尔强度'],
-  ]},
-  { title: '材质 · 高光', group: 'material', keys: [
-    ['glareRange', '高光范围'], ['glareHardness', '高光硬度'],
-    ['glareFactor', '高光强度'], ['glareConvergence', '高光汇聚'],
-    ['glareOppositeFactor', '对侧高光'], ['glareAngle', '高光角度'],
-  ]},
-  { title: '材质 · 基础', group: 'material', keys: [
-    ['blurRadius', '模糊半径'], ['blurEdge', '边缘模糊'],
-    ['tintAlpha', '着色浓度'], ['tint', '着色颜色'],
-  ]},
-  { title: '导航', group: 'nav', keys: [
+  { title: '导航 · 玻璃', group: 'nav', keys: [
     ['height', '导航高度'], ['navEdge', '边缘厚度'],
     ['navRefraction', '折射强度'], ['lensWidth', '透镜宽度'],
     ['lensStrength', '透镜强度'], ['navBlur', '导航模糊'],
@@ -1138,12 +1199,11 @@ async function initTuner() {
   const cfg = tunerInitial;
   box.innerHTML = '';
 
-  const advBox = $('#tunerAdvanced');
   // 拖动中的 localStorage 写入防抖：以前每次 input 都同步写一次，拖滑块每秒几十次
   let pendingSave = null, saveTimer = 0;
 
   for (const grp of TUNER_GROUPS) {
-    const target = grp.primary ? box : advBox;
+    const target = box;
     const h = document.createElement('div');
     h.className = 'tuner-title';
     h.textContent = grp.title;
@@ -1167,13 +1227,11 @@ async function initTuner() {
       const input = row.querySelector('input');
       const out = row.querySelector('output');
       out.textContent = tunerFormat(key, cur, step);
-      // 圆角/曲率的 CSS 只认松手后的最终值：逐帧改 corner-shape 会让浏览器
-      // 反复重新栅格化整块卡片，看起来就是闪。拖动中只让 shader 变。
-      const deferCss = grp.group === 'geometry';
+      // 几何的形与曲率同时喂给 CSS（corner-shape）与 shader，拖动时两者同步变化。
       input.addEventListener('input', () => {
         const v = isBool ? (input.value === '1') : (isColor ? input.value : +input.value);
         out.textContent = tunerFormat(key, input.value, step);
-        glassApi.setGlassConfig(tunerPatch(grp.group, key, v), deferCss ? { deferCss: true } : null);
+        glassApi.setGlassConfig(tunerPatch(grp.group, key, v));
         pendingSave = Object.assign(pendingSave || {}, { [grp.group + '.' + key]: v });
         clearTimeout(saveTimer);
         saveTimer = setTimeout(() => {
@@ -1181,7 +1239,6 @@ async function initTuner() {
           pendingSave = null;
         }, 300);
       });
-      if (deferCss) input.addEventListener('change', () => glassApi.setGlassConfig({}));
       target.appendChild(row);
     }
   }

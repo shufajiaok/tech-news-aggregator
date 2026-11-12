@@ -80,6 +80,19 @@ def probe(r):
     return r["pid"], o
 
 
+def grade_of(w, h, n):
+    """旧版 S/A/B/C/V 五级（scripts/weibo_wallpaper.py 的口径）：
+       S = 16:9 且 >=2MB / A = 16:9 / B = 横图且 >=2MB / C = 横图 / V = 竖图。
+       比例不再作为准入门槛后，grade 只用于前端筛选与角标，不决定收不收。"""
+    is169 = w > h > 0 and abs(w / h - RATIO) <= TOL
+    big = n >= MIN_BYTES
+    if is169:
+        return "S" if big else "A"
+    if w > h:
+        return "B" if big else "C"
+    return "V"
+
+
 def load_old(path):
     if not path.exists():
         return {}, [], {}
@@ -166,7 +179,7 @@ def main():
     ap.add_argument("--uids", default="", help="逗号分隔，只跑这些 uid")
     ap.add_argument("--names", default="", help="逗号分隔，按昵称搜索 uid 后抓")
     ap.add_argument("--q", default="", help="自然语言请求，由大模型解析成 names/uids/pages")
-    ap.add_argument("--pages", type=int, default=6, help="登录态下每号翻几页")
+    ap.add_argument("--pages", type=int, default=12, help="登录态下每号翻几页")
     ap.add_argument("--workers", type=int, default=8)
     ap.add_argument("--max-new", type=int, default=0, help="本次最多追加多少条，0 不限")
     ap.add_argument("--dry-run", action="store_true")
@@ -347,7 +360,8 @@ def main():
     feed_seen = {i["key"] for i in old_feed}
     feed_added = 0
 
-    drop = {"已收录": 0, "无 key": 0, "窄图": 0, "非16:9或3:2": 0, "不足2MB": 0, "长边<1920": 0}
+    drop = {"已收录": 0, "无 key": 0, "窄图": 0, "不足2MB": 0, "长边<1920": 0}
+    extra_ratio = 0  # 非 16:9/3:2 但按新口径照收（主要是 3:4 竖图）
     for pid, r in recs.items():
         key = sina_key(r["large_url"])
         w, h, n = r.get("w", 0), r.get("h", 0), r.get("bytes", 0)
@@ -372,9 +386,10 @@ def main():
             drop["窄图"] += 1
             continue  # 探测失败或错误页
         ratio = w / h
+        # 比例不再是准入门槛：所有横竖比例都收，只留体积 / 长边两个质量门槛。
+        # 之前只认 16:9 和 3:2，把 3:4 这类主流竖图（占竖图绝大多数）全砍了。
         if abs(ratio - RATIO) > TOL and abs(ratio - RATIO_PORTRAIT) > TOL:
-            drop["非16:9或3:2"] += 1
-            continue
+            extra_ratio += 1
         if max(w, h) < MIN_WIDTH:
             drop["长边<1920"] += 1
             continue
@@ -391,7 +406,7 @@ def main():
             "key": key,
             "owner": r["owner"],
             "group": r.get("group", ""),
-            "grade": "S",
+            "grade": grade_of(w, h, n),
             "w": w, "h": h,
             "ratio": round(w / h, 4),
             "mb": round(n / 1048576, 2),
@@ -405,7 +420,8 @@ def main():
     if args.max_new:
         fresh = fresh[:args.max_new]
     log("== 淘汰: " + " | ".join(f"{k} {v}" for k, v in drop.items() if v))
-    log(f"== 新增合格 {len(fresh)} 张（16:9 或 3:2 竖图 / >=2MB / 长边>=1920）")
+    log(f"== 比例放开后额外收录 {extra_ratio} 张（非 16:9/3:2，主要是 3:4 竖图）")
+    log(f"== 新增合格 {len(fresh)} 张（所有横竖比例 / >=2MB / 长边>=1920）")
     for it in fresh[:15]:
         log(f"   + {it['owner']:16s} {it['w']}x{it['h']} {it['mb']:5.2f}MB "
             f"{it['created']} {it['key'][:22]}")

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>微博画廊 · 动态与壁纸</title>
-<meta name="description" content="微博动态流与 16:9 高清壁纸：缩略图走 CDN 代理，原图实时向微博取回。">
+<meta name="description" content="微博动态流与高清壁纸：横竖全收，按 S/A/B/C/V 分级，缩略图走 CDN 代理，原图实时向微博取回。">
 <meta name="theme-color" content="#0a0c10">
 <link rel="stylesheet" href="glass/liquid-glass.css">
 <link rel="stylesheet" href="style.css">
@@ -13,7 +13,6 @@
 
 <!-- 玻璃折射的纹理来源：自托管的压暗壁纸底，按 cover / center top 对齐 -->
 <div class="site-backdrop" aria-hidden="true" data-glass-source="/bg.jpg"></div>
-<canvas class="glass-layer" id="glassLayer" hidden aria-hidden="true"></canvas>
 
 <nav class="nav" id="nav" aria-label="页面切换">
   <span class="nav__lens" aria-hidden="true"></span>
@@ -43,6 +42,8 @@
       <h1>壁纸</h1>
       <p class="sub" id="wallSub">载入中…</p>
       <div class="chips" id="wallChips"></div>
+      <div class="chips dim" id="orientChips"></div>
+      <div class="chips dim" id="gradeChips"></div>
       <div class="chips dim" id="sortChips"></div>
     </header>
     <div class="grid" id="grid"></div>
@@ -78,12 +79,8 @@
       <button class="btn ghost" id="tunerReset" type="button">恢复默认</button>
       <button class="btn ghost" id="tunerCopy" type="button">复制配置</button>
     </div>
-    <p class="con-hint">全局统一控制所有玻璃面与卡片圆角，不按组件单独配置。连续曲率 n=2 是普通圆弧，n=4 起是 GlassKit 的 G2 连续曲率。参数只存这台浏览器。</p>
+    <p class="con-hint">玻璃只剩顶部导航一处：折射、透镜、高光都在导航上。卡片与面板一律不透明内容层，圆角走连续曲率 n=2 圆弧、n=4 起 G2。参数只存这台浏览器。</p>
     <div id="tunerGroups"></div>
-    <details class="tuner-adv" id="tunerAdvancedBox">
-      <summary>高级 · 原始引擎参数<span class="hint">（日常不用碰）</span></summary>
-      <div id="tunerAdvanced"></div>
-    </details>
 
     <div class="tuner-title">背景 · 网页自定义</div>
     <div class="bg-row">

@@ -187,6 +187,262 @@
       "nick": "恋雪Yukii-StarFairy",
       "expect": "StarFairy",
       "uid": "7915611878"
+    },
+    {
+      "label": "夏夏 Moa",
+      "group": "Purelee",
+      "nick": "夏夏Moa_Purelee",
+      "uid": "7914948585"
+    },
+    {
+      "label": "元元 koharu",
+      "group": "Purelee",
+      "nick": "元元koharu_Purelee",
+      "uid": "7941399048"
+    },
+    {
+      "label": "小梨 liz",
+      "group": "Purelee",
+      "nick": "小梨liz_Purelee",
+      "uid": "8005694983"
+    },
+    {
+      "label": "小竹 Takeko",
+      "group": "Purelee",
+      "nick": "小竹Takeko_Purelee",
+      "uid": "8431048055"
+    },
+    {
+      "label": "小葉子 youko",
+      "group": "Purelee",
+      "nick": "小葉子youko_Purelee",
+      "uid": "7730797506"
+    },
+    {
+      "label": "小乖 momo",
+      "group": "Purelee",
+      "nick": "小乖momo_Purelee",
+      "uid": "6884073692"
+    },
+    {
+      "label": "肆玖 yonka",
+      "group": "Fuwafuwa夢",
+      "nick": "肆玖yonka_Fuwafuwa夢",
+      "uid": "8265178592"
+    },
+    {
+      "label": "小可 suko",
+      "group": "Fuwafuwa夢",
+      "nick": "小可suko_Fuwafuwa夢",
+      "uid": "9128940088"
+    },
+    {
+      "label": "麻薯 mochi",
+      "group": "Fuwafuwa夢",
+      "nick": "麻薯mochi_Fuwafuwa夢",
+      "uid": "9080875347"
+    },
+    {
+      "label": "早早 Asaya",
+      "group": "Astoria",
+      "nick": "早早Asaya-Astoria",
+      "uid": "7927931208"
+    },
+    {
+      "label": "栗丸 Rinko",
+      "group": "Astoria",
+      "nick": "栗丸Rinko-Astoria",
+      "uid": "7818986689"
+    },
+    {
+      "label": "饭饭 Amai",
+      "group": "Astoria",
+      "nick": "饭饭Amai-Astoria",
+      "uid": "7871767206"
+    },
+    {
+      "label": "凉子 Ryouko",
+      "group": "Astoria",
+      "nick": "凉子Ryouko-Astoria",
+      "uid": "9031882523"
+    },
+    {
+      "label": "不渝 uyuna",
+      "group": "Diamond%",
+      "nick": "不渝uyuna_Diamond",
+      "uid": "7945811759"
+    },
+    {
+      "label": "琴子 Kotoko",
+      "group": "StarCandy",
+      "nick": "琴子Kotoko-StarCandy",
+      "uid": "7928592755"
+    },
+    {
+      "label": "巧可 Choco",
+      "group": "StarCandy",
+      "nick": "巧可Choco-StarCandy",
+      "uid": "7312611017"
+    },
+    {
+      "label": "鲨鲨 Same",
+      "group": "StarCandy",
+      "nick": "鲨鲨Same-StarCandy",
+      "uid": "5498817895"
+    },
+    {
+      "label": "暮雨 Kureame",
+      "group": "极夜",
+      "nick": "暮雨Kureame_極夜",
+      "uid": "7378764099"
+    },
+    {
+      "label": "派派 Kazuko",
+      "group": "极夜",
+      "nick": "派派Kazuko_極夜",
+      "uid": "2670977181"
+    },
+    {
+      "label": "理砂 Risa",
+      "group": "极夜",
+      "nick": "理砂Risa_極夜",
+      "uid": "7873720421"
+    },
+    {
+      "label": "蛋酱 Tamako",
+      "group": "永昼",
+      "nick": "蛋酱Tamako_永昼",
+      "uid": "5842216088"
+    },
+    {
+      "label": "希子 Kiyoko",
+      "group": "永昼",
+      "nick": "希子Kiyoko_永昼",
+      "uid": "9182643392"
+    },
+    {
+      "label": "璃兔 Rulito",
+      "group": "永昼",
+      "nick": "璃兔Rulito_永昼",
+      "uid": "6220696610"
+    },
+    {
+      "label": "箱箱 Hako",
+      "group": "永昼",
+      "nick": "箱箱Hako_永昼",
+      "uid": "7980385092"
+    },
+    {
+      "label": "MiuMiu",
+      "group": "永昼",
+      "nick": "MiuMiu",
+      "uid": "5813004880"
+    },
+    {
+      "label": "凉時 Uri",
+      "group": "Rêver",
+      "nick": "凉時Uri-Rever",
+      "uid": "9062673829"
+    },
+    {
+      "label": "有紗 Arisa",
+      "group": "Rêver",
+      "nick": "有紗Arisa-Rever",
+      "uid": "8003276443"
+    },
+    {
+      "label": "洋子 Yoko",
+      "group": "Rêver",
+      "nick": "洋子Yoko-Rever",
+      "uid": "7970495342"
+    },
+    {
+      "label": "奶萌 Reno",
+      "group": "Re:Comi",
+      "nick": "奶萌Reno",
+      "uid": "8451654494"
+    },
+    {
+      "label": "团子 Kinana",
+      "group": "Re:Comi",
+      "nick": "团子Kinana",
+      "uid": "5611066884"
+    },
+    {
+      "label": "砂糖 kumiko",
+      "group": "Solstella",
+      "nick": "砂糖kumiko_Solstella",
+      "uid": "7656143693"
+    },
+    {
+      "label": "暄羽 Kirane",
+      "group": "Solstella",
+      "nick": "暄羽Kirane_Solstella",
+      "uid": "9010988923"
+    },
+    {
+      "label": "白月 tsuki",
+      "group": "Solstella",
+      "nick": "白月tsuki_Solstella",
+      "uid": "6975858735"
+    },
+    {
+      "label": "陽花 Ruru",
+      "group": "ReHeart",
+      "nick": "陽花Ruru-ReHeart",
+      "uid": "7914774211"
+    },
+    {
+      "label": "优澪 Yumio",
+      "group": "ReHeart",
+      "nick": "优澪Yumio-ReHeart",
+      "uid": "9136987101"
+    },
+    {
+      "label": "卓卓 Kaori",
+      "group": "ReHeart",
+      "nick": "卓卓Kaori-ReHeart",
+      "uid": "5731132823"
+    },
+    {
+      "label": "黑屿 Kuroi",
+      "group": "ReHeart",
+      "nick": "黑屿Kuroi-ReHeart",
+      "uid": "5805175629"
+    },
+    {
+      "label": "翎梦 Remo",
+      "group": "ReHeart",
+      "nick": "翎梦Remo-ReHeart",
+      "uid": "9167723433"
+    },
+    {
+      "label": "星屑物语 官博",
+      "group": "官博",
+      "nick": "星巡Hoshimeguri",
+      "expect": "Hoshimeguri",
+      "uid": "7940384278"
+    },
+    {
+      "label": "木木 Mameko",
+      "group": "星屑物语",
+      "nick": "木木-Hoshimeguri",
+      "expect": "Hoshimeguri",
+      "uid": "7929470571"
+    },
+    {
+      "label": "鱼小妖 Sakana",
+      "group": "星屑物语",
+      "nick": "鱼小妖-Hoshimeguri",
+      "expect": "Hoshimeguri",
+      "uid": "6804118895"
+    },
+    {
+      "label": "乐乐 Rika",
+      "group": "星屑物语",
+      "nick": "乐乐-Hoshimeguri",
+      "expect": "Hoshimeguri",
+      "uid": "7856233758"
     }
   ]
 }

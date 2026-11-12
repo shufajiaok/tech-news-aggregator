@@ -365,6 +365,27 @@ main {
   pointer-events: none;
 }
 
+/* S/A/B/C/V 分级角标：与左下角体积 badge 分列两角，不遮画面 */
+.tile .grade {
+  position: absolute;
+  top: 7px; left: 7px;
+  padding: 3px 7px;
+  border-radius: 6px;
+  background: rgba(8, 10, 14, .72);
+  border: .5px solid rgba(255, 255, 255, .18);
+  color: #b9bfcc;
+  font-size: 10.5px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  pointer-events: none;
+}
+.tile .grade.g-S { color: #8ee6b4; border-color: rgba(90, 220, 150, .45); }
+.tile .grade.g-A { color: #a8c8ff; border-color: rgba(134, 188, 255, .45); }
+.tile .grade.g-B { color: #ffcf8f; border-color: rgba(255, 190, 110, .42); }
+.tile .grade.g-V { color: #d9b3ff; border-color: rgba(200, 150, 255, .42); }
+
 /* ───────── 无限滚动 / 空态 ───────── */
 .sentinel { height: 1px; }
 .loading-row {
@@ -443,24 +464,11 @@ main {
   to   { opacity: 1; transform: none; }
 }
 
-/* Plan A：canvas 的 studioMain 输出是整块不透明背景（中央 alpha=1，并非只在边缘
-   绘制），只能压在内容底下（z=1）。原先半透明底 + backdrop-filter 透出的是网页
-   背景而不是引擎折射 —— 那块矩形「透视窗」和边缘玻璃是两张皮，所以看着脱节。
-   按 GlassKit 规范：内容层完全不透明，玻璃质感只由 CSS 落在边缘
-   （顶缘高光 0.25 + 左右冷暖色散 + 内阴影），文字对比度最高。 */
-.console.card.glass-gpu {
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, 0) 13%) top / 100% 100% no-repeat,
-    linear-gradient(90deg, rgba(134, 188, 255, .07), rgba(134, 188, 255, 0) 7%, rgba(134, 188, 255, 0) 93%, rgba(255, 150, 184, .06)) left / 100% 100% no-repeat,
-    #0b0e14;
-  -webkit-backdrop-filter: none;
-  backdrop-filter: none;
-  box-shadow:
-    inset 0 1px rgba(255, 255, 255, .25),
-    inset 0 -1px rgba(0, 0, 0, .38),
-    inset 1px 0 rgba(134, 188, 255, .12),
-    inset -1px 0 rgba(255, 150, 184, .10),
-    0 18px 50px rgba(0, 0, 0, .55);
+/* 控制台是内容层，不是玻璃面：不透明实底 + 一条顶缘分隔线，正文对比度最高。
+   玻璃（折射/透镜/高光）全部集中在顶部导航，其余面板一律不透明。 */
+.console.card {
+  background: #0b0e14;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, .55), inset 0 1px rgba(255, 255, 255, .07);
 }
 
 .con-head {
@@ -843,10 +851,10 @@ main {
 .bg-row label.btn { cursor: pointer; }
 #tunerBox #bgState { color: var(--accent); font-weight: 600; }
 
-/* 连续曲率圆角：GlassKit native 用的是普通圆角（RoundedCornerShape），
-   这里保留 superellipse 作为可调项（n=2 就是普通圆弧），因为用户要留 n 滑块。
-   CSS 的形与 shader 的 superellipseCornerSDF(p,r,n) 共用同一个 n。
-   注意：拖动时只让 shader 变，CSS 变量由 app.js 在松手后才写，避免逐帧重栅格化。 */
+/* 连续曲率圆角（G2）：抄 GlassKit 的 com.kyant.shapes「iOS-like shapes /
+   Creating G2 rounded rectangles」，与 shader 的 superellipseCornerSDF(p,r,n)
+   是同一条曲线。n=2 退化为普通圆弧，n=4 起曲率连续。
+   不支持 corner-shape 的浏览器自动保留普通 border-radius，不会破版。 */
 .post, .tile, .card, .console, .ex-item, .lb-bar, .empty, .con-status {
   border-radius: var(--corner-radius, 22px);
   corner-shape: superellipse(var(--corner-n, 4));
@@ -866,7 +874,7 @@ main {
 .picker-panel {
   width: min(560px, 100%); max-height: min(70vh, 560px);
   display: flex; flex-direction: column; gap: 12px; padding: 16px;
-  border-radius: var(--corner-radius, 22px);
+  border-radius: 22px;
   background: #0b0e14;
   box-shadow: 0 24px 70px rgba(0, 0, 0, .55), inset 0 1px rgba(255, 255, 255, .12);
 }

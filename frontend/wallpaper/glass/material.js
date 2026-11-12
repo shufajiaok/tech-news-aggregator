@@ -15,13 +15,7 @@ export const MATERIAL_DEFAULTS = {
   "blurRadius": 1,
   "blurEdge": true,
   "tint": "#000000",
-  "tintAlpha": 0.13,
-  // ── GlassKit native 的 4 个倍率（GlassSettings.kt）──
-  // 1 = 默认效果，0 = 关闭该效果；乘在下面的原始参数上，原始值仍可单独调。
-  "blurScale": 1,
-  "tintScale": 1,
-  "lensScale": 1,
-  "glowScale": 1
+  "tintAlpha": 0.13
 };
 
 // [minimum, maximum, slider step]; JS validation and the tuner share these bounds.
@@ -31,6 +25,4 @@ export const MATERIAL_LIMITS = {
   glareRange:[.1,100,.01], glareHardness:[0,100,.01], glareFactor:[0,120,.01],
   glareConvergence:[0,100,.01], glareOppositeFactor:[0,100,.01], glareAngle:[-180,180,.1],
   blurRadius:[0,12,.1], tintAlpha:[0,1,.01],
-  // 范围照抄 GlassSettings.kt 的建议滑块上限
-  blurScale:[0,2.5,.01], tintScale:[0,3,.01], lensScale:[0,2,.01], glowScale:[0,2,.01],
 };
