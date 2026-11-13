@@ -1,7 +1,61 @@
 {
-  "updated_at": "2026-11-13T07:32:57.087844+00:00",
+  "updated_at": "2026-11-13T20:13:48.592725+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "625b0cc5-f19d-47ab-9e7f-fb90ac2520aa",
+      "title": "华为MatePad Pro首发星闪电竞专链，星闪E1.0技术落地游戏场景",
+      "summary": "华为MatePad Pro 13.2平板推送HarmonyOS 7更新，正式启用星闪（NearLink）电竞专链功能，通过星闪连接技术为游戏提供低时延、高可靠专属网络通道。",
+      "key_points": [
+        "星闪电竞专链基于NearLink E1.0标准，专为游戏低时延优化",
+        "需与支持该功能的华为路由（如凌霄Q7电线版）配对使用",
+        "星闪连接与WiFi绑定，未连WiFi则无法建立星闪链路"
+      ],
+      "full_content": "Intel has dropped a new 20-core Arrow Lake CPU that reaches consumers only through prebuilt systems. Intel Core Ultra 7 260K Quietly Enters the Market as a Newegg-Exclusive Processor, Featuring 20 Cores and 5.4 GHz Turbo Intel is still expanding its Arrow Lake-S lineup with new processors, and this time it launched the Intel Core Ultra 7 260K silently, but it's not a product that you can buy as a standalone product. Moreover, it's not from the Arrow Lake Refresh, aka Core Ultra 200S Plus series, and sits right below the Core Ultra 7 265K, which boasts 20 cores. This [&hellip;] Read full article at https://wccftech.com/intel-core-ultra-7-260k-quietly-launches-as-newegg-exclusive-cpu/",
+      "ai_summary": "发生了什么：华为MatePad Pro 13.2平板于2026年11月获得HarmonyOS 7.0.0.111 SP16版本升级，正式启用‘星闪电竞专链’功能。该功能基于中国主导的NearLink E1.0无线短距通信标准，允许平板与华为凌霄子母路由Q7电线版等设备建立独立于Wi-Fi的专用低时延连接通道，专用于传输游戏控制指令与画面流，显著降低网络卡顿率。技术实现上，星闪链路与Wi-Fi连接强制绑定（即仅当平板连接对应路由器Wi-Fi时才激活星闪），确保安全隔离与资源独占。\n\n为什么重要：这是星闪（NearLink）技术首次在消费级游戏场景实现规模化商用。作为中国自主创新的无线通信标准，星闪旨在弥补蓝牙与Wi-Fi之间的性能空白，具备毫秒级时延、百级并发连接、强抗干扰等特性。此次落地电竞场景，不仅验证了其在高实时性需求下的可靠性，更标志着中国在短距通信领域正摆脱对Bluetooth/Wi-Fi联盟的路径依赖，构建自主可控的物联网底层协议栈。\n\n对行业有什么影响：对手机/平板厂商，星闪提供了差异化卖点，尤其在游戏、音频、IoT等细分市场；对路由器厂商，华为凌霄Q7等产品借此强化‘全场景智慧家庭中枢’定位；对开发者生态，星闪E1.0已支持鼠标、手写笔、手柄等外设，E2.0则聚焦音频，形成清晰演进路线。长远看，随着国际星闪联盟成员（含高通、三星、车企等）增多，该标准有望成为全球短距通信的重要补充，甚至挑战部分蓝牙应用场景。但其推广仍面临生态规模、跨品牌互通性等挑战，华为的终端先行策略是关键破局点。",
+      "category": "Digital",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/026/995.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-11-13T18:44:32+00:00",
+      "created_at": "2026-11-13T20:13:39.802331+00:00"
+    },
+    {
+      "id": "a5bd2c87-306d-4601-95b3-11ee1b6c68ab",
+      "title": "OpenAI推出ChatGPT Wallet支付功能，开启AI智能体购物时代",
+      "summary": "OpenAI联合Visa、万事达、美国运通推出ChatGPT Wallet，允许dot AI智能体代表用户完成在线购物，交易通过令牌化技术保障银行卡信息安全。",
+      "key_points": [
+        "ChatGPT Wallet初期仅限美国Pro用户，支持信用卡一键授权",
+        "每笔交易生成专用支付令牌，智能体不接触真实卡号",
+        "目标是将ChatGPT打造为购物平台，与商家共建AI购物生态"
+      ],
+      "full_content": "A new entity tied to Alice Huang, the Chinese executive at the heart of the scandal that led to the resignation of NVIDIA CEO Jensen Huang, disclosed banned NVIDIA GPUs as part of collateral offered by the holding company for financing in 2025, according to a new report from Bloomberg. The new details share another link with Alice Huang, whose firm Megaspeed has already been probed for supplying banned NVIDIA AI chips to China. Former NVIDIA CEO Jensen Huang's Partner Alice Huang's Holding Company Installed Banned NVIDIA AI Chips In Shanghai Data Center, Says Report While reports suggest that the [&hellip;] Read full article at https://wccftech.com/nvidia-founder-jensen-huangs-alleged-spy-associate-alice-huang-was-deeply-tied-to-another-chinese-firm-with-access-to-banned-nvidia-chips-says-report/",
+      "ai_summary": "发生了什么：OpenAI于2026年11月13日发布ChatGPT Wallet，一项革命性的AI原生支付功能。用户只需一次录入信用卡信息，即可授权其dot AI智能体在电商网站代为搜索商品、比价、下单。所有支付过程通过令牌化（Tokenization）技术实现：支付网络为每笔交易生成唯一、限时、限用途的虚拟卡号，智能体仅操作该令牌，原始银行卡信息全程不暴露。该功能目前仅向美国18岁以上Pro订阅用户开放，初期不收取佣金，核心目标是构建以ChatGPT为中心的AI购物生态。\n\n为什么重要：这标志着AI已从‘信息助手’跃迁至‘行动代理’的关键节点。过去AI只能提供建议，现在可执行购买决策并完成闭环交易。其意义远超支付工具本身——它验证了‘AI智能体作为可信数字分身’的可行性，并为AI经济奠定了基础设施：用户信任（通过银行级安全）、商业闭环（支付+履约）、平台价值（OpenAI从中抽取商家服务费）。此举也倒逼电商平台重构API接口，以适配AI智能体的自动化交互需求。\n\n对行业有什么影响：对电商与品牌方，必须升级网站兼容性（如避免拦截AI爬虫）、开发AI友好的商品结构化数据；对支付网络（Visa等），获得了AI时代的新入口，可借此拓展B2B2C服务；对消费者，购物体验将从‘手动搜索→比价→下单’简化为‘自然语言指令→智能体执行’，但隐私与算法偏见风险亦同步放大。更深远的影响在于，这可能是OpenAI从‘内容平台’转向‘操作系统级平台’的第一步，未来或整合物流、售后、评价等全链条，重塑数字商业基础设施。",
+      "category": "AI",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/026/994.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-11-13T16:50:59+00:00",
+      "created_at": "2026-11-13T20:13:39.802341+00:00"
+    },
+    {
+      "id": "d02904aa-153d-4f28-bc92-6f2b8b3d4511",
+      "title": "Applied Materials发布VeritySEM™20 CD-SEM，赋能高NA EUV光刻检测",
+      "summary": "应用材料推出新一代VeritySEM™20关键尺寸扫描电子显微镜，专为高数值孔径EUV光刻工艺控制设计，支持超薄光刻胶测量与AI驱动的快速recipe创建。",
+      "key_points": [
+        "VeritySEM™20面向High-NA EUV工艺，解决超薄光刻胶测量难题",
+        "集成AI算法实现recipe自动创建与工艺窗口优化",
+        "EPIC Center联合Intel等伙伴加速先进制程技术落地"
+      ],
+      "full_content": "&lt;p&gt;Stephen is Tom&#039;s Hardware&#039;s News Editor with almost a decade of industry experience covering technology, having worked at TechRadar, iMore, and even Apple over the years. He has covered the world of consumer tech from nearly every angle, including supply chain rumors, patents and litigation, and more. When he&#039;s not at work, he loves reading about history and playing video games.&lt;/p&gt;",
+      "ai_summary": "发生了什么：应用材料（Applied Materials）于2026年11月发布VeritySEM™20关键尺寸扫描电子显微镜（CD-SEM），这是其面向3纳米及以下节点高数值孔径（High-NA）EUV光刻工艺推出的下一代计量设备。该系统采用先进电子束（eBeam）技术，可精准测量厚度不足10纳米的新型超薄光刻胶，并通过AI驱动的智能算法，将传统需数小时的手动recipe创建缩短至分钟级，同时支持更严苛的工艺窗口控制。该产品是Applied EPIC Center（全球最大的半导体工艺协同研发平台）首批落地成果之一，已与Intel、KIOXIA等合作伙伴展开联合开发。\n\n为什么重要：High-NA EUV是延续摩尔定律的关键技术，但其工艺控制难度呈指数级上升——光刻胶更薄、图形更精细、套刻误差容忍度更低。VeritySEM™20的推出，标志着半导体量测设备正从‘被动检测’迈向‘主动引导工艺’。它不仅是硬件升级，更是将AI深度嵌入制造闭环：通过实时反馈光刻胶形貌数据，反向优化EUV曝光参数与蚀刻条件，从而提升良率与一致性。这直接关系到台积电、三星等代工厂能否如期量产2nm芯片。\n\n对行业有什么影响：对晶圆厂而言，VeritySEM™20将缩短High-NA EUV产线导入周期，降低试错成本；对设备商而言，它确立了‘AI+量测’新标准，迫使KLA、Hitachi等竞争对手加速AI算法自研；对产业链而言，EPIC Center模式（将芯片厂、设备商、高校共置一地）的成功，预示着未来半导体创新将更依赖跨组织协同，而非单点技术突破。此外，Applied Materials财报显示其2026财年营收达344.5亿美元，同比增长强劲，印证了AI驱动的半导体设备市场正处于爆发前夜。",
+      "category": "Foundry",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/applies-materials-introduces-veritysem-20-adds-intel-to-epic-center-partnerships/",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-11-13T16:00:00+00:00",
+      "created_at": "2026-11-13T20:13:39.802261+00:00"
+    },
     {
       "id": "6368a756-fd54-493e-a4ea-ba5eaa23b5f7",
       "title": "谷歌Gemini 4 Hydrogen发布：最快最便宜的Flash级AI模型，响应提速2.5倍",
@@ -5307,56 +5361,6 @@
       "original_author": "Tom's Hardware",
       "published_at": "2026-10-09T13:43:01+00:00",
       "created_at": "2026-10-10T06:39:19.089331+00:00"
-    },
-    {
-      "id": "fd30b5df-b8aa-4ea2-87de-8e777f73c169",
-      "title": "TSMC与格芯签署20亿美元协议，美国本土化CoWoS硅中介层生产",
-      "summary": "TSMC与GlobalFoundries达成20亿美元制造协议，由格芯在纽约Malta晶圆厂为TSMC CoWoS先进封装生态量产硅中介层，预计2028年上半年启动量产，强化美国AI芯片供应链安全。",
-      "key_points": [
-        "协议金额达20亿美元",
-        "格芯将为TSMC CoWoS提供硅中介层制造服务",
-        "量产计划于2028年上半年在纽约Malta厂启动"
-      ],
-      "full_content": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked for various publications covering a range of topics including smartphones, laptops, audio devices, and PC hardware. Currently, he is engrossed with everything happening in the world of computing with a growing obsession for unique PC cases and RGB cooling fans. Through his articles Kunal strives to demystify complex concepts for a broad audience. Kunal is also a casual gamer as he loves to squad up with his friends in &lt;em&gt;Apex Legends&lt;/em&gt;, and claims to have a fairly good taste in music especially when it comes to heavy metal.&lt;/p&gt;",
-      "ai_summary": "发生了什么：全球代工龙头TSMC与美国晶圆代工厂GlobalFoundries（GF）正式签署一项价值20亿美元的长期制造合作协议。根据协议，GF将在其位于纽约Malta的先进晶圆厂，为TSMC的CoWoS（Chip-on-Wafer-on-Substrate）先进封装生态系统批量生产关键组件——硅中介层（Silicon Interposer），并支持嵌入式深沟槽电容（eDTC）等高阶功能。该合作是美国推动AI芯片供应链本土化、降低对亚洲先进封装依赖的关键一步，也是CoWoS生态首次实现核心互连元件的美国本土化制造。\n\n为什么重要：硅中介层是CoWoS封装中实现GPU、HBM与逻辑芯片高密度、高带宽互连的“神经中枢”，技术门槛极高，长期由TSMC自产或依赖台系封测厂。此次交由GF代工，标志着美国在先进封装核心环节取得实质性突破。此举不仅响应了美国《芯片与科学法案》对本土制造能力的战略要求，更将加速AI服务器芯片（如NVIDIA GB200）在美国的产能爬坡与交付韧性，缓解当前全球CoWoS产能持续紧张的局面。\n\n对行业有什么影响：首先，该合作将重塑先进封装供应链格局，推动更多美系IDM与代工厂（如Intel Foundry、SkyWater）加速布局硅中介层与2.5D/3D封装能力；其次，为其他非美客户（如AMD、Apple、AI初创公司）提供了除TSMC自有产线外的第二来源，增强议价权与供应弹性；最后，它将倒逼设备与材料厂商（如应用材料、Lam Research、JSR）加快适配美国本土产线的工艺套件开发。长远看，这或将加速‘封装即系统’（System-in-Package）时代下地缘化制造集群的形成，中国、欧洲、日本亦将加速跟进类似布局。",
-      "category": "Foundry",
-      "source": "Semiconductor Engineering",
-      "source_url": "https://semiengineering.com/chip-industry-week-in-review-159/",
-      "original_author": "@Semiconductor Engineering",
-      "published_at": "2026-10-09T13:43:01+00:00",
-      "created_at": "2026-10-09T18:38:17.521975+00:00"
-    },
-    {
-      "id": "5f92b2b9-0464-4bd0-99c1-66ded4a9cb47",
-      "title": "&lt;p&gt;Jowi Morales is a wri...",
-      "summary": "&lt;p&gt;Jowi Morales is a writer and journalist covering the tech beat since 2021. However, he’s been interested in tec...",
-      "key_points": [
-        "&lt;p&gt;Jowi Morales is a writer and jo"
-      ],
-      "full_content": "&lt;p&gt;Jowi Morales is a writer and journalist covering the tech beat since 2021. However, he’s been interested in technology far earlier than that. He started discovering desktop computers when his father brought home a Windows 95 PC, but his first real experience working under the hood of the PC was when the old computer’s hard drive was filled to the brim in the year 2000. He deleted the Windows folder to attempt to rectify the situation, which led to his dad buying a new desktop PC. Since then, he learned a lot more about computers, and he’s always been the go-to tech expert for his family and friends.&lt;/p&gt;&lt;p&gt;Jowi primarily uses a Windows workstation and an Android phone, but he also bought into the Apple ecosystem with the 6th-gen iPad, iPhone 14 Pro Max, and the M1 MacBook Air. Today, Jowi covers hardware and software from Redmond and Cupertino, while also looking at the tech industry in general.&lt;/p&gt;&lt;p&gt;Aside from covering technology, Jowi is an avid photographer and writes about automobiles, aviation, and tanks. You can find his bylines at &lt;a href=&quot;https://www.makeuseof.com/author/jowi-morales/&quot;&gt;MakeUseOf&lt;/a&gt;, &lt;a href=&quot;https://www.slashgear.com/author/jowimorales/&quot;&gt;SlashGear&lt;/a&gt;, and, of course, &lt;a href=&quot;https://www.tomshardware.com/author/jowi-morales&quot;&gt;Tom’s Hardware&lt;/a&gt;.&lt;/p&gt;",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n&lt;p&gt;Jowi Morales is a writer and journalist covering the tech beat since 2021. However, he’s been interested in technology far earlier than that. He started discovering desktop computers when his father brought home a Windows 95 PC, but his first real experience working under the hood of the PC was when the old computer’s hard drive was filled to the brim in the year 2000. He deleted the Windows folder to attempt to rectify the situation, which led to his dad buying a new desktop PC. Since ",
-      "category": "AI",
-      "source": "Tom's Hardware",
-      "source_url": "https://www.tomshardware.com/software/cloud-storage/microsoft-365-slashes-storage-capacity-for-shared-accounts-amid-industry-wide-shortages-2tb-limit-to-take-effect-after-april-2027",
-      "original_author": "Tom's Hardware",
-      "published_at": "2026-10-09T12:51:59+00:00",
-      "created_at": "2026-10-10T06:39:19.089435+00:00"
-    },
-    {
-      "id": "f4a1782e-b968-4e55-b876-043dfcba6eba",
-      "title": "&lt;p&gt;Jowi Morales is a wri...",
-      "summary": "&lt;p&gt;Jowi Morales is a writer and journalist covering the tech beat since 2021. However, he’s been interested in tec...",
-      "key_points": [
-        "&lt;p&gt;Jowi Morales is a writer and jo"
-      ],
-      "full_content": "&lt;p&gt;Jowi Morales is a writer and journalist covering the tech beat since 2021. However, he’s been interested in technology far earlier than that. He started discovering desktop computers when his father brought home a Windows 95 PC, but his first real experience working under the hood of the PC was when the old computer’s hard drive was filled to the brim in the year 2000. He deleted the Windows folder to attempt to rectify the situation, which led to his dad buying a new desktop PC. Since then, he learned a lot more about computers, and he’s always been the go-to tech expert for his family and friends.&lt;/p&gt;&lt;p&gt;Jowi primarily uses a Windows workstation and an Android phone, but he also bought into the Apple ecosystem with the 6th-gen iPad, iPhone 14 Pro Max, and the M1 MacBook Air. Today, Jowi covers hardware and software from Redmond and Cupertino, while also looking at the tech industry in general.&lt;/p&gt;&lt;p&gt;Aside from covering technology, Jowi is an avid photographer and writes about automobiles, aviation, and tanks. You can find his bylines at &lt;a href=&quot;https://www.makeuseof.com/author/jowi-morales/&quot;&gt;MakeUseOf&lt;/a&gt;, &lt;a href=&quot;https://www.slashgear.com/author/jowimorales/&quot;&gt;SlashGear&lt;/a&gt;, and, of course, &lt;a href=&quot;https://www.tomshardware.com/author/jowi-morales&quot;&gt;Tom’s Hardware&lt;/a&gt;.&lt;/p&gt;",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n&lt;p&gt;Jowi Morales is a writer and journalist covering the tech beat since 2021. However, he’s been interested in technology far earlier than that. He started discovering desktop computers when his father brought home a Windows 95 PC, but his first real experience working under the hood of the PC was when the old computer’s hard drive was filled to the brim in the year 2000. He deleted the Windows folder to attempt to rectify the situation, which led to his dad buying a new desktop PC. Since ",
-      "category": "AI",
-      "source": "Tom's Hardware",
-      "source_url": "https://www.tomshardware.com/tech-industry/pc-shipments-tumble-over-20-percent-in-3q26-as-chip-shortages-bite-top-three-pc-vendors-ship-11-6-million-fewer-units-year-over-year",
-      "original_author": "Tom's Hardware",
-      "published_at": "2026-10-09T11:10:05+00:00",
-      "created_at": "2026-10-10T06:39:19.089518+00:00"
     }
   ]
 }
