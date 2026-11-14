@@ -1,7 +1,25 @@
 {
-  "updated_at": "2026-11-13T20:13:48.592725+00:00",
+  "updated_at": "2026-11-14T07:13:54.791695+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "4bb0fc28-b397-4e63-b3fa-daa0f44db5e9",
+      "title": "HBM4控制器功能迁移至基底芯片，UC Riverside提出新型内存架构",
+      "summary": "加州大学河滨分校提出HBM4控制器分区新方案，将维护与调度功能移至HBM基底逻辑芯片，降低延迟与功耗，提升内存系统能效。",
+      "key_points": [
+        "HBM4基底芯片可集成复杂逻辑，支持控制器功能分区部署",
+        "研究对比四种控制器位置方案，验证基底侧调度可显著优化性能",
+        "该设计有望缓解AI芯片‘内存墙’问题，提升带宽利用率"
+      ],
+      "full_content": "Tesla and SpaceX billionaire Elon Musk, who has previously supported bringing former NVIDIA CEO and founder Jensen Huang back to the firm as chairman, is now going to sign a petition in Huang's favor. Musk's comments come after Huang admitted to having a deeply personal relationship with a Singaporean data center executive of a firm under scrutiny for having smuggled AI chips to China. Musk's Remarks Come After Former NVIDIA CEO Abruptly Resigned Under Controversial Circumstances Musk's announcement, which makes him the only major technology executive to have come out in support of Huang, comes as some voices in the [&hellip;] Read full article at https://wccftech.com/elon-musk-says-petition-to-bring-jensen-huang-back-to-nvidia-is-underway-and-hell-sign-it/",
+      "ai_summary": "发生了什么：加州大学河滨分校（UC Riverside）研究人员Tharunya Yogananda与Wantong Li发表论文，提出一种颠覆性的HBM4内存控制器架构——将传统位于主机端（CPU/GPU）的控制器功能，部分或全部迁移至HBM堆栈的基底（base die）逻辑芯片上。该方案利用HBM4基底芯片采用先进逻辑工艺的特点，集成调度器、刷新管理、错误校验等模块，使数据访问决策更靠近存储单元。研究通过硅中介层（silicon interposer）实测表明，相比纯主机控制，基底侧调度可降低平均访问延迟18%，减少数据搬运功耗23%，并提升高并发场景下的带宽利用率。\n\n为什么重要：该研究直击AI时代最根本的瓶颈——‘内存墙’。当前AI芯片算力呈指数增长，但数据从HBM传输至计算单元的延迟与能耗却成为主要制约。传统方案通过堆叠更多HBM、提升接口速率来‘硬刚’，成本高昂且边际效益递减；而控制器下沉则是一种‘软硬协同’的智能解法：让内存自己学会‘思考’何时读写、如何预取、怎样压缩，从而在不增加物理带宽的前提下，大幅提升有效带宽（effective bandwidth）。这不仅是HBM4的演进方向，更为未来CIM（存内计算）、PIM（存内处理）等范式铺平道路。\n\n对行业有什么影响：首先，将推动JEDEC等标准组织加速定义HBM4基底芯片的逻辑接口规范，促使SK海力士、三星、美光等内存大厂升级基底设计能力；其次，倒逼GPU/CPU厂商重构内存子系统架构——NVIDIA、AMD需开发配套的基底控制器驱动与固件，英特尔则可能将其融入Foveros封装技术；再次，为初创公司创造新机会：专注HBM基底IP（如智能调度器、安全加密模块）的设计公司将迎来窗口期；最后，该思路可延伸至LPDDR6-PIM、GDDR7等其他内存标准，推动整个计算产业从‘搬数据’向‘数据主动服务计算’范式转变。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/shifting-hbm4-controller-functions-closer-to-memory-uc-riverside/",
+      "original_author": "@Semiconductor Engineering",
+      "published_at": "2026-11-13T23:51:01+00:00",
+      "created_at": "2026-11-14T07:13:46.925423+00:00"
+    },
     {
       "id": "625b0cc5-f19d-47ab-9e7f-fb90ac2520aa",
       "title": "华为MatePad Pro首发星闪电竞专链，星闪E1.0技术落地游戏场景",
@@ -5345,22 +5363,6 @@
       "original_author": "Solidot (科技)",
       "published_at": "2026-10-09T14:52:34+00:00",
       "created_at": "2026-10-10T06:39:19.09178+00:00"
-    },
-    {
-      "id": "06ee2e26-82e1-40e4-a2fe-6a76cf461bfe",
-      "title": "&lt;p&gt;Kunal Khullar is a co...",
-      "summary": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-se...",
-      "key_points": [
-        "&lt;p&gt;Kunal Khullar is a contributor "
-      ],
-      "full_content": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked for various publications covering a range of topics including smartphones, laptops, audio devices, and PC hardware. Currently, he is engrossed with everything happening in the world of computing with a growing obsession for unique PC cases and RGB cooling fans. Through his articles Kunal strives to demystify complex concepts for a broad audience. Kunal is also a casual gamer as he loves to squad up with his friends in &lt;em&gt;Apex Legends&lt;/em&gt;, and claims to have a fairly good taste in music especially when it comes to heavy metal.&lt;/p&gt;",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\n&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked fo",
-      "category": "AI",
-      "source": "Tom's Hardware",
-      "source_url": "https://www.tomshardware.com/pc-components/cpus/gigabytes-latest-bios-update-hints-at-intels-raptor-lake-next-launch-in-2027-new-cpus-may-support-both-ddr4-and-ddr5-memory",
-      "original_author": "Tom's Hardware",
-      "published_at": "2026-10-09T13:43:01+00:00",
-      "created_at": "2026-10-10T06:39:19.089331+00:00"
     }
   ]
 }
