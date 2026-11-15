@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14T18:40:56.526143+00:00",
+  "updated_at": "2026-11-15T07:24:39.405829+00:00",
   "count": 300,
   "news": [
     {
@@ -39,6 +39,24 @@
       "created_at": "2026-11-14T18:40:32.466388+00:00"
     },
     {
+      "id": "fec4eca6-3474-4f16-9d30-bf54f7fd8e01",
+      "title": "黄仁勋辞职震动AI生态，英伟达投资战略或将转向保守",
+      "summary": "英伟达联合创始人兼CEO黄仁勋因个人丑闻辞职，由CFO科莱特·克雷斯接任临时CEO；其长期主导的激进初创企业投资策略面临重大调整，可能对全球AI创业生态、芯片绑定格局及竞争态势产生深远影响。",
+      "key_points": [
+        "黄仁勋因两起婚外情（涉疑似中方人员）辞职，引发行业地震",
+        "英伟达年内已投105轮、超1200亿美元，深度绑定AI基建与开源生态",
+        "继任者克雷斯风格更保守，预计大幅缩减对未盈利AI初创的早期投资"
+      ],
+      "full_content": "&lt;p&gt;Kunal Khullar is a contributor at Tom’s Hardware with extensive writing experience in computing. With a deep-seated passion for technology, Kunal has dedicated years to mastering the intricacies of computer hardware components and staying at the forefront of the latest software developments. His journey in the tech world began with hands-on experience in assembling and troubleshooting PCs and laptops as a kid in the 90s, a skill he has meticulously honed over the years. He has worked for various publications covering a range of topics including smartphones, laptops, audio devices, and PC hardware. Currently, he is engrossed with everything happening in the world of computing with a growing obsession for unique PC cases and RGB cooling fans. Through his articles Kunal strives to demystify complex concepts for a broad audience. Kunal is also a casual gamer as he loves to squad up with his friends in &lt;em&gt;Apex Legends&lt;/em&gt;, and claims to have a fairly good taste in music especially when it comes to heavy metal.&lt;/p&gt;",
+      "ai_summary": "发生了什么：2026年11月，执掌英伟达33年的联合创始人兼CEO黄仁勋突然辞职，直接导火索是其承认与一名被美方怀疑为中方间谍的女性及一名公司高管存在婚外关系。这一事件不仅触发美国国会调查与出口管制审查升级，更导致英伟达整体战略重心发生根本性偏移——其自2020年以来构建的、以资本为纽带的AI创业生态体系面临瓦解风险。数据显示，英伟达今年已参与105轮融资，承诺投资额达1240亿美元，覆盖CoreWeave、Crusoe、Hugging Face、Mistral AI等关键基础设施与模型公司，其中多笔投资在企业尚未产生收入时即完成。\n\n为什么重要：黄仁勋不仅是技术领袖，更是AI产业的“超级连接器”与“信用背书者”。他通过大规模、前置性投资，将大量初创企业深度锚定在NVIDIA GPU硬件与CUDA软件栈之上，形成事实上的垂直整合生态。这种模式极大加速了AI算力基础设施的规模化落地，但也使整个生态高度依赖单一决策者。其离职意味着英伟达从“生态共建者”向“财务审慎型股东”的角色转变，将动摇当前AI创业融资逻辑、估值基准与技术路线选择。\n\n对行业有什么影响：短期看，大量依赖英伟达资金输血的AI基建公司（如专用云服务商、推理平台、开放模型组织）将面临融资断档与估值回调压力；中长期看，谷歌、微软、AMD等竞争对手有望填补投资空白，但受限于CUDA生态壁垒与资本实力，难以完全复制英伟达模式；更深远的影响在于产业格局重构——若英伟达收紧投资，将倒逼开发者加速拥抱异构计算、开源替代方案（如ROCm、MLX）及国产算力生态，客观上加速全球AI芯片市场的多元化进程。同时，这也暴露了过度集中于单一科技巨头的风险，促使各国政府重新评估数字主权与供应链韧性。",
+      "category": "AI",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/027/339.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-11-14T16:32:48+00:00",
+      "created_at": "2026-11-15T07:24:31.555125+00:00"
+    },
+    {
       "id": "1f6cff64-8f90-4967-97ae-2e494b7c2413",
       "title": "美国财政部质疑NVIDIA向壳公司出售AI GPU，强调企业问责",
       "summary": "美国财政部长公开质疑NVIDIA是否明知故犯向中国壳公司转售AI GPU，并强调公司内部人员须为违规行为承担个人责任。",
@@ -55,6 +73,24 @@
       "original_author": "@Tom's Hardware",
       "published_at": "2026-11-14T16:00:00+00:00",
       "created_at": "2026-11-14T18:40:32.466416+00:00"
+    },
+    {
+      "id": "92b900fd-411d-43b3-815d-622970a5cac8",
+      "title": "微软365全球宕机超24小时，暴露数字基础设施单点依赖风险",
+      "summary": "微软Microsoft 365遭遇史上最长服务中断之一，波及日本、英国、美国等数十国政府与企业，暴露出全球关键数字基础设施对少数科技巨头的高度依赖及系统性脆弱性。",
+      "key_points": [
+        "服务中断持续超24小时，Teams、Outlook、Copilot全面瘫痪",
+        "日本超78%企业依赖微软系统，政府、高校、医疗系统均受冲击",
+        "微软归因为内部服务器故障，否认外部攻击，但凸显‘单点失效’系统风险"
+      ],
+      "full_content": "&lt;p&gt;Sayem&#039;s first foray into building PCs dates back to the 90s, where he helped his dad run a small PC business from their garage. After getting tired of installing Windows using a stack of floppy disks, he eventually became obsessed with disassembling video game consoles, without his parents&#039; permission. His love for gaming led him to build his first gaming PC, using an Intel Core i5-2500K that spent most of its life overclocked, alongside a hand-me-down GeForce 9800 GTX. Since then, he&#039;s worked as a professional tech journalist since 2015, writing for Gamespot, IGN, and Dexerto. When Sayem isn&#039;t focused on the latest tech, he can usually be found playing his guitar, or reading old fantasy novels.&lt;/p&gt;",
+      "ai_summary": "发生了什么：2026年11月中旬，微软Microsoft 365全球服务发生严重中断，持续时间超过24小时，成为该公司历史上持续时间最长的宕机事件之一。此次故障导致Teams、Outlook、OneDrive及Copilot等核心应用大面积不可用，影响范围覆盖日本、英国、美国等数十个国家。在日本，内阁官房、Credit Saison信用卡公司、九州大学、早稻田大学等机构系统瘫痪；在英国，国家医疗服务体系（NHS）工作人员被迫回归纸质记录；多地企业员工甚至调侃‘改用传真机’以维持基础通信。\n\n为什么重要：此次事件并非孤立的技术故障，而是全球数字化治理结构性缺陷的集中爆发。它首次以极端方式验证了‘一个微软=国家数字命脉’的现实——当一家私营企业的云服务成为政府行政、金融结算、教育科研与公共卫生的底层支撑时，其稳定性就已超越商业范畴，上升为国家安全与社会运行韧性问题。FAA同期因老旧空管系统崩溃导致万架航班取消，与微软宕机形成双重警示：关键基础设施的现代化滞后与供应商集中化，正构成新型系统性风险。\n\n对行业有什么影响：首先，将强力推动各国加速推进‘数字去中心化’战略，包括扩大本地化云部署、立法要求关键系统冗余备份、扶持区域性替代服务商；其次，刺激企业级IT架构向混合云、多云及边缘计算迁移，降低对单一公有云的路径依赖；第三，倒逼微软、AWS、Google等云厂商投入巨资升级容灾能力、透明化SLA条款，并可能催生第三方‘云健康监测’新赛道。长远看，此次事件或成为全球数字治理范式转型的分水岭，标志着从追求效率优先的‘超级平台时代’，转向强调安全、韧性与主权的‘分布式可信基础设施时代’。",
+      "category": "Digital",
+      "source": "Solidot (科技)",
+      "source_url": "https://www.solidot.org/story?sid=85886",
+      "original_author": "@Solidot (科技)",
+      "published_at": "2026-11-14T16:00:00+00:00",
+      "created_at": "2026-11-15T07:24:31.555152+00:00"
     },
     {
       "id": "a74237eb-5283-416e-9dfa-f41d2bd09fce",
@@ -5343,38 +5379,6 @@
       "original_author": "Ars Technica (Gadgets)",
       "published_at": "2026-10-09T21:51:12+00:00",
       "created_at": "2026-10-10T06:39:19.09147+00:00"
-    },
-    {
-      "id": "322ed222-0548-4b6e-989b-2020850a4deb",
-      "title": "NVIDIA's Vera CPU continues to...",
-      "summary": "NVIDIA's Vera CPU continues to showcase its strong per-core performance in Agentic AI workloads as demoed by Daytona. NV...",
-      "key_points": [
-        "NVIDIA's Vera CPU continues to showcase "
-      ],
-      "full_content": "NVIDIA's Vera CPU continues to showcase its strong per-core performance in Agentic AI workloads as demoed by Daytona. NVIDIA Vera Tackles AMD EPYC In New Agentic AI Benchmarks As The Arm CPU Drives Performance By 8x Over x86 Daytona is a dedicated runtime for AI-generated code execution and agent workflows. The team is sharing its latest benchmarks, which pit the NVIDIA Vera CPU against the AMD EPYC \"Zen 5\" chips to see how Vera's architecture benefits agentic sandboxes, &amp; the results are quite an eye-opener. As we have learned over the years, Agentic AI workflows are fueled by strong CPU [&hellip;] Read full article at https://wccftech.com/nvidia-vera-cpu-brings-2000-sandboxes-online-faster-than-amd-epyc-zen-5-agentic-ai/",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nNVIDIA's Vera CPU continues to showcase its strong per-core performance in Agentic AI workloads as demoed by Daytona. NVIDIA Vera Tackles AMD EPYC In New Agentic AI Benchmarks As The Arm CPU Drives Performance By 8x Over x86 Daytona is a dedicated runtime for AI-generated code execution and agent workflows. The team is sharing its latest benchmarks, which pit the NVIDIA Vera CPU against the AMD EPYC \"Zen 5\" chips to see how Vera's architecture benefits agentic sandboxes, &amp; the results are qu",
-      "category": "GPU",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/nvidia-vera-cpu-brings-2000-sandboxes-online-faster-than-amd-epyc-zen-5-agentic-ai/",
-      "original_author": "WCCFTech",
-      "published_at": "2026-10-09T21:25:11+00:00",
-      "created_at": "2026-10-10T06:39:19.089662+00:00"
-    },
-    {
-      "id": "6f9650fe-4ef5-445d-8d99-40ad30cc1c3c",
-      "title": "SpaceX's announcement of a new...",
-      "summary": "SpaceX's announcement of a new spectrum acquisition on Thursday rocked the US telecom industry, with the so-called Big T...",
-      "key_points": [
-        "SpaceX's announcement of a new spectrum "
-      ],
-      "full_content": "SpaceX's announcement of a new spectrum acquisition on Thursday rocked the US telecom industry, with the so-called Big Three carriers - AT&amp;T, T-Mobile, and Verizon - experiencing something of a pounding in the market, while the tower operators experienced a buying frenzy in anticipation of Starlink Mobile's upcoming buildout. Well, T-Mobile is now hitting back, with its CTO taking pains to note that SpaceX's tiny sliver of the 800 MHz radio frequency pie won't radically alter the industry's prevailing dynamics. T-Mobile's CTO on SpaceX's spectrum purchase: \"Even with this acquisition, Starlink Mobile would have roughly 80 MHz of spectrum, some [&hellip;] Read full article at https://wccftech.com/t-mobile-cto-takes-a-dig-at-spacex-says-elon-musks-acquisition-of-a-tiny-sliver-of-the-800-mhz-band-that-t-mobile-already-dumped-wont-make-a-network/",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nSpaceX's announcement of a new spectrum acquisition on Thursday rocked the US telecom industry, with the so-called Big Three carriers - AT&amp;T, T-Mobile, and Verizon - experiencing something of a pounding in the market, while the tower operators experienced a buying frenzy in anticipation of Starlink Mobile's upcoming buildout. Well, T-Mobile is now hitting back, with its CTO taking pains to note that SpaceX's tiny sliver of the 800 MHz radio frequency pie won't radically alter the industry's ",
-      "category": "AI",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/t-mobile-cto-takes-a-dig-at-spacex-says-elon-musks-acquisition-of-a-tiny-sliver-of-the-800-mhz-band-that-t-mobile-already-dumped-wont-make-a-network/",
-      "original_author": "WCCFTech",
-      "published_at": "2026-10-09T20:57:58+00:00",
-      "created_at": "2026-10-10T06:39:19.089688+00:00"
     }
   ]
 }
