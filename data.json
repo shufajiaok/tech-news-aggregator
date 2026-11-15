@@ -1,7 +1,43 @@
 {
-  "updated_at": "2026-11-15T07:24:39.405829+00:00",
+  "updated_at": "2026-11-15T19:15:34.757739+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "b4eb443f-8689-4855-8e14-54a0a8cb8bb9",
+      "title": "零刻发布ME Pro 358H四盘位NAS：搭载英特尔酷睿Ultra X7处理器",
+      "summary": "零刻推出ME Pro 358H四盘位NAS，搭载英特尔酷睿Ultra X7-358H处理器、32GB LPDDR5X内存、1TB PCIe Gen4 SSD，支持双雷电4与10GbE，售价11499元起。",
+      "key_points": [
+        "采用英特尔酷睿Ultra X7-358H处理器，集成AI加速引擎",
+        "标配32GB LPDDR5X-9600内存与1TB PCIe Gen4 SSD",
+        "提供Windows 11与飞牛fnOS双系统版本，售价11499元起"
+      ],
+      "full_content": "Interim CEO Colette Kress might have taken the reins from Jensen Huang, but the decision to install a new and permanent NVIDIA Chief Executive might not be a unanimous one. In fact, according to the latest report, there’s a growing push by major NVIDIA shareholders to keep the door open for founder Jensen Huang’s potential return, and if that ever happens, the rumored efforts by closed-source artificial intelligence rivals like Anthropic to weaken the open-source AI ecosystem could effectively crumble. Major shareholders urge NVIDIA board to keep Jensen Huang’s return on the table In a joint letter sent to NVIDIA’s [&hellip;] Read full article at https://wccftech.com/potential-jensen-huang-comeback-threatens-rumored-anthropic-push-against-open-source-ai/",
+      "ai_summary": "发生了什么：零刻（Beelink）于2026年11月正式发布ME Pro 358H四盘位NAS，定位高性能个人与小型工作室级存储中心。该设备搭载最新一代英特尔酷睿Ultra X7-358H处理器（16核22线程，最高睿频5.2GHz），内置NPU神经处理单元，可加速本地AI任务如照片分类、视频转录与文档摘要；配备32GB LPDDR5X-9600高速内存与1TB PCIe Gen4 TLC固态硬盘作为系统缓存；提供4个3.5英寸/2.5英寸SATA盘位与2个PCIe Gen5×2 M.2插槽，支持RAID 5/6与ZFS文件系统；I/O接口极为丰富，包括2个雷电4、2个USB-A 10Gbps、1个HDMI 2.1、1个10GbE RJ-45与1个2.5GbE RJ-45；散热采用均热板+涡轮风扇复合方案，确保高负载下稳定运行。\n\n为什么重要：ME Pro 358H的发布，标志着NAS正从‘数据仓库’向‘边缘AI工作站’跃迁。过去NAS受限于ARM或低端x86处理器，仅能胜任基础文件共享与媒体转码；而X7-358H的加入，使其具备运行Stable Diffusion WebUI、Ollama本地大模型、Whisper语音识别等AI应用的能力，真正实现‘数据不出门、AI本地跑’。其10GbE与雷电4接口，更可无缝对接专业工作站与4K视频编辑流程，满足创意工作者对高速、安全、私有化存储的迫切需求。这不仅是硬件升级，更是NAS应用场景的范式转移。\n\n对行业有什么影响：对NAS市场，零刻此举将倒逼群晖（Synology）、威联通（QNAP）等传统巨头加速拥抱高性能x86平台与AI功能，推动NAS操作系统（DSM、QTS）深度集成AI框架；对PC硬件生态，X7处理器在NAS领域的成功应用，将验证其在低功耗、高集成度场景下的优势，为后续更多嵌入式AI设备（如智能摄像头、工业网关）铺平道路；对消费者，意味着个人数据主权意识的觉醒——在云服务隐私争议频发的当下，一台性能强劲、功能完备、价格合理的私有NAS，正成为数字生活的新基础设施。NAS，已不再是极客玩具，而是数字时代的‘家庭服务器’。",
+      "category": "Digital",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/027/461.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-11-15T14:18:28+00:00",
+      "created_at": "2026-11-15T19:15:18.538081+00:00"
+    },
+    {
+      "id": "a37a7a0b-cccf-4cae-bc27-b29745398260",
+      "title": "TCL华星展示蓝色磷光敏化荧光（PSF）OLED技术，功耗降低30%",
+      "summary": "TCL华星在Display Week发布蓝色磷光敏化荧光（PSF）OLED技术，通过敏化剂能量传递提升蓝光效率，智能手机屏实现同亮度下功耗降低30%，峰值亮度超2000nit。",
+      "key_points": [
+        "攻克蓝光磷光化难题，采用敏化剂高效传递三重态激子能量",
+        "智能手机OLED屏功耗降低30%，平板与微相机屏亮度超2000nit",
+        "自主开发MIX混合主体与精细化制程管控技术"
+      ],
+      "full_content": "Windows optimization utility Wintoys has received a major 3.0 update, introducing dedicated controls for Windows 11's AI features, improved performance tweaks, Group Policy synchronization, and long-awaited configuration profiles. The free utility, developed by Bogdan Pătrăucean, allows Windows 10 and Windows 11 users to manage system settings, uninstall applications, optimize performance, and control privacy-related features through a modern WinUI 3 interface. Its latest update, version 3.0.10.0, was detailed by the developer, who also announced it on Reddit. Wintoys 3.0 Can Reclaim Several Gigabytes Of RAM Consumed By Windows AI Services Perhaps the most interesting addition is a new AI components option [&hellip;] Read full article at https://wccftech.com/wintoys-3-0-takes-aim-at-windows-11s-ai-memory-usage-developer-reports-up-to-6gb-ram-savings/",
+      "ai_summary": "发生了什么：在2026年全球显示生态大会上，TCL华星正式发布蓝色磷光敏化荧光（Phosphorescent Sensitized Fluorescence, PSF）OLED技术，成功突破困扰行业多年的蓝光磷光化瓶颈。传统蓝光OLED依赖荧光材料，内量子效率（IQE）上限仅为25%，而磷光材料理论上可达100%；但蓝光磷光材料存在寿命短、效率低等难题。TCL华星创新性地引入敏化剂分子，将三重态激子能量高效传递给蓝光发光体，绕过直接激发磷光材料的路径，既保留高IQE优势，又大幅提升器件稳定性与寿命。该技术已应用于智能手机、平板电脑、微相机三类产品，均达成Lum＞2000nit、BI＞250的严苛验收标准，其中智能手机屏幕在同等亮度下功耗降低30%，显著延长电池续航。\n\n为什么重要：蓝光是RGB三原色中能量最高、最难高效利用的一环，其效率直接决定OLED面板的整体能效与寿命。TCL华星PSF技术的量产，意味着OLED产业终于打通了‘全色域磷光化’的最后一公里，为行业带来三大核心价值：一是节能——手机功耗降低30%，对5G+AI时代日益吃紧的电池续航至关重要；二是亮度——2000nit峰值亮度可完美适配HDR内容与户外强光环境；三是寿命——蓝光器件寿命提升将显著延长整机使用寿命，降低用户更换频率。这不仅是材料科学的胜利，更是中国面板厂商在全球显示技术话语权争夺战中的关键一役。\n\n对行业有什么影响：对OLED供应链，该技术将加速上游材料厂商（如默克、UDC）向PSF体系转型，推动敏化剂、新型蓝光主体等新材料需求爆发；对终端品牌（苹果、三星、小米），意味着可更快导入更高能效、更亮、更耐用的OLED屏幕，提升旗舰机型竞争力；对消费者，将直接享受到更长续航、更绚丽画质、更可靠品质的视觉体验。当‘省电’与‘高亮’不再是一道单选题，OLED技术的普及边界，将被彻底拓宽。",
+      "category": "Semiconductor",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/027/459.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-11-15T12:26:01+00:00",
+      "created_at": "2026-11-15T19:15:18.538094+00:00"
+    },
     {
       "id": "5e5990f0-b3eb-4c13-968d-c2d213df89e4",
       "title": "英特尔启动Linux内核适配Razor Lake与Coral Rapids下一代CPU",
@@ -5347,38 +5383,6 @@
       "original_author": "Semiconductor Digest",
       "published_at": "2026-10-09T22:06:09+00:00",
       "created_at": "2026-10-10T06:39:19.091024+00:00"
-    },
-    {
-      "id": "d7df582f-9f71-4572-abbc-024001c4ff4d",
-      "title": "Ukrainian drone strikes have k...",
-      "summary": "Ukrainian drone strikes have knocked out two of five data centers belonging to the Russian tech giant Yandex. The damage...",
-      "key_points": [
-        "Ukrainian drone strikes have knocked out"
-      ],
-      "full_content": "Ukrainian drone strikes have knocked out two of five data centers belonging to the Russian tech giant Yandex. The damage has left Yandex, known as “Russia’s Google” because it operates the country’s most popular search engine, struggling to maintain its AI chatbot and other online services. The Ukrainian drones struck Yandex data centers in the Sasovo and Kaluga regions of Russia on October 8 and October 9, according to Reuters . Those actions came as a direct response to a Russian drone strike campaign targeting Ukraine’s data centers , which has disrupted mobile phone and Internet services for thousands of Ukrainians since late September. “We continue to respond to Russia’s attacks on Ukraine, and we’re doing so with high precision,” said Ukrainian President Volodymyr Zelenskyy in a post on X. “Another data center was hit as well—our symmetrical response.” Read full article Comments",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nUkrainian drone strikes have knocked out two of five data centers belonging to the Russian tech giant Yandex. The damage has left Yandex, known as “Russia’s Google” because it operates the country’s most popular search engine, struggling to maintain its AI chatbot and other online services. The Ukrainian drones struck Yandex data centers in the Sasovo and Kaluga regions of Russia on October 8 and October 9, according to Reuters . Those actions came as a direct response to a Russian drone strike ",
-      "category": "AI",
-      "source": "Ars Technica (Gadgets)",
-      "source_url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
-      "original_author": "Ars Technica (Gadgets)",
-      "published_at": "2026-10-09T22:04:07+00:00",
-      "created_at": "2026-10-10T06:39:19.091424+00:00"
-    },
-    {
-      "id": "4d8bccd3-e67f-4317-afb8-1a59fcd37f1d",
-      "title": "The Museo de Historia de la Co...",
-      "summary": "The Museo de Historia de la Computación in Spain has unveiled a 1:1 scale visual replica of the famous Cray-1 supercompu...",
-      "key_points": [
-        "The Museo de Historia de la Computación "
-      ],
-      "full_content": "The Museo de Historia de la Computación in Spain has unveiled a 1:1 scale visual replica of the famous Cray-1 supercomputer from 1976. Instead of sourcing expensive, cutting-edge tech to run the system, the creative team powered the project with 30 2012-era Mac Minis. Developed over 18 months, the project serves as a 50th-anniversary tribute to the Cray-1 and Apple's founding. Mac Minis from over a decade ago might not seem like the obvious first choice for building a cluster supercomputer, but when networked together, the developers can orchestrate the 64 active processing cores into a combined 1.3 teraflops of performance in their most recent tests. The museum reportedly achieved 1.5 teraflops previously using all 70 available cores, prior to one node going offline. Benchmarks were obtained using a custom matrix-multiplication Python script. Five PCs are quad-core i7s, and the remaining 25 are dual-core i5 models. Except for two units from 2014, the rest of the array dates to 2012. The replica is a valuable tool for museum-goers to understand the shifts in computer architecture since 1976. The original Cray-1 used vector processing, applying a single instruction to multiple data elements simultaneously, whereas the replica distributes work across independent processors in a parallel cluster. The peak theoretical performance of the original Cray-1 was approximately 160 megaflops. What was originally a purpose-built research machine has been re-created with consumer hardware that's vastly more capable than the machine that inspired it. Read full article Comments",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nThe Museo de Historia de la Computación in Spain has unveiled a 1:1 scale visual replica of the famous Cray-1 supercomputer from 1976. Instead of sourcing expensive, cutting-edge tech to run the system, the creative team powered the project with 30 2012-era Mac Minis. Developed over 18 months, the project serves as a 50th-anniversary tribute to the Cray-1 and Apple's founding. Mac Minis from over a decade ago might not seem like the obvious first choice for building a cluster supercomputer, but ",
-      "category": "AI",
-      "source": "Ars Technica (Gadgets)",
-      "source_url": "https://arstechnica.com/gadgets/2026/10/a-cray-1-supercomputer-replica-from-30-obsolete-mac-minis/",
-      "original_author": "Ars Technica (Gadgets)",
-      "published_at": "2026-10-09T21:51:12+00:00",
-      "created_at": "2026-10-10T06:39:19.09147+00:00"
     }
   ]
 }
