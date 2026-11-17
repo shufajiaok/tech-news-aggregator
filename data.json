@@ -1,7 +1,43 @@
 {
-  "updated_at": "2026-11-16T22:42:09.201183+00:00",
+  "updated_at": "2026-11-17T08:44:03.283759+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "a02fe415-b786-4566-91b6-11972870a34b",
+      "title": "中国AI公司转向工业级模型蒸馏绕过美国GPU出口限制",
+      "summary": "面对美国持续收紧的AI芯片出口管制，中国AI企业正大规模采用模型蒸馏技术，利用OpenAI等美国大模型输出训练本土小模型，该技术已从学术实验进入工业规模化部署阶段。",
+      "key_points": [
+        "超300份中文学术论文、专利及企业文件证实蒸馏技术广泛应用",
+        "蒸馏已成为主流工业部署手段，非仅限于实验室研究",
+        "该策略缓解了高端GPU短缺对大模型训练的制约"
+      ],
+      "full_content": "&lt;p&gt;Stewart has loved PCs since he was a child dabbling with BASIC on a ZX Spectrum 48K and still gets far too excited about building and playing on PCs now. He loves to tune and overclock his computers to smooth and stable clocks and run his favorite games and applications on the best settings without compromising quality and framerates. &lt;/p&gt;&lt;p&gt;A firm believer in “Bang for the buck,” Stewart likes to research the best prices and locate the best coupon codes for computers, components and peripherals. Stewart also needs a spare room to house all his old PC parts and peripherals and maybe needs an intervention to stop him from buying more headphones, mice, and keyboards.&lt;/p&gt;",
+      "ai_summary": "发生了什么：根据WCCFTech报道，一项覆盖300余份中国学术论文、企业披露、政府文件及招聘启事的综合分析显示，中国AI开发者正系统性转向工业级模型蒸馏（Model Distillation）——即用GPT-4、Claude等美国领先大模型的输出作为“教师信号”，训练参数量更小、对算力要求更低的国产“学生模型”。该技术已突破早期实验阶段，在百度文心、阿里通义、月之暗面等头部厂商中实现产线级落地，部分企业甚至构建了专用蒸馏流水线与标注工厂。\n\n为什么重要：此举标志着中美AI技术博弈进入新阶段。美国通过限制H100/B200等高端GPU对华出口，意图延缓中国大模型发展节奏；而蒸馏技术则成为一种低成本、高适配性的“软性突围”路径——它不依赖顶级硬件，却能快速复现前沿模型能力，尤其适用于推理场景。这反映出中国AI产业在受限环境下的强大工程化能力与生态韧性，也说明单纯硬件封锁难以阻断AI能力扩散。\n\n对行业有什么影响：短期看，蒸馏将加速国产中小模型在消费端（如手机助手、客服系统、办公插件）的普及，推动AI应用层百花齐放；中期看，它可能倒逼国内基础模型向“蒸馏友好型”架构演进（如强化logits输出一致性、优化token-level知识迁移），并刺激国产轻量化训练框架（如DeepSpeed-MoE、Colossal-AI Distill）快速发展；长期看，若蒸馏精度持续逼近原模型，或将削弱顶尖大模型的商业护城河，促使全球AI竞争重心从“算力军备竞赛”转向“数据质量、蒸馏算法与领域知识融合”的新维度。同时，这也为欧盟、东南亚等受出口管制影响地区提供了可借鉴的技术替代路径。",
+      "category": "AI",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/chinese-ai-firms-training-llms-us-chip-tightening-openai-models-industrial-scale-distillation/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-11-16T23:00:00+00:00",
+      "created_at": "2026-11-17T08:43:54.993167+00:00"
+    },
+    {
+      "id": "f88d247e-c4f4-4815-9f32-ee9356f9eae0",
+      "title": "苹果罕见签订4-5年DRAM长期供货协议，存储芯片通胀预期升温",
+      "summary": "苹果拟与三星电子签署为期4至5年的DRAM长期供货协议，覆盖iPhone、MacBook等核心产品，此举打破其一贯短期采购惯例，反映AI驱动下存储芯片供应持续趋紧。",
+      "key_points": [
+        "苹果成唯一未与三星签长期协议的大型科技公司，此次签约属历史性破例",
+        "协议设DRAM最低供货量及价格下限，将锁定未来数年较高采购成本",
+        "AI数据中心抢购加剧移动DRAM供应紧张，推动‘芯片通胀’风险上升"
+      ],
+      "full_content": "Modern handheld titles demand massive storage footprints and ultra-fast data transfer rates, and the only way to do that is with microSD Express cards, which offer both the capacity and speeds to make this possible. Sadly, these aren’t the most affordable storage cards out there, but Amazon is giving you a chance to grab up to 40 percent in savings by upgrading to Samsung’s P9 Express microSD Express cards. Available in both the 256GB and 512GB capacities, these start from just $47.99 and will help you overcome those speed limitations. The P9 Express lineup delivers four times faster load speeds and [&hellip;] Read full article at https://wccftech.com/samsung-p9-express-microsdxc-nintendo-switch-2-amazon-deals/",
+      "ai_summary": "发生了什么：IT之家援引韩媒报道，苹果正与三星电子就一份为期4至5年的DRAM长期供货协议进行最终磋商，计划自2027年上半年起执行。该协议将规定年度最低采购量，并设定基于当前市价的价格下限，而非传统浮动定价。此举极为罕见——苹果素以强势买方姿态著称，历来坚持短期合同并频繁压价，此次破例签约，直接动因是AI数据中心建设热潮导致全球DRAM产能加速向HBM等高带宽服务器内存倾斜，智能手机等消费电子所需移动DRAM供应持续吃紧，库存水位降至历史低位。\n\n为什么重要：苹果的采购策略转向，是存储芯片市场供需关系发生根本性逆转的标志性事件。过去十年，存储芯片行业遵循“供过于求→价格下跌→厂商减产→供应收缩→价格上涨”的周期律；而AI驱动的新周期中，“刚性需求→产能抢占→长期锁定→价格刚性”成为新逻辑。苹果作为全球最大消费电子采购方，其行为具有极强风向标意义，将加速行业从“现货交易”向“合约主导”模式转变，重塑整个存储产业链的议价权结构。\n\n对行业有什么影响：最直接的影响是推升“芯片通胀”风险。长期协议价格下限将抑制未来DRAM价格回调空间，传导至终端电子产品（如iPhone、iPad、MacBook）涨价压力增大，可能抑制部分消费者换机意愿，形成需求反噬。对上游厂商而言，三星、SK海力士、美光将获得更稳定的营收预期，加速扩产HBM3/HBM4，但也将面临产能错配风险——若AI投资热度降温，服务器内存过剩可能冲击消费级市场。对中国存储厂商（如长鑫存储）而言，这既是挑战（技术追赶压力加大），也是机遇（在移动DRAM等利基市场获取更多份额）。此外，该趋势或将促使苹果等巨头加快自研内存控制器、探索存算一体等新技术路径，以降低对传统DRAM供应商的依赖。",
+      "category": "Semiconductor",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/028/325.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-11-16T21:08:53+00:00",
+      "created_at": "2026-11-17T08:43:54.993246+00:00"
+    },
     {
       "id": "bd8111b5-28ed-4657-917a-0b7f4a6a0b54",
       "title": "Siemens拟收购Lauterbach，强化硬件-软件协同验证能力",
@@ -19,6 +55,42 @@
       "original_author": "@Semiconductor Digest",
       "published_at": "2026-11-16T20:20:11+00:00",
       "created_at": "2026-11-16T22:42:02.997638+00:00"
+    },
+    {
+      "id": "0ba1cf12-9719-44c7-90ef-6cb49462fdf1",
+      "title": "小米披露具身智能机器人工业与家庭双场景落地进展",
+      "summary": "小米人形机器人已在深圳工厂完成8小时连续作业验证，具备自主纠偏与产线协同能力；家庭场景中，基座机器人在青年公寓实现超30分钟、50+任务长程运行。",
+      "key_points": [
+        "工厂场景：机器人完成中控台侧盖板排序工站8小时满负荷作业",
+        "家庭场景：基于Xiaomi-Robotics-1模型，在公寓完成3房间、50+任务长程验证",
+        "小米机器人业务获2026世界互联网大会‘领先科技奖’"
+      ],
+      "full_content": "While data centers have become a political flashpoint across the United States, Memphis and SpaceX are now showing that the ongoing AI buildout can benefit both local communities and facility operators in what can best be described as a win-win scenario. Property taxes from SpaceX's Colossus 1 data center are all set to fund the $2 million Memphis HOPE initiative Starting today, Memphis is accepting applications under its HOPE initiative, which is a new home repair assistance program funded entirely by the property tax revenue generated from SpaceX’s Colossus 1 facility. The $2 million initiative will provide $25,000 in financial [&hellip;] Read full article at https://wccftech.com/memphis-is-collecting-so-much-revenue-from-spacexs-colossus-1-data-center-that-it-is-now-dishing-out-25000-to-eligible-residents-in-the-vicinity/",
+      "ai_summary": "发生了什么：在2026年APEC工商领导人峰会期间，小米集团首次系统性披露其具身智能机器人业务的商业化落地成果。工业端，小米人形机器人已在深圳自有工厂的中控台侧盖板排序工站，成功完成连续8小时无人干预作业，不仅满足全天生产节拍，更能实时识别工位异常并自主纠偏，与产线MES系统实现深度协同；家庭端，搭载Xiaomi-Robotics-1预训练模型的基座机器人，在小米青年公寓启动“试运营”，成功执行覆盖3个房间、包含物品搬运、语音交互、环境监测等在内的50余项任务，连续运行超30分钟，验证了复杂家庭环境下的长程任务规划与鲁棒性。\n\n为什么重要：小米的进展标志着中国AI硬件从“概念演示”迈向“真实场景闭环”的关键跨越。不同于实验室环境下的单点突破，其机器人直面制造业产线的严苛节拍与家庭场景的不可预测性，解决了具身智能落地的两大核心难题：一是工业级可靠性（长时间无故障、异常响应、系统集成），二是家庭级泛化能力（多房间导航、多任务调度、自然语言理解）。更值得关注的是，小米将机器人深度融入其“人车家全生态”战略，工厂机器人优化智能制造流程，家庭机器人承载AI OS入口，形成“AI能力-硬件载体-商业场景”的完整飞轮。\n\n对行业有什么影响：首先，将加速具身智能产业标准建立。小米公开的8小时作业指标、50+任务清单等，为行业提供了可量化的性能基准，推动从“炫技”向“实用”评价体系转变。其次，刺激AI芯片与传感器厂商针对性优化——如地平线Journey系列、黑芝麻A1000等国产AI芯片将强化机器人视觉-运动控制协同算法支持；激光雷达、IMU等传感器厂商需提升室内低速场景精度与功耗表现。第三，对传统工业自动化与服务机器人格局构成挑战：四大家族（ABB、发那科等）需加快AI赋能，而科沃斯、石头等消费机器人企业则面临从小家电向AI Agent平台升级的压力。长远看，若小米能将工厂验证的可靠性迁移到消费端，或将重塑全球服务机器人市场格局，推动中国从“组装代工”迈向“AI硬件定义者”新阶段。",
+      "category": "AI",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/028/322.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-11-16T20:20:11+00:00",
+      "created_at": "2026-11-17T08:43:54.993254+00:00"
+    },
+    {
+      "id": "c5a8c68e-bb41-4332-992d-b35aa1a510dd",
+      "title": "美国超大规模数据中心年耗电量达68-99TWh，碳排放超2500万吨",
+      "summary": "研究显示，美国403座超大规模数据中心2024-2025年用电量相当于印第安纳州等州全年总用电，54%电力来自化石燃料，碳排放达2570万吨。",
+      "key_points": [
+        "数据中心年用电量占全美1.8%，上限接近印第安纳州总用电",
+        "54%电力源自化石燃料（天然气38%、煤炭15%），四分之一位于高碳电网区",
+        "研究认为实际能耗与排放或已高于报告期数据"
+      ],
+      "full_content": "Two new connector melting cases surfaced on Reddit, both of which involved the 8-pin PCIe power connector. Two 60-Class GPU Owners Witness Melted 8-pin PCIe Power Connector, but Such Cases Still Remain Rare While burning and melting 12/16-pin power connector cases are plenty, we rarely see people complaining about the traditional 8-pin PCIe power connector. The 6- and 8-pin PCIe GPU power connectors remain one of the most robust options even for modern GPUs, but they aren't 100% immune to damage, as we see in two new reports. The first case was shared by Redditor u/JudicialMuscle, who posted a few [&hellip;] Read full article at https://wccftech.com/radeon-rx-9060-xt-owner-finds-a-melted-8-pin-pcie-connector-despite-using-a-300-corsair-psu/",
+      "ai_summary": "发生了什么：发表于《Nature Sustainability》的研究，基于卫星图像对美国403座超大规模数据中心进行为期一年（2024年5月-2025年4月）的能耗建模分析。结果显示，这些数据中心在不同负载下年耗电量介于68-99太瓦时（TWh）之间，用电量上限已逼近印第安纳州、密歇根州等中等规模州的全年总用电量；其用电量占全美总用电量的1.8%，产生约2570万吨二氧化碳当量排放。尤为严峻的是，其电力结构中化石能源占比高达54%（天然气38%、煤炭15%），且有25%的数据中心位于电网碳强度高于全国均值的区域。\n\n为什么重要：该研究首次以实证方式量化了AI基建的能源代价，揭示了“数字繁荣”背后的物理现实。当全社会热议大模型能力跃迁时，其底层支撑——数据中心——正成为能源消耗与碳排放的新增长极。这一发现挑战了“数字技术天然绿色”的迷思，迫使政策制定者、云服务商与AI开发者正视技术发展的外部性。它也解释了为何微软、谷歌等公司近年大力投资可再生能源采购与核能供电，因为单纯依靠绿电证书（RECs）已无法满足指数级增长的物理电力需求。\n\n对行业有什么影响：短期将加速数据中心绿色化转型。微软、亚马逊等巨头将被迫扩大PPA（购电协议）规模，投资风电、光伏及小型核反应堆（如Oklo）；液冷、浸没式冷却等节能技术渗透率将快速提升。中期看，将重塑AI模型研发范式——“能效优先”将成为与“性能优先”同等重要的指标，推动稀疏化训练、模型压缩、低比特量化等绿色AI技术成为标配。长期而言，该研究或成为全球AI治理新支点：各国可能出台数据中心能效强制标准（类似EU Ecodesign），或对高碳AI服务征收“数字碳税”；同时，也将刺激边缘AI、终端AI等分布式计算模式发展，以降低对集中式超算的依赖，形成更可持续的AI发展路径。",
+      "category": "Semiconductor",
+      "source": "Solidot (科技)",
+      "source_url": "https://www.solidot.org/story?sid=85907",
+      "original_author": "@Solidot (科技)",
+      "published_at": "2026-11-16T19:40:35+00:00",
+      "created_at": "2026-11-17T08:43:54.993262+00:00"
     },
     {
       "id": "97d5f653-9763-43e4-b46c-3006ea58c3d7",
@@ -5325,70 +5397,6 @@
       "original_author": "IT之家",
       "published_at": "2026-10-10T06:32:55+00:00",
       "created_at": "2026-10-10T06:39:19.091618+00:00"
-    },
-    {
-      "id": "81223d84-720b-4fad-8a1c-793e3cdb061c",
-      "title": "IT之家 10 月 10 日消息，由 Team Emprei...",
-      "summary": "IT之家 10 月 10 日消息，由 Team Empreintes 开发的休闲游戏《Fireside Feelings》目前正在 Steam 平台进行限时免费领取“喜加一”活动， 本作在国区定价为 33 元，玩家可以在北京时间 10 月 ...",
-      "key_points": [
-        "IT之家 10 月 10 日消息，由 Team Empreintes 开发的休闲"
-      ],
-      "full_content": "IT之家 10 月 10 日消息，由 Team Empreintes 开发的休闲游戏《Fireside Feelings》目前正在 Steam 平台进行限时免费领取“喜加一”活动， 本作在国区定价为 33 元，玩家可以在北京时间 10 月 13 日前登录 Steam 账号领取 ，IT之家附游戏商品页（ https://store.steampowered.com/app/2990600/Fireside_Feelings/ ）。 据官方介绍，玩家可以在《Fireside Feelings》化身可爱动物，置身于宁静的赛博营地，在会说话的营火“Spark”引导下，与来自世界各地的真实玩家展开温馨的文字交流。 游戏提供了多种对话主题，涵盖童年梦想、友情以及饮食偏好等内容。玩家可以根据当天的心情自由选择话题，也能随时暂停或退出对话。完成交流后，玩家还可获得徽章成就，并解锁新的场景与装饰品，用于布置自己的营地。 玩家可以按照自己的节奏阅读他人分享的故事，并讲述自己的经历与想法，在兼顾隐私的同时，享受充满人情味的治愈时光。 游戏图赏：",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nIT之家 10 月 10 日消息，由 Team Empreintes 开发的休闲游戏《Fireside Feelings》目前正在 Steam 平台进行限时免费领取“喜加一”活动， 本作在国区定价为 33 元，玩家可以在北京时间 10 月 13 日前登录 Steam 账号领取 ，IT之家附游戏商品页（ https://store.steampowered.com/app/2990600/Fireside_Feelings/ ）。 据官方介绍，玩家可以在《Fireside Feelings》化身可爱动物，置身于宁静的赛博营地，在会说话的营火“Spark”引导下，与来自世界各地的真实玩家展开温馨的文字交流。 游戏提供了多种对话主题，涵盖童年梦想、友情以及饮食偏好等内容。玩家可以根据当天的心情自由选择话题，也能随时暂停或退出对话。完成交流后，玩家还可获得徽章成就，并解锁新的场景与装饰品，用于布置自己的营地。 玩家可以按照自己的节奏阅读他人分享的故事，并讲述自己的经历与想法，在兼顾隐私的同时，享受充满人情味的治愈时光。 游戏图赏：",
-      "category": "Digital",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/011/350.htm",
-      "original_author": "IT之家",
-      "published_at": "2026-10-10T06:32:14+00:00",
-      "created_at": "2026-10-10T06:39:19.091648+00:00"
-    },
-    {
-      "id": "e1ec8c88-e84b-4bee-95a0-30826166b58b",
-      "title": "IT之家 10 月 10 日消息，Thermalright（...",
-      "summary": "IT之家 10 月 10 日消息，Thermalright（利民 / 索摩乐）近日在电商平台上架了 PC 配件 GPU BRACKET LCD 4.58。这一产品整合了显卡支架与 LCD 副屏，适用于侧透机箱环境。 GPU BRACKET ...",
-      "key_points": [
-        "IT之家 10 月 10 日消息，Thermalright（利民 / 索摩乐）近"
-      ],
-      "full_content": "IT之家 10 月 10 日消息，Thermalright（利民 / 索摩乐）近日在电商平台上架了 PC 配件 GPU BRACKET LCD 4.58。这一产品整合了显卡支架与 LCD 副屏，适用于侧透机箱环境。 GPU BRACKET LCD 4.58 主体为铝合金材质，底部采用磁吸固定； 支撑高度可在 20~160mm 区间内调节 ，并以手拧螺丝固定； 采用 4.56\" 320×960 500nits 液晶面板 ，覆盖 2.5D 弧面玻璃。 IT之家了解到，这款产品售价 249 元， 享受 1 年质保 。",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nIT之家 10 月 10 日消息，Thermalright（利民 / 索摩乐）近日在电商平台上架了 PC 配件 GPU BRACKET LCD 4.58。这一产品整合了显卡支架与 LCD 副屏，适用于侧透机箱环境。 GPU BRACKET LCD 4.58 主体为铝合金材质，底部采用磁吸固定； 支撑高度可在 20~160mm 区间内调节 ，并以手拧螺丝固定； 采用 4.56\" 320×960 500nits 液晶面板 ，覆盖 2.5D 弧面玻璃。 IT之家了解到，这款产品售价 249 元， 享受 1 年质保 。",
-      "category": "GPU",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/011/349.htm",
-      "original_author": "IT之家",
-      "published_at": "2026-10-10T06:29:13+00:00",
-      "created_at": "2026-10-10T06:39:19.091671+00:00"
-    },
-    {
-      "id": "73c55abd-f53e-4520-ace3-3a247b166c90",
-      "title": "IT之家 10 月 10 日消息，Cloudflare 昨日...",
-      "summary": "IT之家 10 月 10 日消息，Cloudflare 昨日（10 月 9 日）发布公告， 宣布推出开放权重决策模型 Clef-omni，支持单次 API 调用处理文本、图像、音频和视频等。 定位方面， 该模型在此前 Clef 系列模型基础...",
-      "key_points": [
-        "IT之家 10 月 10 日消息，Cloudflare 昨日（10 月 9 日）"
-      ],
-      "full_content": "IT之家 10 月 10 日消息，Cloudflare 昨日（10 月 9 日）发布公告， 宣布推出开放权重决策模型 Clef-omni，支持单次 API 调用处理文本、图像、音频和视频等。 定位方面， 该模型在此前 Clef 系列模型基础上 ，扩展支持多模态输入，模型权重已在 Hugging Face 开放。 多模态支持方面，此前的 Clef 支持文本、图像及从视频中抽取的连续画面（把视频按时间抽取成一张张静态图像，再把这些图像按顺序作为输入交给模型），而 Clef-omni 新增音频和完整视频输入，支持 wav、mp3、mp4 和 webm 格式。 Cloudflare 称，开发者无需另行搭建语音转写及音视频拆分流程，可用一个模型处理多种输入。 Cloudflare 称，Clef-omni 基于 Qwen3-Omni-30B-A3B-Instruct 构建，并保留其主要理解能力。模型面向结构化决策任务，不生成常规文本输出。公司公布的测试中，纯文本请求中位响应时间约 130 毫秒，图像约 150 毫秒；带声音的 21 秒视频约 1.5 秒完成评分。 基准测试 Clef-omni Clef Clef-flash Jev BFCL：精确匹配率 98.2 98.47 98.76 95.75 ToolRet：nDCG@10 66.6 69.19 66.43 65.28 API-Bank：准确率 92.7 91.93 93.11 88.19 家用电器：精确匹配率 69.3 82.95 97.73 52.27 When2Call：准确率 63.3 72.37 65.58 80.97 BANKING77：宏平均 F1 94.8 94.20 90.93 79.74 CLINC150+OOS：宏平均 F1 97.7 97.43 66.77 89.27 BRIGHT：nDCG@10 42.0 45.91 39.26 47.52 Amazon ESCI：宏平均 F1 57.8 57.48 57.39 55.21 PhishNChips：准确率 73.2 79.60 75.05 62.55 Cloudflare 还将 Clef-flash 每百万输入 Token 价格从 0.09 美元 （IT之家注：现汇率约合 0.6 元人民币） 降至 0.038 美元 （现汇率约合 0.25 元人民币） ，降幅约 58%。Clef-flash 托管版上下文窗口同步从 64k 缩至 24k。 模型 输入价格 输出价格 Clef-flash 每百万 Token 0.038 美元 （现汇率约合 0.25 元人民币） 每百万 Token 0.12 美元 （现汇率约合 0.8 元人民币） Clef 每百万 Token 0.24 美元 （现汇率约合 1.6 元人民币） 每百万 Token 0.72 美元 （现汇率约合 4.8 元人民币） Clef-omni 每百万 Token 0.15 美元 （现汇率约合 1 元人民币） 每百万 Token 0.60 美元 （现汇率约合 4 元人民币）",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nIT之家 10 月 10 日消息，Cloudflare 昨日（10 月 9 日）发布公告， 宣布推出开放权重决策模型 Clef-omni，支持单次 API 调用处理文本、图像、音频和视频等。 定位方面， 该模型在此前 Clef 系列模型基础上 ，扩展支持多模态输入，模型权重已在 Hugging Face 开放。 多模态支持方面，此前的 Clef 支持文本、图像及从视频中抽取的连续画面（把视频按时间抽取成一张张静态图像，再把这些图像按顺序作为输入交给模型），而 Clef-omni 新增音频和完整视频输入，支持 wav、mp3、mp4 和 webm 格式。 Cloudflare 称，开发者无需另行搭建语音转写及音视频拆分流程，可用一个模型处理多种输入。 Cloudflare 称，Clef-omni 基于 Qwen3-Omni-30B-A3B-Instruct 构建，并保留其主要理解能力。模型面向结构化决策任务，不生成常规文本输出。公司公布的测试中，纯文本请求中位响应时间约 130 毫秒，图像约 150 毫秒；带声音的 21 秒视频约 1.5 秒完成评分。 基准测试 Clef-omni Cl",
-      "category": "Semiconductor",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/011/347.htm",
-      "original_author": "IT之家",
-      "published_at": "2026-10-10T06:26:25+00:00",
-      "created_at": "2026-10-10T06:39:19.091725+00:00"
-    },
-    {
-      "id": "ae53abae-4100-44fb-9a9f-d4c9871861c3",
-      "title": "IT之家 10 月 10 日消息，据证券时报记者从苹果供应链...",
-      "summary": "IT之家 10 月 10 日消息，据证券时报记者从苹果供应链方面获悉，苹果公司结构性调整 2026 年秋季手机新品订单量。 IT之家附相关调整如下： 对 iPhone Duo 加单 30%，但总量仍未超过 1000 万台。 对 iPhone...",
-      "key_points": [
-        "IT之家 10 月 10 日消息，据证券时报记者从苹果供应链方面获悉，苹果公司结"
-      ],
-      "full_content": "IT之家 10 月 10 日消息，据证券时报记者从苹果供应链方面获悉，苹果公司结构性调整 2026 年秋季手机新品订单量。 IT之家附相关调整如下： 对 iPhone Duo 加单 30%，但总量仍未超过 1000 万台。 对 iPhone 18 Pro 砍单 10%—15%，同时对 iPhone 18 Pro Max 加单 10%—15%， iPhone 18 Pro 系列总订单量未变 。 苹果供应链人士表示，“ 这意味着销量在往更高价值产品倾斜 ，所以整体利好苹果供应链公司业绩。” 延伸阅读 iPhone Duo 是苹果首款折叠屏手机，于北京时间 2026 年 9 月 10 日凌晨举行的苹果秋季特别活动上发布，采用横向书本式内折设计，配备 5.4 英寸外屏和 7.6 英寸内屏（苹果迄今最大的 iPhone 显示屏），机身采用钛金属材质，支持 IP68 防尘防水。该机搭载 A20 Pro 芯片与苹果自研 C2 基带，全系仅支持 eSIM；256GB 版本售价 15999 元，顶配 2TB 版本售价 26499 元，于 10 月 16 日晚 8 点开启预购、10 月 23 日正式发售。 与 iPhone Duo 同场发布的还有 iPhone 18 Pro 和 iPhone 18 Pro Max，这是苹果首次在秋季发布会仅推出 Pro 系列机型。两款机型均首发台积电 2 纳米工艺的 A20 Pro 芯片，配备可变光圈 4800 万像素主摄，Pro 最长视频播放 24 小时、Pro Max 最长 30 小时。售价方面，iPhone 18 Pro 256GB 版 9999 元起，iPhone 18 Pro Max 256GB 版 10999 元起。 报道中提到的“加单”“砍单”，是指品牌方对供应链厂商下达的订单量进行上调或下调。此次调整中 iPhone 18 Pro 的订单减少、Pro Max 的订单增加，二者此消彼长。",
-      "ai_summary": "（⚠️ AI总结未生成，以下为规则兜底）\n\nIT之家 10 月 10 日消息，据证券时报记者从苹果供应链方面获悉，苹果公司结构性调整 2026 年秋季手机新品订单量。 IT之家附相关调整如下： 对 iPhone Duo 加单 30%，但总量仍未超过 1000 万台。 对 iPhone 18 Pro 砍单 10%—15%，同时对 iPhone 18 Pro Max 加单 10%—15%， iPhone 18 Pro 系列总订单量未变 。 苹果供应链人士表示，“ 这意味着销量在往更高价值产品倾斜 ，所以整体利好苹果供应链公司业绩。” 延伸阅读 iPhone Duo 是苹果首款折叠屏手机，于北京时间 2026 年 9 月 10 日凌晨举行的苹果秋季特别活动上发布，采用横向书本式内折设计，配备 5.4 英寸外屏和 7.6 英寸内屏（苹果迄今最大的 iPhone 显示屏），机身采用钛金属材质，支持 IP68 防尘防水。该机搭载 A20 Pro 芯片与苹果自研 C2 基带，全系仅支持 eSIM；256GB 版本售价 15999 元，顶配 2TB 版本售价 26499 元，于 10 月 16 日晚 8 点开启预购、10 月 23 日正式发售。",
-      "category": "Foundry",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/011/346.htm",
-      "original_author": "IT之家",
-      "published_at": "2026-10-10T06:24:49+00:00",
-      "created_at": "2026-10-10T06:39:19.091759+00:00"
     }
   ]
 }
