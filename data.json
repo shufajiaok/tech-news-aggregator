@@ -1,7 +1,61 @@
 {
-  "updated_at": "2026-11-18T08:06:41.470585+00:00",
+  "updated_at": "2026-11-18T21:03:25.090180+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "f9d7b66a-6c4d-415f-b340-8b4acdc9fb43",
+      "title": "JEDEC发布DDR6内存标准预览：起始速率12.8 GT/s，支持UDIMM/RDIMM/CAMM",
+      "summary": "JEDEC正式公布DDR6内存标准预览版，起始数据速率达12.8 GT/s（14,400 MT/s），采用全新架构，兼容UDIMM、RDIMM及CAMM封装形态，预计2027年后量产。",
+      "key_points": [
+        "DDR6起始速率12.8 GT/s，最高可达14,400 MT/s",
+        "采用全新架构设计，非DDR5简单升级",
+        "支持UDIMM、RDIMM与CAMM三种封装形态"
+      ],
+      "full_content": "JEDEC has just unveiled the preview of its next-generation DDR6 memory standard, which will offer up to 14,400 MT/s speeds. DDR6 Memory Will Scale From UDIMMs, RDIMMs and CAMM Design, Bringing 12.8 GT/s Out-of-the-Box Speeds &amp; Efficiency Improvements The first specifications of DDR5 memory were announced by JEDEC back in 2020. At the start, the technology was built to start at 4800 MT/s speeds and scale higher as it progressed. Now, six years after its unveiling, JEDEC is unveiling the next major memory standard: DDR6. The company states that DDR6 is currently in development and introduces a brand new architecture [&hellip;] Read full article at https://wccftech.com/jedec-unveils-next-gen-ddr6-memory/",
+      "ai_summary": "发生了什么：JEDEC于2026年11月18日正式发布DDR6内存标准的预览版规范，标志着继DDR5之后下一代主流内存技术的诞生。DDR6并非DDR5的线性提速，而是采用全新架构设计，起始数据传输速率为12.8 GT/s（对应14,400 MT/s），较DDR5-4800提升三倍。其关键创新在于支持多种封装形态：既向下兼容传统的UDIMM（桌面）、RDIMM（服务器），也适配新兴的CAMM（Compute Agnostic Memory Module）模块化设计，后者可实现更高密度与更灵活的内存配置。JEDEC强调，DDR6目前处于开发阶段，量产时间预计在2027年之后，将首先应用于高性能计算与AI服务器领域。\n\n为什么重要：内存带宽已成为AI与HPC应用的核心瓶颈，DDR5的带宽天花板（理论峰值约85 GB/s per channel）已难以满足GB200、Trainium2等新一代AI加速器的需求。DDR6的14,400 MT/s速率，配合多通道设计，可为CPU/GPU提供远超当前的内存吞吐能力，有效缓解‘内存墙’问题。更重要的是，其对CAMM的支持，顺应了计算与内存解耦（Memory-Centric Computing）的趋势——CAMM允许内存模块独立于主板升级，大幅提升系统灵活性与生命周期，这对需要频繁迭代内存配置的AI训练集群至关重要。\n\n对行业有什么影响：第一，将加速内存产业链升级，SK海力士、三星、美光等厂商需投入巨资建设DDR6产线，HBM与DDR6将形成‘高带宽—高容量’互补格局；第二，推动主板与服务器设计变革，CAMM接口将挑战传统DIMM插槽地位，催生新一代模块化服务器架构；第三，对PC与笔记本市场影响深远：DDR6将显著提升大型AI本地化应用（如Stable Diffusion、Llama本地运行）的响应速度与流畅度；第四，中国内存厂商（如长鑫存储）面临重大机遇与挑战——若能在DDR6标准落地初期实现技术追赶，有望打破高端内存长期被韩美垄断的局面，但需克服专利壁垒与生态适配难题。",
+      "category": "Semiconductor",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/jedec-unveils-next-gen-ddr6-memory/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-11-18T18:50:33+00:00",
+      "created_at": "2026-11-18T21:03:17.71889+00:00"
+    },
+    {
+      "id": "829a80f7-0e33-4872-93d6-8123a424aeaa",
+      "title": "华为WATCH Air真机曝光：钛金属轻薄方表，续航5天，预装HarmonyOS",
+      "summary": "华为WATCH Air智能手表真机谍照曝光，采用方形钛金属机身、超轻薄弧面设计，配备旋转表冠与多功能键，内置高硅叠片异形电池，标称续航达5天，预装HarmonyOS系统。",
+      "key_points": [
+        "方形设计+钛金属表体，主打极致轻薄与高端质感",
+        "搭载高硅叠片异形电池，官方标称续航5天",
+        "预装HarmonyOS，支持AI通话降噪、地震预警同步等新特性"
+      ],
+      "full_content": "&lt;p&gt;Oliver Haslam has written about technology of all shapes and sizes for over 15 years, both online and in print.&lt;/p&gt;&lt;p&gt;Having grown up using PCs and spending far too much money on graphics cards and fancy RAM, Oliver switched to the Mac with a G5 iMac. Nowadays, he uses both macOS and Windows depending on the job at hand. Oliver&amp;#39;s previous career in I.T. service management means he&amp;#39;s uniquely placed to understand the complexities of keeping a modern service online. Not that it stops him from getting grumpy when something stops working.&lt;/p&gt;&lt;p&gt;Passionate about mobile apps and the developer ecosystem, Oliver is always keen to try out the hottest new things to hit the various app stores.&lt;/p&gt;",
+      "ai_summary": "发生了什么：华为尚未正式发布的WATCH Air智能手表真机照片于2026年11月18日密集曝光，确认其采用方形表盘、圆润弧面机身与钛金属一体化结构，提供运动硅胶与金属米兰尼斯两种表带选择，并配备侧边旋转表冠及多功能按键。核心亮点在于其创新的高硅叠片异形电池设计——通过非规则形状堆叠高能量密度硅基材料，在有限空间内实现5天典型续航，显著优于同尺寸竞品。该表已确认预装鸿蒙操作系统，具备AI通话降噪、手机地震预警消息同步等HarmonyOS 7新特性。\n\n为什么重要：WATCH Air并非简单迭代，而是华为在可穿戴设备形态与能源技术上的双重突破。方形表盘契合主流审美与交互逻辑，钛金属材质兼顾强度与轻量化（预计整机重量<35g），而高硅叠片电池代表了华为在微型储能领域的工程积累——该技术此前已应用于Mate系列旗舰手机，现下放至手表，意味着其能量密度与安全性已达到消费级量产标准。此举也印证华为正将鸿蒙生态的AI能力（如小艺语音、健康算法）深度融入硬件设计，推动可穿戴设备从‘功能延伸’向‘独立智能终端’演进。\n\n对行业有什么影响：首先，将加剧高端智能手表市场的技术军备竞赛，苹果、三星等厂商或加速推进钛合金+硅基电池组合方案；其次，高硅叠片电池的成熟应用有望向TWS耳机、AR眼镜等超小型电子设备扩散，缓解长期存在的续航焦虑；第三，华为通过WATCH Air进一步夯实‘1+8+N’全场景战略中可穿戴入口的地位，其与Mate 90系列、WATCH 5系列形成的HarmonyOS 7多设备协同矩阵，将强化用户粘性与生态壁垒；最后，该产品若如期上市，将成为检验鸿蒙Next（纯血鸿蒙）在轻量设备上落地效果的重要样本，对国内操作系统自主化进程具有标志性意义。",
+      "category": "Digital",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/029/127.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-11-18T15:30:00+00:00",
+      "created_at": "2026-11-18T21:03:17.718853+00:00"
+    },
+    {
+      "id": "e31af15b-39fb-48bd-a2fe-fc84aee1fc60",
+      "title": "腾讯财报披露AI基建投入进展：2028年成本压力有望缓解，国产芯片替代提速",
+      "summary": "腾讯2026年Q3财报显示，AI资本开支聚焦基础设施建设；管理层预计2028年设备采购价下降、计算效率提升将缓解经营压力，并指出芯片限制正加速国内供应链与国产AI芯片替代进程。",
+      "key_points": [
+        "AI基建投入非一次性消耗，建成后可持续支撑模型训练与Token生成",
+        "预计2028年同类设备采购价明显下降，训练推理效率持续提升",
+        "芯片限制短期压制算力供给，长期推动国产芯片与供应链加速建设"
+      ],
+      "full_content": "&lt;p&gt;Jake Roach has been bending pins and busting solder joints since the mid-2000s. From trying to run scratched CDs of &lt;em&gt;Delta Force &lt;/em&gt;and &lt;em&gt;Unreal Tournament &lt;/em&gt;to spitting out virtual machines on a Threadripper, Jake has been on the hunt for the latest hardware and highest performance for decades. That eventually spun up a career, with Jake serving as Lead Reporter at Digital Trends, as well as contributing to outlets like XDA, PC Invasion, Business Insider, and WIRED. At Tom’s Hardware, Jake is focused on consumer and workstation CPUs. Outside working hours, you’ll find him knee-deep in the latest roguelite taking over Steam, spending way too much money on &lt;em&gt;Magic: The Gathering, &lt;/em&gt;or forcing his lazy corgi onto walks.&lt;/p&gt;",
+      "ai_summary": "发生了什么：腾讯于2026年11月18日发布第三季度财报，披露其AI相关资本开支主要用于自建AI基础设施，包括GPU集群、网络与存储系统。管理层明确表示，此类投入属长期资产，建成后可反复用于模型训练与Token生成，而非一次性消耗。同时，公司预计到2028年，随着设备规模化采购与技术迭代，同类AI硬件采购价格将显著下降；更重要的是，模型训练与推理的计算效率将持续提升，同等算力下可处理更多任务。然而，当前受国际芯片出口管制影响，腾讯实际可用算力减少，混元Hy4后续模型训练周期被迫延长。\n\n为什么重要：腾讯作为中国AI应用层领军企业，其基建策略具有行业风向标意义。其强调‘基建复用性’与‘效率提升’，表明AI投入正从粗放式扩张转向精细化运营；而将2028年设为成本拐点，反映出对技术演进节奏（如国产芯片成熟度、存算一体架构落地）的审慎乐观预期。尤为关键的是，腾讯首次在财报沟通中明确指出芯片限制的‘双刃剑效应’——短期承压的同时，正倒逼其与国内芯片厂商（如寒武纪、壁仞、华为昇腾）深化合作，加速适配与联合优化，这标志着国产AI芯片商业化落地进入实质性攻坚阶段。\n\n对行业有什么影响：第一，将引导更多互联网与AI公司调整资本开支模型，从‘买卡即用’转向‘基建+算法+生态’三位一体投入；第二，加速国产AI芯片从‘可用’迈向‘好用’——腾讯等头部客户的真实场景反馈与联合调优，将极大提升国产芯片在大模型训练、多模态推理等复杂任务中的性能与稳定性；第三，推动国内半导体设备、先进封装、高速互联等上游环节协同发展，形成‘芯片—系统—应用’闭环；第四，对全球AI算力格局产生结构性影响：当中国头部企业逐步构建起不依赖西方高端GPU的自主算力体系，全球AI竞争将从单一芯片性能比拼，转向全栈技术生态与工程化落地能力的综合较量。",
+      "category": "AI",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/029/125.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "created_at": "2026-11-18T21:03:17.718862+00:00"
+    },
     {
       "id": "c3d2b19b-3a90-4b2a-ad69-c13e12a72e4b",
       "title": "NVIDIA GPU租赁价格翻倍，供应承诺达3900亿美元",
@@ -5347,60 +5401,6 @@
       "original_author": "@WCCFTech",
       "published_at": "2026-10-13T06:20:21+00:00",
       "created_at": "2026-10-13T07:16:55.72885+00:00"
-    },
-    {
-      "id": "f2eb1656-4faf-45dc-9559-d1908108634c",
-      "title": "英特尔CEO坦承：AI硬件短缺将持续两至三年",
-      "summary": "英特尔CEO Lip-Bu Tan在新加坡会议指出，AI硬件供应紧张局面将持续2–3年，行业需证明AI投资回报率（ROI）以维持资本投入信心。",
-      "key_points": [
-        "AI芯片与服务器产能仍严重供不应求",
-        "资本方要求AI项目明确展示投资回报",
-        "短缺主因包括先进封装、HBM及晶圆产能瓶颈"
-      ],
-      "full_content": "An Intel LGA 1954 socketed motherboard has been pictured, which will support the upcoming Nova Lake-S \"Core Series 4\" CPUs. Intel Nova Lake-S Motherboard For Business Users Pictured, Features DDR5-6400 Support It looks like an Intel partner has presented its next-generation Nova Lake-S motherboard during an event in China (via @wxnod). Digital China is a company that we haven't heard of before, but they seem to be one of the first to publicly showcase an LGA 1954 socketed motherboard, while others have only done so in secrecy. So coming to the details, the specific motherboard is called M26-NVLS-ATX09, and seems [&hellip;] Read full article at https://wccftech.com/intel-nova-lake-s-motherboard-lga-1954-socket-q970-b960-chipset-pictured/",
-      "ai_summary": "发生了什么：英特尔CEO Lip-Bu Tan在DBS银行新加坡峰会上明确表示，当前AI硬件（尤其是高端AI加速器、配套服务器及先进封装产能）的短缺状态并非短期波动，而是将持续2至3年的结构性挑战。他指出，尽管全球正以前所未有的速度建设AI数据中心，但上游的芯片制造（特别是CoWoS等先进封装）、高带宽内存（HBM）、以及高性能互连芯片等关键环节仍存在显著产能缺口，导致交付周期延长、价格高企。与此同时，Tan强调资本市场的耐心正在消退——投资者不再满足于‘AI增长故事’，而是要求AI项目清晰量化其ROI，例如单位算力带来的收入提升、能耗节省或自动化替代人力的成本效益。\n\n为什么重要：这一表态揭示了AI狂潮背后的深层矛盾：需求爆炸式增长与供给链刚性扩张之间的根本性错配。不同于消费电子周期，AI硬件投资动辄数十亿美金，建设周期长达18–24个月，且高度依赖台积电、SK海力士等寡头产能。Tan的预警实则是对整个行业的风险提示——若无法在短期内解决产能瓶颈并兑现商业价值，可能导致部分AI初创公司融资受阻、云服务商涨价传导至终端客户、甚至引发局部投资过热后的调整。\n\n对行业有什么影响：短期将加速AI芯片多元化布局，促使AMD、Graphcore、Groq等厂商加速扩产，同时刺激国产替代进程；中期将推动‘AI硬件即服务’（HaaS）模式深化，云厂商通过预留产能、定制化租赁等方式平滑客户采购压力；长期则倒逼产业协同升级——晶圆厂、封测厂、内存厂需建立更紧密的联合产能规划机制，EDA与IP厂商需优化AI芯片设计流程以提升良率与PPA（性能/功耗/面积）。此外，ROI压力也将加速AI应用从‘炫技’走向‘务实’，制造业、医疗、金融等垂直领域的真实降本增效案例将成为资本关注焦点。",
-      "category": "AI",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/intel-ceo-lip-bu-tan-warns-ai-hardware-shortage-will-last-two-to-three-years-says-sector-has-to-show-return-on-investment/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-10-13T05:55:26+00:00",
-      "created_at": "2026-10-13T07:16:55.728864+00:00"
-    },
-    {
-      "id": "fdca7286-1854-4a54-807f-e5f232392860",
-      "title": "Applied Materials斥资50亿美元建EPIC中心，打造全球最大半导体联合研发基地",
-      "summary": "应用材料公司宣布投资50亿美元建设EPIC中心，联合TSMC、Intel、三星等巨头共建开放式半导体工艺与设备研发平台，聚焦AI时代新材料与先进封装。",
-      "key_points": [
-        "EPIC中心占地60万平方英尺，含4英亩洁净室",
-        "创始伙伴涵盖TSMC、Intel、三星、Micron等全产业链龙头",
-        "目标加速新材料从实验室到量产的转化周期"
-      ],
-      "full_content": "Elon Musk believes that while China's ability to scale production once it fine-tunes production equipment is the best in the world, the country might find it difficult to work with next-generation memory chip platforms such as 3D stacking and memory-on-logic architectures. Musk's comments, made on X, were the latest in a set of thoughts he has shared about China's chip manufacturing abilities and his knowledge of semiconductor fabrication as the executive focuses on the Terafab project to meet his firms' semiconductor needs. SpaceX Is An Anomaly When It Comes To Competing With China On Production Scaling, Says Musk Last week, [&hellip;] Read full article at https://wccftech.com/musk-says-spacex-is-the-only-anomaly-beating-chinas-mass-production-machine-and-ram-chips-could-be-next/",
-      "ai_summary": "发生了什么：应用材料公司（Applied Materials）于2026年10月正式启用其位于加州森尼韦尔的Equipment and Process Innovation and Commercialization（EPIC）中心，总投资达50亿美元。该中心是全球规模最大的半导体联合研发设施，占地60万平方英尺，内含近4英亩先进洁净室，可容纳芯片制造商、设备商、材料商及高校研究人员在同一物理空间内协同攻关。创始合作伙伴包括台积电（TSMC）、英特尔（Intel）、三星电子、美光（Micron）、SK海力士等全产业链巨头，以及斯坦福、伯克利等顶尖学府。EPIC聚焦AI时代三大关键技术挑战：新型晶体管材料（如CFET）、超低电阻互连技术，以及面向HBM与Chiplet的先进封装工艺。\n\n为什么重要：EPIC中心的诞生标志着半导体产业研发范式发生根本性变革。过去数十年，材料研究、设备开发与工艺集成分属不同机构，存在严重‘手递手’延迟与信息衰减。EPIC通过物理空间聚合，使材料科学家能实时观察其新材料在真实设备中的表现，设备工程师可依据产线反馈快速迭代，芯片厂则能在原型阶段即参与优化。这种‘共研共试’模式将新材料从实验室到量产的周期缩短50%以上，对突破AI芯片面临的‘材料墙’（如高κ介质、二维半导体集成）与‘封装墙’（如CoWoS-L产能瓶颈）具有决定性意义。\n\n对行业有什么影响：首先，EPIC将成为全球半导体创新的‘引力中心’，吸引顶尖人才与初创企业聚集，加速技术外溢与专利交叉授权；其次，其成功将倒逼ASML、Lam Research等设备巨头建立类似联合实验室，推动半导体设备业从‘卖硬件’向‘卖工艺解决方案’转型；最后，对中国产业而言，EPIC模式凸显了开放协同研发的重要性——在外部技术封锁背景下，国内亟需构建类似‘国家半导体联合创新中心’，整合中芯国际、长江存储、华为海思及中科院微电子所等力量，以系统性工程能力弥补单点技术差距。",
-      "category": "Foundry",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/applied-materials-unveils-5b-epic-center-in-silicon-valley/?utm_source=rss&utm_medium=rss&utm_campaign=applied-materials-unveils-5b-epic-center-in-silicon-valley",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-10-12T22:45:36+00:00",
-      "created_at": "2026-10-13T07:16:55.72888+00:00"
-    },
-    {
-      "id": "caf64466-a9ff-4b38-ba34-9050af9b98e9",
-      "title": "中国AI芯片市占率剧变：英伟达降至34%，华为升至28%",
-      "summary": "IDC报告显示，2026年上半年英伟达在中国AI加速器市场份额跌至34%，华为以28%位居第二；长鑫存储跻身全球第四大DRAM厂商，市占率达9.5%。",
-      "key_points": [
-        "英伟达出货量同比下滑44%，主因美国出口管制",
-        "华为AI加速器出货57.2万颗，同比增长超80%",
-        "长鑫存储DRAM市占率升至9.5%，成全球第四"
-      ],
-      "full_content": "Every now and then, there’s confidence and success in a game, where they don’t need to hide behind vague lines like “it was a success” or “it failed to hit targets”. During my conversation with the team behind RuneScape: Dragonwilds, I’m used to not getting numbers, so I said I wouldn’t ask for specifics. I got them anyway. “Close to three million people have played the game now—unique players.” It’s not a bad position for Jagex to find itself in with a game that departs from the MMO roots the company is known for, and it was smart to use [&hellip;] Read full article at https://wccftech.com/runescape-dragonwilds-closing-3-million-players-jagex-planning-string-sagas/",
-      "ai_summary": "发生了什么：根据IDC 2026年上半年数据，受美国出口管制持续收紧影响，英伟达在中国数据中心AI芯片市场的份额从历史高位大幅回落至34%，其AI加速器出货量仅为67.8万颗，同比下降44%。与此同时，华为凭借Ascend 910C等自研芯片，出货量达57.2万颗，同比增长超80%，以28%的市占率稳居第二；阿里巴巴平头哥（7%）、寒武纪（5%）、百度昆仑芯（4%）等本土厂商合计占据约23%份额。在存储领域，长鑫存储（CXMT）DRAM营收全球占比达9.5%，超越美光跃居第四，其4F²工艺虽尚未全面替代HBM，但在DDR5服务器内存市场已形成实质性竞争力。\n\n为什么重要：这一数据标志着中国AI芯片产业完成从‘政策驱动’到‘市场驱动’的关键跃迁。过去两年，国产替代主要依靠政府采购与国企订单；如今，华为Ascend已在互联网大厂、金融、电信等市场化主体中规模化部署，证明其在软件生态、工程交付与TCO（总拥有成本）方面已具备商业可行性。长鑫存储的崛起则显示中国在存储芯片这一‘卡脖子’最深领域取得突破，其技术路径（如4F²结构）虽与三星、SK海力士的HBM路线不同，但精准切中了AI服务器对高容量、低成本内存的迫切需求。\n\n对行业有什么影响：短期将加剧全球AI芯片市场‘双轨制’分化——西方市场继续依赖NVIDIA CUDA生态，中国市场加速构建昇腾+CANN+MindSpore的全栈替代方案；中期将推动AI芯片标准多元化，华为、寒武纪等厂商或联合制定中国AI芯片指令集与互操作规范；长期看，若国产AI芯片在大模型训练效率、编译器成熟度、开发者工具链等方面持续追赶，可能催生‘第三种AI计算范式’，打破NVIDIA的生态垄断，并为全球AI发展提供更具成本效益与地缘韧性的发展路径。",
-      "category": "Semiconductor",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/012/385.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-10-12T20:00:00+00:00",
-      "created_at": "2026-10-13T07:16:55.728895+00:00"
     }
   ]
 }
