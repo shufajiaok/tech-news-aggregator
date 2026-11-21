@@ -506,6 +506,234 @@
       "nick": "小芽Yuria-StarEcho",
       "expect": "StarEcho",
       "uid": "8345863261"
+    },
+    {
+      "label": "优子 Yuuko",
+      "group": "弥漫星雲",
+      "expect": "弥漫星雲",
+      "uid": "6310235278"
+    },
+    {
+      "label": "雏铃 Churin",
+      "group": "弥漫星雲",
+      "expect": "弥漫星雲",
+      "uid": "6466966841"
+    },
+    {
+      "label": "桃崎 Momochi",
+      "group": "弥漫星雲",
+      "expect": "弥漫星雲",
+      "uid": "6604856950"
+    },
+    {
+      "label": "小南 Minami",
+      "group": "弥漫星雲",
+      "expect": "弥漫星雲",
+      "uid": "6520760866"
+    },
+    {
+      "label": "晴子 Haruko",
+      "group": "恋时青空",
+      "expect": "恋时青空",
+      "uid": "4025237179"
+    },
+    {
+      "label": "闪闪 Kiyori",
+      "group": "恋时青空",
+      "expect": "恋时青空",
+      "uid": "7809514723"
+    },
+    {
+      "label": "莫莫 Momomii",
+      "group": "恋时青空",
+      "expect": "恋时青空",
+      "uid": "7798134449"
+    },
+    {
+      "label": "琉璃 Ruri",
+      "group": "恋时青空",
+      "expect": "恋时青空",
+      "uid": "9121284879"
+    },
+    {
+      "label": "梦梦 Yumeri",
+      "group": "StarHoney",
+      "expect": "StarHoney",
+      "uid": "7494069127"
+    },
+    {
+      "label": "小唯 Yui",
+      "group": "StarHoney",
+      "expect": "StarHoney",
+      "uid": "7328542495"
+    },
+    {
+      "label": "兔兔 Poppy",
+      "group": "StarHoney",
+      "expect": "StarHoney",
+      "uid": "7276382905"
+    },
+    {
+      "label": "理理 Riri",
+      "group": "StarHoney",
+      "expect": "StarHoney",
+      "uid": "7611960814"
+    },
+    {
+      "label": "颜颜 Ena",
+      "group": "StarHoney",
+      "expect": "StarHoney",
+      "uid": "7961695756"
+    },
+    {
+      "label": "芽依 Yayi",
+      "group": "YUMEDOLL",
+      "expect": "YUMEDOLL",
+      "uid": "5335644920"
+    },
+    {
+      "label": "小铁 TT",
+      "group": "YUMEDOLL",
+      "expect": "YUMEDOLL",
+      "uid": "7823604343"
+    },
+    {
+      "label": "芙芙 nini",
+      "group": "YUMEDOLL",
+      "expect": "YUMEDOLL",
+      "uid": "7715736099"
+    },
+    {
+      "label": "茄茄 neinei",
+      "group": "YUMEDOLL",
+      "expect": "YUMEDOLL",
+      "uid": "7312280273"
+    },
+    {
+      "label": "夏悠 Nayuyu",
+      "group": "YUMEDOLL",
+      "expect": "YUMEDOLL",
+      "uid": "7922423252"
+    },
+    {
+      "label": "汐奈 Hinaka",
+      "group": "YUMEDOLL",
+      "expect": "YUMEDOLL",
+      "uid": "8364593628"
+    },
+    {
+      "label": "佑酱 Miyoo",
+      "group": "YUMEDOLL",
+      "expect": "YUMEDOLL",
+      "uid": "4053538168"
+    },
+    {
+      "label": "YUMEDOLL 官博",
+      "group": "YUMEDOLL",
+      "expect": "YUMEDOLL",
+      "uid": "8271931633"
+    },
+    {
+      "label": "Mizore",
+      "group": "Cascade",
+      "expect": "Cascade",
+      "uid": "7739417490"
+    },
+    {
+      "label": "水穗言 Sui",
+      "group": "Cascade",
+      "expect": "Cascade",
+      "uid": "7611194766"
+    },
+    {
+      "label": "折纸 Kami",
+      "group": "Cascade",
+      "expect": "Cascade",
+      "uid": "9120751655"
+    },
+    {
+      "label": "Hiyori",
+      "group": "Cascade",
+      "expect": "Cascade",
+      "uid": "7913974549"
+    },
+    {
+      "label": "怡怡 koi",
+      "group": "Cascade",
+      "expect": "Cascade",
+      "uid": "7954884419"
+    },
+    {
+      "label": "Cascade 官博",
+      "group": "Cascade",
+      "expect": "Cascade",
+      "uid": "5363341966"
+    },
+    {
+      "label": "ReaLume 官博",
+      "group": "ReaLume",
+      "expect": "ReaLume",
+      "uid": "7983112875"
+    },
+    {
+      "label": "小析 Sekine",
+      "group": "ReaLume",
+      "expect": "ReaLume",
+      "uid": "5866655598"
+    },
+    {
+      "label": "梓喵 Azumi",
+      "group": "ReaLume",
+      "expect": "ReaLume",
+      "uid": "7982956459"
+    },
+    {
+      "label": "星羽 Hoshi",
+      "group": "ReaLume",
+      "expect": "ReaLume",
+      "uid": "7974441933"
+    },
+    {
+      "label": "ReComi 官博",
+      "group": "ReComi",
+      "expect": "ReComi",
+      "uid": "8372888310"
+    },
+    {
+      "label": "恋栀 Zhizhi",
+      "group": "ReComi",
+      "expect": "ReComi",
+      "uid": "7899249220"
+    },
+    {
+      "label": "途途 TwoTwo",
+      "group": "ReComi",
+      "expect": "ReComi",
+      "uid": "8327160868"
+    },
+    {
+      "label": "墨墨 Momochi",
+      "group": "Angelic",
+      "expect": "Angelic",
+      "uid": "7621447722"
+    },
+    {
+      "label": "吱吱 chikari",
+      "group": "Angelic",
+      "expect": "Angelic",
+      "uid": "7418203383"
+    },
+    {
+      "label": "暖安 Anko",
+      "group": "Astoria",
+      "expect": "Astoria",
+      "uid": "7632726930"
+    },
+    {
+      "label": "千千绪",
+      "group": "Hoshimeguri",
+      "expect": "Hoshimeguri",
+      "uid": "7947652775"
     }
   ]
 }

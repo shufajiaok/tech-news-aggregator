@@ -392,6 +392,9 @@ async function loadWall(fresh, sha) {
   state.wallItems = d.items || [];
   $('#wallSub').textContent =
     state.wallItems.length + ' 张 · 所有横竖比例，≥2MB 且长边 ≥1920 · ' + (d.generated_at || '');
+  // footer 统计并到这里更新：数据已在手，不再单独 fetch 一遍 data.json（省 7.4MB）
+  const fs = $('#footStat');
+  if (fs) fs.textContent = '壁纸 ' + state.wallItems.length + ' 张 · 索引 ' + (d.generated_at || '');
   buildWallChips();
   applyWall();
   return state.wallItems.length;
@@ -1362,28 +1365,22 @@ function ensureWall() {
   const hashed = location.hash.replace('#', '');
   const start = (hashed === 'wall' || hashed === 'feed' || hashed === 'fav') ? hashed : 'feed';
 
-  // 有 PAT 就先问一下当前索引对应的 commit：按 commit 拉的索引不会被 CDN 的
-  // 5 分钟缓存拖住，首屏看到的就是仓库里的最新数据。失败就退化成按分支拉。
-  (async () => {
-    if (getPat()) {
+  // 首屏立即渲染，不等 GitHub：磁盘快照就是最新部署的索引（服务端已做
+  // newerOf 保护），按分支拉即可。有 PAT 时 commit sha 放到后台补拿——
+  // 它只用于「刚抓完同步索引」那条链路，不该阻塞首屏（API 慢就慢一拍）。
+  setPage(start, false);
+  if (getPat()) {
+    (async () => {
       try {
         const c = await gh('/repos/' + REPO + '/commits?sha=' + encodeURIComponent(DISPATCH_REF) + '&per_page=1');
         state.indexSha = (c && c[0] && c[0].sha) || '';
       } catch (e) { /* 不影响正常浏览 */ }
-    }
-    setPage(start, false);
-  })();
+    })();
+  }
 
   favAll()
     .then((a) => { state.favItems = a || []; if (state.page === 'fav') renderFav(); })
     .catch(() => {});
-
-  fetch('data.json', { cache: 'no-cache' })
-    .then((r) => (r.ok ? r.json() : null))
-    .then((d) => {
-      if (!d) return;
-      $('#footStat').textContent =
-        '壁纸 ' + d.count + ' 张 · 索引 ' + (d.generated_at || '');
-    })
-    .catch(() => {});
+  // 注：原此处有一段独立的 fetch('data.json') 只为填 footer，已并入 loadWall()，
+  // 避免首屏把 7.4MB 索引拉两遍。
 })();
