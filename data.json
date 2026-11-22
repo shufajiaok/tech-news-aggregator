@@ -1,7 +1,25 @@
 {
-  "updated_at": "2026-11-21T19:56:06.843922+00:00",
+  "updated_at": "2026-11-22T07:41:53.011232+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "bc18ab20-f26c-4d98-a44a-ada1abe6b580",
+      "title": "NVIDIA 621.35显卡驱动未解决SSD异常写入问题，用户报告空闲时单夜写入36GB",
+      "summary": "NVIDIA最新Hotfix驱动621.35未能修复显卡驱动导致SSD异常高写入问题，独立测试显示系统空闲时单夜向NVMe盘写入36GB数据，建议回退旧版驱动。",
+      "key_points": [
+        "用户实测621.35驱动下空闲状态单夜SSD写入量达36GB",
+        "问题表现为后台异常I/O活动，用户可能长期无法察觉",
+        "NVIDIA官方尚未确认该问题，当前建议回退至621.24或更早版本"
+      ],
+      "full_content": "Finding a Windows laptop under $400 that pairs modern ARM battery efficiency with a genuine OLED screen is nearly unheard of, even during the holiday sales. Well, today you’re in luck, because Amazon’s Black Friday 2026 sale has reduced the HP OmniBook 3’s price by 33 percent, bringing that figure from $599.99 to just $399. For $399 only, you’re getting a high-quality OLED panel, 8-core Snapdragon SoC, and a 60WHr cell that’ll last for hours on a single charge At the center of this configuration is a vibrant 14-inch 2K OLED display running at a 1,920 x 1,200 resolution with [&hellip;] Read full article at https://wccftech.com/hp-omnibook-3-14-inch-2k-oled-snapdragon-x-laptop-black-friday-amazon/",
+      "ai_summary": "发生了什么：WCCFTech报道，一名用户对NVIDIA GeForce Hotfix驱动621.35进行了独立压力测试，结果发现该版本并未如官方所称‘修复SSD异常写入’问题。在系统完全空闲（无应用运行、显示器休眠）状态下，NVMe固态硬盘在8小时内累计被写入36GB数据，远超正常后台活动水平。该现象疑似由驱动内部未公开的诊断日志、遥测服务或内存管理机制触发，具有隐蔽性强、持续性高的特点。\n\n为什么重要：SSD写入放大（Write Amplification）直接影响固态硬盘寿命与性能。现代NVMe SSD的TBW（总写入字节数）通常为150–600TB，若长期维持每晚36GB写入，一年即可消耗约13TB，对低端SSD构成实质性磨损风险。更关键的是，该问题属于‘非功能性缺陷’——不导致蓝屏或崩溃，却在后台 silently 消耗硬件寿命，普通用户极难主动发现，极易造成售后纠纷与品牌信任危机。\n\n对行业有什么影响：短期将损害NVIDIA消费者口碑，尤其在DIY玩家与内容创作者群体中引发担忧；中期倒逼显卡厂商加强驱动质量管控与灰盒测试，未来可能需引入SSD I/O监控作为标准QA环节；长期则可能推动行业建立更透明的驱动行为规范，例如强制披露后台服务清单、提供一键禁用遥测选项等。对SSD厂商而言，这也是一次警示：需强化写入寿命预警机制与健康度可视化工具，帮助用户主动识别异常负载。",
+      "category": "GPU",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/nvidia-geforce-hotfix-driver-621-35-reportedly-fails-to-fully-fix-excessive-ssd-writes/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-11-21T19:32:38+00:00",
+      "created_at": "2026-11-22T07:41:40.999104+00:00"
+    },
     {
       "id": "d38bfe9e-f369-44e7-b163-0bbba49b92b5",
       "title": "HP OmniBook 3 OLED笔记本黑五降价33%，仅售399美元",
@@ -37,6 +55,24 @@
       "original_author": "@Semiconductor Digest",
       "published_at": "2026-11-21T15:13:56+00:00",
       "created_at": "2026-11-21T19:55:53.178618+00:00"
+    },
+    {
+      "id": "e53d4521-63ac-41e9-94ce-66f89479029c",
+      "title": "Thinking Machines发布Inkling 2 Mini：260亿参数开源模型，MacBook配32GB内存即可本地运行",
+      "summary": "Thinking Machines推出Inkling 2 Mini开源AI模型，仅260亿参数，支持本地离线运行，苹果MacBook（32GB统一内存）即可流畅执行编程、推理等任务。",
+      "key_points": [
+        "Inkling 2 Mini为26B参数开源模型，性能媲美更大模型",
+        "采用创新推理架构，无需生成更多token即可增强推理能力",
+        "可在配备32GB统一内存的MacBook上离线运行"
+      ],
+      "full_content": "Given how easily the RTX 5090’s 12VHPWR connector and power cable can melt&nbsp;and render the expensive GPU useless, owners will probably do just about anything to ensure that the graphics card remains as cool as possible. However, there are extreme cases too, such as one Redditor who made sure that his GIGABYTE RTX 5090 AORUS XTREME WATERFORCE AIO graphics card maintained average temperatures between 32°C and 35°C across 3DMark runs using an elaborate, and might we add, extremely untidy, 30-fan cooling array. Using color-coded wiring to help recognize the wires, the RTX 5090 employed one of the more extreme setups [&hellip;] Read full article at https://wccftech.com/pc-enthusiast-cools-stock-gigabyte-rtx-5090-waterforce-below-40c-with-30-fans/",
+      "ai_summary": "发生了什么：Thinking Machines Lab于2026年11月发布Inkling 2 Mini，一款参数量仅260亿的轻量化开源大模型。它并非Inkling 2 Small（5940亿参数）的简单剪枝版，而是基于全新推理架构设计，能在不增加token生成量的前提下，通过内部状态复用与多步思维链调度，显著提升编程、数学推理与代理（agentic）任务表现。实测表明，搭载M3 Max芯片与32GB统一内存的MacBook Pro可全程离线运行该模型，响应延迟低于2秒。\n\n为什么重要：大模型正从‘云端巨兽’走向‘终端精灵’。Inkling 2 Mini的成功证明：通过算法创新（如稀疏激活、状态缓存、计算图重排）与硬件协同（Apple Silicon统一内存架构），可在消费级设备上实现专业级AI能力。这打破了‘大模型=高算力+高带宽+高功耗’的固有认知，为隐私敏感场景（如医疗、金融本地分析）、离线环境（如航空、远洋）及教育普惠提供了切实可行的技术路径。\n\n对行业有什么影响：首先，将加速边缘AI芯片竞争，苹果、高通、联发科等将更积极优化NPU对开源模型的支持；其次，推动开源社区重心转移——从追求参数规模转向模型效率、可解释性与终端适配性；最后，对云服务厂商构成挑战：若用户能在本地完成80%的日常AI任务，将削弱其对云端推理API的依赖。值得关注的是，该模型采用Apache 2.0许可证，允许商用，有望快速集成至VS Code、Obsidian等开发者工具链，形成新的生产力范式。",
+      "category": "AI",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/thinking-machines-unveils-inkling-2-mini-a-powerful-26b-ai-model-that-runs-locally-on-macbooks-with-just-32gb-ram/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-11-21T15:13:56+00:00",
+      "created_at": "2026-11-22T07:41:40.999111+00:00"
     },
     {
       "id": "74924ca5-0dc0-428f-8227-1d6036312d44",
@@ -5365,42 +5401,6 @@
       "original_author": "@Solidot (科技)",
       "published_at": "2026-10-15T14:24:09+00:00",
       "created_at": "2026-10-15T17:33:13.485002+00:00"
-    },
-    {
-      "id": "f1bc2fef-2e82-4b3a-a38c-9d6fd1b920b8",
-      "title": "欧盟CADA法案恐致千亿欧元成本，科技巨头警告云主权立法将引发重写危机",
-      "summary": "CCIA Europe委托研究称，欧盟《云与AI发展法案》（CADA）若实施，十年内或给欧洲企业带来1150亿欧元成本，主因是强制迁移云工作负载导致的软件重写与架构重构。",
-      "key_points": [
-        "研究报告预估CADA法案将带来1150亿欧元成本，是欧委会预估的六倍",
-        "成本主体（69%）来自代码重写与架构重构，而非硬件采购",
-        "焦点在CADA第31条，或授权欧委会将主权要求扩大至私营关键服务"
-      ],
-      "full_content": "At the 26th China International Industry Fair in Shanghai, Langdao Silex, a Chinese technology startup, revealed its self-developed EUV light source prototype called the “FlintNano LPP-OXXO.” Being a core component of EUV lithography, the company states that it has secured most core components through independent R&amp;D, with a localization rate of approximately 90%. Hearing this development could signal that China is ready to call it quits on ASML, but here’s why we wouldn’t jump to conclusions. Mass production isn’t expected for the next 3-5 years, and that’s likely an optimistic timeline; ASML currently has U.S. trade restrictions to worry about [&hellip;] Read full article at https://wccftech.com/chinese-startup-euv-light-source-prototype-asml/",
-      "ai_summary": "发生了什么：代表亚马逊、Google、Meta等科技巨头的行业组织CCIA Europe委托发布一份重磅研究报告，警示欧盟拟议的《云与AI发展法案》（Cloud and AI Development Act, CADA）可能对欧洲数字经济造成灾难性冲击。报告核心结论是：若CADA法案，特别是其第31条（允许欧盟委员会将‘数字主权’要求强制扩展至私营部门关键服务领域）获得通过，将在未来十年内给欧洲企业带来高达1150亿欧元的额外成本，这一数字是欧盟委员会自身最高预估的六倍以上。其中，高达69%的成本（约800亿欧元）将源于软件重写与系统架构重构——即企业被迫放弃现有云基础设施，将应用、数据库、中间件等全部迁移至符合CADA标准的‘主权云’，这绝非简单切换API，而是涉及底层代码的全面重写与验证。\n\n为什么重要：这份报告揭示了‘数字主权’立法背后隐藏的巨大经济代价与技术鸿沟。欧盟推动CADA的初衷是减少对美科技巨头的依赖、保障数据安全与战略自主，但其一刀切的强制迁移要求，忽视了现代云应用的复杂性与粘性。一个典型的企业ERP或CRM系统，往往历经数十年迭代，深度耦合于AWS/Azure/GCP的特定服务（如Lambda、BigQuery、Spanner），强行剥离并重写，不仅成本惊人，更将导致业务中断、安全漏洞激增与创新停滞。这本质上是一场‘监管驱动的技术倒退’。\n\n对行业有什么影响：对云服务商，这将加速其在欧洲的本地化投入——AWS已在法兰克福、Azure在阿姆斯特丹、GCP在巴黎大规模建设主权云区域，但其合规成本最终将转嫁给客户；对欧洲企业，将面临艰难抉择：是支付巨额‘主权税’以满足监管，还是冒险维持现状承受处罚；对全球科技治理，这凸显了‘数字规则碎片化’的严峻挑战——当各国以安全为名各自为政，全球统一的云技术栈将被割裂，最终损害的是所有用户的创新效率与体验。长远看，真正的解决方案或许不在于强制迁移，而在于推动国际互认的‘云安全与主权认证标准’，在保障底线安全的同时，维护技术生态的开放与活力。",
-      "category": "Semiconductor",
-      "source": "Solidot (科技)",
-      "source_url": "https://www.solidot.org/story?sid=85622",
-      "original_author": "@Solidot (科技)",
-      "published_at": "2026-10-15T14:08:04+00:00",
-      "created_at": "2026-10-15T17:33:13.485011+00:00"
-    },
-    {
-      "id": "9bc2670c-afed-4b40-80de-1bdf58b1607d",
-      "title": "VON ARDENNE将HiPIMS溅射技术拓展至面板级封装，攻克玻璃基板通孔镀膜难题",
-      "summary": "德国VON ARDENNE公司宣布将其HiPIMS高功率脉冲磁控溅射技术应用于面板级封装（PLP），成功解决大尺寸玻璃基板上高深宽比通孔（TGV）的均匀镀膜挑战。",
-      "key_points": [
-        "HiPIMS技术可实现TGV侧壁与底部的高保形镀膜",
-        "HISS水平式在线平台支持最大650×650mm面板",
-        "目标支持未来光学互连所需的硅基波导沉积"
-      ],
-      "full_content": "As AI servers, storage platforms, networking equipment, and high-performance computing systems continue to scale, PCIe links are being pushed farther than ever before. System architects frequently ask a seemingly simple question: how far can a PCIe retimer extend a connection ? Unfortunately, there is no single answer. The effective reach of a PCIe retimer is influenced by multiple interacting factors that span silicon design, controller intelligence, channel quality, and the transmission medium itself. In trying to answer the question, many engineers may initially focus on the PCIe specification and associated channel loss budgets. While specification compliance is essential, real-world reach is often determined by how well a retimer performs beyond the minimum requirements. The difference between a retimer that merely passes compliance testing and one that consistently delivers reliable operation in production deployments can be substantial. Maximizing PCIe reach requires a system-level approach that considers every aspect of the signal path. At the foundation of retimer reach lies the quality of the SerDes architecture. The SerDes serves as the electrical engine that receives, conditions, and retransmits high-speed signals. PCI-SIG specifications define channel-loss requirements that compliant devices must support. For example, designs are commonly expected to accommodate around 36 dB of insertion loss at Nyquist frequency. However, leading retimer vendors frequently engineer their products to tolerate 40 dB or even higher levels of channel loss. Those additional decibels may sound insignificant, but they often translate directly into greater deployment flexibility. Additional margin allows designers to support longer PCB traces, extra connectors, more backplane transitions, and greater manufacturing variation. In large systems where every connector, cable, and via adds loss and reflection, the difference between supporting 36 and 40 dB can determine whether a design succeeds without modification or requires a costly board redesign. The ability to achieve this additional margin depends on sophisticated signal-processing techniques embedded within the SerDes. Advanced equalization circuitry, highly optimized clock recovery algorithms, robust jitter tolerance, and adaptive receiver technologies all contribute to extending channel reach. As the industry moves through PCIe Gen6 and prepares for future generations, these capabilities become increasingly important because every speed increase reduces the available system margin. While the analog performance of the SerDes establishes the foundation, controller intelligence frequently determines how well that foundation performs in real-world environments. Modern PCIe systems operate under conditions that are far more complicated than laboratory compliance tests. Temperature fluctuations, voltage variations, component aging, process variation, and interoperability challenges all affect link stability. One particularly important capability is the handling of corner cases. Specifications cannot anticipate every possible combination of endpoint, root complex, cable, switch, and retimer implementation. Real-world deployments often uncover scenarios that sit at the edge of compliance boundaries. Retimers with sophisticated controller designs are better equipped to manage these situations without causing system instability. As a result, controller quality frequently becomes a major differentiator among retimer solutions that appear similar when viewed purely from a PHY performance perspective. Closely related to controller intelligence is the concept of designing beyond the specification. Compliance testing validates that a device meets defined requirements, but interoperability in production systems often requires more than simple compliance. Different vendors may interpret implementation details differently, resulting in subtle variations during link training, equalization, recovery, or power-state transitions. The most robust retimers are designed with these realities in mind. They include additional logic and protocol awareness to handle unusual behaviors, accommodate implementation differences, and recover gracefully from unexpected situations. This philosophy of engineering beyond the specification can significantly improve compatibility across diverse ecosystems. For hyperscale operators, server manufacturers, and storage vendors, successful interoperability often matters as much as raw signal-integrity performance. Another factor that significantly influences practical reach is observability. As PCIe speeds increase, diagnosing link issues becomes more challenging. The ability to see what is happening within the channel can determine whether a link operates reliably or remains a persistent source of field failures. Modern retimers increasingly include sophisticated diagnostic and monitoring capabilities. Engineers need visibility into link-training behavior, equalization status, signal quality, error statistics, lane margins, and environmental conditions. This information helps identify weak channels, optimize system performance, and accelerate root-cause analysis during deployment. Although diagnostics do not directly improve insertion-loss tolerance, they often increase achievable system reach by allowing engineers to discover and resolve issues that would otherwise remain hidden. In many deployments, better visibility effectively creates additional operational margin by enabling more informed tuning and troubleshooting. No discussion of retimer reach would be complete without considering the quality of the transmission channel itself. Even the most advanced retimer cannot fully compensate for a poorly designed channel. PCB material selection, impedance control, via construction, connector quality, routing practices, and crosstalk management all influence signal integrity. As signaling rates continue to climb, low-loss PCB materials become increasingly attractive because they reduce attenuation and preserve signal quality across longer distances. Likewise, careful connector and via design can dramatically improve channel performance. A high-quality channel allows the retimer to devote its equalization resources to extending reach rather than simply compensating for avoidable losses and reflections. The transmission medium also plays a critical role. Within a chassis, PCB traces dominate the channel budget. Beyond the board, copper cables provide additional flexibility and enable connectivity to external accelerators, storage systems, and expansion modules. High-quality active copper assemblies can often extend PCIe connectivity to approximately two meters while maintaining acceptable performance. However, this capability depends heavily on cable construction, shielding effectiveness, copper quality, and connector design. Looking forward, optical connectivity is poised to redefine expectations for PCIe reach. Emerging PCIe-over-optical implementations enable PCIe traffic to traverse fiber while maintaining standard PCIe operation. The implications are profound. Instead of being measured in centimeters of board traces or meters of copper cable, PCIe reach can extend to tens or even hundreds of meters. This capability enables new architectures built around resource disaggregation, accelerator pooling, memory expansion, and rack-scale AI infrastructure. Ultimately, PCIe retimer reach is not determined by a single specification number. It is the cumulative result of SerDes excellence, intelligent controller design, comprehensive observability, high-quality channel engineering, and an appropriate transmission medium. The highest-performing solutions do more than satisfy PCI-SIG requirements. They provide the additional margin, interoperability, diagnostics, and robustness needed to maximize reach in the demanding AI, networking, storage, and data center environments of the future. Related link Rambus PCIe",
-      "ai_summary": "发生了什么：VON ARDENNE公司将源自光伏与建筑玻璃领域的HiPIMS（高功率脉冲磁控溅射）技术，成功迁移到半导体面板级封装（PLP）领域。该技术通过毫秒级高能脉冲激发等离子体，使金属离子获得更高动能，从而在玻璃基板（Glass Interposer）的高深宽比通孔（TGV）内实现钛/氮化钛阻挡层与铜种子层的高保形（Conformal）沉积，解决了传统PVD易出现‘空洞’、ALD成本过高的行业痛点。其HISS水平式在线平台可处理最大650×650mm面板，且支持模块化配置。\n\n为什么重要：面板级封装被视为延续摩尔定律的关键路径，但玻璃基板上的TGV镀膜是量产最大瓶颈。VON ARDENNE的方案以PVD的低成本优势，逼近ALD的镀膜质量，为PLP大规模商业化扫清障碍。更深远的意义在于，其技术储备已延伸至光学互连——公司可利用相同平台沉积硅氧化物、氮化物等波导材料，为未来‘光互连芯片’提供制造基础。\n\n对行业有什么影响：对设备厂商，验证了‘跨界技术迁移’的巨大潜力，推动更多光伏、显示设备商进军半导体装备；对封装厂，降低了PLP产线的初始投资门槛；对芯片设计公司，意味着未来可基于玻璃基板，集成计算、存储、光学I/O于一体，催生全新异构计算架构。这标志着半导体封装正从‘二维平面’迈向‘三维立体’与‘光电融合’的新纪元。",
-      "category": "Foundry",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/von-ardenne-scales-hipims-sputtering-from-wafers-to-panels/",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-10-15T07:07:45+00:00",
-      "created_at": "2026-10-16T05:22:07.071529+00:00"
     }
   ]
 }
