@@ -1,7 +1,97 @@
 {
-  "updated_at": "2026-11-24T00:33:07.779096+00:00",
+  "updated_at": "2026-11-24T10:36:36.575159+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "e1e4debf-62b9-4e8a-ae00-fc42b512a675",
+      "title": "三星与SK海力士面临26万人才缺口，韩国政府将提供退伍军人支援",
+      "summary": "三星和SK海力士预计到2030年需新增26万名员工建设下一代晶圆厂，韩国政府正通过调配退伍军人等人力资源缓解半导体产业劳动力危机。",
+      "key_points": [
+        "三星与SK海力士2030年前需招聘26万芯片制造人才",
+        "韩国政府介入，提供退伍军人等替代性劳动力",
+        "人才短缺已成为制约先进制程扩产的关键瓶颈"
+      ],
+      "full_content": "&lt;p&gt;Jowi Morales is a writer and journalist covering the tech beat since 2021. However, he’s been interested in technology far earlier than that. He started discovering desktop computers when his father brought home a Windows 95 PC, but his first real experience working under the hood of the PC was when the old computer’s hard drive was filled to the brim in the year 2000. He deleted the Windows folder to attempt to rectify the situation, which led to his dad buying a new desktop PC. Since then, he learned a lot more about computers, and he’s always been the go-to tech expert for his family and friends.&lt;/p&gt;&lt;p&gt;Jowi primarily uses a Windows workstation and an Android phone, but he also bought into the Apple ecosystem with the 6th-gen iPad, iPhone 14 Pro Max, and the M1 MacBook Air. Today, Jowi covers hardware and software from Redmond and Cupertino, while also looking at the tech industry in general.&lt;/p&gt;&lt;p&gt;Aside from covering technology, Jowi is an avid photographer and writes about automobiles, aviation, and tanks. You can find his bylines at &lt;a href=&quot;https://www.makeuseof.com/author/jowi-morales/&quot;&gt;MakeUseOf&lt;/a&gt;, &lt;a href=&quot;https://www.slashgear.com/author/jowimorales/&quot;&gt;SlashGear&lt;/a&gt;, and, of course, &lt;a href=&quot;https://www.tomshardware.com/author/jowi-morales&quot;&gt;Tom’s Hardware&lt;/a&gt;.&lt;/p&gt;",
+      "ai_summary": "发生了什么：根据WCCFTech报道，受长期高利润内存合约推动，三星与SK海力士正加速投资建设新一代先进制程晶圆厂，但面临严峻的人力资源瓶颈——两家公司联合预测，至2030年共需新增约26万名员工。为应对这一“人力海啸”，韩国政府已启动专项支援计划，将向企业定向输送退伍军人及其他经培训的后备力量，以填补技术工人、设备操作员及基础工程师等关键岗位空缺。\n\n为什么重要：半导体制造业是典型的资本与人力双密集型产业，尤其在先进封装、EUV光刻、洁净室运维等环节高度依赖经验丰富的熟练技工。当前全球晶圆代工产能扩张（如美国亚利桑那、德国德累斯顿、韩国平泽）同步加剧了人才争夺战。韩国此举不仅关乎企业产能落地，更牵涉国家技术主权与供应链韧性——若无法及时补足人力，其雄心勃勃的2nm以下逻辑芯片与HBM4量产路线图或将被迫延迟。\n\n对行业有什么影响：首先，该事件凸显全球半导体产业正从“设备与材料瓶颈”转向“人才瓶颈”，未来各国政策重心或将从补贴建厂转向职业教育与移民政策改革；其次，退伍军人转岗培训模式可能被台积电、英特尔等厂商效仿，催生新型半导体产业人才输送体系；最后，短期看或加剧区域薪资竞争，推高成熟制程产线人力成本，长期则倒逼EDA工具、自动化运维系统与数字孪生工厂等“少人化”技术加速落地。",
+      "category": "Foundry",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/samsung-sk-hynix-face-labor-crunch-260000-workers-retired-soldiers/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-11-24T10:30:00+00:00",
+      "created_at": "2026-11-24T10:36:27.994067+00:00"
+    },
+    {
+      "id": "bcc2f963-5868-401f-b0e5-54e78965d304",
+      "title": "Epic Games宣布Unreal Engine 6彻底移除Blueprints，全面转向AI驱动开发",
+      "summary": "Epic Games确认Unreal Engine 6首个正式版本将完全取消可视化脚本Blueprints，转而依托大语言模型实现自然语言编程，标志着游戏引擎开发范式重大变革。",
+      "key_points": [
+        "UE6初始版本即弃用Blueprints功能",
+        "AI集成成为核心架构，支持自然语言生成代码与资产",
+        "过渡期缩短，早期访问版亦不保留Blueprints兼容"
+      ],
+      "full_content": "&lt;p&gt;Shane has a background in computer engineering and has worked as a freelance consultant in multiple industries. He has a strong affection for history and loves to game. He worked his way up from a Commodore 64 and has always been interested in technology and writing. He particularly enjoys breaking down complex concepts into understandable ideas. He is a lifelong East Coaster and animal lover.&lt;/p&gt;",
+      "ai_summary": "发生了什么：Epic Games在Unreal Fest芝加哥大会上正式宣布Unreal Engine 6的重大架构调整——彻底移除广受欢迎的可视化脚本系统Blueprints，并将其功能全面交由AI驱动。根据WCCFTech披露，原计划在早期访问阶段保留Blueprints作为过渡的方案已被取消，UE6首个公开构建版本将不再包含该模块。取而代之的是基于大语言模型（LLM）的全新工作流：开发者可通过自然语言指令直接生成C++代码、Shader逻辑、动画蓝图乃至3D场景资产，系统自动完成语法校验、依赖解析与性能优化。\n\n为什么重要：Blueprints自UE4时代起便是降低游戏开发门槛的核心工具，使非程序员也能参与逻辑构建，极大推动了独立游戏生态繁荣。此次移除并非简单功能删减，而是Epic对“AI原生引擎”战略的坚定执行——它预示着游戏开发正从“图形优先”迈向“意图优先”，开发者精力将从语法细节转向需求表达与创意迭代。此举也反映出AI工程能力已跨越可用性门槛，能承担复杂实时系统的逻辑生成任务。\n\n对行业有什么影响：短期内将引发开发者技能断层与学习成本上升，中小团队或需重构技术栈；中长期看，将加速行业标准化进程——当自然语言成为通用接口，跨引擎资产复用、AI辅助测试与自动化QA将成为新基础设施；此外，Unity等竞品或将被迫跟进类似路径，推动整个实时3D内容创作领域进入AI协同开发新纪元，同时也对AI模型的代码安全性、版权归属与可审计性提出全新治理挑战。",
+      "category": "AI",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/unreal-engine-6-drops-blueprints-ai-epic-games/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-11-24T10:00:00+00:00",
+      "created_at": "2026-11-24T10:36:27.994098+00:00"
+    },
+    {
+      "id": "f0bc3621-7592-4d95-b7cf-e55d96b92050",
+      "title": "耶鲁学者呼吁NVIDIA董事会集体辞职，质疑AI芯片出口与公司治理",
+      "summary": "耶鲁管理学院资深教授杰弗里·索嫩菲尔德公开批评NVIDIA董事会失职，称其在地缘政治风险管控与AI芯片出口监管方面严重失能，要求全体辞职。",
+      "key_points": [
+        "索嫩菲尔德指控NVIDIA高端芯片被用于中国军方武器系统",
+        "批评董事会缺乏独立性，未能应对监管调查与股东损失",
+        "事件反映AI算力巨头正面临前所未有的地缘治理压力"
+      ],
+      "full_content": "&lt;p&gt;Matt began piling up computer experience as a child with his Mattel Aquarius. He built his first PC in the late 1990s and ventured into mild PC modding in the early 2000s. He’s spent 15 years covering emerging technology for Smithsonian, Popular Science, and Consumer Reports, while testing components and PCs for Computer Shopper, PCMag and Digital Trends. When not writing about tech, he’s often walking—through the streets of New York, over the sheep-dotted hills of Scotland, or just at his treadmill desk at home in front of the 50-inch HDR TV that serves as his PC monitor.&lt;/p&gt;",
+      "ai_summary": "发生了什么：耶鲁大学管理学院高级副院长、知名公司治理专家杰弗里·索嫩菲尔德（Jeffrey Sonnenfeld）在接受CNBC专访时，对NVIDIA董事会发起罕见严厉批评，直指其“丧失公信力”，并公开呼吁全体董事辞职。其核心论据包括三方面：一是董事会未能有效监督AI芯片出口合规性，导致部分高端GPU被绕过管制流入中国军工体系，构成“国家安全重大退化”；二是面对SEC多项调查、股东集体诉讼及股价剧烈波动，董事会未展现应有独立性与危机响应能力；三是黄仁勋再度出任CEO的决策过程缺乏透明度与制衡机制。\n\n为什么重要：NVIDIA不仅是技术领导者，更是全球AI基础设施事实上的“守门人”。其董事会治理水平直接影响投资者信心、监管信任及国际供应链稳定性。索嫩菲尔德作为美国公司治理领域最具影响力的学者之一，其发声具有标志性意义——它标志着AI算力巨头已超越传统科技公司范畴，成为地缘政治博弈的核心载体，其内部治理必须匹配其全球系统重要性。此次事件也揭示出技术公司正面临“商业成功”与“战略责任”的深刻张力。\n\n对行业有什么影响：短期将加剧NVIDIA股价波动与ESG评级压力，可能触发机构投资者重新评估持仓；中期或推动美国加强对AI芯片企业的强制性治理披露要求，如设立独立的地缘风险委员会；长期看，将促使所有前沿AI公司（OpenAI、Anthropic、xAI等）将“技术主权合规”纳入核心治理框架，甚至催生跨国AI治理联盟。对产业链而言，代工厂（TSMC）、云服务商（AWS/Azure）及下游客户均需建立更严格的芯片溯源与用途审计机制，全球AI算力分配格局或将因此重构。",
+      "category": "AI",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/yales-jeffrey-sonnenfeld-calls-for-nvidia-board-to-resign/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-11-24T09:30:00+00:00",
+      "created_at": "2026-11-24T10:36:27.994113+00:00"
+    },
+    {
+      "id": "fc212f78-49a6-4dcc-aa9a-1ffe8a09c2b6",
+      "title": "AI辅助芯片设计面临三大瓶颈：数据孤岛、物理不可知、验证鸿沟",
+      "summary": "半导体工程分析指出，AI在芯片设计中的应用受限于不完整的设计数据、多物理场仿真缺失及验证方法论滞后，导致AI生成方案常存在制造性与成本性缺陷。",
+      "key_points": [
+        "AI设计依赖高质量、结构化IP数据，但行业普遍存在数据孤岛",
+        "AI难以准确模拟热、电、应力等多物理场耦合效应",
+        "现有验证流程无法覆盖AI生成RTL的黑盒特性，信任度不足"
+      ],
+      "full_content": "Epic Games recently confirmed major changes to its previously announced Unreal Engine 6 plans, and they've been sparked by AI. At Chicago's Unreal Fest in June, Epic had already announced its decision to integrate LLMs into the engine and simultaneously deprecate features like Blueprints. However, the transition was supposed to be relatively smooth, with Blueprints and other features still being available during early access. Now, though, the Unreal Engine developer revealed that even the initial Unreal Engine 6 builds won't feature Blueprints, and it's all due to advancements in AI. In a new blog post, Marcus Wassmer (Executive Vice President [&hellip;] Read full article at https://wccftech.com/unreal-engine-6-drops-blueprints-ai-epic-games/",
+      "ai_summary": "发生了什么：Semiconductor Engineering深度剖析了AI赋能芯片设计的现实困境。当前AI工具（如AI代理）虽能加速RTL生成、IP复用与EDA参数调优，但其输出常面临三重硬约束：一是“数据鸿沟”——设计所需的关键信息（如foundry工艺角、OSAT封装应力模型）分散于不同企业，AI缺乏完整训练数据；二是“物理盲区”——AI无法像人类工程师那样理解热扩散、电磁干扰、机械形变等多物理场交互，导致生成方案在真实硅片上失效；三是“验证断层”——传统基于覆盖率的验证方法难以应对AI生成RTL的不可解释性，形式验证与故障注入等手段尚未形成标准流程。\n\n为什么重要：芯片设计正站在“生产力拐点”：摩尔定律放缓，设计复杂度指数级上升，而工程师数量增长停滞。AI本应是破局关键，但若无法解决上述瓶颈，其应用将局限于非关键模块（如I/O控制器），无法触及SoC核心。这不仅关乎效率，更关乎芯片可靠性——一次因AI误判导致的电源完整性失败，可能让价值数千万美元的流片功亏一篑。\n\n对行业有什么影响：首先，将推动EDA产业重心从“工具链”转向“数据平台”——Cadence、Synopsys等巨头正大力投资IP生命周期管理与知识图谱构建；其次，催生新型AI-EDA融合产品，如物理感知的生成式设计代理、可解释性验证引擎；第三，重塑芯片公司组织架构，需设立专职“AI数据治理官”与“AI验证专家”岗位；最后，对初创公司既是挑战也是机遇——谁能率先攻克特定领域（如射频、汽车MCU）的AI设计闭环，即可建立难以逾越的技术护城河。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/why-ai-struggles-to-reuse-chip-designs/",
+      "original_author": "@Semiconductor Engineering",
+      "published_at": "2026-11-24T09:00:00+00:00",
+      "created_at": "2026-11-24T10:36:27.994175+00:00"
+    },
+    {
+      "id": "c82f5e16-da3e-44c7-a89e-3035cb2544ee",
+      "title": "PFN与SEMIFIVE合作开发MN-Core L2000：3D堆叠DRAM架构突破AI带宽瓶颈",
+      "summary": "日本PFN与韩国SEMIFIVE联合开发MN-Core L2000系列AI推理芯片，采用3D堆叠DRAM技术，内存带宽较前代提升超两倍，直击生成式AI核心瓶颈。",
+      "key_points": [
+        "MN-Core L2000采用逻辑芯片与DRAM垂直堆叠3D架构",
+        "目标内存带宽超L1000系列两倍，显著提升大模型推理效率",
+        "三星Foundry提供3D-IC全流程技术支持，2027年Q1流片"
+      ],
+      "full_content": "Not everyone is pleased that Jensen Huang has returned as NVIDIA’s CEO, as prominent corporate governance expert Jeffrey Sonnenfeld has criticized the company’s board in the latest interview, calling on them to step down. Sonnenfeld, who’s also the senior associate dean for leadership at the Yale School of Management, argued that the governance turmoil, regulatory investigations, and massive shareholder losses leave the board with no credibility. Sonnenfeld also believes that Chinese weapons are now equipped with higher-end NVIDIA chips, calling it “a tremendous degradation of national security” During the interview with CNBC, Sonnenfeld sharply criticized both the political intervention surrounding [&hellip;] Read full article at https://wccftech.com/yales-jeffrey-sonnenfeld-calls-for-nvidia-board-to-resign/",
+      "ai_summary": "发生了什么：日本AI公司Preferred Networks（PFN）与韩国半导体解决方案商SEMIFIVE宣布合作开发MN-Core L2000系列AI推理芯片。该芯片延续PFN十年深耕的MN-Core架构，核心创新在于采用3D集成电路（3D-IC）技术，将高性能逻辑芯片与高带宽DRAM进行垂直堆叠。此举旨在突破生成式AI推理的最大瓶颈——内存带宽限制。相比传统GPU，3D堆叠可将内存带宽提升数倍，同时降低数据搬运功耗，使AI推理在能效比（TOPS/W）上实现质的飞跃。项目已进入工程阶段，计划2027年第一季度完成流片，由三星Foundry提供从I/O接口优化到电源结构设计的全套3D-IC基础设施支持。\n\n为什么重要：AI芯片竞争已从单纯追求算力（FLOPS）转向“数据搬运效率”（Bandwidth per Watt）。MN-Core L2000代表了一条与NVIDIA Hopper/Blackwell、AMD CDNA截然不同的技术路径：不依赖先进制程微缩，而通过先进封装与3D集成实现性能跃升。这不仅降低了对EUV光刻机的依赖，更符合日本、韩国等国家在先进逻辑制程追赶乏力背景下，通过系统级创新弯道超车的战略意图。\n\n对行业有什么影响：首先，将加速3D-IC技术从HPC、AI扩展至消费电子领域，推动TSV（硅通孔）、混合键合等先进封装工艺产业化提速；其次，重塑AI芯片供应链格局——Foundry（三星）、OSAT（日月光）、设计服务（SEMIFIVE）将形成更紧密的“3D-IC联盟”，挑战IDM与Fabless的传统分工；第三，对内存厂商构成重大机遇，SK海力士、美光等需加速开发面向3D堆叠的LPDDR5X/HBM4专用DRAM；最后，该架构或催生新的AI编译器与运行时系统，以最大化利用3D堆叠带来的近存计算（Near-Memory Computing）优势。",
+      "category": "AI",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/pfn-and-semifive-collaborate-to-develop-the-mn-core-l2000-series-of-next-generation-ai-inference-chips/",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-11-24T08:19:25+00:00",
+      "created_at": "2026-11-24T10:36:27.994186+00:00"
+    },
     {
       "id": "b6b9a280-c873-4e68-8de2-a4cdd3847539",
       "title": "三星西安工厂升级为AI数据中心eSSD核心基地，V9 NAND产能将达5-6万片/月",
@@ -37,6 +127,24 @@
       "original_author": "@Semiconductor Digest",
       "published_at": "2026-11-23T21:09:03+00:00",
       "created_at": "2026-11-24T00:32:58.208686+00:00"
+    },
+    {
+      "id": "03e5aa74-bcbb-4ab5-897f-1e0f72b9bef4",
+      "title": "SCHMID发布QuantumLine P+：实现50:1超高深宽比玻璃通孔无缺陷铜填充",
+      "summary": "SCHMID推出QuantumLine P+面板级电镀平台，采用底部向上填充工艺，成功解决玻璃基板通孔（TGV）金属化难题，深宽比达50:1且无空洞。",
+      "key_points": [
+        "QuantumLine P+支持50:1超高深宽比TGV无缺陷铜填充",
+        "面板级工艺提升均匀性（±6%）与吞吐量（达传统设备4-5倍）",
+        "配套TGV蚀刻、种子层沉积与抛光设备，形成玻璃基板全链条解决方案"
+      ],
+      "full_content": "Apple might have the lion’s share of the tablet market, but that doesn’t mean Samsung isn’t putting up a good fight in churning out solid iPad Pro alternatives for the masses. Its Galaxy Tab S11 is a solid option, and thanks to Amazon’s Black Friday 2026 sale, you’ll consider the 11-inch slate. After all, its three storage variants are discounted by $300, meaning that you get to be the proud owner of the premium tablet, starting from $699.99. Samsung’s ultra-thin Galaxy Tab S11 pairs a 1,600-nit Dynamic AMOLED 2X display, 3nm MediaTek silicon, and an included S Pen starting at [&hellip;] Read full article at https://wccftech.com/samsung-galaxy-tab-s11-black-friday-deal-amazon/",
+      "ai_summary": "发生了什么：SCHMID集团发布QuantumLine P+面板级电镀平台，专为玻璃基板（Glass Core Substrate）的通孔（TGV）金属化设计。该设备采用创新的“底部向上”（Bottom-Up）铜填充工艺，在高达50:1的深宽比（Via Depth/Diameter）下实现100%无空洞填充，彻底解决了传统保形镀膜与桥接填充在超高深宽比场景下的失效问题。其面板级（510×515mm）设计不仅确保±6%的卓越均匀性，更将吞吐量提升至传统设备的4-5倍，为玻璃基板从实验室走向量产铺平道路。\n\n为什么重要：玻璃基板被视为继有机基板（Organic Substrate）与硅中介层（Silicon Interposer）之后的第三代高密度互连平台，其超低介电损耗、超高平整度与优异热稳定性，是支撑AI处理器（如NVIDIA Blackwell、AMD MI300）突破1000W功耗墙的关键。而TGV金属化质量直接决定信号完整性与长期可靠性，QuantumLine P+的突破，意味着玻璃基板量产的最大工艺障碍已被攻克。\n\n对行业有什么影响：首先，将加速AI芯片封装向玻璃基板迁移，推动台积电CoWoS-G、英特尔Foveros Glass等先进封装技术商业化进程；其次，重塑封装设备市场格局——SCHMID凭借其在湿法、真空镀膜与CMP领域的全栈能力，正成为玻璃基板生态的核心赋能者；第三，对材料厂商提出新要求，需开发适配玻璃基板的低应力铜电镀液、高选择比蚀刻剂与超薄种子层材料；最后，该技术将外溢至其他领域，如高频毫米波通信、MEMS传感器与量子计算芯片封装，催生全新的高附加值细分市场。",
+      "category": "Foundry",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/schmid-launches-quantumline-p-for-void-free-bottom-up-copper-filling-of-through-glass-vias/",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-11-23T21:08:17+00:00",
+      "created_at": "2026-11-24T10:36:27.994197+00:00"
     },
     {
       "id": "b7fa4ce9-0673-4964-873f-a05f1d6370a5",
@@ -5293,114 +5401,6 @@
       "original_author": "@WCCFTech",
       "published_at": "2026-10-17T15:40:00+00:00",
       "created_at": "2026-10-18T05:19:34.767748+00:00"
-    },
-    {
-      "id": "66f0c14f-a0c2-480a-a99f-c449ba033b33",
-      "title": "Saras Micro Devices推出嵌入式电容技术，解决AI加速器2000A级瞬态电流供电难题",
-      "summary": "Saras Micro Devices开发STILE嵌入式电容，直接集成于PCB或封装基板中，实现垂直供电路径，将AI加速器供电I²R损耗降低50%以上，已进入客户可靠性测试阶段。",
-      "key_points": [
-        "STILE电容厚度匹配PCB基材，支持2mm×2mm微型化设计",
-        "嵌入式方案缩短供电路径，消除电压骤降（droop），保障高频计算稳定性",
-        "已获客户全量表征验证，正推进量产导入，目标2027年实现设计赢"
-      ],
-      "full_content": "Intel has confirmed that its next-generation Razor Lake-AX SoCs will launch in 2028, bringing increased AI capabilities. Intel SVP Confirms Nova Lake For 2027 &amp; Razor Lake For 2028 - AX SoCs Drive AI TOPS To 700 During the \"Semiconductors Powering Humanoids\" seminar in South Korea's Samseong-dong, Intel SVP Cho Min-sung confirmed the next-generation Nova Lake and Razor Lake SoCs. These SoCs will be arriving in 2027 and 2028, respectively. The Intel Nova Lake CPUs have been expected for a while, and we have a fair bit of information that is covered in previous articles. But Intel naming Razor Lake [&hellip;] Read full article at https://wccftech.com/intel-confirms-razor-lake-ax-700-tops-launch-in-2028/",
-      "ai_summary": "发生了什么：Saras Micro Devices于2026年10月17日宣布其革命性嵌入式电容技术STILE已进入量产导入关键阶段。该技术将高性能电容直接嵌入AI加速器的PCB电路板或封装基板内部，而非传统地放置于芯片表面，从而构建一条“垂直供电”路径。此举彻底解决了当前AI芯片面临的最严峻物理挑战之一：瞬态电流尖峰——现代AI加速器峰值电流已达2000安培，且在纳秒级内剧烈波动，传统供电路径因寄生电阻（I²R）导致的电压骤降（droop）会直接造成CPU/GPU丢时钟周期。STILE电容通过紧贴芯片背面部署，将供电路径缩短至毫米级，使I²R损耗降低50%以上，确保芯片在满负荷运行时电压纹波稳定在毫伏级别。\n\n为什么重要：在AI芯片性能持续飙升而摩尔定律放缓的背景下，供电已成为制约算力提升的“最后一公里”瓶颈。Saras的方案不是简单的元件升级，而是对整个电子系统架构的重构：它将原本分散在主板、VRM（电压调节模块）、去耦电容之间的能量传输网络，压缩为一个高度集成的三维立体结构。这种“供电即芯片”的理念，与Chiplet、3D封装等先进封装技术形成完美互补，共同构成下一代AI硬件的物理基础。其2mm×2mm微型化设计更表明，该技术已从实验室走向工程化，能够满足高密度AI服务器对空间与散热的严苛要求。\n\n对行业有什么影响：首先，该技术将重塑AI硬件供应链格局——传统MLCC（多层陶瓷电容）与深槽电容厂商面临被替代风险，而掌握嵌入式工艺的PCB制造商（如欣兴、深南电路）与基板厂（如揖斐电、三星电机）将获得新增长点。其次，它将加速“供电芯片化”趋势：未来VRM、电容、甚至传感器可能被集成到同一块基板中，形成“智能供电模组”，由AI算法实时调控。最后，对终端用户而言，这意味着更高能效比与更长设备寿命——更低的I²R损耗直接转化为更低的散热需求与更高的PUE（电能使用效率），使单机柜AI算力密度突破现有极限，为千兆瓦级AI数据中心的可持续发展铺平道路。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/saras-micro-devices-embeds-capacitors-to-power-ai-accelerators/?utm_source=rss&utm_medium=rss&utm_campaign=saras-micro-devices-embeds-capacitors-to-power-ai-accelerators",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-10-17T13:40:51+00:00",
-      "created_at": "2026-10-17T16:06:08.813496+00:00"
-    },
-    {
-      "id": "6768ac30-c648-495b-b318-495cac76465f",
-      "title": "NVIDIA DLSS 5神经渲染模型已破解，非支持游戏帧率提升达40%",
-      "summary": "NVIDIA最新DLSS 5神经渲染模型虽仅随《NBA 2K27》首发，但已被社区模组作者成功移植至多款未授权游戏，实测帧率最高提升40%，新模型体积缩减24%。",
-      "key_points": [
-        "DLSS 5通过nvngx_dlssnr.dll v310.9.16.0实现",
-        "已成功Mod至非官方支持游戏",
-        "模型体积减少24%，性能提升显著"
-      ],
-      "full_content": "&lt;p&gt;Stewart has loved PCs since he was a child dabbling with BASIC on a ZX Spectrum 48K and still gets far too excited about building and playing on PCs now. He loves to tune and overclock his computers to smooth and stable clocks and run his favorite games and applications on the best settings without compromising quality and framerates. &lt;/p&gt;&lt;p&gt;A firm believer in “Bang for the buck,” Stewart likes to research the best prices and locate the best coupon codes for computers, components and peripherals. Stewart also needs a spare room to house all his old PC parts and peripherals and maybe needs an intervention to stop him from buying more headphones, mice, and keyboards.&lt;/p&gt;",
-      "ai_summary": "发生了什么：NVIDIA于2026年10月正式推出DLSS 5神经渲染技术，作为其第五代深度学习超级采样方案，该模型首次集成于《NBA 2K27》PC版中，核心升级包括24%的模型体积压缩、更高效的推理架构及针对低延迟场景的优化。值得注意的是，尽管NVIDIA尚未开放通用SDK或广泛适配第三方游戏，PC社区开发者已迅速逆向分析并提取出新版DLL文件（nvngx_dlssnr.dll 310.9.16.0），成功将其注入《Cyberpunk 2077》《Starfield》《Horizon Zero Dawn》等十余款主流大作，实测在4K分辨率+路径追踪开启条件下，平均帧率提升22–40%，且画面稳定性与细节保真度优于DLSS 4。\n\n为什么重要：DLSS 5标志着AI驱动图形增强进入“轻量化高泛化”新阶段——在不显著增加GPU显存占用和功耗的前提下，大幅提升推理效率。其成功被快速破解并跨游戏部署，反映出NVIDIA底层AI模型封装日趋标准化，也暴露了厂商对生态控制力的边际减弱。对开发者而言，这加速了高质量实时超分技术的普惠化；对玩家而言，则意味着无需等待官方适配即可提前享受下一代画质与性能红利。\n\n对行业有什么影响：首先，DLSS 5的快速社区扩散将倒逼AMD FSR 4与Intel XeSS加快迭代节奏，尤其需强化模型兼容性与工具链开放性；其次，NVIDIA可能被迫调整策略，提前开放部分API或建立Mod认证机制，以平衡生态控制与用户需求；最后，该事件凸显AI渲染正从“厂商绑定”走向“模型即服务”（MaaS）趋势，未来独立AI超分中间件（如开源TensorRT-LLM渲染插件）或成新竞争焦点，推动图形栈进一步解耦与专业化。",
-      "category": "GPU",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/nvidias-faster-dlss-5-neural-rendering-model-already-modded-into-unsupported-games-delivers-up-to-40-higher-fps/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-10-16T17:04:44+00:00",
-      "created_at": "2026-10-17T05:15:25.608817+00:00"
-    },
-    {
-      "id": "90022431-67ef-4734-ba2a-5ce12952fc75",
-      "title": "中国初创公司演示国产EUV光源原型，输出功率15W、90%部件国产化",
-      "summary": "中国初创公司Langdao Silex成功研制EUV光刻光源原型，输出功率超15W，核心组件国产化率达90%，但距商用水平仍有3–5年差距。",
-      "key_points": [
-        "EUV光源输出功率达15W以上",
-        "90%关键部件实现国产化",
-        "量产仍需3–5年，远低于ASML商用EUV的250W+"
-      ],
-      "full_content": "&lt;p&gt;Anton Shilov has been in the PC industry since 1990s playing games, building PCs, and writing stories about pretty much everything that relates to PCs, Macs, smartphones, tablets, and even fab equipment. Over his career, he has worked at a variety of high-ranking websites, including AnandTech, EE Times, TechRadar, X-bit Labs, and now Tom&#039;s Hardware. He is also a regular features contributor to Tom&#039;s Hardware Premium, writing about the latest developments in the semiconductor industry and related tech news and roadmaps. When Anton is not reading or writing about something high-tech, he is probably watching a good movie, playing a video game, or spending time with his family.&lt;/p&gt;",
-      "ai_summary": "发生了什么：中国初创企业朗道思立信（Langdao Silex）在《南华早报》报道中公开其自主研发的极紫外（EUV）光刻光源原型机，实测输出功率超过15W，整机90%以上核心组件实现本土化供应。该成果标志着中国在EUV光源这一半导体制造‘皇冠上的明珠’领域取得实质性突破，打破了此前完全依赖ASML与Cymer（现属AMS）技术垄断的局面。\n\n为什么重要：EUV光源是当前7nm及以下先进制程芯片制造不可或缺的核心子系统，其技术壁垒极高——需在13.5nm波长下稳定输出千瓦级等离子体，并解决热管理、光学污染、脉冲稳定性等极端工程挑战。全球仅ASML-Cymer实现量产（商用机达250W以上），而中国此前连百瓦级实验室光源都未公开验证。此次15W原型虽仅为商用水平的6%，但已跨越从‘无’到‘有’的关键门槛，为后续功率爬升、可靠性验证和系统集成奠定基础。\n\n对行业有什么影响：短期看，该进展尚难撼动全球EUV供应链格局，但将加速国内光刻机整机厂商（如上海微电子SMEE）对EUV曝光系统的攻关节奏；中期将推动国产光学元件（反射镜、多层膜）、真空系统、激光激发源等配套产业链升级；长期则可能重塑全球半导体设备地缘分工——若中国能在2030年前实现200W+稳定EUV光源量产，将极大缓解先进制程‘卡脖子’风险，并倒逼ASML等巨头调整技术出口策略。值得注意的是，该成果与TrendForce评估一致，凸显中国在‘非光刻机整机’维度的自主突围正从材料、零部件向核心子系统纵深演进。",
-      "category": "Foundry",
-      "source": "Semiconductor Engineering",
-      "source_url": "https://semiengineering.com/chip-industry-week-in-review-160/",
-      "original_author": "@Semiconductor Engineering",
-      "published_at": "2026-10-16T16:30:00+00:00",
-      "created_at": "2026-10-16T17:07:39.30365+00:00"
-    },
-    {
-      "id": "1e3b8031-6c83-4d8e-ae2f-76a433357717",
-      "title": "ARM架构Surface Laptop Ultra首发RTX Spark平台，挑战MacBook Pro高端市场",
-      "summary": "微软Surface Laptop Ultra搭载NVIDIA RTX Spark平台，支持本地运行700亿参数大模型及AAA游戏，以ARM+AI协处理器组合切入高端创作本市场，起售价2599美元。",
-      "key_points": [
-        "Surface Laptop Ultra首发RTX Spark平台",
-        "ARM架构实现70B模型本地推理与AAA游戏流畅运行",
-        "直接对标MacBook Pro，强调AI生产力与能效比"
-      ],
-      "full_content": "Among the many improvements CD Projekt Red introduced in The Witcher 3 Remastered is support for path tracing on PC. While it is generally transformative, its implementation in the third entry in the series isn't always so, as not every location looks great under certain lighting conditions. And with its high performance cost, keeping path tracing on at all times can make for a very frustrating journey across Velen, Skellige, and Toussaint. Thanks to a new mod, however, players can now have different ray tracing and path tracing profiles, as well as upscaler settings, which switch dynamically between regions, outdoors, [&hellip;] Read full article at https://wccftech.com/cd-projekt-red-path-tracing-the-witcher-3-mod-curate-where-it-runs/",
-      "ai_summary": "发生了什么：微软于2026年10月正式发布Surface Laptop Ultra，这是首款搭载NVIDIA全新RTX Spark AI加速平台的消费级笔记本。该设备采用定制ARM处理器（推测为高通Oryon或微软自研），集成专用NPU与RTX Spark GPU，实现在无风扇静音状态下本地运行700亿参数大语言模型（如Llama 4）、实时图像生成及《Cyberpunk 2077》等AAA级游戏。其核心卖点并非单纯性能参数，而是‘AI工作流无缝化’：文档摘要、会议实时转录、代码自动补全、视频背景虚化等任务均由本地AI引擎完成，全程离线、低延迟、零隐私泄露风险。起售价2599美元，明确剑指MacBook Pro 16英寸高端创作人群。\n\n为什么重要：Surface Laptop Ultra标志着PC产业进入‘AI原生架构’新纪元。它打破了x86与ARM在高性能领域的传统分野，证明ARM凭借能效比优势与AI协处理器深度集成，可在专业创作场景实现对x86的全面超越。更重要的是，RTX Spark平台将GPU从‘图形渲染单元’升维为‘通用AI计算中枢’，其统一内存架构、低功耗张量核心、专用AI指令集，使AI任务不再需要数据在CPU/GPU/NPU间反复拷贝，大幅降低延迟与功耗。这对苹果M系列芯片构成直接挑战，迫使其加速AI硬件升级节奏。\n\n对行业有什么影响：第一，将加速Windows阵营AI PC普及，高通、联发科、英特尔均将加速推出对标RTX Spark的‘AI Coprocessor’方案；第二，重塑PC供应链格局，NVIDIA从显卡厂商转型为AI平台提供商，与微软、OEM厂商形成深度绑定；第三，对软件生态提出新要求，Adobe、Autodesk等专业软件需重构AI功能调用方式，从云端API转向本地AI Runtime；第四，对消费者行为产生深远影响——‘是否支持本地大模型’将成为高端PC选购核心指标，推动PC从‘通用计算设备’向‘个人AI代理终端’进化。",
-      "category": "Digital",
-      "source": "Ars Technica (Gadgets)",
-      "source_url": "https://arstechnica.com/gadgets/2026/10/the-surface-laptop-ultra-delivers-on-most-of-microsofts-promises/",
-      "original_author": "@Ars Technica (Gadgets)",
-      "published_at": "2026-10-16T15:43:12+00:00",
-      "created_at": "2026-10-17T05:15:25.608966+00:00"
-    },
-    {
-      "id": "a52ad64f-d6cd-4af9-8ca1-3da6ddd4b5a0",
-      "title": "Meta发布开源多模态大模型Muse Spark Open：8160亿参数，支持100万Token上下文",
-      "summary": "Meta推出开源多模态模型Muse Spark Open，参数量达8160亿，激活参数420亿，专为Apple Silicon优化，可在双Mac Studio（1TB内存）上全量运行。",
-      "key_points": [
-        "Muse Spark Open为当前最大开源多模态模型",
-        "支持100万Token超长上下文",
-        "深度优化Apple Silicon统一内存架构"
-      ],
-      "full_content": "In a rare incident, the company allowed the customer to keep the upgraded OLED variant even though the first one was working fine. Dell Provides a Free Upgrade to User Who Thought His OLED Monitor Died; Gets a 280 Hz Alienware Monitor As a Replacement for the 240 Hz Variant We often overlook amazing RMA success stories buried beneath reports of RMA horror stories. Even though successful RMAs are fairly common, there are some incidents where the manufacturers go above and beyond by offering more than what's actually required. One such amazing story was shared by the Redditor u/hardcore_gamer29, who [&hellip;] Read full article at https://wccftech.com/dell-sends-a-faster-280-hz-alienware-oled-monitor-in-replacement-for-a-240-hz-variant/",
-      "ai_summary": "发生了什么：Meta于2026年10月16日发布Muse Spark Open——一款参数总量达8160亿、激活参数420亿的开源多模态大模型，支持文本、图像、音频、视频多模态理解与生成，并具备100万Token超长上下文窗口。该模型最大亮点在于其‘苹果生态原生性’：完全基于苹果开源数组框架MLX开发，深度利用Apple Silicon统一内存（UMA）架构特性，可完整加载于两台顶配Mac Studio（M5 Ultra芯片+512GB内存×2=1TB）组成的集群中，无需模型并行或Offload技术。模型已开源至Hugging Face，允许商用与二次开发，许可证为Apache 2.0。\n\n为什么重要：Muse Spark Open的发布，标志着开源大模型竞赛进入‘超大规模+硬件原生’新阶段。它不仅是参数量的简单堆砌，更是对硬件-软件协同设计的极致实践：通过MLX框架的内存零拷贝、动态计算图优化、统一地址空间管理，解决了超大模型在消费级设备上的部署难题。此举直接挑战OpenAI闭源策略与Llama系列‘中等规模’定位，为中小企业、研究机构及独立开发者提供了可负担的前沿多模态基座，极大降低AI应用创新门槛。\n\n对行业有什么影响：第一，将加速多模态模型开源生态繁荣，Hugging Face上相关微调工具链、LoRA适配器、推理优化库将呈指数级增长；第二，倒逼苹果加速M系列芯片AI能力升级，M6芯片或将集成专用多模态张量核心；第三，对云服务厂商构成压力，若顶级模型可在本地高效运行，企业对云端训练/推理服务的需求将结构性下降；第四，引发AI伦理新议题——如此强大的开源多模态模型若被滥用，其伪造内容、深度换脸、语音克隆等能力将带来前所未有的监管挑战，全球AI治理框架亟需更新。",
-      "category": "AI",
-      "source": "Solidot (科技)",
-      "source_url": "https://www.solidot.org/story?sid=85634",
-      "original_author": "@Solidot (科技)",
-      "published_at": "2026-10-16T15:14:23+00:00",
-      "created_at": "2026-10-17T05:15:25.608983+00:00"
-    },
-    {
-      "id": "28bd3f52-4d06-4466-8a91-5d569e2fcf3b",
-      "title": "Nordson SonoFlex声学检测系统获SEMICON West‘最佳西部奖’",
-      "summary": "Nordson SonoFlex声学检测系统获SEMICON West 2026‘最佳西部奖’，扫描速度达传统设备2倍，支持小尺寸面板缺陷高灵敏度识别。",
-      "key_points": [
-        "SonoFlex检测速度比传统系统快2倍",
-        "支持最宽频率范围生产环境应用",
-        "模块化设计可四台联机，吞吐量提升8倍"
-      ],
-      "full_content": "Manufacturing and process technology GlobalFoundries will operate two new fabs in Malta, New York , under a U.S.-Japan initiative involving up to $21B in investment. The first fab is expected to come online in 2029. GF also unveiled an FD-SOI roadmap for physical AI. Applied Materials unveiled its $5B EPIC Center , a 600,000-s.f. semiconductor process and equipment R&amp;D facility in Silicon Valley. Infineon and Wolfspeed inked a new multi-year supply agreement for 200mm SiC wafers . Nikon introduced a new lithography system for advanced packaging, offering 1.5 µm line-and-space resolution and 40% higher throughput than its predecessor, at 72 panels per hour. The maskless system supports large substrates and RDL patterning, with availability planned for April 2027. Packaging and test FormFactor and Teradyne will co-develop semiconductor test technologies for HBM, advanced packaging, silicon photonics, and HPC. Teradyne also agreed to invest $300M in FormFactor. Teradyne also introduced a semiconductor test platform for edge-AI chips. ASE expanded its PowerSiP platform with a vertically integrated 3D packaging solution that places voltage regulation closer to AI processors, reducing parasitic routing losses by 50% or more to improve power efficiency in data centers and HPC systems. China narrows the gap CXMT reportedly plans to introduce a DDR5 server RDIMM using 4F² DRAM cells by year-end, potentially improving density and manufacturing costs. The development could help narrow China&#8217;s memory gap, although CXMT has not disclosed production yields, manufacturing volumes or evidence of cost competitiveness. China-based Langdao Silex unveiled a prototype EUV light source with 90% localized components, reports SCMP. TrendForce says the source exceeds 15W output but remains far below commercial EUV power levels, with mass production still estimated to be three to five years away. Nvidia ’s AI-accelerator shipments in China fell 44% year over year in the first half of 2026, leaving it with 34% of the data-center AI-accelerator market by units shipped, compared with Huawei&#8217;s 28%, according to IDC data reported by Reuters. Around the Valley This week&#8217;s SEMICON West conference: Synopsys CEO Sassine Ghazi said in a keynote address that autonomous chip design can already take some customer specifications to verified RTL, while physical implementation, verification and final sign-off still require human involvement. Nvidia expanded its AI tools for semiconductor manufacturing , including the new cuPotential CUDA-X library for atomic-scale simulation. Lam Research plans to integrate Nvidia NanoVDB into SEMulator3D, which is expected to speed select wafer-etch modeling by up to 30x. Siemens and Nvidia integrated cuLitho with Calibre to speed computational lithography , saying it&#8217;s up to 12x faster for full-chip OPC workloads. It supports High-NA EUV and curvilinear inverse lithography. Fig. 1: Synopsys President/CEO Sassine Ghazi and Semiconductor Engineering&#8217;s Ed Sperling at SEMICON West this week. Source: G. Haley/Semiconductor Engineering The OCP Global Summit was also held this week in San Jose. Find all the highlights in our New Technologies section below. Earnings season heating up TSMC reported Q3 revenue of roughly US$46.7B , up 41.2% year over year in U.S. dollar terms, with 2nm accounting for 8% of wafer revenue. CEO C.C. Wei said the company has seen “no sign of slowdown” in AI demand. But rising prices and macroeconomic uncertainty are weighing on consumer and other price-sensitive markets, prompting more cautious planning for 2027. TSMC also said it has discussed participating in Musk’s Terafab, but any fab collaboration would need to be operated by TSMC. ASML reported record Q3 sales of €11.7B, up about 55% from a year earlier, and said planned supply for the next two years will not fully meet customer demand. The company is evaluating additional capacity beyond its previously planned expansion. Market and investment More than $8.5B in Q3 chip industry startup funding was tracked across 80 companies, with AI inference, memory alternatives, photonics, networking, and other data-movement technologies drawing some of the quarter’s biggest rounds. SEMI projects global 300mm front-end fab equipment spending will rise 31% to $149B in 2026 and reach $227B by 2029, driven by AI, HPC, and leading-edge semiconductor demand. Equipment investment in the Americas is expected to more than double from $18.1B in 2026 to $40.6B in 2029. Fig. 2: SEMI 300mm Fab Outlook, Q326 update. Big hauls Salience Labs raised $125M to accelerate deployment of its optical circuit switching technology for AI infrastructure. Mueon raised $65M to scale up its stackable, modular 3D platform that integrates compute, memory, interconnect, power delivery, and thermal management. Quick links to more news: In-Depth New Technologies (including OCP Global Summit ) Global Security Trending Video Research Quantum Hardware Events and Webinars New Technologies OCP Summit Microsoft announced a new AI inference accelerator , slated for 2027, with an inference-first architecture optimized for long-context, memory-intensive, and decode-heavy AI workloads. Intel detailed its latest GPU for AI inference, with a design supporting up to 480 GB of LPDDR5X memory. Marvell announced six-channel CXL 3.2 memory expanders for AI inference, along with a 3.2T protocol-aware retimer and second-generation 1.6T AEC DSP. Wiwynn , Ayar Labs , and GUC demonstrated a CPO compute system with integrated optical engines and system-level cooling. Nvidia and Cisco announced plans for a new USFP optical module supporting 400Gb/s-per-lane signaling and up to 12.8Tb/s capacity. Keysight introduced new 1.6T Ethernet test platforms, 1.6T copper interconnect validation, and a PCIe 7.0 protocol test solution. It also demonstrated multi-vendor Link Layer Retry interoperability. Manufacturing and test Siemens EDA introduced Tessent Silicon Executable software to deliver test patterns through PCIe and USB with Advantest and Teradyne integrating it into their test platforms. Siemens also rolled out Simcenter SCADAS ES , a modular data-acquisition system for physical testing. Particle Measuring Systems introduced a 20nm particle counter for inline monitoring of solvents used in semiconductor manufacturing . IC-Link by imec and Polar Semi are collaborating on 8-inch enhancement-mode GaN manufacturing, using imec&#8217;s GaN-on-silicon technology for power devices. Design, compute and power IBM and Siemens EDA are collaborating on IBM’s nanostack transistor architecture , combining device research with EDA, process simulation, and lithography optimization for future manufacturing. ChipAgents and Nvidia introduced a benchmark designed to test whether AI agents can carry an end-to-end digital chip-design task from specification through physical implementation and verified GDS. Infineon added the XDP8HD40S-1, a new high-voltage hot-swap controller for digital power-path protection and monitoring, to its power semiconductor portfolio. Rambus unveiled a PMIC designed for LPDDR6 SOCAMM2 server module chips for AI infrastructure, with advanced power conversion, sequencing, telemetry, and fault protection. IBM plans to release an early research PDK for its 7-angstrom nanostack technology in Q1 2027, giving chip designers and EDA vendors an early way to explore design challenges for vertically stacked transistors. Automotive Microchip and Elektrobit introduced a pre-integrated AUTOSAR software stack for automotive processors. TDK introduced two Hall-effect sensor ICs for motor-position sensing and xEV current sensing . In-Depth Semiconductor Engineering published the Low Power, High Performance newsletter this week, including: Why Open-Weight AI Matters Agentic AI Alters The CPU-GPU Balance How Close Are We To Fully Autonomous Chip Design ? Plus: Report : Startup Funding: Q3 2026 Why Heat Is Becoming A Bigger Chip D",
-      "ai_summary": "发生了什么：Semiconductor Digest报道，Nordson Test & Inspection公司的SonoFlex声学检测系统荣获SEMICON West 2026‘最佳西部奖’。该系统采用先进脉冲发生器与换能器技术，实现小尺寸面板（如SiP、Fan-Out WLP）的高通量、高灵敏度缺陷检测：扫描速度达传统设备2倍；支持业界最宽生产级频率范围（提升缺陷识别精度）；全新FlexCore软件结合AI多门图像分析（MGIA）技术，可精准分离真缺陷与伪影，显著降低误报率；其模块化设计允许多台设备并行作业，最高可提升单位小时产量（UPH）8倍。\n\n为什么重要：随着先进封装（如2.5D/3D IC、Chiplet）普及，封装体内部缺陷（如微空洞、分层、焊点裂纹）日益成为良率瓶颈，而传统X光或光学检测对此类缺陷不敏感。声学显微镜（SAM）虽能穿透材料，但传统设备存在速度慢、灵敏度不足、自动化程度低等痛点。SonoFlex通过硬件创新（高频换能器）与软件智能化（AI图像分析）双轮驱动，首次将SAM技术带入主流量产线，填补了先进封装检测的关键空白。\n\n对行业有什么影响：对封测厂（如ASE、Amkor），SonoFlex可缩短FA（失效分析）周期，加速工艺调试；对设备商，该奖项将激励更多厂商投入声学检测技术研发，推动价格下降与功能普及；对芯片设计公司，高可靠性检测能力意味着可更早暴露封装设计缺陷，反向优化Die Pad布局与Underfill材料选择。长远看，它标志着半导体检测正从‘二维表面’迈向‘三维立体’，为HBM、CoWoS等复杂3D结构的量产铺平道路，是‘后摩尔时代封装即制造’理念的重要支撑。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/nordson-sonoflex-wins-2026-best-of-west-award-at-semicon-west/?utm_source=rss&utm_medium=rss&utm_campaign=nordson-sonoflex-wins-2026-best-of-west-award-at-semicon-west",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-10-16T07:01:05+00:00",
-      "created_at": "2026-10-18T16:16:25.989682+00:00"
     }
   ]
 }
