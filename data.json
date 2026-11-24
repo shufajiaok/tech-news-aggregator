@@ -1,7 +1,115 @@
 {
-  "updated_at": "2026-11-23T08:29:01.529373+00:00",
+  "updated_at": "2026-11-24T00:33:07.779096+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "b6b9a280-c873-4e68-8de2-a4cdd3847539",
+      "title": "三星西安工厂升级为AI数据中心eSSD核心基地，V9 NAND产能将达5-6万片/月",
+      "summary": "三星计划将西安半导体工厂全面转向第九代286层V9 NAND闪存生产，重点服务AI数据中心企业级SSD需求，预计2027年11月完成扩产，月产能达5–6万片300mm晶圆。",
+      "key_points": [
+        "西安工厂将成三星AI数据中心eSSD核心生产基地",
+        "V9 NAND采用286层堆叠，容量提升50%，IO速度提升33%",
+        "V9良率达90%+，高于上代80–85%，eSSD需求明年将占NAND总需求57%"
+      ],
+      "full_content": "&lt;p&gt;Brandon has been tinkering with PCs since childhood and received his first &quot;real&quot; PC, an IBM Aptiva 310, in the mid-1990s. He next went on to build his first custom PC with an Intel Celeron 300A processor overclocked to 450MHz on an Abit BH6 motherboard. Brandon has written about PC and Mac tech since the late 1990s, first at AnandTech before moving to DailyTech and later to Hot Hardware. When Brandon is not consuming copious amounts of tech news, he can be found enjoying the NC mountains or the beach with his wife and two sons.&lt;/p&gt;",
+      "ai_summary": "发生了什么：三星电子宣布对其位于中国陕西西安的两座NAND晶圆厂（X1和X2）进行重大工艺升级，全面转向第九代垂直NAND（V9）技术，目标是将其打造为面向全球AI数据中心的企业级固态硬盘（eSSD）核心制造基地。改造包括在X2厂新增一条月产能约2万片的V9专线，并将现有V6产线20–30%产能转产V9，最终实现V9月产能5–6万片300mm晶圆。相关设备将于2027年2月进场，整体改造预计2027年11月完成。V9采用286层堆叠结构（较V8增加50层），在相同面积下TLC产品容量提升约50%，最高数据吞吐达3.2Gbps，良率已突破90%，显著优于上代80–85%水平。\n\n为什么重要：此举标志着NAND产业重心正加速向AI驱动的数据中心市场倾斜。TrendForce数据显示，eSSD所用NAND需求2026年增长84%，2027年预计再增55%，其在NAND总需求中的占比将从2026年的45%跃升至57%；而PC与手机端NAND需求则双双下滑。三星西安工厂目前承担其全球约三分之一的NAND产能，此次聚焦V9高性能产品，不仅强化其在eSSD市场的领导地位（Q2市占率35.1%，居全球第一），更凸显其以先进制程+规模化制造应对AI算力爆发性存储需求的战略定力。\n\n对行业有什么影响：首先，三星西安V9产能扩张将加剧高端NAND供应链竞争，尤其对SK海力士（市占率21.1%）构成直接压力，可能推动后者加快288层以上NAND量产节奏。其次，V9高良率与高集成度将加速eSSD成本下降，利好AI云服务商降低训练/推理延迟与存储TCO。第三，该布局强化了中国作为全球半导体制造关键节点的地位——尽管受出口管制影响，但成熟先进制程（如V9 NAND）的本地化扩产仍被允许并获政策支持，这为全球AI基础设施供应链提供了关键韧性。最后，eSSD需求激增或将反向拉动HBM、CXL内存池等配套技术发展，推动存储架构向存算一体演进。",
+      "category": "Semiconductor",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/031/258.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-11-23T22:00:00+00:00",
+      "created_at": "2026-11-24T00:32:58.208658+00:00"
+    },
+    {
+      "id": "1af2a629-2ec5-46fd-b50a-063fe4f5a953",
+      "title": "PFN与SEMIFIVE合作开发MN-Core L2000系列AI推理芯片，采用3D堆叠DRAM架构",
+      "summary": "日本PFN与韩国SEMIFIVE联合开发下一代AI推理芯片MN-Core L2000系列，通过逻辑芯片与DRAM三维堆叠实现超大内存带宽，计划2027年Q1流片，目标带宽超L1000系列两倍。",
+      "key_points": [
+        "L2000系列采用3D IC架构，垂直堆叠逻辑芯片与DRAM",
+        "目标内存带宽为L1000系列的两倍以上，专攻生成式AI推理瓶颈",
+        "三星Foundry提供3D-IC设计基础设施，SEMIFIVE负责全流程Turnkey交付"
+      ],
+      "full_content": "&lt;p&gt;Andrew oversees laptop and desktop coverage and keeps up with the latest news in tech and gaming. His work has been published in Kotaku, PCMag, Complex, Tom’s Guide and Laptop Mag, among others. He fondly remembers his first computer: a Gateway that still lives in a spare room in his parents&#039; home, albeit without an internet connection. When he’s not writing about tech, you can find him playing video games, checking social media and waiting for the next Marvel movie. Follow him on Threads &lt;a href=&quot;https://www.threads.net/@freedmanae&quot;&gt;@FreedmanAE&lt;/a&gt; and BlueSky &lt;a href=&quot;https://bsky.app/profile/andrewfreedman.net&quot;&gt;@andrewfreedman.net&lt;/a&gt;.&lt;a href=&quot;https://bsky.app/profile/andrewfreedman.net&quot;&gt; &lt;/a&gt;You can send him tips on Signal: andrewfreedman.01&lt;/p&gt;",
+      "ai_summary": "发生了什么：日本人工智能公司Preferred Networks（PFN）与韩国半导体定制化服务商SEMIFIVE正式宣布合作开发MN-Core L2000系列AI推理芯片，作为现有L1000系列的继任者。该芯片基于PFN自研的MN-Core架构，核心创新在于采用3D堆叠技术，将高能效逻辑计算单元与DRAM紧密集成，从而突破传统GPU受限于内存带宽（即‘内存墙’）的性能瓶颈。项目已启动，计划于2027年第一季度完成tape-out（流片），目标是实现超过L1000系列两倍的内存带宽，显著提升AI代理（AI Agents）、实时推理等场景的能效比与响应速度。三星Foundry将提供全套3D-IC设计支持，包括优化I/O接口与电源结构；SEMIFIVE则承担从逻辑设计实现、先进封装到量产管理的全栈式Turnkey服务。\n\n为什么重要：生成式AI的爆发式增长正使推理环节成为算力消耗主体，而当前主流GPU受限于HBM带宽与功耗，难以兼顾高吞吐、低延迟与绿色节能。MN-Core系列自2016年启动研发，已凭借高带宽、低功耗特性三度登顶Green500能效榜，证明其技术路径的有效性。L2000系列不仅是PFN技术路线的自然演进，更是对‘AI芯片竞争范式正从单纯算力转向数据搬运效率’这一趋势的精准回应。3D-IC已成为突破摩尔定律瓶颈的关键路径，而PFN+SEMIFIVE+三星的三方协作，代表了一种新型‘架构定义—设计实现—制造赋能’的垂直整合模式，具备极强的产业化落地能力。\n\n对行业有什么影响：首先，L2000系列将直接挑战NVIDIA在AI推理市场的统治地位，尤其在对能效与成本极度敏感的边缘侧、AI Agent服务器等新兴场景中形成差异化优势。其次，该项目的成功将加速3D-IC技术在AI芯片领域的普及，带动整个先进封装生态（如TSV、混合键合、热管理）的发展，利好Amkor、ASE、长电科技等封测龙头。第三，三星Foundry深度参与3D-IC设计流程，表明其正从传统晶圆代工向‘系统级代工（System Foundry）’战略升级，有望吸引更多AI初创公司选择其平台。最后，该合作为中国及亚洲地区构建自主可控的AI芯片生态提供了重要参考——不依赖最尖端逻辑制程，而通过先进封装与架构创新实现性能跃升，是一条务实可行的技术突围路径。",
+      "category": "AI",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/pfn-and-semifive-collaborate-to-develop-the-mn-core-l2000-series-of-next-generation-ai-inference-chips/?utm_source=rss&utm_medium=rss&utm_campaign=pfn-and-semifive-collaborate-to-develop-the-mn-core-l2000-series-of-next-generation-ai-inference-chips",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-11-23T21:09:03+00:00",
+      "created_at": "2026-11-24T00:32:58.208686+00:00"
+    },
+    {
+      "id": "b7fa4ce9-0673-4964-873f-a05f1d6370a5",
+      "title": "英伟达CEO黄仁勋闪电复职，董事会确认其回归领导层",
+      "summary": "英伟达董事会宣布黄仁勋即日起恢复担任CEO及总裁职务，结束为期两周的临时CEO过渡期；前CFO科莱特·克雷斯（Colette Kress）将继续担任CFO。",
+      "key_points": [
+        "黄仁勋在卸任仅10天后即被董事会紧急 reinstated",
+        "董事会声明称其复职符合股东、员工及客户最大利益",
+        "事件引发外界对内部治理与外部政治干预的广泛讨论"
+      ],
+      "full_content": "&lt;p&gt;Andrew oversees laptop and desktop coverage and keeps up with the latest news in tech and gaming. His work has been published in Kotaku, PCMag, Complex, Tom’s Guide and Laptop Mag, among others. He fondly remembers his first computer: a Gateway that still lives in a spare room in his parents&#039; home, albeit without an internet connection. When he’s not writing about tech, you can find him playing video games, checking social media and waiting for the next Marvel movie. Follow him on Threads &lt;a href=&quot;https://www.threads.net/@freedmanae&quot;&gt;@FreedmanAE&lt;/a&gt; and BlueSky &lt;a href=&quot;https://bsky.app/profile/andrewfreedman.net&quot;&gt;@andrewfreedman.net&lt;/a&gt;.&lt;a href=&quot;https://bsky.app/profile/andrewfreedman.net&quot;&gt; &lt;/a&gt;You can send him tips on Signal: andrewfreedman.01&lt;/p&gt;",
+      "ai_summary": "发生了什么：2026年11月23日，英伟达董事会发布正式声明，宣布创始人兼前CEO黄仁勋（Jensen Huang）即日起恢复担任公司总裁兼首席执行官职务，结束此前由首席财务官科莱特·克雷斯（Colette Kress）担任的临时CEO过渡期。此次人事变动距黄仁勋最初宣布卸任仅过去约10天，堪称半导体行业罕见的‘闪电复职’。董事会主席Harvey C. Jones在声明中强调，黄仁勋的回归是经过审慎评估后作出的决定，‘符合股东、员工、合作伙伴和客户的最大利益’，并高度肯定克雷斯在临时任职期间的卓越表现，她将继续留任CFO一职。\n\n为什么重要：黄仁勋不仅是英伟达的技术灵魂与战略掌舵人，更是全球AI芯片产业的标志性人物。其短暂卸任与迅速复职，远超一般企业高管变动，折射出公司在AI技术高速迭代、地缘政治博弈加剧、供应链风险上升等多重压力下的治理张力。此前多家外媒（如WCCFTech、Bloomberg）报道指出，此次决策过程存在信息不透明问题，甚至牵涉高层政治游说，凸显了英伟达作为国家战略性科技企业的特殊地位。在GB300、Rubin架构密集发布、全球AI数据中心建设狂潮的背景下，稳定且具远见的领导层对维持投资者信心、保障客户交付、协调台积电等关键供应链至关重要。\n\n对行业有什么影响：短期来看，黄仁勋的回归将极大提振市场情绪与客户信任，稳定英伟达在AI芯片市场的绝对主导地位（当前市占率超85%），并加速GB200 NVL72、Rubin CPX等新一代产品的商业化落地。中期而言，此事或促使其他AI芯片公司（如AMD、Intel、Graphcore）加速完善公司治理与接班人机制，避免单一领袖依赖风险。长期看，它进一步印证了AI基础设施已超越纯商业范畴，成为大国科技竞争的核心载体——企业决策不再仅由董事会闭门决定，而是嵌入更宏大的国家安全、产业政策与国际关系框架之中。对于中国等追赶方而言，这也警示：在构建自主AI芯片生态时，不仅需攻克技术难关，更需建立兼具创新活力与战略韧性的现代企业治理体系。",
+      "category": "GPU",
+      "source": "Solidot (科技)",
+      "source_url": "https://www.solidot.org/story?sid=85969",
+      "original_author": "@Solidot (科技)",
+      "published_at": "2026-11-23T21:00:00+00:00",
+      "created_at": "2026-11-24T00:32:58.208699+00:00"
+    },
+    {
+      "id": "3246d4d2-8f17-4c60-8ccf-57c9968fa911",
+      "title": "IBM、美光与帕特雷大学联合发布混合键合3D-NAND类脑计算芯片，权重密度达480万/mm²",
+      "summary": "IBM研究院、美光科技与希腊帕特雷大学合作推出基于混合键合3D-NAND的模拟存内计算（CIM）宏单元，实现4.8M权重/mm²超高密度，为AI边缘推理提供新硬件范式。",
+      "key_points": [
+        "采用混合键合技术实现3D-NAND与逻辑层高密度互连",
+        "模拟存内计算宏单元权重密度达4.8百万/mm²",
+        "成果发表于2026年11月arXiv预印本平台"
+      ],
+      "full_content": "&lt;p&gt;Jeff Kampman has been playing PC games ever since he learned how to fire up freeware CDs from the DOS command line. He started building his own PCs in the mid-aughts and later turned that passion into a career, working as a news and guides writer, reviewer, and ultimately Editor-in-Chief at The Tech Report, where he dove deep on CPUs and GPUs (and more) in pursuit of the smoothest gaming experiences around. Jeff later took on roles at Asus and Intel as a technical marketer before joining Tom&#039;s Hardware. As Senior Analyst, Graphics, Jeff covers everything from integrated graphics processors to discrete graphics cards to the massive data center GPU installations powering our AI future. Jeff is also a hobbyist photographer, Twitch streamer, espresso enthusiast, and runner.&lt;/p&gt;",
+      "ai_summary": "发生了什么：2026年11月，IBM研究院、美光科技（Micron Technology）与希腊帕特雷大学（University of Patras）联合发布一项突破性研究成果——‘3D-NAND-CIM’，即一种基于混合键合（Hybrid Bonding）3D-NAND闪存的模拟存内计算（Analog In-Memory Computing, CIM）宏单元。该技术利用3D-NAND天然的高密度存储阵列作为模拟计算单元，通过在存储单元上直接施加电压脉冲进行乘加运算（MAC），绕过传统冯·诺依曼架构中数据在处理器与内存间频繁搬运的瓶颈。实验结果显示，该宏单元实现了高达4.8百万（4.8M）权重/mm²的计算密度，是当前主流SRAM或ReRAM基CIM方案的数倍，为超低功耗、高密度AI边缘推理芯片提供了全新硬件基础。\n\n为什么重要：AI模型小型化与边缘化趋势日益明显，但传统数字芯片在执行神经网络推理时，内存带宽与功耗成为主要制约。存内计算被视为终极解决方案之一，而3D-NAND因其成熟、低成本、高密度、非易失性等优势，成为极具潜力的载体。此前，3D-NAND多用于存储，其作为计算介质面临精度、耐久性、模拟线性度等挑战。本次研究通过混合键合技术实现逻辑控制层与3D-NAND存储层的微米级精准对准与高密度互连，解决了信号完整性与布线瓶颈；同时利用NAND单元的多级阈值特性，实现了高精度模拟计算。这一成果标志着存内计算正从实验室走向可量产的硅基路径。\n\n对行业有什么影响：首先，该技术若成功商用，将重塑AI芯片设计格局——存储厂商（如美光、三星、SK海力士）将从被动供应商变为主动计算方案提供商，与英伟达、寒武纪等AI芯片公司形成竞合新关系。其次，它为终端设备（如智能手机、AR眼镜、IoT传感器）带来革命性可能：在极小面积、极低功耗下运行复杂AI模型，真正实现‘无感智能’。第三，该路径绕开了对最先进逻辑制程（如3nm）的绝对依赖，为中国等在先进制程受限地区发展自主AI芯片提供了‘换道超车’机会——依托成熟的3D-NAND制造能力，叠加创新架构，可快速构建有竞争力的AI边缘生态。最后，它将加速EDA工具链对模拟存内计算的支持，推动行业标准（如IEEE P3190）的制定与落地。",
+      "category": "Semiconductor",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/hybrid-bonded-3d-nand-boosts-analog-in-memory-compute-density/",
+      "original_author": "@Semiconductor Engineering",
+      "published_at": "2026-11-23T19:58:02+00:00",
+      "created_at": "2026-11-24T00:32:58.208705+00:00"
+    },
+    {
+      "id": "2c5eda2d-a7d4-4413-84c4-7d3afc017619",
+      "title": "SCHMID推出QuantumLine P+平台，实现玻璃基板TGV无缺陷铜填充，支持50:1超高深宽比",
+      "summary": "SCHMID集团发布QuantumLine P+面板级电镀平台，专为玻璃基板（Glass Core）的通孔（TGV）铜填充设计，可在50:1深宽比下实现无空洞、高均匀性填充，助力AI处理器先进封装。",
+      "key_points": [
+        "QuantumLine P+支持50:1超高深宽比TGV的无缺陷铜填充",
+        "采用底部向上（bottom-up）电镀工艺，面板均匀性达±6%",
+        "填补玻璃基板量产关键工艺空白，为AI芯片2.5D/3D封装铺路"
+      ],
+      "full_content": "In late January, Christoph Hartmann left Amazon Game Studios as the company significantly reduced its gaming investments (closing the MMORPG New World and ditching other projects, like Maverick's open world racing game). The former Amazon Game Studios Chief landed another job quickly enough. He became the General Manager of Massive Entertainment in July, and he has now spoken publicly about his vision for the company. It should be noted that Massive Entertainment is no longer just the studio that made World in Conflict, The Division, Avatar: Frontiers of Pandora, and Star Wars: Outlaws. Earlier this year, as part of Ubisoft's restructuring, the Creative [&hellip;] Read full article at https://wccftech.com/massive-entertainment-christoph-hartmann-a24-of-video-games/",
+      "ai_summary": "发生了什么：SCHMID集团于2026年11月正式发布QuantumLine P+面板级电镀平台，这是业界首个专为玻璃基板（Glass Core Substrate）通玻璃通孔（Through-Glass Via, TGV）铜填充而设计的量产级解决方案。该平台采用创新的‘底部向上’（bottom-up）铜电镀工艺，能够稳定、可靠地在深宽比高达50:1的TGV中实现100%无空洞（void-free）填充，且在整个510×515mm大尺寸面板上的填充均匀性控制在±6%以内。该技术解决了玻璃基板从实验室迈向大规模量产的最大工艺瓶颈之一。TGV是玻璃基板实现高密度、低损耗电气互连的核心，其填充质量直接决定了AI处理器封装的电气性能、热管理能力与长期可靠性。QuantumLine P+与SCHMID此前推出的TGV湿法刻蚀（QuantumLine H+）、真空金属化（PlasmaLine）及化学机械抛光（InfinityLine L+）设备共同构成了完整的玻璃基板制造工艺链。\n\n为什么重要：随着AI芯片晶体管数量与功耗指数级增长，传统有机基板（Organic Substrate）已逼近性能极限。玻璃基板凭借其超高的平整度、优异的尺寸稳定性、更低的介电损耗与更高的热导率，被视为下一代AI处理器（如NVIDIA Blackwell Ultra、AMD Instinct MI400）2.5D/3D封装的终极载体。然而，其产业化最大障碍在于TGV的高良率、高一致性制造。QuantumLine P+的推出，标志着玻璃基板已从概念验证阶段迈入可量产阶段，为AI算力的持续飞跃扫清了一大物理障碍。\n\n对行业有什么影响：首先，该技术将加速玻璃基板在高端AI芯片封装中的渗透，利好台积电（CoWoS-G）、英特尔（Foveros Glass）、三星（I-Cube Glass）等先进封装龙头，推动其产能扩张与技术迭代。其次，它将重塑封装设备市场格局，SCHMID作为湿法工艺领导者，将与应用材料（Applied Materials）、东京电子（TEL）等在先进封装设备领域展开更激烈竞争。第三，玻璃基板的普及将对上游材料（如康宁大猩猩玻璃）、下游测试（如高速信号完整性测试）提出新需求，催生新的产业链机会。最后，它印证了‘后摩尔时代’的竞争焦点已从晶体管微缩，全面转向‘系统级集成’（System-in-Package, SiP）与‘异构集成’（Heterogeneous Integration），半导体产业的价值重心正加速向先进封装与系统设计环节转移。",
+      "category": "Foundry",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/schmid-launches-quantumline-p-for-void-free-bottom-up-copper-filling-of-through-glass-vias/?utm_source=rss&utm_medium=rss&utm_campaign=schmid-launches-quantumline-p-for-void-free-bottom-up-copper-filling-of-through-glass-vias",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-11-23T19:00:00+00:00",
+      "created_at": "2026-11-24T00:32:58.208732+00:00"
+    },
+    {
+      "id": "cf9b5c7c-fa30-4ea5-8bc2-84ef2ddb8d4e",
+      "title": "ASU牵头SWAP Hub获1140万美元续期资助，聚焦国防微电子先进封装与可信制造",
+      "summary": "亚利桑那州立大学领导的西南先进原型（SWAP）微电子中心获美国防部1140万美元新资助，将深化与Northrop Grumman、Sandia等合作，加速先进封装技术从实验室走向国防可信制造。",
+      "key_points": [
+        "SWAP Hub获1140万美元资助，进入第四年运营",
+        "聚焦先进封装、量子封装、共封装光学（CPO）等国防关键技术",
+        "连接ASU、Northrop Grumman、Sandia国家实验室等构建可信制造生态"
+      ],
+      "full_content": "NVIDIA's decision to reinstate CEO Jensen Huang was made on Sunday afternoon and kept several key leaders out of the loop, says a fresh report from Bloomberg. The process kept former interim CEO Collette Kress out of the loop, and it involved pressure from President Trump. Trump admitted to having influenced the decision-making process in an interview with CNBC, with the NVIDIA CEO's reinstatement being praised by several high-profile leaders, including SpaceX and Tesla billionaire Elon Musk. NVIDIA's Reinstatement Of CEO Jensen Huang Came Without Informing Several Leaders, Says Report NVIDIA's statement, which confirmed Huang's reinstatement, was carefully worded to [&hellip;] Read full article at https://wccftech.com/__trashed-17/",
+      "ai_summary": "发生了什么：由亚利桑那州立大学（ASU）牵头的西南先进原型（SWAP）微电子中心，近日获得美国国防部微电子公地（Microelectronics Commons）1140万美元的新一轮运营资助，正式进入其四年期的下一阶段。该中心是美国为应对全球微电子供应链风险、强化国防科技自主可控而设立的五大国家级微电子创新枢纽之一。本轮资助将重点支持SWAP Hub在先进封装（尤其是扇出型晶圆级封装FOWLP、共封装光学CPO、量子封装）、极端环境器件、异构集成等前沿领域的技术转化。Hub将深化与诺斯罗普·格鲁曼（Northrop Grumman）、桑迪亚国家实验室（Sandia National Labs）、Deca Technologies、SkyWater等核心伙伴的合作，构建一条从ASU实验室研发、到Sandia中试线验证、再到Northrop Grumman与SkyWater进行可信量产的完整‘国防微电子’技术转化路径。\n\n为什么重要：在中美科技竞争背景下，美国将微电子视为关乎国家安全的‘基石技术’，其核心关切已从单纯的芯片制造能力，扩展至涵盖设计、制造、封装、测试、材料的全链条‘可信供应链’。SWAP Hub的独特价值在于其‘产学研用’深度融合的模式：它不仅是技术孵化器，更是连接学术前沿与国防工业需求的‘转换器’。例如，其与Deca合作的M-Series扇出封装技术，已明确指向国防应用；与Sandia共建的200mm硅基与100mm化合物半导体中试线，则为高可靠性、抗辐射芯片提供了无可替代的验证平台。这种模式有效弥合了基础研究与武器装备工程化之间的‘死亡之谷’。\n\n对行业有什么影响：首先，SWAP Hub的成功将为全球其他国家（如欧盟、日本、中国）提供一个可借鉴的‘国家微电子创新枢纽’建设范本，推动各国加大对微电子基础设施的战略投入。其次，它将加速先进封装技术的军事化与民用化双向溢出——为国防开发的高可靠性FOWLP、CPO技术，将很快惠及5G基站、自动驾驶、AI服务器等民用高端市场。第三，它强化了美国在微电子‘非制造环节’（即设计、封装、测试、材料）的全球领导地位，即使在先进逻辑制程上面临挑战，也能通过系统级创新保持整体技术优势。最后，它凸显了大学在国家战略科技力量中的核心作用——ASU凭借其在先进封装领域的深厚积累，已从一所区域性大学跃升为美国微电子创新网络的‘西部心脏’，这将激励更多高校投身于解决国家重大战略需求的科研攻关中。",
+      "category": "Foundry",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/asu-led-swap-hub-receives-11-4m-for-next-phase-of-national-security-microelectronics-work/?utm_source=rss&utm_medium=rss&utm_campaign=asu-led-swap-hub-receives-11-4m-for-next-phase-of-national-security-microelectronics-work",
+      "original_author": "@Semiconductor Digest",
+      "published_at": "2026-11-23T18:49:56+00:00",
+      "created_at": "2026-11-24T00:32:58.208736+00:00"
+    },
     {
       "id": "70700123-c250-4fe5-8092-dce7602922ee",
       "title": "Architect Labs发布AI自主设计CPU Frostbite，能效达传统核心4.59倍",
@@ -5293,114 +5401,6 @@
       "original_author": "@Semiconductor Digest",
       "published_at": "2026-10-16T07:01:05+00:00",
       "created_at": "2026-10-18T16:16:25.989682+00:00"
-    },
-    {
-      "id": "8ef8cbb3-860a-41c4-b488-ac35209a65d6",
-      "title": "PCIe重定时器实际传输距离取决于系统级协同，非单一规格参数",
-      "summary": "Semiconductor Engineering深度解析PCIe重定时器性能，指出其有效传输距离由SerDes设计、控制器智能、通道质量、可观测性等多维度因素共同决定。",
-      "key_points": [
-        "重定时器性能远超PCI-SIG规范要求才具实用价值",
-        "控制器智能与协议容错能力是关键差异化因素",
-        "先进诊断功能可间接提升系统级传输距离"
-      ],
-      "full_content": "Need a second screen that travels with you without burning a hole through your wallet? You’re incredibly lucky, because two of ARZOPA’s most popular portable monitors, the 16.1-inch Z1C and the 16-inch Z1RC, are both discounted on Amazon right now, with prices starting from just $84.98. The “plug and play” attributes of both external monitors will make daily usage a seamless affair The ARZOPA 16.1-inch Z1C is the budget pick at $84.98, down 15 percent from $99.99. As for the second model, it’s the 16-inch Z1RC, which is slightly more expensive and costs $124.99 for Prime members, down 17 percent from [&hellip;] Read full article at https://wccftech.com/arzopa-16-inch-portable-monitors-amazon-deal/",
-      "ai_summary": "发生了什么：随着AI服务器、HPC系统对PCIe链路长度需求激增（如GPU与存储分离、机柜间互联），重定时器（Retimer）成为延长信号传输距离的核心器件。但Semiconductor Engineering指出，其真实性能不能仅看是否满足PCI-SIG的36dB插入损耗标准，而取决于四大系统级能力：一是SerDes物理层能否容忍40dB+损耗（提升布线灵活性）；二是控制器能否在温度漂移、电压波动等复杂工况下稳定握手；三是是否具备‘超越规范’的设计哲学，主动兼容不同厂商实现差异；四是是否集成高级诊断功能（如实时误码分析、通道裕量监测），辅助工程师定位隐性问题。\n\n为什么重要：在AI基础设施成本中，互连占比正快速上升。一个能多支持1米PCB走线或1个额外连接器的重定时器，可能避免整块主板重设计，节省数百万美元NRE费用。而控制器的鲁棒性直接决定系统上线后的故障率与运维成本，这对超大规模数据中心至关重要。\n\n对行业有什么影响：推动重定时器市场从‘参数竞争’转向‘系统可靠性竞争’，头部厂商（如Rambus、Synopsys）将强化控制器IP与诊断软件栈；促使PCB材料升级，低损耗基板（如Megtron）需求激增；为光学PCIe（PCIe-over-Fiber）铺平道路——当电互连逼近物理极限，重定时器积累的信号处理经验将成为光互连PHY设计的重要基础。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Engineering",
-      "source_url": "https://semiengineering.com/beyond-the-specification-what-really-determines-pcie-retimer-reach/",
-      "original_author": "@Semiconductor Engineering",
-      "published_at": "2026-10-15T20:48:58+00:00",
-      "created_at": "2026-10-16T05:22:07.071476+00:00"
-    },
-    {
-      "id": "cba751be-5f18-4ed0-9e9d-6e25566752c1",
-      "title": "先进制程互连瓶颈加剧，自动化通孔插入技术成芯片可靠性关键",
-      "summary": "半导体工程指出，5nm以下节点中通孔电阻与电迁移风险剧增，需在布局实现阶段即引入签核级自动化通孔增强工具，而非依赖后期ECO修复。",
-      "key_points": [
-        "5nm以下通孔电阻指数级上升，引发电迁移与IR压降",
-        "传统P&R工具无法满足签核级可靠性要求",
-        "自动化通孔插入需具备‘短路容错’能力"
-      ],
-      "full_content": "NVIDIA's GeForce RTX 5090 appears to be one step closer to retirement, as the flagship Blackwell gaming GPU has reportedly disappeared from the company's official Marketplace, adding further credibility to recent reports suggesting that NVIDIA has quietly discontinued its most powerful consumer graphics card. The development was first highlighted by Reddit user u/just_IT_guy on r/pcmasterrace, who shared a screenshot showing that the RTX 5090 was no longer among the selectable GPU models on NVIDIA's Marketplace, despite having appeared there just a day earlier. We also visited the NVIDIA Marketplace ourselves and found that the RTX 5090 had indeed disappeared from [&hellip;] Read full article at https://wccftech.com/nvidias-rtx-5090-disappears-from-its-marketplace-adding-fuel-to-discontinuation-rumors/",
-      "ai_summary": "发生了什么：在5nm及以下先进制程中，晶体管密度已达物理极限，互连（特别是垂直通孔）成为制约芯片PPA（功耗、性能、面积）与可靠性的首要瓶颈。单个通孔电阻急剧升高，导致电流密度超标，诱发电迁移（EM）失效与电源网络IR压降，进而引发时序违例甚至逻辑门翻转。传统EDA流程中，通孔冗余（Redundant Via Insertion）常被推迟至签核阶段，一旦发现问题，需耗费数周进行工程变更（ECO），严重拖累流片进度。\n\n为什么重要：自动化通孔插入技术已从‘可选项’变为‘必选项’。新一代工具需在布局布线（P&R）阶段即集成签核级几何引擎，精准识别合法插入位置，并支持对不完整布局（如存在局部短路）的‘短路容错’处理，自动规避风险区域。这使可靠性优化成为‘正确即构建’（Correct-by-Construction）流程的一部分，而非事后补救。\n\n对行业有什么影响：对EDA厂商，要求其工具链深度融合物理验证能力，Synopsys、Cadence、Siemens EDA正加速整合；对芯片设计公司，意味着需重构设计流程，在早期即投入可靠性仿真；对Foundry，将推动设计规则手册（DRM）增加更多面向可靠性的约束条款。长远看，该技术是Chiplet时代的基础——当多芯片集成于同一封装，通孔可靠性直接决定整个系统的寿命与良率。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Engineering",
-      "source_url": "https://semiengineering.com/strengthening-advanced-node-interconnects-through-automated-via-insertion/",
-      "original_author": "@Semiconductor Engineering",
-      "published_at": "2026-10-15T19:49:08+00:00",
-      "created_at": "2026-10-16T05:22:07.071482+00:00"
-    },
-    {
-      "id": "2da1d2ea-d91d-4790-ade8-b13e5cf0bed1",
-      "title": "国际计量局决议：闰秒将于2027年5月20日正式取消，改用‘闰时’机制",
-      "summary": "国际计量局成员国投票通过决议，决定自2027年5月20日起永久取消闰秒，改用‘闰时’机制，即当原子时与世界时偏差达3600秒时再统一调整。",
-      "key_points": [
-        "闰秒将于2027年5月20日（世界计量日）正式废止",
-        "新机制为‘闰时’，预计每3000年才需调整一次",
-        "旨在避免闰秒频繁修改导致的全球数字系统混乱"
-      ],
-      "full_content": "SEMI and Semiconductor Digest today announced that the SonoFlex Acoustic System from Nordson Test &amp; Inspection (Booth 5844) has won the Best of West award to be presented at SEMICON West 2026 . Presented by SEMI Americas and Semiconductor Digest each year, the Best of West award recognizes innovative new products or services that are significantly advancing the electronics manufacturing supply chain or a particular manufacturing capability. The SonoFlex automated inspection tool delivers high throughput and better sensitivity for accurately locating defects in small panel-based assemblies, scanning 2x faster than legacy systems with Nordson’s advanced pulser and transducer technology. Panels can be inspected over the widest frequency range yet achieved in a production environment. New FlexCore software, built from the ground up and combined with Nordson Intelligence AI Multi Gate Image Analysis (MGIA), identifies defects and isolates true void counts. SonoFlex’s modular design allows systems to be combined — up to four working alongside each other — increasing units per hour and throughput by as much as 8x. “Nordson’s SonoFlex sets a new bar for acoustic inspection, combining faster throughput with the sensitivity and modularity fabs need for small panel-based assemblies,” said Pete Singer, Editor-in-Chief of Semiconductor Digest. “Congratulations to Nordson for winning the Best of West competition.” SEMI Americas and Semiconductor Digest will honor the Best of West Award winner in Nordson Test &amp; Inspection&#8217;s booth today at 1 p.m. PDT . The post Nordson SonoFlex Wins 2026 Best of West Award at SEMICON West appeared first on Semiconductor Digest .",
-      "ai_summary": "发生了什么：在法国凡尔赛召开的国际计量局（BIPM）会议上，成员国以多数票通过决议，决定自2027年5月20日（世界计量日）起，永久取消已使用半个多世纪的闰秒（Leap Second）机制。取而代之的是‘闰时’（Leap Hour）新机制：当协调世界时（UTC）与原子时（TAI）的累积偏差达到3600秒（即1小时）时，才进行一次性调整。该决议是对2022年初步提议的正式落实，旨在根除闰秒因需全球同步、频繁插入（平均每18个月一次）而引发的计算机系统崩溃、金融交易错误、通信中断等严重事故。\n\n为什么重要：闰秒是数字时代最隐蔽的‘定时炸弹’。从2012年Reddit宕机、2017年Cloudflare服务中断，到近年多次云服务商故障，根源均为闰秒处理不当。取消闰秒并非否定时间精度，而是将‘时间校准’从操作系统内核级操作，升级为顶层架构级规划，极大提升了全球数字基础设施的稳定性与可维护性。\n\n对行业有什么影响：对科技公司，需在未来十年内完成所有时间敏感系统（如数据库、分布式事务、高频交易系统）的闰秒兼容性改造，确保其能平稳过渡至闰时机制；对芯片与OS厂商，需在硬件时钟（RTC）与操作系统内核中内置闰时支持；对开发者，将减少因闰秒引发的诡异Bug调试时间。长远看，这标志着人类正以更宏观、更稳健的方式，驾驭数字世界的底层秩序。",
-      "category": "Semiconductor",
-      "source": "Solidot (科技)",
-      "source_url": "https://www.solidot.org/story?sid=85626",
-      "original_author": "@Solidot (科技)",
-      "published_at": "2026-10-15T18:31:44+00:00",
-      "created_at": "2026-10-16T05:22:07.071561+00:00"
-    },
-    {
-      "id": "d28cca69-cf8f-41d5-ba0e-c499af4ed74f",
-      "title": "SK海力士就3D NAND晶圆厂对美施压：以扩大对华设备出口换美建厂支持",
-      "summary": "据Tom's Hardware报道，SK海力士正就其在美国新建3D NAND闪存晶圆厂一事与特朗普政府展开博弈，要求美方放宽对华半导体制造设备出口管制作为建厂前提。",
-      "key_points": [
-        "SK海力士拟在美国建设3D NAND晶圆厂",
-        "以扩大对华芯片制造设备出口为交换条件",
-        "谈判涉及美国政府对华技术出口政策"
-      ],
-      "full_content": "&lt;p&gt;Anton Shilov has been in the PC industry since 1990s playing games, building PCs, and writing stories about pretty much everything that relates to PCs, Macs, smartphones, tablets, and even fab equipment. Over his career, he has worked at a variety of high-ranking websites, including AnandTech, EE Times, TechRadar, X-bit Labs, and now Tom&#039;s Hardware. He is also a regular features contributor to Tom&#039;s Hardware Premium, writing about the latest developments in the semiconductor industry and related tech news and roadmaps. When Anton is not reading or writing about something high-tech, he is probably watching a good movie, playing a video game, or spending time with his family.&lt;/p&gt;",
-      "ai_summary": "发生了什么：SK海力士正就其计划在美国新建3D NAND闪存晶圆厂的项目，与特朗普政府进行高层谈判。该公司提出，若美方希望其在美投资建厂，需同步放宽对华半导体制造设备（尤其是刻蚀、薄膜沉积等关键前道设备）的出口限制，允许其向中国客户更多出口先进制程设备。\n\n为什么重要：此举凸显全球头部存储芯片厂商在中美科技博弈中的战略杠杆地位。SK海力士作为全球第二大NAND供应商，掌握成熟且高良率的3D NAND量产技术，其设备出口能力直接影响中国长江存储等本土厂商的产能爬坡速度。而美国则亟需通过吸引海外晶圆厂赴美建厂来强化本土供应链安全。此次谈判实质是技术控制权与产业落地权的双向交易。\n\n对行业有什么影响：短期看，若谈判成功，将缓解中国存储芯片产业链的设备获取压力，加速国产替代进程；中长期则可能动摇美国出口管制体系的统一性，引发其他设备商（如应用材料、泛林）效仿类似策略。此外，该事件也折射出地缘政治正深度嵌入半导体产业资本决策——建厂选址不再仅由成本与供应链决定，更成为国家间技术谈判的筹码。对全球晶圆厂布局而言，未来‘政企协同’将成为新建项目的标配前置条件。",
-      "category": "Foundry",
-      "source": "Tom's Hardware",
-      "source_url": "https://www.tomshardware.com/pc-components/ssds/sk-hynix-reportedly-playing-hardball-with-trump-admin-over-3d-nand-fab-company-demands-increased-chipmaking-equipment-exports-to-china-in-exchange-for-us-fab",
-      "original_author": "@Tom's Hardware",
-      "published_at": "2026-10-15T17:40:09+00:00",
-      "created_at": "2026-10-16T05:22:07.071413+00:00"
-    },
-    {
-      "id": "41af7039-9f1f-4d13-84b5-c6861c29e21c",
-      "title": "NVIDIA RTX 5090从官网商城下架，停产传闻再升温",
-      "summary": "NVIDIA GeForce RTX 5090旗舰显卡已从官方Marketplace平台消失，引发业界对其已被悄然停产的广泛猜测，此前该卡已在Micro Center等渠道神秘下架。",
-      "key_points": [
-        "RTX 5090从NVIDIA官网Marketplace移除",
-        "此前已从Micro Center等零售商处下架",
-        "市场普遍解读为正式停产信号"
-      ],
-      "full_content": "&lt;p&gt;Zhiye&#039;s passion for computer hardware ignited in his pre-teen years, thanks to a learning moment in which a power connection mishap set his Pentium P54CS system on fire and inadvertently short-circuited his entire home. Over the years, Zhiye&#039;s curiosity evolved into a relentless pursuit of deeper knowledge of computer hardware. A regular kid tinkering with something beyond his comprehension eventually became a power user for one of the world&#039;s top computer hardware brands. His quest to understand the inner workings of computer hardware has led him to become a writer at Tom&#039;s Hardware. When Zhiye isn&#039;t covering the latest processor, graphics card, or putting SSDs through their paces, you&#039;ll often find him overclocking RAM to the rhythm of the latest trance hits.&lt;/p&gt;",
-      "ai_summary": "发生了什么：NVIDIA最新一代消费级旗舰GPU——GeForce RTX 5090，已从公司官方Marketplace平台彻底下架，且无法通过产品筛选器调出。这一举动紧随该卡此前在Micro Center等主流渠道‘神秘消失’之后，被Reddit用户及多家科技媒体证实。尽管NVIDIA未发布任何官方声明，但其官网商城的产品目录更新具有高度权威性，此次移除被视为RTX 5090生命周期终结的实质性标志。\n\n为什么重要：RTX 5090是Blackwell架构面向游戏玩家的最终形态，其突然退市并非常规迭代节奏，而是反映出AI算力需求对消费级GPU战略的深刻重塑。随着GB200、Rubin CPX等数据中心专用AI加速器产能持续向大模型训练/推理倾斜，NVIDIA正系统性收缩高端游戏卡供应，将晶圆、封装及工程资源全面转向更高毛利、更高增长的AI基础设施市场。\n\n对行业有什么影响：首先，消费者端将面临高端显卡长期缺货与价格高位运行，RTX 5090或成绝版收藏品；其次，AIC合作伙伴（华硕、微星等）被迫加速转向AI PC生态，推动RTX 50系列移动版与AI Studio软件栈深度绑定；最后，此举进一步挤压AMD Radeon RX 8000系列的市场窗口期，迫使其在RDNA 4架构上必须拿出颠覆性能与能效比才能争夺残余高端份额。",
-      "category": "GPU",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/nvidias-rtx-5090-disappears-from-its-marketplace-adding-fuel-to-discontinuation-rumors/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-10-15T15:37:41+00:00",
-      "created_at": "2026-10-16T05:22:07.071436+00:00"
-    },
-    {
-      "id": "b51b8a3f-6911-4375-98f5-6bf77de23222",
-      "title": "AMBA联盟发布C2C新标准，统一AXI与CHI协议实现芯片级互连",
-      "summary": "ARM旗下AMBA联盟推出AMBA C2C规范，通过协议子集化设计，统一支持AXI与CHI两种协议的芯片间互连，为Chiplet生态提供可扩展、可互操作的基础连接标准。",
-      "key_points": [
-        "AMBA C2C是首个同时支持AXI与CHI的统一C2C协议",
-        "采用协议子集化（subsetting）设计，兼顾简单IO与高级一致性系统",
-        "遵循UCIe等分层架构原则，协议与物理层解耦"
-      ],
-      "full_content": "KeyBanc analysts have come away from their recent trip to Asia with an overwhelmingly positive view of Intel's foundry-related momentum, echoing the rosy outlook espoused by Piper Sandler back in September. As per the emerging picture, Intel Foundry is on track to win sizable orders from the who's who of the AI/hyperscaler world for its 18A-P and 14A processes, with the bulk of the orders skewed towards the latter, however. KeyBanc echoes Piper Sandler's bullish prognosis by declaring that Intel has secured orders from Broadcom, Google, Apple, AMD, Microsoft, And NVIDIA KeyBanc has just declared that Intel has now secured [&hellip;] Read full article at https://wccftech.com/keybanc-says-intel-has-won-contracts-from-broadcom-google-apple-amd-microsoft-and-nvidia-while-amazon-anthropic-and-spacexs-terafab-continue-to-evaluate-its-14a-and-18a-p-processes/",
-      "ai_summary": "发生了什么：ARM AMBA联盟于2026年10月正式发布AMBA C2C（Chip-to-Chip）新规范，这是对现有AMBA CHI C2C的重大升级与扩展。新标准的核心创新在于‘协议收敛’——它不再为AXI（常用于IO、加速器）和CHI（用于全相干异构计算）分别制定独立协议，而是定义了一个统一的C2C基础框架，并通过‘协议子集’（protocol subsets）机制，允许不同复杂度的芯片（从简单AXI外设到高级CHI超芯片）在同一标准下互联互通。AMBA C2C沿用成熟的属性协商（property negotiation）机制，确保不同厂商、不同代际、不同功能的chiplet之间具备向后与向前兼容性。\n\n为什么重要：Chiplet产业发展的最大瓶颈之一是‘互连碎片化’。此前，业界存在UCIe、AIB、BoW等多种物理层标准，而协议层更是五花八门，导致chiplet复用成本高昂、系统集成难度巨大。AMBA C2C的推出，为占据全球IP生态半壁江山的AMBA用户（尤其是拥有海量AXI设计遗产的企业）提供了一条平滑迁移路径。它既保护了客户在AXI上的历史投资，又为其未来升级至CHI级全相干系统预留了清晰路线图，真正实现了‘一个标准，多种能力’，极大降低了Chiplet生态的准入门槛与协作成本。\n\n对行业有什么影响：首先，将加速Chiplet从‘概念验证’走向‘规模商用’。设计公司可基于AMBA C2C快速组合不同功能的chiplet（如CPU+AI+Memory），无需为每个连接重新设计协议栈；其次，将强化ARM在Chiplet时代的生态主导权，其IP核（Cortex、Neoverse、Immortalis）与AMBA C2C的深度绑定，将进一步巩固其在数据中心、AI、汽车等高端市场的地位；第三，对物理层标准（如UCIe）构成强力协同而非竞争——AMBA C2C专注于协议层，可无缝运行于UCIe、PCIe、CXL等任何成熟物理链路上，推动整个‘协议-传输-物理’三层标准体系的成熟与统一。最终，这将催生一个更加开放、互通、繁荣的全球Chiplet生态系统。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Engineering",
-      "source_url": "https://semiengineering.com/amba-c2c-moving-forward-with-a-converged-amba-foundation-for-c2c-connectivity/",
-      "original_author": "@Semiconductor Engineering",
-      "published_at": "2026-10-15T15:29:51+00:00",
-      "created_at": "2026-10-15T17:33:13.484966+00:00"
     }
   ]
 }
