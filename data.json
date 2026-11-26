@@ -1,7 +1,61 @@
 {
-  "updated_at": "2026-11-26T09:04:43.784440+00:00",
+  "updated_at": "2026-11-26T22:05:28.994948+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "694210be-062d-4e53-8b3b-32cf548826e0",
+      "title": "三星计划2028年前在芯片工厂部署无人车、自动驾驶机器人及机械臂",
+      "summary": "据韩国媒体报道，三星已成立新机器人团队，计划在2028年前将其自主研发的无人运输车、自动驾驶机器人和机械臂全面投入芯片制造产线，覆盖设备维护与生产作业。",
+      "key_points": [
+        "三星成立专职机器人团队，由李锡元领导",
+        "目标2028年实现芯片厂内机器人全覆盖",
+        "应用场景包括设备巡检、物料搬运与精密操作"
+      ],
+      "full_content": "The developer behind the immensely popular NVIDIA Profile Inspector, Orbmu2k, has released another handy utility for GeForce GPU owners. Dubbed NVIDIA G-SYNC Tweaks, the free, open-source Windows application unlocks a plethora of undocumented NVIDIA driver settings while addressing a particularly annoying issue involving premature Low Framerate Compensation (LFC) activation on high-refresh-rate gaming monitors. For PC gamers who have invested in expensive OLED gaming monitors only to experience distracting brightness fluctuations with G-SYNC enabled, this utility could prove particularly valuable. NVIDIA G-SYNC Tweaks Tackles Premature LFC Activation Without Sacrificing Your Monitor's Maximum Refresh Rate Variable Refresh Rate (VRR) technologies such as [&hellip;] Read full article at https://wccftech.com/nvidia-profile-inspector-creator-releases-g-sync-tweaks-tackling-oled-vrr-flicker-annoying-60-fps-stutter/",
+      "ai_summary": "发生了什么：韩国ETNews报道称，三星电子旗下Device Solutions（DS）事业部已组建专门的机器人研发团队，由李锡元（Lee Seok-won）领导，致力于将机器人技术深度融入半导体制造全流程。该团队正开发三大类机器人系统：用于洁净室内物料自动运输的无人车（AGV）、具备自主导航与避障能力的自动驾驶巡检机器人，以及执行高精度晶圆搬运、设备维护等任务的多关节机械臂。根据三星内部路线图，这些机器人将于2028年前在位于韩国平泽、华城等地的尖端晶圆厂（如V1/V2/V3）全面部署，目标是覆盖从设备状态监控、零部件更换到生产线物流的全环节。\n\n为什么重要：半导体制造是全球自动化程度最高的工业领域之一，但当前仍高度依赖人工进行设备点检、故障排查、晶圆转运等重复性、高风险作业。三星此举并非简单替代人力，而是瞄准‘人机协同智能工厂’新范式：机器人将搭载高精度传感器与AI视觉系统，实时采集设备振动、温度、气体成分等数据，结合数字孪生模型预测性维护，将设备宕机时间降至最低。这直接关系到先进制程（如GAA晶体管）的良率稳定性——每分钟的产线停机都意味着巨额损失。\n\n对行业有什么影响：首先，将加速全球晶圆厂‘机器人化’进程，台积电、英特尔等对手势必跟进，引发新一轮智能制造装备投资潮。其次，将重塑半导体设备供应链：传统AMHS（自动物料搬运系统）厂商需升级为AI机器人解决方案商，而机器视觉、边缘AI芯片、高可靠性伺服电机等配套技术将成新蓝海。第三，对劳动力市场产生结构性影响——低端重复岗位减少，但对既懂半导体工艺又精通机器人运维的复合型工程师需求将爆发式增长。长远看，若三星成功验证该模式，其在3nm以下制程的成本与良率优势将进一步扩大，巩固其在全球先进逻辑芯片代工领域的第二极地位。",
+      "category": "Foundry",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/samsung-roadmap-reportedly-puts-unmanned-vehicles-self-driving-robots-and-robotic-arms-inside-its-chip-fabs-by-2028-covering-equipment-maintenance-and-production-line-work/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-11-26T21:04:40+00:00",
+      "created_at": "2026-11-26T22:05:21.789342+00:00"
+    },
+    {
+      "id": "97960160-1873-4ca5-92a2-8a67f9552d86",
+      "title": "NVIDIA G-SYNC Tweaks工具发布，解决OLED显示器VRR闪烁与60FPS卡顿问题",
+      "summary": "NVIDIA Profile Inspector开发者Orbmu2k推出免费开源工具G-SYNC Tweaks，可抑制高刷OLED显示器上G-SYNC导致的亮度波动和低帧率补偿（LFC）过早触发问题。",
+      "key_points": [
+        "由NVIDIA Profile Inspector作者开发",
+        "专治OLED显示器G-SYNC VRR闪烁",
+        "修复60FPS下异常LFC激活导致的卡顿"
+      ],
+      "full_content": "&lt;p&gt;Oliver Haslam has written about technology of all shapes and sizes for over 15 years, both online and in print.&lt;/p&gt;&lt;p&gt;Having grown up using PCs and spending far too much money on graphics cards and fancy RAM, Oliver switched to the Mac with a G5 iMac. Nowadays, he uses both macOS and Windows depending on the job at hand. Oliver&amp;#39;s previous career in I.T. service management means he&amp;#39;s uniquely placed to understand the complexities of keeping a modern service online. Not that it stops him from getting grumpy when something stops working.&lt;/p&gt;&lt;p&gt;Passionate about mobile apps and the developer ecosystem, Oliver is always keen to try out the hottest new things to hit the various app stores.&lt;/p&gt;",
+      "ai_summary": "发生了什么：NVIDIA第三方开发者Orbmu2k（网名Orbmu2k）发布了名为NVIDIA G-SYNC Tweaks的免费、开源Windows工具。该工具通过解锁NVIDIA驱动中大量未公开设置，重点解决了高端OLED游戏显示器用户长期诟病的两大痛点：一是G-SYNC开启时因过早触发低帧率补偿（LFC）导致的明显亮度闪烁；二是60FPS附近出现的非预期卡顿现象。该工具无需修改硬件或固件，仅通过精细化调节驱动层参数即可实现优化。\n\n为什么重要：OLED显示器凭借其极致对比度和响应速度成为高端游戏显示首选，但其VRR兼容性一直受限于NVIDIA驱动的默认策略。官方驱动为保障兼容性采取保守的LFC阈值设定，却牺牲了OLED面板的瞬态响应优势。G-SYNC Tweaks的出现填补了这一空白，使用户能在不牺牲最大刷新率的前提下，获得更稳定、更沉浸的视觉体验。这标志着社区驱动的GPU调优生态正从性能超频向体验精细化演进。\n\n对行业有什么影响：首先，该工具倒逼NVIDIA重新审视其驱动策略——尤其在新兴显示技术适配方面，未来可能推动官方驱动加入更灵活的LFC开关或自定义阈值功能。其次，它强化了PC玩家对‘软调优’价值的认知，促使更多开发者围绕NVIDIA/AMD/Intel显卡构建垂直体验工具链。最后，此类开源工具的普及提升了终端用户的技术话语权，削弱了厂商对显示体验的单边定义权，长远看将加速VRR标准的统一与成熟。",
+      "category": "GPU",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/nvidia-profile-inspector-creator-releases-g-sync-tweaks-tackling-oled-vrr-flicker-annoying-60-fps-stutter/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-11-26T21:00:00+00:00",
+      "created_at": "2026-11-26T22:05:21.789265+00:00"
+    },
+    {
+      "id": "4c1fcf08-9a3e-4afc-b761-94a4e4bc632d",
+      "title": "瑞士遭AI智能体网络攻击：四起成功入侵关键基础设施，目标涵盖电力、供水与通信",
+      "summary": "瑞士联邦网络安全局通报，近期五起网络攻击中有四起得手，攻击者利用AI智能体定向入侵电力、供水及通信等关键基础设施运营方。",
+      "key_points": [
+        "攻击由AI智能体发起，具备高度针对性",
+        "四家关键基础设施运营商被成功入侵",
+        "瑞士当局建议企业加强常态化网络安全检测"
+      ],
+      "full_content": "Korean technology giant Samsung is interested in using robots in its chip fabrication process, according to a report from the Korean media. Samsung has established a new robotics team that is developing robotics technology to be used in semiconductor manufacturing, says the report, adding that the firm's official roadmap will place robots inside chip manufacturing facilities by 2028. Samsung Is Interested In Applying Unmanned Vehicles, Self Driving Robots &amp; Robotic Arms To Chip Fabrication, Says Report The report, courtesy of ETNews, shares that Samsung's Device Solutions (DS) business division has established a robotics team under the leadership of Lee Seok-won, [&hellip;] Read full article at https://wccftech.com/samsung-roadmap-reportedly-puts-unmanned-vehicles-self-driving-robots-and-robotic-arms-inside-its-chip-fabs-by-2028-covering-equipment-maintenance-and-production-line-work/",
+      "ai_summary": "发生了什么：2026年11月下旬，瑞士联邦网络安全局（BACS）发布紧急通告，确认该国在过去数日内遭遇五起由AI智能体（AI Agent）驱动的高级网络攻击，其中四起成功渗透目标系统。被攻击对象均为关键基础设施运营主体，经瑞士公共广播公司SRF证实，包括一家国家级电力供应商、一家区域性供水公司及一家骨干通信服务提供商。BACS未披露攻击者身份，但强调攻击手法展现出AI智能体的典型特征：能自动分析目标网络架构、动态生成零日漏洞利用代码、并根据防御响应实时调整攻击策略，远超传统脚本化攻击的自动化水平。\n\n为什么重要：这是全球首次有国家级网络安全机构公开确认AI智能体被用于实战化攻击关键基础设施。它标志着网络战已从‘人类指挥、机器辅助’迈入‘AI自主决策、协同作战’的新阶段。AI智能体不仅能绕过基于规则的传统防火墙，更能利用其强大的自然语言处理能力，精准伪造钓鱼邮件、社交工程话术，甚至模拟内部员工行为，极大提升了攻击的隐蔽性与成功率。此次事件暴露了当前关键基础设施防护体系在面对AI原生威胁时的系统性脆弱。\n\n对行业有什么影响：首先，将强力催化全球关键基础设施网络安全标准升级——NIST、IEC等组织或将加速制定针对AI攻击的检测与响应框架，强制要求部署AI驱动的主动防御系统（如欺骗蜜罐、行为基线建模）。其次，将引爆‘AI攻防’双赛道投资：网络安全厂商（如Palo Alto、CrowdStrike）将加速推出AI-native EDR/XDR产品，而红队服务市场也将迎来AI渗透测试新需求。第三，对国家层面而言，此次事件将加速‘网络国防’建设，推动各国建立国家级AI网络威胁情报中心，并立法规范AI模型在网络安全领域的开发与使用边界，防止技术滥用。",
+      "category": "Digital",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/033/131.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-11-26T18:08:38+00:00",
+      "created_at": "2026-11-26T22:05:21.789378+00:00"
+    },
     {
       "id": "22203905-93f7-4c04-8fe6-203857122ab5",
       "title": "Black Friday 2026：RTX 5080/5090整机、MacBook Neo与SSD等重磅硬件折扣",
@@ -5347,60 +5401,6 @@
       "original_author": "@WCCFTech",
       "published_at": "2026-10-20T16:25:55+00:00",
       "created_at": "2026-10-20T17:41:40.444843+00:00"
-    },
-    {
-      "id": "7582a2f0-24b1-4a85-8945-59067e2416eb",
-      "title": "华为发布Wi-Fi 7+端到端解决方案：凌霄760芯片协同实现动态窄频宽与真双频并发",
-      "summary": "华为推出Wi-Fi 7+技术，基于凌霄760系列路由与终端芯片协同，通过动态窄频宽、真双频并发、双频无缝漫游三大创新，解决家庭Wi-Fi穿墙弱网与多设备卡顿难题。",
-      "key_points": [
-        "Wi-Fi 7+非标准协议，需凌霄760路由与终端芯片联合实现",
-        "动态窄频宽提升弱信号下功率谱密度，解决‘长短手’问题",
-        "真双频并发实时感知空口时延，降低多设备干扰下80%时延波动"
-      ],
-      "full_content": "Upscaling technology has become as important on consoles as it is on PC. In this regard, Sony has been one step ahead of Microsoft with the PSSR and QSSR upscalers for the PlayStation 5 Pro and base PlayStation 5, but soon enough, this gap will be bridged by AMD itself, which has confirmed FSR 4.1 is coming to Xbox Series X and Xbox Series S. \"At Xbox, we're building a gaming platform designed to meet players where they are and make it easier for creators to reach them. AMD has been an important partner in that journey for more than [&hellip;] Read full article at https://wccftech.com/xbox-series-xs-answer-to-playstations-pssr-qssr-as-amd-fsr-4-1/",
-      "ai_summary": "华为正式发布Wi-Fi 7+端到端解决方案，这并非对IEEE 802.11be标准的简单遵循，而是一套依托凌霄760系列芯片深度协同的私有增强协议。其核心创新在于三大技术突破：一是‘动态窄频宽’，当手机与路由器间信号衰减时，系统自动压缩频宽以提升功率谱密度，有效解决传统Wi-Fi中‘路由器信号可达，手机回传失败’的典型‘长短手’问题；二是‘真双频并发’，突破标准MLO（多链路操作）仅物理层连接的局限，通过芯片级实时感知2.4GHz/5GHz空口时延，动态叠加双频带宽并行传输，将多设备抢占环境下的时延波动降低80%；三是‘双频无缝漫游’，利用双链路衔接机制，在用户移动过程中同步连接新旧路由器，实现无感切换。\n\n这一方案的重要性在于，它代表了通信技术从‘协议标准化’向‘芯片级系统优化’的范式跃迁。在Wi-Fi 7标准已趋成熟的背景下，华为选择不走‘参数堆砌’路线，而是聚焦真实家庭场景痛点——穿墙能力、多终端干扰、大户型漫游，通过路由与终端芯片的底层协议联合调试，消除异构芯片间的兼容损耗，实现‘1+1＞2’的系统级性能增益。这本质上是以‘端到端闭环’对抗‘碎片化生态’，是对高通、联发科等传统Wi-Fi芯片厂商的降维打击。\n\n对行业影响显著：短期内，它将加速Wi-Fi 7设备的差异化竞争，推动芯片厂商从‘卖芯片’转向‘卖解决方案’；中期内，Wi-Fi 7+的成功可能促使IEEE启动新标准修订，将动态频宽、真双频等特性纳入官方规范；长期看，它验证了‘软硬芯云’全栈协同的巨大价值，为6G时代通感算一体化网络提供了重要实践样本。对消费者而言，这意味着更稳定、更低延迟的家庭无线体验；对智能家居、AR/VR等新兴应用，则提供了可靠的底层网络保障，加速其商业化落地。",
-      "category": "Digital",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/015/613.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-10-20T16:08:37+00:00",
-      "created_at": "2026-10-20T17:41:40.444954+00:00"
-    },
-    {
-      "id": "88877146-906e-493b-a5bc-a2ca3cdd5aee",
-      "title": "Perplexity推出Mac端侧AI模式：Qwen 3.6等模型本地运行，最低需Apple芯片+36GB内存",
-      "summary": "Perplexity Computer for Mac新增端侧运行模式，支持Qwen 3.6与PPLX Pro模型在设备本地执行任务规划、文件处理等，无需联网，仅需Apple芯片与36GB统一内存。",
-      "key_points": [
-        "Mac版Perplexity支持完全离线AI运行",
-        "首发集成Qwen 3.6与PPLX Pro两种端侧模型",
-        "最低硬件要求为Apple芯片+36GB统一内存"
-      ],
-      "full_content": "Whatever else you might think of Elon Musk, he is certainly not boring. In fact, he takes pains to act in such a way, firmly believing that this modus operandi is a necessary ingredient for the longevity of a potential simulation that all of us might be living within, as per the snippets from a very interesting conversation that the CEO of SpaceX and Tesla just had with Walter Isaacson on the podcast The Builders. Elon Musk says \"any simulations that are boring will be truncated,\" believes AI labs should test each other’s models before release, and admits that he [&hellip;] Read full article at https://wccftech.com/elon-musk-says-there-is-a-50-percent-chance-that-we-are-living-in-a-simulation-and-calls-openais-sam-altman-so-deceptive-its-crazy/",
-      "ai_summary": "Perplexity正式为Mac平台推出革命性的端侧AI模式（On-Device Mode），允许Qwen 3.6、PPLX Pro等大语言模型完全在用户设备本地运行，无需上传任何数据至云端。该功能面向Pro、Max及Enterprise订阅用户开放，其技术实现依赖于Apple Silicon芯片的神经引擎（Neural Engine）与macOS系统级AI框架的深度协同，通过模型量化、内存优化与硬件加速，在保证响应速度的同时，将36GB统一内存作为模型运行的‘黄金底线’。用户可授权AI访问本地备忘录、邮件、Numbers表格等应用，实现真正的‘个人智能代理’体验——所有敏感信息均不出设备，隐私安全得到根本性保障。\n\n这一发布之所以关键，在于它标志着AI应用正从‘云端中心化’向‘设备去中心化’发生根本性迁移。在生成式AI爆发初期，所有推理均依赖云端大模型，带来延迟、隐私与成本三重瓶颈；Perplexity的端侧模式则通过软硬协同，将部分高价值AI能力（如文档摘要、代码生成、会议纪要整理）下沉至终端，既规避了数据外泄风险，又实现了毫秒级响应。这不仅是技术进步，更是对用户数字主权的回归承诺。\n\n对行业影响深远：首先，它将倒逼所有AI应用厂商（包括Copilot、Gemini等）加速端侧模型研发，苹果生态或成端侧AI最大受益者；其次，36GB内存门槛将刺激Mac硬件升级需求，推动Apple Silicon向更高性能、更大内存带宽演进；第三，它为‘AI Agent’商业化开辟新路径——企业可部署完全隔离的端侧AI助手，处理财务、法务等高度敏感数据；最后，它预示着未来操作系统将内置更强大的AI中间件，使端侧AI成为与文件管理、网络连接同等的基础能力，重塑人机交互范式。",
-      "category": "AI",
-      "source": "IT之家",
-      "source_url": "https://www.ithome.com/1/015/609.htm",
-      "original_author": "@IT之家",
-      "published_at": "2026-10-20T16:07:28+00:00",
-      "created_at": "2026-10-20T17:41:40.444963+00:00"
-    },
-    {
-      "id": "73dfa897-5837-4375-8765-13437e20dd36",
-      "title": "字节/阿里/腾讯抢购英伟达RTX PRO 5500：订单超600万张，供货或不足10%",
-      "summary": "中国三大互联网巨头已向英伟达下单超600万张RTX PRO 5500工作站显卡，总价逾350亿美元，但英伟达警告实际供货量可能仅为订单的5%-10%，因产能严重受限。",
-      "key_points": [
-        "字节、阿里、腾讯合计订购超600万张RTX PRO 5500",
-        "英伟达2027年全球产能上限仅300万张",
-        "中国客户实际到货量或不足订单量的10%"
-      ],
-      "full_content": "An unreleased AMD engineering sample just surfaced online, which reportedly features 6 cores, 12 threads, and 24 GB LPDDR5 memory. Zen 6-Based 6-Core/12-Thread APU appears on OpenBenchmarking; Runs at 2.4 GHz and Could Likely End Up in Next-Gen Steam Deck A mysterious AMD APU has surfaced in benchmark results, hinting at a possible next-gen SoC for upcoming gaming handhelds. This early engineering sample supposedly belongs to AMD's rumored Gainsborough family and packs 6 cores and 12 threads alongside 24 GB of LPDDR5 memory. This is one of the first benchmark leaks of Zen 6-based chips, even though we have been [&hellip;] Read full article at https://wccftech.com/amd-zen-6-apu-with-24-gb-lpddr5-memory-appears-in-benchmarks/",
-      "ai_summary": "一场围绕AI算力的全球争夺战正白热化：字节跳动、阿里巴巴与腾讯已向英伟达提交总计超过600万张RTX PRO 5500工作站显卡的巨额订单，合同总金额突破350亿美元。然而，英伟达向合作伙伴发出明确预警——其2027年全球该型号显卡产能上限仅为300万张，这意味着中国客户的订单缺口高达一半以上，实际交付量可能低至订单总量的5%至10%。这一供需失衡，已远超常规商业周期波动，而是中美科技博弈在算力基础设施层面的直接投射。\n\n此事之所以牵动全局，在于RTX PRO 5500并非普通消费级显卡，而是专为AI训练与推理优化的‘准数据中心级’工作站GPU，其FP16算力与显存带宽介于H100与L40之间，是互联网公司构建私有AI云、训练垂类大模型的理想‘性价比之选’。中国科技巨头如此集中采购，反映出其对AI战略制高点的迫切渴望——在无法大规模获取H100/GB200的背景下，RTX PRO 5500成为支撑其大模型研发、搜索推荐、广告算法等核心业务的‘生命线’。而英伟达的产能约束，则暴露出全球先进AI芯片制造能力已被台积电CoWoS等少数环节‘卡脖子’的残酷现实。\n\n对行业影响是连锁性的：短期看，将加剧中国AI公司的算力焦虑，迫使其加速自研芯片（如寒武纪、壁仞）或寻求替代方案（如华为昇腾）；中期看，将推高二手GPU市场价格，并刺激AI算力租赁市场爆发；长期看，或倒逼中国加速建设自主AI芯片生态，包括EDA工具、IP核、先进封装等全链条。对全球市场，这意味着英伟达议价权进一步强化，其财报将持续受益于‘饥饿营销’；而对AMD、Intel等竞争对手，则是巨大机遇窗口——若能快速提供性能相当、供货稳定的替代产品，或将永久性改变AI加速器市场格局。",
-      "category": "GPU",
-      "source": "Solidot (科技)",
-      "source_url": "https://www.solidot.org/story?sid=85668",
-      "original_author": "@Solidot (科技)",
-      "published_at": "2026-10-20T16:04:44+00:00",
-      "created_at": "2026-10-20T17:41:40.444971+00:00"
     }
   ]
 }
