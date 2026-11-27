@@ -1,7 +1,61 @@
 {
-  "updated_at": "2026-11-26T22:05:28.994948+00:00",
+  "updated_at": "2026-11-27T09:19:14.379714+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "15e1dd7d-55e5-40f4-99e2-39fd7464cb9d",
+      "title": "小米汽车发布世界模型2.0，实现多模态闭环仿真与业务落地",
+      "summary": "小米汽车正式推出Xiaomi Auto World Model 2.0，整合多视角视频生成、物理交互建模、3D场景重建与动作建模，已在合成数据生成、仿真测试等核心场景落地应用，并在多项基准测试中刷新SOTA。",
+      "key_points": [
+        "支持1–7路摄像头，训练语料达1260万段视频片段",
+        "PAI-Bench-G驾驶/机器人视频生成质量分均居榜首",
+        "已交付超20万clips合成数据，碰撞率降至0.4%"
+      ],
+      "full_content": "&lt;p&gt;Ben Stockton is a deals writer at Tom’s Hardware. Previously a hardware writer at PCGamesN, Ben’s been writing about Windows and PC hardware (among other things) since 2018, with bylines that include How-To Geek, Tom’s Guide, and Cloudwards. He was also the managing editor at groovyPost.com and has previously contributed to Computeractive magazine.&lt;br&gt;&lt;br&gt;Since his earliest days tinkering with Windows 95 on a classic Pentium MMX PC, Ben’s been obsessed with understanding how technology works, chatting about it with anyone who’ll listen. Along the way, he’s worked as a UK college lecturer, teaching IT to adults and teenagers, and as a PC technician, tackling all kinds of tech problems. He’s now busy tracking down brilliant bargains on all kinds of hardware, but when he doesn’t have his deal hat on, he’s adding to his homelab, watching old Star Trek episodes, or taking two hyperactive pugs on a much needed walk.&lt;/p&gt;",
+      "ai_summary": "发生了什么：小米汽车于2026年11月27日正式发布World Model 2.0（世界模型2.0），这是继1.0版本后的重大升级。该模型首次将多视角视觉理解、三维物理动态建模、场景持久化表征（WorldRec 2.0）与世界动作建模（World Action Model）深度耦合，构建统一因果世界模型。技术上采用流式生成与知识蒸馏提升长时序推理效率，并依托大规模多源视频数据学习视觉先验与物理规律。模型已在PAI-Bench-G、LIBERO Plus、NAVSIM v1.1等权威评测中全面超越VGGT-World、WorldRec1.0等前代SOTA方法；在1000个闭环仿真场景中，E2E-WM-RL方案将碰撞率从1.2%大幅压降至0.4%，场景完成率达96.3%。更重要的是，该模型已完成工程化闭环——已生成超20万高质量合成数据用于感知模型训练，并构建了可复现真实事故的闭环仿真环境。\n\n为什么重要：世界模型是具身智能与高阶辅助驾驶的核心基础设施，其本质是让AI系统具备对物理世界的“心智模拟”能力。小米汽车此举标志着中国车企首次实现世界模型从学术前沿到量产级工程落地的跨越。不同于仅做单点任务优化的感知模型，World Model 2.0通过统一表征驱动“感知—预测—决策—仿真—迭代”全链路，显著降低实车路测依赖与长尾场景泛化成本。尤其在危险场景识别、策略安全验证等关键环节，其闭环仿真能力直接提升研发效率与功能可靠性，为L3+智驾商业化铺平道路。\n\n对行业有什么影响：首先，小米的实践将加速世界模型在智能汽车领域的标准化进程，推动行业从‘纯数据驱动’向‘物理+数据双驱动’范式演进。其次，其开源评测结果与业务落地路径为其他车企及AI公司提供了可复用的技术路线参考，有望降低中小玩家进入门槛。第三，模型对多视角、低延迟、高保真三维重建的支持，也将反哺机器人、AR空间计算等跨领域应用。长远看，当世界模型成为智能终端的‘操作系统级能力’，汽车产业的竞争焦点将从硬件堆砌转向认知架构与仿真生态的构建能力——小米此次发布，正是这一战略拐点的重要信号。",
+      "category": "AI",
+      "source": "IT之家",
+      "source_url": "https://www.ithome.com/1/033/614.htm",
+      "original_author": "@IT之家",
+      "published_at": "2026-11-27T08:49:57+00:00",
+      "created_at": "2026-11-27T09:19:07.229385+00:00"
+    },
+    {
+      "id": "7f6efb9f-9664-436b-8b1a-405bef047992",
+      "title": "Black Friday 2026开启：MacBook Air M5跌破千元，SSD与外设迎历史低价",
+      "summary": "Tom's Hardware黑五实时报道显示，M5版MacBook Air降至999美元，TeamGroup 4TB PCIe 4.0 SSD低至399.99美元，Logitech MX Master 3S鼠标跌至72.19美元，Creality K2 Combo 3D打印机售价349美元。",
+      "key_points": [
+        "M5 MacBook Air 13英寸版直降300美元至999美元",
+        "T-Force G50 Evo 4TB SSD仅售399.99美元，约0.10美元/GB",
+        "Logitech MX Master 3S创历史新低至72.19美元"
+      ],
+      "full_content": "Black Friday is here! After days of early and preliminary sales, the official event is upon us. Many of your favorite retailers have already kicked off their sales, and we're continuing to bring you all the latest and greatest from Newegg, Amazon, Walmart, Best Buy, and beyond in our live coverage. As ever, we're highlighting the best deals in every PC gaming and hardware category. So whether you're after CPUs, GPUs, RAM, SSDs, a gaming laptop, a desktop, tools, or more, you're in the right place. Our recommendations come backed by our 30 years of brand expertise, hours of hands-on testing, and our extensive benchmarking database, as well as price tracking information to bring you deals that are actually good. With AI driving up prices, it's a tough time to be a PC hardware enthusiast, but that doesn't mean there aren't great deals to be found. Here's all the best so far: Quick Links: Black Friday deals Amazon: All Black Friday deals Amazon: 73% off computers and accessories deals Amazon: All Gaming GPU Deals Amazon: Up to $500 off Gaming Monitors Amazon: Desktop and gaming PCs Newegg: Up to 69% off PC hardware Hottest Black Friday Tech Deals The Corsair Xeneon Edge is a 14.5-inch display designed to serve as an extension for your desktop and give you a small screen to host your most important apps. Its versatility means you can mount it practically anywhere — horizontally under your main monitor, vertically beside your primary display, or as a digital status panel inside your PC case. View Deal The Dell XPS 13 with an Intel Core 5 320, 8GB of RAM, and 256 GB of storage. View Deal Odyssey (G55C) Series QHD 1000R Curved Gaming Monitor: was $329.99 now $180.48 Returning to its lowest-ever price, get a 32-inch curved QHD (2560 x 1440) gaming monitor with a 165Hz refresh rate for just $189, a massive $140 saving. View Deal Apple's base MacBook Neo has an A18 Pro chip, 256GB of storage, and 8GB of RAM. A solid alternative with a more powerful SoC. View Deal 25-Piece Upgraded Electric Screwdriver Kit: was $49.99 now $28.48 Get a 25-piece electric screwdriver for PC maintenance or any DIY task. Comes with a 1,500mAh battery, LED, and extension rod. View Deal CD/DVD burner with USB Hub and M.2 Dock: was $49.99 now $39.99 Now with M.2 NVMe SSD dock! The most expensive of the bunch, this optical CD/DVD writer from SUIDEK upgrades the SATA dock to an M.2 NVMe SSD dock, but keeps the SD card reader, USB-A, and USB-C hub. View Deal T-Force G50 Evo M.2 2280 4TB PCIe 4.0 x4: was $485.99 now $399.99 This T-Force G50 Evo offers sequential read speeds of 5,000 MB/s and write speeds of up to 4,800 MB/s. View Deal * The listed previous prices can vary based on retailer, as many use different metrics, like 90-day rolling averages or ‘estimated value’ due to ongoing shortages and price hikes. November 27, 2026 – 2:14 AM Good morning and welcome to Black Friday. The event has begun, and we're here to bring you all the best deals, with Stephen here to see you through the early hours! November 27, 2026 – 2:18 AM Apple's M5 Macbook Air drops to under $1000 in Black Friday offer This year's Apple MacBook Air has dropped to $999 across multiple storefronts, including Amazon and Best Buy, this Black Friday. The M5 Air is our go-to everyday laptop for most people, as its premium build quality, trackpad, and solid battery life make it a no-brainer for people who want a step up from the MacBook Neo, with a little more computing heft for everyday tasks, if you can stomach the display's notch, of course. 13-inch M5 Macbook Air (Midnight Black): was $1299.99 now $999 The M5 MacBook Air offers 512GB of storage, a 13-inch Retina display, and a 10-core CPU and 8-Core GPU with 16GB of unified memory that can take on pretty much all everyday tasks with ease. View Deal Tom's Hardware Tom's Hardware Tom's Hardware Tom's Hardware We reviewed this model of MacBook Air earlier this year and said that it offered great value if you're looking for a premium ultraportable device. At under $1000, the deal only gets better. If you're doing serious multitasking work regularly, then the M5 MacBook Air is a worthy upgrade, or a better pick than the MacBook Neo deals that we've seen floating around recently. Of course, you get additional frills like MagSafe Charging, solid speakers, and a pretty-much unmatched trackpad, to boot. Despite its place as Apple's mid-range laptop option, it's a solid pick that will suit most people for everyday computing tasks. — Sayem Ahmed November 27, 2026 – 2:33 AM One of the best SSD deals is still going — get a 4TB Gen 4 drive or $0.10 cents per GB Storage prices of old are gone, so SSDs are much more expensive than they used to be. With prices only set to get worse, grabbing an SSD deal while you can is a sensible idea. This Team Group T-Force G50 Evo is one of the best we've seen thus far, at just $0.10 cents per GB, now just $399. T-Force G50 Evo M.2 2280 4TB PCIe 4.0 x4: was $485.99 now $399.99 This T-Force G50 Evo offers sequential read speeds of 5,000 MB/s and write speeds of up to 4,800 MB/s. View Deal An entry-level drive, this PCIe 4.0 model offers sequential read speeds of up to 5,000 MB/s and sequential write speeds of up to 4,700 MB/s. It also features SLC Caching and Host Memory Buffer. While this certainly isn't the fastest drive on the market, it is more than enough for an all-around drive for storing games and files, if not for higher-octane use cases like video editing, or anything else latency-intensive. - Stephen Warwick November 27, 2026 – 2:49 AM The Logitech MX Master 3S is down to its previous all-time low on Amazon, clocking in at just $72.19 Logitech's legendary MX Master 3S has fallen to a new all-time low price of just $72.19. This productivity Bluetooth mouse is famed as one of the best all-rounders for any task you can think of. It has 8K DPI tracking and will work on any surface. Matches previous all-time low The Logitech MX Master 3S is a productivity mouse with the Logi Flow feature, allowing you to use it across Windows and macOS seamlessly. View Deal Performance has never been the draw of an MX Master. It's the ergonomics and customizability. The thumb scroll wheel gives you another variable function under your grip, while the thumb rest button gives you additional controls on top of the typical forward/back split. In addition, the mouse supports Logi Flow, allowing you to use it seamlessly across different devices (including macOS and Windows), with clipboard support. The mouse can connect up to three devices, which you can swap between with a button on the bottom. Note if you're using Flow, you don't need to swap with the button manually. — Stephen Warwick November 27, 2026 – 3:06 AM Creality's 16-color K2 Combo 3D printer is now $50 cheaper than it was in October Creality's K2 Combo was just $399 in the October sales, and now it has fallen to the even more enticing price of $349, $200 off! With a 260 x 260 x 260mm print area, it's a great small option. Creality's K2 Combo is a formidable 3D printer. The smallest of the K2 family of printers, the K2 Combo still has a 260 x 260 x 260 mm print size, allowing users to print large objects inside its enclosed frame without worrying about having to glue together multiple prints. The ultra-sturdy frame holds an auto-leveling print bed and three step-servo motors for fast, consistent prints. View Deal As with our K2 printers, such as the K2 Pro Combo we reviewed , you can pair up to four CFS cartridges together for a 16-color printer; though, with the smaller size here, it might be difficult to fit all those colors in. It also features auto print bed leveling, along with print failure detection. — Stephen Warwick November 27, 2026 – 3:19 AM Lowest-ever price on Razer's Huntsman Mini 60% keyboard, 50% off! This nifty and compact Razer Huntsman Mini 60% Wired keyboard has fallen to a new lowest-ever price of $65.54, exactly have price! Specifically, this is the linear optical switches version ",
+      "ai_summary": "发生了什么：2026年黑五购物节于11月27日凌晨正式启动，Tom's Hardware实时追踪并汇总了覆盖PC硬件全品类的重磅折扣。其中最具标志性事件是苹果M5版MacBook Air（13英寸，512GB存储，16GB统一内存）在亚马逊、百思买等平台全线跌破1000美元大关，售价定格在999美元，较原价1299.99美元直降300美元；存储领域，TeamGroup T-Force G50 Evo 4TB PCIe 4.0 SSD以399.99美元成交，单价低至0.10美元/GB，读写速度达5000/4800 MB/s；外设方面，Logitech MX Master 3S生产力鼠标价格下探至72.19美元，创历史最低；3D打印品类，Creality K2 Combo机型以349美元开售，较10月再降50美元。\n\n为什么重要：此次黑五降价并非简单促销，而是多重产业逻辑共振的结果。一方面，AI芯片需求持续挤压消费级GPU与高端CPU产能，导致传统PC硬件库存压力增大，厂商亟需清仓回笼资金；另一方面，DRAM与NAND Flash价格虽处高位，但SSD主控与固件方案成熟度提升，使大容量PCIe 4.0 SSD成本显著下移。此外，苹果主动调低M5 Air售价，意在以高性价比巩固其在轻薄本市场的统治地位，同时为M6芯片铺路。这些动作共同释放出一个信号：后AI算力红利时代，消费电子正回归理性价值锚点。\n\n对行业有什么影响：短期看，999美元的M5 Air将对Windows阵营超轻薄本（如XPS 13、Zephyrus G14）构成降维打击，迫使OEM加速推进ARM Windows生态建设；SSD价格下探将加速1TB成为笔记本标配，并推动游戏本普遍搭载2TB起步存储；而MX Master 3S等旗舰外设降价，则预示着高端生产力配件正从‘小众奢侈品’转向‘大众刚需品’。长期而言，黑五价格体系的重构将倒逼供应链优化成本结构，加速PCIe 5.0 SSD、Wi-Fi 7外设等下一代技术普及节奏，最终重塑消费者对‘高性能’与‘合理价格’的心理预期阈值。",
+      "category": "Digital",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/live/news/black-friday-2026-day-three",
+      "original_author": "@Tom's Hardware",
+      "published_at": "2026-11-27T07:19:47+00:00",
+      "created_at": "2026-11-27T09:19:07.229418+00:00"
+    },
+    {
+      "id": "3d5947a6-4f7c-4f37-9186-d40f9a60e554",
+      "title": "昆士兰大学实现重力波通信：电梯配重调制信号，每小时传1比特",
+      "summary": "澳大利亚昆士兰大学团队利用老式电梯配重运动调制重力场，在相邻卫生间内用高灵敏度重力仪成功接收‘Gravity’单词信号，验证了不可屏蔽的重力通信原理。",
+      "key_points": [
+        "实验使用1950年代电梯，配重1.8吨，每分钟传输1比特",
+        "重力信号无法被普通物质屏蔽，量子传感器有望将速率提至15比特/分钟",
+        "当前系统仅具原理验证价值，离实用化尚远"
+      ],
+      "full_content": "The U.S. export control list might have banned NVIDIA’s B300 AI chips&nbsp;from being shipped to China, but who would have thought that it could only take the right connections and a boatload of money to secure a set for yourself? That’s right, for the extremely affluent, the Blackwell Ultra hardware is within their grasp, with the latest report stating that these AI GPUs are reaching between $3 million and $3.4 million per eight-GPU system, resulting in a 5x to 6x markup over U.S. retail rates. One Shenzhen-based consultant reportedly noted that opening an AI firm is as easy as heading [&hellip;] Read full article at https://wccftech.com/export-banned-nvidia-blackwell-b300-servers-openly-sold-china-3-4-million/",
+      "ai_summary": "发生了什么：2026年11月27日，澳大利亚昆士兰大学研究团队在《Applied Physics Letters》发表成果，首次在现实环境中实现了基于重力场调制的‘穿墙通信’。实验在该校Parnell楼进行，研究人员利用一台1950年代的老式电梯，通过控制其1.8吨配重块在两个楼层间往返运动，使其在‘0’（静止）与‘1’（运动）状态间切换，从而在空间中产生可探测的微弱重力场变化。位于相邻卫生间的高灵敏度重力仪成功捕捉到该信号，并将其解码为英文单词‘Gravity’。整个过程耗时一小时，数据传输速率为1比特/分钟。团队指出，该技术的核心优势在于重力波无法被任何常规材料（如铅、混凝土）屏蔽，理论上可穿透地球。\n\n为什么重要：这项研究并非为了取代现有通信技术，而是旨在探索一种全新的、物理层面‘不可阻挡’的信息传递范式。在军事、应急、地下/水下探测等极端场景中，电磁波通信极易被干扰、屏蔽或截获，而重力通信则提供了终极的‘抗毁性’与‘隐蔽性’。尽管当前速率极低，但它首次在宏观尺度上验证了爱因斯坦广义相对论预言的‘引力辐射’可用于信息编码，为未来基础物理与工程应用的交叉研究开辟了全新方向。\n\n对行业有什么影响：短期内，该技术对通信产业几无直接影响，其工程化瓶颈（信号极其微弱、易受地震噪声干扰、需要超低温量子传感器）决定了它至少十年内难以实用化。但其科学价值极为深远：它将强力推动高精度重力测量仪器（如冷原子干涉仪、超导重力仪）的研发与商业化；激发各国对基础物理实验室建设的投入；并可能催生‘重力传感’新赛道，应用于地质勘探、早期地震预警、地下结构测绘等领域。长远看，若未来量子传感技术取得突破，重力通信或将成为深空探测、核设施监控、甚至跨星球通信的终极备份方案，其战略意义远超商业价值。",
+      "category": "Semiconductor",
+      "source": "Solidot (科技)",
+      "source_url": "https://www.solidot.org/story?sid=86008",
+      "original_author": "@Solidot (科技)",
+      "published_at": "2026-11-26T22:58:44+00:00",
+      "created_at": "2026-11-27T09:19:07.229462+00:00"
+    },
     {
       "id": "694210be-062d-4e53-8b3b-32cf548826e0",
       "title": "三星计划2028年前在芯片工厂部署无人车、自动驾驶机器人及机械臂",
@@ -5347,60 +5401,6 @@
       "original_author": "@WCCFTech",
       "published_at": "2026-10-21T15:10:22+00:00",
       "created_at": "2026-10-21T17:50:00.419874+00:00"
-    },
-    {
-      "id": "d2b719f8-1148-4072-8149-a0d7faf17436",
-      "title": "STMicroelectronics推出MasterGaN7集成氮化镓半桥驱动器，支持2MHz高频开关",
-      "summary": "意法半导体发布MasterGaN7系列集成氮化镓器件，内置650V GaN晶体管与高压栅极驱动，支持2MHz开关频率，适用于AI电源适配器、快充及太阳能微逆变器。",
-      "key_points": [
-        "集成双650V GaN晶体管+高压驱动+LDO稳压器+自举二极管",
-        "支持2MHz高频开关，传播延迟仅45ns，待机功耗极低",
-        "兼容多种拓扑结构，QFN封装与现有MasterGaN系列引脚兼容"
-      ],
-      "full_content": "&lt;p&gt;Zak Killian is a freelance contributor to Tom&#039;s Hardware who has also written for HotHardware and Tech Report. Ever since typing in games from magazines in ATARI BASIC on his family&#039;s Atari 800XL as a youth, Zak has been deeply fascinated with the capabilities of computers. His passion for gaming as a kid led to more technical engagement with PCs as a teenager, when he first built his own system: an AMD K6. Not long after, he founded his own PC repair shop in the year 2000. Now, decades later, he&#039;s still building and benchmarking new boxes, still gaming in every free hour, and still arguing on the internet with almost any opinion anyone has. Something of a modern-day Renaissance man, he may not be an expert on anything, but he knows just a little about nearly everything. &lt;/p&gt;",
-      "ai_summary": "发生了什么：意法半导体（STMicroelectronics）正式推出MasterGaN7系列高集成度氮化镓（GaN）功率器件，采用9mm×9mm QFN封装，内部集成两颗650V增强型GaN晶体管（6A峰值电流）、高压高频栅极驱动器、低压差稳压器（LDO）、自举二极管及多重保护电路。该器件最大亮点是支持高达2MHz的开关频率，同时保持45ns超低传播延迟与极短最小导通时间，显著减小磁性元件体积，提升功率密度。\n\n为什么重要：AI终端设备（如AI PC、边缘AI盒子、AI摄像头）对电源系统提出全新要求：既要满足GPU/NPU瞬态功耗突增的响应速度，又要兼顾轻薄化与静音散热。传统硅基电源受限于开关频率（通常＜1MHz），难以兼顾效率与体积。MasterGaN7通过全集成设计消除了分立GaN+驱动方案的布局与时序匹配难题，使工程师能用类似MOSFET的设计流程快速部署GaN方案，极大降低AI终端电源的GaN应用门槛。\n\n对行业有什么影响：首先，加速GaN在AI终端电源的渗透，预计2027年起主流AI笔记本、AI工作站适配器将普遍采用650V GaN方案；其次，推动电源拓扑创新，如主动钳位反激（ACF）、不对称半桥（AHB）等高效率架构因GaN高频特性而更具成本优势；再次，强化意法半导体在功率半导体领域的垂直整合能力——其自有6英寸GaN-on-Si产线可保障供应安全，避免地缘政治风险；最后，对国产GaN厂商构成技术对标压力，需加快在驱动集成度、高频可靠性、系统级EMI抑制等维度追赶，单纯拼导通电阻已不足以构建竞争壁垒。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/stmicroelectronics-adds-mastergan7-devices-to-integrated-high-efficiency-power-family/?utm_source=rss&utm_medium=rss&utm_campaign=stmicroelectronics-adds-mastergan7-devices-to-integrated-high-efficiency-power-family",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-10-21T14:52:23+00:00",
-      "created_at": "2026-10-22T05:39:26.12319+00:00"
-    },
-    {
-      "id": "0dc5aa64-ad77-43e4-a062-91d7c1af8146",
-      "title": "Micron发布DDR6/LPDDR6与VHBM内存技术，带宽翻倍、能效提升35%",
-      "summary": "美光展示下一代内存技术：DDR6/LPDDR6带宽较DDR5/LPDDR5提升2倍，VHBM垂直堆叠NAND层数突破400层，全面支撑AI终端与数据中心性能升级。",
-      "key_points": [
-        "DDR6带宽达12800 MT/s，LPDDR6能效提升35%",
-        "VHBM（垂直高带宽内存）实现单颗1TB RDIMM",
-        "G11 NAND闪存堆叠层数超400层，密度与I/O性能跃升"
-      ],
-      "full_content": "&lt;p&gt;Jhet Borja is a writer with various knowledge in his arsenal. As a child, he lived above an electronics repair shop and visited every afternoon and observed how radios and TVs were assembled. In highschool he became his friends and family&amp;#39;s PC builder, consultant, and tech support. Building a PC and playing Counter-Strike all night would be the itinerary for a sleepover. He&amp;#39;s since learned all sorts of things on his own, from CAD and mechanical design, woodworking, classic calligraphy, photography, working on cars, leather craft, and getting an inkjet printer to work. Jhet has previously covered leather articles, but has since transitioned to tech and has written for MakeUseOf and XDA.&lt;/p&gt;",
-      "ai_summary": "发生了什么：美光科技在技术发布会上正式披露其多代内存产品路线图，核心包括：DDR6与LPDDR6标准内存，前者峰值带宽达12800 MT/s（为DDR5-6400的2倍），后者在同等带宽下功耗降低35%；VHBM（Vertical High Bandwidth Memory）技术，通过垂直堆叠实现单颗RDIMM容量达1TB；G11 NAND闪存，堆叠层数突破400层，I/O速度与单位面积存储密度显著提升。这些技术将共同服务于AI客户端（如Copilot+ PC）、AI服务器及AI训练集群。\n\n为什么重要：内存正成为AI算力释放的关键瓶颈。大模型推理对带宽敏感（尤其是KV Cache加载），而训练则对容量与带宽双重渴求。美光此次并非简单迭代参数，而是通过架构创新解决根本矛盾：DDR6/LPDDR6采用新型信号完整性设计与更低电压摆幅，在提升带宽的同时控制功耗；VHBM放弃传统HBM的2.5D封装路径，转而通过TSV垂直互连实现更高IO数与更优散热，更适合大规模AI服务器部署；G11 NAND则通过400+层堆叠突破3D NAND物理极限，为AI训练数据湖提供高吞吐、低成本存储底座。\n\n对行业有什么影响：第一，加速AI PC生态成熟，微软Copilot+ PC对LPDDR6的强制要求将推动OEM厂商在2027年全面切换；第二，挑战SK海力士HBM3E与三星HBM3的领先地位，VHBM若成本控制得当，可能成为高性价比AI服务器内存新选项；第三，400层G11 NAND将挤压YMTC、长江存储等中国厂商在高端NAND市场的追赶窗口，技术代差进一步拉大；第四，内存带宽与容量的跃升倒逼CPU/GPU厂商重构内存控制器设计，如增加通道数、优化预取机制、强化内存压缩算法等，软硬协同优化成为新焦点。",
-      "category": "Semiconductor",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/micron-ddr6-doubles-ddr5-bandwidth-lpddr6-better-power-efficiency-vhbm-vertical-g11-nand-beyond-400-layers/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-10-21T13:46:18+00:00",
-      "created_at": "2026-10-22T05:39:26.1232+00:00"
-    },
-    {
-      "id": "07f35b1c-c8fe-4b00-9267-c033d42be289",
-      "title": "AMD FSR 4.1全面登陆RX 6000、Ryzen APU及Xbox全系主机",
-      "summary": "AMD正式发布FSR Upscaling 4.1，首次扩展至Radeon RX 6000系列显卡、Ryzen集成显卡APU、游戏掌机及Xbox Series X/S主机，同时增强帧生成与光线再生，并将支持Vulkan API。",
-      "key_points": [
-        "覆盖RX 6000 GPU、Ryzen APU及Xbox全系主机",
-        "新增Vulkan支持，强化帧生成与光线再生",
-        "旨在缩小与索尼PSSR/QSSR的主机端画质差距"
-      ],
-      "full_content": "&lt;p&gt;Brandon has been tinkering with PCs since childhood and received his first &quot;real&quot; PC, an IBM Aptiva 310, in the mid-1990s. He next went on to build his first custom PC with an Intel Celeron 300A processor overclocked to 450MHz on an Abit BH6 motherboard. Brandon has written about PC and Mac tech since the late 1990s, first at AnandTech before moving to DailyTech and later to Hot Hardware. When Brandon is not consuming copious amounts of tech news, he can be found enjoying the NC mountains or the beach with his wife and two sons.&lt;/p&gt;",
-      "ai_summary": "AMD在2026年10月正式推出FSR（FidelityFX Super Resolution）4.1技术，标志着其开源超分辨率生态迎来关键性扩张。此次升级不再局限于高端RDNA3架构显卡，而是历史性地向下兼容至RDNA2时代的Radeon RX 6000系列，并首次完整支持Ryzen移动/桌面APU及主流游戏掌机（如Steam Deck），极大拓宽了AI驱动画质提升技术的普惠边界。尤为关键的是，AMD确认FSR 4.1将登陆Xbox Series X和Series S——这是微软平台首次原生集成第三方超分方案，直接对标索尼PS5 Pro的PSSR与基础版PS5的QSSR，填补了Xbox在自适应渲染技术上的长期空白，有望显著改善次世代主机在4K/高帧率下的能效比与画质一致性。\n\n这一举措之所以重要，在于它打破了主机平台长期由芯片原厂封闭主导的技术格局。FSR 4.1的跨平台落地，不仅体现AMD在图形IP生态整合能力上的成熟，更反映出AI超分已从PC‘可选项’升级为多终端‘基础设施级能力’。其机器学习模型经过针对性优化，可在低功耗APU和Xbox定制SoC上高效运行，无需专用AI硬件单元，降低了终端厂商的集成门槛。\n\n对行业而言，FSR 4.1的全面铺开将加速AI超分技术标准化进程，倒逼NVIDIA DLSS和Intel XeSS进一步开放授权与跨平台适配。对于消费者，这意味着更多中端显卡用户和主机玩家能以更低硬件成本获得接近高端设备的视觉体验；对开发者，则提供了统一、免授权费的跨平台画质增强工具链，降低多端移植成本。长远看，这或将推动主机与PC在渲染技术代际差上的收敛，重塑‘性能-功耗-画质’三角平衡的行业基准。",
-      "category": "GPU",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/amd-fsr-4-1-comes-to-radeon-rx-6000-gpus-ryzen-apus-handhelds-vulkan-support/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-10-20T16:25:55+00:00",
-      "created_at": "2026-10-20T17:41:40.444843+00:00"
     }
   ]
 }
