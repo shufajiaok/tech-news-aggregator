@@ -1,7 +1,61 @@
 {
-  "updated_at": "2026-11-27T21:48:06.662033+00:00",
+  "updated_at": "2026-11-28T08:37:49.078226+00:00",
   "count": 300,
   "news": [
+    {
+      "id": "8b1ed4b1-647a-47f5-b415-e7920a4270b0",
+      "title": "技嘉解散RGB控制中心团队，AI逆向工程揭示其导致NVIDIA显卡帧率波动",
+      "summary": "技嘉因旗下Control Center软件被证实引发NVIDIA显卡严重帧率波动，已解散整个开发团队；独立研究者借助AI辅助逆向工程定位问题根源为RGB轮询机制。",
+      "key_points": [
+        "技嘉解散Control Center开发团队",
+        "AI逆向工程确认RGB轮询导致NVIDIA GPU帧率抖动",
+        "事件暴露厂商软件优化严重滞后于硬件发展"
+      ],
+      "full_content": "Laptop manufacturers were already trigger-happy shipping a boatload of machines with a ton of bloatware that would require ample time to remove. Even now, a fresh copy of Windows 11 arrives with a plethora of unwanted software, and it appears that the situation will worsen with time. Lenovo, the world’s largest PC manufacturer, has reportedly begun pre-installing the desktop version of ChatGPT on select new Windows 11 business notebooks, signaling a new wave of third-party AI software bundling on commercial hardware. To make the offer salivating for business operators, an OpenAI promotion offers corporate buyers up to $100 per seat [&hellip;] Read full article at https://wccftech.com/lenovo-preloads-chatgpt-windows-11-pcs-openai-100-per-seat-offer/",
+      "ai_summary": "发生了什么：WCCFTech援引巴西媒体报道，技嘉公司已解散其Control Center RGB灯光控制软件的全部开发团队。这一决定源于广泛用户投诉——该软件在运行时会导致搭载NVIDIA显卡的系统出现持续性帧率波动（frame-pacing stutter），严重影响游戏体验。经一位独立研究者利用AI辅助的逆向工程分析，问题根源被锁定为Control Center后台持续进行的RGB设备轮询（polling）操作，该操作会周期性占用GPU资源，干扰图形渲染管线的时序稳定性。\n\n为什么重要：该事件是AI技术首次在消费级硬件软件故障诊断中发挥关键作用，标志着AI正从‘辅助设计’延伸至‘深度运维诊断’新维度。更深层意义在于，它揭开了PC硬件厂商普遍存在的‘重硬件、轻软件’顽疾：在GPU性能以每年30%+速度跃升的今天，配套工具链的优化却严重脱节。RGB控制软件本属边缘功能，却能对核心图形性能造成实质性破坏，反映出厂商在驱动开发、系统集成与质量保障体系上的系统性短板。\n\n对行业有什么影响：短期将促使各大板卡厂商紧急审查并重构其RGB/监控类软件，推动行业建立更严格的GPU资源隔离规范；中期看，AI驱动的自动化软件缺陷检测（如基于LLM的驱动代码审计、基于强化学习的实时性能干扰识别）有望成为EDA与系统软件新赛道；长期而言，该事件可能加速‘硬件即服务’（HaaS）模式演进——用户不再购买裸硬件，而是订阅包含经过全栈验证、AI持续优化的软硬一体解决方案。对消费者而言，则意味着未来选购主板/显卡时，软件生态成熟度与社区口碑将与硬件参数同等重要。",
+      "category": "Semiconductor",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/gigabyte-control-center-development-team-fired-ai-analysis-frame-pacing-nvidia-gpus/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-11-28T08:09:50+00:00",
+      "created_at": "2026-11-28T08:37:41.597699+00:00"
+    },
+    {
+      "id": "fa2a9d1d-a05d-457f-b185-70a91da89b85",
+      "title": "Black Friday周末持续促销：RTX 5080整机、PCIe 5.0 SSD等硬件大幅降价",
+      "summary": "Tom's Hardware汇总Black Friday周末延续的PC硬件优惠，涵盖HP OMEN RTX 5080整机、SanDisk PCIe 5.0 SSD（18美分/GB）、Intel Core Ultra 7 270K Plus处理器（附AIO散热器）、16TB HDD（2美分/GB）及多款显示器与外设。",
+      "key_points": [
+        "HP OMEN 35L搭载RTX 5080与Ultra 7 270K Plus，直降$1700",
+        "SanDisk 2TB PCIe 5.0 SSD降至$349.99，单价仅18美分/GB",
+        "Intel Core Ultra 7 270K Plus售$249.99，赠360mm AIO与游戏"
+      ],
+      "full_content": "Black Friday might technically be over, but the deals continue through the weekend! Nearly all of the best deals and savings we've covered so far are still live, so there is plenty of time to save money at Amazon, Newegg, Best Buy, Walmart, and more. We're tracking the best deals still live on PC gaming hardware across every category, including CPUs, GPUs, RAM, SSDs, gaming laptops, desktops, tools, and more. As always, we make recommendations based on our thousands of hours of hands-on testing, extensive benchmarking database, and price tracking tools to ensure deals are actually deals. With AI pushing up the price of PC gaming, finding a deal is more difficult, but more important than ever before, so let us do the hard work. Here are the best ongoing Black Friday weekend deals. Quick Links: Black Friday deals Amazon: All Black Friday deals Newegg: Up to 69% off PC hardware Best Buy: Up to $1,200 off Gaming Laptops Amazon: 73% off computers and accessories deals Dell: Up to 40% off Dell productivity and gaming monitors Amazon: All Gaming GPU Deals Amazon: Up to $500 off Gaming Monitors Amazon: Desktop and gaming PC deals Hottest Black Friday Tech Deals OMEN 35L Gaming Desktop: was $4399.99 now $2699.99 Get an RTX 5080 PC from HP's HyperX gaming brand with Intel Core Ultra 7 270K Plus, 16GB of RAM, and a 1TB SSD, with plenty of space to upgrade. Also features Wi-Fi 7. View Deal The Corsair Xeneon Edge is a 14.5-inch display designed to serve as an extension for your desktop and give you a small screen to host your most important apps. Its versatility means you can mount it practically anywhere — horizontally under your main monitor, vertically beside your primary display, or as a digital status panel inside your PC case. View Deal 25-Piece Upgraded Electric Screwdriver Kit: was $49.99 now $28.48 Get a 25-piece electric screwdriver for PC maintenance or any DIY task. Comes with a 1,500mAh battery, LED, and extension rod. View Deal Apple's base MacBook Neo has an A18 Pro chip, 256GB of storage, and 8GB of RAM. A solid alternative with a more powerful SoC. View Deal The Dell XPS 13 with an Intel Core 5 320, 8GB of RAM, and 256 GB of storage. View Deal T-Force G50 Evo M.2 2280 4TB PCIe 4.0 x4: was $485.99 now $399.99 This T-Force G50 Evo offers sequential read speeds of 5,000 MB/s and write speeds of up to 4,800 MB/s. View Deal Odyssey (G55C) Series QHD 1000R Curved Gaming Monitor: was $329.99 now $180.48 Returning to its lowest-ever price, get a 32-inch curved QHD (2560 x 1440) gaming monitor with a 165Hz refresh rate for just $189, a massive $140 saving. View Deal External Power Button for Desktop PC: was $13.99 now $11.19 This external power button has a 2-meter (~78 inches) cabl, along with a splitter that lets you connect both to your case's front panel buttons. It also includes adhesive pads and zip ties. View Deal CD/DVD burner with USB Hub and M.2 Dock: was $49.99 now $39.99 Now with M.2 NVMe SSD dock! The most expensive of the bunch, this optical CD/DVD writer from SUIDEK upgrades the SATA dock to an M.2 NVMe SSD dock, but keeps the SD card reader, USB-A, and USB-C hub. View Deal * The listed previous prices can vary based on retailer, as many use different metrics, like 90-day rolling averages or ‘estimated value’ due to ongoing shortages and price hikes. November 28, 2026 – 2:16 AM Good morning and welcome to Saturday! The team are here to show you all the latest and greatest deals still available at your favorite retailers. November 28, 2026 – 2:17 AM Black Friday is really now an all-weekend, if not an all-November affair. As such, all the deals we brought you earlier this week and on Friday itself are generally still live. In fact, there are even some fresh deals we haven't seen before! November 28, 2026 – 2:35 AM Intel's Core Ultra 7 270K Plus hits $249.99, with a free 360mm AIO and two additional games Intel's Core Ultra 270K plus lives on our list of the best CPUs for gaming for a good reason; not only is it adept at crunching through the latest games, but it's also our top pick for anyone looking for a top-shelf productivity workhorse. Intel's latest and greatest CPU is listed at $269 at Newegg, but it also comes with a stackable code, knocking the price down to $249 with a handful of free gifts: A Rosewill 360mm AIO liquid cooler, in addition to an Intel Gaming Bundle where you can pick from two free titles, including Total War: Warhammer 40,000 , Star Wars: Galactic Racer , and more. Core Ultra 7 270K Plus: was $309.95 now $249.99 Get Intel's latest and greatest processor, the 270K Plus. The 8p/16e core processor has plenty of oomph to plow through any workflow and games well, too. View Deal Future Future Future The Intel Core Ultra 270K Plus manages to go toe-to-toe in gaming performance with AMD's Ryzen 7 7800X3D, and is one of the best CPUs available now in productivity workloads. Sporting a total of 24 cores, split into 8 P-Cores and 16 E-Cores, the configuration actually matches the same core config as the much pricier Core Ultra 9 285K. Boasting clock speeds of up to 5.5GHz, this is a seasonal offer you don't want to miss out on. — Sayem Ahmed November 28, 2026 – 2:50 AM Equip yourself with a monstrous 16TB HDD, priced at just 2 cents per-gigabyte Getting a good HDD deal in this market is a rare thing, and this deal we spotted yesterday over at Newegg for an external 16TB Seagate HDD works out to just two cents per gigabyte. Yes, it uses a USB 3.0 interface, but for cold storage of larger files, images, or video, you don't really need blisteringly fast transfer speeds in the first place. Coming in at $399.99, Seagate's External HDD might be the answer to all of your storage woes, or just offer you necessary extra room. Expansion Desktop 16TB External Hard Drive: was $549.99 now $399.99 The Seagate Expansion Desktop drive is a 16TB HDD that connects via USB 3.0. It's formatted to ExFAT by default, allowing it to work with virtually any platform, straight out of the box. The device is powered by an included AC power cable, and connects to your system over a Micro-B to USB-A connector. View Deal The Seagate 16TB drive inside is usually easily shuckable, though do take care in doing so if that's your intention: Usually we'll see a white-labelled drive, and it's easy to accidentally damage the HDD while doing so. However, if you're brave enough to void your warranty, it could be a worthwhile endeavor. Getting a 16TB HDD anywhere else will cost much more, so if you're up for a bit of risk-reward, it could make for a solid extra internal drive, or suitable for use in a NAS. The Micro-B to USB-A connector is a touch outdated in 2026, but if it's still going to be fast enough for transferring files. If you shuck the drive itself, expect standard SATA power and data connectors instead. It's difficult to argue with the price-per-gigabyte on this deal, so if you're looking to upgrade your storage this holiday, don't sleep on this Newegg deal. — Sayem Ahmed November 28, 2026 – 3:06 AM This is the cheapest 2TB PCIe 5.0 NVMe SSD we've seen so far: pay 18 cents per gigabyte for ultra-fast storage SanDisk’s 2TB Optimus GX Pro 8100 PCIe 5.0 SSD got a $95 discount and hit an all-time low of $349 over at Amazon. The drive itself boasts up to 14,900 MB/s read speeds and 14,000 MB/s write speeds, almost completely saturating the bandwidth available on its Silicon Motion SM2508 PCIe 5.0 x4 controller. The Optimus GX Pro 8100 uses Kioxia's BiCS8 218-layer TLC 3D CBA NAND, paired with 2GB of DDR4-3200 memory for use as a cache for fast, bursty work. Optimus GX Pro 8100 2TB: was $444.43 now $349.99 All-time low price. Expand your internal storage with SanDisk's 2TB Optimus GX Pro 8100 PCIe 5.0 NVMe SSD. This speedy drive offers 14,900/14,000 r/w speeds and has a 5-year warranty. View Deal (Image credit: Future) The overall price of the SanDisk Optimus GX Pro 8100 means that you'll be grabbing this incredibly fast storage at a mere 18 cents per gigabyte",
+      "ai_summary": "发生了什么：本文是Tom's Hardware在2026年11月28日发布的Black Friday周末延续促销汇总，覆盖亚马逊、Newegg、Best Buy等主流平台。核心优惠包括：HP OMEN 35L游戏台式机（RTX 5080 + Intel Core Ultra 7 270K Plus + 16GB RAM + 1TB SSD）从$4399.99直降至$2699.99；SanDisk Optimus GX Pro 8100 2TB PCIe 5.0 SSD以$349.99创历史低价，折合18美分/GB；Intel Core Ultra 7 270K Plus处理器低至$249.99，并捆绑Rosewill 360mm AIO液冷与双款游戏；Seagate 16TB外置HDD以$399.99售出，单价仅2美分/GB；Odyssey G55C曲面电竞显示器（2560×1440@165Hz）降至$180.48。\n\n为什么重要：此次促销发生在AI驱动PC硬件价格持续上涨的背景下，凸显消费者对高性价比配置的迫切需求。尤其值得注意的是，RTX 5080作为尚未正式发布的下一代显卡已出现在整机中，暗示NVIDIA新品可能提前进入渠道；而PCIe 5.0 SSD首次跌破$350大关，标志着超高速存储正加速普及。此外，Intel新旗舰处理器以极具竞争力的价格搭配高端散热方案，意在强化其在游戏与生产力双赛道的市场攻势。\n\n对行业有什么影响：短期看，大规模降价将刺激年底装机潮，利好整机厂商与渠道商；中长期看，PCIe 5.0 SSD价格下探将加速淘汰PCIe 4.0产品，推动SSD主控与NAND厂商向更高带宽演进；Intel处理器捆绑AIO的策略或倒逼AMD调整其Ryzen 8000系列配套方案；而16TB HDD的极致低价则反映机械硬盘正转向冷存储刚需场景，固态与机械的市场边界进一步清晰化。同时，文中多次强调“deal is actually a deal”，表明专业媒体正承担起价格真实性验证角色，提升消费者信任度，也对厂商虚假标价行为形成约束。",
+      "category": "Digital",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/live/news/black-friday-2026-day-four",
+      "original_author": "@Tom's Hardware",
+      "published_at": "2026-11-28T07:20:57+00:00",
+      "created_at": "2026-11-28T08:37:41.59765+00:00"
+    },
+    {
+      "id": "cb46ce6b-87bf-4a81-8435-b021ffd3cdf8",
+      "title": "联想预装ChatGPT桌面版于Win11商用本，OpenAI提供每席100美元补贴",
+      "summary": "联想开始在部分Windows 11商用笔记本预装ChatGPT桌面应用，并联合OpenAI推出每席最高100美元的企业采购补贴，引发对AI软件捆绑与系统纯净性的新争议。",
+      "key_points": [
+        "联想在新款商用笔记本预装ChatGPT桌面版",
+        "OpenAI提供最高100美元/席的企业采购补贴",
+        "此举加剧Windows系统预装软件泛滥问题"
+      ],
+      "full_content": "&lt;p&gt;Jeff Kampman has been playing PC games ever since he learned how to fire up freeware CDs from the DOS command line. He started building his own PCs in the mid-aughts and later turned that passion into a career, working as a news and guides writer, reviewer, and ultimately Editor-in-Chief at The Tech Report, where he dove deep on CPUs and GPUs (and more) in pursuit of the smoothest gaming experiences around. Jeff later took on roles at Asus and Intel as a technical marketer before joining Tom&#039;s Hardware. As Senior Analyst, Graphics, Jeff covers everything from integrated graphics processors to discrete graphics cards to the massive data center GPU installations powering our AI future. Jeff is also a hobbyist photographer, Twitch streamer, espresso enthusiast, and runner.&lt;/p&gt;",
+      "ai_summary": "发生了什么：WCCFTech报道，全球最大PC制造商联想已在其部分新款Windows 11商用笔记本中预装ChatGPT桌面应用程序。该举措并非孤立行为，而是与OpenAI达成商业合作——OpenAI为参与该计划的企业客户提供最高100美元/席的采购补贴。这意味着企业批量采购预装ChatGPT的联想笔记本时，可获得直接现金返还，显著降低部署成本。\n\n为什么重要：这标志着AI巨头与硬件厂商的合作从‘生态兼容’迈入‘深度捆绑’新阶段。不同于以往的API集成或云服务推荐，本次是原生桌面应用级预装，用户开箱即用，极大降低企业AI工具落地门槛。但此举也延续并放大了PC行业长期存在的‘bloatware’（臃肿软件）顽疾，尤其在商用领域，预装软件常带来安全风险、性能拖累与IT管理复杂度上升等问题，此前微软已因类似问题遭欧盟反垄断调查。\n\n对行业有什么影响：首先，该模式或将被戴尔、惠普等厂商迅速效仿，推动AI助手成为商用PC标配，加速企业级AI普惠化；其次，OpenAI通过硬件入口抢占用户心智与使用习惯，构建更牢固的AI服务护城河，削弱其他大模型厂商的终端触达能力；第三，微软面临双重压力——既要应对Copilot+PC的推广节奏，又要防止Windows系统因第三方预装而损害其‘纯净性’与‘可控性’声誉，可能倒逼其强化Windows OEM政策监管；最后，对企业IT部门而言，预装AI应用的合规审计、数据出境管控与生命周期管理将成为新课题，推动零信任架构与端点安全方案升级。",
+      "category": "AI",
+      "source": "WCCFTech",
+      "source_url": "https://wccftech.com/lenovo-preloads-chatgpt-windows-11-pcs-openai-100-per-seat-offer/",
+      "original_author": "@WCCFTech",
+      "published_at": "2026-11-27T23:33:28+00:00",
+      "created_at": "2026-11-28T08:37:41.597683+00:00"
+    },
     {
       "id": "15e1dd7d-55e5-40f4-99e2-39fd7464cb9d",
       "title": "小米汽车发布世界模型2.0，实现多模态闭环仿真与业务落地",
@@ -5347,60 +5401,6 @@
       "original_author": "@Semiconductor Digest",
       "published_at": "2026-10-21T15:44:03+00:00",
       "created_at": "2026-10-21T17:50:00.419848+00:00"
-    },
-    {
-      "id": "da4eb395-fe52-41d2-9145-f23d7617e5cb",
-      "title": "SEMI预测2026年硅片出货量增长11.8%，AI驱动连续四年创纪录",
-      "summary": "SEMI最新报告预计2026年全球硅片出货量达14420百万平方英寸，同比增长11.8%，并将持续刷新纪录至2029年；增长主要由AI带动的先进外延片与存储抛光片需求拉动。",
-      "key_points": [
-        "2026年硅片出货量预计14420 MSI，2029年将达17034 MSI",
-        "AI是核心驱动力，覆盖HBM、服务器DRAM、企业级NAND全品类",
-        "成熟制程利用率回升与库存调整结束亦贡献增量"
-      ],
-      "full_content": "&lt;p&gt;Etiido Uko is a mechanical engineer and senior technical writer with over nine years of experience in documentation and reporting. He is deeply passionate about all things engineering and technology, and is an expert in gadgets, manufacturing, robotics, automotive, and aerospace. His work spans content creation for industry leaders across multiple sectors, including Autodesk, Siemens, Xometry, Telus, and Coca-Cola. When he is not writing or keeping up with the latest innovations, you can find him exploring lands unknown. Check out more of his work at etiidowrites.com.&lt;/p&gt;",
-      "ai_summary": "发生了什么：SEMI（国际半导体产业协会）发布年度硅片出货量预测，明确2026年全球硅片出货量将达14420百万平方英寸（MSI），同比增长11.8%，为连续第四年创历史新高；2027–2029年将持续攀升，2029年预计达17034 MSI。增长来源高度集中于AI相关需求：先进逻辑芯片所需的300mm外延硅片（用于Hopper/Blackwell GPU、TPU、Trainium等AI加速器）、服务器级DDR5/DDR6 DRAM抛光片、以及企业级高密度NAND闪存晶圆均呈现强劲采购势头。\n\n为什么重要：硅片是半导体制造的物理基底，其出货量是产业链最上游、最真实的景气度风向标。本次预测打破市场对‘AI热潮阶段性见顶’的担忧，证实AI基础设施建设已进入规模化落地期——不仅GPU/TPU等核心计算芯片在放量，配套的存储、网络、供电芯片同样形成完整扩产闭环。尤其值得注意的是，SEMI特别指出‘成熟制程利用率回升’成为新增长点，表明AI边缘推理、DPU、智能网卡等中端芯片正带动28nm/40nm等节点重回满产，印证AI正从云端向端侧全面渗透。\n\n对行业有什么影响：第一，硅片厂商（信越、SUMCO、沪硅产业、立昂微）将加速推进300mm大硅片扩产，尤其加码外延片技术储备；第二，设备材料企业迎来结构性机会，如CMP抛光液、光刻胶、电子特气等AI专用耗材需求激增；第三，晶圆代工厂（TSMC、三星、中芯国际）产能分配权重进一步向AI相关工艺倾斜，可能加剧非AI客户排期压力；第四，长期看，硅片供应持续紧张或倒逼chiplet、异构集成等先进封装技术加速替代部分单片集成需求，以缓解对大尺寸硅片的绝对依赖。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/semi-forecasts-11-8-growth-in-silicon-wafer-shipments-in-2026-with-record-highs-expected-through-2029/?utm_source=rss&utm_medium=rss&utm_campaign=semi-forecasts-11-8-growth-in-silicon-wafer-shipments-in-2026-with-record-highs-expected-through-2029",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-10-21T15:30:00+00:00",
-      "created_at": "2026-10-22T05:39:26.123165+00:00"
-    },
-    {
-      "id": "8797588c-5071-43d1-8a80-be208f5ef696",
-      "title": "Axcelis斥资3500万美元在韩国平泽建新离子注入设备厂，强化全球供应链",
-      "summary": "美国离子注入设备商Axcelis宣布在韩国平泽投资3500万美元建设新制造基地，扩大其在亚洲的高产能设备交付能力，预计2028年下半年投产。",
-      "key_points": [
-        "Axcelis将在韩国平泽建设20万平方英尺新厂，总投资3500万美元",
-        "新厂将整合仓储、洁净室与培训中心，支持快速响应客户需求",
-        "投产时间定为2028年下半年，服务于全球半导体制造商"
-      ],
-      "full_content": "NVIDIA released its latest Game Ready drivers that add Microsoft Advanced Shader Delivery support while Cyberpunk 2077 gets a major DLSS upgrade. NVIDIA Rolls Out Feature-Rich Game Ready Driver For RTX GPUs, Enabling 2nd Gen DLSS &amp; Advanced Shader Delivery Support Across Multiple Games First up, we have Cyberpunk 2077, which is getting a new 2.5 update on 22nd October. With this update, the game will receive support for DLSS 4.5 Dynamic Multi Frame Generation, and is also going to upgrade its already-supported Multi Frame Generation, Ray Reconstruction, and Super Resolution integrations to second-generation AI models. Game Ready for Phantom [&hellip;] Read full article at https://wccftech.com/nvidia-advanced-shader-delivery-call-of-duty-mw4-gears-of-war-e-day-latest-drivers/",
-      "ai_summary": "发生了什么：美国半导体关键设备厂商Axcelis Technologies正式宣布，将在韩国京畿道平泽市投资3500万美元建设全新离子注入设备制造基地。该工厂占地约20万平方英尺，将集成现代化仓储、Class 100洁净室及客户培训中心，旨在提升Axcelis在亚洲——尤其是韩国、中国台湾、日本等全球先进制程重镇——的本地化制造与服务能力。项目计划于2028年下半年正式投产，届时将显著缩短设备交付周期，增强对三星、SK海力士、台积电等顶级客户的响应能力。\n\n为什么重要：离子注入是半导体制造中不可或缺的核心工艺步骤，直接影响晶体管阈值电压、掺杂均匀性等关键参数。Axcelis作为该领域的全球领导者（市占率超60%），其产能扩张直接关系到全球先进制程的扩产节奏。在地缘政治加剧、供应链安全成为首要考量的当下，Axcelis选择在韩国建厂，既是对韩国‘K-半导体战略’的积极响应，也是其全球化产能布局的关键一环——通过贴近客户，规避物流与出口管制风险，确保设备供应的连续性与稳定性。\n\n对行业有什么影响：第一，将强化韩国作为全球半导体设备制造枢纽的地位，吸引更多美日欧设备商跟进设厂，形成产业集群效应；第二，加速设备供应链区域化，促使晶圆厂在采购时更倾向‘本地化配套’，利好韩国本土零部件与材料供应商；第三，对国内设备产业构成双重启示：一方面凸显关键设备国产化的紧迫性，另一方面也表明，即便在高度垄断领域，通过持续技术创新与客户深度协同，仍有机会打破巨头壁垒——正如Axcelis凭借在高能离子注入等细分领域的领先，成功跻身一线阵营。",
-      "category": "Semiconductor",
-      "source": "Semiconductor Digest",
-      "source_url": "https://www.semiconductor-digest.com/axcelis-to-begin-construction-of-new-manufacturing-facility-in-pyeongtaek-korea/",
-      "original_author": "@Semiconductor Digest",
-      "published_at": "2026-10-21T15:11:19+00:00",
-      "created_at": "2026-10-21T17:50:00.419861+00:00"
-    },
-    {
-      "id": "c8dfe524-0fe1-48c0-84f6-6cb788bced78",
-      "title": "NVIDIA发布最新Game Ready驱动，支持《使命召唤》《战争机器》Advanced Shader Delivery",
-      "summary": "NVIDIA推出新版Game Ready驱动，为《使命召唤：现代战争III》《战争机器：E-Day》等游戏启用Microsoft Advanced Shader Delivery技术，并为《赛博朋克2077》升级DLSS 4.5动态多帧生成。",
-      "key_points": [
-        "新驱动支持Microsoft Advanced Shader Delivery，提升《COD MW4》《Gears of War E-Day》加载速度",
-        "《赛博朋克2077》获DLSS 4.5动态多帧生成与第二代AI模型升级",
-        "驱动同步优化Multi Frame Generation、Ray Reconstruction等现有技术"
-      ],
-      "full_content": "Crimson Desert's Charting the Unknown expansion is adding a ton of new features to the game developed by Pearl Abyss released earlier this year on PC, PlayStation 5, and Xbox Series X|S, but it does not seem to bring some of the most highly requested features by the community. Among them is the ability to save armor/outfit loadouts, but one modder solved the issue ahead of the launch of the DLC expansion. \"Changing outfits in Crimson Desert means equipping every piece by hand. Outfit Loadouts saves the armor and accessories a character wears as an outfit, and puts the whole [&hellip;] Read full article at https://wccftech.com/crimson-deserts-charting-the-unknown-romance-9-outfit-loadouts-mod/",
-      "ai_summary": "发生了什么：NVIDIA发布了面向RTX GPU的最新Game Ready驱动程序，核心升级包括：为《使命召唤：现代战争III》（MW4）与《战争机器：E-Day》等游戏启用Microsoft Advanced Shader Delivery（ASD）技术，该技术通过GPU直接从NVMe SSD加载着色器，大幅减少游戏加载时间与卡顿；同时，《赛博朋克2077》迎来重大图形升级——10月22日发布的2.5版本将集成DLSS 4.5动态多帧生成（Dynamic Multi Frame Generation），并将其Multi Frame Generation、Ray Reconstruction、Super Resolution等全部AI增强功能升级至第二代AI模型，显著提升画质与帧率稳定性。\n\n为什么重要：此次驱动更新体现了NVIDIA在‘软硬协同’上的持续领先。ASD技术并非单纯软件优化，而是深度绑定RTX GPU的硬件特性（如PCIe带宽、NVMe DirectStorage支持），将原本由CPU处理的着色器加载流程卸载至GPU，实现了真正的‘GPU-centric’渲染管线。而DLSS 4.5的迭代，则展示了其AI模型训练与部署的敏捷性——能在数月内完成从一代到二代的模型升级，并无缝集成至游戏更新，极大缩短了新技术从实验室到玩家桌面的转化周期。\n\n对行业有什么影响：首先，将加速DirectStorage与GPU Direct Storage生态普及，促使更多游戏引擎（如Unreal Engine 5.5+）原生支持ASD，推动PC平台存储性能标准升级；其次，强化NVIDIA在PC游戏体验上的护城河，AMD与Intel的竞品驱动虽也支持FSR/XeSS，但在AI模型精度、游戏适配广度与实时优化能力上仍存在代差；最后，对硬件厂商构成新要求——主板厂商需确保PCIe 5.0 SSD通道不被其他设备抢占，SSD厂商需优化NVMe固件以匹配ASD调度逻辑，形成围绕NVIDIA技术的‘PC硬件协同升级’浪潮。",
-      "category": "GPU",
-      "source": "WCCFTech",
-      "source_url": "https://wccftech.com/nvidia-advanced-shader-delivery-call-of-duty-mw4-gears-of-war-e-day-latest-drivers/",
-      "original_author": "@WCCFTech",
-      "published_at": "2026-10-21T15:10:22+00:00",
-      "created_at": "2026-10-21T17:50:00.419874+00:00"
     }
   ]
 }
